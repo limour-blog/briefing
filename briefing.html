@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>每日简报 · ЕЖЕДНЕВНАЯ СВОДКА</title>
+<style>
+  :root{
+    --red:#b71c1c;
+    --red-dark:#7f0e0e;
+    --red-bright:#d32222;
+    --gold:#f2c14e;
+    --gold-bright:#ffd97a;
+    --cream:#f2e3c0;
+    --ink:#231409;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    height:100dvh;
+    overflow:hidden;
+    font-family:"Oswald","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
+    background:radial-gradient(ellipse at 50% 42%, var(--red-bright) 0%, var(--red) 34%, var(--red-dark) 68%, #420707 100%);
+    color:var(--cream);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+  }
+
+  /* ---------- canvas 背景 ---------- */
+  #bg{position:absolute;inset:0;width:100%;height:100%;display:block}
+
+  /* ---------- 胶片颗粒感 ---------- */
+  .grain{
+    position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background-image:repeating-linear-gradient(0deg, rgba(0,0,0,.055) 0 1px, transparent 1px 3px);
+    mix-blend-mode:multiply;
+  }
+  .vignette{
+    position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.55) 100%);
+  }
+
+  /* ---------- 上下行军条纹横幅 ---------- */
+  .tape{
+    position:absolute;left:0;right:0;height:clamp(26px,4.2vh,40px);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;letter-spacing:.35em;font-size:clamp(10px,1.5vh,14px);
+    color:var(--gold);text-shadow:0 1px 0 #000;
+    background:
+      linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+      repeating-linear-gradient(-45deg, var(--red-dark) 0 18px, #5d0a0a 18px 36px);
+    animation:march 14s linear infinite;
+    border-top:2px solid var(--gold);
+    border-bottom:2px solid var(--gold);
+    white-space:nowrap;overflow:hidden;
+    background-size:200% 100%, auto;
+  }
+  .tape.top{top:0}
+  .tape.bottom{bottom:0;animation-direction:reverse}
+  @keyframes march{to{background-position:-512px 0, 0 0}}
+
+  /* ---------- 中央面板 ---------- */
+  .panel{
+    position:relative;z-index:2;
+    width:min(92vw,520px);
+    max-height:calc(100dvh - clamp(90px,16vh,140px));
+    padding:clamp(18px,3.4vh,36px) clamp(18px,4vw,42px);
+    background:linear-gradient(160deg,#f7ecd2 0%, var(--cream) 55%, #e6d2a3 100%);
+    color:var(--ink);
+    text-align:center;
+    border:3px solid var(--ink);
+    outline:3px solid var(--gold);
+    outline-offset:6px;
+    box-shadow:0 0 0 1px rgba(0,0,0,.4), 14px 16px 0 rgba(0,0,0,.35);
+    overflow:auto;
+  }
+  .panel::before,.panel::after{
+    content:"★";position:absolute;color:var(--red);
+    font-size:clamp(14px,2vh,20px);line-height:1;top:8px;
+  }
+  .panel::before{left:12px}
+  .panel::after{right:12px}
+
+  .emblem{
+    width:clamp(52px,9vh,84px);height:clamp(52px,9vh,84px);
+    margin:0 auto clamp(6px,1.2vh,12px);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--gold-bright);
+    font-size:clamp(38px,6.6vh,62px);line-height:1;
+    background:radial-gradient(circle, var(--red-bright) 0%, var(--red-dark) 78%);
+    border:3px solid var(--ink);
+    border-radius:50%;
+    box-shadow:0 0 0 3px var(--gold), 0 6px 0 rgba(0,0,0,.25);
+    text-shadow:0 2px 0 rgba(0,0,0,.45);
+    animation:pulse 2.6s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{transform:scale(1);box-shadow:0 0 0 3px var(--gold),0 6px 0 rgba(0,0,0,.25)}
+    50%{transform:scale(1.06);box-shadow:0 0 0 3px var(--gold-bright),0 0 26px rgba(255,217,122,.55),0 6px 0 rgba(0,0,0,.25)}
+  }
+
+  h1{
+    font-size:clamp(28px,5.4vh,46px);
+    letter-spacing:.42em;text-indent:.42em; /* 视觉居中 */
+    color:var(--red);
+    text-transform:none;
+    text-shadow:2px 2px 0 rgba(35,20,9,.15);
+    line-height:1.1;
+  }
+  .sub{
+    margin-top:4px;
+    font-size:clamp(11px,1.7vh,15px);
+    letter-spacing:.5em;text-indent:.5em;
+    color:#6d4b1e;font-weight:700;
+  }
+
+  .rule{
+    margin:clamp(10px,1.8vh,18px) auto;
+    width:78%;height:8px;
+    background:
+      linear-gradient(var(--red),var(--red)) 0 50%/100% 2px no-repeat,
+      radial-gradient(circle, var(--red) 2.6px, transparent 3px) 50% 50%/14px 8px repeat-x;
+  }
+
+  label{
+    display:block;
+    font-size:clamp(12px,1.8vh,15px);
+    font-weight:700;letter-spacing:.28em;text-indent:.28em;
+    color:#5c4322;margin-bottom:clamp(8px,1.4vh,14px);
+  }
+
+  #go{
+    display:block;margin:clamp(10px,1.8vh,16px) auto 0;
+    width:100%;max-width:340px;
+    padding:clamp(9px,1.6vh,14px) 18px;
+    font:inherit;font-size:clamp(15px,2.4vh,21px);font-weight:700;
+    letter-spacing:.22em;text-indent:.22em;
+    color:var(--gold-bright);text-shadow:0 2px 0 rgba(0,0,0,.5);
+    background:linear-gradient(180deg, var(--red-bright) 0%, var(--red-dark) 100%);
+    border:3px solid var(--ink);
+    box-shadow:0 0 0 2px var(--gold), 6px 6px 0 rgba(35,20,9,.25);
+    cursor:pointer;
+    transition:transform .12s ease, box-shadow .12s ease, filter .12s ease;
+  }
+  #go:hover{transform:translate(-2px,-2px);box-shadow:0 0 0 2px var(--gold-bright),0 0 22px rgba(255,217,122,.5), 8px 8px 0 rgba(35,20,9,.28);filter:brightness(1.08)}
+  #go:active{transform:translate(3px,3px);box-shadow:0 0 0 2px var(--gold), 2px 2px 0 rgba(35,20,9,.3)}
+  #go:focus-visible{outline:3px dashed var(--red);outline-offset:4px}
+
+  input[type="date"]{
+    width:100%;max-width:340px;
+    padding:clamp(8px,1.4vh,13px) 14px;
+    font:inherit;font-size:clamp(17px,2.6vh,23px);font-weight:700;
+    letter-spacing:.12em;text-align:center;
+    color:var(--ink);
+    background:#fbf3de;
+    border:3px solid var(--red);
+    box-shadow:inset 3px 3px 0 rgba(183,28,28,.15), 5px 5px 0 rgba(35,20,9,.2);
+    color-scheme:light;
+    cursor:pointer;
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  input[type="date"]:hover{transform:translate(-1px,-1px);box-shadow:inset 3px 3px 0 rgba(183,28,28,.15), 7px 7px 0 rgba(35,20,9,.22)}
+  input[type="date"]:focus{outline:3px solid var(--gold);outline-offset:2px}
+
+  .hint{
+    margin-top:clamp(8px,1.6vh,14px);
+    font-size:clamp(10px,1.5vh,13px);
+    letter-spacing:.18em;color:#7a5a30;font-weight:600;
+  }
+
+  #msg{
+    margin-top:clamp(6px,1.2vh,10px);
+    min-height:1.4em;
+    font-size:clamp(12px,1.9vh,16px);
+    font-weight:700;letter-spacing:.2em;
+    color:var(--red);
+    opacity:0;transform:translateY(4px);
+    transition:all .3s ease;
+  }
+  #msg.show{opacity:1;transform:translateY(0);animation:blink .8s steps(2) infinite}
+  @keyframes blink{50%{opacity:.35}}
+
+  @media (max-height:560px){
+    .rule{display:none}
+    .sub{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important;transition:none !important}
+  }
+</style>
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+<div class="grain"></div>
+<div class="vignette"></div>
+
+<div class="tape top">★ ПРОЛЕТАРИИ ВСЕХ СТРАН, СОЕДИНЯЙТЕСЬ ★ 每日简报 · 风雨无阻 ★</div>
+
+<main class="panel">
+  <div class="emblem">★</div>
+  <h1>每日简报</h1>
+  <div class="sub">ЕЖЕДНЕВНАЯ СВОДКА</div>
+  <div class="rule"></div>
+  <label for="d">选择日期 · ВЫБЕРИТЕ ДАТУ</label>
+  <input type="date" id="d">
+  <button id="go" type="button">★ 前往今日简报 ★</button>
+  <p class="hint">时区 UTC+8 · 每日 07:00 更新 · 创刊 2026-08-09 · 同志</p>
+  <div id="msg"></div>
+</main>
+
+<div class="tape bottom">★ ЗА РОДИНУ ★ 阅读简报是每个公民的义务 ★ 2026 ★</div>
+
+<script>
+(function(){
+  "use strict";
+  /* ================= 日期逻辑（UTC+8） ================= */
+  var START = "2026-08-09";          // 起始日，没有更早的了
+  var BASE  = "https://hexo.limour.top/briefing/briefing-";
+
+  function pad(n){ return (n < 10 ? "0" : "") + n; }
+  function fmt(d){ return d.getFullYear() + "-" + pad(d.getMonth()+1) + "-" + pad(d.getDate()); }
+
+  // 当前 UTC+8 的“墙钟时间”
+  var now = new Date();
+  var utc8 = new Date(now.getTime() + (now.getTimezoneOffset() + 480) * 60000);
+
+  // 早上 7 点后 → 最新一天（今天）；7 点前 → 前一天
+  var latest = new Date(utc8.getFullYear(), utc8.getMonth(), utc8.getDate());
+  if (utc8.getHours() < 7) latest.setDate(latest.getDate() - 1);
+
+  var startD = new Date(2026, 7, 9);
+  if (latest < startD) latest = startD;   // 兜底：绝不早于创刊日
+
+  var maxStr = fmt(latest);
+  var input  = document.getElementById("d");
+  input.min  = START;
+  input.max  = maxStr;
+  input.value = maxStr;                    // 默认选到最新可用的一天
+
+  var msg = document.getElementById("msg");
+  input.addEventListener("change", function(){
+    var v = input.value;
+    if (!v) return;
+    if (v < START){ v = START; input.value = v; }
+    if (v > maxStr){ v = maxStr; input.value = v; }
+    go(v);
+  });
+
+  function go(v){
+    msg.textContent = "★ 同志，正在前往 " + v + " 的简报 ★";
+    msg.classList.add("show");
+    setTimeout(function(){ location.href = BASE + v; }, 450);
+  }
+
+  /* 直达今日简报按钮 */
+  document.getElementById("go").addEventListener("click", function(){
+    go(maxStr);
+  });
+
+  /* ================= Canvas 2D 酷炫背景 ================= */
+  var canvas = document.getElementById("bg");
+  var ctx = canvas.getContext("2d");
+  var W, H, CX, CY, R;
+  var stars = [];
+  var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function resize(){
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = window.innerWidth; H = window.innerHeight;
+    canvas.width  = W * dpr;
+    canvas.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    CX = W / 2; CY = H * 0.44;
+    R = Math.sqrt(W * W + H * H) * 0.72;
+    seedStars();
+  }
+
+  function seedStars(){
+    stars = [];
+    var n = Math.max(18, Math.round(W * H / 26000));
+    for (var i = 0; i < n; i++){
+      stars.push({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        r: 3 + Math.random() * 9,
+        a: Math.random() * Math.PI * 2,
+        va: (Math.random() - 0.5) * 0.02,
+        vy: 0.12 + Math.random() * 0.35,
+        tw: Math.random() * Math.PI * 2,
+        vt: 0.02 + Math.random() * 0.05
+      });
+    }
+  }
+
+  function drawStar(x, y, r, rot, alpha){
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.rotate(rot);
+    ctx.beginPath();
+    for (var i = 0; i < 10; i++){
+      var rad = (i % 2 === 0) ? r : r * 0.42;
+      var ang = Math.PI / 5 * i - Math.PI / 2;
+      if (i === 0) ctx.moveTo(Math.cos(ang) * rad, Math.sin(ang) * rad);
+      else ctx.lineTo(Math.cos(ang) * rad, Math.sin(ang) * rad);
+    }
+    ctx.closePath();
+    ctx.fillStyle = "rgba(255,214,110," + alpha + ")";
+    ctx.shadowColor = "rgba(255,200,80,.8)";
+    ctx.shadowBlur = r * 1.6;
+    ctx.fill();
+    ctx.restore();
+  }
+
+  var t = 0;
+  function frame(){
+    t += 1;
+    ctx.clearRect(0, 0, W, H);
+
+    /* 旋转放射光芒（苏维埃太阳） */
+    var N = 24;
+    var rot = reduced ? 0 : t * 0.0016;
+    ctx.save();
+    ctx.translate(CX, CY);
+    ctx.rotate(rot);
+    for (var i = 0; i < N; i++){
+      if (i % 2 === 0) continue;
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.arc(0, 0, R, (i / N) * Math.PI * 2, ((i + 1) / N) * Math.PI * 2);
+      ctx.closePath();
+      ctx.fillStyle = "rgba(255,190,70,0.075)";
+      ctx.fill();
+    }
+    ctx.restore();
+
+    /* 中心光晕 */
+    var g = ctx.createRadialGradient(CX, CY, 0, CX, CY, R * 0.5);
+    g.addColorStop(0, "rgba(255,220,140,0.20)");
+    g.addColorStop(1, "rgba(255,220,140,0)");
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, W, H);
+
+    /* 飘浮红星 */
+    for (var s = 0; s < stars.length; s++){
+      var st = stars[s];
+      if (!reduced){
+        st.y -= st.vy;
+        st.a += st.va;
+        st.tw += st.vt;
+        if (st.y < -20){ st.y = H + 20; st.x = Math.random() * W; }
+      }
+      var alpha = 0.35 + 0.4 * Math.abs(Math.sin(st.tw));
+      drawStar(st.x, st.y, st.r, st.a, alpha * 0.8);
+    }
+
+    requestAnimationFrame(frame);
+  }
+
+  window.addEventListener("resize", resize);
+  resize();
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

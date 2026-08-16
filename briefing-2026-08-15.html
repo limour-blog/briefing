@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-08-15</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 8 月 15 日 · 星期六 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>阿里开源 Qwen3.8、智谱发布 GLM-5.3 并把编程能力拉高 50%，Anthropic 计划 10 月以 2 万亿美元估值 IPO；特朗普扬言把霍尔木兹海峡宣布为"美国领土"，阿联酋油轮在峡内遇袭，简街七月亏损约 150 亿美元；世界最大电动飞机完成首飞，澳大利亚家庭电池把批发电价压低一半；湖南煤矿瓦斯突出七人失联，小红书上的抱怨从玩梗转向具体生活困境。</div>
+
+  <h3>① AI 军备竞赛与资本洗牌</h3>
+  <div class="plain">这一周中国开源模型连着发新东西。阿里在周五凌晨开源 Qwen3.8 系列，其中最小的那个模型就超过了上一代的 Plus 版。智谱周四下午发布 GLM-5.3，基座参数没变，靠训练方法的改进把编程能力拉高了一大截。与此同时，美国两家 AI 巨头都在资本市场有大动作，一家准备十月份上市，另一家的年化收入已经冲上新高位。</div>
+  <div class="card">
+    <p>阿里 8 月 14 日开源 Qwen3.8 系列。Qwen3.8-27B 是原生多模态稠密模型，仅 <span class="num">270</span> 亿参数，整体水平已超越 Qwen3.7-Plus，采用 Apache-2.0 协议，所有人可自由下载部署。该帖在 HN 上拿到 <span class="num">734</span> 分、<span class="num">471</span> 条评论。</p>
+    <p>智谱同日发布 GLM-5.3，基座仍是 <span class="num">7400</span> 多亿参数（与 5.2 同一底子），靠后训练 Scaling 把编程能力提升了 <span class="num">50%</span>：Terminal-Bench 3.0 得分从 <span class="num">4.6</span> 涨到 <span class="num">28.3</span>，DeepSWE v1.1 从 <span class="num">46.2</span> 涨到 <span class="num">66.9</span>，在多项基准上拿下开源模型第一。值得注意的还有网络安全能力：白盒代码审查与漏洞发现表现持平行业标杆 Mythos 5。</p>
+    <p>资本端，《财富》报道 Anthropic 计划 10 月以 <span class="num">2 万亿美元</span> 估值 IPO，将超过 SpaceX 今年 6 月创下的 <span class="num">1.77 万亿美元</span> 最大上市纪录；金十数据显示 Anthropic 二季度营收超 <span class="num">115 亿美元</span>，同比至少增长 <span class="num">14 倍</span>，调整后营业利润转正。OpenAI 年化营收突破 <span class="num">400 亿美元</span>，7 月环比增长超 <span class="num">20%</span>。</p>
+    <p>国产侧还有两件事：DeepSeek V4 Pro 登陆硅基流动，<span class="num">1M</span> 上下文窗口，缓存命中每百万 token 只要 <span class="num">0.44 美元</span>；知情人士称苹果首次与阿里合作，为中国市场专门训练专属大模型。微软则在华"战略性收缩"，过去五年关闭至少 <span class="num">15</span> 家分支与合资企业。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>GLM-5.3：不换基座，靠后训练把编程能力拉高 50%</h4>
+    <div class="stats">1004 points / 494 comments · 智谱 z.ai</div>
+    <p>8 月 14 日发布的 GLM-5.3 基座仍是 7400 亿参数，与 GLM-5.2 同一底子，但通过后训练 Scaling，在 Terminal-Bench 3.0 上得分从 4.6 跃至 28.3，在 DeepSWE 上从 46.2 升至 66.9，多项基准拿下开源模型第一，编程与智能体能力被认为接近 Claude Fable 5。更值得注意的是后训练"涌现"出的网络安全能力——白盒代码审查与漏洞发现表现持平行业标杆 Mythos 5。这是国产模型首次把"模型发布"的增量完全押在训练方法而非参数规模上，也是今天 HN 得分最高（1004 分）的帖子。</p>
+  </div>
+
+  <h3>② 写代码的人在想什么</h3>
+  <div class="plain">HN 上这两天最热的讨论，聚焦在"模型用起来顺不顺手"。一篇对比 Opus 5 和旧模型的文章引来大量评论，作者说新模型能力更强了，但工作起来反而更累；另一场演讲则提出，理解 AI 写的代码正在成为新的瓶颈。</div>
+  <div class="card">
+    <p>《Why does Opus 5 feel worse to work with?》在 HN 拿到 <span class="num">671</span> 分、<span class="num">621</span> 条评论。作者说 Opus 5 在基准上比 4.7、4.8 更强，甚至能跟 Fable 打平，但用起来像降级：旧模型会在意图不清时停下来提问、不擅自假设、不未经确认就改方案，新模型把这些确认步骤省掉了，省下的时间最终变成了返工成本。</p>
+    <p>Geoffrey Litt 的演讲《Understanding is the new bottleneck》（<span class="num">418</span> 分/<span class="num">235</span> 评论）提出：理解 agent 写出的代码成为新的瓶颈，并演示了提高理解效率的工具思路。Sean Goedecke 的《Blog about things you don't understand yet》（<span class="num">148</span> 分）建议博客写自己还没搞懂的东西，理由是理解过程本身最有价值。</p>
+    <p>工具侧，Claude Code 桌面版新增自动继续，额度重置后能接续任务；有开发者发布 Graft 钩子，把 Claude Code 的 grep token 消耗砍掉 <span class="num">42%</span>。三星也宣布用 Claude Code 加速芯片验证，一个月的项目缩短到两天。</p>
+  </div>
+
+  <h3>③ 硬件与半导体</h3>
+  <div class="plain">存储芯片行业在集体喊"涨价"。韩国 SK 海力士的掌门人警告明年将迎来最严重的"存储荒"，国内中芯国际宣布三季度开始涨价；另一边美股博通大跌，甲骨文紧急回应 AI 数据中心项目没有停。</div>
+  <div class="card">
+    <p>SK 海力士会长崔泰源称明年将迎来最严重"存储荒"（风向旗快讯）。中芯国际二季度收入 <span class="num">30 亿美元</span>、同比增 <span class="num">36.1%</span>，归母净利 <span class="num">4.79 亿美元</span>、同比增 <span class="num">261.7%</span>，三季度开始涨价；华虹宏力净利 <span class="num">3860 万美元</span>、同比增 <span class="num">385.9%</span>，创历史新高。</p>
+    <p>美股方面，博通单日跌 <span class="num">6.85%</span>，创 6 月 5 日以来最大跌幅；甲骨文回应"朱庇特"AI 数据中心园区仍按计划推进，此前该股一度跌逾 <span class="num">4%</span>。</p>
+    <p>HN 高分帖《Spaghettifying DRAM》（<span class="num">690</span> 分/<span class="num">174</span> 评论）是底层安全研究：逆向 AMD Family 16h CPU 的 DRAM 加扰寄存器，重排物理内存地址映射，进而解锁 PSP、系统管理模式、C6 与微码等保护区，作者称同样的思路可以扩展到 ARM、RISC-V。</p>
+    <p>软件侧，《Firefox is now the last major browser that still supports uBlock Origin》（<span class="num">77</span> 分）——随着主流浏览器停用 Manifest V2，Firefox 成为最后一个还能用 uBlock Origin 的浏览器。风向旗快讯还报道苹果折叠屏手机因生产难度，初期供应受限。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">这一周有好几个"第一次"：世界最大的电动飞机完成首飞；澳大利亚靠家庭电池把批发电价大幅压低；天文学家确认了一种全新天体"黑洞星"。国内的人形机器人行业也在为月底的运动会做准备。</div>
+  <div class="card">
+    <p>瑞典 Heart Aerospace 的 X1 验证机 8 月 13 日完成首飞，翼展 <span class="num">106</span> 英尺、机长 <span class="num">76</span> 英尺，是迄今最大的电动飞机（HN <span class="num">141</span> 分/<span class="num">160</span> 评论）。澳大利亚方面，家庭电池补贴计划（2025 年 7 月启动、<span class="num">30%</span> 折扣）已装出超 <span class="num">50 万台</span>，批发电价被压低约一半；能源部长称澳家庭电池数量已超过人口为其 <span class="num">12 倍</span> 的美国，全国超三分之一的家庭装了屋顶光伏（HN <span class="num">295</span> 分）。</p>
+    <p>MIT 科技评论报道，天文学家发现全新天体"黑洞星"：大小接近太阳系，中心是 <span class="num">10 万倍</span> 太阳质量的黑洞；港理工团队给分子筛拍出原子级 CT，工业催化剂从此有了"设计图纸"；一项 <span class="num">3800 万美元</span> 的儿科研究计划强调"儿童不是小号的大人"。</p>
+    <p>Nature 一项大型研究发现，无证移民并不会提高所在地区的犯罪率。HN 上还有一项研究把"看见小人"幻觉锁定到一种蘑菇（<span class="num">293</span> 分/<span class="num">278</span> 评论）。</p>
+    <p>第二届世界人形机器人运动会 8 月 22–26 日在北京举行，<span class="num">16</span> 国 <span class="num">666</span> 支队伍、<span class="num">2056</span> 台机器人参赛，队伍数量较首届增 <span class="num">138%</span>。同日纽约时报报道，美国想自造人形机器人，但供应链绕不开中国——有从业者直言，把中国零部件排除在外只会让产品更贵。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">霍尔木兹海峡的紧张在周末前升到新高度：特朗普说要把海峡宣布为"美国领土"，阿联酋一艘油轮在峡内遇袭，伊朗回击说"开不开只有伊朗说了算"。金融圈也有大事，简街七月出现了月度亏损。</div>
+  <div class="card">
+    <p>特朗普称"很快将宣布霍尔木兹海峡为美国领土"，并表示将对伊朗实施严厉经济打击。伊朗副外长回应：海峡的开放或关闭只能由伊朗决定，不会被威胁吓倒；外长阿拉格齐称尚未决定是否恢复与美谈判。阿联酋 ADNOC 一艘船 8 月 14 日在峡内遭袭、无人受伤；也门摩卡港遭胡塞武装 6 枚弹道导弹袭击。</p>
+    <p>金融方面，据英国金融时报，简街（Jane Street）7 月亏损约 <span class="num">150 亿美元</span>，交易收入出现 2016 年以来首次月度亏损，2026 年营收较 6 月底峰值下降约 <span class="num">25%</span>，公司已关闭亏损领域大部分风险头寸。</p>
+    <p>贸易与科技博弈：白宫对进口无人机及零部件征收 <span class="num">10%–100%</span> 关税，9 月 3 日生效；欧盟清退华为的计划再度遇阻，西班牙最大运营商 MasOrange 因爱立信未达协议目标，暂缓全面替代华为，现网中华为仍占 <span class="num">43%</span>。</p>
+    <p>亚洲与地区消息：台湾官方上调今年经济增长预估至 <span class="num">11.05%</span>，创 1988 年以来新高；台湾立法院以 <span class="num">52:51</span> 通过鞭刑入法公投提案。瑞穗称日本央行 9 月加息概率陡增。厄瓜多尔总统诺沃亚首次访华。法国宪法法院裁定阻止禁止 15 岁以下青少年使用社交媒体的法案（HN <span class="num">188</span> 分）。巴西因 13 岁女孩自杀被直播，命令 Discord 暂停直播功能。</p>
+    <p>中国疾控中心数据显示，7 月新增冠病病例 <span class="num">52.2 万</span> 例，是 6 月的 <span class="num">6.61 倍</span>，重症 <span class="num">487</span> 例；中疾控称属周期性波动、处于高峰平台期，以轻症为主。湖南涟源一煤矿发生瓦斯突出事故，<span class="num">7</span> 人失联。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">一篇多年没更新的博客突然发文，标题是"你好，是我"，在 HN 上拿了高分，评论区多半在聊时间与变化。这一周国内的人文消息还有：百花奖第一次把最佳影片颁给动画电影，胖东来宣布招聘刑满释放人员。</div>
+  <div class="card">
+    <p>《Hello, me. It's been a while》（<span class="num">356</span> 分/<span class="num">193</span> 评论）是 the Mech 博客时隔十四年后的回归随笔。同榜还有讽刺网站膨胀的《Every Fucking Website》（<span class="num">684</span> 分，2020 年旧文今日重上榜首）与《The TEMU-fication of Software》（<span class="num">125</span> 分），后者假设软件、书籍、音乐的未来是"更便宜、更泛滥、明显更差"，人工精制品则退入奢侈品区间。</p>
+    <p>第 <span class="num">38</span> 届百花奖首次将最佳影片授予动画电影《哪吒之魔童闹海》。胖东来郑州店计划招聘 <span class="num">100</span> 名退伍边防军人、<span class="num">20</span> 名刑期五年以上的刑满释放人员，并设专属报名通道；创始人于东来表示每年投入千万级资金帮扶刑释群体。郭兰英 <span class="num">97</span> 岁逝世，她是《一条大河波浪宽》的原唱。</p>
+    <p>郭德纲事件有后续：因改编红歌未报备被立案调查，其麒麟剧社取消了原定 8 月 15 日的西安十周年巡演。微信确认朋友圈"现在、过去、未来都不会有二次编辑功能"。天津设立了银行内结婚登记点。作家黄怒波获韩国李炳注文学奖。比尔·盖茨小女儿被曝涉嫌电信欺诈。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">本周监督类讨论集中在三件事：小红书上用户的抱怨从玩梗转向具体生活困境；"联合调查组"成为地方新闻里的高频词；郭德纲被举报引发对举报文化的讨论。反腐这边，茅台原党委副书记、甘肃副省长、衡阳中院代理院长接连被查。</div>
+  <div class="card">
+    <p>中国数字时代转载的评论指出，小红书上的表达正从影射、玩梗转向经济下行、就业造假、社保缴费基数、低生育率与养老压力等具体问题，讨论若进一步形成纳税、分配、就业与社会保障的明确诉求，可能成为社会共识的起点。</p>
+    <p>另一篇评论观察"万物皆可联合调查组"：一起事故、一次污染、一名公职人员卷入争议，官方回应往往先于调查结论成立联合调查组，调查组成了公众最先看到的官方姿态，而事件本身往往还未厘清。</p>
+    <p>郭德纲因改编《弹起我心爱的土琵琶》未报备被武汉文旅局立案，西安演出取消。中国数字时代多篇评论讨论此事件，有作者称"为郭德纲说话，只是不想这种人人自危的气息蔓延"。山东一场长征主题画展因女红军形象被指"眯眯眼"，也遭到要求审查下架的声音——两条线索都指向举报与审查文化。</p>
+    <p>反腐方面：贵州茅台集团党委原副书记赵书跃退休八年后被查；甘肃副省长程晓波主动投案；衡阳中院代理院长王雨田被查，其曾以高学历法学人才身份被引进湖南。湖南警方公开征集软暴力催收等涉黑恶线索。</p>
+  </div>
+
+  <h3>⑧ 一周回顾</h3>
+  <div class="plain">把窗口拉长到一周，主线更清楚：AI 与半导体是两条最粗的线，地缘上霍尔木兹海峡从封锁僵局一路升级到"美国领土"表态，国内反腐与监督话题贯穿始终。</div>
+  <div class="card">
+    <p><b>AI 一周。</b>DeepSeek V4 Pro 正式版 8 月 13 日上线、随后开源智能体框架 Harness 并上调 API 价格；阿里一周内两次开源（2.4 万亿参数模型与 Qwen3.8），xAI 发布 Grok 4.6，谷歌推 Gemini 3.7 Flash、OpenAI 推 GPT-5.6 Sol Ultrafast，智谱 GLM-5.3 补上"后训练"这一课；Anthropic 冲刺 2 万亿美元 IPO，OpenAI 年化营收破 400 亿美元，Ilya 的 SSI 首个模型曝光，苹果与阿里联手训练中国专属模型。</p>
+    <p><b>半导体一周。</b>长鑫科技市值超越腾讯成为中国市值最高上市公司；长江存储首次进入全球 NAND 前三；中芯国际二季度量价齐升、三季度涨价；SK 海力士预警明年"存储荒"；博通大跌、甲骨文回应数据中心项目未停。</p>
+    <p><b>地缘一周。</b>朱镕基 8 月 12 日在北京逝世，悼念贯穿整周；普京登上俄日争议岛屿；霍尔木兹海峡从封锁僵局、油污危机升级到特朗普"美国领土"表态与油轮遇袭；台湾上调经济增长至 11%、立法院通过鞭刑公投；白宫对无人机关税、欧盟清退华为受阻。</p>
+    <p><b>科研与批判一周。</b>日本团队首次让雄性小鼠产下后代，黑洞星、分子筛原子级 CT、世界最大电动飞机首飞、澳洲家庭电池压低批发电价；国内《反网络暴力法》征求意见、信访局长表态纠正拦卡堵截、武汉城管打人者被刑拘、遗体滞留太平间 12 年事件成为监督焦点，小红书"冲塔"与举报文化的讨论渐成气候。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、联合早报、ChatGPT/AI 新闻聚合、风向旗参考快讯、十年之约聚合、中国数字时代、MIT 科技评论、Nature、小众软件等，覆盖 8 月 13–15 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 642 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>

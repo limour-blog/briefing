@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-08-13</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 8 月 13 日 · 周四 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>朱镕基 8 月 12 日在北京病逝，享年 98 岁，新华社讣告与各界悼念同步进行；AI 模型竞赛一夜三连发——DeepSeek V4 Pro 正式版上线、阿里开源 2.4 万亿参数模型、xAI 发布 Grok 4.6，联想季度营收创历史新高、长江存储首入全球 NAND 前三；霍尔木兹海峡封锁僵局持续、乌克兰袭击俄能源设施令俄原油产量跌破配额；武汉城管殴打摊贩三名涉事者被刑拘、《反网络暴力法》征求意见、武汉遗体滞留太平间 12 年成为监督焦点。</div>
+
+  <h3>① AI 模型竞赛与资本</h3>
+  <div class="plain">AI 模型这周进入"一天一发"的节奏：DeepSeek 深夜上线 V4 Pro 正式版，阿里把自家最大规模的模型权重开源，马斯克的 xAI 发布 Grok 4.6。钱的流向同样密集——前 OpenAI 大牛创业首轮就融了超过十亿美元，腾讯投资的 AI 编程公司估值水涨船高，连做服务器的联想都被市场重新当成 AI 基建股定价。</div>
+  <div class="card">
+    <p>DeepSeek 8 月 13 日把 V4 Pro 从预览版正式转正，API 定价页版本号更新为 DeepSeek-V4-Pro-0813：上下文 <span class="num">100 万</span> token、支持 Responses API，官方评测显示其在多项测试中接近 Anthropic 旗舰 Fable 5、相比预览版大幅提升；按每百万 token 计，缓存命中输入 <span class="num">0.025 元</span>、未命中输入 <span class="num">3 元</span>、输出 <span class="num">6 元</span>（OpenRouter 标价 $0.435 / $0.87）。细节是官网"正式版发布"横幅上线后又被撤下、API 文档保持不变（HN <span class="num">885</span> 分/<span class="num">358</span> 评论）。同日阿里在魔搭开放 Qwen3.8-2.4T-A95B 权重：总参数 <span class="num">2.4 万亿</span>、每 token 激活 <span class="num">95B</span>，<span class="num">512</span> 个专家路由 <span class="num">10</span> 个并激活 <span class="num">1</span> 个共享专家，原生 <span class="num">262K</span> 上下文可扩至 <span class="num">100 万</span>，是 Qwen-Max 级别模型首次开源（HN <span class="num">591</span> 分/<span class="num">136</span> 评论）。xAI 的 Grok 4.6 聚焦长时间运行的智能体任务，Elo 评分 <span class="num">1753</span>，定价 <span class="num">$2 / $6</span> 每百万 token，经 OpenRouter、Vercel、Cloudflare 等平台上架（HN <span class="num">520</span> 分/<span class="num">468</span> 评论）。</p>
+    <p>资本侧：xAI 联合创始人伊戈尔·巴布什金 6 月创办的 River AI 官宣 <span class="num">11 亿美元</span>融资（横跨种子与 A 轮），General Catalyst 领投、英伟达与 AMD 参投，团队约 <span class="num">20</span> 人，主打"个人拥有自己的 AI"；腾讯投资的 AI 编程公司 Lovable 以 <span class="num">133 亿美元</span>估值完成 <span class="num">4 亿美元</span> C 轮（HN <span class="num">133</span> 分/<span class="num">127</span> 评论）；据报 Anthropic 正洽谈以约 <span class="num">60 亿美元</span>收购世界模型初创 Decart（HN <span class="num">78</span> 分）。梁文锋净资产一年从 <span class="num">10 亿美元</span>增至 <span class="num">395 亿美元</span>（+3850%），DeepSeek 估值据称从约 <span class="num">72 亿元</span>升至约 <span class="num">4000 亿元人民币</span>，张一鸣以 <span class="num">693 亿美元</span>居中国首富（联合早报）。</p>
+    <p>产业端：联想 2026/27 财年第一财季营收 <span class="num">269.43 亿美元</span>（同比 <span class="num">+43%</span>）创单季历史新高，经调整净利 <span class="num">10.75 亿美元</span>（+176%）首破 10 亿，股价单日暴涨 <span class="num">19.35%</span>，市场把它从 PC 厂重新定价为 AI 基础设施标的；Counterpoint 数据显示长江存储 Q2 NAND 出货市占 <span class="num">14%</span> 首次进入全球前三（三星 <span class="num">25%</span>、SK 海力士 <span class="num">22%</span>），下半年计划向企业级 SSD 倾斜；腾讯 Q2 营收 <span class="num">2047.9 亿元</span>同比 <span class="num">+11%</span>，风向旗援引报道称 AI 支出正在打断其两位数利润增长。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>DeepSeek V4 Pro 0813</h4>
+    <div class="stats">885 points / 358 comments · OpenRouter</div>
+    <p>8 月 13 日 DeepSeek 把 V4 Pro 从预览版正式转正，API 定价页版本号更新为 DeepSeek-V4-Pro-0813，上下文 100 万 token、支持 Responses API，官方评测显示多项基准接近 Anthropic 的 Fable 5。有趣的细节是，官网"正式版发布"横幅上线后又被撤下，API 文档保持不变；同一天阿里开源 2.4 万亿参数的 Qwen3.8、xAI 发布 Grok 4.6——模型竞赛进入"一天三发"的节奏。HN 讨论集中在它能否真正撼动闭源旗舰的位置，以及 6 元/百万输出 token 的定价是否划算。</p>
+  </div>
+
+  <h3>② 写代码的人在想什么</h3>
+  <div class="plain">程序员圈这周最热的一场争论，是 AI 到底在帮人写代码，还是先把"中间层"工程师挤掉。HN 上一条高赞长文说，AI 让弱工程文化的团队"以更快的速度崩掉"；另一条高赞帖则说 Go 是 AI 辅助编程的理想语言。同周，Cursor 把自动化代码审查提前上线，国内则有 AI 大厂员工自述超长工时成为常态。</div>
+  <div class="card">
+    <p>HN 长文《AI is removing the middle class of software engineering?》获 <span class="num">849</span> 分/<span class="num">773</span> 评论，核心论点：AI 移除了写代码的"速度上限"，过去休假一周攒下的 PR 现在一个周末就能堆出来（文中举例单个 PR <span class="num">+24506 / -3938</span> 行），弱工程文化的项目"失败得更快"，最后没人说得清系统怎么工作，甚至要靠 AI 再解释自己写的代码。同主题还有《Go is an ideal language for AI-assisted software engineering》（<span class="num">428</span> 分/<span class="num">507</span> 评论）、Mojo 1.0（<span class="num">424</span> 分/<span class="num">230</span> 评论）、Delphi 13 社区版（<span class="num">172</span> 分/<span class="num">129</span> 评论）与 C 语言写的极简 coding agent Hax（<span class="num">99</span> 分）。</p>
+    <p>工具侧：Cursor 把自动化代码审查平台 Origin 提前上线（原计划秋季，由 2025 年底收购的 Graphite 团队打造），网页端新增 Codebase 与 Review 两大模块，配合此前演示的单代码库每秒 <span class="num">22.6</span> 次提交，把"生成 + 审查"整条链路搬进 AI 工作流（cnBeta）。Tailscale 团队则把一条 <span class="num">16 年</span>历史的 SQLite WAL-reset bug 追查到底（HN <span class="num">990</span> 分/<span class="num">188</span> 评论），配文《Breaking the WAL》另有 <span class="num">94</span> 分。</p>
+    <p>国内对照：AI 聚合频道报道头部大厂员工自述工作强度"不降反升"、<span class="num">90 小时</span>工作制成行业常态；起点中文网因 AI 内容泛滥出台禁令，有作者抱怨 <span class="num">30 万字</span>稿子为润色几章打斗戏被删（十年之约博客）——"AI 减少工作量"的宣传与实际工时形成反差。</p>
+  </div>
+
+  <h3>③ 硬件与算力</h3>
+  <div class="plain">硬件这周最大的动静来自 Google：Pixel 11 系列、Pixel Watch 5 一起发布，全都深度绑定了 Gemini。苹果被曝压低新款屏幕成本、囤积零部件，荣耀则发布了一款"机器人手机"。数据中心侧，存储芯片和算力租赁在 A 股领涨，联想靠 AI 服务器创了单季营收新高。</div>
+  <div class="card">
+    <p>Google 发布 Pixel 11、Pixel 11 Pro Fold 与 Pixel Watch 5（另有 Pixel Buds Pro 2 与定位标签 Pixel Tag），Pro 版国行 <span class="num">7400 元</span>起；Pixel Watch 5 首次加入胰岛素抵抗追踪（HN <span class="num">137</span> 分/<span class="num">261</span> 评论），Pixel 11 Pro Fold 获 HN <span class="num">110</span> 分/<span class="num">164</span> 评论。风向旗援引报道：苹果大幅压低 iPhone 18 Pro 屏幕成本、并因涨价预期囤积零部件，标准版 iPhone 18 或延后至明年春季。荣耀发布首款"机器人手机"Robot Phone，定价 <span class="num">9999–12999 元</span>（金十）。</p>
+    <p>存储与算力景气延续：长江存储 Q2 NAND 出货市占 <span class="num">14%</span> 首入全球前三；Counterpoint 认为 AI 需求正从训练转向推理，高速低功耗承载 KV 缓存的存储成为新增长点，预计到 2027 年决定 NAND 厂商盈利的关键将从出货规模转为产品组合；A 股算力租赁、存储芯片、CPO 板块 8 月 13 日集体走强。CoreWeave 向投资者警告，若需从英伟达芯片转向其他芯片将付出大量时间与资金（金十）。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">硬科学这周有几条"第一次"级别的进展：Nature 报道了能降血糖的工程菌、响尾蛇自带抗蛇毒能力的机制、以及银河系外第一段球状星团流；MIT 科技评论则密集报道 AI 怎么改写科研——有团队让智能体在几小时内做出顶刊水平的实验方案，也有清华团队把类脑视觉芯片推向产业化。</div>
+  <div class="card">
+    <p>Nature 8 月 12 日批次：工程改造的益生菌在糖尿病小鼠与猴子实验中显著降低血糖，团队称这是"能治糖尿病的细菌"；响尾蛇自身抗蛇毒机制或可用于保护人类；哈勃深场在超弥散星系 UGC 9050-Dw1 中发现银河系外第一条球状星团流，为宿主星系暗物质含量提供新约束；高空气球相机给出银河系中心高能粒子新视角。另有报道称海水温度即将打破历史纪录，将削弱海洋碳汇并危及珊瑚礁。</p>
+    <p>MIT 科技评论《AI 智能体正在重写科研》指出：AlphaFold 依赖的蛋白质数据库用了 <span class="num">53 年</span>才积累约 <span class="num">17 万</span>个实验结构，AI 能否在缺数据的领域复制成功仍是问题。UCSD 副教授谢澎涛团队的 AIBuildAI Science Agent 在 NatureBench 的 <span class="num">90</span> 个真实科研任务中限时 <span class="num">4 小时</span>，<span class="num">25.6%</span> 超过论文报告的最佳方法、<span class="num">57.8%</span> 达到或超过论文最高水平，公司已完成约 <span class="num">400 万美元</span>融资。清华天眸芯（2024 年 Nature 封面，类脑视觉）由孵化公司晰见科技推进产业化，该团队另参与 2019 年天机芯，大陆机构以第一单位登 Nature 封面的 AI/芯片论文共三篇、该团队占两篇。</p>
+    <p>复旦张宏亮团队把核聚变关键材料 MAX 相陶瓷的制备温度从 <span class="num">1000°C</span> 以上降至 <span class="num">450°C</span>，并提高辐照稳定性，直指"人造太阳"包层铠甲难题。HN 侧科研向：数学圈在讨论 LLM 到底擅长什么数学（<span class="num">254</span> 分/<span class="num">143</span> 评论），马蹄蟹蓝血拯救人类的科普获 <span class="num">103</span> 分；2026 年日食网络直播相机页获 <span class="num">476</span> 分/<span class="num">130</span> 评论（天文爱好者向）。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">本周最重大的国内事件是朱镕基 8 月 12 日在北京病逝，享年 98 岁，新华社当天傍晚刊发讣告。国际上，霍尔木兹海峡的"封锁与实控"僵局还在继续；乌克兰持续袭击俄罗斯能源设施，让俄罗斯原油产量跌破自己的配额；大陆与印尼的舰艇演练、台湾汉光演习，让台海话题保持热度。</div>
+  <div class="card">
+    <p>朱镕基 <span class="num">1991</span> 年由上海市委书记调任国务院副总理，<span class="num">1993</span> 年兼任央行行长，<span class="num">1998</span> 年出任总理；任内推动 <span class="num">1994</span> 年分税制改革（为争取地方支持 <span class="num">74 天</span>走访 <span class="num">17</span> 个省区市）、国企"兼并破产、下岗分流"改革，<span class="num">1997</span> 年亚洲金融危机期间维持人民币汇率稳定，并推动中国加入 WTO。他 <span class="num">2003</span> 年政府工作报告显示，<span class="num">1998</span> 年以来国企下岗职工累计 <span class="num">2700 多万</span>人、其中 <span class="num">1800 多万</span>实现再就业；<span class="num">2000</span> 年两会记者会留下"清官"名言与"100 口棺材"反腐比喻，选前曾警告"谁搞台独就没好下场"。日本驻华使馆降半旗致哀，李家超感谢朱镕基对香港的支持（联合早报、竹新社）。</p>
+    <p>俄乌：乌克兰国家安全局称对诺沃罗西斯克港的攻击击中 <span class="num">3</span> 艘军舰及设施，俄国防部称一夜击落 <span class="num">362</span> 架乌克兰无人机；乌克兰持续袭击能源设施使俄罗斯原油产量跌破 OPEC+ 配额（金十）。泽连斯基向美方提出"爱国者"库存 <span class="num">5%</span> 即可撑过今冬、<span class="num">10%</span> 足以摧毁俄全部弹道导弹；《华尔街日报》报道乌克兰无人机部队在德国演习中击败美军装甲部队。</p>
+    <p>中东：伊朗"波斯湾海峡管理局"称霍尔木兹海峡仍关闭、除非条件满足，特朗普则称美国"完全控制"；<span class="num">14</span> 艘油轮中 <span class="num">11</span> 艘走伊朗批准航线，沙特改经埃及管道出口并让油轮"隐身"以保供应；布伦特结算 <span class="num">88.98 美元/桶</span>。加沙北部以军击毙一名哈马斯指挥官；黎巴嫩军方称以色列继续违反停火协议，特朗普政府公开批评以国防部长卡茨言论违背协议承诺；也门摩卡港因胡塞袭击全面停摆，波斯湾出现油污危机。</p>
+    <p>台海与亚太：大陆与印尼在台湾以东海域举行通航演练（台陆委会批"破坏区域和平稳定"）；台湾汉光演习进行反封锁演练，政府机构上月遭境外 AI 辅助网络攻击；台政院拟修法，军人以言语向敌人表忠最重判 <span class="num">7 年</span>。韩警方以"利敌活动"罪名逮捕两名涉嫌刺探韩美军事情报的中国退役军人（联合早报）。</p>
+    <p>贸易与经济：中国汽车出口连续两个月突破百万辆；中国对美大豆采购承诺面临考验（民企参与热情不高）；福特计划 <span class="num">2030</span> 年起把部分车型生产从中国转移回美国；加拿大拟接受部分汽车关税以换取美方降税；中企开通首条穿越北极的常态化集装箱航线；美国 7 月预算赤字 <span class="num">4320 亿美元</span>、创 <span class="num">2021 年 3 月以来</span>最大单月纪录。日本央行或于 9 月/10 月加息；韩国央行 <span class="num">13 年来</span>首次买入黄金。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">社会面这周有几条值得记下：中国上半年结婚登记同比下降近一成，"不婚化"继续成为话题；一位博主凌晨去看了场流星雨，博客聚合里多是这类平淡日常；HN 上密歇根大学取消大一第一学期成绩、美国招募电竞玩家当空管，两条都在讨论"考核"和"岗位"的边界。</div>
+  <div class="card">
+    <p>民政数据显示中国上半年结婚登记同比下降 <span class="num">7.46%</span>（联合早报），十年之约博客《结婚率新低背后，是一代人终于学会对自己诚实》与此呼应。博客聚合里，凌晨看英仙座流星雨、章鱼面对镜子、贵阳避暑等个体叙事照常更新；歌唱家郭兰英逝世（联合早报）。</p>
+    <p>海外社会：哥伦比亚强震遇难人数升至 <span class="num">241 人</span>，政府宣布进入经济紧急状态；津巴布韦卡里巴湖船只倾覆至少 <span class="num">44 死</span>（竹新社）；南苏丹霍乱疫情致 <span class="num">1721 人死亡</span>、确诊超 <span class="num">11 万例</span>。HN：密歇根大学取消大一第一学期成绩以"遏制心理健康危机"（<span class="num">171</span> 分/<span class="num">485</span> 评论）；美国 FAA 雇佣 <span class="num">2000 多名</span>电竞玩家担任空管（<span class="num">200</span> 分/<span class="num">151</span> 评论）；加州 Uber/Lyft 司机赢得工会认可（<span class="num">51</span> 分/<span class="num">44</span> 评论）；沙丁鱼罐头因社交媒体走红成稀缺品（<span class="num">110</span> 分/<span class="num">128</span> 评论）。</p>
+    <p>数字生活：uBlock Origin 宣布放弃过滤 Facebook 广告（HN <span class="num">434</span> 分/<span class="num">554</span> 评论，正文未能抓取；风向旗同日转引），广告与拦截工具的军备竞赛进入新阶段；IBM PC 迎来 <span class="num">45 周年</span>（HN <span class="num">77</span> 分），AmigaDOS 开发者 Tim King 去世（HN <span class="num">264</span> 分/<span class="num">32</span> 评论）。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">本周的监督焦点集中在执法与立法。武汉城管殴打摊贩，三名涉事城管被刑事拘留；云南一位居民因为朋友圈一句话被行政拘留四天；《反网络暴力法》正在征求意见；国家信访局局长表态要"坚决纠正拦卡堵截群众正常上访"。大洋彼岸，一项新研究则发现"中国式审查"正在渗入美国 AI 模型的回答。</div>
+  <div class="card">
+    <p>武汉城管事件：武昌区警方通报对参与围殴摊贩的三名城管（金某 <span class="num">45</span> 岁、严某 <span class="num">39</span> 岁、郭某 <span class="num">40</span> 岁）刑事拘留；通报称摊贩夫妻先动手致城管面部受伤，但视频显示城管持摊位器物持续砸向摊贩头部（风声 OPINION 张丰评论，<span class="num">2006</span> 年崔英杰案距今整 <span class="num">20</span> 年）。云南元江县高光华：因在朋友圈写"希望分管教体和文旅的杨副县长也免职"，被以"诽谤"行政拘留 <span class="num">4</span> 天；他此前曾投诉学校"打卡报平安"形式主义并获整改（魏春亮说，单方陈述从略）。</p>
+    <p>立法与信访：网信办 <span class="num">7 月 29 日</span>公布《反网络暴力法（征求意见稿）》，共七章 <span class="num">60</span> 条，意见截止 <span class="num">8 月 28 日</span>；北京千千律师事务所从性别暴力受害者视角提出修改建议（中国数字时代存档）。国家信访局局长公开表态"坚决纠正拦卡堵截群众正常上访行为"（联合早报）。武汉一具遗体在太平间滞留 <span class="num">12 年</span>，事件引发对殡葬行业信息断层与制度漏洞的讨论，多部门已介入调查（十年之约博客）。</p>
+    <p>AI 治理与审查：《华尔街日报》测试显示，Claude Sonnet 4 会生成批评特朗普与英国国王的传单、却拒绝生成针对习近平或泰国国王的同类传单，Gemini 3 Pro 与 Llama 4 Maverick 部分类似，训练数据中威权国家媒体内容被认为是一部分原因（风向旗/AI 聚合）。同一周，白宫拟把开源模型纳入发布前联邦安全测试（对标 GPT-5.6 级前沿能力），哈萨比斯卸任前推动成立类似国际原子能机构的行业安全机构，英伟达等 <span class="num">120 家</span>组织提议建立 AI 事故追踪机制。HN 上《License plate reader searches should require a warrant》获 <span class="num">576</span> 分/<span class="num">345</span> 评论，另有公司给车牌读取器加装手机追踪功能（<span class="num">77</span> 分），监控与隐私的边界成为公共议题。</p>
+  </div>
+
+  <h3>⑧ 一周回顾</h3>
+  <div class="plain">过去一周，AI 模型进入"三连发"的密集发布期：DeepSeek V4 Pro 正式版、阿里开源自家旗舰模型、xAI Grok 4.6 集中在两三天内落地；监管侧白宫拟把开源模型纳入安全测试、哈萨比斯推动建立行业安全机构。国内则经历了朱镕基逝世与国企改革记忆的集中回望，武汉城管刑拘、反网暴法征求意见等监督话题持续发酵。</div>
+  <div class="card">
+    <p><b>模型与平台。</b>DeepSeek V4 Pro 0813 GA（100 万上下文、$0.435/$0.87）、阿里开源 Qwen3.8-2.4T（2.4T 总参/95B 激活）、Grok 4.6（Elo 1753）密集上线；Gemini 月活破 <span class="num">10 亿</span>；ChatGPT 推出 Linux 桌面版；白宫拟扩 AI 监管至开源模型、哈萨比斯推动 IAEA 式安全机构、120 家组织提议事故追踪；思维链窃取研究（MATS/图宾根/马普所）公开（HN <span class="num">684</span> 分/<span class="num">301</span> 评论）。</p>
+    <p><b>资本与算力。</b>联想季度营收 <span class="num">269 亿美元</span> +43%、净利 10.75 亿首破 10 亿，股价 +19.35%；长江存储首入 NAND 前三（<span class="num">14%</span>）；宇树 IPO 中签率 <span class="num">0.018%</span>、市值 <span class="num">610 亿</span>、市盈率超 <span class="num">100 倍</span>；梁文锋财富 <span class="num">395 亿美元</span>（+3850%）；River AI <span class="num">11 亿美元</span>、腾讯投的 Lovable 估值 <span class="num">133 亿美元</span>、Anthropic 洽谈收购 Decart <span class="num">60 亿美元</span>。</p>
+    <p><b>中东与能源。</b>霍尔木兹"封锁与实控"僵局、沙特油轮"隐身"、乌克兰袭俄能源设施致俄原油产量跌破配额；布伦特 <span class="num">88.98 美元</span>；加沙与黎巴嫩停火反复、也门摩卡港停摆；美国 7 月预算赤字 <span class="num">4320 亿美元</span>创纪录。</p>
+    <p><b>国内政治与社会。</b>朱镕基 8 月 12 日病逝（98 岁），官方讣告突出经改角色；中国上半年结婚登记 <span class="num">-7.46%</span>；武汉城管三人刑拘、云南"朋友圈被拘 4 天"、反网暴法征求意见、武汉遗体滞留 12 年成为监督焦点；C919 首次执飞国际商业航线、中企开通首条北极常态化集装箱航线。</p>
+    <p><b>硬件与科研。</b>Pixel 11 系列与 Watch 5 发布、苹果压 iPhone 18 Pro 屏幕成本、荣耀 Robot Phone <span class="num">9999 元</span>起；Nature 报道糖尿病工程菌、响尾蛇抗毒、银河系外球状星团流、海洋温度将破纪录；MIT 科技评论聚焦 AI 科研智能体（NatureBench 4 小时 <span class="num">25.6%</span> 超论文最佳）与天眸芯产业化；HN"AI 移除软件工程中间层"<span class="num">849</span> 分成为开发者圈热议。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（11 个订阅源，覆盖 8 月 11–13 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 930 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
