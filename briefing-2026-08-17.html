@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-08-17</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 8 月 17 日 · 周一 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>支付巨头 Stripe 以逾 70 亿美元收购 AI 路由商 OpenRouter，Anthropic 季度营收突破 115 亿美元，硅谷的 AI 资本在重新排队，而 DeepSeek 同日大幅上调 API 价格、低价战出现转折；微软与诺基亚接连收缩在华业务，去年幼儿园教师减少近 22 万人；加沙停火推进到第二阶段，卡塔尔与伊朗围绕"被扣押飞行员"各执一词。</div>
+
+  <h3>① AI 军备竞赛与资本洗牌</h3>
+  <div class="plain">这一周 AI 的钱在重新排队：支付巨头 Stripe 买下了开发者和企业访问各家大模型的入口 OpenRouter，Anthropic 交出了季度营收大涨并首次盈利的答卷，英伟达把自己持有 SpaceX 的股份亮了出来。另一边，以低价著称的 DeepSeek 从今天起大幅上调 API 价格，持续数月的低价战出现了转折信号。</div>
+  <div class="card">
+    <p>Stripe 即将以超过 <span class="num">70 亿美元</span>的价格收购 AI 公司 OpenRouter（金十数据援引市场消息；HN <span class="num">55 分/39 评论</span>，Bloomberg 报道）——支付巨头把触角伸向"调用大模型"这一层，OpenRouter 是开发者常用的多模型路由与网关。HN 上另有分析称，围绕 AI 积分和额度的"转卖经济"已经成形，有人专门收购初创公司用不完的额度再转卖（<span class="num">193 分/71 评论</span>）。</p>
+    <p>Anthropic 第二季度初步营收超过 <span class="num">115 亿美元</span>，同比增长逾 <span class="num">14 倍</span>（去年同期 <span class="num">7.87 亿</span>、一季度 <span class="num">47.3 亿</span>），调整后营业利润转正，公司正筹备可能在今秋启动的大型 IPO（AI 聚合援引彭博）。Anthropic 还首次公开了各 Claude 模型的系统提示词全文（HN <span class="num">451 分/196 评论</span>），并评估失调风险上升、暂不发布内部更强的 Model 2（AI 聚合）。</p>
+    <p>英伟达首次披露持有 SpaceX <span class="num">1.228 亿股</span>、成为其第六大股东，季度末市值约 <span class="num">210 亿美元</span>（风向旗；HN <span class="num">45 分</span>），有报道称黄仁勋个人也投资了马斯克旗下公司；一周前英伟达刚缩减了为 OpenAI 数据中心提供的 <span class="num">2500 亿美元</span>融资担保。Google 进入"创始人模式"：布林深度介入 AI 研发、推动资源流向递归式自我改进（RSI），Hassabis 转任董事长，Jeff Dean 离职创办 Discovery Loop（MIT 科技评论）。a16z 则以 <span class="num">17 亿美元</span>押注前 Uber 联创，投向"数字化"的物理世界（MIT 科技评论）。</p>
+    <p>DeepSeek 从 <span class="num">8 月 17 日</span>起上调 API 价格，pro 模型高峰时段命中缓存价格由 <span class="num">0.025</span> 涨至 <span class="num">0.30</span>、涨幅 <span class="num">12 倍</span>（小众软件）——而一周前它刚发布 V4 Pro，性能追平 Fable 5、价格只有其 <span class="num">2%</span>（MIT 科技评论）。阿里开源模型 Qwen3.8-27B 在 HN 上已涨至 <span class="num">1405 分/783 评论</span>。其他动向：GPT-5.6 Sol UltraFast 面向企业预览，宣称速度提升 <span class="num">14 倍</span>、每秒最多 <span class="num">750 tokens</span>（AI 聚合）；中国准备解除对 Manus 创始人的出行禁令（风向旗）。</p>
+  </div>
+
+  <h3>② 写代码的人在想什么</h3>
+  <div class="plain">HN 上最热闹的讨论是"为什么 Opus 5 用起来反而变差了"——基准分明明更高，开发者却觉得它不如前代好相处。另一篇分析则指出，各家模型正在用更少的参数换更强的推理，代价是"记性"变差，问它事实问题经常答错。</div>
+  <div class="card">
+    <p>《Models Are Getting Dumber on Purpose》（<span class="num">182 分/112 评论</span>）给出了一组对照：GLM-5.2 在 AIME 2026 拿到 <span class="num">99.2%</span>、每个 token 只激活约 <span class="num">400 亿</span>参数，Qwen3.5 以 <span class="num">170 亿</span>激活参数拿到 <span class="num">91.3%</span>，DeepSeek V4-Flash 只有 <span class="num">130 亿</span>激活参数——而 2023 年的 GPT-4 传闻要激活约 <span class="num">2800 亿</span>参数还解不好 AIME。代价落在事实记忆上：不允许用工具的事实问答基准 SimpleQA 上，最强的 Gemini 2.5 Pro 也只有 <span class="num">53%</span> 正确率，小模型的幻觉率高达 <span class="num">80%</span> 以上。作者认为实验室在刻意用知识换推理。</p>
+    <p>《Software Engineering fundamentals matter more》（<span class="num">286 分/205 评论</span>）强调基本功仍然重要；《A 3rd World Embedded Engineer Responds to "RISC-V They Should Have Known Better"》（<span class="num">251 分/137 评论</span>）以一个发展中国家嵌入式工程师的视角回应 RISC-V 生态争议（原帖 <span class="num">369 分/423 评论</span>）。今天 HN rank 1 的《The Case Against Formal Verification, 50 Years Later》（<span class="num">41 分/27 评论</span>）则在讨论形式化验证半个世纪来的边界。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>为什么 Opus 5 用起来反而更差了？</h4>
+    <div class="stats">962 points / 853 comments · mun-logadan.github.io</div>
+    <p>作者和同事的普遍感受是：Opus 5 的基准分更高、甚至能对标 Fable，但用起来像降级——它很少在意图不明确时停下来确认，会自行假设、重新解释甚至改动你的方案，需要开发者"保姆式"地照看。作者推测这背后有两股力量：实验室对"能自我改进的 AI"的追求，以及刷基准分的压力——好的基准任务是自包含的，而真实工作不是。HN 上 853 条评论大多在补充各自与 Opus 5 协作时翻车的具体案例。</p>
+  </div>
+
+  <h3>③ 终端与数字生活</h3>
+  <div class="plain">这周跟"用电脑"有关的新东西不少：Firefox 在 iOS 上推出了原生广告拦截，华硕发布了一个能把普通自行车变成电动车的摩擦驱动电机，还有人考证出双休日制度的来龙去脉。</div>
+  <div class="card">
+    <p>Firefox for iOS 上线原生广告拦截（HN <span class="num">462 分/196 评论</span>）：不再依赖第三方扩展，在设置里直接开启即可拦截广告。</p>
+    <p>华硕 Oxiis E250G1 自行车助力器（HN <span class="num">596 分/418 评论</span>）：一套通用摩擦驱动电机系统，可以把任何普通自行车变成智能电动车，峰值功率 <span class="num">500W</span>，带无线踏频传感器和刹车感应尾灯；418 条评论说明这个"小发明"的讨论热度远超产品本身。</p>
+    <p>HN 人文向：《The weekend is 100 years old》（<span class="num">158 分/90 评论</span>）考据双休日制度的历史；《Going Dark, and the era of law enforcement hacking》（<span class="num">455 分/244 评论</span>）讨论执法部门大规模黑客手段对个人数字隐私的冲击。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">这周的科学新闻有两条线：一条是热——欧洲和美国的七月高温都破了纪录，而且科学家说真正的考验在明年；一条是健康——HN 上关于脂肪、心脏和痴呆风险的研究讨论得很热。</div>
+  <div class="card">
+    <p>《Super El Niño Keeps Growing as New Forecasts Reach Record Territory》（HN <span class="num">407 分/296 评论</span>）：最新长期预报再次上调峰值，把 2026 年的事件推向历史性区间；推动力是创纪录的赤道太平洋西风异常，以及持续东传、携带暖水的开尔文波。</p>
+    <p>MIT 科技评论《全球高温破纪录，但明年更热》：欧洲经历了有记录以来最热的 6、7 月，美国本土 7 月刷新 <span class="num">1936</span> 年以来的单月纪录（超过"黑色风暴"年代），韩国测到历史最高温；厄尔尼诺对全球气温最明显的影响可能要到明年才显现，科学家开始把目光投向 <span class="num">2027</span> 年。</p>
+    <p>《Abdominal fat predicts heart disease risk better than BMI》（HN <span class="num">316 分/287 评论</span>）：腹部脂肪比 BMI 更能预测心脏病风险。《A U.S. Strategy to Prevent the Creation of Mirror Life》（HN <span class="num">105 分/80 评论</span>）：美国出台预防"镜像生命"（没有天敌的镜像细菌）的应对策略，回应合成生物学界的共识性担忧。</p>
+    <p>订阅向本周科研：中国科学家首次证实胶球存在（等待近 <span class="num">50</span> 年）；发现"黑洞星"——太阳系大小、中心藏着 <span class="num">10 万倍</span>太阳质量的黑洞；"公老鼠也能生崽了"；谷歌天气预测模型登上 Nature 并开源（以上均 MIT 科技评论，8/10–8/14）。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">中东的进展集中在这两天：加沙停火谈到了第二阶段，卡塔尔和伊朗因为三月被击落轰炸机上的飞行员争执不下；特朗普一边宣布大幅缩减美韩军演，一边庆祝沙特、土耳其、巴基斯坦签了共同防御协议。</div>
+  <div class="card">
+    <p>加沙：哈马斯领导层代表团在开罗会见调解方与担保方，已通报同意特朗普计划的第二阶段，前提是永久停火、以色列全面撤军、管理委员会开始运作（金十数据）。库什纳周日在埃及向哈马斯施压要求开始解除武装，预计周一赴以色列与内塔尼亚胡会面（金十数据）。以军袭击已致黎巴嫩 <span class="num">4346</span> 人死亡（金十数据）。</p>
+    <p>卡塔尔-伊朗：伊朗 8 月 15 日声称，卡塔尔 3 月 2 日击落 <span class="num">2</span> 架伊朗轰炸机后抓获并扣押了 <span class="num">3</span> 名飞行员，且不允许他们与家人联系；卡塔尔否认拘留，称发现一名飞行员遗骸、正商讨移交，并称 4 月曾邀请伊朗代表团访卡听取搜救情况、对方未回应（竹新社、金十数据）。伊朗革命卫队要求允许伊朗专家团队入境调查。昨天简报记录的"卡塔尔否认"与今天伊朗的"扣押"指控，是同一事件的最新一轮交锋。</p>
+    <p>特朗普：已指示战争部长大幅削减与韩国的联合军演规模；对沙特、土耳其、巴基斯坦签署"麦加共同防御协议"表示欢迎（金十数据）。伊朗单方宣称美军已被驱逐出海峡、林肯号航母至少被击中一次（金十数据援引伊朗军方说法）。</p>
+    <p>日本 8 月 15 日纪念二战结束 <span class="num">81</span> 周年，防长小泉进次郎、自民党干事长铃木俊一等政要参拜靖国神社，中韩强烈谴责（联合早报）。俄乌：乌克兰国防部情报总局报告在俄军 S-71 巡航导弹残骸中发现英伟达 Jetson Orin 模块，呼吁加强出口管制（cnBeta）。英国：皇家海军 Kraken K3 Scout 无人机被发现含中国组件并向中国境内设备传输信号，国防部加强对供应链审查（联合早报）。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">一部粗糙到被骂的国产动画《牛来》靠"审丑"翻红，票房冲进国产动画前十；另一边，人口结构的变化开始压到幼儿园和教师头上——去年幼儿园教师数量明显下降。微软和诺基亚则先后收缩在华业务。</div>
+  <div class="card">
+    <p>《牛来》：放映场次从 8 月 14–15 日的 <span class="num">21 场</span>激增至 <span class="num">359 场</span>，票房突破 <span class="num">500 万元</span>、跻身今年国产动画电影票房前 <span class="num">10</span> 名（联合早报）。影片 8 月 5 日"裸映"上映，前 10 天票房仅 <span class="num">7705 元</span>；制作团队只有导演信雨萌和她的母亲两人，花了五年"手搓"完成，连片尾曲都是母亲唱的。彭博称社媒关注度正在推动中国消费者行为（联合早报）。</p>
+    <p>人口与教育：2025 年全国幼儿园专任教师 <span class="num">261.26 万</span>人，比上年减少 <span class="num">21.93 万</span>人；幼儿园减少 <span class="num">2.14 万</span>所（下降 <span class="num">8.45%</span>）；在园幼儿 <span class="num">3225.52 万</span>人、减少 <span class="num">358.47 万</span>人，连续第五年下降；新生儿从 2024 年的 <span class="num">954 万</span>降至 <span class="num">792 万</span>，出生率为 <span class="num">1949</span> 年以来最低。部分幼师院校转向养老、无人机等专业（联合早报）。二季度离婚 <span class="num">76.1 万</span>对创同期新高（中国数字时代转载）。</p>
+    <p>外企收缩：微软过去五年在华至少关闭 <span class="num">15</span> 家分支机构和合资企业，中国仅占其全球营收 <span class="num">1.5%</span>，2023 年曾考虑退出，留下的原因之一是服务字节跳动等需要西方技术管理海外业务的中国企业（风向旗援引路透/德国之声）；诺基亚关闭杭州研发中心、裁员 <span class="num">1600</span> 人，北京、成都、青岛、上海的研发中心也在关闭之列（风向旗援引凤凰科技）。</p>
+    <p>产业与物流：中国汽车出口激增，专用汽车运输船船期排到数年之后，租船费率今年已上涨 <span class="num">65%</span>，全球汽车运输船队五年扩约 <span class="num">40%</span> 仍不够用（风向旗援引华尔街日报）；海杰航运"迪拜塔"号 8 月 15 日晚驶离宁波舟山港，中欧北极快航进入周班运营，航程较苏伊士航线约 <span class="num">40 天</span>缩减近一半（联合早报）。</p>
+    <p>其他：广西洪灾冲毁养蛇场致约 <span class="num">900 条</span>蛇（含毒蛇）逃逸、一名村民被咬身亡，特稿揭开广西"百亿蛇业"——去年养殖量超 <span class="num">3000 万条</span>蛇、产业规模数百亿元（联合早报）；中国仍有 <span class="num">52</span> 条河流超警（联合早报）；长征七号改 8 月 10 日发射失败六天后，8 月 16 日长征十二号成功发射卫星互联网低轨 <span class="num">24 组</span>卫星（联合早报）；官媒揭秘福建舰甲板"彩虹战队"七色马甲分工，首度公开空警-600 弹射起飞细节（联合早报）。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">这周有几件事值得盯着看：原定周一上午发布的七月经济数据被推迟到当天下午，与一场纪念大会撞在同一天；一名男子用 AI 编造"青岛大学新校徽像旭日旗"被行政拘留；胡锡进发文抵制 AI 短剧和大规模无人出租车。</div>
+  <div class="card">
+    <p>7 月经济数据发布时间调整至 8 月 17 日（周一）下午 <span class="num">3 时</span>，国新办发布会同步改到下午，一反近期"周一上午 <span class="num">10 时</span>同步发布"的惯例；当天上午举行纪念江泽民诞辰 100 周年大会、习近平将出席（联合早报援引彭博）。</p>
+    <p>青岛：<span class="num">35</span> 岁龙姓男子用 AI 编造"青岛大学新校徽像旭日旗"的视频并散布，被依法行政拘留并处罚款；校方称建校以来从未使用过网传校徽（联合早报）。AI 生成内容与谣言治理的边界再添一例。</p>
+    <p>胡锡进发文抵制 AI 短剧与大规模发展无人出租车（cnBeta，8/12）。xAI 面临新指控：一名女子称其继父利用 Grok 将她童年照片篡改为露骨图像（cnBeta，8/16），AI 生成内容的法律责任问题持续累积。背景是过去一周美国多名议员要求 OpenAI、Anthropic 解释智能体失控，并呼吁暂停新模型开发（cnBeta，8/11）。</p>
+  </div>
+
+  <h3>⑧ 一周回顾</h3>
+  <div class="plain">把窗口拉长到一周：AI 从"发布潮"走向"资本整合"，DeepSeek 用一周时间完成了"低价冲量"到"涨价回收"的转身；高温与厄尔尼诺是气候主线；国内的人口、教育与产业数据集中披露，西方科技公司撤华的趋势变明显。</div>
+  <div class="card">
+    <p><b>AI 一周。</b>DeepSeek V4 Pro 上线（性能追平 Fable 5、价格仅其 2%）并开源智能体框架 Harness（上线 12 小时获 5 万星），8 月 17 日起 API 最高涨价 12 倍；阿里开源 Qwen3.8-27B（HN 1405 分）、智谱发布 GLM-5.3（HN 1151 分）；Anthropic 季度营收 115 亿美元、Model 2 暂不发布、公开系统提示词；Stripe 以逾 70 亿美元收购 OpenRouter；英伟达披露 SpaceX 持股、缩减 OpenAI 数据中心担保；谷歌布林介入推动"自我改进"，a16z 17 亿美元押注"数字化物理世界"。</p>
+    <p><b>撤华与产业一周。</b>微软五年关闭 15 家在华机构、诺基亚关闭杭州研发中心裁员 1600 人；中国汽车出口船期排到数年后、租船费率涨 65%；中欧北极快航周班化；长征七号改发射失败六天后，长征十二号补发卫星互联网卫星成功。</p>
+    <p><b>地缘一周。</b>美伊从霍尔木兹封锁僵局走向"伊朗-阿曼通行协议"，卡塔尔击落伊朗轰炸机的旧事因"扣押飞行员"指控升级为新一轮交锋；加沙进入第二阶段谈判，库什纳穿梭开罗与特拉维夫；特朗普缩减美韩军演、庆祝沙土巴麦加防务协议；朱镕基 8 月 12 日逝世、悼念贯穿整周，纪念江泽民诞辰 100 周年大会 8 月 17 日举行。</p>
+    <p><b>科研一周。</b>胶球证实（等近 50 年）、发现黑洞星、公鼠生崽、分子筛原子级 CT、谷歌天气模型登上 Nature；本周新增太阳光量子纠缠、超声贴片调睡眠、清华-伯克利连续世界模型（昨天已详）；欧洲与美国 7 月高温破纪录，厄尔尼诺可能让明年更热。</p>
+    <p><b>国内数据一周。</b>幼儿园教师减少 21.93 万、新生儿 792 万、出生率创 1949 年以来最低，二季度离婚 76.1 万对创新高；7 月经济数据推迟发布；《牛来》从 7705 元票房冲到 500 万元；郭德纲举报与背调、地铁安检等监督话题延续（昨天已详）。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、联合早报、竹新社、风向旗、MIT 科技评论、cnBeta、小众软件、中国数字时代、AI 聚合等，覆盖 8 月 15–17 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 295 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
