@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-08-21</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 8 月 21 日 · 周五 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>Anthropic 准备以追平甚至超过 SpaceX 的规模冲击 IPO，阿里财报显示 AI 云与算力季度收入超 484 亿元；GitHub 公布近八小时大宕机原因，指向负载均衡饱和与一个把流量放大十倍的客户端重试 bug；许家印八罪一审被判无期徒刑；美伊战争进入第 25 周，美军林肯号航母返航、伊朗通胀飙至 89%；Nature 统计显示九成生物医学论文已带 AI 痕迹。</div>
+
+  <h3>① AI 军备竞赛与资本</h3>
+  <div class="plain">这周 AI 公司的钱在加速涌向公开市场。Anthropic 准备最早本月底公开提交上市申请，目标规模要追平甚至超过 SpaceX 创下的纪录；OpenAI 则承诺不保留企业客户的数据，用来和对手抢客户。国内，阿里巴巴发布季度财报，AI 云和算力收入超过 484 亿元，自研芯片已经卖给 650 多家外部客户。</div>
+  <div class="card">
+    <p>Anthropic 的上市节奏明显加快：据知情人士，其 IPO 目标规模追平或超过 SpaceX（IPO 筹集 <span class="num">750 亿美元</span>，行使超额配售后升至 <span class="num">862 亿</span>），最早本月底公开提交；公司二季度初步收入超 <span class="num">115 亿美元</span>（去年同期 7.87 亿），截至 7 月底年化运行率已达 <span class="num">650 亿美元</span>（金十）。与此呼应，Meta 悄然成为微软最大 AI 客户，每年采购规模达数亿美元（风向旗）。</p>
+    <p>阿里巴巴财报：季度 AI 云与算力收入 <span class="num">484.37 亿元</span>，集团收入同比升 <span class="num">9%</span>、EBITA 利润率升至 <span class="num">12%</span>；最新一代 AI 处理器真武 M890 已在 20 多个行业超 <span class="num">650 家</span>外部客户商业化应用（金十）。</p>
+    <p>产品与价格端：OpenAI 承诺不留存企业客户数据，作为对抗 Anthropic 的竞争举措（AI 聚合）；DeepSeek 涨价、OpenAI 降价，Agent 改写大模型价格战（MIT 科技评论 8/18）；Cerebras 发布 CS-4 加速器，宣称 <span class="num">4 万亿晶体管、90 万核心</span>（AI 聚合）；美国就算力期货交易公开征求意见（风向旗）；Token 价格腰斩后暂时止跌（金十）。</p>
+    <p>HN 侧：Mojo 语言宣布开源（<span class="num">309 分</span>）；《Pacing model development in an era of cyber-critical capabilities》讨论在"网络关键能力"时代如何给模型开发踩刹车（<span class="num">162 分/279 评论</span>）。</p>
+  </div>
+
+  <h3>② 写代码的人在想什么</h3>
+  <div class="plain">本周开发者社区最热闹的事，是 GitHub 连续宕机近八个小时，不少开源项目开始认真考虑搬家。HN 上热度最高的话题则是"别把 AI 的答案直接转发"——别人问你问题，要的是你的回答，一堵 AI 文本墙没有意义。</div>
+  <div class="card">
+    <p>GitHub 8/17 宕机从 <span class="num">13:28 UTC</span> 持续到 <span class="num">21:15 UTC</span>，共 <span class="num">7 小时 47 分</span>，Issues、Pull Requests、API、Actions、Copilot 大量出错。官方事后解释：直接原因是美国中部数据中心负载均衡器网络饱和，自动扩容策略配置错误雪上加霜，Visual Studio Code 里一个重试 bug 把流量放大了 <span class="num">10 倍</span>（cnBeta；对应 HN 榜首帖，<span class="num">140 分/150 评论</span>）。</p>
+    <p>围绕 AI 的使用方式，HN 今天的最高分帖《Don't paste the AI, please》（<span class="num">980 分/529 评论</span>）见下方头条黑卡。</p>
+    <p>工程工具继续上新：Go 1.27 发布（<span class="num">736 分/256 评论</span>）、《Git at any scale》（<span class="num">241 分/68 评论</span>）、Bun 1.4（<span class="num">212 分/131 评论</span>）、Linux 7.2（<span class="num">164 分/54 评论</span>）、《HTML Can Do That》（<span class="num">484 分/139 评论</span>）。</p>
+    <p>安全与供应链：恶意 Rust crate Arrayref 被发现在构建阶段执行 payload（<span class="num">339 分/325 评论</span>）；Google 停止为部分 Android 源码仓库推送 Git tags，引发开源社区对透明度下降的担忧（<span class="num">784 分/299 评论</span>）。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Don't paste the AI, please</h4>
+    <div class="stats">980 points / 529 comments · dontpastetheai.com</div>
+    <p>一个极简网页在 HN 上引发 529 条评论：当你把问题丢进聊天机器人、复制答案再原样发回，收件人手里其实也有同样的工具，他们问你是想要你的上下文、品味和判断。作者不反对用 AI，建议把它当起草工具，读一遍再写自己的版本。这场争论的实质是：AI 普及之后，"人的回答"还剩多少价值。</p>
+  </div>
+
+  <h3>③ 硬件、存储与算力</h3>
+  <div class="plain">存储与算力端这周动作不断。SK 海力士一边和工会谈妥了涨薪，一边押注把光互连做进内存；人形机器人的出货量已经占到全球的九成以上，宇树科技的创始人对"机器人走进家庭"给出了二到三年的预期。</div>
+  <div class="card">
+    <p>SK 海力士联合多家机构在 Nature Electronics 发表综述，提出把共封装光学（CPO）从芯片间互连一路推进到内存接口：GPU 可通过光子中介层连接更大的内存池，多个 AI 加速器共享内存资源，缓解封装空间与电气接口限制（MIT 科技评论）。劳资端，SK 海力士与工会达成初步协议：涨薪 <span class="num">6.3%</span>、六成绩效奖改为股票发放（风向旗）；摩根大通预计其股东回报上限"解除"，或再砸 <span class="num">1300 亿美元</span>回馈股东（金十）。三星拟将平泽工厂扩建为三层厂房（金十）；美光设立研究实验室、未来十年投资 <span class="num">100 亿美元</span>（金十）。</p>
+    <p>人形机器人：上半年出货量超 <span class="num">4 万台</span>、全球占比提升至 <span class="num">97%</span>（金十）；宇树科技王兴兴称具身智能最快 <span class="num">2 至 3 年</span>迎来"ChatGPT 时刻"、机器人走进家庭（联合早报、AI 聚合）。</p>
+    <p>HN 侧：Pixel 11 Pro Fold 的评论帖被命名为"一个时代的终结"（<span class="num">87 分/252 评论</span>），讨论折叠屏与硬件创新的瓶颈。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">硬科学这周有几条硬进展：一件宇航员背心在无人任务里把辐射暴露减了一半；中国团队做出能在肠道感知血糖的工程益生菌；MIT 用细菌搭出能算加法的"电路板"。Nature 还统计出一个数字：九成生物医学论文已经带上了 AI 痕迹。</div>
+  <div class="card">
+    <p>宇航员防护：一款背心式服装在 NASA 无人任务中实测将辐射暴露减半，可让宇航员免于太阳风暴的最坏影响（Nature）。</p>
+    <p>中国团队：华东师大叶海峰等人在 Nature 发表工程益生菌 GIFT，可在肠道感知葡萄糖变化、自动开关治疗分子表达，把 GLP-1 接入系统后在小鼠与自发性 2 型糖尿病食蟹猴中验证了降糖效果；团队已成立公司推动产业转化（MIT 科技评论）。</p>
+    <p>MIT 把细菌改造成"生物晶体管"：一套 5 种基础菌株组成的模块化系统，最大规模由 <span class="num">24 个</span>互联菌落组成，可对两个输入做加法，一次计算约 <span class="num">8 小时</span>；目标是把计算能力带到植物根部、感知干旱与病虫害（Nature Chemical Biology，MIT 科技评论）。</p>
+    <p>AI 与科学：Nature 统计发现，12 月发表并收录于 PubMed 的生物医学论文中约 <span class="num">90%</span> 显示 AI 帮助痕迹，远超此前对 LLM 使用的估计；另一篇报道介绍用 AI 工具预测哪项科学成果会带来专利。</p>
+    <p>其他硬科学：部分城市树木释放的化合物会加剧臭氧污染，气温上升可能放大这一问题（Nature）；给抗体药物接上白蛋白可阻止其穿过胎盘、保护胎儿（Nature）；美国 NSF 扣留 <span class="num">10 亿美元</span>预算给白宫特别项目，新资助数将创四十年最低（Nature）；月球航天器定位到两座巨型盾状火山，揭示月球动荡的过去（Nature）。</p>
+    <p>HN 侧：伦敦超低排放区实施后，儿童受损肺功能出现恢复（<span class="num">408 分/399 评论</span>）；《Why the Ocean Cleanup hasn't solved the plastic pollution crisis》（<span class="num">87 分/79 评论</span>）；《Watching TikTok and Instagram deactivates the cognitive control network》（<span class="num">259 分/99 评论</span>）；《Stop Anthropomorphizing Intermediate Tokens as Reasoning/Thinking Traces》（<span class="num">183 分/90 评论</span>）；端侧 125M 钢琴自动续写模型（<span class="num">452 分/100 评论</span>）。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">美伊战争进入第 25 周。美军林肯号航母开始返航，但华盛顿同时威胁对伊朗实施"前所未有的经济孤立"；伊朗的通胀率已飙到 89%，食品价格一年涨了 164%。霍尔木兹海峡的油轮运费创下 2008 年以来新高，布伦特原油站上 93 美元。</div>
+  <div class="card">
+    <p>美伊：战争第 <span class="num">25</span> 周，美军伤亡更新为 <span class="num">18 死 757 伤</span>（金十）；林肯号航母已开始返航、仍在第五舰队作战区域（CNN，金十）；美财长宣布 <span class="num">24 日</span>举行新闻发布会阐述对伊行动，并威胁实施"前所未有的经济孤立"（金十），伊朗谴责新一轮制裁（金十）；伊朗通胀率飙至 <span class="num">89%</span>、食品价格上涨 <span class="num">164%</span>（CNBC，金十）；卡塔尔联手埃及推动美伊停火、呼吁保障海峡航行（金十），阿曼与日本强调开放霍尔木兹海峡的迫切性（金十）。</p>
+    <p>能源：霍尔木兹袭击频发，海湾产油国大举收购与租赁油轮、用自有船队掌控出口通道，油轮价格与运费刷新 <span class="num">2008 年以来</span>高点（金十）；布伦特原油结算 <span class="num">93.78 美元</span>、上涨 2.36%（金十），美国批准提前销售冬季汽油缓解燃油压力（金十）。</p>
+    <p>美债与市场：美国国债规模突破 <span class="num">40 万亿美元</span>，债务每秒增加 9 万美元、利息每天偿还 31 亿美元（金十；HN 同日帖子 <span class="num">38 分/31 评论</span>）；财政部把长期国债流动性回购上限提高一倍，长端收益率回落，金价单日拉升 4% 试探 <span class="num">4500 美元</span>、现货白银站上 <span class="num">68 美元</span>（金十）；华尔街"债券义警"与美财长正面对决的风险上升（金十）。</p>
+    <p>美联储：7 月会议纪要确认鹰派底色，加息仍是潜在选项（金十）；穆萨莱姆表示"在七月份建议加息"、希望 18 个月内把通胀降至 2%（金十）；戴利称通胀目标存在"相当大的偏离"（金十）。</p>
+    <p>周边：朝鲜 8/20 发射 <span class="num">10 余枚</span>短程弹道导弹（竹新社），韩国估计其拥有 <span class="num">80 至 120 枚</span>核武器（风向旗）；俄军袭击基辅致 <span class="num">16 死 40 伤</span>（竹新社），乌克兰称将以远程打击回应（金十）。</p>
+    <p>台海与周边：台湾明年国防预算拟增 <span class="num">18%</span>、首破 <span class="num">1 万亿台币</span>、占 GDP 近 <span class="num">4%</span>（联合早报）；台美签署 <span class="num">38 亿台币</span>后勤合约（联合早报）；美国批准对卡塔尔 <span class="num">45 亿美元</span>军售（金十）；中国集装箱船首次抵达俄摩尔曼斯克港（金十）；美加贸易谈判"非常接近"达成协议（金十）。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">电影《牛来》的票房还在涨，有影院买不到官方海报就自己手搓了一张。专栏作者王五四说，这是观众对这几年国产烂片的一次"报复性投票"。另一边，中韩外交官在首尔散步，双方都说关系在全面恢复。</div>
+  <div class="card">
+    <p>《牛来》：票房持续上涨，影院自制"手搓"海报应对官方物料缺位（联合早报）；王五四撰文称爆火源于观众对工业烂片的不满积压已久，"报复性投票"（中国数字时代）；环时则批评台湾舆论借机炒作"改日本时区"（联合早报）。</p>
+    <p>中韩外交：韩国总统李在明会见王毅，双方肯定中韩关系全面恢复（联合早报）；中韩外长南山漫步（联合早报）；韩国拟对自中国大陆和台湾进口的固体氢氧化钠征收反倾销税（联合早报）；中韩领导人 APEC 会晤已在酝酿（联合早报）。</p>
+    <p>国内民生与市场：上海出台房地产刺激措施，优化公积金政策、扩大购房首付提取范围、实施"以旧换新"贷款补贴（联合早报、金十）；重庆时代峰峻楼下的饭圈聚集事件经警方处理后平息（联合早报）；郭德纲烟台三场演出因"场地原因"延期，此前涉改编红歌未报备被查（联合早报）。</p>
+    <p>HN 侧：一篇向英语老师道歉的帖子《I like 'em thick》（<span class="num">470 分/227 评论</span>）讨论文字密度与写作价值；《Windows brings out the Rorschach test in everyone》（<span class="num">334 分/126 评论</span>）借旧文谈技术选择背后的性格投射。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">恒大创始人许家印一审被判无期徒刑，八项罪名并罚、没收全部个人财产。同一周，一篇报道讲了 39 岁程序员猝死后工伤认定有多难，另一篇算了笔账：上海社保缴费下限一年只涨了 86 元。</div>
+  <div class="card">
+    <p>许家印案：8/20 深圳中院一审宣判，非法吸收公众存款、集资诈骗、违法发放贷款、欺诈发行证券、违规披露重要信息、单位行贿、违法运用资金、职务侵占 <span class="num">8 罪</span>并罚，判处无期徒刑、没收个人全部财产（竹新社、联合早报、cnBeta、中国数字时代多源交叉印证）；联合早报梳理恒大六年造假套资路径，中国数字时代分析其资金吸入与塌陷逻辑。</p>
+    <p>劳动与社会保障：39 岁程序员猝死于卫生间后工伤认定陷入困境，作者结合杭州"酒局献祭"通报批评官方回应避重就轻（呦呦鹿鸣，中国数字时代）；上海 2026 年度社保缴费基数公布，平均工资 <span class="num">12577 元</span>首破 12500，但缴费下限 <span class="num">7546 元</span>只比去年涨了 <span class="num">86 元</span>（约 1.15%），上限 37731 元（中国数字时代）。</p>
+    <p>公民权利：《中国新闻周刊》披露，22 岁名校女生在父母授意下被送入戒网瘾学校，跨省行程 700 公里、被关 <span class="num">59 天</span>，涉及强制控制与招生利益链（中国数字时代转载）。</p>
+    <p>AI 伦理与网络安全：Meta 旗下平台被曝投放"AI 脱衣"软件广告，含深度伪造女政客视频（《连线》报道，cnBeta、风向旗）；前 Meta 工程总监出庭作证，指控扎克伯格把增长置于儿童安全之上（cnBeta）；国内黑客用"越狱"AI 攻陷政府网站并在群里炫耀，导致地下 API 中转站被警方查处（cnBeta）。</p>
+    <p>文化审查：官媒头版提出"旗帜鲜明反对伪史论"，历史内容审核收紧（联合早报）；中国要求各省级文物行政部门核查整改博物馆展览内容（联合早报）；韩国光州双年展台湾馆被更名（联合早报）。</p>
+    <p>HN 侧：博客作者发现 AliExpress 网页用无声 WebAudio 指纹识别采集设备信息，还会激活蓝牙多点连接抢占耳机音频（<span class="num">798 分/271 评论</span>）；《Aaron Swartz was prosecuted for scraping, while Meta does it without consequence》对照数据采集的双重标准（<span class="num">326 分/48 评论</span>）。</p>
+  </div>
+
+  <h3>⑧ 一周回顾</h3>
+  <div class="plain">这一周（8/14–8/21）的主线：AI 资本向公开市场集结，OpenAI 与 Anthropic 双双筹备上市；Moderna 的 mRNA 癌症疫苗三期成功与朱雀三号火箭一级陆地回收是科研端最重的两条消息；国内批判线围绕郭德纲红歌审查、《牛来》爆火、杭州地产酒局与许家印宣判展开；地缘上美伊战争进入第 25 周、美债突破 40 万亿。</div>
+  <div class="card">
+    <p><b>AI 资本与产品。</b>OpenAI 秘密递交 IPO 文件、计划 2027 年上市，Anthropic 拟以追平 SpaceX 的规模公开递交；Meta 成为微软最大 AI 客户；半导体巨头今年参与初创融资超 <span class="num">2570 亿美元</span>，其中 OpenAI 一轮 1220 亿占近半（MIT 科技评论）；DeepSeek 涨价、OpenAI 降价改写价格战（MIT 8/18）；Anthropic 发布 186 页风险报告、限制最强模型开放（MIT 8/15）。</p>
+    <p><b>科研进展。</b>Moderna mRNA 黑色素瘤疫苗 III 期成功、股价单日翻倍（8/19）；朱雀三号实现中国首次轨道级火箭一级陆地回收，海外称其"Temu Falcon"（8/19，MIT 深度文）；宇航员背心辐射减半、智能益生菌、细菌电路板（8/20）；发作性睡病新药为睡眠疗法打开新路（Nature 8/17）；最大全电动飞机首飞成功（MIT 8/18）；"黑洞星"天体被发现（MIT 8/14）；Nature 统计九成生物医学论文带 AI 痕迹（8/20）。</p>
+    <p><b>批判与监督。</b>郭德纲被举报、红歌改编审查自 8/14 起持续一周；《牛来》爆火引发"报复性投票"讨论；杭州地产"酒局献祭"事件官方通报；许家印一审无期（8/20）；39 岁程序员工伤认定争议；上海社保下限微涨 86 元；《中国新闻周刊》披露 22 岁女生被送戒网瘾学校 59 天；非税收入占省财政比例 43.7% 引发关注（中国数字时代 8/17）。</p>
+    <p><b>地缘与市场。</b>美伊战争进入第 25 周、美军 18 死 757 伤、林肯号返航；霍尔木兹油轮运费创 2008 年来新高、布伦特站上 93 美元；美债突破 40 万亿、财政部回购压长端收益率、黄金逼近 4500；美联储 7 月纪要偏鹰；朝鲜再射 10 余枚导弹；台湾明年国防预算首破万亿台币；美加谈判接近达成协议。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、联合早报、风向旗、竹新社、中国数字时代、Nature、MIT 科技评论、cnBeta、AI 聚合、十年之约博客等，覆盖 8 月 19–21 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 553 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
