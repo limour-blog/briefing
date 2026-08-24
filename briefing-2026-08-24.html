@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-08-24</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 8 月 24 日 · 星期一 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>阿里巴巴拟配售约 102 亿美元新股、全部投向 AI，英伟达 AI 服务器明年起涨价超 15%；伊朗议会批准向过峡船只收费、霍尔木兹交通量却激增近 400%，美伊对抗进入新阶段；HN 最热的是用户花 266 美元让国产大模型夺回自己平板的故事（569 分/248 评论），Anthropic 被曝大规模扫描旧书的"巴拿马计划"（628 分/901 评论）。</div>
+
+  <h3>① AI 军备竞赛与资本</h3>
+  <div class="plain">中国的科技公司这周在为 AI 密集融资。阿里巴巴宣布向境外投资者配售新股份，募到的钱全部投进 AI；英伟达一边向客户预告明年 AI 服务器要涨价，一边花重金从一家 AI 初创公司买技术和研发团队。谷歌的端侧开源模型下载量也在冲新高。</div>
+  <div class="card">
+    <p>阿里巴巴 8 月 23 日宣布拟配售 <span class="num">800 亿港元</span>（约 <span class="num">102 亿美元</span>）新股，配售价每股 <span class="num">112.70 港元</span>、发行 <span class="num">7.1 亿股</span>，预计 8 月 26 日完成，净募资 <span class="num">100%</span> 投向全栈 AI 能力，公司称这是香港上市公司历来规模最大的一级后续发行（金十/吴说）。阿里上一季度资本开支已接近 <span class="num">100 亿美元</span>，配售完成后 AI 投入将直接摊薄股权结构。</p>
+    <p>英伟达通知部分大客户，搭载其 AI 芯片的服务器从 <span class="num">2027 年初</span> 起在不少情况下提价超 <span class="num">15%</span>，涉及 Vera Rubin 与 Grace Blackwell 系统，主因是内存成本上涨（吴说白线日报/Bloomberg）。资本侧，英伟达以 <span class="num">120 亿美元</span> 估值向 Poolside 投资 <span class="num">10 亿美元</span>、再花 <span class="num">60 亿美元</span> 买下技术产权及部分研发人员，约 <span class="num">100 多名</span> 员工并入其 Nemotron 开源大模型团队（AI 聚合）。</p>
+    <p>开源与生态：Hugging Face 被曝收到多份并购提议、潜在交易价值达 <span class="num">130 亿美元</span>（金十/Business Insider）；谷歌 DeepMind 的端侧开源模型 Gemma 累计下载量突破 <span class="num">10 亿次</span>、衍生变体超 <span class="num">10 万个</span>（风向旗/财联社）；Codex 已接入 DeepSeek-V4-Flash（AI 聚合）。</p>
+    <p>书籍与训练数据：Anthropic 被曝"巴拿马计划"——2024 年 4 月的内部文档称要"破坏性扫描全世界所有的书"（cnBeta/AI 聚合）；HN 帖《AI companies destroy physical books – let's scan rare books before it's too late》（<span class="num">628 分/901 评论</span>）与此完全对应：多个 AI 公司收购二手书扫描后销毁，把人类知识锁进私有服务器，Anna's Archive 呼吁全球志愿者赶在被销毁前扫描上传。</p>
+  </div>
+
+  <h3>② 写代码的人在想什么</h3>
+  <div class="plain">开发者社区这周把注意力从"工具多不多"转回"自己能不能写好代码"。HN 首页第一帖是一位资深工程师讲怎么找到值得解决的问题；还有人在争论新的编程语言范式、研究怎么把编译时间压到极短，也有人复盘一周里用 Codex 比 Claude 更多的体验。国内博客圈在聊 AI 本地部署和提示词工程，Anthropic 则把员工入职第一课公开了出来。</div>
+  <div class="card">
+    <p>HN 高分帖：《How I find problems to solve as a staff engineer》（<span class="num">153 分/60 评论</span>）讲资深工程师如何选题；《What Is a Harness?》（<span class="num">219 分/113 评论</span>）讨论构建系统的抽象；《JIT Compiling Code in 5μs》（<span class="num">152 分/95 评论</span>）把 JIT 编译压到 <span class="num">5 微秒</span>；《Thinking in Python》（<span class="num">281 分/59 评论</span>）与《A Friendly Introduction to Racket》（<span class="num">259 分/164 评论</span>）谈语言思维；《Zig's Io.Threaded is neat》（<span class="num">160 分/94 评论</span>）讨论并发模型。</p>
+    <p>AI 辅助的边界：《A week of using Codex more than Claude》（<span class="num">234 分/267 评论</span>）记录一周实测；《My agent.md to improve LLM-assisted code quality》（<span class="num">76 分/27 评论</span>）给出 agent 配置实践；《New MCP Roadmap》继续在榜（<span class="num">261 分/154 评论</span>）。订阅侧：Anthropic 公开员工入职第一课、官方称删掉了 <span class="num">80%</span> 的 skills，并发布报告称 AI 没有导致失业率增加（AI 聚合）。十年之约博主写了 nProtect BlackCipher 反作弊分析、PBKDF2 降档与 HMAC Pepper 安全加固（<span class="num">10ms</span> 魔咒），以及常用 AI 本地部署工具盘点。</p>
+  </div>
+
+  <h3>③ 硬件、存储与算力</h3>
+  <div class="plain">这周硬件圈在吵两件事：Wi-Fi 换代头一回不把速度当第一卖点，把可靠性放在首位；电子阅读器被解锁出装应用的能力。国内这边，嫦娥七号因为不满足发射条件，今年预定的窗口赶不上了；苹果被曝要出史上最贵的 MacBook Pro；内蒙古乌兰察布成了新的算力热土。</div>
+  <div class="card">
+    <p>Wi-Fi 8 由 IEEE 命名为"超高可靠性"（Ultra High Reliability），首次把重点从速率转向稳定性，HN 帖《Wi-Fi 8 is the first wireless upgrade in years that isn't chasing speed》（<span class="num">270 分/211 评论</span>）讨论家用网络为什么需要它。</p>
+    <p>设备所有权与复古硬件：Kobo 电子书阅读器被第三方项目 Cobalt 解锁出应用与 SDK 能力（<span class="num">650 分/205 评论</span>）；《MartyPC》用 Rust 写了早期 PC 模拟器（<span class="num">204 分/84 评论</span>），《The End of an Athlon》（<span class="num">173 分/83 评论</span>）与《Z80 – The 1970s Microprocessor Still Alive》（<span class="num">150 分/74 评论</span>）都是复古硬件话题；《I Dream of Quieter Computing》（<span class="num">106 分/108 评论</span>）怀念安静的个人计算。</p>
+    <p>订阅侧：嫦娥七号任务不满足发射条件，今年预定窗口无法发射（联合早报/金十/风向旗）；苹果下一代 MacBook Pro 预计搭载 M6 芯片、均热板与触控屏，被称史上最贵（AI 聚合）；富加镓业 6 英寸氧化镓晶锭等径厚度逾 <span class="num">70mm</span>（金十）。算力侧，乌兰察布已开业或开工近 <span class="num">100</span> 个数据中心、中企承诺容量 <span class="num">12.5 吉瓦</span>，规模超 OpenAI 星际之门规划的 <span class="num">10 吉瓦</span>；当地年降水仅约 <span class="num">14 英寸</span>，上月水厂被迫每晚停水 <span class="num">7 小时</span>，约 <span class="num">37%</span> 电力仍来自煤电（AI 聚合/WIRED）。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>I spent $266 and four AI models to own my tablet. GLM-5.3 finished it</h4>
+    <div class="stats">569 points / 248 comments · ericpardee.github.io</div>
+    <p>一位有二十年从业经验的信息安全工程师，花 114 美元从 eBay 买到一台亚马逊 Fire HD 10 平板，结果设备持续被亚马逊的软件强制关机，他把"夺回自己的设备"当成挑战。Claude 诊断五个月后被安全机制切断；国产模型接力——Kimi K3 花 164 美元找到利用 CVE-2022-38181（Mali GPU 漏洞）的 root 方法，GLM-5.2 花 21.9 美元抓出致命 bug，GLM-5.3 在 80 美元订阅的第一天完成收尾。作者强调自己"最复杂的事只是向 LLM 提问"，文章是对 AI 模型能力与数字设备所有权的一次实证对照，也解释了国产开源模型为何在 HN 上持续获得口碑。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">这周的科研新闻里，最出格的是美国一家公司计划从太空往地面反射阳光——它已经拿到发射许可，天文学家正在反对。医学这边，日本团队把一类新型 RNA 药物的活性提升了许多倍，斯坦福找到了强化免疫细胞攻破实体瘤的办法；中国队在人形机器人世界杯上拿了冠军。HN 上讨论最多的是椰子油航空燃料和一项关于输血风险的研究。</div>
+  <div class="card">
+    <p>太空反射阳光（MIT 科技评论）：Reflect Orbital 计划今年晚些发射测试卫星 Eärendil-1，展开一面 <span class="num">18×18 米</span> 的反射镜，远期最多部署 <span class="num">5 万颗</span> 配备 <span class="num">54×54 米</span> 反射镜的更大卫星；FCC 今年 7 月已批准发射，天文学家警告这与天文学"无法共存"。</p>
+    <p>医学（金十/cnBeta）：日本名古屋大学与富士胶片开发出新型脂质纳米颗粒，首次把带帽环状 RNA（Cap-cirRNA）高效递送入动物体内，活性提升 <span class="num">10 倍</span> 且炎症极低，论文发表于《细胞·生物材料》；斯坦福医学院找到"超级强化"自然杀伤细胞（NK 细胞）的方法，改造后细胞能渗透进实体瘤并显著减缓小鼠肿瘤生长。</p>
+    <p>神经接口与机器人：上海交大孵化的脑器时代完成数千万元种子轮融资（元禾璞华领投），以功能超声神经成像（fUSI）走非侵入、百万通道级全脑接口路线，首款产品"全能一号"融合肢体、口面部与言语运动意图（MIT 科技评论）；RoboCup 人形组决赛，清华火神队 <span class="num">6:2</span> 战胜中国农大山海队、连续第二年夺冠，前三名用的都是加速进化的 Booster T1（MIT 科技评论）。</p>
+    <p>HN 科研帖：椰子油生物燃料掺混后热效率与纯煤油相当、未燃烃排放更低（<span class="num">123 分/119 评论</span>，大阪市立大学团队）；输血制品传播淀粉样蛋白病理风险的研究（<span class="num">36 分/18 评论</span>）；幼年压力在小鼠脑细胞里留下"疤痕"（<span class="num">146 分/75 评论</span>）。能源侧：日本通过公私合作基金向核聚变和回收初创企业提供 <span class="num">1.25 亿美元</span>（金十/日经亚洲），意大利埃尼集团押注核聚变成为"下一个炼油厂"（金十/FT）。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">美伊对抗这周从军事转向了经济与航运。伊朗议会批准向通过霍尔木兹海峡的船只收费，伊朗官员说美国若打经济战、海峡将再无石油出口；美国这边称已拦截大量商船，众议院议长说战争很快进入"新阶段"。叙利亚和以色列的官员罕见地坐下来谈了。俄乌战线继续互袭，泽连斯基披露了乌克兰的资金缺口和俄方动员计划。</div>
+  <div class="card">
+    <p>霍尔木兹（金十）：伊朗议会批准向过峡船只收取服务费，"波斯湾海峡管理局"称违规船只或遭罚款扣押；伊朗最高国安委秘书称在华盛顿履行承诺前海峡保持关闭，同时披露过去一两个月已运出 <span class="num">7000 万桶</span> 石油。实际通行却在增加：上周近 <span class="num">200 艘</span> 船只通行、交通量激增近 <span class="num">400%</span>，分析称伊朗对关键水道的控制力或减弱；英国海上贸易行动办公室则称海峡与曼德海峡通行量均下降。美军称对伊海上封锁以来已拦截 <span class="num">75 艘</span> 商船，美伊战争美军伤亡升至 <span class="num">774 人</span>；伊朗被曝受邀加入由沙特、土耳其、巴基斯坦建立的麦加共同防御协议；中国副外长在北京会见伊朗副外长，称积极劝和促谈（联合早报）。</p>
+    <p>叙利亚-以色列（金十）：叙过渡政府外长在约旦会见以色列代表团，又会见以摩萨德局长；叙方重申首要任务是以军撤回 <span class="num">2024 年 12 月 8 日</span> 之前的边界线、全面落实 1974 年停战协议，预计很快恢复安全协议谈判（8 月 18 日以军袭击叙空军基地后双方中断联系）。</p>
+    <p>俄乌（金十/竹新社）：泽连斯基称乌克兰国防部今年面临 <span class="num">270 亿美元</span> 资金缺口，预计俄罗斯 9 月选举后动员 <span class="num">30 万</span> 人、具备年产 <span class="num">1300 枚</span> 弹道导弹能力；俄国防部称一夜击落 <span class="num">269 架</span> 乌克兰无人机；美媒称俄罗斯正悄然备战新一轮军事动员；俄自 7 月下旬以来从土耳其进口汽油突破 <span class="num">100 万桶</span>；泽连斯基重申乌未参与北溪管道爆炸。</p>
+    <p>美加（金十）：卡尼称特朗普"误判形势"、两国"处于战争状态"；特朗普称加拿大"想当州却不入州"；加拿大三省长力挺反制；美元兑加元盘初走高报 <span class="num">1.3796</span>。其他：哈萨克斯坦提前选举，出口民调显示执政党赢得绝大多数席位；突尼斯附近海域非法移民船倾覆致 <span class="num">11</span> 人死亡；英国纵贯铁路因停电取消全境大部分列车；美国内华达州野火致里诺 <span class="num">4 万多</span> 居民撤离；台风"紫檀"致广西 <span class="num">10 河 15 站</span> 超警、转移安置 <span class="num">8087 人</span>；日本浦河附近海域发生 <span class="num">6.0 级</span> 地震。HN 侧：斯洛伐克国家安全局发现俄罗斯 NERO R-ONE 测速摄像头内置后门——可经短信从硬编码俄罗斯号码远程获取 shell 权限（<span class="num">329 分/128 评论</span>）。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">这周的人文话题，一头是"保下限"的择业选择——高分考生放弃名校去读警校；另一头是公共空间里的边界问题——重庆和青岛连续出现针对女性的骚扰与暴力，讨论在社交媒体上发酵。电影院线这边，《欢迎来龙餐馆》引发关于战争与吃饭的讨论；战地记者唐师曾逝世，他的名字重新被提起。</div>
+  <div class="card">
+    <p>择业（十年之约）：《656分放弃985选警校：当编制打败文凭，年轻人的"保下限"哲学》分析高分考生把稳定编制当第一选择背后的就业现实；另一篇博客记录《一张成人票，困住了一个独自乘车的孩子》——自动售票机前，身高超过免票线的七八岁孩子攥着百元钞票买不到回家的票。</p>
+    <p>社会事件（中国数字时代/3号厅检票员工）：重庆时代峰峻楼下出现有组织的年轻男性聚集，与等待偶像的女粉丝冲突升级，从辱骂发展到围堵与泼液体；青岛一公园男子搭讪拍照女性被拒后发生冲突。两起事件在社交媒体引发对公共空间骚扰与暴力的讨论。</p>
+    <p>文娱与生活（十年之约/联合早报）：多篇博客与观后讨论《欢迎来龙餐馆》"好好吃饭与反战"；战地记者唐师曾逝世，享年 <span class="num">65</span> 岁；中国大陆及香港去年快熟面销量世界第一；香港教科书连年涨价引发评论（戴庆成）。HN 侧：《To become a better writer, read as much as you can》（<span class="num">407 分/245 评论</span>）谈写作的黄金法则；《A Kantian Critique of "Sorry" by Justin Bieber》（<span class="num">226 分/99 评论</span>）用康德伦理学分析道歉的本质；《The Art and Beauty of Blade Runner (2015)》（<span class="num">169 分/103 评论</span>）谈银翼杀手的视觉美学。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">甲醛白菜的事这周从一起曝光演变成全国排查。一篇深度文章把历史翻了出来：从多年前山东曝光，到央视报道涉及多省，到去年河北再次发现，甲醛白菜断断续续出现多年。另一边，两篇田野调查重新定义了中国零工：北京马驹桥和深圳三和，日结的价码被一笔笔记下来。</div>
+  <div class="card">
+    <p>甲醛白菜（呦呦鹿鸣/联合早报/金十）：博主 8 月 22 日在河北张家口随机检查三辆运菜挂车，每辆都给白菜蘸了甲醛溶液；河北康保县政府回应"情况属实"，北京新发地排查称"未流入"，三部门要求从严从快处置，安徽合肥市场随后也检出甲醛白菜、货源指向河北。文章回顾：<span class="num">2012</span> 年山东即曝光用甲醛喷白菜，广州曾查出 <span class="num">120 多吨</span>（来源山东、云南），央视报道涉及七个省，去年河北定州批发市场再次发现——问题反复出现十余年。</p>
+    <p>零工（水瓶纪元/中国数字时代）：两篇亲历者观察对照北京马驹桥与深圳三和——马驹桥第一份日结是食品厂冷库搬运、<span class="num">11 小时 140 元</span>，"双十一"快递仓库临工价更高。观察者的共同判断是：中国零工需要被重新认识，贴上简单的道德标签都算误读。张丹丹"灵活就业是福利"的舆情继续发酵，多篇评论跟进（再想想Rethink、阿罗汉不约）。</p>
+    <p>算法与监督（风向旗/财联社）：荷兰数据保护局对优步开出 <span class="num">8.25 亿欧元</span> 罚单——2018 至 2022 年间优步用软件追踪司机行为，疑似欺诈或评价过低即自动停用账户且无人工审核，由 170 多名法国司机举报引发，优步已宣布上诉。异闻侧：山东淄博一家妇幼保健院七夕起开设结婚登记服务，把婚检、备孕指导整合在一起，但该点位只受理结婚、不办离婚（界面新闻）。</p>
+    <p>HN 侧（更新）：边境删手机数据被控重罪帖涨至 <span class="num">1082 分/1332 评论</span>（昨 1042 分），配套的《Felony Bench》<span class="num">839 分/339 评论</span>；《Over 170k Nonprofits Lost All Their Data. Is Microsoft to Blame?》（<span class="num">89 分/31 评论</span>）讨论 <span class="num">17 万</span> 家非营利组织数据丢失的责任归属。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">加密市场这周继续回暖，比特币创出阶段新高。监管和基础设施层面动作不少：欧盟开始就 DeFi 借贷监管征求意见，美国银行业团体要求把稳定币二级市场纳入客户身份识别；Vitalik 更新了以太坊路线图，把隐私和量子安全提到更高优先级。</div>
+  <div class="card">
+    <p>行情（吴说）：比特币本周累计上涨超 <span class="num">20%</span>、一度升至 <span class="num">79,455 美元</span> 创约三个月新高；8 月 19 日全市场约 <span class="num">27 亿美元</span> 空头仓位被清算，创 CoinGlass 有统计以来最高，比特币空头约一小时内清算超 <span class="num">10 亿美元</span>；美国现货比特币 ETF 8 月 17 至 20 日连续四日净流入约 <span class="num">16 亿美元</span>。直接催化是美国财政部宣布扩大长期国债回购、市场解读为缓解长端收益率压力。当前 <span class="num">8 万美元</span> 附近卖墙主要来自 Binance（HODL15Capital）；Grayscale 称本周反弹或表明比特币已形成更具持续性的底部；江卓尔认为 ETF 增量资金更偏向 ETH。</p>
+    <p>安全事件（吴说）：Term Finance 遭治理攻击，CertiK 估算损失约 <span class="num">850 万美元</span>；Allbridge 遭攻击损失约 <span class="num">19 万美元</span>，漏洞源于 CCTP 消息校验不足；Bybit 起诉朝鲜，目标是冻结涉案钱包资产；波兰交易所 Zondacrypto 两任负责人四年内先后失踪，价值逾 <span class="num">3.3 亿美元</span> 的 BTC 密钥在失踪创始人手里，已收到超 <span class="num">3600</span> 份报案、爱沙尼亚牌照被撤销。</p>
+    <p>监管与生态（吴说）：欧盟委员会就 DeFi 借贷纳入 MiCA 监管征求意见；美国银行业团体呼吁将稳定币二级市场纳入客户身份识别要求；Vitalik 更新以太坊路线图，量子安全优先级上调、部分 EVM 改进降级；Ondo 放弃自建链、RWA 交易平台回到以太坊结算；永续合约 DEX 未平仓量升破 <span class="num">200 亿美元</span> 创 2026 年新高；韩国 5 大交易所外国人账户 <span class="num">566,352</span> 个，完成 KYC 仅 <span class="num">517</span> 个（<span class="num">0.09%</span>）、当月活跃仅 <span class="num">90</span> 个。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">这一周（8 月 17 日至 24 日）的主线：中国 AI 资本开支再上台阶，阿里配售新股全投 AI；英伟达一边预告服务器涨价一边重金买开源模型人才；科研端 Moderna 的 mRNA 疫苗三期成功、太空反射阳光计划获批；地缘上美伊对抗从军事转向航运与收费、霍尔木兹成为焦点，美加关税战破裂后进入"战争状态"；国内批判线围绕甲醛白菜多年顽疾、零工田野与社保账本；加密市场回暖，比特币周线大涨。</div>
+  <div class="card">
+    <p><b>AI 资本与产品。</b>阿里拟配售 <span class="num">800 亿港元</span> 新股全投 AI；英伟达 AI 服务器明年起涨价超 15%、以 70 亿美元 换 Poolside 技术与人才；Hugging Face 现 <span class="num">130 亿美元</span> 并购兴趣；谷歌 Gemma 下载破 10 亿；Anthropic 冲刺 2 万亿美元 IPO、被曝"巴拿马计划"扫描旧书；DeepSeek 周末低谷价、视觉模型逼近 Opus 4.8；嫦娥七号今年无法发射。</p>
+    <p><b>硬件与制造。</b>长江存储科创板受理、拟募 330 亿元；美光 100 亿美元 建博伊西研发中心；英伟达通知涨价；人形机器人运动会、荣耀"闪电"百米 9 秒 32；算力词元贷落地广州；乌兰察布承诺 12.5 吉瓦 算力、缺水与煤电成隐忧。</p>
+    <p><b>科研。</b>Moderna 黑色素瘤 mRNA 疫苗 III 期成功；90% 生物医学论文现 AI 痕迹；NSF 资助降至四十年最低；南极冰盖增质、黑洞自旋测量新方法；太空反射阳光计划获批；脑器时代获种子轮；名古屋大学 Cap-cirRNA 活性提升 10 倍；斯坦福 NK 细胞攻实体瘤；RoboCup 清华卫冕；日本与埃尼押注核聚变。</p>
+    <p><b>批判与监督。</b>甲醛白菜曝光后三部门处置、十余年历史被翻出；张丹丹舆情持续；社保抚养比 2.59:1；许家印一审无期、恒大人寿牌照吊销；零工田野调查对照南三和与北马驹桥；医院办结婚证引讨论；优步收 8.25 亿欧元 罚单。</p>
+    <p><b>地缘与市场。</b>美伊对抗转向航运与收费、霍尔木兹交通量激增 400%；美加关税破裂、50% 关税生效、加拿大 9/8 反制；俄乌互袭与动员；叙利亚-以色列恢复接触；哈萨克斯坦提前选举；30 年期美债收益率创 19 年新高、黄金站上 4600 美元。加密侧，比特币周涨 20% 至 79,455 美元、ETF 连续净流入，Term Finance 遭治理攻击。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、ChatGPT/AI 新闻聚合、联合早报、十年之约、风向旗参考快讯、中国数字时代、cnBeta、MIT 科技评论、小众软件、竹新社、吴说，覆盖 8 月 22–24 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 365 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
