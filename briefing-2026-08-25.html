@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-08-25</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 8 月 25 日 · 周二 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>小米发布 3 纳米自研芯片玄戒 O3，HN 头条称其单核追平苹果、多核明显更快（637 分/429 评论）；美国财长宣布对伊朗发起"经济攻势"，伊朗货币跌至 1 美元兑 203 万里亚尔的历史新低；比特币时隔 113 天重返 8 万美元；"甲醛白菜"排查未停，厦门又曝出敌敌畏进餐厅。</div>
+
+  <h3>① AI 军备竞赛与资本</h3>
+  <div class="plain">中国科技公司这周继续加码 AI。阿里巴巴一边通过配售新股募资、把钱全部投进 AI，一边发布了新的视频生成模型，但最新财报显示盈利大幅下滑。海外市场出现一个反转：Anthropic 的最强模型在企业客户那里遇冷，客户转向更便宜的选择，其中不少是中国模型。</div>
+  <div class="card">
+    <p>阿里巴巴 8 月 24 日发布视频生成模型 Wan3.0，单次可生成 30 秒视频，公测以来已被短剧、影视团队用于规模化出片；发布前一天公司刚宣布配售 800 亿港元（约 <span class="num">102</span> 亿美元）新股、净募资 100% 投 AI，这是香港上市公司历来规模最大的一级后续发行。代价在财报上显现：受 AI 资本开支激增影响，阿里季度盈利同比暴跌 <span class="num">75%</span>，8 月 25 日港股开盘股价大跌超 8%。</p>
+    <p>Anthropic 旗舰模型 Fable 5 在企业市场遇冷：调查称企业 AI 支出中仅 <span class="num">11%</span> 流向 Fable 5，客户嫌贵转向廉价替代品、其中包含中国模型，Anthropic 的 IPO 前商业模式因此被质疑。人才继续向头部实验室集中：OpenAI 研究员 Luke Metz 离职加盟 Meta 超级智能实验室，Anthropic 的芯片团队也在从 OpenAI 与谷歌 TPU 团队挖人。</p>
+    <p>中国模型出海与开源在继续：法律 AI 独角兽 Harvey 基于月之暗面 Kimi K3 推出产品 Tenet；Meta 推出的编程 AI 定价比竞争对手便宜 <span class="num">80%</span>；DeepSeek 宣布周末全天按低谷价计价。HN 上 OpenAI 下调 GPT-5.6 Sol 价格的消息获 <span class="num">255</span> 分/<span class="num">236</span> 评论。</p>
+  </div>
+
+  <h3>② 写代码的人在想什么</h3>
+  <div class="plain">这周开发者社区最热的话题，是"用 AI 写代码会不会让自己的能力退化"。一篇长文认为，靠 AI 写代码的人攒不下真正的专业能力；另一篇高分帖设想自己回到少年时代、从零开始搭一个大模型。还有人用 AI 代理逆向工程了手边的鼠标、麦克风和摄像头。</div>
+  <div class="card">
+    <p>HN 高分帖《Coding expertise is going to collapse from AI reliance》（<span class="num">371</span> 分/<span class="num">384</span> 评论）提出"熟练编排者悖论"：管理 AI 代理所需的技能，恰恰会因为持续使用 AI 而退化，专业能力的形成需要持续的摩擦与练习。Paul Graham 的帖子《I were 17, I'd learn how to build LLMs from scratch》（<span class="num">492</span> 分/<span class="num">587</span> 评论）则把学习路径重新指向"自己动手搭模型"。</p>
+    <p>技术帖方面：HN《Executable Is a SQLite Database》（<span class="num">462</span> 分/<span class="num">88</span> 评论）演示把可执行文件做成 SQLite 数据库；《IPFS Maintainers Winding Down》（<span class="num">287</span> 分/<span class="num">145</span> 评论）讨论开源基础设施维护者退出后的可持续性问题；《Everything I own, owned》（<span class="num">1340</span> 分/<span class="num">334</span> 评论）记录作者用 AI 代理逆向工程身边外设，在麦克风里拿到完整命令 shell、摄像头指示灯可被关闭后继续录像，硬件"所有权"被重新审视；微软画图与照片应用被曝给本地生成图片打上不可见 GUID 水印（<span class="num">465</span> 分/<span class="num">180</span> 评论），隐私话题延续。</p>
+    <p>订阅侧消息同样围绕 AI 与代码：Grok bot 0.18.0 因开启 runtime source maps 源码被重建并开源；Codex 接入了 DeepSeek-V4-Flash；Meta 的编程 AI 以低价入场，价格竞争延伸到开发者工具层。</p>
+  </div>
+
+  <h3>③ 硬件、存储与算力</h3>
+  <div class="plain">这周硬件圈的主角是小米。它发布了首款自研旗舰手机芯片，还官宣了一颗用于智能驾驶的芯片；HN 头条帖子说，这款芯片单核性能追平苹果、多核明显更快。与此同时，存储涨价正在整条链上传导：从内存颗粒厂到 AI 服务器，再到亚马逊的硬件零售价。</div>
+  <div class="card">
+    <p>小米 8 月 24 日在玄戒芯片技术沟通会上发布首款 AI 旗舰 SoC 玄戒 O3：3 纳米工艺、集成 <span class="num">240</span> 亿个晶体管（较前代增长 <span class="num">26%</span>）、芯片面积 <span class="num">133</span> mm²；CPU 采用十核全大核设计，多核跑分首次突破 <span class="num">15000</span>（性能提升 <span class="num">60%</span>）；GPU 首发 G2-Ultra NX，性能提升 <span class="num">85%</span>、功耗降低 <span class="num">64%</span>。小米 18 Fold 确认 9 月上市、首发搭载玄戒 O3；同日还官宣国内首款 3 纳米智驾高算力 AI 芯片玄戒 D100。《联合早报》报道称该芯片据报与台积电合作生产。</p>
+    <p>存储涨价链条在本周收紧：佰维存储上半年净利润 <span class="num">71.66</span> 亿元、同比扭亏为盈；消息称三星电子下半年 DRAM 增产速度可能低于预期；科士达确认已向客户发布涨价通知；美光警告算力增速超过带宽 3 倍、先进封装成为瓶颈；此前英伟达已通知大客户 AI 服务器 2027 年初起提价超 <span class="num">15%</span>。HN 上的《Amazon hikes hardware prices by 60 percent, blaming memory shortage》（<span class="num">16</span> 分）反映同一趋势。A 股存储概念 8 月 24 日震荡下挫，普冉股份跌超 10%。</p>
+    <p>高端 AI 服务器的流向管制也在收紧：台湾检方起诉九人（含英伟达台湾 1 名、美超微台湾 2 名员工），涉嫌规避两家公司对 B300 服务器的销售管制，涉案 <span class="num">130</span> 台服务器中 <span class="num">74</span> 台已流入大陆，转售不法所得超过 <span class="num">2120</span> 万美元。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded</h4>
+    <div class="stats">637 points / 429 comments · Hacker News 头条（rank 1）</div>
+    <p>加拿大性能分析学者 Daniel Lemire 在 X 上评价小米新 CPU：单核性能追平苹果核心，多核执行明显更快，并提醒苹果下一代处理器可能很快夺回优势。这与订阅侧 8 月 24 日小米的发布相互印证：玄戒 O3 采用 3 纳米工艺、十核全大核，多核跑分首破 15000，小米 18 Fold 将于 9 月首发搭载，另有 3 纳米智驾芯片玄戒 D100 同步官宣，据报由台积电合作生产。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">这周的硬科学新闻横跨医学、能源和太空：美国一家公司要在核武器实验室隔壁建一台冲击聚变能量纪录的装置；日本医生把病人自己的线粒体打进眼睛，尝试恢复视力；HN 上讨论最热的两条科学新闻是海洋温度创下纪录和美国批准了一种阿尔茨海默病血液检测。</div>
+  <div class="card">
+    <p>能源与聚变（Nature/金十）：Pacific Fusion 公司在美国一座核武器实验室旁破土动工，目标是打破聚变能量纪录、同时用于核武器研究；同周日本通过公私合作基金向核聚变初创企业提供 <span class="num">1.25</span> 亿美元支持，意大利油企埃尼集团押注核聚变成为其"下一个炼油厂"。</p>
+    <p>医学（Nature/HN/MIT）：一项试验把患者自己的线粒体注入视网膜，结果显示安全、但恢复视力只是暂时的；HN 上 FDA 批准一种血液检测辅助评估阿尔茨海默病（<span class="num">174</span> 分/<span class="num">87</span> 评论）；国内全脑接口公司脑器时代完成数千万元种子轮融资。</p>
+    <p>环境与认知（HN/MIT/Nature）：HN 科学帖中，海洋温度创历史最高纪录（<span class="num">268</span> 分/<span class="num">138</span> 评论）讨论最热，章鱼智力或与一种前所未见的突变有关（<span class="num">39</span> 分/<span class="num">15</span> 评论）；MIT 科技评论讨论"孩子听几千万个词就能学会语言、大模型为什么做不到"与"猫在说什么，AI 知道吗"两个语言认知话题；Nature 本周还有外骨骼即将进入商店、南极冰盖近期增重但可能不会持续等报道。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">美国对伊朗的施压从军事转向金融：财长宣布要切断伊朗的全球经济联系，伊朗货币随之跌到历史新低。美加贸易谈判破裂后，特朗普宣布明年起大幅提高加拿大汽车和钢铁关税。俄乌战场继续互袭，双方也在白俄罗斯交换了战俘。</div>
+  <div class="card">
+    <p>美伊"经济攻势"（金十）：美国财长贝森特宣布对伊朗发起"经济攻势"，称任何为伊朗洗钱的实体将被移出美元体系，并即将公布二级制裁细节；伊朗货币 1 美元兑 <span class="num">203</span> 万里亚尔、创历史新低，两周跌近 <span class="num">10%</span>；伊朗议会推进对霍尔木兹海峡过往船只收费，胡塞武装称各分支处于最高战备，以色列总理称伊朗曾企图暗杀其家人，美国防部长赫格塞思则称"动能打击并未暂停"。油价当天反而下跌：布伦特原油结算 <span class="num">92.17</span> 美元/桶（跌 2.35%）、WTI <span class="num">85.01</span> 美元（跌 2.35%），原油曲线结构接近四十年最陡，市场在等制裁细节。</p>
+    <p>美加关税战（金十）：特朗普宣布 2027 年 1 月 1 日起加拿大汽车、卡车、汽车零部件与钢铁关税提高至 <span class="num">50%</span>，称在美国建厂可享零关税；加拿大总理卡尼称报复性关税将"非常有针对性"，安大略省省长威胁限制对美能源、钾肥与电力运输。此前双方在最后阶段谈判破裂，加拿大称最终文件与"已谈妥的内容"大相径庭。</p>
+    <p>俄乌战线（金十/竹新社）：俄军一夜击落 <span class="num">351</span> 架乌克兰无人机，乌方袭击了罗斯托夫地区一处俄军事工厂，俄方称袭击敖德萨附近一艘油轮；俄乌在白俄罗斯交换 <span class="num">20</span> 名被俘人员；泽连斯基在乌克兰独立日表示"不要求美国保护、只求自卫物资"，欧洲理事会主席科斯塔与英国首相伯纳姆抵达基辅。</p>
+    <p>周边与国内（竹新社/联合早报/金十）：韩国济州近三日发现 <span class="num">4</span> 名失踪人员遗体，其中两起与同一警员虚假结案有关；四川宜宾长宁 4.7 级地震后网民收到 7.7 级预警，官方致歉；双台风"紫檀""简拉维"来袭，浙江福建启动三级应急响应；现货黄金站上 <span class="num">4660</span> 美元/盎司，瑞银称黄金 8 月已涨 <span class="num">14%</span>；韩元升至近一年高点；消息指习近平或时隔七年再率团访问印度，中印时隔一年再举行边界问题特别代表会晤。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">这周的人文话题很杂：欧洲的开放硬件创业者抱怨欧盟新规正在杀死他们的小生意，这个话题在 HN 上拿到将近一千分的高热度；一部制作粗糙的动画电影《牛来》靠口碑爆红，成了国产电影的一匹黑马；中国的快熟面销量又拿了世界第一。</div>
+  <div class="card">
+    <p>欧洲微型创业者（HN）：《How Europe is killing makers and micro-entrepreneurs》（<span class="num">942</span> 分/<span class="num">602</span> 评论）出自开放硬件集市 Lectronz，作者举例欧盟法规（如 GPSR）如何让车库里做开源硬件的独立开发者不堪重负——有人一年只卖几块电路板，也要满足面向大企业的合规要求，卖家正在成批退出。</p>
+    <p>《牛来》现象（联合早报）：这部零宣传、零路演的动画片上映 19 天票房突破 <span class="num">4200</span> 万元、观影人次超 <span class="num">150</span> 万，超越贾樟柯《风流一代》的 <span class="num">1031</span> 万元；IMDb 开分 6.5；主创宣布新作《羊高》已启动。联合早报评论《问苍生》爆火时写道"稀缺的仍是人味"。AI 聚合频道流传的"牛来大模型 Ox Alpha 登顶"未获其他信源印证，不采信。</p>
+    <p>其他（联合早报/HN）：中国队夺 2026 电竞世俱杯冠军、由马克龙颁奖；U18 男篮时隔 12 年再进亚洲杯决赛；中国大陆及香港去年快熟面销量世界第一；香港教科书年年涨价引发专栏讨论；HN 上《Where did all the public bathrooms go?》（<span class="num">87</span> 分/<span class="num">149</span> 评论）讨论了城市公共空间里公共厕所消失的话题。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">"甲醛白菜"的曝光还在发酵，官方要求从严从快处置，多地展开排查；紧接着又曝出厦门一家消杀公司用敌敌畏给几十家连锁餐饮店消毒。另一边，北大一位教授说"灵活性本身就是一种福利"，被全网围攻，争论背后是数以亿计的灵活就业者的保障现状。</div>
+  <div class="card">
+    <p>甲醛白菜后续（联合早报/中国数字时代）：河北康保县涉事蔬菜合作社日发货量从约 <span class="num">1500</span> 包降至不足 <span class="num">300</span> 包，采购商取消订单、超市下架；北京新发地排查称"未流入"，江苏南京、无锡等地禁止康保县产白菜入场，上海多个批发市场增加甲醛专项检测。事件并非首次：2012 年山东即曝光用甲醛喷白菜，央视报道曾涉及七个省；评论文章质问"拿下甲醛白菜，还要多少个 14 年"。</p>
+    <p>敌敌畏进餐厅（中国数字时代/联合早报）：厦门一家消杀公司被曝用敌敌畏为数十家连锁餐饮企业消毒，涉事经营场所已关闭，多地启动食安排查。官方在甲醛白菜之后要求"从严从快"，但食品安全暴露出的监管衔接问题被反复讨论。</p>
+    <p>张丹丹争议与零工（中国数字时代）：北大国发院副院长张丹丹"从劳动经济学角度看，灵活性本身就是一种福利"的发言被短视频切片放大、遭全网围攻；亲历者记录显示：北京外卖员月入 <span class="num">5000–8000</span> 元、无工伤无养老，一次骨折手术自掏 <span class="num">1.4</span> 万元；马驹桥与三和两处零工市场的日结时薪"几乎从未超过 <span class="num">20</span> 元"、低于当地最低时薪标准。有评论指出，被淹没的是 2 亿灵活就业者的保障困境，批评者与辩护者都该回到政策讨论。</p>
+    <p>其他（中国数字时代）：报道指悬置的户籍困住农村离婚女性；一篇评论批评"所谓调解，就是抽法律的耳光"；另有一份关于"新疆三文鱼"涉嫌强迫劳动的调查报告发布，目前仅此单一信源报道。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">比特币这周重新站上重要关口，现货 ETF 的资金也在持续流入。监管和安全事件密集发生：美国把数字资产纳入对伊朗的新一轮制裁，一条公链因漏洞被转走大量代币、网络一度暂停。</div>
+  <div class="card">
+    <p>行情（吴说）：比特币突破 80,000 美元、现报约 <span class="num">79,174</span> 美元，上次站上 8 万是 5 月 4 日、时隔 <span class="num">113</span> 天；过去 4 小时合约爆仓约 <span class="num">1.79</span> 亿美元（空单 <span class="num">1.002</span> 亿/多单 <span class="num">7899</span> 万美元）。上周比特币现货 ETF 净流入 <span class="num">19.18</span> 亿美元、以太坊现货 ETF 净流入 <span class="num">6.97</span> 亿美元，比特币创 2023 年 3 月以来最佳单周表现；DWF Labs 称本轮上涨主要由现货资金而非杠杆驱动。宏观面：美国财政部考虑动用约 <span class="num">9500</span> 亿美元 TGA 资金回购长债被解读为间接利好；贝莱德研报称政府债务与财政赤字上升利好比特币；Arthur Hayes 称特朗普应否决 CLARITY Act、比特币年底或达 <span class="num">12.6</span> 万美元。</p>
+    <p>监管（吴说）：美国将数字资产纳入新一轮伊朗制裁，警告相关业务面临制裁风险；韩国 FIU 明确个人钱包及海外交易所转账规则；巴基斯坦要求加密平台 9 月 5 日前申请许可；欧盟 ESMA 更新 MiCA 名单、CASP 增至 <span class="num">331</span> 家。</p>
+    <p>安全事件（吴说）：TAC 因 Cosmos EVM 共享模块漏洞遭攻击，约 <span class="num">29.86</span> 亿枚 TAC 被转走、网络暂停；慢雾称 Allbridge 遭攻击损失约 <span class="num">19</span> 万美元；Salus 称虚假 Hyperliquid 网站致用户损失 <span class="num">55</span> 万 USDC。</p>
+    <p>基建与产品（吴说）：Coinbase 在 Base 链上推出代币化股票、支持 24/7 交易；渣打银行成为首家分销香港受监管港元稳定币 HKDAP 的银行；CME CF 推出 ENA 价格基准指数；上周 DEX 日交易量从约 <span class="num">33</span> 亿美元升至最高 <span class="num">129</span> 亿美元。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">这一周（8 月 18 日至 25 日）的主线：中国 AI 资本开支再上台阶，阿里配售新股全投 AI 并发布视频模型；硬件端存储涨价从颗粒厂传导到整机，小米发布自研玄戒芯片；科研端 Moderna 的 mRNA 疫苗三期成功、朱雀三号实现中国首次运载火箭一级陆地回收；地缘上美伊从军事对抗转入金融战、美加关税战升级；国内批判线围绕甲醛白菜、敌敌畏与灵活就业者的保障争论；加密市场回暖，比特币突破关键关口。</div>
+  <div class="card">
+    <p><b>AI 资本与产品。</b>阿里拟配售 800 亿港元新股全投 AI、发布视频模型 Wan3.0，季度盈利因资本开支暴跌 75%；英伟达 AI 服务器明年起涨价超 15%、重金获得 Poolside 技术授权；Anthropic 旗舰模型 Fable 5 遇冷、被曝冲刺 2 万亿美元 IPO；Hugging Face 现 130 亿美元出售兴趣；DeepSeek 补上视觉能力并推出周末谷价；OpenAI 研究员 Luke Metz 转投 Meta 超级智能实验室。</p>
+    <p><b>硬件与芯片。</b>小米发布 3 纳米玄戒 O3 与智驾芯片玄戒 D100，HN 称其单核追平苹果；存储涨价链条收紧（三星 DRAM 增产或低于预期、佰维扭亏、英伟达服务器提价超 15%、亚马逊硬件涨 60%）；SK 海力士押注 CPO 光互连进入内存；台检方起诉 9 人涉走私 130 台 AI 服务器入大陆。</p>
+    <p><b>科研进展。</b>Moderna/默沙东个体化 mRNA 癌症疫苗 III 期阳性、股价暴涨 177%；朱雀三号实现中国首次运载火箭一级陆地回收；最大全电动飞机首飞（半小时电费 5 美元）；Pacific Fusion 在核武实验室旁开建十亿美元聚变装置；自体线粒体注入眼睛试验安全但效果短暂。</p>
+    <p><b>地缘与能源。</b>美伊转入"经济攻势"：贝森特宣布切断伊朗金融命脉，伊朗货币跌至 1 美元兑 203 万里亚尔，霍尔木兹收费与封锁成为焦点；美加关税战破裂后特朗普宣布汽车钢铁关税明年提至 50%；俄乌互袭升级（克里沃伊罗格购物中心 15 死 130 伤、基辅 16 死 40 伤）；朝鲜发射 10 余枚短程导弹；油价曲线结构近四十年最陡。</p>
+    <p><b>国内批判。</b>甲醛白菜从曝光到全国排查、康保县发货量骤降；厦门再曝敌敌畏进餐厅；张丹丹"灵活性是福利"引发全网争议，灵活就业者的保障被讨论；许家印被判无期徒刑；杭州酒局案引发法律追责讨论。</p>
+    <p><b>加密市场。</b>比特币时隔 113 天重返 8 万美元、创 2023 年 3 月以来最佳单周表现，ETF 单周净流入约 26 亿美元；美国把数字资产纳入对伊朗制裁；TAC 遭攻击、29.86 亿枚代币被转走。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、吴说、联合早报、AI 新闻聚合、风向旗、中国数字时代、MIT 科技评论、Nature、竹新社、cnBeta、小众软件、十年之约，覆盖 8 月 23–25 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 715 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
