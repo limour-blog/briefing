@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-08-27</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 8 月 27 日 · 周四 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>智谱发布 GLM-5.3-Flash 并确认匿名爆火的"牛来"模型为 GLM 新版本、即将开源权重（HN 777 分/376 评论）；英伟达财报营收 962 亿美元超预期、Q3 指引 1080 亿且未含中国收入；Meta 与 29 州就青少年伤害诉讼达成 170 亿美元和解；尼泊尔冰崩泥石流冲毁吉隆口岸、重大伤亡失联；"甲醛白菜"后续：韩国连续两日未检出，李强调研强调严把食品安全关。</div>
+
+  <h3>① AI 军备竞赛与芯片</h3>
+  <div class="plain">中国两家头部大模型公司这一周先后放出新模型，价格一个比一个低。智谱的新版本一面市就在海外模型平台冲上使用量榜首，还宣布开源权重；阿里则同步开源了新一代模型，训练成本比上一代降了近九成。与此同时，中国 AI 公司的账本开始公开：有人营收暴涨，也有人仍在亏损换市场；还有公司在筹备上市前与美国云巨头谈分成。</div>
+  <div class="card">
+    <p>智谱双响：z.ai 发布 GLM-5 系列首个原生多模态模型 GLM-5.3-Flash，总参数 320B、激活参数仅 18B，编程与智能体基准超过 GLM-5.2、接近 Claude Opus 4.8，价格降至上代约十分之一（HN <span class="num">777</span> 分/<span class="num">376</span> 评论）；官方称该模型采用稀疏与线性注意力混合架构，全部流量由国产 AI 芯片服务、端到端推理性能提升 <span class="num">3</span> 倍。同日智谱证实匿名登顶 OpenRouter 的"牛来"（Ox Alpha）是 GLM 系列新版本并将开源权重，其使用量是 DeepSeek 的两倍多（HN <span class="num">404</span> 分/<span class="num">141</span> 评论）。</p>
+    <p>阿里同步出牌：Qwen3.8-Flash 发布并开源，125B 参数、每 token 仅激活 6B，上下文原生 262K、可扩展至 1M，官方称性能比肩 Claude Opus 4.6 与 DeepSeek V4-Flash，训练成本较 Qwen3.7-Plus 降近九成，每百万输入 tokens 定价 <span class="num">0.16</span> 美元、输出 <span class="num">0.47</span> 美元；作为 Qwen4 架构预览的 Flash-Next 一并开源（HN <span class="num">580</span> 分/<span class="num">189</span> 评论）。</p>
+    <p>账本与资本：DeepSeek 前 7 月营收约 4.75 亿元、约为 2025 全年十倍，净亏损约 7.15 亿元，正推进 500 亿募资、目标估值 5000 亿元，API 服务毛利率高达 82.9%；作为对比，OpenAI 一季度营收 57 亿美元、毛利率 39%，Anthropic 二季度营收 115 亿美元。月之暗面据报正与微软、亚马逊、谷歌洽谈由云巨头托管 Kimi K3 的收入分成、比例最高 30%，若达成将是中美 AI 领域首个大型分成协议；软银拟发行 100 亿至 200 亿美元债券，为投资 OpenAI 的 400 亿美元过桥贷款再融资。</p>
+    <p>云与并购：AWS 宣布收购分析型数据库公司 DuckLabs（HN <span class="num">908</span> 分/<span class="num">267</span> 评论），把数据分析能力直接并入云生态。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>GLM-5.3-Flash：国产开源模型以十分之一价格逼近前沿</h4>
+    <div class="stats">777 points / 376 comments · z.ai（Hacker News rank 2）</div>
+    <p>z.ai 发布 GLM-5 系列首个原生多模态模型 GLM-5.3-Flash：总参数 320B、激活参数仅 18B，编程与智能体基准超过 GLM-5.2、接近 Claude Opus 4.8，价格降至上代约十分之一；模型采用稀疏与线性注意力混合架构，官方称全部流量由国产 AI 芯片服务、端到端推理性能提升 3 倍。同日智谱确认匿名登顶 OpenRouter 的"牛来"（Ox Alpha）为 GLM 系列新版本并宣布开源权重，其使用量超 DeepSeek 两倍。官网正文未能直接抓取，以上参数与定价来自订阅源（AI 聚合/财联社/cnBeta）与 HN 讨论交叉核对。</p>
+  </div>
+
+  <h3>② 写代码的人在想什么</h3>
+  <div class="plain">开发者社区这周在讨论一个更实际的问题：模型能力越来越强，工具和基础设施的复杂度反而在上升，很多人开始重新审视"把事情做简单"这件事的价值。另一条线上，比尔·盖茨这样的老一代技术人物公开站出来警告：真正了解 AI 威力的人私下都很担忧，行业却在淡化风险。</div>
+  <div class="card">
+    <p>复杂度回归：HN 热帖"RAG 比你想象的简单"（<span class="num">412</span> 分/<span class="num">175</span> 评论）主张把检索增强生成拆成最朴素的组件；"可查询的可执行文件"（<span class="num">306</span> 分/<span class="num">79</span> 评论）讨论让二进制程序自带可查询的调试信息；"召回之外：能力的幻觉"（<span class="num">92</span> 分/<span class="num">27</span> 评论）质疑 AI 辅助下的能力评估正在失真。</p>
+    <p>基础设施层面：Trail of Bits 安全团队认为虚拟机挡不住具备网络能力的 AI 智能体（<span class="num">126</span> 分/<span class="num">106</span> 评论）；GitHub 出现服务中断与故障追踪帖（<span class="num">87</span> 分/<span class="num">36</span> 评论）；一起持续的 3D 打印机 AGPL 许可违规事件引发开源合规讨论（<span class="num">223</span> 分/<span class="num">105</span> 评论）。</p>
+    <p>行业反思：盖茨批评科技巨头刻意淡化 AI 威胁，称私下交流中真正了解技术进展的人都非常担忧，他在个人网站提出增税与禁令等方案（风向旗/cnBeta）；MIT 科技评论同日刊发盖茨专访，称 AI 已跨过临界点、社会却几乎没有讨论。联合国与红十字国际委员会 8 月 25 日联合呼吁各国就致命自主武器系统尽快达成有约束力的文书，称世界"正危险地接近跨越道德红线"。</p>
+  </div>
+
+  <h3>③ 硬件、内存与算力</h3>
+  <div class="plain">英伟达交出了市场等了一周的财报：营收和指引双双超过预期，数据中心业务依旧是大头，公司还披露未来两年半的产能与供应承诺大幅加码。芯片之外，这周还有两条硬件线值得注意：IBM 发布了新架构处理器，SpaceX 则宣布在美国南部建一座千亿美元级的星舰发射场。</div>
+  <div class="card">
+    <p>英伟达财报：2027 财年第二季度营收 <span class="num">962</span> 亿美元、同比增长 106%，高于预期的 <span class="num">922</span> 亿；数据中心收入 <span class="num">890</span> 亿、同比增 117%；Q3 指引约 <span class="num">1080</span> 亿美元、高于市场预期的 <span class="num">1042</span> 亿，且未计入任何来自中国的数据中心收入。Vera Rubin 平台进入全面量产，季度内向股东返还约 <span class="num">260</span> 亿美元（回购加分红）；未来供应与产能承诺由 <span class="num">1190</span> 亿增至 <span class="num">2790</span> 亿美元、增幅主要来自内存采购。CFO 称客户预测明年需求可能翻倍，但受供应限制实际增长预计约 70%（吴说；HN <span class="num">16</span> 分/<span class="num">1</span> 评论）。</p>
+    <p>处理器与算力：IBM 发布下一代双架构处理器（HN <span class="num">36</span> 分/<span class="num">21</span> 评论）；我国新型光伏组件转换效率刷新世界纪录（金十）；华为响应埃及算力中心招标、提议出口上千颗 AI 芯片，据报已引起华盛顿警觉（联合早报/风向旗）。</p>
+    <p>太空基建：SpaceX 与路易斯安那州宣布投资 <span class="num">1000</span> 亿美元建设 Starbase 新发射基地，规划 12 座以上发射塔、单日可执行超 30 次星舰飞行，目标成为全球最大发射场（MIT/金十/风向旗）。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">硬科学这周的主线在气候、太空与生命医学三个方向同时推进：海洋温度又创下新高，研究者打算用核废料给火星车供电；FDA 批准了首个针对转移性胰腺癌的靶向疗法；AI 研究则把目光投向物理世界，有人训练能模拟流体和天气的通用模型，还有歌手跨界做起用活体皮肤筛选抗衰老成分的生意。</div>
+  <div class="card">
+    <p>气候与太空（Nature）：全球海洋温度创历史新高、El Niño 正在增强（8 月 26 日）；研究者计划用放射性同位素为未来火星车供电。核能线集中发声：Nature 刊文盘点 <span class="num">46</span> 家冲刺商业聚变的公司、讨论小型反应堆与核废料处理，议题从"能不能造"转向"能不能落地"。</p>
+    <p>生命医学：FDA 批准首个针对转移性胰腺癌的靶向治疗（HN <span class="num">118</span> 分/<span class="num">21</span> 评论）；法国法院认定空乘人员乳腺癌与飞行辐射存在关联（HN <span class="num">76</span> 分/<span class="num">38</span> 评论）；苏格兰研究显示接触城市林地与抗抑郁药使用量下降相关（HN <span class="num">90</span> 分/<span class="num">11</span> 评论）；Nature 还刊出带状疱疹疫苗与心脏病风险关系的新证据综述，以及 SSRI 抗抑郁药作用机制之谜的讨论。</p>
+    <p>AI 与物理世界（MIT）：Accelerated Understanding 由加州理工教授 Anima Anandkumar 夫妇创办，不训练聊天模型，而是训练能模拟流体、热传导、天气与材料的通用物理模型，一次可处理超 <span class="num">5</span> 万亿个时空数据点、约为 Anthropic 与谷歌旗舰模型可处理量的 <span class="num">500</span> 万倍；Lady Gaga 参与创办的 Outer Biosciences 用机器学习加离体人体皮肤筛选抗衰老与抗炎成分，已融资约 <span class="num">2300</span> 万美元。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">中东缓和信号在延续，但美国对伊朗的施压框架已经明说：暂缓动武，改用海军封锁和财政制裁掐断经济命脉。另一边，美国与俄罗斯之间出现罕见的直接接触，中国与菲律宾因为一座中资钢铁厂起了外交摩擦，解放军战机则首次飞出国门参加了埃及的联合军演。</div>
+  <div class="card">
+    <p>美伊：伊朗与阿曼发布联合声明，拟建立霍尔木兹海峡临时海上通道并推进扫雷机制（金十/竹新社）；鲁比奥向盟友阐明"三主轴"：暂缓动武、海军封锁与财政制裁；特朗普已向国会提交沙特核协议、坚持沙特须先与以色列关系正常化。WTI 原油在 80 美元关口附近整理，报 <span class="num">80.67</span> 美元/桶。</p>
+    <p>美俄：中情局局长拉特克利夫被曝乘军用运输机秘密访问莫斯科，美方同时要求乌克兰暂缓袭击俄罗斯（金十）。</p>
+    <p>信息战新形态：以色列资助的"汉诺威公共政策研究所"成立不到一月已发表超 100 篇文章，由美国广告公司 Piro Inc 运营、文章无署名、引用真实来源但不给链接，被指专门向抓取互联网的大模型投喂内容、调整聊天机器人回答使其有利于以色列（404media/风向旗）。</p>
+    <p>亚太与周边：美军人员 8 月 19 日试图进入菲律宾棉兰老岛中资背景的三佳钢铁厂被阻，美方称是"肩并肩 2027"演习规划的一部分，中国驻菲使馆质疑其动机与正当性（联合早报）；中国歼-16 战机首次远赴埃及参加"文明之鹰-2026"联训、与法国"阵风"战机对抗（联合早报）；习近平将出席上合组织峰会并访问吉尔吉斯斯坦和埃及。</p>
+    <p>其他：欧洲央行决策者准备 9 月加息以应对伊朗战争的副作用（金十）；美国特勤局三名官员（含通讯主管）被停职（金十引 CNN）。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">一场跨境灾害把中国与尼泊尔边境的吉隆口岸推上新闻头条：冰崩引发的泥石流冲毁口岸，出现重大人员伤亡和失联。台风"紫檀"则在华南反复登陆，把广西的"糖都"泡进了洪水。热闹的一面也有：北京建起了教机器人叠衣服做饭的训练中心，马云在这个月增持了阿里股票。</div>
+  <div class="card">
+    <p>吉隆口岸：尼泊尔热索瓦地区 8 月 26 日上午冰崩溃决，泥石流冲毁中国吉隆口岸，连接口岸的中方道路、通信、电力中断，有"重大人员伤亡、失联"，习近平作出指示、李强批示、张国清率团赴现场；尼方统计至少 <span class="num">384</span> 名各国游客失联（竹新社/联合早报）。</p>
+    <p>台风与洪水：台风"紫檀"在广东湛江第三次登陆中国沿海，广西累计转移超 5 万人；"中国糖都"广西崇左遭遇历史级洪水，明江宁明县城水文站出现 <span class="num">123.69</span> 米洪峰水位（2009 年以来最高），河滩甘蔗被泡（中国数字时代/联合早报）。</p>
+    <p>机器人学校：北京石景山人形机器人数据训练中心占地逾 1 万平方米、2025 年 9 月投用，是中国最大的机器人学校，数十台人形机器人在数据训练师遥控下反复练习抓取、叠衣与收纳；中国多地都在兴建同类基地（联合早报）。</p>
+    <p>资本与人：马云据报斥资逾 6 亿港元增持阿里股票，此前蔡崇信、吴泳铭已合计买入至少 <span class="num">2000</span> 万美元；阿里本周完成香港历来最大规模股票增发（800 亿港元），并承诺未来三年 AI 投入超 <span class="num">3800</span> 亿元人民币（联合早报）。</p>
+    <p>HN 人文线：演员 Tim Curry 去世（<span class="num">511</span> 分/<span class="num">181</span> 评论）；土耳其出土 11000 年前"人骑豹"雕像（<span class="num">113</span> 分/<span class="num">80</span> 评论）；哈佛商学院研究称信用卡奖励已演变为每年约 <span class="num">92</span> 亿美元的"财富转移"机制（<span class="num">239</span> 分/<span class="num">429</span> 评论）。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">这周国内批判性报道集中在就业与食品安全两条线：一家上市车灯厂被曝批量劝退应届生，人力资源总监已被停职；"甲醛白菜"事件进入全国排查后，韩国的最新检测结果也出来了。美国这边，一份针对沙拉巨头的报告在 HN 上引发关注，讲的是食品供应链高度集中带来的全国性风险。</div>
+  <div class="card">
+    <p>星宇股份劝退应届生：上市车灯制造商星宇股份去年秋招约 <span class="num">400</span> 名应届生，7 月入职满一个月后 HR 集中约谈，以"行业市场环境不佳"劝离，当天签离职协议给半个月薪资补偿，不签则调往一线流水线；学生提供的录音显示 HR 暗示配合签字才不影响背景调查，网传近 <span class="num">300</span> 人签字离职。常州市人社局成立专项工作组，通报已对人力资源总监停职（联合早报/封面新闻）。</p>
+    <p>甲醛白菜后续：韩国食药处 8 月 26 日公布，8 月 24 至 25 日申报进口的 <span class="num">8</span> 批中国产白菜均未检出甲醛，通关环节改为每批检测；李强本周在黑龙江、吉林调研三天，强调严把食品质量安全关、加强从农田到餐桌的全链条监管（联合早报）。</p>
+    <p>供应链集中风险（HN）：Farm Action 报告指出美国沙拉巨头 Taylor Farms 的供应网络覆盖面之广已构成全国性风险，单一公司对绿叶菜供应链的控制引发关注（<span class="num">204</span> 分/<span class="num">137</span> 评论）。</p>
+    <p>数字时代素材：评论文章批评官员"走个面儿"便删稿的"新闻易碎"现象；南风窗报道农村离婚女性"分户难"与土地权益困境；遇真纪事记录崇左糖都历史级洪水下的蔗农。华为上海旗舰店旁一块被网民围观的路牌疑被撤换调整，官方未作说明。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">比特币在高位横盘整理，机构与监管的动作反而更多：英国央行被要求牵头推进数字货币与支付创新，美国银行监管机构在讨论代币化存款的风险，Coinbase 则开始提供比特币抵押房贷。</div>
+  <div class="card">
+    <p>行情与机构：美东 8 月 25 日比特币现货 ETF 净流入 <span class="num">3.14</span> 亿美元、连续 <span class="num">7</span> 日净流入；CryptoQuant 称牛市评分一周由 <span class="num">30</span> 升至 <span class="num">80</span>、市场进入新一轮牛市初期；Bernstein 预计比特币 2027 年年中升至 <span class="num">15</span> 万美元并下调 Strategy 目标价；Deribit 约 <span class="num">64.4</span> 亿美元 BTC 期权将于 8 月 28 日到期、最大痛点为 <span class="num">6.8</span> 万美元。</p>
+    <p>产品与合规：Coinbase 推出比特币抵押房贷服务；英国政府将要求英格兰银行推动数字货币与支付创新、职责扩展至支付系统监管；美国 <span class="num">39</span> 家州银行协会筹建全国性区块链网络、支持稳定币与代币化存款；SEC 拟调整投资顾问及投资公司的加密资产托管规则；预测市场平台 Kalshi 以 15 亿美元发行规模募资约 <span class="num">11.2</span> 亿。</p>
+    <p>研究与风险：Chainalysis 估计 2025 年全球链上潜在应税加密活动至少 <span class="num">4570</span> 亿美元、CARF 仅覆盖约 14%；达拉斯联储警告代币化存款或削弱银行期限转换能力、利率风险承受能力或减少 <span class="num">7000</span> 亿美元；Solana 通胀提案拟降低发行量、质押收益或两年内约减半；Tornado Cash 开发者 Roman Storm 重审推迟至 2027 年 4 月；TAC 暂缓发布事件复盘及恢复计划。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">过去一周（8 月 20 日至 27 日），中国开源模型以更低价格连续刷新榜单，英伟达财报验证了 AI 资本开支的延续；美伊从对峙走向临时航道安排，中美之间出现高层接触与关税叠加的复杂信号；国内食品安全、就业劝退与基层治理的批评声持续。</div>
+  <div class="card">
+    <p><b>模型与资本。</b>智谱发布 GLM-5.3-Flash、匿名模型"牛来"确认为 GLM 新版本并开源；阿里发布并开源 Qwen3.8-Flash；DeepSeek 披露前 7 月营收增长 9 倍、净亏损 7.15 亿元、推进 5000 亿元估值融资；月之暗面与美云巨头洽谈 K3 分成；软银筹划 200 亿美元债券；OpenAI 公布自研推理芯片实测数据、数据中心负责人离职。</p>
+    <p><b>财报与硬件。</b>英伟达 Q2 营收 962 亿美元超预期、Q3 指引 1080 亿、供应承诺增至 2790 亿；苹果发布 2 纳米 M6/M5 Ultra（8 月 26 日头条）；DRAM 出口价同比涨 401%；SpaceX 宣布 1000 亿美元路易斯安那星港；华为投标埃及算力中心。</p>
+    <p><b>科研进展。</b>海洋温度创历史新高；核废料供电火星车计划；FDA 批准首个转移性胰腺癌靶向疗法；带状疱疹疫苗与心脏病证据综述；物理世界通用模型与"活体皮肤"AI 生物科技登场。</p>
+    <p><b>地缘与能源。</b>美伊就霍尔木兹临时航道达成联合声明、油价回落至 80 美元关口附近；中情局局长密访莫斯科；美国拟在习特会前加征 7.5% 关税、加拿大等额反制；中国歼-16 首赴埃及联训；美军试图进入菲律宾中资钢铁厂。</p>
+    <p><b>国内批判。</b>星宇股份劝退应届生、HR 总监停职；"甲醛白菜"全国排查、韩国未检出；新闻删稿"走个面儿"批评；农村离婚女性分户困境；尼泊尔吉隆口岸冰崩泥石流重大伤亡。</p>
+    <p><b>加密市场。</b>ETF 连续 7 日净流入；Coinbase 推比特币抵押房贷；英国央行数字货币职责扩展；Chainalysis 估算 2025 年应税加密活动至少 4570 亿美元。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、吴说、联合早报、ChatGPT/AI 新闻聚合、十年之约、风向旗、中国数字时代、Nature、MIT 科技评论、cnBeta、竹新社、小众软件，覆盖 8 月 25–27 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日窗口内未读 763 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
