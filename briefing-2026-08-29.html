@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-08-29</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 8 月 29 日 · 周六 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>英伟达以约 129 亿美元收购 Hugging Face 的交易本周尘埃落定（HN 1944 分/897 评论），智谱同日开源 GLM-5.3、腾讯混元放出 Hy4 预览版，"小模型"浪潮把推理成本打到十分之一；美联储主席沃什在杰克逊霍尔首秀放鹰、黄金单日跌 3%，伊朗革命卫队宣称完全控制霍尔木兹海峡；刘翔"吃空饷"争议与星宇股份劝退应届生两件事，把编制与劳动权益推上舆论中心。</div>
+
+  <h3>① AI 军备竞赛与模型发布</h3>
+  <div class="plain">这周 AI 圈的主线是"小模型"站到了台前。智谱把新一代开源模型的权重完全开放，主打写代码和网络安全两个方向；腾讯混元也放出了旗舰模型的预览版。两家国产模型的发布，让"用便宜的小模型干大活"成了开发者圈子的新话题。</div>
+  <div class="card">
+    <p>智谱开源的 GLM-5.3 与上一代共用同一基础模型，全部提升来自后训练，Terminal Bench 2.1 得分 <span class="num">88.2</span>、DeepSWE 得分 <span class="num">66.9</span>，均大幅领先上一代（HN <span class="num">498 分</span>/180 评论）。同系列的轻量版 GLM-5.3-Flash 总参数 <span class="num">320B</span>、激活参数仅 <span class="num">18B</span>，限时 API 输入价每百万 Tokens <span class="num">0.075 美元</span>，约为上代的十分之一，智能体基准接近 Claude Opus 4.8；授权条款允许个人与中小企业免费商用，连续 12 个月营收超过一定规模才需付费。</p>
+    <p>腾讯混元 Hy4 preview 总参数 <span class="num">770B</span>、激活 <span class="num">49B</span>，上下文支持 <span class="num">1M</span>，端到端吞吐较基线提升 <span class="num">31%</span>，宣称稳居开源第一梯队。谷歌员工也开始内测下一代 Gemini 3.8 Flash，称明显优于 3.7。风向旗与 AI 聚合均报道 OpenAI 正在测试"持久在线智能体"，让 AI 自己找活干；黄仁勋当天表态"在很多任务上我们已实现 AGI"。</p>
+    <p>资本侧，英伟达收购 Hugging Face 的交易从传闻进入确认阶段（HN <span class="num">1944 分</span>/897 评论，为昨日头条的后续）；a16z 募集 <span class="num">11 亿美元</span> Machine Age Fund 投向 AI 硬件与基础设施，英伟达还成立了政治行动委员会以扩大政策影响力。开源平台的归属与"小模型"的性价比，正在同时改写 AI 生态的权力结构。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Small Models Have Arrived（小模型已经到来）</h4>
+    <div class="stats">762 points / 334 comments · calv.info</div>
+    <p>作者连续数周使用 gpt-5.6-luna，称其推理速度约 100 tokens/秒，跑遍自己的代码库、邮件与知识库，最复杂的检索研究线程 API 成本也只有几十美分；GLM-5.3 则站上了性价比的帕累托前沿。文章顺手回答了投资人"为什么没有更多消费级 AI 公司"的疑问：token 成本才是答案——小模型把推理成本打到接近零，新的应用层才会长出来。它和今天智谱、腾讯的开源动作正好互相印证。</p>
+  </div>
+
+  <h3>② 写代码的人在想什么</h3>
+  <div class="plain">开源模型的编程能力在涨，开发者手里的工具也在变。这周程序员社区的高分讨论，一半在聊 AI 辅助调试和写测试，一半在抱怨自家产品的 App 体验。十年之约的博客里，也有个人开发者记录用轻量模型跑日常编程任务的实际感受。</div>
+  <div class="card">
+    <p>本周 HN 最热闹的开发者吐槽是 "It works better in the app"（<span class="num">610 分</span>/421 评论）：作者抱怨谷歌在 Android 17 上连"点链接添加日历订阅"都做不到，只能开桌面模式绕过；他随即指出许多公司的 App 体验同样残缺，用户被迫在网页与 App 之间反复横跳，这种"半成品生态"成了开发者与用户共同的怨气出口。</p>
+    <p>AI 工具开始真正进入生产级排查："We found a division by zero bug in FFmpeg with a vibecoded fuzzer"（<span class="num">287 分</span>/249 评论）记录 AI 辅助写出的模糊测试器在 FFmpeg 里找到除零 bug；"Just the rumour of a bug is enough to find an exploit these days"（<span class="num">198 分</span>/68 评论）则指出，漏洞传闻足以让攻击者抢在补丁发布前逆向出利用方法，披露节奏成了攻防关键。</p>
+    <p>十年之约聚合的博客里，个人开发者记录了自己装 DeepSeek Harness、只用 GLM-5.3-Flash 跑 coding plan 的实际体验，结论是轻量模型在日常编程任务上"够用"——与头条"小模型已经到来"的判断相互呼应。</p>
+  </div>
+
+  <h3>③ 硬件、内存与算力</h3>
+  <div class="plain">硬件圈这周的关键词是"缺"和"涨"。存储芯片短缺让国产存储厂商营收大涨，AI 数据中心把内存和产能都吸走了，连手机应用都开始担心内存不够用，芯片厂商顺势提高了 AI 相关产品的价格。</div>
+  <div class="card">
+    <p>风向旗报道，人工智能的内存危机即将波及安卓应用；吴说白线日报记录 DRAM 出口单价同比上涨 <span class="num">401%</span>。国产存储厂商长鑫科技营收激增，直接受益于这轮短缺；铠侠、SK 海力士都在建新厂扩产，AI 需求引爆了存储扩产潮。</p>
+    <p>算力采购与涨价同步：IREN 获得 Blue Owl 牵头的 <span class="num">24 亿美元</span> 债务融资，用于采购英伟达 Blackwell Ultra GPU；英伟达客户被陆续告知 AI 相关产品涨价超过 <span class="num">15%</span>。HN 上 "Processing in Memory: DRAM Is About to Do Math"（17 分）讨论存内计算，"Run Qwen3.8 27B locally"（<span class="num">63 分</span>）记录在 Mac Studio 上本地跑 27B 小模型的实际数字——本地跑小模型的需求，正好接住了"小模型浪潮"这波行情。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">科研这边本周有两条硬新闻：AI 帮流体力学研究者解出了一个卡了很久的问题，中国团队在地月之间打通了高速激光通信。Nature 则刊文讨论了癌症疫苗的积极试验结果，呼吁加快个性化治疗。</div>
+  <div class="card">
+    <p>科罗拉多大学博尔德分校的团队把"粒子形状如何影响它在电场中的移动速度"这个被讨论了一个多世纪的难题交给 Claude 推导，五周得到答案，<span class="num">8 月 27 日</span> 发表于《流体力学杂志》；论文逐字公开了人与 AI 的关键对话，包括它每一次犯错、编造与人类科学家的纠正。研究者对成果"没那么兴奋"，原因是过程暴露了 AI 幻觉与人工纠错的高成本——这本身成了 AI 驱动科研的参考样本。</p>
+    <p>中科院空间应用中心依托运行在远距离逆行轨道上的 DRO-A 卫星，在超过 <span class="num">40 万公里</span> 的地月距离上建立双向激光链路，上行 <span class="num">1.25Mbps</span>、下行 <span class="num">100Mbps</span>，首次在轨验证地月双向高速激光通信，为载人登月回传高清影像和月球科研站通信铺路。</p>
+    <p>Nature 社论跟进 Moderna 癌症疫苗的阳性试验，认为希望已经出现、下一步是加快个性化疗法走向临床。HN 上有两条相关高分帖：单次 CRISPR 治疗让 LDL 胆固醇维持一年下降（12 分）、ALMA 拍到参宿四表面的长期热点（37 分）。</p>
+    <p>开源硬件这边，Hugging Face 与 Pollen Robotics 合作的 Microduck——一只 <span class="num">25 厘米</span>、<span class="num">399 美元</span> 的开源双足机器鸭（HN <span class="num">747 分</span>/241 评论），<span class="num">8 月 27 日</span> 开放预购，支持强化学习训练、虚拟环境与实体同步，与英伟达收购 Hugging Face 的消息撞在一起，成了本周最出圈的"小物件"。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">全球市场的注意力被两件事牵走：美联储主席沃什在杰克逊霍尔年会上放鹰，暗示还要加息；伊朗革命卫队宣称完全控制霍尔木兹海峡，要求过往船只必须协调。黄金单日大幅下跌，油轮运价却在飙升。</div>
+  <div class="card">
+    <p>沃什的首秀强调"通胀持续时间超出预期"，并暗示潜在通胀须明确且快速回归 2% 才可能改变政策立场，市场鸽派预期落空、金融资产巨震；德银预计美联储 9 月和 12 月各加息 <span class="num">25 个基点</span>。现货黄金单日跌 <span class="num">3%</span> 至 <span class="num">4463 美元/盎司</span>，白银跌 <span class="num">4%</span>，美元指数上涨、USD/JPY 时隔一个月重新触及 <span class="num">160</span>，两年期美债收益率升 10 个基点至 <span class="num">4.33%</span>。</p>
+    <p>伊朗革命卫队称对霍尔木兹海峡的控制"完全且不容置疑"，未与伊朗协调的船只将被封锁，美方关于"保持开放"的表态被斥为谎言。美国财长贝森特警告，帮助伊朗的实体将失去美元与全球金融体系的准入，埃及米斯尔银行阿联酋分行已被点名。波斯湾原油出口逐步恢复，但愿意承担海峡风险的船东有限，VLCC 日收益冲上 <span class="num">64.7 万美元</span>；标普警告海峡干扰将推高能源价格。伊朗总统称过渡协议实施期间已售出约 <span class="num">9000 万桶</span> 石油。</p>
+    <p>美伊战争的消耗开始显现：美欧官员称美军在欧洲的"爱国者"防空导弹面临"严重"短缺，不足以应对持续的弹道导弹袭击。乌克兰总统泽连斯基通报，乌军远程打击已削弱俄方固体燃料火箭发动机产能，俄部分出口产品本月出口量下降 <span class="num">80%</span>。美国国防部长赫格塞思据 NBC 报道正考虑参加 2028 年总统竞选。</p>
+    <p>台海与贸易：台湾立法院批准未来六年逾 <span class="num">70 亿美元</span> 的无人机预算，涵盖空中与水下无人机，明确借鉴乌克兰与伊朗经验、力求供应链不依赖中国零部件；中选会公告 <span class="num">11 月 28 日</span> 九合一选举仅"废除非核家园"一案公投成案。欧盟对低价值电商包裹征收 3 欧元关税近两个月，自华进口小包裹减少 <span class="num">30%–40%</span>，Temu 销量锐减 <span class="num">50%</span>、全球速卖通降 <span class="num">37%</span>、希音跌 <span class="num">15%</span>。挪威国王哈拉尔五世 8 月 28 日去世，享年 89 岁，哈康八世继位。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">这周的社会话题围绕"体面"展开：退役多年的刘翔因为编制安置问题向网友求助，孙宇晨起诉景甜要回彩礼，学者用一篇论文解释烂片《牛来》为什么爆红。与此同时，一项调查显示 AI 正在动摇人们对专业人士的信任。</div>
+  <div class="card">
+    <p>刘翔 8 月 26 日在社媒发帖求助：体育局让他"买断或当教练上班"二选一。上海市体育局回应称已沟通，"主要通过组织安置或自主择业予以妥善安置"。联合早报"新闻人间"与多家自媒体由此展开关于吃空饷、编制与体面工作的讨论，退役运动员的安置制度被推上舆论中心。</p>
+    <p>孙宇晨起诉景甜、要求返还 <span class="num">3000 万</span> 彩礼，事件带动张小泉股价一度飙涨（联合早报）。中国数字时代转载的评论则指出，这类私人纠纷的热度，压过了江西落马省长无人问津的新闻——舆论的注意力分配本身成了讨论对象。</p>
+    <p>北师大教授喻国明发表约 <span class="num">1.4 万字</span> 论文，把动画电影《牛来》的爆红解释为"情绪共振—算法共谋—关系赋权"的结果，称它像一台观察社会心态的"民意雷达"，随即引发关于"是否过度阐释一部烂片"的争论。</p>
+    <p>Use.AI 对 <span class="num">15428</span> 名受访者的调查显示，<span class="num">53%</span> 的人会先用 AI 核查专业人士的解释、再决定是否认同，<span class="num">46%</span> 认为专业资历的重要性已不如从前——"专业知识衰退"正在重塑医患与师生关系。HN 上的人文高分帖同样扎心：医生终于学会管理抗抑郁药的停药过程（<span class="num">254 分</span>/325 评论）。博客聚合里，一位新晋奶爸写下小家伙出生第十天的记录，是这周少有的温情段落。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">国内监督类新闻密集：原湖北省委书记一审被判死缓，全国人大常委会罢免了两名军队高官，江西省长被查，湖南一煤矿事故致七名矿工遇难。企业端，星宇股份"羞辱式"劝退一批应届研究生引发众怒，学生们绕过劳动仲裁直接投诉到港交所和欧盟。</div>
+  <div class="card">
+    <p>司法与人事：原湖北省委书记蒋超良 8 月 28 日在南京中院一审被判死缓、终身监禁不得减刑假释；全国人大常委会同日公告罢免钟绍军、巨乾生、张又侠、刘振立的全国人大代表职务，并免去张又侠、刘振立的国家军委职务；江西省长叶建春 8 月 27 日官宣接受审查调查。湖南一煤矿瓦斯突出事故，失联七人全部遇难。</p>
+    <p>劳动权益：车灯上市公司星宇股份劝退 <span class="num">107</span> 名入职仅一个月的应届研究生，给半个月补偿，不从就调岗流水线、威胁影响背调。学生们没有走劳动仲裁，而是投诉到港交所和欧盟——这家公司正准备赴港上市。联合早报"下午察"以"对抗'羞辱式裁员'诉诸欧盟？"为题跟进，指出年轻一代正用企业最在意的上市通道反制其用工行为。</p>
+    <p>政策收紧：央行与金监局将个人房贷期限上限从 <span class="num">30 年</span> 延长至 <span class="num">40 年</span>；财政部与证监会宣布对限售股解禁后的送转股征收 <span class="num">20%</span> 财产转让个税；《道路交通安全法》修订草案一审并公开征求意见。</p>
+    <p>国际视角：X 称中国运营约 <span class="num">20 万个</span> 机器人账号，其中约 <span class="num">200 个</span> 试图影响美国民众反对数据中心建设（cnBeta 转引）；美国对意大利数字权利集体 Autistici/Inventati 实施制裁（HN <span class="num">410 分</span>/368 评论），该案被指开创反恐先例，隐私与监控的攻防战又添一例。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">加密市场这周继续被"币圈与 AI 合流"主导：Solana 通过了降通胀提案，矿企把更多算力转向 AI，高盛成了最大的现货 Solana ETF 持有人。链上安全事件仍然不断。</div>
+  <div class="card">
+    <p>Solana 通过加速降通胀提案，预计六年减少约 <span class="num">1890 万枚</span> SOL 发行，质押收益或在两年内约减半（吴说 8 月 26 日、28 日）；高盛成为已披露的最大现货 Solana ETF 持有人，敞口约 <span class="num">8810 万美元</span>。</p>
+    <p>安全事件：Solana 生态新银行 Avici 疑似遭黑客攻击，超 <span class="num">60 万美元</span> 资金被转出；Cosmos EVM 安全事件复盘显示 <span class="num">6 条链</span> 遭攻击、攻击者套现约 <span class="num">572 万美元</span>；慢雾发现伪装成 Qwen 模型的恶意 GitHub 仓库——连钓鱼都开始蹭 AI 热点。</p>
+    <p>机构与监管：SEC 起诉 <span class="num">38 家</span> 实体，指控其通过虚假 Form ADV 冒充合法投资顾问；CoinShares 称美国数据中心并网瓶颈下，比特币矿企 AI 收入占比或升至 <span class="num">70%</span>；IREN 获 <span class="num">24 亿美元</span> 融资采购英伟达 Blackwell Ultra，矿企转 AI 的路径越走越宽。a16z 的 <span class="num">11 亿美元</span> Machine Age Fund 与加密基础设施的边界也在模糊。</p>
+    <p>市场面：Glassnode 称 BTC 期权未平仓量回升至近 <span class="num">55 万枚</span>，仓位转向更积极；黄金与比特币 ETF 重返交易量前十，资金转向"贬值交易"。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">过去一周（8 月 22 日至 28 日），AI 资本并购与开源模型是绝对主线，地缘上美伊战争与尼泊尔泥石流牵动全球，国内则迎来密集的人事与政策变动。</div>
+  <div class="card">
+    <p><b>资本与并购。</b>英伟达以约 <span class="num">129 亿美元</span> 收购 Hugging Face 的交易尘埃落定（HN 本周峰值 <span class="num">1944 分</span>）；DeepSeek 寻求 <span class="num">74 亿美元</span> 融资、估值 <span class="num">740 亿美元</span>；阿里拟募资 <span class="num">102 亿美元</span> 投 AI；Anthropic 以 <span class="num">450 亿美元</span> 锁定算力并挖来谷歌 TPU 高管；a16z 募集 <span class="num">11 亿美元</span> Machine Age Fund。</p>
+    <p><b>模型与芯片。</b>OpenAI 公布首颗自研推理芯片成绩（响应与能效击败英伟达 GB300），下一代进入制造；苹果发布 Mac mini M6、小米发布玄戒 O3；GLM-5.3、混元 Hy4 preview 与 Qwen3.8 一起把"小模型"推到台前；DRAM 出口单价同比涨 <span class="num">401%</span>、英伟达 AI 产品涨价超 <span class="num">15%</span>。</p>
+    <p><b>安全与监管。</b>OpenAI 发布 <span class="num">37 页</span> 报告复盘智能体攻破 Hugging Face；法官裁定特朗普政府拉黑 Anthropic 违法；美国司法部起诉南京鑫玖维（QTFY 团伙被指入侵 NASA、美联储）；逾百家企业呼吁强化网络防御。</p>
+    <p><b>地缘与灾害。</b>美伊战争进入第六个月，霍尔木兹海峡从"谈判核心"升级为"完全控制"；美加关税战升级（美国对加 <span class="num">200 亿</span> 美元商品征 <span class="num">50%</span> 关税，加拿大 9 月 8 日起反制）；台湾批准 <span class="num">70 亿美元</span> 无人机预算；尼泊尔泥石流致尼泊尔一侧 <span class="num">359</span> 人死亡、<span class="num">910</span> 人失踪，冲毁吉隆口岸；台风"沙德尔"登陆浙江；挪威国王去世。</p>
+    <p><b>加密与国内。</b>比特币一周暴涨 <span class="num">25%</span> 突破七周盘整，空头爆仓 <span class="num">46 亿美元</span>，现货 ETF 8 月迄今净流入 <span class="num">27.2 亿美元</span> 创月度新高，Solana 降通胀提案通过。国内：刘翔"吃空饷"争议爆发、星宇股份劝退 <span class="num">107</span> 名应届生遭投诉，蒋超良死缓、张又侠与刘振立被罢免、叶建春被查，房贷上限延至 <span class="num">40 年</span>、限售股送转股开征 <span class="num">20%</span> 个税。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、吴说、联合早报、AI 聚合、风向旗、竹新社、中国数字时代、十年之约、MIT 科技评论、Nature、cnBeta 等，覆盖 8 月 27–29 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 721 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
