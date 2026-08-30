@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-08-30</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 8 月 30 日 · 周日 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>OpenAI 宣布十一月十二日起停止向编程工具 Cursor 供应模型——理由是它被马斯克旗下 SpaceX 收购后的信任问题，马斯克隔空回怼、Anthropic 趁机加码支持，AI 巨头之间的裂痕摆上台面；腾讯 Hy4 正式发布并开源权重，Anthropic 公开"自动化对齐研究员"实验；霍尔木兹海峡从"完全控制"升级为"完全关闭"；长鑫科技全球首发量产 LPDDR6、开学季电脑最高涨价一成五；中尼泥石流尼泊尔一侧遇难人数升至 626 人，王毅承诺的一揽子援助正在落实。</div>
+
+  <h3>① AI 军备竞赛与模型发布</h3>
+  <div class="plain">这周 AI 圈最抢眼的事发生在两家美国巨头之间：它们彻底翻了脸。做聊天机器人的 OpenAI 宣布，从十一月十二日起不再给编程工具 Cursor 供应模型，理由是 Cursor 落到了马斯克手里。马斯克隔空回怼，另一家 AI 公司 Anthropic 却趁势表态要给 Cursor 加码。与此同时，腾讯正式发布并开源了自己的新一代大模型，国产模型阵营又多了一个重量级玩家。</div>
+  <div class="card">
+    <p>OpenAI 8 月 28 日公告：因 SpaceX 收购 Cursor，将终止向其供应 OpenAI 模型，停止日期定在 <span class="num">11 月 12 日</span>。公告给出的理由是马斯克旗下公司有过违约记录——收购 Twitter（现并入 SpaceX）后违反合同，xAI 今年早些时候在宣誓下承认违反 OpenAI 服务条款，因此"无法确信 SpaceX 会遵守服务条款"。SpaceX 今年 6 月以 <span class="num">600 亿美元</span> 全股票收购 Cursor 母公司 Anysphere，本月初完成交割，双方原本已合作近 <span class="num">4 年</span>。马斯克周六回应称"我根本不在乎"，还故意把奥特曼的名字写成"Scam Altman"（骗子奥特曼），指责两人"窃取了一个开源非营利组织"。</p>
+    <p>断供的连锁反应很快出现：Anthropic 首席计算官表示将继续增加对 Cursor 的算力支持，并期待其与 SpaceX 的后续合作；断供之后，Cursor 这个"多模型"工具将只剩 Claude 与自研的 Composer，开发者手里的模型选择被两大阵营直接切割。</p>
+    <p>国产侧，腾讯 8 月 28 日正式发布 Hy4 Preview 并开放权重：<span class="num">7700 亿</span> 参数、<span class="num">100 万</span> token 上下文；内部组织 163 名专家对 203 个工程任务盲测，平均得分 <span class="num">2.99/4.00</span>，略优于智谱 GLM-5.3（<span class="num">2.92</span>）与月之暗面 K3（<span class="num">2.94</span>）；彭博社报道在第三方基准上与其他国产模型各有高低。HN 首页同步挂出 Tencent Hy4 帖（<span class="num">79 分</span>/<span class="num">31 评论</span>）。</p>
+    <p>Anthropic 8 月 28 日公开"自动化对齐研究员"实验：Claude 自主完成查文献、提方案、生成训练数据、训练、评估与迭代的完整循环，在有基线对照的 <span class="num">7 类</span> 对齐任务上全部超过人类研究者，平均约 <span class="num">6.4 小时</span> 追平并反超；以"欺骗"任务为例，Claude 平均弥合了 <span class="num">85%</span> 的安全差距，人类研究者平均只有 <span class="num">20%</span>。同一天，索尼音乐与华纳音乐出版起诉 Anthropic，称其未经授权使用数万部作品训练模型，每部作品最高索赔 <span class="num">15 万美元</span>、删除版权信息额外 <span class="num">2.5 万</span> 美元，总额或达数十亿美元，两位创始人也被列为被告。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Our decision on Cursor following its acquisition by SpaceX</h4>
+    <div class="stats">785 points / 482 comments · openai.com</div>
+    <p>OpenAI 在公告里把断供理由讲得很直白：控制权变更、马斯克旗下公司有违约前科、无法确信技术会被合规使用；同时强调已给出合同允许的最长通知期，十一月十二日前开发者仍可继续使用现有模型，但新模型不再提供。这是马斯克与奥特曼多年的恩怨第一次直接砸到开发者工具上。公告正文未能直接抓取，要点取自订阅端 MIT 科技评论、财联社与 AI 聚合的多源报道，可与今日各条 Cursor 快讯互相印证。</p>
+  </div>
+
+  <h3>② 写代码的人在想什么</h3>
+  <div class="plain">开发者这周有热闹看，也有架吵。老牌前端库 htmx 出了新的大版本，游戏《EVE Online》宣布把服务端代码从旧版 Python 迁到新版，云厂商 Cloudflare 晒出给自家 DNS 缓存瘦身一百太字节的优化。另一边，有人写长文主张所有图形界面都该支持纯键盘操作，引来几千人围观讨论。</div>
+  <div class="card">
+    <p>"GUIs should be fully keyboard-driven"（<span class="num">993 分</span>/<span class="num">490 评论</span>）是今天 HN 最高分新帖：作者反驳"别再做终端界面了"的观点，认为图形界面也应当完全键盘驱动，重度终端用户的诉求不该被牺牲，评论区由此展开 GUI 与 TUI 谁更该被优先的长线辩论。</p>
+    <p>工程向三条线：htmx 4.0 发布（<span class="num">793 分</span>/<span class="num">203 评论</span>）；EVE Online 宣布迁移 Python 3（<span class="num">265 分</span>/<span class="num">137 评论</span>），一场持续多年的迁移长跑迎来终点；Cloudflare 把 1.1.1.1 的 DNS 缓存内存优化掉 <span class="num">100 TB</span>（<span class="num">901 分</span>/<span class="num">280 评论</span>），是本周工程向最有分量的一篇。</p>
+    <p>Cursor 断供直接影响开发者：多模型工具失去 GPT 系列后只剩 Claude 与自研模型，再配上 Anthropic 的加码支持，编程工具的阵营化肉眼可见。HN 上 "LLMs are making me lose my savviness"（<span class="num">42 分</span>）讨论依赖大模型后自己的"精明"在退化；十年之约聚合里，一位高二学生记录暑假完善自研 Agent 工具（涉及小稠密模型与小 MoE 的预训练），另一篇则把 LLM 单元测试生成拉回真实仓库做评测。</p>
+  </div>
+
+  <h3>③ 硬件、内存与算力</h3>
+  <div class="plain">开学季来了，电脑却要涨价。风向旗报道九月一日起电脑品牌集体涨价，涨幅最高达到一成五。另一边，国产存储厂商长鑫科技宣布新一代低功耗内存实现全球首发量产，还顺手把美国五角大楼告上了法庭。涨价的焦虑与突破的消息，这周同时出现。</div>
+  <div class="card">
+    <p>长鑫科技 8 月 29 日官宣 LPDDR6 量产：峰值速率 <span class="num">12800Mbps</span>、最高 <span class="num">16GB</span>，首批搭载小米 18 Fold，9 月新机首发；距离其 LPDDR5 量产不到一年，这是全球 LPDDR6 首次落地商用。半年报显示公司上半年营收 <span class="num">1503.1 亿元</span>，同比大幅增长，直接受益于 AI 需求带动的存储短缺行情。</p>
+    <p>同一天，长鑫起诉美国五角大楼，要求将其移出"中国军工企业"名单——该名单由拜登政府时期列入、特朗普政府 6 月更新时保留，被列入会影响政府采购与声誉；长鑫称自家 DRAM 只用于民用与商用。SK 海力士则表态对在美国投资持开放态度。风向旗报道 9 月 1 日开学季电脑品牌最高涨价 <span class="num">15%</span>。</p>
+    <p>HN 上存内计算成了热点：三星在 Hot Chips 2026 公布 Processing-in-Memory 方案（<span class="num">227 分</span>/<span class="num">89 评论</span>），"DRAM Is About to Do Math"（<span class="num">91 分</span>）跟进讨论——内存自己开始算数，与长鑫 LPDDR6 服务端侧 AI 的方向互相印证。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">科研这周有几件值得停下脚步的事：NASA 的罗曼太空望远镜定在周日发射，任务是去寻找系外行星；冰川上一种会成群移动的苔藓球再次登上科技新闻；硅谷一款配方保密的"抗衰药"被名人疯抢，科技媒体提醒这可能只是一场精心设计的营销。</div>
+  <div class="card">
+    <p>罗曼太空望远镜（Nancy Grace Roman Space Telescope）定于本周日发射（HN <span class="num">101 分</span>/<span class="num">37 评论</span>），将以广域红外巡天寻找系外行星、研究暗能量，是接棒韦伯的新一代旗舰望远镜。</p>
+    <p>"冰川老鼠"（Glacier Mice，HN <span class="num">227 分</span>/<span class="num">45 评论</span>）是冰川上由多种苔藓组成的球体，已在阿拉斯加、智利、格陵兰、冰岛、斯瓦尔巴、乌干达与委内瑞拉等地被发现；它们会成群、非随机地移动，成因至今未明——阿拉斯加的观测显示深色苔藓吸收阳光融化一侧冰面、球体顺势滚入凹陷，但完整机制仍是未解之谜。</p>
+    <p>MIT 科技评论本周报道，Generation Lab 推出一款"返老还童"疗法（每周注射两种现有药物的组合），26 岁的 CEO 邀请记者试用并加入"私人体验组"，称名单里有不少明星名人；科技媒体直言这是精心设计的营销，长寿行业惯用话术再现。同期的 MIT 访谈里，Xspark AI 的丁文伯谈机器人还缺一层触觉，电子皮肤与视触觉是下一个战场。</p>
+    <p>AI 数学方向两条线：HN "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment"（<span class="num">116 分</span>/<span class="num">38 评论</span>）讨论多智能体自主数学发现；十年之约博客转述 OpenAI Astra 于 5 月推翻离散几何领域一个 80 年未解猜想、8 月公布十项数学进展。核能侧，"Smaller reactors bring nuclear power closer to fulfilling its promise"（<span class="num">152 分</span>/<span class="num">213 评论</span>）讨论小型反应堆让核电更接近现实。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">中东局势这周又紧了一层。伊朗副外长说霍尔木兹海峡"完全关闭"，任何船只都得先跟伊朗打招呼；美国随即把制裁从埃及延伸到阿联酋，逼得阿联酋央行连夜宣布紧急检查。与此同时，美国与委内瑞拉签下大规模石油合作协议，俄罗斯则对基辅郊区发动了新一轮袭击。</div>
+  <div class="card">
+    <p>伊朗副外长加里巴巴迪称霍尔木兹海峡"完全关闭"，未经伊朗协调的船只无法通行，伊朗武装部队对海峡一切活动拥有完全监督权；伊朗已与阿曼就通行安排达成共识，但"不急于"执行，除非美国先履行承诺。伊朗 Press TV 援引消息人士否认美方"经南部航线输送石油"的说法，称那是美国压低油价的策略。美国财政部正式制裁埃及银行阿联酋分行、切断其美元交易渠道，阿联酋央行随即宣布对该分行展开紧急检查——财长贝森特此前的"点名警告"如今落了地。</p>
+    <p>俄乌战场：俄军 8 月 29 日袭击基辅西北部布恰市，至少 <span class="num">37 人</span> 死亡、<span class="num">50 栋</span> 住宅受损；泽连斯基称当地一处仓库遭袭，已就公职疏忽刑事立案。普京 8 月 24 日签署法令：关键基础设施所有者若无法保护设施免受无人机袭击或无力重建，国家可暂时接管，费用由设施收入支付。</p>
+    <p>美委内瑞拉 8 月 28 日达成大规模石油合作协议：涉及 <span class="num">17 个</span> 油田、储量 <span class="num">650 亿桶</span>，预计带来超 <span class="num">1000 亿美元</span> 投资与 <span class="num">2090 亿美元</span> 税收。尼日尔首都尼亚美 8 月 29 日凌晨传出枪声与爆炸，波及机场与总统府区域。</p>
+    <p>中美互动密集：港媒报道中企高管或将随习近平 9 月 24 日访美（特朗普 5 月访华时发出邀请），双方正商讨延长去年釜山敲定的贸易休战协议——北京倾向延至特朗普任期结束，华盛顿寻求再延一年；俄媒称习近平与普京将于 8 月 31 日在上合比什凯克峰会会面，或讨论"西伯利亚力量 2 号"天然气管道。特朗普把北美五大湖之一的安大略湖改名"美国湖"，安大略省长福特揭幕"安大略湖"标牌回应，称世界永远会叫它安大略湖。</p>
+    <p>政治与油：参议员沃伦炮轰特朗普"发动伊朗战争、石油盟友赚得盆满钵满"，指埃克森美孚二季度利润 <span class="num">140 多亿美元</span>（为去年同期两倍）、雪佛龙 <span class="num">121 亿</span>（增长四倍）；财务披露显示特朗普战争期间仍在买卖石油天然气股票，6 月还两度交易韩国电商酷澎股票、恰逢美韩因此争端。英国考虑对银行与石油公司征收暴利税。沃什放鹰后，市场把目光转向即将公布的非农数据——白线日报称 9 月加息概率已由约 <span class="num">35%</span> 升至接近 <span class="num">60%</span>。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">这周的社会话题绕不开"养孩子"和"过日子"。台湾一份特稿说当地生育率掉到全球最低，年轻人算了一笔账：买房要掏空双方父母的口袋，养孩子要养到十八岁。博客圈里，有人写下高二学生的暑假，有人分析歌迷对刀郎的追捧为什么越来越像宗教。</div>
+  <div class="card">
+    <p>联合早报特稿：台湾生育率滑至全球最低。新婚的罗玉婷夫妇在双方父母帮助下凑足 <span class="num">500 万</span> 台币头期款，买下新北市一间屋龄 40 多年、总价 <span class="num">1800 多万</span> 的中古屋；38 岁的高先生直言"连条狗都快养不起了，小孩至少得养到 18 岁"。养儿成本与房价，把年轻人直接劝退。</p>
+    <p>十年之约博客：一篇分析刀郎"偶像化"的文章指出其结构越来越像宗教——被主流"迫害"的先知（2010 年那英评审事件）、隐退苦修的岁月、被信徒解读为借古讽今"启示录"的《罗刹海市》；另有高二学生记录暑假完善自研 Agent 工具（小 MoE 预训练），无锡一位博士写下结束半年租房与"内耗"的搬家记录。</p>
+    <p>中尼泥石流的人间侧：郑钦文捐 <span class="num">100 万</span> 元、郑丽文捐 <span class="num">200 万</span> 台币、香港预留 <span class="num">5000 万</span> 港元、澳门捐 <span class="num">3000 万</span> 人民币；中国数字时代转载评论"尼泊尔是一个让人尊重的国家"，特稿《致命洪流过境》记录被截断的日常与生计。</p>
+    <p>HN 人文向：互联网变成"掠夺性粪坑"之辩（<span class="num">359 分</span>/<span class="num">240 评论</span>）；冰岛就是否重启入欧谈判举行投票（<span class="num">316 分</span>/<span class="num">406 评论</span>）。台湾检方搜查 PCB 巨头欣兴电子，涉嫌将大陆产产品改贴"台湾制造"规避贸易限制，总经理 <span class="num">1500 万</span> 台币交保。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">这周的监督话题从一家车灯厂烧到了更广的地方。星宇股份裁掉一百多名应届生的事还在发酵，有人发现这家公司对塞尔维亚员工严格按点下班、对中国员工却另有一套标准。与此同时，快两年没有一座城市的地铁规划获批，凉山一所学校让考得差的老师站在"耻辱"二字前合影，湖北一个政协公众号停更五年后突然恢复更新。</div>
+  <div class="card">
+    <p>星宇股份续集：<span class="num">440 名</span> 应届生 7 月入职，其中 <span class="num">107 人</span> 一个多月后被"羞辱式"解除合同；公司公开致歉、处理了人力资源总监并提出补偿，但学生已把投诉材料递向港交所与宝马、奔驰、大众的 ESG 部门。凤凰网报道其塞尔维亚尼什工厂对当地员工朝九晚五、到点下班，对中方支援人员却是日均约 <span class="num">10 小时</span> 的另一套标准。中国数字时代转载评论《劳动维权去欧盟告》：2026 年全国高校毕业生约 <span class="num">1270 万</span>、同比增 <span class="num">48 万</span> 再创新高。</p>
+    <p>城市财经指出，自成都地铁五期规划 2024 年末获批后，近两年没有一座城市的新一轮地铁规划获批，国家也不再受理一般地市的首轮地铁规划——地方债与房地产收缩之下，地铁审批被实质性收紧。</p>
+    <p>凉山州雷波县让班级平均分低的老师站上"耻辱"背景板合影，州政府联合调查组进驻，县里致歉称"深感内疚"；湖北鄂城政协公众号停更五年后于 8 月 14 日恢复更新，官方解释是"管理员工作调动导致账号无法登录"。</p>
+    <p>国际侧：HN 报道美国国土安全部正用一项晦涩的法律监视记者、非营利组织与工会（<span class="num">198 分</span>/<span class="num">24 评论</span>）；美国对意大利数字权利集体 A/I Collective 的制裁帖涨至 <span class="num">693 分</span>/<span class="num">738 评论</span>（昨日已写，分数再创新高）；开源游戏 Luanti 因一纸"无根据的 AI 版权通知"被 Google Play 下架（<span class="num">508 分</span>/<span class="num">151 评论</span>），版权投诉机制被滥用的讨论再起。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">加密市场这周又热又险。韩国五大交易所一周交易额暴增近两倍，Robinhood 的链上交易所单日交易量创了新高；另一边，两个项目接连被黑客掏空，还有项目方的社交媒体账号被盗、代币价格一分钟跌掉九成五。比特币圈子里，一位早期参与者也在这周离世。</div>
+  <div class="card">
+    <p>行情与资金：韩国五大加密交易所周交易额激增 <span class="num">188%</span>、突破 <span class="num">31 万亿</span> 韩元创 10 个月新高；Robinhood Chain 单日 DEX 交易量达 <span class="num">9.45 亿美元</span> 创历史新高；Polymarket US 7 月交易量增长 <span class="num">54%</span> 至 <span class="num">50 亿美元</span>。ETF 侧，比特币现货 ETF 结束九连流出、以太坊现货 ETF 连续 <span class="num">10 日</span> 净流入；过去 7 天 USDC 流通量净增约 <span class="num">10.2 亿</span> 枚；QCP 称 BTC 反弹具备扎实的现货支撑。</p>
+    <p>安全事件：借贷协议 Ajna 确认 v2 遭漏洞利用、呼吁用户立即提款；Fogo 基金会遭入侵、<span class="num">4 亿枚</span> FOGO 被转出；Trump Digital Gold 市值 1 分钟暴跌超 <span class="num">95%</span>，发布账号疑遭盗用；另有 <span class="num">6 个</span> 沉睡十年以上的钱包转移 <span class="num">553.59 枚</span> BTC。钓鱼蹭 AI 热点的套路仍在继续。</p>
+    <p>行业动态：比特币早期参与者、《全都是空气》作者许志宏去世；比特大陆发布两款水冷矿机 S23 XP Hyd 与 S23e U2H；Circle 的 USDC/EURC/CCTP 上线 Plasma 网络；Polygon Austin/Kyoto 硬分叉激活；罗森便利店再测稳定币支付，三种币三条链，日本监管尚未点头。</p>
+    <p>监管与宏观：国际刑警"Jackal IV"行动逮捕 <span class="num">58 人</span>，重点打击加密诈骗与洗钱；香港证监会将 SBCFX 列入无牌公司警示名单；纽约州警告 AI 助长投资骗局，2025 年相关损失超 <span class="num">80 亿美元</span>；BIS 总经理称稳定币并非可信的大规模支付手段，欧洲央行执委 Schnabel 则呼吁推动央行货币上链。宏观侧，IOSG 提出"美债、AI、通胀不可兼得，BTC 押注哪一边"，江卓尔已卖出 <span class="num">50%</span> 的 ETH 仓位。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">过去一周，AI 巨头从"抢人抢钱"升级为"正面开撕"：OpenAI 断供 Cursor、英伟达收购 Hugging Face 尘埃落定、Anthropic 一边发研究一边吃官司；硬件圈国产存储完成全球首发；地缘上霍尔木兹海峡从"完全控制"走向"完全关闭"；中尼泥石流的伤亡数字还在上涨。</div>
+  <div class="card">
+    <p><b>AI 巨头互撕与开源。</b>OpenAI 因 SpaceX 收购 Cursor 宣布 11 月 12 日断供，马斯克回怼、Anthropic 加码（HN 峰值 <span class="num">785 分</span>）；英伟达约 <span class="num">129 亿美元</span> 收购 Hugging Face 尘埃落定（HN 峰值 <span class="num">1963 分</span>）；GLM-5.3 开源、腾讯 Hy4 发布开源；Anthropic 公开自动化对齐研究员实验，同日被索尼与华纳起诉、索赔或达数十亿美元。</p>
+    <p><b>硬件与存储。</b>长鑫 LPDDR6 全球首发量产、搭载小米 18 Fold，同时起诉五角大楼要求移出涉军名单；DRAM 出口单价同比涨 <span class="num">401%</span>、开学季电脑最高涨价 <span class="num">15%</span>；三星 PIM 存内计算亮相 Hot Chips 2026。</p>
+    <p><b>地缘与能源。</b>霍尔木兹海峡从"完全控制"升级为"完全关闭"，美国制裁埃及银行阿联酋分行、阿联酋央行紧急检查；美委内瑞拉签石油大单（<span class="num">650 亿桶</span>）；俄袭布恰 <span class="num">37 死</span>；尼日尔首都枪声；习近平 9 月 24 日访美在即、8 月 31 日与普京比什凯克会面；特朗普改名安大略湖、交易酷澎股票惹争议。</p>
+    <p><b>灾害与人文。</b>中尼泥石流：尼泊尔侧 <span class="num">626 死</span>/<span class="num">2426 失联</span>、中国侧 <span class="num">7 死</span>/<span class="num">554 失联</span>，王毅称一揽子援助正在落实；台湾生育率滑至全球最低；挪威国王 8 月 28 日去世。</p>
+    <p><b>国内监督。</b>星宇股份羞辱式裁员持续发酵（塞尔维亚对比、投诉至欧盟）；近两年无一城地铁规划获批；凉山"耻辱"背景板事件；白酒 19 家上市公司半年净利减 <span class="num">95 亿</span> 元。</p>
+    <p><b>加密。</b>韩国交易所周交易额 <span class="num">+188%</span>、Robinhood Chain DEX 创新高；BTC 现货 ETF 结束九连流出；Ajna、Fogo 安全事件与 Trump Digital Gold 暴跌 <span class="num">95%</span>；比特币早期参与者许志宏去世。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、吴说、联合早报、AI 聚合、风向旗、竹新社、中国数字时代、十年之约、MIT 科技评论、cnBeta 等，覆盖 8 月 28–30 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 399 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
