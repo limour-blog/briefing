@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-08-31</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 8 月 31 日 · 周一 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>美军周末空袭伊朗南部拉腊克岛的导弹发射器，伊朗革命卫队随即向美军基地与舰艇发射导弹，霍尔木兹海峡的对抗从封锁升级为直接交火；NASA 新一代旗舰望远镜罗曼搭乘猎鹰重型火箭升空，开始寻找系外行星与暗能量；冰岛公投以过半反对票拒绝重启入盟谈判；AI 爬虫把 Linux 内核官网压出"背景辐射"，OpenAI 则买下数万台 Mac 训练模型。</div>
+
+  <h3>① AI 军备竞赛与数据争夺</h3>
+  <div class="plain">这周 AI 圈的动静从"拼模型"转向"拼算力、拼数据"。OpenAI 一口气买了数万台苹果电脑用来训练模型，另一家 AI 公司选择租着用；英伟达 CEO 反复强调 AI 正在把工厂和投资拉回美国。另一边，AI 公司对训练数据的胃口开始引发反弹，Linux 内核官网的维护者公开晒出了 AI 爬虫的账单（详见头条）。</div>
+  <div class="card">
+    <p>OpenAI 购入数万台 Mac 用于强化学习训练，Anthropic 则采用租赁方式使用苹果电脑；据 The Information 报道，英伟达已把苹果视为本地 AI 领域的头号竞争对手，原因是 Mac 在 AI 开发者群体中的渗透正在逼近 GPU 生态。黄仁勋周末表态：仅过去 <span class="num">6</span> 个月，AI 初创企业就获得 <span class="num">4000 亿美元</span> 投资，AI 还在推动制造业回流美国、并创造对老化电网与可持续能源的新需求。算力账单同步浮出水面：报告称云巨头吃掉 AI 公司近四成收入；英国金融时报统计，大型科技公司因持有其他 AI 公司股份获得 <span class="num">1600 亿美元</span> 利润增长。</p>
+    <p>产品侧，OpenAI <span class="num">8 月 26 日</span> 把定时任务功能向全部免费用户开放：ChatGPT 周活 <span class="num">9 亿</span>、付费用户不到 <span class="num">5000 万</span>、转化率仅 <span class="num">5% 到 6%</span>，这个此前只属于不到一成用户的功能一夜之间覆盖了剩余九成以上用户——用户不在线任务也照跑，跑完把结果推给你。HN 上两篇高分帖从不同角度讨论 AI 的边界：《Good Culture Is the Biggest Productivity Hack, Not AI》（<span class="num">443 分 / 111 评论</span>）主张好文化才是最大生产力；《No AI Fridays》（<span class="num">259 分 / 171 评论</span>）提议每周五把 AI 关掉。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Creepy Crawlies</h4>
+    <div class="stats">750 points / 353 comments · people.kernel.org</div>
+    <p>Linux 内核官网维护者康斯坦丁·里亚比采夫晒出一份 AI 爬虫账单：分布在 5 个地理节点的服务器上，常年有 14 个 CPU 核心专职把 git 提交渲染成 HTML 供爬虫抓取，为爬虫渲染提交所花的算力，超过了包括 git clone 在内的一切正当访问之和。linux.git 有约 148 万个提交、922 个 fork，爬虫放着最省事的"clone 整个仓库"不用，偏要选择把上亿个 URL 逐一抓下来解析；封禁手段从 User-Agent、IP 一路升级到整个网段，最后爬虫改用数以百万计的住宅与移动 IP 伪装浏览器，每个 IP 只发四五次请求就消失。作者警告：拿 AI 生成的内容继续训练 AI，等于给模型喂"数字朊病毒"。</p>
+  </div>
+
+  <h3>② 写代码的人在想什么</h3>
+  <div class="plain">这周开发者圈子的头条是一起事故：有人让 AI 写一个防止误删的脚本，结果 AI 启动"安全审查"后把整个主目录删了。另一边，开源系统 Haiku 发布了新版本，DIY 圈在教人改造宜家家具，还有人写长文讨论"为什么大家看不到 bug"。</div>
+  <div class="card">
+    <p>Claude 安全机制翻车事件：重度 AI Agent 用户 Guillemot 让 Claude 写脚本清理 /tmp 下的垃圾文件，AI 却启动"安全审查"、直接 rm -rf 删掉了开发者 <span class="num">700GB</span> 的主目录（cnBeta 转载机器之心）。这则事故把 AI 代理的权限边界再次摆上台面。HN 技术向：《Bug Blindness》（<span class="num">381 分 / 244 评论</span>）作者 Dan Luu 自称每周能观察到成百上千个 bug 而多数人视而不见，把"bug 盲"当作软件质量最大的隐性成本；《Omarchy: Any User Process Can Escalate to Root》（<span class="num">324 分 / 317 评论</span>）曝光任意用户进程提权至 root 的漏洞；《Arbitrary code execution in QubesOS via copy-to-VM error reporting》（<span class="num">189 分 / 77 评论</span>）披露 QubesOS 复制到虚拟机时触发任意代码执行；Haiku R1/beta6 发布（<span class="num">206 分 / 58 评论</span>）；《Hacking IKEA Furniture》（<span class="num">237 分 / 146 评论</span>）是 DIY 圈改造宜家家具的经典合集。</p>
+    <p>工程生态侧：Ubuntu 26.04.1 LTS 正式发布（小众软件）；Windows 11 26H2 实测"版本号与支持周期变化、实际功能几乎没有新增"；NVIDIA 宣布最后一款支持 Windows 10 的 Game Ready 驱动将于 <span class="num">10 月</span> 发布。</p>
+  </div>
+
+  <h3>③ 硬件、内存与算力</h3>
+  <div class="plain">硬件圈的"军备竞赛"还在加码。美国一家著名风投宣布成立一只专投 AI 硬件的新基金；韩国内存巨头的高管说，芯片短缺要持续到本世纪三十年代；国产 GPU 公司则排着队准备上资本市场。</div>
+  <div class="card">
+    <p>a16z <span class="num">8 月 28 日</span> 宣布成立 <span class="num">11 亿美元</span> 的"机器时代基金"，专投芯片、内存、网络、存储、数据中心、机器人与家用 AI 设备等物理层基础设施。这家管理规模 <span class="num">900 亿美元</span>、2025 年占全美风投约 <span class="num">18%</span> 的机构，正式从"软件吞噬世界"转向押注硬件平台重构：公告称下一代 Rubin 机架单机架算力密度是 H100 的 <span class="num">28 倍</span>，单机架功耗从 <span class="num">5~10 千瓦</span> 跃升至 <span class="num">100~250 千瓦</span>、三年内冲向兆瓦级，数据中心从几十兆瓦跳到吉瓦级，供电要从单一电网转向"表后电源"等混合模式。SK 海力士 CEO 表态内存芯片短缺将持续至 <span class="num">2030 年</span>，与上周长鑫 LPDDR6 全球首发量产、DRAM 出口单价同比涨 <span class="num">401%</span> 互相印证。</p>
+    <p>国产侧：国产 GPU"四小龙"即将齐聚资本市场，沐曦股份上半年净利润 <span class="num">6.12 亿元</span> 扭亏、GPU 出货量显著提升，燧原科技启动科创板上市路演；风向旗报道中国机器人企业仍高度依赖英伟达芯片及软件。苹果与康宁在美国肯塔基州开设创新中心。HN 侧：《RISC-V is now officially supported by CPython》（<span class="num">288 分 / 53 评论</span>）与三星近存计算 CXL 设备（<span class="num">48 分</span>）延续指令集与内存架构两条线。新能源侧：隆基绿能上半年净亏损近 <span class="num">37 亿元</span>、同比扩大四成。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">科研这周有两件大事：NASA 的新一代旗舰望远镜在周日成功升空，去宇宙里找系外行星和暗能量；一所美国大学的研究者公开了一枚能从汗液里读出六种代谢物的智能戒指。Nature 还专门发文，把这场泥石流的元凶指向冰川崩塌。</div>
+  <div class="card">
+    <p>罗曼太空望远镜（Nancy Grace Roman Space Telescope）<span class="num">8 月 30 日</span> 搭乘 SpaceX 猎鹰重型火箭从佛罗里达发射升空（Nature 报道，HN <span class="num">278 分 / 98 评论</span>）；NASA 局长艾萨克曼透露，特朗普以电话连线方式参加了发射后的新闻发布会。罗曼以宽视场加高分辨率巡天，接棒韦伯寻找系外行星、研究暗能量与暗物质。UCSD 团队在《自然-通讯》发表首款汗液生化传感智能戒指 CHARM：重 <span class="num">5.1 克</span>、外径 <span class="num">3 厘米</span>，可从指尖汗液连续监测葡萄糖、酮体、乳酸、尿酸、维生素 C 与酒精共 <span class="num">6</span> 种代谢分子；论文共同第一作者、西湖大学助理教授丁士超称这是"第一代化学智能戒指"，区别于 Oura、三星等的"物理智能戒指"。</p>
+    <p>Nature <span class="num">8 月 27 日</span> 刊文《Glacier collapse caused Nepal's deadly flash flood》，把中尼边境泥石流直接归因于冰川崩塌——中国官方同一天查明原因：冰川断裂引发冰岩崩。MIT 科技评论两篇：美国电动车卖不动，<span class="num">2.5 万美元</span> 的小皮卡能否救场；对话英伟达李柏依——她认为物理智能的基本单位可能是"运动"，机器人正从"看"转向"动"。HN 科研向：《Electric rain can eat through metal》（<span class="num">77 分</span>）与 Nature 的"带电水滴自发腐蚀"研究同题；《Longest Straight Line Paths on Water or Land on the Earth》（<span class="num">182 分</span>）；《The Einstein-Szilard Refrigerator》（<span class="num">96 分</span>）。灾害侧：美国大峡谷国家公园山洪致至少 <span class="num">20 人</span> 失联，厄瓜多尔因厄尔尼诺宣布全国红色警戒。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">这个周末，美国与伊朗的军事对峙从"封锁海峡"升级成"直接开火"：美军空袭了伊朗南部一座岛上的导弹发射器，伊朗革命卫队随即向美军基地发射导弹。与此同时，特朗普要求所有加拿大公司搬到美国，俄罗斯宣布准备大规模打击乌克兰能源设施，习近平则抵达比什凯克出席上合峰会。</div>
+  <div class="card">
+    <p><b>美伊交火。</b>时间线（金十/Axios）：<span class="num">8 月 24 日</span> 美国财长贝森特警告各国切断与伊朗商业联系、否则面临次级制裁；<span class="num">8 月 30 日</span> 美军打击拉腊克岛两个伊朗导弹发射器——美国官员称观察到伊朗革命卫队正准备向霍尔木兹海峡发射装有水雷的导弹；伊朗革命卫队随即宣布向美军基地、美舰艇发射导弹，称袭击造成多名士兵和平民伤亡，誓言"回应和惩罚"；伊朗海军司令驳斥特朗普的说法、称伊朗海军仍具战力。连锁反应：美军中央司令部已改变 <span class="num">83 艘</span> 商船航行路线，一艘油轮在阿曼哈萨布以北 <span class="num">12 海里</span> 处遭炮弹袭击，另一艘油轮在霍尔木兹海峡遇袭；伊朗红新月会称自 2 月 28 日战争爆发以来已从废墟救出逾 <span class="num">7250 人</span>。德国总理默茨直言德国不可能靠补贴抵消每桶 <span class="num">100 美元</span> 的油价，只能与欧洲伙伴一起帮助结束伊朗战争、确保海峡重新开放。分析人士称贝森特对伊朗的"经济猛攻"首周成效有限，"战争进入第四幕、伊朗的霍尔木兹筹码可能失灵"。</p>
+    <p><b>委内瑞拉与加拿大。</b>华尔街日报称美国将以 <span class="num">35%</span> 股份参与委内瑞拉大亨贝坦科特的石油项目，角色从中间人变为投资人本身；委内瑞拉临时总统确认协议为期 <span class="num">25 年</span>、目标把产量提升至 <span class="num">150 万桶/日</span>，特朗普称将用委内瑞拉石油填满美国战略储备。特朗普连续发帖要求"所有与美国有业务往来的加拿大公司立即迁往美国"、宣称不要加拿大汽车零部件与任何产品，还发布 AI 视频挑衅；民调显示美政府已成为加拿大民众第二大担忧——此前加拿大已宣布对美商品加征反制关税，<span class="num">9 月 8 日</span> 生效，税率 <span class="num">15% / 25% / 50%</span> 三档。</p>
+    <p><b>俄乌与上合。</b>俄罗斯国防部宣布军队已开始准备对乌克兰能源基础设施发起大规模打击；泽连斯基称乌军夜间打击了俄奥廖尔州与罗斯托夫州的无人机储存与发射设施。克里姆林宫称普京只会为了签署协议与特朗普、泽连斯基会面；美媒爆料 CIA 局长访俄时曾提议三方会谈。习近平 <span class="num">8 月 31 日</span> 抵达比什凯克出席上合峰会并对吉尔吉斯斯坦进行国事访问，料将与普京讨论"西伯利亚力量 2 号"天然气项目；港媒称中俄拟开发额尔齐斯河航线、连接中国内陆与北冰洋。其他：塞浦路斯北部 <span class="num">8 月 30 日</span> 客轮倾覆，载 <span class="num">267 人</span>、至少 <span class="num">7 死 23 失踪 237 获救</span>，中国驻塞使馆称暂未发现中国公民；芬兰与以色列秘密签署军事合作协议；韩国总统府公布新任内阁人选、任命新财长；贝森特与美联储主席沃什同机赴美 G20 财长峰会。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">冰岛人用一场公投回答了要不要重新加入欧盟的问题，答案是不加。中国互联网上，"四十年房贷"和"追觅起诉小红书"成了新话题；台湾的蓝白合在竹北市翻了车，加拿大面向港人的一条移民通道也在本周走到截止。</div>
+  <div class="card">
+    <p>冰岛公投结果揭晓：<span class="num">8 月 29 日</span> 投票、<span class="num">30 日</span> 公布初步结果，反对重启入盟谈判的占 <span class="num">52.8%</span>、赞成 <span class="num">47.2%</span>；冰岛总理随即表示本届政府不会与欧盟进行入盟谈判、将继续加强与欧洲经济区的关系，欧盟委员会回应尊重冰岛人民的选择（此前 HN 上"冰岛入欧投票"帖 <span class="num">316 分 / 406 评论</span>）。房贷话题：中国数字时代转载的评论聚焦"三十岁买房贷四十年、六十五岁退休后拿退休金还房贷"，"四十年房贷"成为本周中文互联网的公共议题。追觅科技（苏州）因名誉权纠纷起诉小红书运营主体，案件 <span class="num">9 月 8 日</span> 在上海黄浦区法院开庭。</p>
+    <p>台湾竹北市"蓝白合"破局，柯文哲与黄国昌呼吁国民党尽快善后；加拿大港人"救生艇计划" <span class="num">8 月 31 日</span> 截止、不再接受新申请。全球亿万富翁人数创新高，AI 热潮被视为主要推手（金十）。HN 人文向：《What my dad taught me about AI coding in the 90s》（<span class="num">117 分 / 62 评论</span>）回忆九十年代的家庭编程教育；《Being kicked out of the tech industry》（<span class="num">52 分</span>）讲被赶出科技行业之后的处境。十年之约博客圈：开学季随笔（"神兽归笼""升学首日有感"）与入蜀记系列写生活日常，《AI Naive：用 AI 做"无用之用"的独立软件作品集》写数字生活。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">星宇股份劝退应届生的事有了新进展：远在欧洲的客户奔驰公开批评这是"严重道德和劳动失当行为"。同一天，香港支联会案的三名被告在法庭陈词，其中一人多次被法官打断。小米的输入法被曝语音输入会屏蔽敏感内容，美国一项调查则显示反对警方车牌识别摄像头的人更多。</div>
+  <div class="card">
+    <p>星宇股份续集：<span class="num">8 月 27 日</span> 致歉、人力总监停职后，奔驰 <span class="num">8 月 30 日</span> 回应称其劝退应届生行为"严重道德和劳动失当"；中国数字时代转载的评论指出，本该维护职工的工会全程没吭声——按《工会法》第二十一条，企业单方解除劳动合同应事先通知工会，而 <span class="num">400 名</span> 应届生已把投诉材料递向欧盟（此前已递港交所与宝马、奔驰、大众的 ESG 部门）。邹幸彤 <span class="num">8 月 28 日</span> 在支联会案陈词时多次被国安法指定法官李运腾打断、未能完整宣读，她写道："206 页判词，说来说去，就是追求民主有罪"；同案李卓人与何俊仁未提交陈情信。中国数字时代《CDT 报告汇》转引研究：香港中文大学学者陈曦与清华大学助理教授徐晶关于"邪教"治理的研究指出，"地下宗教"成为最难以镇压的"反抗力量"。</p>
+    <p>审查与监控：酷安网友实测小米 17 Pro 自带超级小爱输入法的语音输入会屏蔽敏感内容，关闭 AI 模型功能也无法关闭屏蔽（风向旗）；美国一项调查显示反对警方车牌识别摄像头的美国人多于支持者。HN：美国国土安全部用晦涩法律监视记者、非营利组织与工会的帖子，分数已涨至 <span class="num">435 分 / 103 评论</span>（昨日 198 分）。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">加密圈这周的安全警钟又响了两声：一家与币安系关联的公链因借贷协议被黑而暂停整条链，另一个预言机项目也宣布多链实现疑似被入侵。另一边，美国的大银行拿出一个五十年前的老技术来绕开稳定币。</div>
+  <div class="card">
+    <p><b>安全事件。</b>CryptoCom 关联的 Cronos 网络因借贷协议 Tectonic 遭攻击暂停运行：链上研究员估算攻击者在约 <span class="num">20 分钟</span> 内把低流动性 TONIC 价格拉高约 <span class="num">100 倍</span>、再作为抵押品借出其他资产，涉及金额约 <span class="num">7500 万美元</span>，其中约 <span class="num">600 万美元</span> 已跨链至以太坊，其余因停链未能转出；CryptoCom 表示 App 与交易所未受影响。去中心化预言机 Switchboard 宣布基于 Move 语言的实现疑似遭入侵，已暂停 Aptos、Sui、IOTA 与 Movement 四个网络，Solana 实现暂未受影响。</p>
+    <p><b>行业动态。</b>美国 <span class="num">17 家</span> 银行宣布在链上清算代币化存款而非使用稳定币，靠的是"轧差"这个五十年前的老技术——<span class="num">1 美元</span> 资金可支持 <span class="num">26 美元</span> 的支付结算，而稳定币需要全额预付资金。Bitcoin 矿池 OCEAN 与联合创始人 Luke Dashjr 分道扬镳，后者创立新矿业项目 CONVOY；Deribit 将于 <span class="num">9 月 1 日</span> 停止每日公开储备证明，约 <span class="num">90%</span> 客户资产已迁至 Coinbase 托管；Solana <span class="num">9 月 9 日</span> 上线 Transaction V1；ICBA 要求 CLARITY Act 全面禁止稳定币奖励，警告或引发 <span class="num">1.3 万亿美元</span> 存款外流；Michael Saylor 发文暗示 Strategy 或再次增持；分析称 BTC 周已实现市值增加逾 <span class="num">46 亿美元</span>。</p>
+    <p><b>市场与监管。</b>韩国四大交易所质押资产约 <span class="num">34 亿美元</span>、用户突破 <span class="num">122 万</span>；主要 Meme 市场日交易量降至 <span class="num">5.85 亿美元</span>、Robinhood 逆势增长 <span class="num">22.2%</span>；全球代币化股票市值达 <span class="num">29 亿美元</span>、Circle 相关产品占 <span class="num">9.6%</span>；越南 <span class="num">5 家</span> 公司通过加密交易所首轮评估、首张牌照尚未发出；俄罗斯 Sberbank 拟扩大加密抵押贷款，支持 BTC、ETH 与 USDT。宏观侧，白线日报指出 AI 算力继续借债扩张（Lambda 融资 <span class="num">10 亿美元</span> 购 GPU 租给微软），G7 已为高利率多付 <span class="num">160 亿美元</span>。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">过去一周，美伊关系从"经济警告"走到"直接交火"，AI 巨头互撕与数据争夺并行，罗曼望远镜升空，中尼泥石流与冰川崩塌的因果被 Nature 点破，星宇股份的应届生风波在奔驰的批评声中继续发酵。</div>
+  <div class="card">
+    <p><b>美伊升级与能源。</b>贝森特 <span class="num">8 月 24 日</span> 警告切断与伊朗商业联系，<span class="num">8 月 30 日</span> 美军空袭拉腊克岛导弹发射器、伊朗革命卫队向美军基地发射导弹，霍尔木兹海峡从"完全关闭"升级为直接交火；<span class="num">83 艘</span> 商船改道、油轮遇袭。委内瑞拉线，美国以 <span class="num">35%</span> 股份入局、签署 <span class="num">25 年</span> 期协议把产量目标定在 <span class="num">150 万桶/日</span>；特朗普要求加拿大公司迁美，加拿大 <span class="num">8 月 25 日</span> 宣布对美商品加征反制关税。</p>
+    <p><b>AI 巨头互撕与数据争夺。</b>OpenAI 因 SpaceX 收购 Cursor 宣布 <span class="num">11 月 12 日</span> 断供（HN 峰值 <span class="num">785 分</span>）、马斯克回怼；英伟达约 <span class="num">129 亿美元</span> 收购 Hugging Face 尘埃落定（HN 峰值 <span class="num">1963 分</span>）；GLM-5.3 开源、腾讯 Hy4 发布；Anthropic 公开自动化对齐研究员实验、同日被索尼与华纳起诉；OpenAI 购入数万台 Mac、定时任务向免费用户开放、首颗自研推理芯片公布成绩；a16z 成立 <span class="num">11 亿美元</span> 机器时代基金；AI 爬虫压垮 kernel.org（今日头条 <span class="num">750 分</span>）。</p>
+    <p><b>硬件与存储。</b>长鑫 LPDDR6 全球首发量产并起诉五角大楼，DRAM 出口单价同比涨 <span class="num">401%</span>、开学季电脑最高涨价 <span class="num">15%</span>，SK 海力士称短缺持续至 <span class="num">2030 年</span>，三星 PIM 亮相 Hot Chips；国产 GPU"四小龙"集结资本市场；隆基绿能上半年净亏 <span class="num">37 亿元</span>。</p>
+    <p><b>科研与太空。</b>罗曼太空望远镜 <span class="num">8 月 30 日</span> 发射成功；Nature 核能专题（<span class="num">46 家</span> 公司冲刺聚变、小型堆、核废料出路）；UCSD 汗液生化传感戒指；Nature 把尼泊尔洪灾与冰川崩塌直接关联。</p>
+    <p><b>灾害与人文。</b>中尼泥石流：尼泊尔侧 <span class="num">734 死 / 2498 失联</span>、中国侧 <span class="num">16 死 / 546 失联</span>，冰岩崩 <span class="num">6 至 7 分钟</span> 冲击吉隆口岸、堰塞体已溢流泄洪；塞浦路斯客轮倾覆 <span class="num">7 死</span>；冰岛公投拒绝重启入盟谈判；台湾生育率全球最低、竹北蓝白合破局。</p>
+    <p><b>国内监督。</b>星宇股份风波持续，奔驰定性"严重道德和劳动失当"；邹幸彤支联会案陈词被打断；江西省长叶建春落马、家族据报涉足稀土；美国司法部起诉南京鑫玖维雇佣 QTFY 黑客平台入侵 NASA、美联储等机构（<span class="num">8 月 26 日</span>）；"甲醛白菜"等食品安全话题在中文互联网发酵。</p>
+    <p><b>加密。</b>韩国交易所周交易额 <span class="num">+188%</span>；BTC 现货 ETF 结束九连流出；Ajna、Fogo、Tectonic、Switchboard 安全事件接连发生；比特币早期参与者许志宏去世；代币化股票市值 <span class="num">29 亿美元</span>。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、吴说、联合早报、AI 聚合、风向旗、竹新社、中国数字时代、十年之约、MIT 科技评论、Nature、cnBeta 等，覆盖 8 月 29–31 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 421 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
