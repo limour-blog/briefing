@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-09-01</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 9 月 1 日 · 周二 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>苹果在 8 月 31 日完成换帅，库克交出首席执行官职位，特努斯 9 月 1 日接任，同一天苹果被曝起诉 OpenAI 窃取商业秘密；AI 公司抢购 Mac mini 让苹果措手不及，谷歌则从应用商店彻底移除旧版扩展，uBlock Origin 正式下架。美伊对抗从空袭延伸到油轮与无人机，梅西宣布从阿根廷国家队退役。</div>
+
+  <h3>① AI 军备竞赛与数据争夺</h3>
+  <div class="plain">这周 AI 圈的争夺从模型层延伸到芯片供应链。英伟达宣布向联发科投资，深化 AI 芯片合作；国产芯片公司交出的半年报一升一降，一家净利润大增，另一家被研发投入拖累。存储巨头考虑把高带宽内存的生产交给英特尔代工，AI 视频与支付公司则在把自家产品接进新的智能体生态。海外监管也在加码：欧盟把 ChatGPT 划入"超大型在线服务"，英国央行行长向二十国集团财长发出 AI 风险警告。</div>
+  <div class="card">
+    <p>英伟达在 8 月 31 日宣布向联发科投资 <span class="num">35 亿美元</span> 深化 AI 芯片合作，同一天联发科完成一笔 <span class="num">39 亿美元</span> 海外可转债发行，Alphabet 作为其长期 AI 基础设施合作伙伴参与认购，芯片合作从"供应关系"延伸到"资本绑定"。</p>
+    <p>国产芯片的半年报形成对照：中芯国际 4 至 6 月净利润同比增至 <span class="num">3.6 倍</span>；华为上半年营收增长 <span class="num">9.5%</span>，净利润下降 <span class="num">36.8%</span>，原因是研发支出和成本上升。供应链同步生变：SK 海力士考虑把高带宽内存（HBM）的部分生产交给英特尔代工；君正股份称 DRAM 三季度需求坚挺、四季度预计继续涨价。</p>
+    <p>模型侧，DeepSeek 发布 V4 系列首款多模态实验模型 DeepSeek-V4-Flash-Vision-Exp，多模态智能体基准 ApexBench 得分从 <span class="num">26.2</span> 升至 <span class="num">36.5</span>。变现与监管同步推进：ChatGPT 广告业务年化收入达到 <span class="num">10 亿美元</span>；欧盟依据《数字服务法》把 ChatGPT 认定为"超大型在线搜索引擎"，与 Reddit、Roblox 一起须在 12 月底前完成系统性风险评估与独立审计（三者欧盟月活均超 <span class="num">4500 万</span>）。</p>
+    <p>两条来自宏观的警告：英国央行行长贝利在 G20 财长会议前致信，称前沿 AI 模型可能通过网络破坏行为瓦解高度互联的全球金融体系；英国《金融时报》报道，上个季度美国科技巨头从对 AI 公司的股权投资中获得超过 <span class="num">1600 亿美元</span> 账面收益，市场担忧 AI 热潮的强度被纸面利润夸大。五角大楼则把 Grok 和 ChatGPT 纳入军事系统。</p>
+  </div>
+
+  <h3>② 苹果换帅与 AI 需求冲击</h3>
+  <div class="plain">这周硅谷最大的变动发生在苹果：库克结束了十五年的首席执行官任期，把位置交给特努斯，苹果老将席勒也退出了核心岗位。就在同一天，苹果被曝出正在跟 OpenAI 打一场商业秘密官司。而 OpenAI 和 Anthropic 抢购苹果小主机的事已经愈演愈烈，苹果自己的发布节奏都被打乱了。</div>
+  <div class="card">
+    <p>美国时间 8 月 31 日，蒂姆·库克结束 <span class="num">15 年</span> 的苹果 CEO 任期，转任董事会执行主席；约翰·特努斯在 9 月 1 日正式接任首席执行官。cnBeta 转载的盘点称，特努斯接手的是市值 <span class="num">4.67 万亿美元</span> 的苹果；彭博《商业周刊》指出，他履新后的首要任务是发展目前落后的 AI 业务。</p>
+    <p>同日，苹果老将菲尔·席勒卸任 App Store 与产品发布会负责人，保留"苹果院士"头衔，App Store 管理权转交给埃迪·库伊领导的服务部门。这轮人事调整被外界视为"特努斯时代"的开端。</p>
+    <p>人事之外还有官司：金十 9 月 1 日援引法律文件称，苹果在针对 OpenAI 的商业秘密诉讼中，指控被告使用苹果专有信息训练人工智能代理，包括在 OpenAI 工作期间访问电源转换器电路原理图；苹果称在 8 月 21 日 OpenAI 提供给苹果的 MacBook 中发现了新证据。</p>
+    <p>AI 需求对苹果的冲击同周显现（详见头条）：OpenAI 过去几个月采购数万台 Mac mini 和 Mac Studio 专用于强化学习，Anthropic 通过 AWS 租用 Mac mini，金十报道称"小型台式机突然成为 AI 智能体训练的新基础设施"；"英伟达的活被苹果抢了"是中文科技媒体对这一轮风向的概括。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Apple Caught Off Guard by AI Demand for Mac Mini and Mac Studio</h4>
+    <div class="stats">231 points / 257 comments · MacRumors（援引 The Information）</div>
+    <p>苹果本周提前发布了新款 Mac mini 与 Mac Studio——按惯例这类产品要到秋季十月、十一月才更新，这一次赶在 iPhone 发布季之前。The Information 报道称，提前的原因是 AI 驱动的企业需求激增：苹果 6 月举行"Business at the Park"活动，福特、迪士尼、Anthropic 高管出席，Mac mini 被称作全场"宠儿"；苹果还专门宣传了多台 Mac Studio 串联成一台大机器、用于运行前沿大模型的功能。即便如此，企业客户抢购的速度仍让苹果措手不及：公司没有面向企业客户的工程团队，也缺少开发者关系人员，甚至拒绝了企业购买私有云计算（Private Cloud Compute）接入权的请求。叠加全球内存短缺，多款 Mac mini 与 Mac Studio 配置已经缺货数月。中文侧的报道补充了细节：OpenAI 已采购数万台 Mac mini 和 Mac Studio 专用于强化学习，Anthropic 也在租用 Mac mini。</p>
+  </div>
+
+  <h3>③ 写代码的人在想什么（智能体与开发者生态）</h3>
+  <div class="plain">这周开发者圈同时收到安全警报和生态地震。Anthropic 警告有恶意软件在偷 Claude 用户的登录会话，紧急切断了支付权限；安全研究员演示了如何劫持 Claude Code 的自动模式。开源智能体 OpenClaw 发布史上最大更新，把浏览器应用重构成主界面。另一边，谷歌正式把旧版扩展从应用商店清空，广告拦截神器 uBlock Origin 从此无法重新安装。</div>
+  <div class="card">
+    <p>Anthropic 本周发出安全警报：信息窃取恶意软件偷走了部分用户的 Claude 登录会话，攻击者可以访问账户并窃取使用数据。公司正在强制受影响用户退出登录、移除已保存的支付方式，并退还认定为未经授权的费用；已识别的恶意软件包括 Windows 上的 Vidar、LummaC2、StealC、RedLine、Acreed，以及 Mac 上的 Atomic Stealer（AMOS）。</p>
+    <p>安全研究员则在攻击侧展示成果（HN 热帖《Breaking Claude Code Opus 5 Auto Mode》，<span class="num">325 分/109 评论</span>）：仅凭一个"网站摘要"请求就能劫持 Claude Code Opus 5 的自动模式，实现代码执行的攻击成功率约 <span class="num">60%–80%</span>；而 Anthropic 委托的第三方评估给出的结果是 <span class="num">0.00%</span>，两者差距引发对自动模式安全评估方法的讨论。</p>
+    <p>开源智能体 OpenClaw 2.0 上线（HN <span class="num">142 分/168 评论</span>，风向旗同步报道）：这次更新由 <span class="num">933</span> 名贡献者、超过 <span class="num">1.6 万个</span> 拉取请求构成，约占 OpenClaw 历史合并请求的一半；支持共享云会话，把浏览器应用重构成多人协作的主界面。国内生态同步跟进：微信支付上线 AI 专属卡，支持接入 DeepSeek Harness 和 OpenClaw，授权后可在对话中直接完成下单支付。</p>
+    <p>另一边，开发者与普通用户共同面对一次生态迁移：8 月 31 日谷歌从 Chrome 应用商店移除所有 Manifest V2 扩展（HN 头条，<span class="num">107 分/71 评论</span>），广告拦截工具 uBlock Origin 在列。小众软件提醒：Chrome 138 及更早版本上的旧扩展保留安装状态但无法更新，卸载后不能重新安装，需要提前备份扩展文件。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">科研这周的看点从天上到地面都有。MIT 课堂里走出的混合动力飞机即将量产，这种飞机在足球场大小的空地就能起降；华人团队造出一款靠光驱动的软体机器人，能自己连跳不用人管。Nature 一周里讨论了要不要废除闰秒、蛇咬伤到底有多常见，以及地球上的秩序是否暗示着一条新物理定律。</div>
+  <div class="card">
+    <p>MIT 科技评论报道，诞生于课堂项目的混合动力飞机 Electra 即将量产：制造计划价值 <span class="num">8.5 亿美元</span>，航程约 <span class="num">1930 公里</span>、巡航时速约 <span class="num">320 公里</span>，起降要求远低于传统飞机，驳船、停车场甚至足球场大小的空地都能成为起降点；研发方认为 <span class="num">80–400 公里</span> 的出行区间是它最合适的战场。</p>
+    <p>北卡罗来纳州立大学尹杰团队的论文 8 月 27 日发表于《美国国家科学院院刊》：液晶弹性体软环与刚性 V 形尾部的组合，让毫米级软体机器人在恒定红外光下连续跳跃超过 <span class="num">500</span> 次、无需人工复位，跳跃高度超过自身高度的 <span class="num">80 倍</span>，还能在斜坡、草地、湿沙和碎石上运动，改变设计后甚至能入水划行再回到岸边。</p>
+    <p>Nature 本周的几篇讨论：对"负闰秒"的担忧正在加速废除闰秒制度的进程；一篇激进提案认为"进化压力"同样适用于原子，可能指向一条新的物理定律；一项基于模型的新研究首次给出全球蛇咬伤与相关死亡的规模估计，为公共卫生应对提供依据；另一篇数据文章分析"富人为何更悲观"，答案与年龄、居住地和预期有关。</p>
+    <p>老牌厂商在具身智能时代翻红：MIT 科技评论报道，全球超过 <span class="num">2.75 亿辆</span> 汽车的底层系统使用黑莓旗下 QNX 软件，2026 年以来黑莓股价翻了一番，被消费者遗忘的手机品牌靠"物理 AI"概念重新回到舞台。HN 侧两条科研向热帖：一条回顾 MIT 发生的二甲基汞暴露事故（<span class="num">94 分/61 评论</span>），回帖称涉事学生使用该化合物未经授权、MIT 不允许购买或合成二甲基汞，讨论指向实验室剧毒物质管控；另一条称一项"渗流"证明解决了相位转变领域数十年难题（<span class="num">40 分/11 评论</span>）。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">美伊对抗这周从空袭延伸到海上：沙特一艘大油轮在霍尔木兹海峡被截停，伊朗军方又击落了两架美军无人机，美国陆军部长递交辞呈，特朗普放话"可能会打击伊朗"。中东另一边，沙特、土耳其、巴基斯坦把三方防务协议推进到设立秘书处的阶段；欧洲方向，瑞典花大价钱买下法国护卫舰。</div>
+  <div class="card">
+    <p>金十 9 月 1 日援引伊朗媒体称，可容纳 <span class="num">200 万桶</span> 石油的沙特油轮"雪松"在霍尔木兹海峡南部航道被截停，并在被截停时开启了自动识别系统；美军此前否认有超级油轮在海峡触雷。伊朗军方称超过 <span class="num">90%</span> 的导弹仍可使用，伊朗革命卫队在 8 月 31 日凌晨于海峡以东击落两架美军 MQ-9 无人机。</p>
+    <p>美国侧动作密集：陆军部长德里斯科尔因与国防部长赫格塞斯在陆军改革方向上分歧，向特朗普提交辞呈；特朗普在 9 月 1 日表态"我们可能会打击伊朗，看看接下来会发生什么"，同时称打击将是有限的、霍尔木兹海峡"处于非常良好的状态"。油价应声上行，布伦特原油结算价报 <span class="num">90.49 美元/桶</span>、上涨 <span class="num">2.71%</span>。</p>
+    <p>中东其他方向：沙特、土耳其、巴基斯坦 8 月 31 日举行共同防务协议首次委员会会议，秘书处设在沙特，首阶段由巴基斯坦领导 <span class="num">3</span> 年；瑞典签署 <span class="num">43 亿欧元</span> 协议购买法国护卫舰，马克龙称其他欧洲盟友可能随后加入"护卫舰俱乐部"。</p>
+    <p>乌克兰与俄罗斯在 G20 框架下罕见接触：美俄财长在会议期间会晤，讨论金融合作与乌克兰和平计划；俄国防部称当天在俄境内击落 <span class="num">180 架</span> 乌克兰无人机，俄军袭击了基辅用于组装无人机的仓储设施；乌克兰方面紧急请求荷兰提供 <span class="num">20 亿欧元</span> 军事援助。以色列空袭加沙，击毙哈马斯武器供应部门负责人，并对黎巴嫩南部实施袭击。欧盟委员会宣布自周四起暂停从巴西进口肉类。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">阿根廷足球巨星梅西宣布从国家队退役，一代球迷的青春记忆画上句号。谷歌地图把安大略湖在美国境内显示成"美国湖"，惹来一片吐槽。游戏圈则迎来一场超大规模的"泄密考古"：Steam 上流出横跨十余年的旧游戏数据，玩家等了多年的《半条命》系列第三章素材也在里面。</div>
+  <div class="card">
+    <p>风向旗 9 月 1 日凌晨报道，阿根廷足球巨星利昂内尔·梅西宣布从国家队退役。</p>
+    <p>谷歌地图调整了安大略湖的显示名称，对美境内用户显示"美国湖"（HN <span class="num">10 分</span>，cnBeta 8 月 30 日亦有报道）。这片北美五大湖之一与加拿大共界，名称改动在美国国内引发讨论。</p>
+    <p>Steam 数据泄漏成为本周游戏圈最大事件（HN <span class="num">355 分/71 评论</span>，小众软件与风向旗同步报道）：超过 <span class="num">12TB</span>、横跨 <span class="num">2003–2013</span> 年的游戏数据被公开，包含《传送门 2》《半条命 2：第三章》等作品的未公开早期版本、废弃地图、模型与对白，以及被取消的 F-Stop 玩法。Valve 数据挖掘者确认这些数据来自一个公开可访问的 API 接口、无需密码；数据是近期一次性下载还是十几年陆续收集，目前没有定论。</p>
+    <p>HN 今日最高分帖《"I just chose words carefully"》（<span class="num">1163 分/337 评论</span>）以"我只是字斟句酌地选了词"为题，从等宽字体排版谈起，讨论文字设计中的细节功夫，被社区视为本周值得细读的人文向内容。另两条生活向消息：日本食品价格将迎来年内最大一波上涨（金十）；美团外卖在巴西打价格战，被当地竞争对手投诉（风向旗）。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">这周国内的监督报道集中在就业歧视、基层财政和劳工权益。四川一家机构的招聘启事里写明"不招同性恋"；陕西一个镇因为欠工程款被法院冻结账户，职工工资一度受影响。星宇股份的应届生风波尚未平息，又被曝出海外工厂里中外员工工作时长不一样。德国那边的华人迷奸案宣判，多名案犯获刑，法院认定"厌女"是犯罪动机。</div>
+  <div class="card">
+    <p>中国数字时代转载"阿强同志"文章：四川宜宾一家机构发布招聘两名厨师的启事，其中一项要求写明"不招同性恋史和有同性恋倾向的"。文章作者电话沟通时，联系人回应"招聘信息想怎么写就怎么写"。</p>
+    <p>陕西商洛山阳县户家塬镇政府因一起建设工程合同纠纷败诉，账户被法院冻结，干部职工担心工资与医保代扣受影响；当地成立工作专班，8 月 30 日已将 8 月工资足额发放，镇政府正协商解封账户（中国数字时代转载"四环青年"）。</p>
+    <p>星宇股份事件本周持续发酵：7 月入职的 <span class="num">440</span> 名应届生中 <span class="num">107</span> 人被解除劳动合同，方案是"主动离职拿半个月工资"或"调岗去流水线"；8 月 30 日奔驰回应这是"严重道德和劳动失当行为"；8 月 31 日凤凰网科技报道，其塞尔维亚工厂里中方支援人员日均工作约 <span class="num">10 小时</span>，当地员工按劳动法朝九晚五，工厂长期亏损、靠国内母公司输血。</p>
+    <p>德国华人迷奸案（中国数字时代转载"正面连接"）：截至今年 7 月，系列案件 <span class="num">5</span> 人被起诉，<span class="num">4</span> 人结束一审，分别获刑 <span class="num">5 年、5 年 9 个月、11 年 3 个月、14 年</span>；多宗案件里"厌女"作为犯罪动机获得司法认定，法官指出把犯罪过程上传互联网炫耀并获追捧，是性犯罪的新形态。</p>
+    <p>此外：中国数字时代周报公布中尼边境冰崩泥石流的最新统计——截至 8 月 30 日，尼中双方公布死亡 <span class="num">700 多人</span>、失踪超 <span class="num">3000 人</span>（尼泊尔 <span class="num">752</span> 死 <span class="num">2502</span> 失踪，中方 <span class="num">16</span> 死 <span class="num">546</span> 失踪）；国内首部 AIGC 长剧《后西游记》开播，成为首部"边审边播"剧集；凤凰网科技与《连线》调查称，诈骗分子利用微软 Teams 等企业聊天应用诱骗中国受害者转账，多地公安机关公开点名 Teams，微软 6 月起向中国用户显示警示横幅并停止 Teams 个人版在华服务；西藏网安部门以打击泥石流灾害网络谣言为由处罚 <span class="num">10</span> 人。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">加密市场这周被美联储的加息预期压着，但资金仍在进场：比特币现货 ETF 单周又净流入一大笔，上市公司继续加仓。监管侧，日本、韩国在调整税制，俄罗斯给出首年合规交易量的预测，阿根廷五分之一的人口已在接触加密货币。安全方面，几起黑客转移资金的案件再次敲响警钟。</div>
+  <div class="card">
+    <p>资金面与政策面拉锯：DWF Labs 称美联储加息预期重新升温，但 BTC、ETH 现货 ETF 单周仍净流入 <span class="num">17.4 亿美元</span>；Bitfinex 认为美联储转鹰压制币价，但现货买盘与 ETF 流入仍支撑比特币在 <span class="num">77,100 美元</span> 关口附近。CryptoQuant 数据显示比特币 8 月上涨超过 <span class="num">30%</span>，但交易所交易量处于 2023 年 9 月以来低位——币安现货月交易量从 <span class="num">1980 亿美元</span> 降至 <span class="num">440 亿美元</span>。</p>
+    <p>上市公司继续加仓：Strategy 上周斥资 <span class="num">3.697 亿美元</span> 增持 <span class="num">4603 枚</span> BTC，并向 MSCI 致信反对"非运营公司"指数新规；XRP 现货 ETF 累计净流入达 <span class="num">18 亿美元</span>，高盛等机构位列主要持有人。</p>
+    <p>稳定币与新兴市场：Tether 美国稳定币 USA₮ 流通量突破 <span class="num">1.75 亿美元</span>、较 1 月增长约 <span class="num">10 倍</span>；CEO 称稳定币让约 <span class="num">6.5 亿人</span> 间接持有美国国债。阿根廷五分之一人口使用加密货币，<span class="num">94%</span> 比索交易流向稳定币；俄罗斯首年合规加密货币交易量预计超过 <span class="num">460 亿美元</span>。</p>
+    <p>监管与司法：日本金融厅提议放宽信托型稳定币税务申报义务（拟纳入 2027 财年税制改革）；韩国国税厅拟引入数字资产追踪程序填补个人钱包征税空白；爱尔兰拟将加密资产排除在新税优储蓄计划之外；宁波法院首度以走私禁止进口货物罪处理虚拟货币矿机案，司法定性仍存争议。</p>
+    <p>安全事件集中爆发：Lazarus 集团近期通过 Hyperliquid 转移逾 <span class="num">3000 万美元</span>；More Markets 遭攻击、约 <span class="num">1550 万枚</span> WFLOW 被转出；慢雾统计称百余地址因私钥泄露被盗、多数曾使用 iToken 钱包；柏林政府网络遭黑客攻击，攻击者疑似索要 <span class="num">30 枚</span> 比特币赎金。市场侧：Polymarket 获 1789 Capital 拟追加投资约 <span class="num">3 亿美元</span>、估值或升至 <span class="num">210 亿美元</span>；Robinhood Chain DEX 日交易量达 <span class="num">8.75 亿美元</span> 创历史新高；OpenSea 时隔四年重新支持 Solana NFT；Hyperliquid 正与 Kraken 母公司洽谈进入美国市场。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">过去一周的主线清晰：美伊从海峡封锁走到直接交火、再到油轮与无人机交锋；AI 圈围绕算力与数据激烈争夺，苹果换帅、OpenAI 扫货 Mac、音乐巨头起诉 Anthropic 同时发生；Chrome 旧扩展时代落幕，Steam 十多年的数据被翻出；科研上罗曼望远镜升空、中尼边境冰崩泥石流被归因于冰川崩塌；国内批判焦点从星宇应届生风波延伸到海外用工差异。</div>
+  <div class="card">
+    <p><b>美伊局势。</b>美军周末空袭伊朗拉腊克岛导弹发射器，伊朗向美军基地发射导弹；随后沙特油轮在海峡被截停、两架 MQ-9 无人机被击落，美国陆军部长辞职，布伦特原油结算价站上 <span class="num">90 美元</span>。</p>
+    <p><b>AI 军备。</b>英伟达约 <span class="num">129 亿美元</span> 收购 Hugging Face 尘埃落定、又向联发科投资 <span class="num">35 亿美元</span>；OpenAI 购入数万台 Mac 用于强化学习，苹果被 AI 需求打乱发布节奏；a16z 成立 <span class="num">11 亿美元</span> 机器时代基金；DeepSeek 发布 V4 系列首款多模态实验模型。</p>
+    <p><b>苹果换帅。</b>库克 8 月 31 日卸任、特努斯 9 月 1 日接任首席执行官，席勒退出核心岗位；苹果同期起诉 OpenAI 商业秘密。</p>
+    <p><b>版权与数据。</b>索尼、华纳等 <span class="num">35</span> 家音乐出版商起诉 Anthropic 及其两位创始人；谷歌移除全部 Manifest V2 扩展；Steam <span class="num">12TB</span> 数据泄漏。</p>
+    <p><b>科研。</b>NASA 罗曼望远镜升空；Nature 将中尼边境泥石流归因于冰川崩塌，死亡人数升至 <span class="num">700 多人</span>；MIT 混合动力飞机与光驱动软体机器人亮相。</p>
+    <p><b>国内批判。</b>星宇股份应届生风波在奔驰批评后延续到塞尔维亚用工差异；宜宾"不招同性恋"招聘启事引众怒；镇政府欠工程款账户被封。</p>
+    <p><b>加密。</b>比特币 8 月上涨超 <span class="num">30%</span>、ETF 单周净流入 <span class="num">17.4 亿美元</span>；美联储 9 月加息预期压制币价；日本、韩国监管收紧，稳定币在新兴市场加速渗透。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、吴说、联合早报、AI 聚合、风向旗、竹新社、中国数字时代、十年之约、MIT 科技评论、Nature、cnBeta、小众软件等，覆盖 8 月 30 日–9 月 1 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 709 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
