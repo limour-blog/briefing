@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-09-02</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 9 月 2 日 · 周三 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>Anthropic 发布新一代 Claude 模型 Fable 5.1，价格更低、编程更强，登上今日 HN 头条；美伊冲突升级为直接交火，油价突破每桶九十美元；德国指控俄罗斯无人机袭击莱比锡机场并关闭俄方领事馆；中国取消外籍个人股息免税、法院冻结安世半导体在华资产；存储芯片涨价传导到手机市场，华为小米荣耀集体调价；星宇应届生风波中大众启动专项调查。</div>
+
+  <h3>① AI 军备竞赛与模型发布</h3>
+  <div class="plain">Anthropic 这周发布了两款新一代 Claude 模型：一款面向所有用户，一款只提供给获得信任的机构，官方称它们是编程和知识工作领域目前最强的模型，同时把价格降了下来。中国的智谱和腾讯也在发新模型，但智谱的半年报显示，收入增长很快、亏损依旧不小。美国政府动作也不少：把商用聊天机器人装进军事系统，还对亚马逊的广告业务提起诉讼。</div>
+  <div class="card">
+    <p>Anthropic 9 月 2 日发布 Claude Fable 5.1 与 Claude Mythos 5.1（HN 头条，<span class="num">737</span> 分/<span class="num">693</span> 评论）：两者是同一模型、两档安全设置，Fable 5.1 全面开放，Mythos 5.1 仅通过受信任访问项目提供，用于网络安全与生命科学，其先进生物学能力的访问项目与美国政府合作建立。定价上，典型负载价格比上一代 Fable 5 低约 <span class="num">25%</span>，智能体场景最高节省约 <span class="num">45%</span>，提示缓存读取降价 <span class="num">75%</span>；上下文窗口达 <span class="num">100</span> 万 token，编程基准 CursorBench 3.2 得分 <span class="num">73.4%</span> 居首。新的企业级 Frontier Safeguards 把数据存放在客户完全掌控的云基础设施中、效果等同零数据保留，秋季起分阶段推出。安全侧，网络安全误报减少 <span class="num">60%</span>，Fable 5.1 可用于发现软件漏洞、但不能开发利用。</p>
+    <p>中国模型侧：智谱上半年营收 <span class="num">9.54</span> 亿元、增长近四倍，仍比分析师预期低约 <span class="num">30%</span>，同期亏损收窄至 <span class="num">20.7</span> 亿元；公司自 1 月上市以来市值一度涨逾 <span class="num">800%</span>、最高约 <span class="num">1370</span> 亿美元，随后随竞争加剧回落。腾讯混元发布 Hy4 preview 轻量版，把 <span class="num">1.5TB</span> 模型压缩至 <span class="num">214GB</span>；DeepSeek 的首个开源多模态实验模型（约 <span class="num">3050</span> 亿参数）同步开放。通用智能体公司 Manus 宣布恢复独立运营，创始人肖弘、首席科学家季逸超、联合创始人张涛留任；Perplexity 为 Mac 应用推出"混合计算"，把敏感任务拆分到本地处理并开源了隐私分类器。</p>
+    <p>算力与安全：Anthropic 与云服务商 Lambda 的 <span class="num">350</span> 亿美元算力采购协议，把比特币矿企 Hut 8 位于得州的 Beacon Point 园区纳入其中——该园区由英伟达承租、合计 <span class="num">704</span> MW 容量，两份十五年租约初始价值约 <span class="num">196</span> 亿美元，矿企正利用既有电力与数据中心转做 AI 生意。CrowdStrike 联合英伟达推出面向网络安全的前沿 AI 模型；OpenAI 预览网络安全模型 Astra，称达到"关键"准备阈值。美国联邦贸易委员会起诉亚马逊，指控其欺骗广告客户。苹果与 OpenAI 的官司进入第二轮：苹果提交新证据、指控对方员工明知故犯还妄图销毁证据，OpenAI 回应称"自己一手造成的还想赖别人"；新 CEO 特努斯上任首周入驻微博，首份员工备忘录预告 iPhone 发布会将"非同凡响"。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Claude Fable 5.1 and Claude Mythos 5.1</h4>
+    <div class="stats">737 points / 693 comments · Anthropic</div>
+    <p>Anthropic 发布的两款新模型本质上是同一模型的两档安全设置：Fable 5.1 全面开放，Mythos 5.1 只通过受信任访问项目提供、聚焦网络安全与生命科学。官方称其典型负载价格比上一代低约 25%、智能体场景最高省约 45%，提示缓存读取降价 75%，编程与知识工作能力刷新自家基准，CursorBench 3.2 得分 73.4% 居首。新的企业级 Frontier Safeguards 把数据存放在客户完全掌控的云基础设施中、效果等同零数据保留，秋季起分阶段推出，直接回应了企业客户对数据隐私的顾虑。</p>
+  </div>
+
+  <h3>② 写代码的人在想什么</h3>
+  <div class="plain">开发者这周一边试用新模型写代码，一边讨论 AI 究竟让写代码这件事变得更好还是更糟。有人用 AI 重写六万五千行老代码，只花了几百美元；也有人担心整个行业被 AI 动摇根基，《矮人要塞》的作者直言行业被 AI 搞得一团糟。安全圈同样不平静：虚拟化软件曝出严重漏洞，还有人把恶意软件伪装成 AI 助手偷钱包。</div>
+  <div class="card">
+    <p>AI 写代码的效率故事：HN 帖《I used Fable to rewrite 65kLoC of Go in Rust. It cost $400》（<span class="num">25</span> 分/<span class="num">17</span> 评论）记录了一次把 <span class="num">6.5</span> 万行 Go 代码用 Fable 重写为 Rust 的实操，成本 <span class="num">400</span> 美元；《The ChatGPT/Codex app bundles a full copy of LibreOffice》（<span class="num">140</span> 分/<span class="num">74</span> 评论）发现 ChatGPT 桌面应用内置了完整的 LibreOffice 副本。</p>
+    <p>质疑与反思：danluu 发布长文，逐一核对 AI 头号怀疑论者 Ed Zitron 历次预测的兑现情况（<span class="num">198</span> 分/<span class="num">228</span> 评论）；《矮人要塞》作者接受采访时说，行业正被 AI 搞得一团糟（<span class="num">181</span> 分/<span class="num">166</span> 评论）。另一边，Debian 社区明确表态不会在其发行版中禁止 AI 生成的代码。</p>
+    <p>安全：Proxmox VE 7 曝出严重身份验证绕过漏洞，可一键获取 Root Shell；安全公司发现恶意软件 RevStealer 伪装成 Claude 桌面应用，专门针对 <span class="num">51</span> 种加密钱包和 <span class="num">11</span> 款密码管理器。</p>
+  </div>
+
+  <h3>③ 电脑越来越贵</h3>
+  <div class="plain">存储芯片涨价这周直接传到了消费者手上：华为、小米、荣耀集体上调手机价格，高通宣布芯片全线涨价，有厂商说内存紧张的局面要持续到后年。涨价背后是 AI 数据中心在抢内存产能，而国产存储厂商趁机在先进工艺上取得突破，开始小批量生产 AI 芯片需要的高带宽内存。</div>
+  <div class="card">
+    <p>手机调价：华为 Mate 80 系列全系上涨 <span class="num">800–1000</span> 元、最高涨幅 <span class="num">17%</span>，<span class="num">12GB+256GB</span> 版从 <span class="num">4699</span> 元涨至 <span class="num">5499</span> 元，Pro Max 顶配站上 <span class="num">9999</span> 元；荣耀 Power2 两个版本分别上涨 <span class="num">500</span> 和 <span class="num">600</span> 元，Magic8 涨幅在 <span class="num">300–500</span> 元之间；小米 17 与 17 Pro 各涨 <span class="num">300</span> 元、17 Pro Max 涨 <span class="num">500</span> 元。三家公司均未发布正式涨价声明，日经称华为此前的策略是尽量不转嫁成本，如今已走到瓶颈。</p>
+    <p>芯片侧：高通自 9 月 1 日起上调全系芯片价格、涨幅达两位数，CEO 安蒙称只是在转嫁供应商成本；他还预计来自苹果的收入将从九月季度到十二月季度下降约 <span class="num">50%</span>，原因是供应限制减少了 iPhone 18 中高通组件的份额。兆易创新称 <span class="num">2027</span> 年 DRAM 供应紧张局面不会明显缓解。</p>
+    <p>国产突破：路透社援引 The Information 称，长鑫存储已开始小规模生产 AI 芯片急需的高带宽存储器 HBM3E，阿里巴巴旗下平头哥、寒武纪等公司正在测试，若顺利最早明年采用，长鑫计划 <span class="num">2027</span> 年扩大产量。HN 侧，一条《Running 104GB Qwen3.8-Flash-Next on 48GB Mac with at ~12 tok/s》（<span class="num">114</span> 分/<span class="num">75</span> 评论）展示了内存吃紧下本地跑大模型的软件方案。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">这周的科研新闻从宇宙深处到微观基因都有看点：一个实验可能第一次捕捉到了暗物质的踪迹；科学家把一种病毒的基因全部改写了一遍，发现最先进的 AI 模型也预测不准结果；还有人担心，用生成式 AI 久了，大家的想法会越来越像。机器人领域同样热闹：不用电池和电机、靠声波就能飞的微型机器人，以及两百个 AI 在虚拟世界里自己演化出一套文明。</div>
+  <div class="card">
+    <p>Nature 本周三篇：一项实验捕捉到与长期寻找的弱相互作用大质量粒子（WIMP）相似的能量闪光，物理学家为之振奋（《Is this the first glimpse of dark matter?》）；一篇研究把一种病毒的整个基因组逐字母突变后观察后果，最先进的 AI 模型也未能预测其生物学影响（《Mutating every DNA letter of a genome》）；一篇观点文章担忧生成式 AI 正在让文化与认知同质化（《Bland new world: is AI making us all think the same?》）。</p>
+    <p>MIT 科技评论两条：瑞士洛桑联邦理工团队在《Science Advances》发表声波驱动微型机器人，利用亥姆霍兹共振把外部声波转化为定向气流，做出无电池、无电机、重约 <span class="num">150</span> 微克的飞行器，还能驱动可转向的小船；MIT 的 SwarmWorld 实验把 <span class="num">200</span> 个 AI 智能体放进 <span class="num">72×54</span> 格的虚拟世界，让它们独立开发增强环境韧性的仿生材料系统，关键发现是技术传播主要不靠聊天，而靠共享世界中的程序复用。</p>
+    <p>HN 学术向：《Evidence of Fraud in an Influential Study About Procrastination》（<span class="num">342</span> 分/<span class="num">254</span> 评论）指出，<span class="num">2002</span> 年发表、被引用无数的拖延症研究第二个实验无法复现，数据疑似造假；《No country for mediocre mathematicians》（<span class="num">238</span> 分/<span class="num">132</span> 评论）是一位几何学者谈数学与 AI 时代的处境。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">美伊冲突这周从隔空警告变成了直接动手：美军对伊朗东南部发动新一轮空袭，伊朗说要用数倍的力量报复，油价应声大涨。欧洲方向，德国指控俄罗斯用无人机袭击莱比锡机场，宣布关闭俄罗斯的领事馆和文化中心。中国这周在外交与能源上也有新动作：习近平在上合峰会提出主张，全国光伏装机量首次超过煤电。</div>
+  <div class="card">
+    <p>美伊交火：美国中央司令部 9 月 2 日凌晨宣布对伊朗发动新一轮打击，伊朗东南部科纳拉克市报告 <span class="num">6</span> 起爆炸、格什姆岛南部海岸另有 <span class="num">8</span> 起；霍尔木兹甘省库希斯塔克村遭袭，多名居民死亡、包括一名儿童，<span class="num">50</span> 多人受伤，电力和电话中断。伊朗称新型防空系统击落了美军的第 <span class="num">50</span> 架 MQ-9 无人机，高级军事消息人士放话回应力度将"数倍于"美方袭击；特朗普回应"正在打击伊朗，若敢报复，伊朗将所剩无几"，财长贝森特称对伊朗"零容忍"、将在经济上扼杀其发展，并表示 <span class="num">85%–90%</span> 的伊朗工厂具备重建能力。</p>
+    <p>油价与市场：布伦特原油结算价报 <span class="num">94.65</span> 美元/桶（+<span class="num">4.6%</span>），美国原油 <span class="num">90.22</span> 美元（+<span class="num">5.2%</span>）、自 7 月下旬首次涨穿 <span class="num">90</span> 美元；美债收益率同步上行，两年期突破 <span class="num">4.38%</span> 创 2025 年 1 月以来新高，十年期升至 <span class="num">4.8%</span>。俄罗斯将 2026 年石油产量预测下调至 <span class="num">4.942</span> 亿吨、为 17 年新低。</p>
+    <p>欧洲：德国指控俄罗斯对莱比锡机场发动无人机袭击，下令关闭俄驻波恩领事馆与柏林俄罗斯之家并召见大使，德国内政部长称"俄罗斯对袭击负责"；俄方回应指控"毫无根据且荒谬"、制裁是"前所未有的升级"。欧盟、北约与意大利表态支持德国。美国能源部长赖特 9 月 1 日晚启程前往委内瑞拉、次日出席石油协议签署，雪佛龙宣布扩大在委业务，委内瑞拉国会支持该协议。</p>
+    <p>中国侧：习近平在上合组织比什凯克峰会提出四点主张三项建议、呼吁推动世界多极化，中吉发表联合宣言；特朗普盟友戴安斯在中美元首峰会前再度访华；北京警告台湾出席太平洋岛国论坛"会有后果"。能源上，国家能源局数据显示光伏装机容量达 <span class="num">12.86</span> 亿千瓦、首度超过煤电的 <span class="num">12.85</span> 亿千瓦，占全国总装机 <span class="num">31.5%</span>，前 7 个月光伏发电 <span class="num">8024</span> 亿千瓦时（+<span class="num">15.5%</span>），全国约每 8 度电中有 1 度来自光伏。半导体供应链上，中国法院冻结荷兰安世半导体及其设备业务在华资产、最高 <span class="num">21.4</span> 亿元人民币，为母公司闻泰科技争夺控制权增加筹码，争端源于去年荷兰政府以技术外流风险为由介入公司治理。中尼边境泥石流方面，尼方国家减灾管理署通报遇难 <span class="num">1003</span> 人，西藏吉隆举行哀悼活动，第二批援尼物资启运。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">这周的人文话题从球场延伸到书桌：世界杯决赛里，阿根廷整场没有一次射门，被西班牙用体系化打法击败，球迷开始争论个人英雄主义是否已经过时；香港开学日，十五所小学因为没有新生而面临合并或停办；还有人写下县城高中衰落的长文，追问教育公平由谁来买单。数字生活里也有值得记的小事：一个开源视频软件的下载量突破七十亿次。</div>
+  <div class="card">
+    <p>足球：西班牙在世界杯决赛 <span class="num">1-0</span> 击败阿根廷夺冠，阿根廷全场 <span class="num">0</span> 射门——十年之约聚合里的一篇深度分析以此为切口，讨论体系足球如何终结个人英雄主义的最后黄昏。</p>
+    <p>教育：香港新学年有 <span class="num">15</span> 所小学因收生不足"派零班"、创历年新高，其中 <span class="num">14</span> 所资助小学、<span class="num">1</span> 所官立小学；将军澳基德小学将于 <span class="num">2029–30</span> 学年与黄大仙的圣公会基德小学跨区合并，校内小二小三学生只剩十多人，校方仍投入近 <span class="num">180</span> 万港元用于课程与活动。博客长文《县中塌陷》则写下县城高考神话不再之后，教育公平与社会流动面临的困境。</p>
+    <p>HN 人文帖：《Playa Phone》（<span class="num">733</span> 分/<span class="num">225</span> 评论）把一部电话亭立在火人节的沙地街头，任何人可以免费打 <span class="num">5</span> 分钟全球长途，也可以拨号 <span class="num">+1 (775) 557-4848</span> 跟路过的陌生人聊天；文字设计帖《"I just chose words carefully"》继续发酵（<span class="num">1232</span> 分/<span class="num">352</span> 评论）。</p>
+    <p>其他：希音在香港上市首日下跌 <span class="num">10%</span>；前英国首相斯塔默宣布辞去议员职务；跨平台播放器 VLC 下载量突破 <span class="num">70</span> 亿次；有博客主在认领罗曼望远镜拍摄的像素点，把它当作给宇宙留的便签。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">这周的监督报道围绕灾难与劳动展开：中尼边境泥石流过后，有人对比了两国媒体的报道方式，批评官媒把灾难现场做成了宣传现场；《肖申克的救赎》三十年后首次在内地上映，字幕却被多处改动；星宇股份的应届生风波有了新进展，大众汽车启动专项调查；高校里又一起抄袭事件被曝光。</div>
+  <div class="card">
+    <p>灾难报道：中国数字时代《立此存照》记录吉隆口岸在灾后救援中"我爱你中国"标语依然醒目；评论作者"老猫牙口好"对比两国报道，称尼泊尔一侧近乎全程直播、中国一侧主要讲救援投入，而中国记者到了尼泊尔以后"采访能力突然恢复了"。同一场灾害里，尼方通报遇难 <span class="num">1003</span> 人。</p>
+    <p>审查与删改：《肖申克的救赎》8 月 28 日首次正式进入内地院线，上映后网友比对发现多处字幕改动：原文度量单位被公制化（"500 码"译成"500 米"、"半英里"译成"半公里"），涉及情节描写的英文原句也有调整。</p>
+    <p>学术不端：成都大学音乐与舞蹈学院党委书记曾勤被指《高校音乐教学探究》（约 <span class="num">15</span> 万字）大篇幅抄袭、两篇英文论文虚假引用，校方 8 月 31 日晚关注到报道后成立调查组，表态"零容忍"。</p>
+    <p>劳动与用工：星宇股份应届生事件迎来新进展——大众中国 9 月 1 日确认已启动专项调查，称审查属"标准程序"、结束后将采取"适当措施"；奔驰此前已受理举报并展开审查，cnBeta 报道称蔚来也受牵连。背景是这家车灯供应商 7 月入职的 <span class="num">440</span> 名应届生中有 <span class="num">107</span> 人被解除劳动合同。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">这周的加密圈大事是传统金融大举入场：二十一家国际大银行宣布要一起发行美元稳定币，俄罗斯的数字卢布正式开始大规模推广。链上安全仍然不平静：八月的黑客攻击次数创下新高，一条公链的主网甚至停摆了近四个小时。比特币价格在高位震荡，交易所和矿企都在寻找新的增长点。</div>
+  <div class="card">
+    <p>传统金融入场：<span class="num">21</span> 家国际金融机构（美国银行、花旗、高盛、德意志银行、瑞银、富达、富国、三菱日联等）承诺 2026 年下半年成立稳定币公司，美元稳定币目标 <span class="num">2027</span> 年上半年上线，长期扩展至其他 G7 货币、欧元优先，并计划遵循美国 GENIUS Act 与欧盟 MiCA。俄罗斯数字卢布 9 月 1 日起大规模推广，系统重要性银行与年营收超 <span class="num">1.2</span> 亿卢布的大型商户强制接入，个人每月最多转入 <span class="num">30</span> 万卢布且免手续费。新加坡金管局发布稳定币监管咨询文件，拟设新牌照、禁止付息并要求具备冻结与销毁能力。</p>
+    <p>链上安全：Injective 主网停摆约 <span class="num">3</span> 小时 42 分，攻击者利用保险基金与无需许可的二元期权机制累计执行 <span class="num">299</span> 次操作，归集约 <span class="num">1,979.8</span> ETH（约 <span class="num">488</span> 万美元），Upbit 与 Bithumb 已将 INJ、CORE 列为交易警示资产；Solana 上的 AMM Aquifer 遭攻击损失约 <span class="num">250</span> 万美元，开出 <span class="num">20%</span> 白帽赏金；PeckShield 统计 8 月共发生 <span class="num">50</span> 起重大攻击（环比 +<span class="num">67%</span>），总损失约 <span class="num">1.363</span> 亿美元，最大单笔是 Cronos 生态借贷协议 Tectonic 的约 <span class="num">7400</span> 万美元。</p>
+    <p>行情与资金：比特币现货 ETF 8 月 31 日净流入 <span class="num">2.17</span> 亿美元；XRP 两周涨近 <span class="num">40%</span>、全市场期货持仓下降 <span class="num">16%</span>；CME 杠杆基金比特币净空头达 <span class="num">4.13</span> 万枚、一周增加 <span class="num">4072</span> 枚；韩国市场"泡菜溢价"重现，Upbit 较 Binance 溢价约 <span class="num">1%</span>。</p>
+    <p>技术与监管：Bitcoin Core v32 完成功能冻结，区块验证速度最高提升约 <span class="num">3</span> 倍，预计 10 月发布且不涉及协议规则变更；纽约法院驳回针对 Pump.fun 代币的证券法指控；法国两人涉嫌通过虚假房产交易窃取 <span class="num">150</span> 万欧元加密资产，将出庭受审。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">过去一周的主线：美伊从海峡对峙走到直接交火，油价站上九十美元；AI 圈大事不断——英伟达收购 Hugging Face 落定、又投资联发科，Anthropic 发布新一代 Claude 模型，苹果换帅并起诉 OpenAI；国内政策密集出台，房贷期限延长、个税口径收紧、车企出海被规范；星宇应届生风波从奔驰烧到大众；中尼边境泥石流的伤亡数字持续上升；科研上罗曼望远镜升空、疑似暗物质信号浮现；加密圈二十一家银行宣布联手发行稳定币。</div>
+  <div class="card">
+    <p><b>美伊战争。</b>从 8 月 30 日美军空袭拉腊克岛开始，沙特油轮被截停、MQ-9 无人机接连被击落，9 月 2 日凌晨美军发动新一轮打击，伊朗扬言数倍报复，布伦特原油站上 <span class="num">94</span> 美元。</p>
+    <p><b>AI 军备。</b>英伟达约 <span class="num">129</span> 亿美元收购 Hugging Face 落定、再向联发科投资 <span class="num">35</span> 亿美元；Anthropic 发布 Fable 5.1/Mythos 5.1 并签下 <span class="num">350</span> 亿美元算力协议；苹果换帅、特努斯接任并起诉 OpenAI；智谱半年报亏损收窄但低于预期，腾讯混元 Hy4、DeepSeek V4 多模态接连开源。</p>
+    <p><b>国内政策。</b>央行把个人房贷期限上限延长至 <span class="num">40</span> 年；财政部对限售股送转股、外籍个人股息先后开征 <span class="num">20%</span> 个税；三部门发布车企境外竞争指引；法院冻结安世半导体在华资产。</p>
+    <p><b>星宇风波。</b><span class="num">440</span> 名应届生中 <span class="num">107</span> 人被解约，奔驰、大众相继启动调查，蔚来受牵连，事件从劳动仲裁一路烧向港交所与欧盟。</p>
+    <p><b>中尼泥石流。</b>Nature 将灾难归因于冰川崩塌；尼方遇难人数升至 <span class="num">1003</span> 人；救援与宣传的落差成为监督焦点。</p>
+    <p><b>科研。</b>NASA 罗曼望远镜升空；实验捕捉到疑似暗物质 WIMP 的能量闪光；顶级 AI 未能预测病毒全基因组突变后果；EPFL 声波机器人、MIT 的 200 智能体虚拟文明亮相。</p>
+    <p><b>加密。</b><span class="num">21</span> 家国际银行宣布联合发行美元稳定币；俄罗斯数字卢布大规模落地；8 月黑客攻击 <span class="num">50</span> 起、损失 <span class="num">1.36</span> 亿美元；XRP 两周涨近 <span class="num">40%</span>。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、吴说、联合早报、AI 聚合、风向旗、竹新社、中国数字时代、十年之约、MIT 科技评论、Nature、cnBeta、小众软件等，覆盖 8 月 31 日–9 月 2 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 798 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
