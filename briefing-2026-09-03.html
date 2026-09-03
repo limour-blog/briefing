@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-09-03</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 9 月 3 日 · 周四 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>谷歌与 Meta 在一天内先后发布新一代主力模型，与 Anthropic 合成一周三连发，模型战从拼能力延伸到拼价格与拼安全；美军连续第二晚空袭伊朗目标，布伦特原油结算价站上每桶九十五美元；欧盟就莱比锡机场袭击事件加大对俄施压，普京反指德国伪造证据；G20 财长会因中美分歧未能发表联合公报；《自然》报告减肥药司美格鲁肽在老年雌鼠身上展现延缓衰老效果；星宇董事长就解约应届生致歉，宇树上市两周市值蒸发逾两千亿元。</div>
+
+  <h3>① AI 军备竞赛与模型发布</h3>
+  <div class="plain">AI 头部的三家公司在两天之内接连发布新一代主力模型：谷歌的新模型把写代码、操作软件和长链条推理当成主打卖点，Meta 紧随其后发布了一款为个人 AI 助手铺路的新版本，Anthropic 在前一天刚上过同类新品。三家这次的价格都没有往上走，竞争的重心明显从"谁更强"转向了"谁更便宜、更安全"。</div>
+  <div class="card">
+    <p>谷歌 9 月 2 日发布 Gemini 3.8 Flash 与专供安全场景的 3.8 Flash Cyber，主打编码、智能体工作流与多步推理，官方称价格与速度均与上一代 3.7 Flash 保持一致，并同步上线 OpenRouter 等平台。Cyber 版本能在组织的云环境里自主发现漏洞、几分钟内生成可直接部署的修复，在 Chrome 真实漏洞测试中有效修复量达到 <span class="num">2.6</span> 倍；谷歌同步推出 Fairwind 计划，向国家级网络机构与关键基础设施提供该模型的访问权。Meta 随后发布 Muse Spark 1.3，称其在 DeepSWE 编程基准上以 <span class="num">75.4%</span> 登顶、超过 GPT-5.6 Sol 与 Fable 5，价格与上一版一致，公司称之为"进攻性"定价；已有"有意义的两位数比例"开发者加入"用作品换低价"的使用计划，最高推理版本将在安全测试后推出。</p>
+    <p>把时间轴拉开看节奏：Anthropic 的 Fable 5.1 于 9 月 2 日发布（HN 帖热度从昨日的 737 分涨至 <span class="num">1373</span> 分/1326 评论），谷歌 Gemini 3.8 Flash 于 9 月 2 日夜落地，Meta Muse Spark 1.3 于 9 月 3 日凌晨跟上；HN 榜单上 Muse Spark 1.3 占据第一（259 分/154 评论），Gemini 3.8 以更高热度排在第二（<span class="num">725</span> 分/421 评论）。算力侧的军备同步加码：博通财报会上 CEO 称未来两年将向客户交付约 <span class="num">3500</span> 亿美元 AI 半导体，AI 营收预计 2027 年翻倍至约 <span class="num">1150</span> 亿、2028 年再翻倍至 <span class="num">2300</span> 亿美元，OpenAI 的定制芯片项目按计划在 2027 年部署 1.3 吉瓦；Nscale 凭借 Anthropic 的订单累计合同收入据称突破 <span class="num">1000</span> 亿美元；英伟达收购 Hugging Face 的交易接近达成，总额或达 <span class="num">140</span> 亿美元（含 10 亿美元员工留任计划）。</p>
+    <p>国产模型这一周的主线是商业化与价格战：Qwen3.8-Max-0902 在 Code Arena 网页开发榜登顶、超过 Claude Opus 5 与 Kimi K3；DeepSeek V4 Flash 自 9 月 3 日起结束免费、转为峰谷折扣计费；Kimi K3 在第三方平台降价 <span class="num">10%</span>、默认吞吐上限提升 <span class="num">20</span> 倍；智谱把大模型订阅套餐开进天猫旗舰店，个人套餐月付 <span class="num">118</span> 元起。马斯克预告 Grok 4.7 将于十天后发布、参数规模增至 <span class="num">2.1</span> 万亿；OpenAI 则把即将推出的 Astra 模型列入"关键"网络安全风险、收紧其在网络攻击方向的使用限制，并公开回应称让模型"想得更深"的技术也让它更难被外部监控。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Gemini 3.8 Flash and 3.8 Flash Cyber</h4>
+    <div class="stats">725 points / 421 comments · Google DeepMind</div>
+    <p>谷歌 9 月 2 日发布的双模型主打"让 AI 自己干活"：Flash 面向编码、智能体与多步推理，定价与速度和上一代持平；Flash Cyber 面向网络安全，能在组织云环境中自主发现漏洞并生成可部署修复，在 Chrome 真实漏洞测试中有效修复量是此前的 <span style="color:#f0b09a;font-weight:700">2.6</span> 倍，DeepMind 通过 Fairwind 计划把访问权开放给国家级网络机构与关键基础设施。它与两天内 Anthropic 的 Claude 新品、Meta 的 Muse Spark 1.3 构成头部模型最密集的一轮连发，HN 的 421 条评论集中在"定价不涨、安全加码"这一竞争策略上。谷歌官方页面正文未能直接抓取，要点由订阅端多源报道补全。</p>
+  </div>
+
+  <h3>② 写代码的人在想什么</h3>
+  <div class="plain">开发者圈这周在吵两件事：AI 让写代码变得更容易还是更廉价，以及开源软件的生存空间正在被大平台一点点收窄。有人统计 AI 生成的"推荐清单"正在污染 AI 搜索自己的引用来源，也有人把怀疑论者的历次预测翻出来逐一核对。</div>
+  <div class="card">
+    <p>平台与开源软件的摩擦本周集中爆发：开源闪卡应用 AnkiDroid 发帖称 Google Play 不再允许其放置 Open Collective 捐赠链接（HN <span class="num">905</span> 分/273 评论），应用商店正在收紧开源项目的募款通道；Google Play 随后屏蔽应用商店 AuroraStore（<span class="num">546</span> 分/252 评论），波及依赖它的 GrapheneOS 用户。两条帖子的讨论指向同一个疑问——免费开源项目在大平台生态里靠什么活。</p>
+    <p>AI 生成内容开始反噬 AI 生态：一项调查发现三个网站自动生成了 <span class="num">215,128</span> 个"最佳软件"推荐页面，Perplexity 等 AI 搜索直接引用了它们（<span class="num">255</span> 分/120 评论）；微软一名高管也公开吐槽"AI 垃圾"泛滥。此前热议的 AI 怀疑论者 Ed Zitron 预测复盘帖继续发酵，HN 热度从昨日的 198 分涨到 <span class="num">836</span> 分/986 评论。行业数据在印证价格战：AI 服务的 Token 支出指数自高点腰斩，模型降价压力正层层传导给下游开发者。</p>
+  </div>
+
+  <h3>③ 电脑越来越贵</h3>
+  <div class="plain">AI 数据中心抢产能的连锁反应扩散到了产业链更多环节：存储芯片三巨头之后，又一家大厂被曝出劳资纠纷；电视厂商为"真假 Mini LED"把对手告上法庭；手机厂商则把注意力押在下周的新品发布会上。</div>
+  <div class="card">
+    <p>美光成为继三星、SK 海力士与台积电之后第四家曝出劳资纠纷的芯片大厂（风向旗 9 月 2 日报道），AI 扩产周期里"产能归谁、收益怎么分"的问题正在整个制造链条上蔓延。显示面板侧，TCL 把三星告上美国法庭，指控其低价电视冒充 Mini LED 误导消费者，行业价格战延伸到了法律战场。</p>
+    <p>终端侧，苹果新任 CEO 特努斯发布首份员工备忘录，预告"下周将有现象级的巨大发布"，指向 9 月 9 日的活动，传闻将推出可折叠 iPhone Ultra 与 iPhone 18 Pro 机型；英伟达的 DLSS 5 定档 9 月 4 日，官方称画面生成提速明显，但仅限 RTX 50 系列显卡。硬件迭代与价格压力并行的局面短期内看不到缓解迹象。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">这周的硬科学新闻集中在身体与气候两个方向：一项研究给老年雌鼠用了三个月的减肥药，发现它们活得更久也更健康；另一项大规模研究把人的性格特质和上千个基因变异连了起来。气候方面，联合国首次正式承认全球变暖将突破国际社会此前设定的红线。AI 圈里，李飞飞团队发布了号称打通视频、三维与机器人模拟的"世界模型"。</div>
+  <div class="card">
+    <p>《自然》9 月 2 日发表研究：老年雌鼠接受 <span class="num">3</span> 个月司美格鲁肽（GLP-1 类减肥药）治疗后，多项生理功能改善、衰老标志减弱、寿命延长；Nature 配发新闻与评论，讨论这类药物能否延缓人类衰老。另一项大规模研究识别出超过 <span class="num">1200</span> 个人格相关的基因变异，且效应大多独立于家庭背景。HN 上的《Aging Brains Blend Memories Together》（<span class="num">168</span> 分/76 评论）补充了另一个视角：衰老大脑更倾向于把记忆"混在一起"，原因不只是遗忘。</p>
+    <p>AI 科研侧，李飞飞创立的空间智能公司 World Labs 发布世界模型 Atlas（HN <span class="num">255</span> 分/58 评论）：从零预训练、让文本图像视频与三维数据进入同一个模型，能由一张照片生成新视角、按镜头轨迹生成长达 1 分钟 1440p 的视频，并把照片视频重建为点云与三维场景，供影视、游戏和机器人仿真使用；公司今年 2 月刚完成 10 亿美元融资。HN 学术帖《人工神经网络的涌现符号结构》（<span class="num">268</span> 分/95 评论）则从机制角度讨论网络内部如何形成可解释的符号化表征。</p>
+    <p>气候方向：Nature 报道联合国首次正式承认全球变暖将突破 <span class="num">1.5</span> 摄氏度目标、已经不可避免，风向旗同步转发该消息；另有一项研究称，全球甲烷浓度的"高原期"由氮氧化物排放上升与排放中心南移共同维持。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事</h3>
+  <div class="plain">美伊之间的冲突从隔空警告变成了实打实的连续空袭：美军第二晚打击伊朗境内目标，伊朗说袭击炸死了平民，双方围绕伤亡数字和霍尔木兹海峡的安全各说各话，油价被推上了每桶九十五美元。欧洲方向，德国机场遇袭事件的余波在扩大，欧盟把矛头对准俄罗斯，普京则反指德国伪造证据。另一边，二十国集团的财长会没能发表联合公报，中美在贸易问题上的分歧摆上了台面。</div>
+  <div class="card">
+    <p>美伊战况升级：美军 9 月 1 至 2 日连续打击伊朗革命卫队的防空、雷达、海事、布雷与通信目标，伊朗卫生部称锡里克港附近的袭击造成 <span class="num">18</span> 人死亡、<span class="num">108</span> 人受伤并指控美军袭击婚礼现场，中央司令部两次否认"以平民为目标"；伊朗股市当日重挫、约八成个股下跌，里亚尔兑美元跌至历史新低、超过 <span class="num">220</span> 万比 1。美方称打击是对伊朗图谋攻击海底电缆的预防性行动，特朗普表态"准备再次打击伊朗、完全控制海峡"；伊朗则更新霍尔木兹海峡"违规船只"名单并查获走私燃油，称美方须先履行义务才能谈海峡开放。油价应声上行：布伦特原油结算 <span class="num">95.63</span> 美元（+1.04%）、WTI 报 <span class="num">91.01</span> 美元，欧洲远期电价继续攀升，欧洲最大航司警告今冬航油成本或达每桶 <span class="num">140</span> 美元并开始削减运力。</p>
+    <p>莱比锡事件的欧洲反制在扩大：欧盟就德国莱比锡机场遇袭未遂事件召见俄罗斯大使，冯德莱恩称袭击使用了军用级材料、是"欧洲土地上的新升级"，欧盟将加大对俄压力；瑞典召见俄大使，俄方则召见德国驻俄临时代办，普京公开称德国"故意伪造证据栽赃俄罗斯"。德国警方还就一处电厂附近的袭击启动反恐调查；欧盟批准德国最高 <span class="num">350</span> 亿欧元的电力供应保障机制。英媒同时爆料，俄罗斯工程师曾三赴德黑兰，帮助伊朗为超音速巡航导弹补齐最后短板。</p>
+    <p>多边外交受挫：G20 财长与央行行长会议围绕贸易、增长与债务争吵，最终未能发表正式公报；美财长称中国因贸易顺差分歧阻止公报，风向旗报道中国因廉价出口问题否决联合声明，中国外交部表示"深表遗憾"。美国商务部长卢特尼克放话，芯片关税旨在提升美国本土产量、在美建半导体厂免税、不建厂就额外缴税。习近平出访埃及、倡导构建中东安全新架构并承诺维护国际航道安全，正值美伊激战与油价高企的时点；德国还准备在数周内敲定更强硬的对华贸易方案、或涉及加征关税。</p>
+    <p>宏观面上全球央行集体转鹰：美联储 9 月加息预期升温（ADP 就业 <span class="num">3.8</span> 万不及预期后，市场对 9 月维持利率不变的定价降至约 <span class="num">38%</span>），日本央行 9 月加息概率被交易商定价至 <span class="num">97%</span>，欧洲央行 9 月加息概率超过 <span class="num">95%</span>；加拿大央行连续第七次维持利率不变，但市场已定价年内加息概率约 <span class="num">75%</span>，日元走强一度引发干预猜测。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">开学季的博客里，有家长写孩子第一天入园，也有人回忆当年和校园网斗智斗勇的日子。网上这周还有两篇帖子被大量转发：一个人讲自己不用智能手机怎么生活，另一个人说只想当游戏里那种按设定生活的角色。美国一位常年书写土地与乡村的作家去世，引发了一轮纪念与讨论。</div>
+  <div class="card">
+    <p>HN 上两篇"反主流生活方式"的帖子讨论热烈：《I Don't Have a Smartphone》（<span class="num">185</span> 分/182 评论）的作者讲述脱离智能手机后的日常；《I wanna live an NPC life》（<span class="num">123</span> 分/110 评论）以游戏术语表达对"事事都要自己选"的倦怠，评论区延伸成对当代工作与生活压力的讨论。</p>
+    <p>美国诗人、小说家与农业思想家 Wendell Berry 去世（HN <span class="num">95</span> 分/44 评论），他一生书写乡村、土地与社区，被视为美国农业伦理写作的代表人物。怀旧侧，HN 纪念 Commodore 64 于 1982 年 9 月 1 日发布（<span class="num">305</span> 分/158 评论），这款机器至今保有"史上最畅销单款电脑"的位置。</p>
+    <p>中文博客圈（十年之约聚合）里，开学季与数字生活是主线：有博主记录孩子入园第一天，有人分享"人人都能玩的 AI 玩具"项目，也有人写下 0 元免实体地址申请个体工商户的实操经历，还有长文讨论算法推荐对个人主体性的侵蚀。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">这周的监督与批判报道聚焦企业与监管责任：星宇股份董事长终于就解约应届生公开致歉；上市两周的人形机器人明星公司宇树股价腰斩，媒体的调查报道把内部管理细节摊开；《肖申克的救赎》内地首映的翻译问题又添新例；河北的"甲醛白菜"被翻出已存在十四年的旧账。</div>
+  <div class="card">
+    <p>星宇事件有了新节点：董事长就解约应届生公开致歉、称将构建和谐劳动关系（联合早报），评论文章称"这届 00 后带了个好头"；此前大众、奔驰已先后启动调查，事件从劳动仲裁蔓延至车企供应链。</p>
+    <p>宇树科技上市仅 <span class="num">11</span> 个交易日股价从首日高点腰斩：开盘价 1100 元、总市值一度达 <span class="num">4449</span> 亿元，随后跌至约 571 元、市值蒸发超 <span class="num">2100</span> 亿元。《财经》封面报道《宇树的王》采访多名员工称，公司内部"只罚不奖"、工资偏低，超过 <span class="num">100</span> 元的报销都要创始人王兴兴亲自审批，汇报时常被打断催促——极致的成本控制从产品延伸到了人员管理。</p>
+    <p>《肖申克的救赎》内地首映的翻译再添案例：继度量单位"公制化"之后，有观众发现影片把"同性恋"相关表述翻译成"不同的人"（中国数字时代）。食品安全方向，河北张家口运输商把白菜浸蘸甲醛保鲜的问题被重新挖出——当地政府证实属实，而类似曝光从多年前起已反复出现、十四年未绝，最终靠民间博主调查才再次进入公众视野（404 文库）。学术规范方面，安徽财经大学通报了师生论文 AI 使用不当问题。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">比特币本周回到区间震荡：现货 ETF 刚净流入两天又开始净流出，有华尔街机构下调了年底目标价。更热闹的是，加密公司与监管层都在往传统金融的方向挤：预测市场平台要推出原油永续合约，议员们则想立法禁止官员炒币。</div>
+  <div class="card">
+    <p>资金面反复：9 月 1 日比特币现货 ETF 净流出 <span class="num">2.36</span> 亿美元（此前一天刚净流入 2.17 亿）；TD Cowen 把年底目标价下调至 <span class="num">97,500</span> 美元、同步下调 MicroStrategy 目标价；Glassnode 称 83,000–86,000 美元区间供应压力未解，Twenty One Capital 高管则抛出"比特币正经历史上首次算力熊市"的判断。</p>
+    <p>加密机构向传统衍生品扩张：预测市场 Kalshi 申请推出 WTI 原油永续期货（拟 24×5 交易）以及外汇与利率永续合约；币安上线 CrowdStrike、Moderna 等股票类代币交易对；Kraken 母公司把 IPO 推迟至最早 2027 年第二季度。监管与政治线：美国众议员提出法案，拟禁止总统与国会议员持有或交易股票、数字资产与预测市场合约；韩国金融委员会设立数字资产工作组、推进《数字资产基本法》立法；泰国通过加密 Travel Rule、要求核查自托管钱包。</p>
+    <p>行业与安全：Robinhood 自建链单日费用连续四天创新高（375 万美元）；Gate 注册用户突破 <span class="num">6000</span> 万并取得欧盟 MiCA 牌照；Uniswap 单日交易笔数突破 <span class="num">700</span> 万创新高；执法部门拆除了篡改加密钱包地址盗币的 Sality 僵尸网络；Core DAO 因验证节点异常提取超额奖励拟实施紧急硬分叉；吴说 8 月技术月报记录 BIP-110 分叉失败、Solana 出块加速至 350 毫秒、L2 开启 200 毫秒级竞争。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">过去一周，模型与战争是两条最粗的线：从 Anthropic 到谷歌再到 Meta，头部模型一周三连发；美伊从海峡对峙打到连续空袭，油价从九十美元下方一路站上九十五美元。其余主线还包括算力军备的资本化、存储与劳资问题、二十国集团财长会议的分歧、星宇与宇树的公司治理风波，以及科研与加密的若干里程碑。</div>
+  <div class="card">
+    <p><b>模型一周三连发。</b>Anthropic 发布 Claude Fable 5.1 与 Mythos 5.1 并配套 350 亿美元算力协议；谷歌 9 月 2 日夜发布 Gemini 3.8 Flash 与安全版 Flash Cyber；Meta 9 月 3 日凌晨落地 Muse Spark 1.3 并登顶 DeepSWE 基准；马斯克预告 Grok 4.7。国产侧 Qwen3.8-Max 登顶网页开发榜，DeepSeek 与 Kimi 进入降价计费阶段，智谱把订阅套餐开进了天猫。</p>
+    <p><b>美伊战争与油价。</b>从 8 月 30 日空袭拉腊克岛到连续打击革命卫队目标，MQ-9 接连被击落、伊朗放出数倍报复言论，布伦特原油从九十美元下方升至 <span class="num">95.63</span> 美元；伊朗股市与里亚尔同步承压，霍尔木兹通行量成为市场焦点。</p>
+    <p><b>算力资本化。</b>英伟达约 140 亿美元收购 Hugging Face 接近落定、再投资联发科；Anthropic 的算力供应商 Nscale 合同收入据称突破千亿美元；博通给出两年 <span class="num">3500</span> 亿美元 AI 半导体交付路线图；苹果换帅后特努斯预告下周发布会，与 OpenAI 的商业秘密诉讼进入第二轮。</p>
+    <p><b>存储与劳资。</b>华为、小米、荣耀集体上调手机价格后，三星、SK 海力士、台积电、美光四家大厂先后曝出劳资纠纷；TCL 就 Mini LED 起诉三星；长鑫存储被曝小批量生产 HBM3E 高带宽内存。</p>
+    <p><b>多边与公司治理。</b>G20 财长会未能发表公报，中美在贸易顺差与廉价出口问题上分歧公开化，德国准备对华加码贸易措施；国内房贷期限上限延长至 40 年、限售股与外籍股息个税口径收紧；星宇应届生风波以董事长致歉暂告一段落；宇树上市两周市值蒸发逾 2100 亿元。</p>
+    <p><b>科研与加密。</b>司美格鲁肽在老年雌鼠身上展现抗衰老效果，人格遗传研究识别出上千个变异，联合国承认升温将突破 1.5 摄氏度，李飞飞团队发布世界模型 Atlas；加密圈 21 家银行宣布联合发行美元稳定币、俄罗斯数字卢布落地（上周），本周 ETF 资金反复、Kalshi 申请原油永续。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、吴说、联合早报、AI 聚合、风向旗、竹新社、中国数字时代、十年之约、MIT 科技评论、Nature、cnBeta、小众软件等，覆盖 9 月 1–3 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 829 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
