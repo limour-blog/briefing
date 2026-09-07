@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-09-07</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 9 月 7 日 · 周一 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>意大利运营二十五年的免费加密邮箱与博客服务商 Autistici/Inventati 宣布关停，自称被列入恐怖组织名单、域名上月被断（Hacker News <span class="num">457</span> 分/<span class="num">308</span> 评论），与 Mullvad 关停公共加密 DNS、Nitter 复出并置成"隐私基础设施在收缩"的信号；伊朗宣称霍尔木兹海峡已关闭、即将与阿曼签署由伊管控的新航道协议，美国则晒出通行恢复数据并继续护航，双方打起"封锁还是畅通"的叙事之战；OpenAI 旗舰发布后多次修订自测成绩并预告更强的模型，财政部拟向八家中央金融企业注资约 <span class="num">3600</span> 亿元；科研端，Claude 在黎曼猜想上的结果获数学家验证，司美格鲁肽让老年小鼠延寿约 <span class="num">12.4%</span>。</div>
+
+  <h3>① AI 竞赛与反思：改分、疲劳与新预告</h3>
+  <div class="plain">这一周科技圈最流行的一个词，也许是"模型疲劳"：大厂接连发布新一代模型，企业还没来得及消化上一个，下一个又来了，挑选和比较本身成了新的成本。与此同时，OpenAI 为自己的旗舰发布补了几次"作业"，公布的成绩单改了好几版，还预告更强的模型已经在路上。微软则悄悄调头，把 AI 从云端往个人电脑里搬。</div>
+  <div class="card">
+    <p>CNBC 报道，Anthropic、Meta、Google 与 OpenAI 本周接连更新模型后，企业高管和 IT 负责人要同时比较能力、价格、速度、可靠性与实际业务价值，模型评估本身成了新的成本；Gartner 预计今年全球 AI 支出将达 <span class="num">2.59 万亿美元</span>、同比增长 <span class="num">47%</span>，其中超过 <span class="num">45%</span> 流向 AI 基础设施。Meta 用价格回应这种疲劳：据 Vals AI 报告，其 Muse Spark 1.3（Max）在 Vals Index 上表现与 Anthropic Fable 5、GPT-5.6 Sol 相当，成本却低 <span class="num">4–8 倍</span>。</p>
+    <p>OpenAI 本周的焦点在"解释自己的分数"。9 月 3 日 GPT-6 Astra 的发布博客出现罕见延迟，此后官方多次修改公布的评测数字——Astra 的幻觉率一度从 <span class="num">4.2%</span> 标到 <span class="num">2%</span> 又调回 <span class="num">4.2%</span>，GPT-5.6 Sol 与 Fable 5.1 的个别对比分数也有调整，OpenAI 称修改是为了让数字反映对模型性能的最佳估计；奥特曼则在另一场合预告，Astra 其实早已完成训练，更强的新模型很快发布。与"改分"相对的是两份透明化动作：OpenAI 公开了"加速研究"相关模型的数据并发布内部视角长文（HN <span class="num">87</span> 分/<span class="num">59</span> 评论），奥特曼借此呼吁各实验室披露递归自我改进对能力的影响。同行则在质疑这种披露的可信度——上周"失控智能体"事件报告独立性的争论尚未平息。</p>
+    <p>本地与端侧是第三条线：据 cnBeta 报道，微软正调整 Windows 11 的 AI 战略，从实体 Copilot 键与网页侧边栏，转向在用户电脑本地直接运行大模型。这与"把大模型塞进手机与汽车"的上一轮讨论方向一致，只是这次主角换成了桌面操作系统本身。</p>
+  </div>
+
+  <h3>② 写代码的人与开发者生态：AI 编程的规模化实证</h3>
+  <div class="plain">写代码这件事，正从"人敲键盘"变成"人指挥智能体"。上周大家还在争论手敲代码是不是彻底过时，这周就出现了一个规模化的实证：一位核心开发者让一批 AI 智能体把自家项目的底层语言整个换掉，十几天内提交了上百万行新代码。同一周，开发者圈还流行起几件小事：有人把项目许可证换成欧盟公共许可，有人提议把版本管理的默认行为改成"先忽略一切"，还有人做出了完全不用大模型的终端助手。</div>
+  <div class="card">
+    <p>规模化的实证来自 JavaScript 运行时 Bun：其 1.4 版把底层语言从 Zig 整体重写为 Rust，主导者 Jarred Sumner 先搭好一套智能体工作框架再并行开工，<span class="num">11 天</span>内产生 <span class="num">6778</span> 次提交、新增超过 <span class="num">100 万行</span> 代码，全程 token 花费约 <span class="num">16.5 万美元</span>，此后几个月智能体继续修 bug、跑测试。开发圈把这看成"手敲代码过时"之争的第一个可量化样本——争论的落点从"要不要写"变成了"一个人加一群智能体"的工程方式能否被复制。</p>
+    <p>反方向的声音同样在场：一个终端助手项目主打不用任何大模型（HN <span class="num">209</span> 分/<span class="num">45</span> 评论），提醒开发者智能体不是唯一的路；一名开发者宣布把自己项目的许可证改为欧盟公共许可 EUPL（HN <span class="num">142</span> 分/<span class="num">158</span> 评论）；还有人倡议把版本管理的默认行为改成"先忽略一切、需要时再显式加入"（HN <span class="num">176</span> 分）。国内工具侧也有呼应：把 Windows 通知转发到手机的小工具，借"让 Codex 跑完时手机叫你"的场景小火了一把（小众软件）；十年之约聚合里一篇长文则把视角从个人转向组织，讨论当智能体进入长期协作，企业如何把一次成功沉淀成可重复的方法，避免每次从零开始。</p>
+  </div>
+
+  <h3>③ 科技科研前沿：AI 走进数学、蛋白质与药</h3>
+  <div class="plain">科研这一周有点"AI 当家"的味道：数学界正在验证一个 AI 在黎曼猜想上给出的突破，一位菲尔茨奖得主则悬赏请大家用 AI 工具把庞加莱猜想的证明翻译成机器可读的形式；结构生物学那边，诺贝尔奖得主牵头的新项目想按功能直接设计蛋白质与基因开关；连减重药都交出了新答卷——一款明星降糖药让老年小鼠活得更久，论文发表后长寿圈为此吵翻了天。国内第一款靠 AI 辅助研发出来的原创新药也在这一周获批上市。</div>
+  <div class="card">
+    <p>AI 在数学上又往前走了一格。上个月，Claude 在黎曼猜想上证明：超过 <span class="num">2/3</span> 的 ζ 函数零点位于临界线上且为单零点（Anthropic 已公开其证明）；本周，数学家 Youness Lamzouri 在预印本中宣布该结果经复核"确凿无误"，并给出了一个更简洁、更强的新证明（arXiv 2609.02882）。清华教授、菲尔茨奖得主丘成桐则在流传的截图中悬赏 <span class="num">10 万元</span>，征集用 Claude 的 Prove2Me 一类工具把佩雷尔曼的庞加莱猜想证明做成形式化验证——上一个被形式化的是费马大定理，由清华姚班校友彭天翼领衔、Claude 用时 <span class="num">11 天</span>完成。</p>
+    <p>生物这边同样是"按功能设计"唱主角。9 月 3 日，艾伦研究所、华盛顿大学与 Fred Hutch 癌症中心宣布联合启动 AI BioDesign：由 2024 年诺贝尔化学奖得主 David Baker 与基因组学家 Jay Shendure 牵头，目标是直接设计能识别靶点的蛋白质、控制基因开闭的开关与选择性降解蛋白质的工具，五年预算约 <span class="num">9460 万美元</span>，团队已有 <span class="num">62</span> 人；前期研究已在三种人类细胞中测量了超过 <span class="num">68 万</span> 条序列的基因调控活性，并用数据训练模型。</p>
+    <p>医药与衰老各有一则硬消息：西湖大学联合研发的新冠治疗药"艾普司韦"获国家药监局附条件批准上市，是国内第一款靠 AI 辅助研发获批的原创药，从源头发现到完成临床试验只用了 <span class="num">3.5 年</span>。加州大学伯克利分校团队 9 月 2 日发表于《自然》的研究给老年雌性小鼠用司美格鲁肽，中位寿命从 <span class="num">742</span> 天延长到 <span class="num">834</span> 天、约 <span class="num">12.4%</span>；哈佛的 David Sinclair 评价"GLP-1 越来越像长寿药"，质疑者则提醒这些小鼠少吃了约四分之一——寿命延长来自药物还是热量限制，论文没有给出答案。量子硬件侧，IBM 发布了 Nighthawk R2 处理器（HN <span class="num">78</span> 分）。</p>
+  </div>
+
+  <h3>④ 自主与留存：开源系统、隐私网络与数据长寿</h3>
+  <div class="plain">如果你想把数据、软件和网络服务牢牢握在自己手里，这周既有让人高兴的事，也有让人不安的事。高兴的一面：开源社区把 Linux 装进了最新款的苹果电脑，老牌操作系统发布了最后一个大版本，还有人翻出能保存上百年的光盘与几十美元的二手电脑主板。不安的一面：一批为普通用户提供加密邮箱、加密 DNS、匿名阅读的免费服务，正在一家接一家地关停或收缩。</div>
+  <div class="card">
+    <p><b>把系统装进新电脑。</b>Asahi Linux 宣布 M3 芯片的 Mac 正式获得支持：安装器已合并 M3 系列支持，摄像头、麦克风、USB（最高 USB 3 的 <span class="num">10 Gb/s</span>）、AV1 硬解、Wi-Fi 与蓝牙都可用；主要缺口是完整 DCP 与 GPU 加速，睡眠与 HDMI 也暂不可用，官方计划在 Fedora 45 测试版发布时去掉"专家模式"门槛（HN <span class="num">270</span> 分/<span class="num">157</span> 评论）。同类"老树新枝"还有两条：NetBSD 发布 9.5，这是 9 分支的最后一个版本（HN <span class="num">95</span> 分/<span class="num">4</span> 评论）；有开发者把 AMD 的 BC-250 矿卡主板改造成 <span class="num">60 美元</span> 游戏电脑（HN <span class="num">370</span> 分），给电子垃圾找第二春。</p>
+    <p><b>让数据活过厂商的寿命。</b>M-DISC 的科普帖本周冲上热榜：这种使用无机记录层的 DVD 与蓝光光盘标称可保存约 <span class="num">1000 年</span>，与普通光盘几年到十几年的寿命形成对照（HN <span class="num">170</span> 分/<span class="num">77</span> 评论），"数据到底要存多久"第一次有了接近永恒的答案。</p>
+    <p><b>网络自治的攻防。</b>同一主线的另一面是收缩与反扑：Mullvad 宣布关停其公共加密 DNS（HN <span class="num">474</span> 分/<span class="num">250</span> 评论）；一度被下架的 Nitter 与 XCancel 在获得法律意见后恢复服务（HN <span class="num">335</span> 分/<span class="num">198</span> 评论），可用实例数量甚至比被下架前更多（HN <span class="num">707</span> 分）；两个主打"服务不出欧洲"的自托管项目同榜登上前一百（Git 托管 <span class="num">358</span> 分、静态站托管 <span class="num">495</span> 分）。批评者的靶子在另一侧：作者 Jeff Johnson 复现发现，Chrome 又一次让 Google 自己的站点免于"关闭窗口时清除站点数据"的用户设置（HN <span class="num">549</span> 分）——他在六年前报告过同样的 bug，Google 当时修复了一次。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>A/I shuts down – Stay human</h4>
+    <div class="stats">457 points / 308 comments · keepitfree.ai（Autistici/Inventati 关停声明）</div>
+    <p>意大利隐私与自治网络集体 Autistici/Inventati（其服务常被简称为 A/I）运营满二十五年后宣布关停全部服务：声明称，集体在 8 月 26 日被列入"全球恐怖组织"名单，其 autistici.org 域名当天在未获通知的情况下被切断，此后每一天在线都是"胜利"；如今继续运营会危及用户与社区安全，因此选择主动停服，并将提供数据备份指引。声明没有点明认定方与具体指控，HN 评论区把它与 Mullvad 关停公共 DNS、一度被下架又复活的 Nitter 放在一起，视作"为普通人提供的数字自治空间正在收窄"的最新信号——这也是本周"自主与留存"主题里最沉重的一条。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界大事：海峡的"封锁叙事"与基辅的谈判桌</h3>
+  <div class="plain">这一周的地缘焦点几乎都集中在谈判桌与封锁线上。伊朗一边放话"海峡已经关闭"、准备与邻国签协议划出由自己管控的新航道，一边试射针对军舰的导弹；美国则晒出通行数据反驳，称护航下航运已基本恢复。俄乌两边把谈判桌从莫斯科搬到了基辅，欧洲多国的安全官员也到场旁听，但土地问题仍是绕不过去的坎。欧洲内部，极右翼在德国一个州取得历史性胜利，围绕无人机与"混合战争"的相互指责也在升温。</div>
+  <div class="card">
+    <p><b>波斯湾：封锁与畅通的叙事之战。</b>伊朗最高国家安全委员会秘书 9 月 7 日凌晨集中放话：霍尔木兹海峡"已完全关闭"，特朗普称其开放是"弥天大谎"；伊朗自称 48 小时前首次在一艘美国军舰上空试射反驱逐舰导弹，未来几日将在海峡以外划定禁区，并将与阿曼签署协议、划定由伊朗管控船只进出的"新航运通道"。美方给出的图景相反：特朗普在社交平台发布数据称海峡通行已恢复到冲突前水平（冲突前每日约 <span class="num">2000 万桶</span>、现约 <span class="num">1800 万桶</span>），并晒出伊朗里亚尔汇率跌至约 <span class="num">227 万</span> 兑 1 美元的图表；美国中央司令部称截至 9 月 6 日已重新引导 <span class="num">92</span> 艘商船、禁用 <span class="num">3</span> 艘、登船检查 <span class="num">2</span> 艘；英国海上贸易行动办公室给出第三方统计——过去 48 小时有 <span class="num">59</span> 艘船通过海峡。美国能源部长称海军将继续护航，也承认与伊朗的核协议短期内难以达成；内塔尼亚胡则放话，若伊朗攻击以色列将遭"无法想象的打击"、以方决心完成推翻伊朗政权的任务，伊朗议会议长随即警告"游戏规则已经改变"。</p>
+    <p><b>俄乌：谈判桌从莫斯科搬到基辅。</b>在莫斯科的逾三小时会谈之后，美国特使威特科夫与特朗普女婿库什纳周日转赴基辅与泽连斯基会谈，英、法、德国家安全顾问同时到场旁听；泽连斯基事后称会谈"非常有实质性"，但土地问题是主要障碍、只能在领导人层面解决，他认为战争短期内难以结束、可能延续到冬季，库什纳则表示希望恢复俄、乌、美三方会谈形式。战场并未安静：乌军称夜袭了俄罗斯里亚赞炼油厂，塔斯社称俄军在黑海击中乌克兰货船。</p>
+    <p><b>欧洲：右翼向前、混合战争升温。</b>德国选择党在萨克森-安哈尔特州选举中自称"历史性胜利"——选前民调预计其得票约 <span class="num">44.5%</span>、大幅领先；党主席魏德尔称基民盟支持率将很快跌破 <span class="num">20%</span>、总理默茨"会面临问题"。围绕莱比锡无人机事件的外交攻防升级：俄外长拉夫罗夫称西方指责莫斯科参与袭击"基本上就是实际战争的开始"；波兰热舒夫机场一度因"不明物体接近"暂停航班，随后证实是一群鸟。法国共产党全国书记鲁塞尔宣布参加 2027 年总统选举。周边冲突各有伤亡数字：以军空袭南黎巴嫩致 <span class="num">4</span> 死 <span class="num">20</span> 伤，以国防部长称真主党解除武装前不会从安全区撤军；也门政府军与胡塞武装交火，至少 <span class="num">117</span> 人死亡。</p>
+    <p><b>美国内政与周边。</b>一架执飞亚马逊货运的波音 767-300 货机在迈阿密冲出跑道并撞上路边车辆，至少 <span class="num">5</span> 人死亡，机场一度全面停航；民调显示特朗普支持率降至历史最低，他同时就"加元与美元的失衡"发难，其政府就限制邮寄选票的新规再次向最高法院上诉。中国方向：卡塔尔首相兼外交大臣 9 月 7 日起访华，空军多型军机参加埃及航展。灾害数字在更新：西藏吉隆"8·26"泥石流已致 <span class="num">43</span> 人遇难、<span class="num">519</span> 人失联，尼泊尔一侧同轮灾害死亡升至 <span class="num">1353</span> 人，江西遂川泥石流遇难增至 <span class="num">3</span> 人、另有 <span class="num">11</span> 人失联。</p>
+  </div>
+
+  <h3>⑥ 人文与社会：屏幕一代、跨国博主与"剧本化的城市"</h3>
+  <div class="plain">这一周的人文话题绕不开屏幕：一位英国作者的新书警告，短视频与算法正在把下一代刷进"阅读荒漠"，家长的担忧从卧室蔓延到公共讨论。而在更现实的生活里，有人在用镜头缝合两个国家之间的民间印象——一名旅居中国的日本博主和一名在日本的中国博主，都在记录对方社会最日常的一面；另一边，一场发生在广西的跨国传销案，把"免费旅游"与城市宣传话术之间的边界重新摆上台面。</div>
+  <div class="card">
+    <p><b>屏幕一代的阅读荒。</b>英国作者 Ed West 以"刷手机刷到死"为题评述《泰晤士报》专栏作家 James Marriott 本周出版的新书《新黑暗时代》：青少年男生把 YouTube 当主要娱乐、越来越少人读书，家长们的焦虑正从私人担忧变成公共恐慌（HN <span class="num">336</span> 分/<span class="num">227</span> 评论）。这条线在中文互联网同样有回声——此前的"英语降权"之争与"孩子还读书吗"的追问，指向同一个母题。</p>
+    <p><b>用镜头缝合的民间认知。</b>《联合早报》特稿记录了两位跨国博主：旅居中国的 28 岁日本博主二宫荣希子在小红书经营"希子在中国"（粉丝超 <span class="num">4 万</span>、Instagram 超 <span class="num">3 万</span>），记录她眼中的"真实、日常的中国"；在大阪的 31 岁中国 YouTuber"小林"则拍摄宫崎的峡谷风光，也深入日本的过劳文化与"家里蹲"等社会问题。评论区的剑拔弩张被对日常的赞叹取代，两人都想避开地缘锋芒、缝合民间认知。</p>
+    <p><b>城市成了传销话术的"剧本素材"。</b>上周曝出 <span class="num">52</span> 名新加坡人疑涉传销在广西南宁被捕，据信是新加坡人在海外被捕人数最多的单一事件；记者周日走访五象新区两个小区发现，"免费旅游"落地后很快变成房产与投资推介，中介称新加坡人多买四房江景单位、总价约 <span class="num">120 万至 130 万元</span> 人民币，也有人合租、常见"一堆人拿着行李箱"进出。受访者回忆，推销话术把"一带一路"等国家叙事当成投资依据——城市宣传、招商引资与诈骗话术在同一座新区的边界变得模糊。</p>
+  </div>
+
+  <h3>⑦ 直面批判与治理：反诈的 AI、被点名的地方保护与注资的银行</h3>
+  <div class="plain">治理与监管这一周动作不少：反诈部门上线了一款由公安指导研发的 AI 反诈应用；市场监管总局点名查处了一个省份卫健委"只护本省药企"的地方保护行为；财政部则向多家中央金融企业集中注资补充资本，其中一家大行还引入了烟草集团作为战略投资者。储能产业被曝正经历产能摸底、新建项目暂缓，医疗与人口领域也有几件小事引发讨论。</div>
+  <div class="card">
+    <p><b>反诈的 AI 上线。</b>公安部刑侦局指导、上海市公安局研发的"国家反诈 AI"App 正式上线，微信、支付宝小程序同步开放：用户输入可疑场景，应用会用大语言模型、多模态与智能体技术做风险研判、识别诈骗套路，从文字、语音、视频多个维度拆解诈骗手法。这是 AI 大规模进入公共治理的一次落地，官方口径强调其识别与宣传功能。</p>
+    <p><b>被点名的地方保护。</b>国家市场监管总局公布第二批"破除地方保护和市场分割"典型案例，直接查处湖北省卫健委的行政垄断行为：2025 年 11 月，该委擅自编制药品鼓励目录，把 <span class="num">26</span> 种本地企业药品纳入，要求省内二级以上公立医院优先配备使用并设置进院绿色通道。总局认定其单纯以产地倾斜、违反反垄断法，通报称涉事目录已废止、相关责任人被追责。</p>
+    <p><b>注资与产能的两条宏观线。</b>财政部拟发行特别国债，向 <span class="num">8</span> 家中央金融企业合计注资约 <span class="num">3600 亿元</span> 补充核心一级资本：工商银行 <span class="num">1000 亿元</span>、农业银行 <span class="num">1600 亿元</span>（并拟引入中国烟草及其子公司作战略投资者）、中国人寿 <span class="num">350 亿元</span>、人保不超 <span class="num">150 亿元</span>、中国太平 <span class="num">70 亿元</span>、进出口银行 <span class="num">300 亿元</span>、中国信保 <span class="num">100 亿元</span>、中国再保 <span class="num">30 亿元</span>。产业侧，据财联社报道，储能行业产能过剩风险受关注，有关部门正全面摸排产能、暂缓审批尚未开工的新建项目。上周发酵的常州星宇应届生事件讨论仍在继续——中国数字时代 9 月 6 日转载的多篇评论追问事件"究竟有多恶劣"，以及劳动仲裁为何不再是年轻人的第一选择。</p>
+    <p><b>医疗与人口的细节。</b>广东一名医生在五岁女童的病历上标注"刁蛮"，被当地卫健部门警告并立案调查；紫金矿业半年报把"人民政府"误写成"人民币政府"，公司公开致歉。人口端的数据更值得注意：据国家统计局数据，出生人口性别比从 2021 年的 <span class="num">108.3</span> 回升到 2024 年的 <span class="num">111.7</span>（每出生 100 个女婴对应约 <span class="num">111.7</span> 个男婴），七普口径男性比女性多约 <span class="num">3500 万</span>；分孩次看一孩性别比最高（约 <span class="num">113.17</span>）、二孩接近正常（约 <span class="num">106.78</span>）、三孩又见升高——三孩政策进入第五年，出生结构却仍在失衡。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场：托管安全周</h3>
+  <div class="plain">加密市场的注意力，这一周从行情转到了"钱还在不在"：一条比特币侧链的跨链桥被转走巨额比特币，链上留下一句"我们是白帽"的留言，却引来安全界怀疑；一家南美交易平台在法证审计后发现托管资产被人转走，宣布永久关闭并报案；另一家交易所的用户则连续数日提现无果。行情本身反而安静，只有个别资产出现异动。</div>
+  <div class="card">
+    <p><b>托管安全的三连击。</b>最大的一起在 Liquid：约 <span class="num">4000</span> 枚比特币从跨链桥转出，链上留言自称"我们是白帽、请在链上联系我们"；Ledger CTO 公开质疑，真正的白帽不会先转走桥资金再留联系方式，这套路让人联想到 Ronin 被黑约 <span class="num">6.25 亿美元</span> 与 Euler 事后协商返还的手法。Liquid 确认资金经 SideSwap 的 Peg-out 授权密钥（PAK）转出、密钥本身未泄露，已暂停 LBTC 充提、关闭桥接节点，侧链暂时停摆。智利平台 Orionx 宣布永久关闭：法证审计发现逾 <span class="num">700 万美元</span> 托管资产被转至非公司管理的钱包，公司已报案并对前高管提起刑事诉讼、暂停客户提现，其 A 轮领投方 Tether 的相关公告已从官网撤下。交易所 WOO X 被 ZachXBT 点名：多名用户连续数日提现处于"待处理"状态、部分被取消，平台回应称正加快处理；背景是其关联方 BitMart 已于 7 月停运重组，仍有用户数百万美元无法取出。</p>
+    <p><b>行情与流动性。</b>价格波动有限但信号微妙：比特币短期持有者 SOPR 的 30 日均值一年多来首次升破 <span class="num">1</span>，过去 24 小时全网爆仓约 <span class="num">2.12 亿美元</span>、ZEC 居首；Binance 上线 PONS 与"哈基米"永续合约（后者 24 小时涨超 <span class="num">248%</span>）；Bitwise 的 HYPE 现货 ETF 恢复买入、单日增持约 <span class="num">1050 万美元</span>；Ether.fi Cash 交易额破亿，ETHFI 回购提案成为价格关键变量。宏观侧，"全球央行正把黄金从纽约金库搬回本国"的话题再度出现——黄金与比特币在避险叙事里再次被并列讨论。</p>
+    <p><b>技术、采用与治理。</b>Vitalik 给出密码学路线图式的判断：约 <span class="num">33%</span> 概率 SNARK、全同态加密与不可区分混淆最终都能做到接近原始计算成本（<span class="num">1+ε</span> 倍）的额外开销，约 <span class="num">60%</span> 概率三者都控制在 <span class="num">10 倍</span> 以内，其中 SNARK 最可能在本十年内率先降到个位数开销。以太坊开发者提出 EIP-8141，想用"frames"给交易增加功能而不修改交易封装层。采用侧：Bitcoin Policy Institute 统计中东与北非的链上交易量从 2022 年约 <span class="num">1000 亿美元</span> 增至 2025–2026 年约 <span class="num">3500 亿美元</span>；英格兰第七级别足球俱乐部 Real Bedford 把比特币深度融入球队运营；Metaplanet CEO 回应股东质疑，称将加强沟通与透明度并继续审查治理及薪酬政策；Kalshi 在 9 月初开出首张终身交易禁令。吴说的一周回顾把这条线概括为：Robinhood 链交易火热之外，行业正在消化"谁有权保管、谁有权提现"的新考题。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">以周一早晨收尾的这七天，几条主线都走到新的节点：AI 从"发布潮"转向"解释自己的分数"，波斯湾的对抗从导弹与油轮延伸到对"海峡是否畅通"的叙事争夺，俄乌的谈判桌从莫斯科挪到基辅，欧洲右翼在选举里再下一城，加密市场的考题则从涨跌变成了托管安全。科研、注资与人口数据，也各自留下这一周的刻度。</div>
+  <div class="card">
+    <p><b>AI 与资本的一周。</b>从 8 月底的集中发布（Anthropic Fable 5.1、谷歌 Gemini 3.8 Flash、OpenAI GPT-6 Astra）走到 9 月 7 日，"解释与管束"成了新主题：Astra 发布后评测数字被多次修订、OpenAI 公开"加速研究"数据并呼吁透明度、奥特曼预告更强的模型在路上；Anthropic 的 IPO 时间表后移至 9 月底见报与 10 月中旬路演（估值讨论仍约 <span class="num">2 万亿美元</span>），国内字节跳动获约 <span class="num">300 亿美元</span> 贷款、月之暗面递表港交所。</p>
+    <p><b>地缘与油市的一周。</b>波斯湾从空袭拉腊克岛、击沉油轮，走到"海峡封锁与畅通"的叙事之争：伊朗预告与阿曼签署新航道协议并划设禁区，美国持续护航并称通行恢复至约每日 <span class="num">1800 万桶</span>，欧佩克+周日宣布维持产量不变。俄乌谈判从莫斯科延伸到基辅，泽连斯基把土地问题列为最大障碍；欧洲一侧，德国选择党在萨克森-安哈尔特州拿下历史性胜利，极右翼的选举势头继续向西欧之外扩散。</p>
+    <p><b>科研、金融与社会的一周。</b>费马大定理形式化之后，Claude 的黎曼猜想结果获数学家验证、丘成桐悬赏形式化庞加莱猜想；司美格鲁肽让老年鼠延寿约 <span class="num">12.4%</span> 引爆"GLP-1 是不是长寿药"的争论；David Baker 领衔的 AI BioDesign 拿到五年约 <span class="num">9460 万美元</span> 预算。国内财政拟向 8 家中央金融企业注资约 <span class="num">3600 亿元</span>；吉隆泥石流遇难增至 <span class="num">43</span> 人、失联 <span class="num">519</span> 人。加密端以 Liquid 约 <span class="num">4000</span> 枚比特币的桥事件收尾——托管安全取代行情，成为这一周留给大家的考题。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、吴说、联合早报、风向旗、cnBeta、AI 新闻聚合、中国数字时代、十年之约、竹新社、Nature、MIT 科技评论、小众软件等，覆盖 9 月 5–7 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 324 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
