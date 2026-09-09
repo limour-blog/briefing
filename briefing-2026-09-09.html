@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-09-09</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 9 月 9 日 · 周三 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>AI 把冲击力投向数学界最贵的一道题——OpenAI 称未发布的下一代模型驱动约一万个智能体、用约八十八小时完成了纳维-斯托克斯千禧年难题的证明（机器形式化验证），纽约大学数学家随即公开"被截胡"指控，双方各执一词；同一夜波斯湾从谈判预期回到实弹互袭，美军打击伊朗油轮、伊朗宣称俘获美方无人潜航器；欧洲十二国同时宣布限制与以色列定居点的贸易。</div>
+
+  <h3>① AI：模型上新、资本加码，与一个"更强的内部模型"</h3>
+  <div class="plain">各家产品更新挤在同一天：OpenAI 发布新版图像模型、把旗舰模型铺向全部付费用户，Meta 的智能体助手开始内测，DeepSeek 也悄悄放出一个新结构的 Flash 模型并调低了价格。融资端最重的一笔落在欧洲：由韩国厂商领投的巨额新钱进了一家欧洲 AI 独角兽。而所有这些发布，都被昨夜一个更重的声明盖过——OpenAI 首次承认，一个能力远超已发布旗舰模型的内部模型确实存在，详见下方头条黑卡。</div>
+  <div class="card">
+    <p>OpenAI 的图像与旗舰同步更新：ChatGPT Images 2.5（HN <span class="num">247 分/309 评论</span>）向 ChatGPT、ChatGPT Work 与 Codex 全量开放，核心新功能是 Sketch——先在对话框里画草图、再让模型补全成成品，也支持在图上直接批注改细节；官方称生成延迟较上一代最多降 <span class="num">50%</span>、多轮编辑跟随能力更强（cnBeta/金十）。旗舰模型 GPT-6 Astra 同日开始覆盖全部付费用户，并登顶 Terminal-Bench 编码基准（AI 聚合）。为前夜的数学声明，OpenAI 还首次披露了内部模型的量级：在精选开放数学题上通过率最高接近 <span class="num">48%</span>，约为 Astra 最高表现的近 <span class="num">3 倍</span>（金十/cnBeta）。</p>
+    <p>Meta 与国内同步出手。Meta 的智能体 Muse 进入封闭内测（HN <span class="num">187 分/178 评论</span>），主打跨应用操作与个人财务管理，按月收费、最高每月 <span class="num">100 美元</span>，并预告今年晚些时候推出 Confidential VM；公告后 META 股价盘中拉升超 <span class="num">1%</span>。国内侧，DeepSeek 的 V4.1-Flash 开始内测（模型名带 9 月 10 日过期标记、计费与上一版 Flash 一致），主打原生多模态与更快的处理速度，随后下调 Flash 系价格；它还一次性放出 <span class="num">150</span> 个工程岗位押注智能体基建（联合早报），上周据报已向华为大规模订购 AI 芯片。官方口径则提出有序部署 <span class="num">10 万卡</span>级智算集群并加大国产芯片适配（联合早报）。</p>
+    <p>资本在三条线上同时加码。欧洲 AI 龙头 Mistral 宣布融资 <span class="num">30 亿欧元</span>、由三星领投，估值约 <span class="num">240 亿美元</span>（HN <span class="num">791 分/559 评论</span>；AI 聚合），目标是把"主权、开放权重 AI"做成技术前沿；智能体公司 Cognition 据称以 <span class="num">480 亿美元</span> 估值募得逾 <span class="num">20 亿美元</span>（金十；HN <span class="num">11 分</span>）。Anthropic 则退出信息技术工业委员会（ITI），原因是该行业组织支持限制外国获取美国芯片的立法（Axios）。"谁卖模型、谁供算力、谁定芯片规则"三条线在同一天都被顶高。</p>
+  </div>
+
+  <h3>② 教育与下一代：AI 用得越多，学得越好还是越差</h3>
+  <div class="plain">这两天放出的数据，都在回答同一个更长远的疑问：天天被屏幕和 AI 包围的年轻人，学习能力到底被抬高还是拖低了？国际组织给出了"越用越差"的结论，美国学生的阅读分数也在全球测评里创了新低。另一边，一只陪了孩子六年的社交机器人到了要退役的时候，孩子和研究者开始讨论：机器人的告别，该由谁来负责。</div>
+  <div class="card">
+    <p>国际组织与经济数据先给了一盆冷水：经合组织称，在校学生中使用 AI 的学生考试成绩反而更差（风向旗引外电）；美国学生在最新一轮国际阅读测评中分数大幅下滑（《纽约时报》，HN <span class="num">36 分/17 评论</span>）。两条线拼在一起，疑问指向同一处：生成式工具进课堂后，被鼓励的是即时产出，还是长期掌握。</p>
+    <p>就业预期侧，皮尤调查（MIT 科技评论转述）显示 <span class="num">73%</span> 的 18 至 29 岁美国人认为未来 <span class="num">20 年</span> AI 会减少美国岗位，<span class="num">55%</span> 的年轻人对 AI"担忧多于兴奋"——这一比例在该年龄组首次过半；皮尤称，过去对新技术更乐观的年轻人正快速追上整体的焦虑水平。与宏观担忧并行的，是个体与工具之间更琐碎的磨合：HN 上一个名为 I-have-ADHD 的开源技巧走红（<span class="num">245 分/196 评论</span>），作用是提醒编程智能体"别把答案埋在最后"；BBC 则报道了另一项相反方向的研究——把手伸进泥土、摸树和苔藓，对皮肤与免疫系统有可测的益处（HN <span class="num">203 分/168 评论</span>）。</p>
+    <p>MIT 科技评论的一篇长报道，讲了这种拉扯在儿童身上的样子：十岁的神经多样性男孩赞德与社交机器人 Moxie 相处六年，机器人教过他呼吸调节情绪，如今更多陪他聊游戏；这台约 <span class="num">38 厘米</span> 高的机器即将因公司停止支持而"退役"。男孩说，想找人说说话时他还是会找它，"可她毕竟不是人"。耶鲁大学研究社交机器人的学者认为，家用治疗机器人"在有生之年可以实现"，但报道把问题留给读者：长期陪伴形成的依恋，该由谁来负责收尾。</p>
+  </div>
+
+  <h3>③ 硬件与存储：议价权易手，与"把模型塞进硬盘"的演示</h3>
+  <div class="plain">存储芯片的涨价从服务器内存烧到手机闪存，向来强势的苹果也开始签多年长约，甚至不设价格上限。三星在美国的工厂月底试产最新制程、产能已被订满，台积电与三星还双双承诺采用阿斯麦的新一代光刻机。就在"贵的买不到"的同时，有人演示把体量以万亿计的模型权重分装进四块固态硬盘，在一台笔记本上以极慢的速度跑了起来。</div>
+  <div class="card">
+    <p>NAND 成为存储涨价潮的新战场：苹果据报与供应商签下三至五年期闪存长约、不设价格上限，市场判断最可能的对手方是铠侠；此前业内长约集中在 HBM，如今蔓延到 NAND，标志议价权从买方转向卖方（财联社/风向旗）。供给端继续紧绷：三星德州泰勒厂本月底试产 <span class="num">2 纳米</span>、全部产能已被预订，<span class="num">2 纳米</span>良率年内从约 <span class="num">60%</span> 提到 <span class="num">80%</span>，因 HBM 供不应求，其 <span class="num">4 纳米</span> 一半产能转产 HBM4 基片、仍满负荷运转；台积电与三星分别承诺自 <span class="num">2030 年</span> 和不晚于 <span class="num">2028 年</span> 采用阿斯麦高数值孔径 EUV（cnBeta），美银称该技术势头正盛；长鑫科技称下半年 DRAM 供应持续紧张（联合早报）。折叠屏 iPhone 据报初期产量受限、每日仅数百部（风向旗），与存储产能的挤占互为注脚。</p>
+    <p>同一天的 HN 第二位，演示了短缺之外的另一个方向：把 Kimi K3（<span class="num">2.8T</span> 参数）的权重分存四块 SSD，在 MacBook Pro 上流式读取、以约 <span class="num">1 token/s</span> 的速度完成推理（HN <span class="num">152 分/63 评论</span>）。它不把权重常驻显存、而是边读边算，用顺序带宽换容量——当 HBM 既贵又缺时，这条"慢但跑得动"的路线在评论区被反复讨论。</p>
+  </div>
+
+  <h3>④ 平台权力与数字自主：电视、搜索引擎与算法默认值</h3>
+  <div class="plain">这几条新闻指向同一个问题：平台替用户做的默认设置，正被逐一放到台面上审问。智能电视被证实在待机或离线时仍在收集数据；澳大利亚开始立法，让用户能退出算法推荐；维护独立维基的团队抱怨新域名被谷歌搜索"关进小黑屋"；美国边境巡逻队的一个秘密单位，被曝在分析普通人的金融数据。默认设置归谁管，正在从技术细节变成公共议题。</div>
+  <div class="card">
+    <p>LG 电视的争议又往前一步：The Verge 与硬件媒体 GamersNexus 跟进称，电视即便处于待机甚至"离线"状态，仍会扫描附近 Wi-Fi 并录制片段上传（HN <span class="num">452 分/264 评论</span>）；昨日引爆讨论的视频帖《216M Spy TVs》分数已涨到 <span class="num">863 分/976 评论</span>。作为对照，开源替代 Jellyfin <span class="num">12.0</span> 仍在 HN 前列发酵（<span class="num">576 分/312 评论</span>）。"把默认权还给人"的另一例在政府端：继未成年人社交媒体禁令之后，澳大利亚公布《数字注意义务》草案，推出"我的信息流、我做主"——允许用户关闭平台算法推荐的默认排序（HN <span class="num">177 分/150 评论</span>；风向旗同步报道）。</p>
+    <p>平台对新玩家的挤压有了两份新证据：托管 Overwatch 与 Fortnite 独立维基的团队披露，谷歌自 2024 年起对新域名只收录首页，新站几乎搜不到，被戏称为"谷歌监狱"（HN <span class="num">509 分/213 评论</span>）；统计还显示，欧洲使用 CDN 的企业近九成依赖同一家美国公司（HN <span class="num">372 分/338 评论</span>）。同一周，HN 上 Firefox 用户集中反映谷歌验证码大量拒绝其通过（<span class="num">231 分/108 评论</span>）。数据与流量入口越是集中，"想退出默认设置"的成本就越高。</p>
+    <p>政府侧的监控叙事也在更新：404 Media 披露，美国海关与边境保护局设有秘密的"预测性警务"小组，分析美国人的金融活动等数据，再让地方警察拦停并未涉嫌具体罪行的人（HN <span class="num">301 分/171 评论</span>）。安全侧的旧账被翻新：一位研究者称他实际分解了上世纪九十年代一家证书颁发机构的 RSA 密钥，普通桌面机即可完成，并提到刚被攻破的 RSA-260（<span class="num">862</span> 位）是迄今最大规模（HN <span class="num">478 分/119 评论</span>）；国内侧，安全人员用 AI 快速开发出首个零点击微信蠕虫，腾讯称漏洞已修复（风向旗）。为应对"AI 让攻击变快"，谷歌宣布 Chrome 改为每两周更新一次。</p>
+  </div>
+
+  <h3>⑤ 科技科研前沿：基因图谱、抗衰老读数与鼻喷脑机接口</h3>
+  <div class="plain">硬科学这周的主线是"预测"：谷歌把人类基因组里每一个字母的可能变化都做成了一张可查询的预测图，气象与物理界也各有新进展。生物医药一边，一款 AI 设计的老药在肺病患者身上读出"变年轻"的信号，还有公司想用鼻喷颗粒把人脑和机器连起来。</div>
+  <div class="card">
+    <p>谷歌 DeepMind 发布 AlphaGenome Atlas：一个预测人类基因组全部约 <span class="num">90 亿</span> 种单字母 DNA 变异后果的图谱（Nature 报道；HN <span class="num">436 分/105 评论</span>，同话题第二帖 <span class="num">73 分</span>）——它把"某个位置的碱基换成别的会怎样"从逐个实验，变成一张可查询的预测地图。风向旗与 AI 聚合同步转发了这一发布。</p>
+    <p>生物医药出现两个"早期信号"：英矽智能等在《自然·生物技术》报告（MIT 科技评论解读），其 AI 设计、靶向 TNIK 激酶的肺纤维化候选药 rentosertib 的试验里，一个给药组服药第 <span class="num">4 周</span> 时四种"衰老时钟"估算的生物年龄平均年轻约 <span class="num">2.7–3.5 岁</span>——研究明确这只是蛋白质组学时钟的读数，不等于真的延缓了衰老。神经技术初创 Subsense 则公布一条免开颅的脑机接口路线：经鼻腔递送纳米颗粒电极，再由头戴设备读写神经信号；未来学家库兹韦尔以"产品与愿景顾问"身份加入，公司累计融资约 <span class="num">2700 万美元</span>（MIT 科技评论）。</p>
+    <p>物理与科学文化侧：牛津大学团队宣布在量子系统中观测到爱因斯坦引力效应（HN <span class="num">258 分/91 评论</span>，正文未能抓取）；《纽约时报》则报道了一位 <span class="num">92</span> 岁数学家与少年学徒的合作故事（HN <span class="num">107 分</span>）。Nature 同期还发表社论，呼吁限制在预测市场押注临床试验结果（详见加密段），并复盘英国生物样本库一次数据泄露后的恢复经验。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>On the Navier–Stokes Millennium Prize Problem（OpenAI 宣称 AI 智能体攻克千禧年难题）</h4>
+    <div class="stats">938 points / 754 comments · openai.com（同日纽约大学数学家声明帖 922 分/408 评论）</div>
+    <p>OpenAI 于 9 月 9 日凌晨发文称，其下一代内部模型驱动的多智能体系统完成了纳维-斯托克斯千禧年难题的解答：约 <span class="num">1 万个</span>并发智能体协作，首批启动约 <span class="num">88 小时</span>后得出结果，再由 Astra 用 <span class="num">17 小时</span>协助完成 Lean 形式化验证；全程交换约 <span class="num">490 万条</span>消息、生成约 <span class="num">3000 亿</span>个 token，耗资数百万美元。最终证明长约 <span class="num">165 页</span>：构造一个起初静止、受平滑外力作用的三维不可压缩流体，涡旋在拉伸中让速度在有限时间内失去上界、而总动能保持有限——对应官方问题表述中的 C、D 条件，即用"破裂反例"回答这道悬赏百万美元、困扰数学界约九十年的题（cnBeta 全文转述）。OpenAI 称无意领取奖金，意在展示前沿系统的进度；克雷研究所仍将 NS 列为未解难题——按规则候选解法须先发表于合格期刊、公开满两年并获学界普遍认可。</p>
+    <p>叙事的另一半来自纽约大学数学家 Tristan Buckmaster 与 Anthropic 研究员 Levent Alpöge：两人用 AI 辅助（Claude 与 OpenAI 工具并用、个人经费支付）证明了三类流体方程的平滑外力破裂，本打算再打磨数周后发布，却在 9 月 8 日提前公开论文并附四页声明，指控 OpenAI 在得知进展后提出"先发欧拉论文、次日跟进 NS"等两套协调方案、要求把 Alpöge 排除在拟议论文署名之外，通话中还出现"毁掉职业生涯"的说法；OpenAI 与当事研究员 Bubeck 否认接触其工作、称方法差异显著，奥特曼回应曾主动提议让对方优先发布、否认要求删除署名。目前无通话录音可核实，OpenAI 的证明也未公开；陶哲轩与 Buckmaster 通话约半小时，对已公开成果评价积极，但称需要时间消化——这场风波的另一层议题，是机器生成的证明该以什么顺序、什么署名走向同行评审。</p>
+  </div>
+
+  <h3>⑥ 地缘政治与能源：波斯湾一夜回到"互袭"</h3>
+  <div class="plain">波斯湾的剧本两天内又翻了一页：上周还在传"谈判进入最后阶段、液化气船返航"，昨夜美军却开始打击伊朗油轮，伊朗则宣布俘获一艘美国无人潜航器。与此同时，欧洲十二国宣布限制与以色列在约旦河西岸定居点的贸易，以色列扬言报复；俄乌的领导人通话照打，前线的防空导弹却不够用。</div>
+  <div class="card">
+    <p>波斯湾从"谈"滑回"打"：据美方官员与伊朗媒体，美军对霍尔木兹岛与贾斯克附近目标实施打击、对象含伊朗油轮，被解释为"从经济上挤压伊朗"；伊朗革命卫队海军宣称在霍尔木兹海峡入口捕获一艘美国无人潜航器（美方只承认一架水下无人机发生故障），并公布击落 MQ-1 无人机的画面；内塔尼亚胡称"必须推翻伊朗政权"，伊朗议长以漫画回击。油市把升级计入价格：布伦特原油结算 <span class="num">97.92</span> 美元（+<span class="num">0.95%</span>）、WTI <span class="num">93.03</span> 美元（+<span class="num">1.69%</span>），欧洲天然气盘中涨超 <span class="num">5%</span> 至 <span class="num">77.14</span> 欧元/兆瓦时；现货黄金却回落至 <span class="num">4350</span> 美元附近（日内 -<span class="num">1.37%</span>）——美债收益率高企与加息预期盖过了地缘买盘，道指当日收跌约 <span class="num">1.17%</span>。</p>
+    <p>欧洲对以色列的制裁从"拟议"走到落地：英国外交大臣宣布将以色列对约旦河西岸的占领视为非法、禁止进口定居点商品并切断融资，法国等 <span class="num">12</span> 国随后发表联合声明跟进；以色列随即宣布关闭英国驻耶路撒冷领事馆并采取系列报复措施，欧盟称定居点扩张破坏"两国方案"前景。俄乌侧，普京与特朗普通话约一小时，普京称对欧洲没有侵略计划并介绍战场形势，基辅的盟友却判断战争可能拖到 <span class="num">2027 年</span>；为凑齐 <span class="num">300</span> 枚"爱国者"，欧盟破例允许乌克兰用原计划购买欧洲武器的钱采购美国货（金十）。也门-沙特一线仍在对攻：胡塞称沙特三天内空袭也门逾 <span class="num">135</span> 次，沙特南部多城遭袭后民防部门陆续解除预警，俄外长称胡塞袭沙"适得其反"。中国侧，习近平与英国首相通电话，强调共同利益大于分歧；王毅就中东局势重申"对话谈判才是正途"。</p>
+  </div>
+
+  <h3>⑦ 直面批判与治理：科研伦理与反腐同时"亮牌"</h3>
+  <div class="plain">科研与纪检两条线同时见报：国际顶级期刊连续发声，追问中国"快速通道"下基因治疗试验里的儿童死亡为何没能更早公开；国内两名高官在同一天被通报，一名现任部长被开除党籍和公职，一名前省长因受贿被判处死缓。社会监督端，一次"称捐百万、实付一元"的网红赈灾闹剧也等来了官方回应。</div>
+  <div class="card">
+    <p>Nature 在 9 月 8 日连发两篇社论：一篇以《两名儿童死于中国的基因治疗：领域何去何从》为题，指出强化后的法律应确保未来的试验死亡能及时向公众披露，但中国此类研究的声誉正面临风险；另一篇称儿童死亡让"快速通道"临床试验制度受到审视，新出台的政策试图在鼓励创新与守住安全之间取得平衡。结合国内此前已公开的基因治疗受试者死亡事件，监管披露的及时性成为国际学界本周关注的重点（Nature 289682/289683）。</p>
+    <p>反腐与司法同日推进：官方通报应急管理部部长王祥喜"毫无纪法底线"，被开除党籍和公职（联合早报）；山西原省长金湘军受贿逾亿元人民币、一审被判死缓（联合早报）。香港侧，支联会煽动颠覆案定于 9 月 11 日宣判。</p>
+    <p>社会监督的"小切口"同样被记录：广西红十字会回应"网红称捐百万元赈灾"——按其姓名查询，实际到账 <span class="num">1</span> 元（联合早报）；武汉通报查封非法辅助生殖场所。这些个案都不大，但共同点是：一次公开表态与实际行为之间的落差，最终都要靠第三方核查来收场。</p>
+  </div>
+
+  <h3>⑧ 人文与社会：两场告别与日常的刻度</h3>
+  <div class="plain">香港回归后的第一任行政长官在睡梦中离世，曾以天价拿下央视广告"标王"的民营企业家也在同一天走了。普通人的日子照旧：一篇博客讨论"没时间生活"的劳动者，一个家庭为局域网游戏派对专门盖了栋房子，还有赛车事故引发的救援争议，把体育赛事的应急管理推到舆论中心。</div>
+  <div class="card">
+    <p>两场告别落在同一天：董建华于 9 月 8 日安详辞世，享年 <span class="num">89</span> 岁。他是香港回归后的首任特首，<span class="num">2005</span> 年以健康原因辞职，后任全国政协副主席，晚年牵头成立智库与基金会（联合早报综合港媒）。同日落幕的还有"太子奶"创始人李途纯——他曾以 <span class="num">8888 万</span> 元竞得央视广告"标王"，其企业后来深陷债务与重整。</p>
+    <p>一场赛事把两套问题同时顶出水面：演员吴彦祖公开批评"中国 GT"赛事在撞车事故后救援不力、试图掩盖（联合早报），联合早报"下午察"专栏以《赛车相撞，谁在救火？》为题讨论赛道应急与公关处理。更日常的一面在博客圈：一篇题为"当四成多中国人醒来却没时间生活"的长文，讨论时间贫困与劳动强度如何挤压休息与关系（十年之约聚合）；HN 上则有人分享了一栋为局域网游戏派对设计的住宅（<span class="num">365 分/302 评论</span>）——把"和朋友同屏打游戏"直接写进了房屋平面图。</p>
+  </div>
+
+  <h3>⑨ 区块链与加密市场：侧链的信任事故与稳定币的机构化</h3>
+  <div class="plain">加密圈这两天的考题从涨跌换成了"锚定与托管"。一条比特币侧链被曝有人凭空造出约四千枚本应有储备的资产、并换走了真比特币；同一天，支付巨头申请设立托管比特币的银行牌照，瑞士九家机构开始实测瑞郎稳定币——机构化的脚步和信任事故几乎同步到达。</div>
+  <div class="card">
+    <p>信任事故的主角是 Liquid Network：其事故报告称，<span class="num">9 月 6 日</span>底层软件 Elements 的一个 range proof 缓存验证漏洞被利用，攻击者铸造约 <span class="num">4000</span> 枚无 BTC 储备支持的 LBTC，并借标准提现通道换成约 <span class="num">4000 BTC</span>，Liquid 储备从约 <span class="num">4205</span> BTC 跌至 <span class="num">197</span>；事件未涉及私钥泄露，网络已暂停，攻击者归还 <span class="num">3400</span> BTC 后仍缺约 <span class="num">598.5</span> 枚，Elements v23.3.4 预计约 <span class="num">48 小时</span>内发布（吴说）。同类的"锚定核查"也在别处发生：Tether 冻结 <span class="num">10</span> 个与新币担保相关的 TRON 地址，涉约 <span class="num">3927 万</span> USDT。</p>
+    <p>机构化在另一头加速：Block 向美国货币监理署申请设立全国性信托银行（拟名 Builders Bank &amp; Trust），拟在联邦监管下托管比特币与稳定币、不吸储不放贷；UBS 等 <span class="num">9</span> 家瑞士机构启动瑞郎稳定币 CHFD 实测，SIX、TWINT 加入；Circle 拟以约 <span class="num">4 亿美元</span>股票收购新加坡支付公司 Tazapay，其 CCTP 同步上线预付式快速转账；Visa 称稳定币关联卡项目已超 <span class="num">160</span> 个、支付规模同比增近 <span class="num">200%</span>。链上现货 RWA 交易量 8 月达 <span class="num">78.2 亿美元</span>创历史新高，其中代币化股票占比从 <span class="num">30.3%</span> 升至 <span class="num">80.2%</span>（CryptoRank）。当 Robinhood 与 Crypto.com 合作上线预测市场合约并取得其少数股权时（吴说），Nature 同期发表社论呼吁限制在预测市场押注临床试验结果——"用钱赌科学结论"的边界被摆上台面。</p>
+    <p>产品与行情面：Canary 质押型 TRX ETF（TRXS）今日登陆 Cboe，灰度的 Zcash ETF（ZCSH）期权上线交易，Kraken 推出 HYPE 封装代币 kHYPE。现货端，Glassnode 称 BTC 波动率处于历史低位、杠杆与新资本持续累积、期权仓位转向看涨，价格仍受阻于 <span class="num">8 万–8.2 万</span> 美元区间；美股周二加密相关标的高位回调，Strategy 跌超 <span class="num">5%</span>、Coinbase 跌超 <span class="num">3%</span>，市场把目光投向周三的 CPI 与财政部回购规模。</p>
+  </div>
+
+  <h3>⑩ 一周回顾（9 月 2 日至 9 月 9 日）</h3>
+  <div class="plain">回头看九月二日到九日的这七天：AI 的故事从"发布旗舰"走到"让机器证明数学"——周四发布的旗舰完成铺开，周五 Claude 完成费马大定理的形式化证明，周初 OpenAI 又抛出纳维-斯托克斯声明与署名争议；波斯湾在谈判预期与实弹互袭之间来回切换；存储涨价从服务器内存烧到手机闪存；科研端则同时出现基因图谱、抗衰老读数，以及针对"儿童死于基因治疗"的追问。</div>
+  <div class="card">
+    <p><b>AI 的一周：从发布到自证。</b>9 月 4 日 GPT-6 Astra 发布、多个基准接近满分，黄仁勋称"AGI 已来"；同周英伟达以 <span class="num">129.3 亿美元</span>收购 Hugging Face，Anthropic 强调性价比的 Fable 5.1 上线并开始分发约 <span class="num">15 亿美元</span>版权和解金，谷歌与 Meta 同日上新模型；9 月 5 日 Claude 用 <span class="num">11 天</span>完成费马大定理首个完整形式化证明，本周初 OpenAI 的"内部模型"声明把"AI 做数学"的叙事推到顶点，也把机器证明的署名与公开顺序变成学术伦理议题。周中 Mistral 拿到 <span class="num">30 亿欧元</span>融资、DeepSeek V4.1-Flash 内测与降价、Meta Muse 内测相继落地。</p>
+    <p><b>地缘的一周：谈判与互袭并行。</b>美军 9 月 1 日与 9 月 5 日两次打击伊朗军事目标与油轮（9 月 5 日一艘航母自称躲过多次袭击后袭击 <span class="num">3</span> 艘伊朗油轮），伊朗 9 月 3 日袭击科威特与阿联酋的美军基地；周中"伊朗与阿曼谈判进入最后阶段、卡塔尔气船返航"的重开预期一度压低油价叙事，昨夜美军再袭伊朗油轮、伊朗宣称俘获美方潜航器——海峡的"谈"与"打"始终同时进行。欧洲对以色列定居点的动作从报道走向落实：十二国联合声明、以色列关闭英国驻耶路撒冷领事馆。俄乌侧，普京 9 月 5 日与美方特使长谈、9 月 8 日与特朗普通话，前线的"爱国者"缺口却要靠欧盟破例采购美国货来补。</p>
+    <p><b>产业、科研与社会的一周。</b>DRAM 价格连续七个月走高、全球智能手机均价因存储涨价约 <span class="num">15%</span>、美光拟年底前把 HBM 月产能翻倍，本周苹果签 NAND 长约、三星 2 纳米试产在即；科研端有赛洛西宾缓解化疗副作用、司美格鲁肽让老年小鼠延寿约 <span class="num">12%</span>、雄性果蝇全脑连接图（约 <span class="num">16.6 万</span>神经元）、AlphaGenome 基因图谱与"服药四周变年轻"的抗衰老读数，也有 Nature 针对基因治疗儿童死亡的追问。社会端，香港首任特首董建华辞世，山西与部委层面的反腐通报同日落定；加密圈经历 Liquid 侧链约 <span class="num">4000 BTC</span> 的信任事故，同时看到稳定币与托管牌照的机构化继续加速。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、吴说、联合早报、风向旗、cnBeta、AI 新闻聚合、中国数字时代、十年之约、竹新社、Nature、MIT 科技评论、小众软件等，覆盖 9 月 7–9 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 532 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
