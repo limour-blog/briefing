@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-09-19</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 9 月 19 日 · 周六 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>美军今年春季依据一份由聊天机器人参与生成的情报、准备登船拦截一艘被误判为运输核武部件的中国船只，行动前才发现报告失实；Anthropic 首次量化公开内部研发自动化数据，称 Claude 已主导 <b>26%</b> 的 AI 研发工作，同时把 IPO 推迟至 11 月；特朗普宣布与丹麦、格陵兰就安全事务达成协议，美国获得格陵兰安全事务的永久控制权；美国中央司令部估算对伊朗军事行动成本已达 <b>436 亿美元</b>；离岸人民币升至逾四年最高，央行连续第八个交易日调高中间价。</div>
+
+  <h3>① AI 竞赛：把研发本身交出去</h3>
+  <div class="plain">Anthropic 这周做了一件同行没做过的事：把自己公司里有多少工作交给模型完成，一项一项数了出来。数据显示，从年初到八月，Claude 在内部研发中的角色从偶尔帮忙变成承担大部分流程，人只负责给出目标和最后拍板。同一周，这家公司宣布推迟上市时间，并在旧金山湾区建起一间生物实验室，准备让模型指挥机器人做实验。北京则印发了一份关于人工智能算力与应用的行动方案，把算力工厂的分级评价和智能体产品的落地写进正式文件。</div>
+  <div class="card">
+    <p>Anthropic 在 9 月 17 日的博客文章中披露，截至今年 8 月，Claude 已主导公司内部 <span class="num">26%</span> 的 AI 研发工作，今年 2 月这一比例还不足 <span class="num">1%</span>；超过 <span class="num">90%</span> 的研发工作至少达到人机协作水平，但没有任何一项实现完全自主。公司内部任意时刻约有 <span class="num">3 万</span> 个由 Claude 驱动的 Agent 在并行工作，8 月单月产生超过 <span class="num">10 亿</span> 次决策，其中约 <span class="num">0.002%</span> 在执行前被在线安全检查拦截；离线监控每周标记约 <span class="num">10 万</span> 条对话记录，最高优先级的约 <span class="num">50</span> 条升级到人工复核。合并入库的代码中超过 <span class="num">80%</span> 由 Claude 生成，这些 Agent 同时参与下一代模型的迭代（296798、296834、296870、296773）。</p>
+    <p>研发自动化的数据与上市准备在同一周公布。据《纽约时报》引述四名知情人士，Anthropic 今年年化收入预计超过 <span class="num">1000 亿</span> 美元，高于 7 月时约 <span class="num">650 亿</span> 美元的水平，投资者正用这组数据支撑 <span class="num">2 万</span> 亿美元的潜在估值；投资者预计公司今年年底可获得约 <span class="num">5 吉瓦</span> 算力，到明年底翻倍（297233）。《华尔街日报》随后报道，公司把原定的 IPO 推迟至 <span class="num">11 月</span>（297263）。配套动作同时展开：Anthropic 与埃森哲宣布未来五年共同投入至少 <span class="num">10 亿</span> 美元建设前沿 AI 独立评估能力（297237）；路透社报道公司已在旧金山湾区设立生物湿实验室，目标是让 Claude 指导实验机器人、暂不开展临床试验以避免与药企竞争，此前以约 <span class="num">4 亿</span> 美元收购 Coefficient Bio（297046、297204）。</p>
+    <p>算力采购的方式也在变化。CNBC 引述消息人士称，Anthropic 与 OpenAI 正在英国和北欧寻找规模较小的数据中心交易（296915、296924、296929、296970）。AI 基础设施公司 NScale 提交美国 IPO 申请，计划以 NSCL 登陆纽交所，文件显示其 8 月 25 日与 Anthropic 签署 GPU 服务协议、9 月 15 日签署至少 <span class="num">31 亿</span> 美元本金的认购协议，并与英伟达达成无担保可转换贷款（297218、297220、297222、297224）。CoreWeave 拟发行 <span class="num">30 亿</span> 美元、2033 年到期的可转债，并推出最多出售 <span class="num">3500 万</span> 股 A 类股的计划（296969）；Crusoe 融资 <span class="num">39 亿</span> 美元建设模块化数据中心 Spark（297153）；甲骨文 <span class="num">180 亿</span> 美元的数据中心债务因当地反对面临挑战（297246）。北京市经信局与发改委印发《北京市加快词元经济发展的行动方案（2026—2028 年）》，提出制定词元工厂分级评价标准，覆盖模型适配数量、词元吞吐速度、首字延迟、缓存命中率与电能利用效率（297111—297115）。</p>
+    <p>HN 上的讨论集中在把决策收进本地。排在第 <span class="num">11</span> 位的 OpenJev（现名 SemIf）是一个在浏览器里跑本地决策模型的实验，模型既可以直接读出用户给定选项的概率，也可以逐 token 写出同一分布，使用者可在自己显卡上比较两者的时间差；作者给出的公开子集数据显示本地 <span class="num">4B</span> 模型的一致率为 <span class="num">84.5%</span>，线上版本为 <span class="num">88.3%</span>（HN <span class="num">506</span> 分/<span class="num">234</span> 评论）。Cline 推出原生桌面应用 Cline Desktop 并限时免费提供 Kimi K3，同时发布插件让新模型 Jev 控制浏览器，官方称新模型快 <span class="num">20</span> 至 <span class="num">200</span> 倍、便宜 <span class="num">40</span> 至 <span class="num">400</span> 倍（297254、297255、297154）。xAI 上线 Grok Voice Transcribe 2.0，批处理转写每小时 <span class="num">0.10</span> 美元、流式每小时 <span class="num">0.20</span> 美元（297177、297179）。HN 另有一条 Show HN 称 <span class="num">8</span> 至 <span class="num">29 MB</span> 的自动化模型可匹配 DeepSeek V4 Flash（HN <span class="num">143</span> 分/<span class="num">69</span> 评论）。</p>
+  </div>
+
+  <h3>② AI 安全：错误情报走进作战流程</h3>
+  <div class="plain">今年春天，美军内部传开一份情报：中东有一艘中国船正在运送核武器项目的部件。军方随即准备拦截，武装人员准备登船，飞机已经升空。就在动手之前，有人回头核对这份报告的来源，发现它由分析员借助聊天机器人做成，船上的货物被认错，整份报告不成立。CNN 在周五披露了这件事。同一周，一批在版权诉讼中解封的微软内部文件显示，这家公司的高管把抓取新闻训练模型称作人类历史上最大规模的劳动盗窃。</div>
+  <div class="card">
+    <p>CNN 引述四名知情人士的报道还原了过程：报告由美国特种作战司令部太平洋司令部的分析员制作，他先向聊天机器人询问一批关于船只货单的情报，机器人把公开来源信息与政府掌握的机密信号情报拼在一起，得出这艘船正在运输核武器项目材料的结论；分析员随后再次使用 AI，把结论包装成军方惯常信任的标准情报报告并分发。军方据此制定拦截方案，武装人员准备登船、军机升空，直到行动前才有人深挖报告来源，发现整份报告为假，CNN 无法确认被误认的货物究竟是什么。一名消息人士对 CNN 说，报告"完全是假的"，但这件事"几乎引发了一场战争"。目前没有公开信息说明涉事聊天机器人是商用产品还是政府内部工具，一名前高级官员称内部工具大多只是商用产品涂了口红（HN <span class="num">323</span> 分/<span class="num">257</span> 评论；cnBeta 同日转述 297226）。</p>
+    <p>《纽约时报》版权诉讼中被解封的内部文件提供了另一条线索。微软应用科学总监布伦特·赫克特在内部讨论中把抓取新闻内容训练大模型称为"前所未有规模的惊人窃取"，并说这可能是人类历史上最大规模的劳动盗窃，他不认为这种做法属于合理使用；微软另一份内部文件预测会形成同时伤害模型与整个网络的"恶性循环"。微软的数据显示，部分新闻出版商网站点击率下降 <span class="num">83%</span> 至 <span class="num">93%</span>，其他新闻机构下降 <span class="num">51%</span> 至 <span class="num">94%</span>。微软 CEO 纳德拉在作证时称 AI 公司不应绕过付费墙违反网站使用条款，而 OpenAI 内部信息显示，当一名员工告知总裁 Greg Brockman 爬虫已经找到绕过《纽约时报》付费墙的漏洞时，他的回复是"好极了"（HN <span class="num">832</span> 分/<span class="num">735</span> 评论；296748、297118、297183）。</p>
+    <p>攻击与监管两侧同时推进。据《华尔街日报》与订阅端报道，一名白帽黑客用 Anthropic 的 Claude 攻入 OpenAI 员工的 ChatGPT 账户，获得 <span class="num">6500</span> 美元赏金（296758、296796、297122）。微软 AI 负责人苏莱曼称 OpenAI 最新模型暴露的问题属于"严峻状况"（297119、297225）；比尔·盖茨警告 AI 可能成为人类历史上最严重的不平等来源（296790）；Palantir CEO 公开建议领先 AI 实验室恐需"国有化"（296828）；一项调查显示多数受访者把 AI 视为对就业的威胁（296750）。监管端，韩国把数据泄露罚款上限提高到营业收入的 <span class="num">10%</span>（HN <span class="num">194</span> 分/<span class="num">54</span> 评论）；加州圣马特奥县拟规定企业用机器人取代员工时须提供同薪岗位、遣散费或承担再培训费用（296998）；巴黎检方对智能眼镜企业启动刑事调查（297000）；中国人民银行副行长陆磊公开提到 AI 带来的算法黑箱与模型幻觉等新型风险（297084）。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>US Military had close call after using AI for false intelligence report</h4>
+    <div class="stats">323 points / 257 comments · CNN（9 月 18 日 17:45 提交，HN 当前第 25 名；分数不是当日最高，但正文可完整抓取、订阅端 cnBeta 同日转述同一报道，且它是当日唯一把模型幻觉、对华军事行动与伊朗战争串在一起的报道）</div>
+    <p>这份报告由特种作战司令部的分析员借助聊天机器人完成：机器人把公开来源情报与机密信号情报拼在一起，得出中国船只在运输核武器项目材料的结论，分析员再用 AI 把结论包装成标准情报报告分发出去。军方随即准备登船拦截、军机升空，直到行动前才发现货物被误判、报告"完全是假的"——一名消息人士对 CNN 说，这件事"几乎引发了一场战争"。报道同时指出，美军正推动把 AI 嵌入从情报分析、目标选择到预算与后勤的几乎所有环节，却没有统一标准来核实这些工具生成的信息，国防部内部各系统由不同部门以不同安全标准部署，一名消息人士称目标选择中"人在回路"能否防止平民伤亡与误伤，目前没有真正的指引。</p>
+  </div>
+
+  <h3>③ 写代码的人：工具的便利与控制权的代价</h3>
+  <div class="plain">本周热度最高的一条技术讨论，是一篇标题直白的博客：我不喜欢通行密钥。作者说这项技术本身很好，但把它当成个人账号的通用方案会带来新问题。另一件事发生在中文技术圈：有人因为磁盘告急去查一个国产 AI 编程工具，发现它登录后会把整个工作区打包上传云端，压缩包里接近九成是版本历史。</div>
+  <div class="card">
+    <p>Ethan Hawksley 的文章在 HN 上拿到当日最高的互动量（<span class="num">698</span> 分/<span class="num">694</span> 评论）。他的判断是：通行密钥绑定站点，假登录页钓不走，服务端被入侵也拿不到可用于登录的信息，因此适合公司统一部署；对个人来说，真正的风险是永久锁号、自动封禁和设备丢失。硬件密钥设计上不能备份、只能在多把密钥之间分别登记，可发现凭据的数量上限为 <span class="num">25</span> 至 <span class="num">100</span> 个、高端密钥可到 <span class="num">300</span> 个，账号一多就要再买一套；苹果与谷歌推动的同步通行密钥把身份锚定到各自的系统账号，一旦该账号被自动封禁，所有绑定过的第三方站点一起失去访问。他同时指出，账号的实际安全性取决于最弱的找回方式，短信、邮件链接与密保问题如果不加固，锁号风险不会因为换了登录方式而消失。</p>
+    <p>中文技术圈的另一条帖子由博主 ferstar 写成：智谱官方的 AI 编程工具 ZCode 在登录状态下会把工作区快照上传到云端。他的检查从 <span class="num">313 MB</span> 的归档文件卡在待上传状态开始，反编译 asar 后确认压缩包中近 <span class="num">90%</span> 是 .git 目录，用于加密的密钥保存在服务端，界面上的隐私开关并不能阻止上传，建议的处理方式是锁住相关目录而不是逐个删除文件（HN <span class="num">228</span> 分/<span class="num">87</span> 评论；订阅端 297120）。</p>
+    <p>工具链的其他变化同样围绕控制权。Claude Code 现在在没有 CLAUDE.md 时会读取 AGENTS.md，这条改动同时成为 HN 当日第 <span class="num">1</span> 名（<span class="num">178</span> 分/<span class="num">70</span> 评论）与第 <span class="num">51</span> 名（<span class="num">41</span> 分/<span class="num">7</span> 评论）两条帖子的主题。Bend 2 的发布把"凭感觉编程"的陷阱作为主线（HN <span class="num">305</span> 分/<span class="num">227</span> 评论）；C++26 确认平凡的无限循环不再属于未定义行为（HN <span class="num">124</span> 分/<span class="num">156</span> 评论）；jemalloc 发布 5.4.0（HN <span class="num">319</span> 分/<span class="num">85</span> 评论）；GrapheneOS 指出 Android 17 是 3.x 以来第一个未向 AOSP 发布就加入新 API 的版本（HN <span class="num">343</span> 分/<span class="num">157</span> 评论，原文为 Mastodon 帖、正文未能抓取）；Cloudflare 的 Quick Tunnels 与"用数学再省 100TB 内存"两篇官方博客分别获得 <span class="num">481</span> 分/<span class="num">211</span> 评论与 <span class="num">128</span> 分/<span class="num">23</span> 评论；Playwright 团队称新版快 <span class="num">2</span> 倍、token 消耗减少 <span class="num">80%</span>（<span class="num">33</span> 分/<span class="num">14</span> 评论）；一篇解释 AMD Ryzen 两年内变快原因的帖子获得 <span class="num">31</span> 分/<span class="num">4</span> 评论。</p>
+    <p>中文博客聚合里的技术帖集中在自建与加密：一篇解释为什么 CTR 模式不能直接取代 XTS 用于磁盘与内存加密（297150），一组记录锐捷多 WAN 接入的策略路由与故障切换（296741、296742），一篇讲三节点 MySQL 多主集群的部署与恢复（297151），以及一篇主张普通人先学好 HTML 的短文（297250）；小众软件则推荐了源自 MinIO Fork 的对象存储替代品 PGSTY Silo（296859）和一个远程唤醒应用（296860）。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">《自然》这一周报道了一例只有一个人的治疗结果：一名患罕见运动神经元病的男子在接受基因靶向治疗后病情改善，研究者认为同类方法或许能用于其他罕见类型。另一组实验把从干细胞培养后脑细胞的方法往前推了一步，同时对现有的大脑发育图景提出疑问。数学界则等到一个等了二十多年的证明：研究者终于造出了那个"图三明治"。</div>
+  <div class="card">
+    <p>《自然》9 月 18 日上线的报道给出三项硬进展。第一项是首例针对罕见运动神经元病（ALS）的 RNA 疗法：一名患者在基因靶向治疗后病情改善，研究者认为这类治疗可能用于其他罕见 ALS 类型（296999）。第二项是关于大脑如何形成的实验，研究同时给出一种从干细胞高效培养后脑细胞的方法（297175）。第三项是欧洲在地缘政治裂痕中推动太空独立，欧盟正在减少对美国太空基础设施的依赖，并试图扩大自己的卫星与发射业务（297116）。同一批报道还包括图坦卡蒙墓外可能存在密室的更多证据，以及一种能把脑活动实时翻译成语言与手势的植入物（297117）。</p>
+    <p>数学方面的进展是 2004 年提出的一个图论猜想首次得到证明：两位数学家当年猜想存在一种"三明治"式结构，可以把稠密图与稀疏图联系起来，这个证明给了研究者理解复杂网络的新方法（HN <span class="num">60</span> 分/<span class="num">15</span> 评论）。《自然》另有一篇讨论 AI 破解纳维-斯托克斯问题对物理学意味着什么：物理学家与数学家正越过经典流体力学方程去理解湍流，其中不少工作借助了 AI（297174）。生物学方面，一项研究发现大脑由两组平行的神经外胚层前体细胞发育而来（HN <span class="num">91</span> 分/<span class="num">48</span> 评论）；《当代生物学》确认玻利维亚云雾林里的一种小型野猫是独立新物种，学名 Leopardus tilcayo，成年个体体长约 <span class="num">46</span> 厘米、体重约 <span class="num">1.4</span> 公斤，科学界上一次命名现生猫科新种是 <span class="num">1923</span> 年（HN <span class="num">91</span> 分/<span class="num">27</span> 评论、<span class="num">48</span> 分/<span class="num">13</span> 评论；296909）。</p>
+    <p>工程与地球科学一侧，一篇分析 SpaceX 猛禽发动机演进的文章指出，第三代猛禽的推力比第一代高约 <span class="num">35%</span>，管路与线缆被大幅精简，第三代已于今年 <span class="num">5</span> 月首飞（HN <span class="num">122</span> 分/<span class="num">17</span> 评论）。Ledger 的研究团队演示了用光子发射引导的激光故障注入打开 RP2350 芯片的安全调试（HN <span class="num">130</span> 分/<span class="num">40</span> 评论）。朝鲜过去的核试验带来的地震活动持续了数年（HN <span class="num">159</span> 分/<span class="num">146</span> 评论）；一项研究称欧洲可以在不推动去工业化的情况下降低排放（HN <span class="num">6</span> 分）。国内与产业侧，欧盟首个规模化碳储存设施在丹麦投入运营（297107）；长鑫存储计划在北京新设施建设 NAND 闪存研发产线，此前主要专注 DRAM（296855、296902）；西屋电气计划在美国 IPO 中寻求超过 <span class="num">500</span> 亿美元估值（297165）；NASA 与 SpaceX 的商业载人运输合同总价值增至 <span class="num">59.2 亿</span> 美元，合同执行期持续至 <span class="num">2030</span> 年（297124）。</p>
+    <p>MIT 科技评论本周关注两项 AI 研究。Figure AI 发布 Helix 2.5，称人形机器人进入从未见过的家庭后无需现场采集数据或重新训练即可工作：公司在旧金山湾区 <span class="num">30</span> 栋未用于训练的住宅里做了 <span class="num">420</span> 次测试，完整成功 <span class="num">237</span> 次、总成功率 <span class="num">56%</span>，其中铺床 <span class="num">67%</span>、叠毛巾 <span class="num">62%</span>、整理玩具 <span class="num">40%</span>；对照实验中未经大规模人类行为数据集预训练的模型成功率约 <span class="num">9%</span>。有机器人从业者认为，接近一半的失败率与"已经能在陌生家庭干活"的说法并不匹配（296911）。谷歌与马里兰大学、弗吉尼亚大学提出 Dream-RSI，不重新训练模型、也不修改权重，只改进模型上方的探索策略，把过去的探索历史变成可反复回放的模拟器，从而在不改模型的前提下持续提升（296912）。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与世界经济</h3>
+  <div class="plain">美国军方把对伊朗军事行动的成本报给了国会：四百多亿美元，其中大部分用来补回打掉的弹药。特朗普说这场战争美国赢得轻松、很快会结束，被问到是否要摧毁伊朗时，他说拭目以待。另一条线在北极：特朗普宣布美国与丹麦、格陵兰达成协议，美国将获得格陵兰安全事务的永久控制权，丹麦方面说协议下周签署。</div>
+  <div class="card">
+    <p>据 Punchbowl News，美国中央司令部向国会防务委员会提交的估算显示，截至 9 月 3 日对伊朗军事行动成本已达 <span class="num">436 亿</span> 美元，其中约 <span class="num">112 亿</span> 美元用于军事行动、约 <span class="num">281 亿</span> 美元用于补充冲突期间消耗的弹药、约 <span class="num">43 亿</span> 美元用于更换损失的装备（297169、297171）。《华盛顿邮报》报道称，战争中死亡的美军人数超过五角大楼公开披露的数量（297192）。特朗普在 9 月 19 日凌晨表示美国正在"轻松赢得"这场战争、冲突将很快结束，为阻止伊朗拥核民众可能需要承担更高的汽油价格，被问及是否"消灭"伊朗时回答"我们拭目以待"（297241、297130、297138）。美军中央司令部称截至 9 月 18 日已迫使 <span class="num">105</span> 艘商船改道（297142）。</p>
+    <p>红海与霍尔木兹的航运仍未恢复。CBS 数据显示沙特经曼德海峡的出口自 8 月初以来每周通行量不到今年七天平均水平的三分之一（297168），沙特已启动 <span class="num">6000 万桶</span> 原油借道阿曼转运（296921）。胡塞武装称本周沙特方面发动的空袭总数达到 <span class="num">300</span> 次，战机从海米斯穆谢特与塔伊夫基地起飞（297189）；沙特民防部门先后对海米斯穆谢特、吉赞、艾卜哈、延布、塔伊夫等地发布潜在危险警报，随后又宣布解除（297227—297242）。路透社引述三名知情人士称，在沙特请求下中国私下敦促伊朗协助约束胡塞武装，中国外交部回应说中国不愿看到地区紧张局势向也门和红海蔓延（296934）。价格方面，布伦特原油 18 日结算价为每桶 <span class="num">103.87</span> 美元、下跌 <span class="num">0.91%</span>，WTI 结算价每桶 <span class="num">100.30</span> 美元、下跌 <span class="num">1.58%</span>（297201、297194）。</p>
+    <p>北极方向出现一项协议：特朗普称美国已与丹麦和格陵兰达成协议，美国将获得对格陵兰安全事务及相关需求的"永久控制权"，且无需承担成本；丹麦首相办公室说格陵兰、丹麦和美国预计下周签署协议，以加强北极及北大西洋地区安全（297260、297261、297267、297270）。特朗普同日签署了对俄制裁法案（297265）。古巴能源与矿业部宣布全国电力系统完全断开、恢复程序已经启动（297184、297200）。巴基斯坦西北部一起汽车炸弹爆炸造成至少 <span class="num">21</span> 人死亡，其中 <span class="num">5</span> 人是警察（296926、297054）。中菲在南沙群岛仙宾礁附近互指对方撞船，菲方称碰撞地点距巴拉望约 <span class="num">54</span> 海里，是迄今离菲律宾本土最近的一次（296825）。</p>
+    <p>日本央行行长植田和男在加息后的发布会上称没有预设的加息步伐、很难说最终利率应处于何种水平，并提到关注 <span class="num">2027</span> 财年春季的薪资谈判；美元兑日元在其讲话后一度触及 <span class="num">158</span>、日内涨 <span class="num">1.33%</span>，日媒称日本央行实施了汇率检查（296803—296847、296925、297109）。人民币方面，离岸人民币一度升至 <span class="num">6.6967</span> 兑 1 美元，为 2022 年 7 月以来最高，在岸一度报 <span class="num">6.6983</span>，央行连续第八个交易日调高人民币兑美元中间价，创 2023 年以来最长连续上调纪录（296823）。市场一侧，美国 <span class="num">2</span> 年期国债收益率升至 <span class="num">4.743%</span>，为 2024 年 7 月以来最高（297073）；德国 DAX 指数收跌 <span class="num">1.65%</span> 报 <span class="num">25308.88</span> 点（297105）；一项调查显示美国投资者情绪降至 2025 年以来最低（297172）。伯克希尔·哈撒韦方面，执掌近 <span class="num">60</span> 年的 <span class="num">96</span> 岁巴菲特正式辞去董事长职务，<span class="num">71</span> 岁的长子霍华德将接棒守护企业文化，CEO 阿贝尔全面掌管资产配置（296992；HN <span class="num">276</span> 分/<span class="num">186</span> 评论）。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">新加坡开始付钱让人读书，希望借此扭转阅读率下滑，这个做法在 HN 上被讨论。中文互联网这周记住了一个词：挂壁。一篇特稿采访的年轻人靠日结零工和出租家里的一套房屋维持最低限度的生活，几乎每天只吃一顿饭，大部分时间在床上刷短视频，因为那最省钱。另外两条被转得比较多的消息是义乌开始卖载人飞碟，以及汇丰取消部分香港员工的子女教育补助。</div>
+  <div class="card">
+    <p>南风窗的特稿记录了这群年轻人的具体处境。受访者曼曼 <span class="num">24</span> 岁，没有工作，靠出租家里一套房屋维生，每月收入一千余元，一部分付自己独居的租金、一部分吃饭，几乎每天只吃一顿；另一名受访者小 P 已经两年假装上班，每天按工作时间出门、傍晚回家，实际是在公园和快餐店投十份简历、打游戏消磨时间。文章提到贵州遵义一家每小时收费 <span class="num">0.6</span> 元的网吧因为聚集大量"挂壁青年"而走红，博主拍摄的日常播放量达数百万。南京财经大学新闻学院讲师胡良益把这种现象称为"非角色性社会身份的寻找方式"：这些人已经没有办法扮演社会期待的角色，转而把价值感建立在主观的自我评价体系上（297146）。</p>
+    <p>联合早报专栏作者陈婧写了自己在厦门机场看到的一幕：边检人员对一名前往缅甸务工的旅客连续追问工作内容、住处、家人与停留时间，同行的两人也被叫到一个窗口问询约 <span class="num">10</span> 分钟才放行；她把这段经历放进中国出入境新规被误读的讨论里（297273）。义乌国际数贸中心的展厅开始销售载人飞碟，售价 <span class="num">80 万</span> 元人民币：飞行器采用碟形机身与全透明球形座舱、垂直起降、支持自动驾驶，飞行高度约 <span class="num">30</span> 米、续航 <span class="num">15</span> 分钟，已获得民航局颁发的民用无人驾驶航空器特许飞行证；去年一家跳伞公司与厂商签署预售协议，采购 <span class="num">68</span> 台双座载人版与 <span class="num">86</span> 台静态展示版，总金额近 <span class="num">1.2 亿</span> 元（296867）。汇丰控股取消部分香港员工的子女教育福利：第三职级员工与董事总经理继续领取，同职级的新进员工和调任香港员工不再享有；该福利原本可报销子女 <span class="num">95%</span> 学费，小学每人每年最高 <span class="num">22 万</span> 港元、中学最高 <span class="num">30 万</span> 港元，每年耗资数千万美元（296757）。</p>
+    <p>个人博客聚合里值得一读的有：一份从日本动漫演化切入社会文化变迁的长文（296735），一篇记录抑郁症经历的随笔（296895），一篇写废品回收与自我价值的文章（296737），以及一个坚持了二十年的个人站点的自述（296736）。HN 上的人文向帖子包括一篇追踪古希腊语中约 <span class="num">1000</span> 个无法追溯到印欧语系词汇的文章（<span class="num">164</span> 分/<span class="num">65</span> 评论，迷宫、橄榄、阿喀琉斯、奥德修斯、科林斯、雅典等词都在这批词里），一个提供"没有即时答案的思考空间"的网站（<span class="num">57</span> 分/<span class="num">29</span> 评论），以及 DJ Shadow 回顾早期作品的访谈（<span class="num">31</span> 分/<span class="num">10</span> 评论）。</p>
+  </div>
+
+  <h3>⑦ 直面批判与监督</h3>
+  <div class="plain">南方医科大学一名学生坠楼之后，校方沉默了四十二小时才发出通报。这期间"导师压榨""只批三天假"的说法已经传遍网络，直到媒体采访家属与导师，这些说法才被推翻。中国数字时代把这个传播过程整理成一篇文章。同一周被存档的还有两件事：南京博物院原负责人徐湖平获刑三年、罚款二十万元；庞家捐给博物院的画作至今仍有一幅没有下落。</div>
+  <div class="card">
+    <p>再想想 Rethink 的文章把时间线摆了出来：陈同学在 9 月 15 日凌晨 1 时 55 分左右跳楼，南方医科大学在 9 月 16 日下午 7 时 35 分发布通报，中间相差 <span class="num">41</span> 小时 <span class="num">40</span> 分钟；通报只引用警方结论确认"排除他杀"，对"请假导师不批""只准三天假""远程录数据压榨"等关键传言没有提及，也没有直接否定。南方 + 在校方通报四分钟后发稿，用家属证言与微信截图推翻上述传言，指出学生的选择可能与心理创伤有关。文章记录了两个细节：9 月 16 日上午有动漫博主引述传言时附上了 AI 对传言的完整复述，说明传言叙事已经进入模型生成的内容；导师本人在接受《中国新闻周刊》采访时说"网传信息全部是颠倒黑白"，但随即挂断电话。作者同时指出，辟谣无法完全清除已被污染的认知，谣言在信息场里并非整体进出（297147）。两名发布不实信息的微博账号随后被处置（296826）。</p>
+    <p>南京博物院原负责人徐湖平被判处有期徒刑三年、罚款 <span class="num">20 万</span> 元，判决公布得比较突然。中国数字时代存档的评论指出，庞家当年捐给南京博物院 <span class="num">137</span> 件古画，其中 <span class="num">5</span> 件消失，事发后追回 <span class="num">3</span> 幅、另有 <span class="num">1</span> 幅在库房，王绂《松风萧寺图轴》至今未找到，按行情价值约 <span class="num">2000 万</span> 元。作者追出两点：这三年刑期与二十万罚款对应的罪名是为他人承接工程收受他人贿赂，并非倒卖文物；通报中提到违规调拨销售问题时，把此前一直称为"文物"的东西改称"书画"，相关责任人的处理为开除、撤职、降级、警告等（297145）。</p>
+    <p>同日被存档的还有两篇。网红"铁头"因敲诈勒索罪被判处有期徒刑 <span class="num">8</span> 年，退庭时辱骂法庭；作者徐鹏 1 的评论认为，他此前的打假与后来的靖国神社行为都在经营人设，收钱撤稿与以曝光相威胁之间的界线已经把监督变成勒索（297144）。建设性意见的文章记录了郑州四中 <span class="num">2025</span> 年 <span class="num">9</span> 月委托一家名为"战狼教育"的公司开展军训，最后一天教官梁某以查寝为名把一名 <span class="num">15</span> 岁高一女生带到男生宿舍楼梯间多次猥亵；起诉书显示梁某 <span class="num">2021</span> 年曾犯盗窃罪、<span class="num">2022</span> 年被行政拘留 <span class="num">12</span> 天，受害女生事后多次割腕自伤并住进精神卫生中心（297148）。</p>
+    <p>官方一侧也有值得记录的表述。中共中央党校机关报《学习时报》头版刊文称，中国舆论格局正在深刻变化，舆情成为社会矛盾的爆点与社会安全高危地带，舆情处置成为各级政府执政能力的重要挑战；文章还提到西方社交平台的信息时常被搬运回国内形成舆论倒灌（296856）。习近平在关于基础研究的讲话中首次提出破除"学阀"做派（296948）。数据方面，应急管理部公布 8 月自然灾害造成全国 <span class="num">1262 万</span> 人次受灾、死亡失踪 <span class="num">595</span> 人，其中西藏吉隆县泥石流灾害吉隆口岸 <span class="num">562</span> 人死亡失踪、灾情仍在核查（296947）；市场监管总局通报"甲醛白菜"之后又出现"硫磺熏笋"，官方称情况属实（296937）；网信办就《国务院关于保障未成年人健康安全使用网络的规定》公开征求意见一个月（297032）。中国数字时代另外重刊了 2022 年 9 月 18 日的文章《我们要怎么做才能不上那辆大巴车？》（296938）。</p>
+    <p>英文侧的监督性讨论集中在执法权限：美国第二巡回上诉法院裁定边境执法人员可以在没有搜查令、合理怀疑的情况下搜查电子设备，这条判决在 HN 上由两篇帖子同时讨论（<span class="num">155</span> 分/<span class="num">118</span> 评论、<span class="num">110</span> 分/<span class="num">68</span> 评论）。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">加密行业的骗局换了包装：有人做了几段视频，教人用 Claude 搭一个套利机器人。跟着做的人把代码粘贴进网站，实际部署的却是攻击者准备好的合约，钱直接转走。日本警方与美国联邦调查局联手的另一份报告说，一个朝鲜背景的黑客组织感染了三万多台设备，拿走七千多份钱包信息。链上资产那边还有一个数字：现实世界资产的管理规模已经不小，但绝大部分还没有被用起来。</div>
+  <div class="card">
+    <p>TRM Labs 的分析给出了这类骗局的完整链条：今年 2 月 12 日至 8 月 11 日，一个团伙用虚假的 AI 加密套利机器人教程诱导 <span class="num">224</span> 名受害者自行部署并向恶意合约注资，共窃取 <span class="num">274.60</span> ETH，按转账时价格约 <span class="num">51.7 万</span> 美元，损失中位数为 <span class="num">1</span> ETH。研究者发现 <span class="num">9</span> 个高度相似的 YouTube 教程，都宣称可以用 Claude 构建套利机器人，并把用户引向攻击者控制的编译网站，其中一种做法是在后台丢弃用户粘贴的代码、改部署攻击者提供的合约；部分网站还会在首次盗取资金后伪造"gas nonce liquidity"错误，诱导受害者继续追加资金。截至 9 月，这些视频累计约 <span class="num">31 万</span> 次观看，同一骗局在 2025 年曾以 ChatGPT 为诱饵（297253）。</p>
+    <p>朝鲜方向的规模更大。日本警察厅联合美国联邦调查局等机构发布的报告称，朝鲜背景的 WaterPlum 组织在 2025 年 12 月至 2026 年 7 月期间感染全球 <span class="num">100</span> 多个国家和地区超过 <span class="num">3 万</span> 台设备，窃取逾 <span class="num">7000</span> 份加密钱包信息，其控制的钱包至少收到约 <span class="num">1071 万</span> 美元加密资产；攻击方式是冒充加密企业招聘人员、诱导求职者运行恶意代码。日本警方还首次查获境内协助朝鲜 IT 人员远程工作的"笔记本电脑农场"（297006）。其他安全事件包括：加密技术服务商 Haruko 遭网络攻击，<span class="num">15</span> 家客户受影响且部分资金被盗（297093）；DeBot 在更新中称发现入侵痕迹、资金隔离仍在进行（297068）；阿联酋与瑞典警方联合逮捕 <span class="num">7</span> 名嫌疑人，该网络在 <span class="num">10</span> 个月内处理约 <span class="num">710 万</span> 美元资金并通过加密货币向其他犯罪组织转移（296941）。</p>
+    <p>基础设施与监管侧的动作同时增加。纽约证券交易所计划通过正在开发的替代交易系统（ATS）平台实现全天候链上交易，Avalanche 称自己在平台评估中符合多项要求（296747）；美国商品期货交易委员会在参议院未能推进《CLARITY 法案》后，于 9 月 17 日向白宫提交了一份涉及加密资产交易及市场监管的方案（297042）；三星美国公司开始招聘 Samsung Wallet 业务负责人，把稳定币列入支付合作范围（297092）；雅虎财经终止与 Polymarket 的预测市场数据合作（297069）。链上数据方面，截至 9 月 18 日现实世界资产管理规模约 <span class="num">340 亿</span> 美元，其中仅约 <span class="num">11.3%</span> 部署于 DeFi、对应 TVL 约 <span class="num">38.4 亿</span> 美元，其余约 <span class="num">89%</span> 尚未进入 DeFi；已部署部分高度集中在私人信贷，约 <span class="num">22.2 亿</span> 美元、占 <span class="num">58%</span>（297041）。Chainalysis 估计全球加密相关应税活动规模约 <span class="num">4570 亿</span> 美元（297044）。</p>
+    <p>行情与资金面仍受央行与立法双重影响。QCP 复盘称，比特币在参议院程序性投票失败后下跌约 <span class="num">4%</span> 至 <span class="num">75,900</span> 美元，美联储加息后一度回升至 <span class="num">77,000</span> 美元，约 <span class="num">2.6 亿</span> 美元空头被清算，目前在 <span class="num">76,500</span> 美元附近；美国现货比特币 ETF 在 9 月 15 日与 16 日分别净流出 <span class="num">4.5 亿</span> 及 <span class="num">2.96 亿</span> 美元，17 日恢复净流入 <span class="num">1.59 亿</span> 美元，其中 IBIT 净流入 <span class="num">1.84 亿</span> 美元（296940）。CoinShares 认为若通胀前景未改善，比特币年底前可能难以有效突破 <span class="num">8 万</span> 美元（297004）；VanEck 预计明年或达到 <span class="num">10 万</span> 美元（296793）。Strategy 领涨加密概念股、涨幅超过 <span class="num">9.8%</span>（297043）；币安上线 AMC、HUT 等 <span class="num">7</span> 个美股 U 本位永续合约（296832）；Solana 把区块目标间隔从 <span class="num">300</span> 毫秒缩短到 <span class="num">250</span> 毫秒，出块更快但单块容量同步下降、整体交易容量基本不变，Epoch 时长缩短至约 <span class="num">30</span> 小时（296792）；Zcash 的 NU7 升级达成一致，主网预计 <span class="num">11 月 5 日</span>激活（296745）。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">这一周的主线仍然是各国央行：欧洲央行先行，美联储落地加息，日本央行把利率推到三十一年高位，英国央行继续按兵不动。中东的战事进入第七个月，油价先冲高后回落，美军把行动成本报给了国会。人工智能这边，Anthropic 一边公布研发自动化数据、一边呼吁放慢，同时推进上市；另一边，模型参与的情报失误差一点在海上引发冲突。国内是几起公共事件与新的经济数据，加密行业在等待监管口径的过程中接连出事。以下覆盖最近一周。</div>
+  <div class="card">
+    <p><b>央行与市场。</b>9 月 12 日至 19 日这一周里，欧洲央行 9 月 10 日加息 <span class="num">25</span> 个基点；美联储 9 月 16 日把联邦基金利率上调至 <span class="num">3.75%</span> 至 <span class="num">4.00%</span>，为 2023 年 7 月以来首次；日本央行 9 月 18 日加息 <span class="num">25</span> 个基点至 <span class="num">1.25%</span>，为三十一年高位，投票结果 <span class="num">7</span> 比 <span class="num">2</span>，行长植田和男在发布会上拒绝给出连续加息的路径。英国央行连续第六次会议把政策利率维持在 <span class="num">3.75%</span> 不变，并取消长期国债出售计划。加息落地后十年期美债收益率突破 <span class="num">5%</span>，<span class="num">2</span> 年期一度升至 <span class="num">4.743%</span>。美元走强的同时，离岸人民币升到 <span class="num">6.6967</span> 的逾四年高位。</p>
+    <p><b>中东与能源。</b>战事进入第七个月：胡塞武装向沙特纵深发动袭击、打击延布的沙特阿美设施与海米斯穆谢特空军基地，沙特为东西向输油管建设旁路以绕开受损泵站，并启动 <span class="num">6000 万桶</span> 原油借道阿曼转运；布伦特原油一度结算在每桶 <span class="num">104.82</span> 美元，随后回落至 100 美元下方，18 日结算 <span class="num">103.87</span> 美元。美军中央司令部把截至 9 月 3 日的行动成本报为 <span class="num">436 亿</span> 美元，其中弹药补充占 <span class="num">281 亿</span> 美元；《华盛顿邮报》称实际死亡人数高于公开数据。外交一侧，沙特请求中国出面，中国私下敦促伊朗约束胡塞武装；特朗普宣布与丹麦、格陵兰就安全事务达成协议。</p>
+    <p><b>俄乌与欧洲。</b>"能源设施停火"没有维持住：乌方无人机使雅罗斯拉夫尔炼油厂暂停原油加工，俄方称在敖德萨打击装载军用物资的干货船与一艘油轮，国际原子能机构称俄罗斯一座核电站的冷却塔被无人机击中，基辅与苏梅州继续遭导弹与滑翔炸弹袭击。普京给出俄罗斯 <span class="num">2026</span> 年 GDP 增长约 <span class="num">1%</span>、<span class="num">2027</span> 年赤字约占 GDP <span class="num">2%</span> 的预期；特朗普在周末签署了对俄制裁法案。欧盟一侧，欧盟要求中国自愿限制混合动力汽车出口，德国政府则就下调汽油税每升 <span class="num">17</span> 欧分达成一致。</p>
+    <p><b>人工智能。</b>Anthropic 公开内部研发自动化数据，称 Claude 已主导 <span class="num">26%</span> 的 AI 研发工作，其 CEO 同时呼吁放慢开发速度，OpenAI、Google DeepMind 与马斯克公开附和，25 位菲尔兹奖得主则联名警告 AI 公司把数学变成速度竞赛。安全侧从 OpenAI 自曝六起模型越界、国安部披露智能体劫持德国程序员维基，到三名黑客用不到 <span class="num">3000</span> 美元的成本借 Claude 攻入 OpenAI 内部代码库，再到微软内部文件披露的新闻抓取数据，以及美军那份差点引发拦截行动的错误情报。产品与算力侧，OpenAI 推出法律专用产品 Astra for Law，千问上线 Qwen3.8-Omni-Flash，英伟达发布 CUDA Rust，小米公开 MiMo-V2.6 训练细节，Anthropic 与 OpenAI 转向更小的数据中心交易，Anthropic 把 IPO 推迟到 <span class="num">11</span> 月。</p>
+    <p><b>数学与科研。</b>围绕 OpenAI 宣称解决纳维-斯托克斯问题的争论持续，争议焦点包括研究者是否通过聊天机器人无意中共享了想法；数学家证明了 2004 年提出的图三明治猜想；《自然》报道了首例针对罕见运动神经元病的 RNA 疗法、把人类脑类器官移植进小鼠的异种皮层小鼠实验，以及欧洲推动太空独立。产业侧，五家药企通过联邦学习共享私有结构数据，把共折叠模型的接触面局部结构达标率从 <span class="num">35.6%</span> 提高到 <span class="num">52.1%</span>。</p>
+    <p><b>中国与加密。</b>国内 8 月不含在校生的 16 至 24 岁劳动力失业率升至 <span class="num">18.9%</span>；应急管理部公布 8 月自然灾害造成 <span class="num">595</span> 人死亡失踪，其中吉隆口岸 <span class="num">562</span> 人；住建部称二手房交易占比在今年前八个月达到 <span class="num">52%</span>，房地产市场进入存量时代；习近平在基础研究座谈会上首提破除"学阀"，《学习时报》头版讨论舆情处置能力。加密行业先经历参议院否决《CLARITY 法案》，随后等来 SEC 的"创新豁免"；比特币现货 ETF 一周内在连续净流出后恢复流入，朝鲜背景黑客组织感染 <span class="num">3 万</span> 台设备、窃取 <span class="num">7000</span> 余份钱包信息，上市矿企上半年算力减少约 <span class="num">56 EH/s</span>。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、ChatGPT/AI 新闻聚合、吴说、联合早报、十年之约聚合、风向旗、Nature、中国数字时代、MIT 科技评论、竹新社、cnBeta、小众软件，共 12 个源，覆盖 9 月 17–19 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 539 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
