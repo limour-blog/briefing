@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-09-23</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 9 月 23 日 · 周三 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>美国时间 9 月 22 日，Anthropic 发布 Claude Opus 5.5、OpenAI 同日推出 GPT-6 Sol 与 Luna，两家把 API 价格分别下调两成和五成；美联储上周加息 25 个基点至 3.75%–4.00% 后，里奇蒙联储主席巴尔金称通胀风险仍高于就业风险；习近平 9 月 23 日启程访美、24 日在白宫与特朗普会晤，中美经贸团队在纽约就贸易休战期限与稀土出口拉锯；特朗普在联合国大会与丹麦及格陵兰签署安全协议、宣布在格陵兰设两个军事基地，并称美方与伊朗代表会谈三小时富有成效；Hacker News 当日得分最高的新帖是 Claude Opus 5.5（969 分/703 评论）。</div>
+
+  <h3>① AI 竞赛：同夜双发与价格战</h3>
+  <div class="plain">周一深夜到周二凌晨，Anthropic 和 OpenAI 先后端出了各自的新旗舰模型。Anthropic 说，新模型在多数工作上追平自家最强的那一档，运行成本却低了一大截；OpenAI 一次放出两个版本，一个冲能力、一个压价格，接口单价直接砍半。几家中国公司也在同一周出牌：小米开源了登顶开源榜的新模型，阿里在云栖大会上发布新芯片和超大规模集群计划，深度求索则被曝正在训练参数更大的模型。这一轮较量的焦点，从「谁更聪明」挪到了「谁更便宜、谁能被用起来」。</div>
+  <div class="card">
+    <p>Anthropic 发布 Claude Opus 5.5，这是 Claude 5.5 家族的第一个模型（299521、299567）。公司称它在多数任务上达到 Claude Fable 5.1 的水平，默认设置下典型工作负载的成本比 Opus 5 低 <span class="num">40%</span>；输入与输出分别定价 <span class="num">4</span> 美元和 <span class="num">20</span> 美元每百万 token，单价较 Opus 5 降 <span class="num">20%</span>，缓存读取降 <span class="num">60%</span>，输出速度快 <span class="num">30%</span> 以上（299686）。Anthropic 同时提高了 Pro、Max 等档位的五小时用量上限，并表示 Sonnet 5.5 与 Haiku 5.5 会在未来几周跟进。</p>
+    <p>同一夜，OpenAI 推出 GPT-6 Sol 与 GPT-6 Luna。Sol 定价为每百万输入 <span class="num">2</span> 美元、输出 <span class="num">10</span> 美元，是 GPT-5.6 Sol 促销价的一半；Luna 压到每百万输入 <span class="num">0.10</span> 美元、输出 <span class="num">0.50</span> 美元（299686、299621、299613）。两条消息当晚就占住 HN 首页：Claude Opus 5.5 以 <span class="num">973</span> 分/<span class="num">708</span> 评论排在第 <span class="num">2</span> 位，GPT-6 Sol and Luna 以 <span class="num">919</span> 分/<span class="num">488</span> 评论排在第 <span class="num">1</span> 位；后者的 openai.com 发布页返回 <span class="num">403</span>，摘要按订阅端财联社口径写成。</p>
+    <p>更早几天的 Grok 4.7 与小米 MiMo v2.6 是这轮价格战的注脚。MiMo v2.6 在 Artificial Analysis 智能指数拿到 <span class="num">46</span> 分登顶开源模型（298987、298988），HN 上累计 <span class="num">1087</span> 分/<span class="num">469</span> 评论（第 <span class="num">48</span> 位）；Grok 4.7 号称推理速度翻倍、每百万 token 输入 <span class="num">2</span> 美元（299015、299208）。阿里 CEO 吴泳铭在云栖大会说，未来机器的思考总量将达到人类的 <span class="num">1000</span> 倍以上，公司正在开发 <span class="num">5</span> 万亿至 <span class="num">10</span> 万亿参数的模型（299091）。DeepSeek 被曝正在训练约 <span class="num">2</span> 万亿参数模型，下一步目标 <span class="num">8</span> 万亿（299392）。</p>
+    <p>模型能力之外的争议也在累积。OpenAI 在普林斯顿高等研究院设立「数学与人工智能顾问小组」，起因是它宣称一个内部模型解决了 <span class="num">100</span> 多道长期未解的开放难题（299135、299023、299059），HN 上有人追问它是否解错了纳维-斯托克斯问题（第 <span class="num">19</span> 位，<span class="num">67</span> 分/<span class="num">31</span> 评论）。另有报道称 GPT-6 Astra 破解了一封自 <span class="num">2005</span> 年起无人解出的恩尼格玛密电（HN 第 <span class="num">6</span> 位，<span class="num">508</span> 分/<span class="num">345</span> 评论）。</p>
+  </div>
+
+  <h3>② AI 的钱、监管与风险</h3>
+  <div class="plain">Meta 的个人 AI 助手成了这段时间最出风头的应用，下载量冲上美国应用商店免费榜第一，公司股价跟着大涨。热度之外问题也在冒出来：这个助手被安全研究者发现一个严重漏洞，苹果被指在系统里加了常驻广告，爱尔兰对谷歌开出巨额罚单。加州和得州同时收紧对数据中心的能源与用水要求，OpenAI 则主动提出让外部机构更早介入模型安全评估。国内，网信部门开始调查两家大模型公司涉嫌把用户数据转发给美国模型。</div>
+  <div class="card">
+    <p>Meta 的个人助手 Muse 上线不到两周，累计下载超过 <span class="num">250</span> 万次，超过同期的 Claude 和 Grok，仅次于 ChatGPT，并登上美国 iOS 应用商店免费榜第一；9 月 21 日 Meta 股价涨 <span class="num">11.4%</span>，是 <span class="num">2025</span> 年 4 月以来最大单日涨幅，扎克伯格净资产一度升至 <span class="num">2536</span> 亿美元（299519）。港股腾讯当天盘中一度涨超 <span class="num">7%</span>（299177）。</p>
+    <p>同一个产品也带来新的攻击面。安全研究者披露 macOS 版 Muse 存在严重零日漏洞，本地应用或终端命令可夺取账户令牌，进而写入文件、拍照、读取用户数据（299136，HN 第 <span class="num">59</span> 位 <span class="num">107</span> 分/<span class="num">48</span> 评论）；HN 上另有帖子称拿 Muse 的文件系统要到 <span class="num">6.8GB</span> 数据（第 <span class="num">54</span> 位，<span class="num">274</span> 分/<span class="num">141</span> 评论）。</p>
+    <p>监管与合规同步收紧。爱尔兰数据保护委员会对谷歌处以 <span class="num">4.03</span> 亿欧元罚款，理由是 2018 年 5 月至 2020 年 2 月处理用户位置数据违反 GDPR（299202）。加州州长纽森签署七项法案，要求数据中心为电网和水系统升级付费并披露用水量；得州州长下令暂停新建数据中心的环境许可（299122）。OpenAI 宣布允许第三方在训练、评估、发布各阶段做技术安全评估，CEO 将在周三向联合国安理会作简报、周四出席白宫国宴（299626、299121、299573），公司还呼吁由美国牵头为 AI 制定国际标准、中美建立安全信息渠道（299121、299085）。</p>
+    <p>国内方向，网信办已对深度求索与月之暗面展开调查（299425、299460）。路透社转引 The Information 的报道称，两家公司可能在与美国模型「蒸馏」的过程中让国家级数据外流；Anthropic 9 月 10 日的报告称有 <span class="num">7</span> 家中国公司大规模违规使用 Claude，并举例说有用户把警方监控系统相关的请求转发给了 Claude（299460）。</p>
+    <p>就业与心理层面的信号也在出现：微软本周裁员约 <span class="num">500</span> 人，集中在 Xbox 游戏部门（299488）；有调查称 AI 从业者对技术的社会影响感到担忧并承受精神压力（299209）；《自然》社论直接写「不能信任 AI 公司自我监管」（299524）。HN 上两篇高票文章把矛头对准 AI 生成内容，一篇《我不想读你没写的东西》拿 <span class="num">980</span> 分/<span class="num">418</span> 评论，《AI 没有智慧，你也不会有》拿 <span class="num">359</span> 分/<span class="num">506</span> 评论。</p>
+  </div>
+
+  <h3>③ 硬件与芯片</h3>
+  <div class="plain">芯片股这段时间接连创下里程碑：AMD 市值第一次越过万亿美元，成为美国第四家做到这一点的芯片公司。手机和存储端，三星的高带宽存储在扩产，vivo 的新机首发了联发科最新工艺的旗舰芯片，苹果则在准备一款冲着运动手环去的健身追踪器。国内，阿里发布新一代自研 AI 芯片，说性能是上一代的三倍。</div>
+  <div class="card">
+    <p>AMD 周一收涨近 <span class="num">10%</span>，市值首次突破 <span class="num">1</span> 万亿美元，成为继英伟达、博通、美光之后第四家跨过该门槛的美国芯片公司；自苏姿丰 <span class="num">2014</span> 年 10 月接手以来，市值较 2015 年夏天的低点翻了 <span class="num">370</span> 多倍（299203）。HN 上有人追问 AMD 锐龙两年间快了一半的原因（第 <span class="num">17</span> 位，<span class="num">147</span> 分/<span class="num">30</span> 评论），也有人贴出「AMD 的随机数生成器产生不了 <span class="num">0</span>」的讨论（第 <span class="num">38</span> 位，<span class="num">239</span> 分/<span class="num">186</span> 评论）。</p>
+    <p>存储与终端：金十 9 月 22 日科技速递称三星 HBM4 产能明年可能翻倍，vivo X500 Pro 首发联发科天玑 2nm 旗舰芯，高通与谷歌合作把骁龙 X Elite 引入首批 Googlebook（298926）。苹果正在开发一款与 Whoop 竞争的健身追踪器（299616），iOS 27.2 测试版里出现了手机被抢时自动锁定的 AutoLock 功能（299487）。三星还计划在中端机电池里加安全芯片，用于验证电池来源并辅助回收（299424）。</p>
+    <p>国内算力：阿里在云栖大会发布新一代 AI 芯片真武 V900，称性能达到上一代 m890 的三倍，可组成 <span class="num">50</span> 万颗芯片的集群；阿里云的目标是到 2032 年把全球数据中心规模做到 <span class="num">20</span> 吉瓦以上（299091、299057）。</p>
+    <p>资本开支的回报周期成了新的担心：有机构测算科技巨头 AI 硬件的投资回报率将在 2027 年触底、2030 年反弹到 <span class="num">35%</span>（299215、299145）；惠誉警告特斯拉的 AI 巨额投资会压低利润率（298924）。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">医学这边出现了一个罕见病例的进展：一名携带特定基因突变的渐冻症患者，用上了为他一个人设计的核酸药物，一年后血液里的神经损伤指标明显回落，他本人还在继续当医生。基础科学方面，《自然》同期登出多篇：大气中的尘埃在减少、一台接近绝对零度的显微镜、一块被烧过的纸卷也能读出字、细胞死亡方式的重新分类；另外有研究警告，有记录以来最严重的厄尔尼诺正在酝酿。</div>
+  <div class="card">
+    <p>梅奥诊所与 n-Lorem 基金会在 Med 期刊报告了一例 N-of-1 单病例研究：一名携带 CHCHD10 R15L 突变的 ALS 患者，接受反义寡核苷酸药物 nL-CHCHD-001 一年后，血浆神经丝轻链蛋白下降约 <span class="num">50%</span>，进入正常参考范围，部分临床功能指标保持稳定或改善，患者仍在从事医生工作（299518）。研究者从 <span class="num">320</span> 条 ASO 中筛出这一款；CHCHD10 突变在遗传性 ALS 中占比不到 <span class="num">1%</span>，论文只报告了一名患者，还无法判断能否长期阻止疾病进展。</p>
+    <p>《自然》9 月 22 日那批里，气候与地球科学占了多数：全球大气尘埃减少，可能正在影响地球温度（299603）；有记录以来最严重的厄尔尼诺正在酝酿，从南部非洲到亚马孙的风险在上升（299311）；尼泊尔洪水成为联合国「损失与损害基金」迄今最大的一次考验（299523）。</p>
+    <p>方法与工具类的进展同样具体：一台能在接近绝对零度运行数小时的显微镜即将交付少数实验室，研究者认为它可能推动量子研究（299525）；科学家通过自己制作并烧毁纸莎草，找到从赫库兰尼姆未开封卷轴中读取文字的办法（299390）；一篇综述重新梳理细胞死亡的各种方式，并把这些差异用于癌症和自身免疫病（299388）。</p>
+    <p>科研生态的两条批评：一项追踪「钻石开放获取」期刊的研究发现，数百家原本不收费的期刊开始转向收费模式（299389）；《自然》社论主张 AI 公司应像航空、银行业一样接受独立监督和实质性处罚，并刊登长文检视「AI 会杀死所有人吗」这一说法背后的科学（299524、299454）。</p>
+    <p>HN 上的科研向讨论：Quanta 的《衰老可能是一套程序，而不是一次崩溃》（第 <span class="num">82</span> 位，<span class="num">59</span> 分/<span class="num">74</span> 评论）、《火星的第一种微生物》（第 <span class="num">78</span> 位）；订阅端还有 MIT 科技评论报道的美国稀土公司用量子机器学习加自动化实验室寻找萃取分子（299210），以及日本计划最早 2027 年在国际空间站举办 AI 机器人竞赛（299035）。</p>
+  </div>
+
+  <h3>⑤ 地缘政治：访美、联大与格陵兰</h3>
+  <div class="plain">习近平今天启程前往美国，周四在白宫与特朗普会面，双方团队此前已在纽约谈了两天，贸易休战和稀土出口是卡住的地方。同期在纽约的联合国大会上，特朗普与伊朗代表谈了三个小时，还说「条件合适」愿意直接见面；另一边，他与丹麦及格陵兰签下安全协议，宣布要在格陵兰建两个军事基地。加沙与也门方向，沙特与胡塞武装的冲突继续升级。</div>
+  <div class="card">
+    <p>习特二会：习近平 9 月 23 日至 25 日对美国进行国事访问，24 日在白宫与特朗普会谈（299046）。中美经贸团队 9 月 20 日至 21 日在纽约磋商，去年 10 月底达成的贸易休战 11 月 10 日到期，美方提议只延长六个月、并暗示可接受三到六个月，中方寻求更久；8 月中国对美出口稀土磁体 <span class="num">512</span> 吨，较 7 月下降 <span class="num">21%</span>（299529）。台湾问题被学者称为这一框架的「压力测试」（299463、299462），白宫公布的安排包含阅兵及军机飞越仪式（299046）。</p>
+    <p>中东与霍尔木兹：金十 9 月 23 日中东跟踪称，美方与伊朗代表的会晤持续三小时，卡塔尔首相参加大部分会谈，特朗普称会谈富有成效、近期将再安排，并表示中期选举后可能达成协议；伊朗方面提出重开海峡的条件，包括解除海上封锁、解冻资产、结束所有战线战争（299696、299690、299481）。数据显示霍尔木兹海峡船舶通行量周一降至 <span class="num">2</span> 艘（299696）；伊朗议会正在审议的法案拟对违规船只处以最高货值 <span class="num">20%</span> 的罚款（299513）。</p>
+    <p>格陵兰：特朗普、丹麦首相弗雷泽里克森和格陵兰总理尼尔森 9 月 22 日正式签署格陵兰安全协议，美国将在南部重开一处基地并在东部新建第二个基地（299500、299501、298902、298903）。鲁比奥称「美国可以随心所欲地建造军事基地」，克里姆林宫回应称这是相关各方之间的事务，并批评美国及盟友拒绝在北极与俄合作（299368、299291、299290）。</p>
+    <p>也门与红海：胡塞武装称本轮升级以来沙特已对也门进行 <span class="num">936</span> 次空袭和导弹袭击（299696）；沙特重启东西向输油管道、准备恢复从延布港出口原油（299398、299296）。</p>
+    <p>俄乌：乌军称袭击了萨马拉乌法与库比雪夫炼油厂（299228、299227），俄国防部称在黑海击中一艘货船并袭击敖德萨港（299503、299181）；欧盟拟延长对俄制裁最长三年，美国寻求逐步淘汰俄罗斯铀矿（298889）；乌克兰财政部称，因港口与基础设施遭袭，到年底出口损失可能达 <span class="num">48</span> 亿美元（298889）。泽连斯基称已准备好与美俄举行三方会谈（299654）。</p>
+    <p>其他：联合国大会期间，古巴代表团在特朗普演讲时退场（299479）；韩国寻求把对美投资年度上限设为 <span class="num">200</span> 亿美元，涉及得州天然气电厂与西屋电气股份（298958、299006）；印度总理莫迪预计 12 月访加拿大签贸易协议（299607）。HN 上彭博的调查《五角大楼称过度依赖 AI 导致对伊朗学校的导弹打击》（第 <span class="num">24</span> 位，<span class="num">276</span> 分/<span class="num">141</span> 评论）正文来自付费墙站点，未能抓取。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Claude Opus 5.5</h4>
+    <div class="stats">973 points / 708 comments · HN 第 2 位（同夜发布的 GPT-6 Sol and Luna 排在第 1 位，919 分/488 评论；openai.com 正文返回 403）</div>
+    <p>Anthropic 把 Opus 5.5 说成 Claude 5.5 家族的第一个模型：在多数任务上追平此前最强的 Fable 5.1，默认设置下典型工作负载成本比 Opus 5 低四成，缓存读取便宜六成，输出快三成以上，并同步放宽订阅档位的五小时用量上限。公司给的两条实测记录是：一位测试者用它在一天内完成 68 万行代码迁移，另一个测试里让它压缩一个网页应用每页的加载时间，四十次尝试成功了三十九次。发布前它通过了 Frontier Design 与 METR 的外部评估，Anthropic 还把它列为自家行为审计里成绩最好的模型。同一天 OpenAI 端出 GPT-6 Sol 与 Luna，Sol 的价格降到 GPT-5.6 Sol 促销价的一半，Luna 的输入价压到每百万 token 零点一美元，两家在同一个夜里把前沿模型的价格又拉低了一档。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">体育场上，中国男篮和男乒接连输给日本，一篇被存档的评论把问题指向球员选拔与培养的方式。社交媒体上，「搭子」这种按需结伴的交往方式被反复讨论；二手平台上，打着游泳教学、上门健身旗号的色情引流被电视台曝光。写作与阅读这边，有人抱怨 AI 让文档越堆越多、自己反而看不完，也有人反问同事是不是离了 AI 就不会干活。手机系统里的隐私开关和常驻广告，同样引发了不少抱怨。</div>
+  <div class="card">
+    <p>体育：一篇被中国数字时代存档的评论复盘中国男篮输给日本，指出日本高中联赛有几千支球队、球员知名度来自比赛数据，而国内体系里球员「学到的最重要的东西是怎么不犯错」；文章还提到中国乒乓多站 WTT 男单无缘八强、女足世界杯 <span class="num">1</span> 比 <span class="num">6</span> 输给英格兰（299012）。</p>
+    <p>平台与消费：河北经视调查揭露闲鱼上以 SPA 按摩、模特约拍、上门健身、游泳教学为名的色情引流链条，有标价 <span class="num">1</span> 元的「游泳教学」实为扫码入群入口，入群前须付 <span class="num">99</span> 元「意向金」（299378）。天猫宣布「双 11」10 月 15 日开启预售（299044），有报道称五星酒店月饼三折甩卖（299066），国庆文旅消费月也已启动（299008）。</p>
+    <p>工作与写作：博客聚合里两篇短文集中吐槽 AI，一篇说同事让 AI 出方案却从不验证、直接拿去生产操作（299128），另一篇《AI 写得越来越快，我却越来越看不完了》讲文档和图片越生成越多（299274）。HN 上《我不想读你没写的东西》以 <span class="num">980</span> 分成为当天第三高分帖，作者的核心抱怨正是 AI 批量生成的方案、文档和 PR 没人愿意读。</p>
+    <p>数字生活：一篇题为《我说不，苹果说好》的博客记录作者升级 macOS 后，发现此前可以关闭的数据回传开关被取消（第 <span class="num">51</span> 位，<span class="num">771</span> 分/<span class="num">627</span> 评论）；TechRadar 的报道则称苹果在 iOS 里加入常驻「广告」，引发用户不满（第 <span class="num">28</span> 位，<span class="num">539</span> 分/<span class="num">412</span> 评论）。</p>
+    <p>日常与社交：「搭子」文化被当作年轻人社交降级还是关系升级来讨论（299415），反向旅游成为假期新解法（298972），有博主记录减重第一个月瘦下 <span class="num">5</span> 公斤（299551）。公共服务方面，中秋国庆假期中国口岸单日最高通关量预计突破 <span class="num">240</span> 万人次（299161），日本 JCB 卡已在中国超 <span class="num">1800</span> 座地铁站支持刷卡过闸（299278）。</p>
+  </div>
+
+  <h3>⑦ 直面批判与监督</h3>
+  <div class="plain">被存档的评论与调查报道集中指向几类问题：湖南邵阳那起被称作「远洋捕捞」的案子时隔两年多再被翻出，当事人还在羁押；一名被拐到山东的北京女性在二十六年后回家，精神状况引发追问；一篇律师文章追问，坚持不认罪认罚的被告人为什么反而更难取保；还有对俄罗斯议会选举剔除候选人手法、以及海南一起法官腐败案后续的梳理。</div>
+  <div class="card">
+    <p>远洋捕捞：评论《再谈「远洋捕捞」》指出，邵阳企业家案是 2024 年的案子，被抓的企业家至今仍在羁押，报道只强调两名公安局长被「免职」；作者认为这类做法摧毁的是企业经营的确定性（299452）。</p>
+    <p>司法与权利：一篇律师文章以 2024 年河南一起有 <span class="num">25</span> 名被告人的诈骗案为例，其中 <span class="num">18</span> 人签认罪认罚后取保，排在第 <span class="num">25</span> 位、坚持不认罪的被告持续羁押，实际羁押时间超过检察院量刑建议对应的刑期；文章追问认罪认罚是否被异化为取保的隐性门槛（299450）。</p>
+    <p>个案与追责：北京姑娘孙美华被拐至山东曹县二十六年，回家后精神状况与当年的照片判若两人，评论要求对拐卖犯罪彻查追责（299451）。四川省人大常委会原副主任宋朝华因受贿 <span class="num">1.48</span> 亿余元被判死缓（299307）；山西宁武明长城被人为损毁持续近 <span class="num">20</span> 年，官方通报涉事企业和责任人已被行政处罚并采取刑事强制措施（299260）；海南朱万贵案后续中，曾为「中国最富法官」张家慧辩护的律师如今替行贿人出庭（299011）。</p>
+    <p>外部监督：中国数字时代 404 文库存档了一篇梳理俄罗斯国家杜马选举的手记，称至少 <span class="num">36</span> 名候选人被选举当局取消资格，理由包括发布已故反对派人物照片、出现被禁社交平台标志、甚至持有西方公司股份（299449）。另有两起社会案件：重庆理工大学回应女子称被硕导性侵后报警未立案，称涉案教师已离职（298969）；广西一男子驾车撞九辆电动脚踏车致二死六伤（299093），辽宁盘锦一小区火灾致二死二伤、两人被采取刑事强制措施（299160）。</p>
+    <p>HN 上一条安全事件：有黑客声称掌握全部 FBI 员工数据（第 <span class="num">5</span> 位，<span class="num">195</span> 分/<span class="num">140</span> 评论）；另有一条记录德国法院裁定 Meta 需为 Facebook、Instagram 上的诈骗广告负责（第 <span class="num">61</span> 位，<span class="num">36</span> 分/<span class="num">8</span> 评论）。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">比特币继续从前期震荡区间往上走，一周里先后站上八万一和八万六附近；背后是美联储三年来的首次加息落地，以及一项加密立法的程序性投票没能过关。行业里，币安掏出一亿美元入股稳定币发行方 Circle，人民银行则再次强调虚拟货币业务在境内一律禁止，包括在境外发行挂钩人民币的稳定币。</div>
+  <div class="card">
+    <p>行情：Wintermute 周报称，美联储加息 <span class="num">25</span> 个基点、CLARITY 法案程序性投票未通过之后，加密市场反弹。上周 ETH 涨 <span class="num">6.7%</span>，山寨币整体涨 <span class="num">4.8%</span>；BTC 周线收于 <span class="num">81159</span> 美元，是去年 11 月初以来首次站上 50 周均线，随后一度升至约 <span class="num">86000</span> 美元（299423）。GSR 也提到 BTC 回升至 <span class="num">8.6</span> 万美元、本轮上涨主要由杠杆与空头回补驱动（298914）。</p>
+    <p>资金流：SoSoValue 数据显示，9 月 21 日比特币现货 ETF 净流入 <span class="num">9.99</span> 亿美元，其中贝莱德 IBIT 净流入 <span class="num">3.81</span> 亿；以太坊现货 ETF 净流入 <span class="num">2.70</span> 亿美元，ETHA 占 <span class="num">1.10</span> 亿（299125）。</p>
+    <p>机构动作：币安以每股 <span class="num">80.84</span> 美元的折价认购 Circle <span class="num">1,237,011</span> 股 A 类普通股，总额 <span class="num">1</span> 亿美元，并签署新的五年 USDC 合作协议（299351）。Coinbase 推出比特币抵押的固定利率贷款，基于 Base 上的 Morpho Midnight 协议，纽约州除外（299459）。Anchorage Digital 选择 LayerZero 做稳定币互操作，首个接入项目是 Tether 的 USAT（299205）。</p>
+    <p>监管：人民银行在 9 月 22 日的金融教育宣传中重申，比特币、以太币、泰达币等不具有法偿性，境内相关业务一律严格禁止，境内外任何单位和个人不得在境外发行挂钩人民币的稳定币（299387）。美国方向，SEC 推进加密托管新规、拟明确非证券类加密资产的持有规则（299491），并可能在下季度公布首批代币化股票交易平台的运营计划（298975）；彭博报道美国检察官正在调查币安是否违反伊朗制裁（298974）。</p>
+    <p>风险与板块：Ethena 的 USDe 在币安短时脱锚至 <span class="num">0.9202</span> USDT 后回升（299170）；慢雾披露针对 Web3 求职者的招聘投毒攻击（299207）；Astroport 警告 Neutron 可能存在安全事件并建议撤出流动性（299356）。隐私币板块市值一年从 <span class="num">62</span> 亿美元增至约 <span class="num">300</span> 亿，其中 Zcash 约 <span class="num">200</span> 亿（299237）；Layer 2 代币总市值回升至 <span class="num">115</span> 亿美元，近两月反弹 <span class="num">65%</span>（299328）；布局 AI 的比特币矿企年内股价涨 <span class="num">21%</span>，未布局者跌 <span class="num">8%</span>（299355）。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">把这一周连起来看，模型发布和价格下调几乎每天都在发生，从开源的小米新模型到昨天的两个美国旗舰，参数往上走、单价往下走；科研上，罕见病个体化药物的一个阳性病例、大气尘埃与厄尔尼诺两条气候线索，是这一周比较实在的进展；地缘主线是习近平访美前的谈判与联合国大会上的中东外交；加密市场则从震荡区间上沿走到八万六附近。</div>
+  <div class="card">
+    <p><b>AI。</b>一周内，Grok 4.7、小米 MiMo v2.6、Claude Opus 5.5 与 GPT-6 Sol/Luna 接连发布，价格从每百万 token 输入 <span class="num">2</span> 美元一路压到 Luna 的 <span class="num">0.10</span> 美元（299015、298987、299686）。同期还出现两条互相拉扯的信号：OpenAI 说内部模型解开 <span class="num">100</span> 多道数学难题并成立顾问小组（299135），网信办则开始调查 DeepSeek 与月之暗面的数据外泄（299425）。本周 DeepSeek 还计划向联合国安理会介绍 AI 风险（299347、299345）。</p>
+    <p><b>科研与医学。</b>梅奥诊所与 n-Lorem 的 ALS 单病例研究显示 NfL 下降约 <span class="num">50%</span>（299518）；上周《自然》还报道了认知韧性用于预测阿尔茨海默病、水星缩小速度比预想更快、图坦卡蒙墓后可能存在新墓室，以及一个 AI 团队发现肺癌候选药物（296626、296467、296229、296418）。MIT 科技评论一周里连续追踪 AI 与生命科学的交叉：Anthropic 秘密建立湿实验室、把血液基因蛋白数据交给 AI 判断衰老、以及 AI 生物安全风险（297627、297626、297511）。</p>
+    <p><b>地缘。</b>习近平 9 月 23 日至 25 日访美、24 日白宫会晤，贸易休战 11 月 10 日到期、稀土是焦点（299529、299462）；联合国大会期间，美伊代表在纽约会谈三小时，霍尔木兹海峡通行量降至两艘（299696）；美国与丹麦及格陵兰签署安全协议、将设两个军事基地（299500）；俄乌双方继续互相打击炼油厂与港口，欧盟拟把对俄制裁延长最长三年（299228、298889）。</p>
+    <p><b>加密。</b>美联储三年来首次加息 <span class="num">25</span> 个基点至 <span class="num">3.75%</span>–<span class="num">4.00%</span>，CLARITY 法案程序性投票未过关，BTC 反而从 <span class="num">7.5</span> 万至 <span class="num">8.1</span> 万美元区间上破、一度到约 <span class="num">8.6</span> 万（299331、299423）；币安 <span class="num">1</span> 亿美元入股 Circle、五年 USDC 协议落地（299351），人民银行则重申境内虚拟货币业务一律禁止（299387）。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、联合早报、ChatGPT/AI 新闻聚合、吴说、风向旗、十年之约聚合、中国数字时代、Nature、MIT 科技评论、cnBeta、竹新社、小众软件，覆盖 9 月 21–23 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日未读 813 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
