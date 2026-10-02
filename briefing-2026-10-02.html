@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-10-02</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 10 月 2 日 · 周五 · 订阅聚合 + Hacker News 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>开源编程代理工具 Pi 发布 1.0 并登上 Hacker News 榜首；谷歌新一代旗舰模型在基准测试上领先，公司内部却对它的实际编程表现提出疑问；美光称内存紧缺将延续到 2028 年、并已锁定约 1500 亿美元长期订单；Anthropic 计划最快 11 月中旬上市、估值区间被投资者估到 1.8 万亿至 2 万亿美元；美军向中东增派第三艘航母打击群和最多 1 万名士兵，布伦特原油结算价回到每桶 102.31 美元；美国十年期国债收益率升到 5.34%，创 2002 年 4 月以来新高。</div>
+
+  <h3>① AI：模型实战争议与上市潮</h3>
+  <div class="plain">谷歌发布了新旗舰模型，但公司内部有人对它在编程这类实际工作里的表现提出疑问，认为基准测试的好成绩盖不住落地时的短板。资本一侧，两家头部公司动作加快：一家完成了新一轮投资，另一家把上市时间表推进到十一月。行业内部的争论也公开化，有科技领袖私下质疑同行的安全警告说得太极端。</div>
+  <div class="card">
+    <p>谷歌的 Gemini 4 Argon 在 <span class="num">18</span> 项基准测试中的 <span class="num">13</span> 项位居榜首或并列第一，并在一项衡量网络安全能力的测试中击败 OpenAI 的 Astra。但彭博社引述直接了解相关工作的内部人士称，模型在广泛使用的基准上表现良好，真正投入实际工作后就不那么理想，难以处理某些编程任务（305223、305229、305406）。模型的单次输出上限从上一代的 <span class="num">6.4</span> 万 token 提升到 <span class="num">100</span> 万 token（305186）。</p>
+    <p>Anthropic 把上市推进到具体日程。据彭博社，公司寻求最早于 <span class="num">11</span> 月中旬上市，可能在 <span class="num">11</span> 月 <span class="num">9</span> 日当周启动正式营销，目标在 <span class="num">11</span> 月 <span class="num">26</span> 日感恩节前开始交易；部分潜在投资者认为合理估值区间约为 <span class="num">1.8</span> 万亿至 <span class="num">2</span> 万亿美元，IPO 规模可能达到或超过 SpaceX。公司 2025 年营收约 <span class="num">46</span> 亿美元，净亏损接近 <span class="num">420</span> 亿美元，其中超过 <span class="num">340</span> 亿美元来自负债公允价值变动，经营亏损超过 <span class="num">80</span> 亿美元（305703、305704）。它定于 <span class="num">10</span> 月 <span class="num">14</span> 日举办 IPO 前投资者日活动（305781）；博通将向它提供至高 <span class="num">420</span> 亿美元贷款，用于租赁博通芯片（305509）。</p>
+    <p>OpenAI 的资金到账。英伟达与软银完成了对它的最后 <span class="num">200</span> 亿美元投资，软银同时取消了 <span class="num">3</span> 月过桥融资协议项下剩余 <span class="num">100</span> 亿美元未提取额度（305729、305733）。GPT-6.1 Sol 成为 API 与订阅端需求最高的模型，新增容量把服务速度提升近一倍（305231、305668）；公司还推出 Codex 云端环境，让代理在合上笔记本后继续运行（305622）。行业内部的张力也浮出水面：黄仁勋等科技领袖在签署 AI 安全原则声明后，私下就 Anthropic CEO 阿莫代伊此前的危险警告向他提出质疑（305407）；「大空头」原型人物迈克尔·伯里公开说，股市应该暴跌以阻止 OpenAI 和 Anthropic 上市（305408）。特朗普签署的 AI 承诺书照片里，签名下方的「United States」被拼成了「Unites States」（305344）。</p>
+  </div>
+
+  <h3>② 芯片、内存与写代码的人</h3>
+  <div class="plain">内存越来越紧、越来越贵，手机和电脑的成本跟着往上走。存储厂商说未来两年供不应求，手机厂商公开承认每台成本上升、不得不适度涨价。做编程工具的公司也在调整：有人把自家代理工具推到正式版本，有人开始限制别家工具接入，还有一篇文章在讨论生成式 AI 把 web 开发培训这门生意冲垮了。</div>
+  <div class="card">
+    <p>美光在财报电话会议上说，RAM 供应短缺会持续到 <span class="num">2028</span> 年甚至更久，<span class="num">2027</span> 至 <span class="num">2028</span> 年的行业供应比 <span class="num">2026</span> 年更紧；公司已锁定约 <span class="num">1500</span> 亿美元长期订单，客户需支付比今年高得多的价格，计划投入 <span class="num">250</span> 亿美元资本支出并于 <span class="num">2028</span> 年启用新工厂。它给出的下一财季收入指引为 <span class="num">615</span> 亿美元（305261、305262、305266、305463）。Hacker News 上关于内存涨价的帖子排在第 <span class="num">30</span> 位，<span class="num">313</span> 分 / <span class="num">368</span> 评论（正文被站点反爬拦截）。</p>
+    <p>华为发布 Mate90 系列，售价 <span class="num">5999</span> 元起，首发基于「韬定律」的逻辑折叠 τ 芯片、带传感器的模块相机，以及最多支持四部设备互助的通信共享，官方称高铁站下载文件提升 <span class="num">40%</span>、演唱会现场发视频提升 <span class="num">30%</span>，Pro Max 整机性能提升 <span class="num">31%</span>。余承东说，华为每部智能手机的平均成本已增加约 <span class="num">200</span> 美元，未来不得不涨价（305292、305265、305279、305378、305462）。上游产能也在挪动：台积电考虑在美国得州建设金额达数百亿美元的园区以生产更多 AI 芯片（305501、305516）；腾讯与甲骨文签署规模最大的海外算力租赁协议，租用约 <span class="num">10</span> 万颗先进 AI 芯片、期限 <span class="num">5</span> 年、价值约 <span class="num">70</span> 亿美元，需预付约 <span class="num">30%</span>（305329、305551）。</p>
+    <p>工具与职业的讨论集中在两条线上。一条是生成式 AI 对技术教育本身的冲击：程序员 Baldur Bjarnason 的训练与课程项目一个个停掉，JavaScript 作者 Axel Rauschmayer 说自己的电子书收入从 2024 年足以维生降到 2026 年的零（HN rank 2，<span class="num">47</span> 分 / <span class="num">33</span> 评论）。另一条是工程工具继续换代：turbopuffer 宣布 v3 把向量索引降为二级索引（<span class="num">241</span> 分 / <span class="num">63</span> 评论），有人在讲九月如何给 Rust 编译器提速（<span class="num">218</span> 分 / <span class="num">107</span> 评论），SvelteKit 3、Effect 4.0、用汇编写成的编辑器 Rhun、EDG 的 C++ 前端都在同日出现。Figma 把 MCP 访问限制在白名单客户端，Pi 被排除在外（<span class="num">164</span> 分 / <span class="num">93</span> 评论）。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Pi 1.0</h4>
+    <div class="stats">460 points / 160 comments · rank 1 · earendil.com · 2026-10-02 03:33</div>
+    <p>这是开源编程代理工具 Pi 的正式版发布。发布说明列出这次加入核心的功能：把 MCP 与 Jev、图像模型这类非语言模型收进 Codemode，扩展支持虚拟模型、延迟工具加载、为 Anthropic 模型做缓存预热、在对话中途插入系统消息、新的终端界面主题与默认全屏。团队同时发布实验性的 Pi Durable，用于构建长时间运行的代理应用，两者都是 MIT 许可。文中称 Pi 每周有数十万人在用。</p>
+    <p>同日，AI 聚合频道转了一篇《为什么越来越多人放弃 Claude Code 转而用 Pi？》（305752），Hacker News 上同源的 Pi Durable 排在第 <span class="num">5</span> 位（<span class="num">123</span> 分 / <span class="num">10</span> 评论）。当日分数更高的 Gemini 4 Argon（<span class="num">1634</span> 分 / <span class="num">1117</span> 评论）是昨天的头条，Livenerf（<span class="num">908</span> 分 / <span class="num">388</span> 评论）与《You said no MCP》（<span class="num">665</span> 分 / <span class="num">359</span> 评论）昨天已写过，按新帖优先选 Pi 1.0。</p>
+  </div>
+
+  <h3>③ 科技科研前沿</h3>
+  <div class="plain">医学、太空与材料几方面都有新进展。有团队在子宫内膜异位症的药物上看到早期希望，有观测确认黑洞喷流对周围气体的作用，还有公司给 AI 设计的蛋白质加上可追溯的水印。工程侧，全植入式人工耳蜗开始商用，中国团队在海水制氢上提出新路径。</div>
+  <div class="card">
+    <p>《自然》这一批覆盖了生命科学与地学。一种改良药物靶向子宫内膜异位症病灶相关细胞，在早期试验中显示希望，这种被称为「被忽视的疾病」影响约 <span class="num">1.9</span> 亿人（305376）；观测确认黑洞喷流对星系周围气体云产生了预期的光晕效应（305776）；研究者称拒绝「人类世」这一地质世代的投票违反程序，要求公开透明（305614）；一篇关于 CCR5 mRNA 移码的论文被撤回（305664）；韦氏词典在线版新增 <span class="num">1400</span> 个词条，「agentic」「prompt engineering」等技术词入选（305663）。</p>
+    <p>DeepMind 在《自然》发表 SynthID Bio，可在 AI 生成的蛋白质氨基酸序列与预测的三维结构中嵌入隐藏水印，实验室合成并测试后显示水印基本不影响原有生物学功能；SynthID 此前已为超过 <span class="num">1000</span> 亿张图片和视频、累计超过 <span class="num">6</span> 万年音频添加水印（305521）。奥地利 MED-EL 推出全植入式人工耳蜗 TICI UNICO，把麦克风、声音处理器、电池、接收线圈和刺激器全部植入体内，整套约 <span class="num">20</span> 克，麦克风尺寸约 <span class="num">19.6×26.1×5.5</span> 毫米、距皮肤表面约 <span class="num">6</span> 毫米；产品已获欧洲监管批准，发布当天完成首批 <span class="num">4</span> 例商业植入（305522）。一封写于 1809 年、尘封 <span class="num">217</span> 年的拿破仑时期加密军事简报被破解：美国工程师卡特·丘奇借助 GPT-6 Astra 用时约 <span class="num">6</span> 小时完成图像转录、密码分析、程序编写与史料比对，历史密码网站 Cryptiana 维护者核验后把该条目标记为已解决，并将年份从 1807 年改为 1809 年（305696）。</p>
+    <p>工程与能源方向，中国团队首次提出用交流电直接电解海水制氢的新策略（305352）；紧凑型聚变能实验装置的园区交付使用（305287）；「亚洲锂腰带」找矿再获突破（305364）；国产 <span class="num">300</span> 兆瓦级变速抽水蓄能机组主体安装完成（305390）。Hacker News 的科研帖里，Quanta 杂志报道皮层上传播的复杂波形可能实时重组大脑活动（<span class="num">247</span> 分 / <span class="num">95</span> 评论），一篇整理 1970 年代至 21 世纪绝密电子侦察卫星 URSALA、RAQUEL、FARRAH 的长文拿到 <span class="num">297</span> 分 / <span class="num">155</span> 评论，一名研究者披露自己曾可通过一个内部分析服务访问微软约 17.3 万亿行数据（<span class="num">313</span> 分 / <span class="num">126</span> 评论）。</p>
+  </div>
+
+  <h3>④ 地缘政治与世界大事</h3>
+  <div class="plain">中东的紧张继续升级，美国又往那一带加派军舰和士兵，油价被推高，欧洲则被要求释放柴油储备。俄乌在港口和能源设施上互相打击。台海与南海各有一件事：台湾向美国采购的新战机开始到货，菲律宾在海上与中国科考船发生对峙。</div>
+  <div class="card">
+    <p>美军向中东增派第三个航母打击群和更多海军陆战队舰艇，增派约 <span class="num">9000</span> 至 <span class="num">1</span> 万名士兵（305718、305723）。美伊谈判陷入僵局，美国国务卿鲁比奥向伊朗联大代表团下「逐客令」（305206、305820）；特朗普说「要么伊朗签署协议，要么它将不复存在」，并称中期选举后可能加大轰炸力度（305690、305534）。美国财政部发布新的伊朗相关制裁（305820）。沙特主导的联盟称拦截胡塞武装 <span class="num">4</span> 架无人机及 <span class="num">2</span> 枚弹道导弹，胡塞方面则称 <span class="num">24</span> 小时内遭沙特空袭 <span class="num">47</span> 次（305820、305742）；巴基斯坦空袭阿富汗两地，阿方称致 <span class="num">9</span> 人死亡，巴方称打死 <span class="num">22</span> 名「恐怖分子」（305820、305293）。一艘油轮在霍尔木兹海峡被不明物体击中起火（305820）。</p>
+    <p>能源价格与政策互相推动。布伦特原油期货结算价报每桶 <span class="num">102.31</span> 美元、涨 <span class="num">4.37%</span>，WTI 结算价每桶 <span class="num">92.87</span> 美元、涨 <span class="num">2.71%</span>（305748、305739）。美国希望欧盟在未来 <span class="num">6</span> 个月释放 <span class="num">1.2</span> 亿桶柴油，并已告知法国和德国；能源部长赖特称一定会要求欧洲释放战略柴油储备，贸易代表格里尔称法、德、意都持有柴油储备（305419、305736、305766）。中国炼油商暂停 <span class="num">10</span> 月向香港和澳门以外地区出口石油产品（305454）。</p>
+    <p>俄乌战线，泽连斯基称乌克兰国产弹道导弹 FP-7 首次投入实战（305657、305798）；俄国防部称击中基辅一处运输和物流中心以及切尔诺莫尔斯克港的一艘货船（305813）；欧盟暂时拒绝乌克兰提前获得贷款资金的请求（305813、305677）；普京对暂停黑海打击行动的提议说「不」（305813）；德国总理默茨称俄罗斯正试图分裂并削弱德国，德国要为重大混合攻击做准备（305813）。台海与南海，台湾向美国采购的 <span class="num">66</span> 架 F-16V 中首两架于 10 月 2 日上午飞抵台东志航基地，这笔军购编列逾 <span class="num">2472</span> 亿新台币（305499）；菲律宾海岸警卫队派出最大型巡逻船与一架飞机驱离中国科考船「嘉海科 7」，中国海警船随后到场（305427）；金门县长参选人提出「金厦和平撤军」主张（305429）。周边一侧，美国部分参议员争取在 <span class="num">11</span> 月通过针对中国汽车的永久禁令（305282），美国众议院中国问题委员会主席致信鲁比奥敦促审查韩中关系（305381），日本经济界代表团拟明年 <span class="num">3</span> 月访华（305428）。美国国防部长赫格塞思宣布组建「自主作战司令部」，并启动由马斯克等人参与的「子午线计划」研究未来战争形态（305157、305402）。</p>
+  </div>
+
+  <h3>⑤ 经济与市场</h3>
+  <div class="plain">美国的长期国债利率继续创多年新高，美元同步走强；美联储官员接连表态，多数人认为还不急着放松。数据一边显示通胀降温，一边显示制造业和就业都还稳。欧洲则在柴油和预算两头承压。</div>
+  <div class="card">
+    <p>美国 <span class="num">10</span> 年期国债收益率上升 <span class="num">4.72</span> 个基点、报 <span class="num">5.34%</span>，创 <span class="num">2002</span> 年 <span class="num">4</span> 月以来新高，<span class="num">30</span> 年期收益率约 <span class="num">5.62%</span>（305629、305308）；美元指数涨至 <span class="num">16</span> 个月高点（305439）。美联储官员的措辞偏鹰：卡什卡利说经济好于预期、可能需要比预期加息更多，金融条件并未明显收紧，又说他预计还需加息但不确定 <span class="num">10</span> 月是否行动（305705—305716、305735）；杰斐逊说判断是否进一步加息可能需要更多时间（305717）；鲍曼说今年没有必要再进行利率调整（305772）；库克说供应冲击的影响出乎意料地持久，AI 正在导致局部通胀（305757、305769）。</p>
+    <p>数据面好坏参半。美国 <span class="num">8</span> 月核心 PCE 年率低于预期、创半年来新低（305394）；至 <span class="num">9</span> 月 <span class="num">26</span> 日当周初请失业金人数 <span class="num">19.7</span> 万、为 <span class="num">7</span> 月以来最低，续请人数降至 <span class="num">170.1</span> 万、为三年低点（305564、305575）；<span class="num">9</span> 月 ISM 制造业 PMI 报 <span class="num">55.9</span>，创三年多新高（305604、305608）；<span class="num">9</span> 月挑战者企业裁员人数创 <span class="num">2022</span> 年以来同期新低（305473）。贵金属回调后反弹，现货黄金一度失守 <span class="num">4140</span> 美元，纽约期金随后突破 <span class="num">4200</span> 美元（305199、305301）。</p>
+    <p>亚洲与欧洲各有自己的线索。日本央行九月意见摘要中多名委员要求政策重心转向防止通胀超调，市场对年内再度紧缩的预期升到 <span class="num">95%</span> 以上（305177—305185、305275）；韩国前 <span class="num">9</span> 个月出口额首次突破 <span class="num">8000</span> 亿美元，其中 <span class="num">1</span> 至 <span class="num">9</span> 月芯片出口额飙升 <span class="num">263%</span> 至创纪录的 <span class="num">603</span> 亿美元，计算机出货量激增 <span class="num">435%</span>（305189、305213）。中国财政部部长蓝佛安称要研究制定针对性强的增量政策、更加注重扩大国内有效需求，并防范化解地方政府债务风险（305330—305335）；<span class="num">2026</span> 年中央金融机构注资特别国债即将发行，数字人民币跨境联通合作范围稳步拓展（305302、305396）。法国财政部长说预算案包含 <span class="num">430</span> 亿欧元新措施、加上既有措施总额达 <span class="num">540</span> 亿欧元（305505、305506）；德国政府把 <span class="num">2026</span> 年经济增长预测从 <span class="num">0.5%</span> 上调至 <span class="num">1.3%</span>（305655）。</p>
+  </div>
+
+  <h3>⑥ 人文与社会</h3>
+  <div class="plain">假期的第一天，出行和消费都在回暖：铁路客流、口岸车流和国庆档票房都给出高位数字，多地政府机关食堂对游客开放。同一时间，一起高速公路事故和几次地震提醒风险仍在。网络上，一篇写技术替代家庭日常的长文和一条吐槽职场表演的帖子，是当天讨论最多的人文话题。</div>
+  <div class="card">
+    <p>胖东来创始人于东来宣布，从 <span class="num">2027</span> 年 <span class="num">3</span> 月起把员工及管理层的工作制改为每周工作五天、每天 <span class="num">7</span> 小时、每周 <span class="num">35</span> 小时，低于国家规定的标准工时（305379）。假期里，江苏扬州、江西景德镇、山西长治、安徽淮南等地政府机关食堂向市民和游客开放，扬州食堂中午和晚上都是 <span class="num">28</span> 元一份、限供 <span class="num">500</span> 份，淮南提供 <span class="num">15</span> 元、<span class="num">20</span> 元、<span class="num">30</span> 元三档套餐，<span class="num">10</span> 月 <span class="num">1</span> 日名额已约满（305492）。</p>
+    <p>出行与消费的高位数据同日公布：全国铁路预计发送旅客 <span class="num">2480</span> 万人次（305269），横琴口岸单日车流量创新高（305268），国庆档票房破亿（305312），美团称假期首日县域目的地迎来客流高峰（305489）。风险一侧，沪昆高速怀化段凌晨 <span class="num">2</span> 时 <span class="num">7</span> 分许发生事故，一名 <span class="num">57</span> 岁司机疲劳驾驶，与两台小车刮撞后又失控推动另一台小车，造成 <span class="num">6</span> 死 <span class="num">4</span> 伤、四车受损（305380）；四川宜宾高县发生 <span class="num">3.9</span> 级地震（305365）。</p>
+    <p>Hacker News 上的人文帖集中在技术、身份与制度。一篇写「上一次我的家族被技术替代」的长文拿到 <span class="num">318</span> 分 / <span class="num">619</span> 评论，作者从做马蹄铁的高祖父转行修车讲起，问「我们喜欢这份工作，是否从来就不只是代码」（rank 55）；LinkedIn 上的「表演式履历」讨论升到 <span class="num">297</span> 分 / <span class="num">234</span> 评论（rank 60）；新加坡政府的约会应用 FirstDate 用 Gale-Shapley 稳定婚姻算法，一次只给一个匹配、<span class="num">72</span> 小时决定窗口，被拿来讨论算法如何改变社交（<span class="num">443</span> 分 / <span class="num">450</span> 评论）。另有关于《为什么青铜时代崩溃》（<span class="num">385</span> 分 / <span class="num">286</span> 评论）和彭博终端历史（<span class="num">374</span> 分 / <span class="num">166</span> 评论）的长文。中文博客这一侧，出现了回忆 1980 年代爱情、算养一辆老车成本、以及自建 Gitea 迁移博客的记录（305697、305339）。</p>
+  </div>
+
+  <h3>⑦ 直面批判与监督</h3>
+  <div class="plain">中国数字时代这两天收录的稿件集中在几件事：一位长期关注劳工权益的作者失联、一所高校因翻墙处分二十名学生而牵出举报、以及一起「指居」致死案在三年后宣判。此外还有对行政复议文书引用和公共安全数据的批评。国际一侧，美国国防部的人事系统出现大规模数据泄露。</div>
+  <div class="card">
+    <p>劳工权益倡导者失联。公众号「恰帕斯东风电视机」的作者小五自 <span class="num">9</span> 月 <span class="num">14</span> 日后未再更新，朋友发出寻人启事；失联前，他写的约 <span class="num">10</span> 万字《2025 年劳动权益事件盘点》被删除。文章逐条对照他关心过的骑手、白领、农民与不加班年轻人，追问这些诉求在法律、政策和历史里的位置（305283）。</p>
+    <p>校园举报进入第二轮讨论。一篇题为《没人愿意生活在告密成灾的社会里》的文章写到，一所知名高校一名学生为了在保研中挤掉排名更靠前的同学，举报其使用 VPN 翻墙，最终 <span class="num">20</span> 名同学受到处分；多数高校的保研规定把「无任何受处分记录」放在第一条，举报者自己也承认日常使用 VPN 看论文（305494）。这与前一天哈尔滨工程大学的翻墙处分是同一主题的续集。</p>
+    <p>司法与公共安全各有具体案例。「指居」者死亡三年后，<span class="num">11</span> 名办案人员一审获刑：<span class="num">2022</span> 年 <span class="num">7</span> 月 <span class="num">20</span> 日，<span class="num">34</span> 岁的暴钦瑞在指定居所监视居住期间死亡，<span class="num">2025</span> 年 <span class="num">9</span> 月 <span class="num">28</span> 日两案同日宣判，最高刑期 <span class="num">16</span> 年、最低 <span class="num">1</span> 年 <span class="num">9</span> 个月，报道记录了铁质审讯椅、手摇电话机、PVC 管、镐柄等刑讯手段（305612）。另一篇追问，官方数据称 <span class="num">2025</span> 年全国群众安全感 <span class="num">98.23%</span>、连续 <span class="num">6</span> 年保持 <span class="num">98%</span> 以上，同年侦破电诈案 <span class="num">25.8</span> 万起、拦截诈骗电话 <span class="num">36</span> 亿次、紧急止付 <span class="num">2170.7</span> 亿元、见面劝阻 <span class="num">674.7</span> 万人次，作者由此问：数据与身体感受为什么会对不上（305613）。一份新宁县的行政复议受理文书把最高法针对河南高院单一民事个案的答复当作主要依据，被批评为以个案答复设卡、架空《行政复议法》（305693）。校园之外，成都大学一名学院党委书记因约 <span class="num">15</span> 万字著作存在多处段落与他人重合、引文标注不规范，被免去职务并撤销正高级职称（305382）。</p>
+    <p>国际监督侧，美国国防人力数据中心文件共享系统出现漏洞，涉及 <span class="num">276</span> 万名在世人员和 <span class="num">29.4</span> 万名已故人员的个人信息（305345）；Hacker News 上一名研究者披露自己曾可通过一个内部分析服务访问微软约 <span class="num">17.3</span> 万亿行数据（<span class="num">313</span> 分 / <span class="num">126</span> 评论）。隐私与执法边界也有两条：一家取证公司声称能绕过 iPhone 的 <span class="num">72</span> 小时自动重启保护（<span class="num">230</span> 分 / <span class="num">184</span> 评论），一名移民倡导者起诉联邦政府，要求删除其入境时被从手机复制的数据（<span class="num">346</span> 分 / <span class="num">321</span> 评论）。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">加密市场的安全事件还在发生，这轮出问题的是钱包和质押基础设施。监管一侧，美国证监会提出针对投资顾问和基金的加密托管框架，欧盟在稳定币与去中心化金融规则上继续征求意见。资金面上，比特币现货 ETF 由连续净流入转为净流出。</div>
+  <div class="card">
+    <p>MetaMask 部分基础设施受到安全事件影响，公司称没有迹象表明钱包或客户资金受影响，并作为预防措施退出其非托管质押业务中受影响的验证者节点；Lido 称相关验证者最晚于 <span class="num">10</span> 月 <span class="num">7</span> 日完成退出（305165、305306、305526）。链上研究者 Kaden 称，至少 <span class="num">19</span> 个验证者获得区块奖励、其中 <span class="num">18</span> 笔未发往原定 fee recipient，而是流向一个由 Tornado Cash 资金支持的地址，攻击者实际获取约 <span class="num">0.36</span> ETH；MetaMask 已预防性退出约 <span class="num">1.7</span> 万个验证者、涉及约 <span class="num">52.3</span> 万枚 ETH，仍有约 <span class="num">821</span> 个潜在受影响验证者尚未退出（305405）。GoPlus 统计，<span class="num">9</span> 月共发生 <span class="num">39</span> 起重大 Web3 安全事件、合计损失约 <span class="num">7.93</span> 亿美元，约为 <span class="num">8</span> 月的 <span class="num">4.2</span> 倍，单笔最大来自 Bitget 热钱包事件约 <span class="num">3.875</span> 亿美元（305208）。NEAR Intents 确认遭攻击、涉案金额超 <span class="num">380</span> 万美元，漏洞源于 Omni 充提基础设施与合约交互缺陷（305589）；Marinade 披露攻击者利用 DAO 投票程序漏洞提交恶意提案，但没有资金被转移（305432）。</p>
+    <p>监管框架在多地同步推进。美国证监会提议为注册投资顾问、注册投资公司和商业发展公司托管加密资产建立专门框架，并允许在特定情况下自托管、允许州信托公司担任托管机构（305780）。欧盟证券和市场管理局就 MiCA 修订提建议，拟为 DeFi 协议入口设立新的受监管加密服务类别，并明确禁止受 MiCA 监管的平台提供与不符合 MiCA 要求的稳定币相关服务（305205）；欧盟监管机构正在审查币安是否借「反向招揽」豁免继续向欧盟客户提供服务（305307）；Circle 则建议保留稳定币多重发行机制、调整电子货币代币的储备要求（305779）。美国一侧，怀俄明州与纽约州金融服务部签署监管合作备忘录（305702），佛罗里达州支付稳定币监管规则自 <span class="num">10</span> 月 <span class="num">1</span> 日起实施（305257）；韩国金融委员会拟把可代币化范围扩大到股票、债券和基金（305377）。</p>
+    <p>资金与采用面，美东时间 <span class="num">9</span> 月 <span class="num">30</span> 日比特币现货 ETF 总净流出 <span class="num">1.49</span> 亿美元、<span class="num">12</span> 支 ETF 无一净流入，以太坊现货 ETF 净流出 <span class="num">5958.25</span> 万美元、<span class="num">10</span> 支无一净流入（305468）。分析师援引 Santiment 数据称，过去一周比特币巨鲸减持约 <span class="num">3</span> 万枚 BTC（约 <span class="num">25.2</span> 亿美元），以太坊巨鲸增持约 <span class="num">6</span> 万枚 ETH（约 <span class="num">1.62</span> 亿美元）（305467）。花旗把比特币与以太坊未来 <span class="num">12</span> 个月目标价分别上调至 <span class="num">11.3</span> 万美元与 <span class="num">3028</span> 美元（305470）。落地一侧，Lloyds 与 Visa 完成首次稳定币结算试点，<span class="num">7</span> 天结算 <span class="num">75</span> 万美元；Visa 称稳定币关联卡交易量同比增长近 <span class="num">200%</span>、近 <span class="num">17%</span> 来自企业项目（305342、305621）。SBI 完成对日本交易所 Bitbank 的全资收购，总对价约 <span class="num">467</span> 亿日元（305404）；韩国虚拟资产市场总市值半年下降 <span class="num">33%</span> 至 <span class="num">58.9</span> 万亿韩元（305341）。</p>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">这一周的主线可以归成几条：AI 公司一边发布新模型，一边把算力与资本绑得更紧；安全事件和监管同时跟上；科学界一边用 AI 加速发现，一边处理 AI 带来的新问题；中东和俄乌的冲突继续影响能源价格；国内舆论的关注点落在司法、校园与公共安全。</div>
+  <div class="card">
+    <p><b>AI 与资本。</b>Anthropic 把上市时间表推进到 <span class="num">11</span> 月中旬、估值区间被投资者估到 <span class="num">1.8</span> 万亿至 <span class="num">2</span> 万亿美元（305703）；英伟达与软银完成对 OpenAI 最后 <span class="num">200</span> 亿美元投资（305729）；谷歌发布 Gemini 4 Argon，内部却对它的实际编程表现提出疑问（305406）。安全与监管同步收紧：OpenAI 再次停训最强模型，多起 AI 失控事件曝光（302660），美国联邦贸易委员会对 OpenAI、Anthropic 等展开调查（305163）。研究侧，Claude 被用来独立攻克一道理论物理前沿难题、花费不到两千美元（302089），发布仅九天的 Jev 据称估值破百亿美元（302249），而「星际之门」项目被电力卡住、甲骨文先坐不住（303589）。</p>
+    <p><b>科研前沿。</b>《自然》这一周覆盖移植到年轻人体内的老年心脏出现「回春」（303055）、中国在下一代 CAR-T 临床试验数量上居世界前列（303056）、儿童吸电子烟的健康风险比此前认识更大（303159）、付费同行评审现象（303407）、巴黎协定后排放让欧洲热浪更严重（304355），以及研究者呼吁对脑类器官建立国际监管（304112）。工程与太空侧，MIT 做出一块能吞下肚、还能自己分解的纸电池（302659）；星舰首次进入地球轨道并释放 <span class="num">26</span> 颗星链卫星（303590）；AMD 收购 World Labs，李飞飞成为 AMD 第一位首席科学家（303591）。AI 发现的生物学新成果则引发「是真突破还是自嗨炒作」的争论（303988）。</p>
+    <p><b>地缘与能源。</b>伊朗方向的僵局贯穿整周，霍尔木兹海峡与油价反复成为焦点（302776、303490、304299）；迪拜航空一架飞往特拉维夫的客机遭袭未遂，以方定性为恐怖袭击企图（304729）；俄乌继续互相打击能源与港口设施（302782、303519、304309）；美国推动欧洲释放柴油储备（305736）。</p>
+    <p><b>经济与市场。</b>美国 <span class="num">10</span> 年期国债收益率升到 <span class="num">5.34%</span> 的 <span class="num">2002</span> 年以来新高（305629），美元指数涨至 <span class="num">16</span> 个月高点（305439）；法国预算案总额达 <span class="num">540</span> 亿欧元（305505）；布伦特原油结算价回到每桶 <span class="num">102.31</span> 美元（305748）。</p>
+    <p><b>国内监督。</b>中国数字时代这一周的稿件覆盖劳工权益倡导者失联（305283）、高校保研举报致 <span class="num">20</span> 人受处分（305494）、「指居」致死案宣判（305612）与公共安全数据的讨论（305613）；成都大学学术不端免职（305382）。</p>
+    <p><b>加密市场。</b>Bitget 被盗约 <span class="num">3.8</span> 亿美元后的资金追踪贯穿全周（301990）；<span class="num">9</span> 月 Web3 安全损失升至约 <span class="num">7.93</span> 亿美元（305208）；美国证监会提出加密托管框架（305780）；代币化股票市值突破 <span class="num">30</span> 亿美元（303932）。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（12 个源：金十数据、吴说、AI 新闻聚合、联合早报、十年之约、风向旗、中国数字时代、MIT 科技评论、Nature、小众软件、cnBeta、竹新社，覆盖 9 月 30 日至 10 月 2 日，含已读与未读）· Hacker News 前 100 名。<br>
+    由 pi 自动生成 · 今日窗口内 682 条未读已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
