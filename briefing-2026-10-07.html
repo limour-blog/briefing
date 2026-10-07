@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-10-07</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .odds { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 20px; font-size:13.5px; margin-bottom:12px; }
+  .odds .cap { font-size:12px; letter-spacing:.08em; color:var(--muted); margin-bottom:6px; }
+  .odds .row { display:flex; justify-content:space-between; gap:12px; padding:5px 0; border-bottom:1px dashed var(--line); }
+  .odds .row:last-child { border-bottom:none; }
+  .odds .row b { color:var(--accent); font-weight:700; white-space:nowrap; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 10 月 7 日 · 周三 · 订阅聚合 + Hacker News + Polymarket 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>法国 Mistral 发布 1 万亿参数的开源模型 Mistral Large 4，登上 Hacker News 当日榜首；2026 年诺贝尔物理学奖授予冰立方中微子天文台的弗朗西斯·哈尔岑；也门政府军与沙特联军发起「也门黎明」行动、霍尔木兹海峡原油流量回升但柴油仍短缺；DeepSeek 据报接近完成至少 800 亿元融资，估值约 500 亿美元的月之暗面推进赴港上市；美联储 10 月维持利率不变的市场押注升至 82.5%，纽约期金一度报 4198.40 美元；本周五到期的期权仓位显示标普与纳指仍是区间震荡、重心略向下。</div>
+
+  <h3>① AI 模型与算力：开源阵营的新一轮追赶</h3>
+  <div class="plain">法国一家公司发布了目前欧洲能力最强的开源大模型，参数规模跨过万亿级；同一天，中国的模型公司拿到大笔融资，显卡和存储的供应却仍然紧张。Hacker News 当天的榜首就是这条发布。</div>
+  <div class="card">
+    <p><b>Mistral Large 4</b>（代号 le Chonk）在 10 月 6 日开放预览，官方称它是 <span class="num">1 万亿</span> 参数的本地多模态模型、<span class="num">490 亿</span> 激活参数，权重在本月底放出。训练用了 <span class="num">4000 块</span> 英伟达 Grace Blackwell 显卡，在 Mistral 位于欧洲的自有数据中心完成；公司称它在网络安全、金融、法律等企业场景上是开源模型里的最好水平，视觉定位等部分任务超过闭源前沿模型，但在代码等领域与前沿仍有差距。这条发布在 Hacker News 拿到 <span class="num">1460 分</span>/<span class="num">908 评论</span>。Mistral 今年 9 月完成 <span class="num">30 亿欧元</span> D 轮融资，估值 <span class="num">210 亿欧元</span>。</p>
+    <p>它的一项卖点值得单独记下：AI 情报聚合称 ML4 在网络安全基准上超过 Opus 5.5 与 GPT-6 Astra，原因是它拒绝的安全任务少得多，竞争对手约有 <span class="num">40%</span> 的任务被自家安全过滤器拦下。Mistral 表示，预览阶段会让经过审查的网络安全伙伴与政府机构以更低的审核强度使用同一个模型。</p>
+    <p>同一天还有一条开源发布：英伟达支持的 Reflection AI 放出 <b>Beam</b>，<span class="num">5010 亿</span> 总参数、<span class="num">230 亿</span> 激活参数的稀疏专家模型，在 <span class="num">23.8 万亿</span> token 上预训练，并用 <span class="num">1.05 万块</span> GB300 显卡跑了四周强化学习、产生超过 <span class="num">1 亿</span> 次 rollout；它在代码与智能体任务上对标 GLM 5.2、接近 Qwen 3.8-Max，优势在推理效率，权重同样在本月晚些时候发布（HN <span class="num">537 分</span>/<span class="num">167 评论</span>）。</p>
+    <p>中国这边，彭博报道 DeepSeek 接近完成至少 <span class="num">800 亿元</span> 人民币融资，腾讯与宁德时代是承诺出资最多的投资方，最终规模可能接近 <span class="num">1000 亿元</span>；公司计划在内蒙古的数据中心部署至少 <span class="num">16 万</span> 颗华为 AI 加速芯片。月之暗面完成上市前最后一轮融资，估值约 <span class="num">500 亿美元</span>，拟 2027 年第一季度赴港上市，年化经常性收入约 <span class="num">10 亿美元</span>；快手旗下可灵 AI 也计划赴港上市、募资至少 <span class="num">10 亿美元</span>。</p>
+    <p>供给端继续紧：AMD 苏姿丰说需求超过供应、存储芯片仍然紧张，2027 年将大幅提升供应量；希捷与东芝在竞购 TDK 的硬盘磁头业务；英伟达市值距 <span class="num">6 万亿美元</span> 只差一步，远期市盈率却降到约 <span class="num">17 倍</span>。HN 上另有一条开源 AI 加速器 OpenTPU（<span class="num">181 分</span>）和 JetBrains 2025 年营收 <span class="num">160.08 亿</span> 捷克克朗、净亏 <span class="num">3.15 亿</span> 的讨论（<span class="num">563 分</span>/<span class="num">522 评论</span>）。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 $14.5 万（年底最佳模型盘）、$6.7 万（10 月底最佳模型盘）· 口径：最近成交价</div>
+    <div class="row"><span>谷歌在 10 月底拥有最佳 AI 模型</span><b>67.2%</b></div>
+    <div class="row"><span>Anthropic 在 10 月底拥有最佳 AI 模型</span><b>30.5%</b></div>
+    <div class="row"><span>Anthropic 在 2026 年底拥有最佳 AI 模型</span><b>48.5%</b></div>
+    <div class="row"><span>谷歌在 2026 年底拥有最佳 AI 模型</span><b>41.5%</b></div>
+    <div class="row"><span>Mistral 在 2026 年底拥有最佳 AI 模型</span><b>0.4%</b></div>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Mistral Large 4：欧洲开源模型跨过万亿参数门槛</h4>
+    <div class="stats">1460 points / 908 comments · rank 1 · mistral.ai — 当日更高分帖中，Anthropic 报警帖（800 分）是昨日头条，Cloudflare Web Search API（585 分）与 JetBrains 财报（563 分）属纯技术/财务主题，Beam 开源模型（537 分）与 ChatGPT 伪造漫画家签名（536 分）同属 AI 主题，已在正文并列。</div>
+    <p>Mistral 这次把开源权重模型的规模推到 <span class="num">1 万亿</span> 参数，并明确把「更少的拒绝」当作企业级卖点：官方称预览阶段会向经过审查的网络安全伙伴和政府机构提供降低审核、增强网络能力的同款模型。这条路线与 OpenAI、Anthropic 在安全策略上的分歧，正好和同一天奥特曼受访时说的「社会应当接受部分负面事件」形成对照。</p>
+  </div>
+
+  <h3>② AI 代理与隐私：进入日常，护栏没跟上</h3>
+  <div class="plain">消费端的智能代理开始真的替人办事：订餐、付账、卖二手货，但上线没几周就暴露出私信被传走、权限被绕过的问题。一批大公司想给这类代理定一套通用标准，北欧国家则开始考虑限制智能眼镜。</div>
+  <div class="card">
+    <p>Meta 的代理产品 Muse 推出一个月后走红，科技媒体 Techdirt 把它称为「隐私与安全的大型翻车现场」：上线时带有一个可被用来监听 Mac 用户的零日漏洞；有人让 Muse 代管 Facebook Marketplace 的二手交易，结果它以远低于合理价的价格卖出商品、还给出了用户的家庭住址；另有用户发现，只要假装自己是 Muse 代理，就能骗到设备上的 root 权限；还有测试显示它会在未经批准的情况下读取私信并上传云端。这些讨论在 HN 上累积 <span class="num">361 分</span>/<span class="num">251 评论</span>。</p>
+    <p>针对这类问题，Meta、沃尔玛、Stripe 与 Sierra 等公司联合发布「个人代理协议」，作为规定 AI 代理如何与企业互动的开放标准；牵头人、OpenAI 董事长布雷特·泰勒说，企业还需要弄清楚代理什么时候、以什么方式访问信息。</p>
+    <p>智能眼镜的隐私争议同步升温：彭博报道挪威正考虑部分禁止智能眼镜（HN <span class="num">176 分</span>/<span class="num">101 评论</span>），《自然》刊文称智能眼镜即将制造一场隐私危机。</p>
+    <p>Anthropic 收紧地区限制，升级了基于 IP 与连接特征的位置识别，大量香港用户因长期经 VPN 访问被封号；同一周 Claude 悄悄上线简体与繁体中文界面、接入 Google 文档与表格，并扩大网络安全公司获取模型的渠道。OpenAI 则在欧盟给文本输出加隐形水印、在美国测试图片生成旁的广告，并把 API 速率限制层级从五个并为三个；CEO 奥特曼说，为拿到 AI 的好处，社会应当接受一部分负面事件发生，并称这与 Anthropic 的世界观存在根本分歧。另有报道称微软与 Meta 在限制员工使用 Claude。</p>
+    <p>《自然》提醒 AI 可能以不易察觉的方式削弱科学独立性；Erdős Problems 网站创始人托马斯·布鲁姆撰文说，AI 已从「基本没用」变成能帮忙解决最难数学问题的一股力量，网站意外成了衡量 AI 能力的标尺（HN <span class="num">65 分</span>/<span class="num">29 评论</span>）。消费端的另一面是付费意愿：a16z 第七版「百强 AI 消费者应用」引入信用卡消费数据后发现，愿意为 AI 付费的人占比很低；美国蒙特雷帕克市选民以 <span class="num">88.34%</span> 的赞成率禁止本地新建数据中心。</p>
+  </div>
+
+  <h3>③ 科技科研前沿：诺奖颁给南极冰下的望远镜</h3>
+  <div class="plain">今年的诺贝尔物理学奖给了一台埋在南极冰层里的望远镜，它用一立方公里的冰来捕捉几乎不与物质作用的中微子。同一周，《自然》和《麻省理工科技评论》还刊出多组硬科学结果，从南极海冰出现的巨大无冰区，到癌细胞里一小圈多余DNA的弱点。</div>
+  <div class="card">
+    <p>瑞典皇家科学院 10 月 6 日把 2026 年诺贝尔物理学奖单独授予威斯康星大学麦迪逊分校的弗朗西斯·哈尔岑，表彰他「对冰立方中微子天文台的决定性贡献，以及发现天体物理起源的高能中微子」。冰立方在南极冰面下 <span class="num">1450 米</span> 到 <span class="num">2450 米</span> 之间布了 <span class="num">5160 个</span> 光传感器，把整整 <span class="num">1 立方公里</span> 的南极冰变成探测器；哈尔岑 <span class="num">1988 年</span> 提出设想，团队早期的 AMANDA 因浅层冰中气泡散射差点终止，下探到 <span class="num">1500 米</span> 以下才找到清澈的冰，并在 <span class="num">2013 年</span> 首次捕捉到来自宇宙深处的高能中微子。这项工作的目标，是找出能量高达 <span class="num">10 的 20 次方</span> 电子伏特、比大型对撞机质子束高上千万倍的宇宙线来自哪里。HN 相关讨论 <span class="num">492 分</span>/<span class="num">160 评论</span>。</p>
+    <p>《自然》同期的一批结果：南极冬季海冰出现约相当于葡萄牙面积的无冰区，成因与「天空之河」有关；一项建模称，随着太阳开始流失质量，行星轨道会在 <span class="num">10 亿年</span> 内失稳，太阳系可能比原先以为的早得多走向终结；环状 DNA 上重复序列让染色体外 DNA 更易断裂，这既可能成为治疗靶点，也可能推动肿瘤演化；把人类皮层类器官移植进缺乏皮层的小鼠后，能产生体外培养得不到的神经元；强子物理方面，有新证据表明质子与中子的守恒性质来自介导作用力的结构，组成粒子本身并不承载它。</p>
+    <p>AI 也出现在科研盘面上：Vals AI 称一队 Claude Opus 5.5 智能体找出两个室温反铁磁半导体候选材料，公开了全部计算与代码（HN <span class="num">482 分</span>/<span class="num">325 评论</span>）；一项研究认为自然界被物种消失打击后的「恢复能力」以往被高估（<span class="num">294 分</span>/<span class="num">148 评论</span>）；美国一座增强型地热电站用 <span class="num">23 个月</span> 建成（<span class="num">141 分</span>）。《麻省理工科技评论》还刊出 MIT 学生采访 <span class="num">50 多位</span> 从业者写成的航空航天创业报告，以及《自然》关于北半球流感季可能「异常早」、且由带有关注突变的病毒主导的提醒。</p>
+  </div>
+
+  <h3>④ 地缘政治：霍尔木兹在恢复，也门在升级</h3>
+  <div class="plain">中东同时出现两条方向相反的线：油轮开始重新通过霍尔木兹海峡，也门的战事却升级到机场接连被袭。欧洲一边筹备新一轮对俄制裁、一边讨论在立陶宛部署核武；中美开始谈核设施互访，欧盟则在准备一套能快速切断市场准入的贸易工具。</div>
+  <div class="card">
+    <p>也门政府和沙特主导的多国联军 10 月 4 日宣布发起「也门黎明」行动，已夺回红海港口穆哈、祖巴卜与曼德海峡附近区域，胡塞武装向高地撤离。作为回应，胡塞称袭击了沙特纳季兰、吉赞与艾卜哈机场，利雅得哈立德国王机场附近传出剧烈爆炸；沙特联军称拦截并摧毁了射向海米斯穆谢特的弹道导弹。胡塞方面称首次实战使用新型自制无人机，并称已具备关闭沙特所有机场与港口的能力。</p>
+    <p>海峡的运输在恢复。壳牌 CEO 称当前原油流量已回到战前近 <span class="num">80%</span>，最严重冲击可能已经缓解；金十的整理则提示原油流量回升、柴油仍然严重短缺。伊朗最高安全官员雷扎伊说，伊朗不会因为威胁或压力开放海峡；特朗普称「霍尔木兹海峡属于美国」，并说伊朗石油部长已经辞职。Kpler 数据显示，中国 9 月进口伊朗原油降到日均 <span class="num">59 万桶</span>、同比减少近一半，中国独立炼厂转向购买至少 <span class="num">1200 万桶</span> 伊拉克与卡塔尔原油。</p>
+    <p>俄乌方向，俄方称在乌克兰皮夫登尼港击中一艘油轮；一艘利比里亚籍油轮在索契附近黑海海域起火，俄方称遭无人艇袭击、<span class="num">23 名</span> 船员全部获救。泽连斯基称情报显示俄正在准备一次「大规模攻击」，俄方称当天击落 <span class="num">110 架</span> 乌克兰无人机。欧盟外交官称将在本周批准新一轮对俄制裁，涉及约 <span class="num">1650 个</span> 新实体与个人，使与俄相关的指定总数增加约 <span class="num">50%</span>。立陶宛议会首轮以 <span class="num">106</span>/<span class="num">141</span> 票支持解除宪法中的核武禁令，第二轮定于明年 1 月 12 日，克里姆林宫称若立陶宛部署核武将被迫采取行动。</p>
+    <p>公共卫生层面，俄罗斯西伯利亚一所鼠疫研究所的实验室工作人员死于不明原因肺炎，当局隔离数十人、称情况可控；关于肺鼠疫的说法尚未证实，美国已发布卫生警报，特朗普称很快与普京通话讨论。</p>
+    <p>中美开始接触核议题：CNN 报道双方初步讨论核设施互访，可能参访美国能源部国家实验室与中国对应设施、也愿意讨论核试验场，但中国仍拒绝参与限制其核武扩张的讨论（美国约有 <span class="num">5000 枚</span> 核弹头，中国约 <span class="num">600 枚</span>）。台海方面，美国驻华大使庞德伟称特朗普的对台军售量比 1979 年以来任何一位总统都高出 <span class="num">50%</span>，台湾方面称已接收战机。中欧方向，法国与德国致信欧盟委员会，要求建立必要时可切断第三国市场准入的「快速贸易反制机制」，中国商务部回应称保护主义提升不了竞争力，欧盟贸易专员将于 10 月 8 日至 9 日访华。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 $65.2 万（伊朗封锁盘）、$49.4 万（以色列总理盘）、$3.2 万（美伊外交会晤盘）· 口径：最近成交价</div>
+    <div class="row"><span>美国在 12 月 31 日前宣布结束伊朗封锁</span><b>50.0%</b></div>
+    <div class="row"><span>美国在 2027 年 3 月 31 日前宣布结束伊朗封锁</span><b>73.5%</b></div>
+    <div class="row"><span>美国在 10 月 31 日前宣布结束伊朗封锁</span><b>22.5%</b></div>
+    <div class="row"><span>内塔尼亚胡 / 艾森科特出任下任以色列总理</span><b>35.5% / 48.1%</b></div>
+    <div class="row"><span>美伊在 12 月 31 日前举行高级别外交会晤</span><b>48.5%</b></div>
+  </div>
+
+  <h3>⑤ 经济与市场：加息预期退潮，黄金和油价都在高位</h3>
+  <div class="plain">上周偏弱的就业数据之后，市场对美联储十月的押注里已经很少再有加息的影子，但长端利率和美元都还停在高位，黄金和原油价格在涨。欧洲这边，法国政府准备绕开议会推进减支，西班牙宣布提前大选。</div>
+  <div class="card">
+    <p>10 月 6 日多位美联储官员表态。旧金山联储主席戴利说她完全支持 9 月的加息，若 AI、关税与能源冲击持续或叠加，可能需要进一步收紧；堪萨斯城联储主席施密德称 AI 现在是通胀的主要推动力之一、「通胀令人沮丧，必须予以解决」；理事鲍曼谈了银行监管新架构，称将由覆盖各州的五个区域组成。与 10 月议息会议挂钩的市场显示，维持利率不变的概率 <span class="num">82.5%</span>、加息 <span class="num">25 个</span> 基点 <span class="num">16.5%</span>。</p>
+    <p>利率与资产价格上，10 年期美债收益率升至约 <span class="num">5.35%</span>、为 2008 年以来最高，法国 10 年期国债收益率一度下行 <span class="num">16 个</span> 基点；美元指数 6 日下跌；纽约期金一度报 <span class="num">4198.40 美元</span>/盎司，现货黄金站上 <span class="num">4170 美元</span>。原油方面，布伦特结算价 <span class="num">100.58 美元</span>/桶，WTI 结算 <span class="num">89.44 美元</span>；高盛称柴油价格将持续高位到 2027 年，过去 30 天有 <span class="num">16 家</span> 美国卡车公司因高柴油价破产。</p>
+    <p>欧洲政局不稳：法国政府准备绕过议会推进 <span class="num">430 亿欧元</span> 减支计划，勒庞呼吁欧洲央行降息；西班牙首相桑切斯宣布 11 月 29 日提前举行议会选举，起因是两项住房法令在议会接连被否，此前一名 <span class="num">87 岁</span> 老妇因房租上涨被驱逐引发全国抗议；匈牙利宣布 2027 年开征财富税。中国方面，国庆假期上海楼市热度不减，前 9 个月百强房企销售总额 <span class="num">22597.2 亿元</span>；10 月票房突破 <span class="num">10 亿元</span>；上半年全球纯燃油车新车销量占比首次跌破 <span class="num">50%</span>、降至 <span class="num">49%</span>，中国品牌占全球电动及插混车型销量的 <span class="num">60%</span>。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 $58.1 万（10 月议息）、$53.2 万（众议院归属）、$114.6 万（法国大选）、$32.8 万（西班牙首相）· 口径：最近成交价</div>
+    <div class="row"><span>美联储 10 月维持利率不变 / 加息 25 个基点</span><b>82.5% / 16.5%</b></div>
+    <div class="row"><span>民主党掌控众议院</span><b>92.5%</b></div>
+    <div class="row"><span>2026 中期选举：参众两院均归民主党</span><b>64.5%</b></div>
+    <div class="row"><span>2027 法国总统：勒庞 / 菲利普</span><b>43.2% / 17.5%</b></div>
+    <div class="row"><span>下一任西班牙首相为费霍</span><b>80.5%</b></div>
+  </div>
+
+  <h3>⑥ 人文与社会：长假返程里的几件事</h3>
+  <div class="plain">长假最后几天，公共讨论集中在几件具体的事上：一名空姐在客舱里被逼到下跪、一场演唱会的主办方因为审批不能临时请观众上台、以及返程路上的拥堵。个人博客里写得多的是停更、就业和家庭。</div>
+  <div class="card">
+    <p>东航空姐下跪事件继续发酵。9 月 28 日 MU6741 合肥飞大连的航班上，一名乘务员推餐车时不慎碰到熟睡男乘客的手肘，反复道歉后仍在辱骂与要求「让你踹一脚」的压力下于客舱过道下跪两三次。东航 9 月 30 日首次通报未提下跪、被批回应令人寒心，10 月 3 日再次通报称已向公安机关报案并暂停对涉事乘客的承运服务；中国航协呼吁依法维护乘务权益，人民日报客户端评论称航司不应一味息事宁人。</p>
+    <p>另一件小事被拆出了制度背景。10 月 3 日哈尔滨一场群星演唱会上，一位男粉丝要求上台，王心凌回应「这台上都得报批的……你没报批，不能上来」。律师对媒体解释，预计参加人数达到 <span class="num">1000 人</span> 以上的演唱会属于大型群众性活动，必须事先取得安全许可，承办者不得擅自变更活动内容；粉丝强行上台可处警告或 <span class="num">200 元</span> 以下罚款，情节严重的处 <span class="num">5 至 10 日</span> 拘留。</p>
+    <p>两岸舆论场里，蔡康永 10 月 4 日现身民进党籍台北市长参选人沈伯洋的竞选活动，随后在大陆遭网民抵制、零跑汽车等品牌下架宣传；蒋万安邀请他出席自己的活动，胡锡进称其「主动招惹是非，犯了大忌」。</p>
+    <p>假期日常方面，青海祁连县涌入超过 <span class="num">10 万</span> 名游客（后续的争议见下节），宠物上门喂养订单升到去年同期的三倍，泰山景区辟谣「躲雨 80 元一小时」。个人博客侧，有人记录博客停更五个月后的重启，有人写「为什么觉得父母故去后的老家像坟墓」并把原因归到城市化对宗族结构的削弱，有人写毕业两年最怕接家里电话（因为绕不开催婚），还有人对《欢迎来到龙餐馆》里用孩子当武器表达不满。HN 上一条 <span class="num">14 分</span> 的帖子问「为什么科技公司的 CEO 听起来像末日邪教领袖」。</p>
+  </div>
+
+  <h3>⑦ 直面批判：从学生宿舍到举报文化</h3>
+  <div class="plain">这两天被存档和转发的批评文章，集中在两个具体场景上：一个小县城把学生宿舍腾给游客住，一所大学因为有人举报同学翻墙处分了二十名学生。另外几篇讲的是逐利执法和「纸面服刑」。</div>
+  <div class="card">
+    <p>青海祁连县在国庆期间把民族中学的学生宿舍腾出来给游客免费住，建设性意见的项栋梁撰文指出，当地本可以用县委党校的教学综合楼或天境大剧院，最终选学生宿舍的理由是「完全不用跟学生商量」——县政府可以替文旅局、校长、班主任逐层做决定，而学生要等假期结束才回校。他写：你好欺负，那下次当然还欺负你。</p>
+    <p>举报文化再次成为焦点。哈尔滨工程大学 <span class="num">20 名</span> 学生因违规使用 VPN 访问境外网站被处分，流出的聊天记录显示事件或源于一名学生为保研排名举报同学。呦呦鹿鸣的文章指出，多数高校保研考核把「政治态度、思想表现、道德品质」放在第一条，一次警告处分就足以把人挤出名单，于是排名靠后的告密者获得了机会；同月还有那英演唱会后出现的「举报式采访」。</p>
+    <p>刑事执法侧，湖南邵阳一起案件更受关注：上海麦丝科技实控人郑帅因公司为境外客户开发的软件具有 VPN 功能，被邵阳县警方带走并羁押近 <span class="num">1000 天</span>，相关材料显示办案人员曾围绕巨额「退赃」与取保谈判，其中至少 <span class="num">6480 万元</span> 进入当地财政账户。</p>
+    <p>中国数字时代这两天收录的稿子里，山东寿光环保志愿者王春生的自述被重新提起：他因发布当地海鲜中毒与河道排污的视频被行政拘留 <span class="num">13 天</span>，处罚决定书的送达与执行日期存在矛盾，他以在院中画地为牢、自囚 <span class="num">13 天</span> 的方式「完成」刑期。不明白播客第 <span class="num">236</span> 期《在中国感到「低贱」的瞬间：十一位听众来信》也由 CDT 存档，投稿人说订阅一个境外 AI 工具要先学翻墙、长时间空窗后在面试里被当犯人盘问、以及普通人的处境与最高权力之间缺少退出机制的反差。</p>
+    <p>一篇行业分析提供了另一种注脚：北京首都机场股份 10 月 5 日收盘 <span class="num">1.40 港元</span>、总市值 <span class="num">64 亿港元</span>（约合人民币 <span class="num">55 亿</span>），不到净资产的一半、上海机场的十分之一、深圳机场的四成。文章把它归因于首都与大兴两场并存、以及免税合同重签后提成大幅下调：2020 到 2025 年六连亏合计 <span class="num">115 亿</span>，集团 2025 年亏损 <span class="num">42 亿</span>、总债务 <span class="num">596 亿</span>，同时还有 <span class="num">841 亿</span> 拟建项目。</p>
+    <p>联早报道了央视纪录片《缅北电诈覆灭纪实》：缅北「四大家族」之一魏家的陈大卫为与园区金主结拜，「立投名状」随机杀人祭天；2023 年 8 月 20 多名中国籍电诈人员集体出逃时遭园区武装用 AK47 扫射，造成 <span class="num">6 死 8 伤</span>。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场：交易所估值与预测市场的扩张</h3>
+  <div class="plain">加密这两天的主线是机构化：一家大型交易所拿到新融资，美国监管继续把规则写细，预测市场的季度成交量创下新高；另一边也出现链上治理攻击和项目关停。</div>
+  <div class="card">
+    <p>OKX 以 <span class="num">250 亿美元</span> 估值完成新一轮融资，投资方包括 Circle、Ripple、渣打银行旗下 SC Ventures 与量化基金 QRT，金额未披露；今年 3 月纽交所母公司洲际交易所曾以相同估值投资约 <span class="num">2 亿美元</span>。OKX CEO Star 称公司约 <span class="num">95%</span> 的工程代码合并由 AI 完成。预测市场方面，CryptoRank 数据显示第三季度交易量达到创纪录的 <span class="num">1880 亿美元</span>、环比增长近 <span class="num">70%</span>，是去年同期约 <span class="num">21 倍</span>，增长主要由 Kalshi 带动（体育类约占其季度成交的 <span class="num">40%</span>）；Polymarket 推出 Protocol V2 重构底层合约，暂定 11 月 2 日对新增市场全面切换。另有美国众议员提案，禁止联邦候选人在预测市场押注与自身选举相关的合约。</p>
+    <p>监管继续细化：CFTC 发布拟议规则制定预先通知，计划在现有注册体系上新增「加密资产市场」类别，自愿联邦注册、不提供杠杆的现货交易所可以选择退出，评论期 <span class="num">60 天</span>；Winklevoss 向 SEC 提交 Zcash ETF 的注册声明（代码 WINK），Gemini 担任托管；迪拜监管机构要求虚拟资产服务商全程维持至少 <span class="num">100%</span> 的客户负债覆盖。</p>
+    <p>资金面上，10 月 5 日比特币现货 ETF 净流出 <span class="num">8989.78 万美元</span>、仅贝莱德的 IBIT 净流入，以太坊现货 ETF 净流入 <span class="num">1.11 亿美元</span>；Binance 10 月储备显示用户 BTC 增加 <span class="num">0.91%</span>、ETH 减少 <span class="num">4.61%</span>；另有分析称过去两周约 <span class="num">33 亿美元</span> 比特币净流出币安。Wintermute 指出，美国 10 年期国债收益率升至约 <span class="num">5.35%</span> 的同时，比特币与标普 500 的相关性重新上升，当前宏观回撤风险高于加密自身的催化剂。Binance Research 的月报则称 9 月加密总市值上涨 <span class="num">11%</span> 至 <span class="num">2.99 万亿美元</span>、比特币确认「黄金交叉」。</p>
+    <p>治理与安全事件也不少：安全机构 Blockful 称巨鲸 Humpy 通过 API3 员工向 Compound 施压，并已成为其 DAO 最大的单一 COMP 持有方，还提交提案试图撤销国库管理委员会的调配权；Tornado Cash 联合创始人称检方把合法交易当成犯罪，诉讼已持续 <span class="num">1139 天</span>；勒索软件组织 Qilin 的一名核心成员在日本被捕并引渡德国；跨境支付公司 Conduit 在纽约起诉 Tether，指控其无故冻结约 <span class="num">276 万美元</span> USDT；消费级加密网络 Abstract 宣布 12 月 15 日关停，母公司称两年亏损数千万美元。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 $26.6 万（10 月比特币价格盘）、$35.6 万（10 月 7 日比特币价格盘）· 口径：最近成交价</div>
+    <div class="row"><span>比特币在 10 月触及 $87,500</span><b>78.5%</b></div>
+    <div class="row"><span>比特币在 10 月触及 $90,000</span><b>56.5%</b></div>
+    <div class="row"><span>比特币在 10 月下探 $82,500</span><b>65.5%</b></div>
+    <div class="row"><span>比特币在 10 月 7 日高于 $84,000</span><b>93.8%</b></div>
+  </div>
+
+  <h3>⑨ 期权与市场走势（通俗版）</h3>
+  <div class="plain">期权市场现在给本周五的到期日读出一个偏区间震荡的格局：大盘上方有一层很厚的阻力、很难涨过去，下方有一个关键位，跌破了就会往下打开一段；科技股更容易被钉在一个窄区间里。黄金、美债和加密各自的强弱，会决定这股下压会不会被放大。</div>
+  <div class="card">
+    <p>按期权持仓结构，本周五（10 月 9 日）到期日里，标普（SPY）上方 <span class="num">785</span> 一带堆着很厚的卖压，其中单个行权价就占该到期日正 gamma 的约 <span class="num">40.8%</span>，指数很难有效涨过去；下方 <span class="num">767</span> 是关键，一旦跌破会打开到 <span class="num">760</span> 的空间。科技股（QQQ）的仓位更集中在现价附近，上方 <span class="num">760</span> 有明确压力、下方 <span class="num">750</span> 是关键支撑，跌破先看 <span class="num">747</span>、再下看 <span class="num">730</span>；由于下方承接更薄，科技股一旦回调，跌幅会大于大盘。整体偏向区间震荡、重心略微向下。</p>
+    <p>跨资产来看，黄金偏弱、刚好卡在关键分界上，<span class="num">375</span> 是下方关键位，跌破会明显加大高估值科技股的压力，收复 <span class="num">385</span> 才算回到中性；美债暂时偏稳，给股市一点喘息，但只要长端利率再上台阶，科技股的关键位会被同时测试；加密在 <span class="num">48</span> 上方有支撑、<span class="num">49 至 50</span> 是天花板，给股市的是托底。稳定币占比在 <span class="num">6.27% 至 6.48%</span> 之间弱震荡，比特币在 <span class="num">8.47 万至 8.65 万美元</span> 的高位消化。综合起来，最需要提防的是黄金跌破 <span class="num">375</span> 或加密跌破 <span class="num">48</span> 引发的连锁下压，向上突破的概率偏低。</p>
+  </div>
+
+  <h3>⑩ 一周回顾</h3>
+  <div class="plain">把这一周连起来看，主线基本沿着三条线走：模型发布与算力投资密集落地，中东与欧洲同时加压，市场则在就业数据转弱后重新押注美联储按兵不动。</div>
+  <div class="card">
+    <p><b>模型与算力。</b>Gemini 4 的首个模型 Argon 在 10 月 1 日发布、18 项评测领先 12 项并优先开放给网络安全团队；一周内又出现 Mistral Large 4、Reflection Beam 两个开源大模型，DeepSeek 与月之暗面分别拿到大额融资、估值报到约 500 亿美元；arXiv 单月投稿破 4 万篇后启动史上最严限流（每人每月最多 2 篇）；22 位学者联名警告「智能爆炸」比想象中更近；OpenAI 基金会宣布最多 250 亿美元用于科研，首批面向癌症疫苗与阿尔茨海默症。硬件侧，DeepSeek V4 与昇腾适配、全植入式人工耳蜗、DeepMind 给 AI 设计的蛋白质加水印都在这一周出现。</p>
+    <p><b>地缘与能源。</b>霍尔木兹封锁与也门战事持续：从胡塞袭击沙特基地，到 10 月 4 日「也门黎明」行动夺回穆哈与曼德海峡附近区域，胡塞则把导弹打到沙特机场；伊朗原油供应减少后，中国独立炼厂转向伊拉克与卡塔尔原油。欧洲一侧，欧盟准备对俄新制裁并讨论立陶宛核武；法德推动可切断市场准入的贸易工具，中欧在电动车、化工、光伏上的摩擦升温。中美则从对台军售的公开表态，走到初步讨论核设施互访。</p>
+    <p><b>科研与批判。</b>诺贝尔生理学或医学奖（10 月 5 日，光遗传学三位开创者）与物理学奖（10 月 6 日，冰立方）相继公布；《自然》一周内刊出子宫内膜异位症药物的早期进展、胰腺癌新策略、恐龙向飞行演化的化石、以及把基因编辑限定在特定细胞的思路。批判侧，哈工大学生翻墙被处分与保研举报、那英演唱会后的「举报式采访」、贵州晴隆抗战公路收费、以及「博士沦落到低保户」等文章在这一周被大量存档与转发。</p>
+    <p><b>市场预期的一周变化。</b>美联储 10 月维持利率不变的市场从 <span class="num">55.5%</span> 升到 <span class="num">82.5%</span>，对应上周偏弱的就业数据；比特币在 10 月触及 <span class="num">87,500 美元</span> 的市场从 <span class="num">50.5%</span> 升到 <span class="num">78.5%</span>；Anthropic 拿下年底最佳 AI 模型的市场从 <span class="num">79.5%</span> 降到 <span class="num">48.5%</span>，谷歌同期从 <span class="num">10.5%</span> 升到 <span class="num">41.5%</span>。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、吴说、十年之约、ChatGPT/AI 新闻聚合、联合早报、风向旗、中国数字时代、Nature、MIT 科技评论、竹新社、小众软件、cnBeta 共 12 个源，覆盖 10 月 5–7 日，含已读与未读）· Hacker News 前 100 名 · Polymarket 热点榜（24 小时成交量前 20，剔除体育盘）· 期权日报（2026-10-07）。<br>
+    由 pi 自动生成 · 今日窗口内未读 804 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
