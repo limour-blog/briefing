@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-10-10</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .odds { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 20px; font-size:13.5px; margin-bottom:12px; }
+  .odds .cap { font-size:12px; letter-spacing:.08em; color:var(--muted); margin-bottom:6px; }
+  .odds .row { display:flex; justify-content:space-between; gap:12px; padding:5px 0; border-bottom:1px dashed var(--line); }
+  .odds .row:last-child { border-bottom:none; }
+  .odds .row b { color:var(--accent); font-weight:700; white-space:nowrap; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 10 月 10 日 · 周六 · 订阅聚合 + Hacker News + Polymarket 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>特朗普与普京通话一个半小时，美国财政部发放许可允许俄罗斯柴油进入全球市场到明年 4 月，泽连斯基称这项安排"既不公平也不诚实"；伊朗革命卫队称一艘大型液化石油气运输船在霍尔木兹海峡附近遇袭起火、胡塞武装连续第三天攻击利雅得，三艘美军航母将齐聚中东，布伦特原油结算价 <b>104.72</b> 美元；中欧就混合动力汽车贸易达成谅解、避开全面贸易战；OpenAI 三名被解雇的安全研究员发表公开信警告"寒蝉效应"，数学界围绕 OpenAI 一次性发布 <b>722</b> 份证明继续与陶哲轩对峙；2026 年诺贝尔和平奖授予纳瓦内特姆·皮莱，美国政府数小时后宣布制裁国际刑事法院；尊界 V800 三台车在测试中刹车踏板连续断裂，相关测评视频在多个平台消失。</div>
+
+  <h3>① AI 竞赛、安全文化与治理</h3>
+  <div class="plain">OpenAI 把更快的模型版本推给付费用户，Anthropic 用新条款给模型划红线，谷歌则把能自己拆解任务的智能体搬进企业办公。与此同时，三名做人工智能安全的研究员在被解雇后联名写信，担心公司里还在职的人从此不敢再开口。硅谷与华盛顿的关系也在收紧：政府要暂停几家大公司为外籍员工担保绿卡的资格，总统还把"人工智能"这个名字本身变成了表态。</div>
+  <div class="card">
+    <p>OpenAI 本周为 GPT-6.1 Sol 推出 Ultrafast 版本，官方称速度最高为标准版的 <span class="num">8</span> 倍，定价为标准版的 <span class="num">6</span> 倍，即每百万输入 tokens <span class="num">12</span> 美元、每百万输出 tokens <span class="num">60</span> 美元，先在 Codex 与 ChatGPT Work 中面向 Pro500、按量付费企业与教育用户开放。Anthropic 同日更新使用政策，把选举干预、武器软件与监控写入禁令，并首次明确禁止用户"持续且不必要的"辱骂模型。谷歌云发布通用型 Gemini 智能体，可自主拆解并执行多步骤企业任务。</p>
+    <p>收入口径出现了明显分歧。OpenAI 预计到年底年化营收约 <span class="num">700</span> 亿美元，而此前报道给出的是约 <span class="num">500</span> 亿美元，相差约 <span class="num">200</span> 亿美元，后一口径一度引发美股科技股抛售。三名被解雇的安全研究员是 Jasmine Wang、Tomek Korbak 与 Mikita Balesni，公开信题为《OpenAI 无法独自确保 AI 安全》，提出允许第三方安全审计人员进驻、持续监测前沿模型、支持安全研究人员对外交流三项建议；OpenAI 研究部门负责人回应称支持这三项建议，并称解雇与员工提出安全问题无关，起因是内部调查发现其违规处理敏感信息。风向旗还报道，OpenAI 与 Anthropic 正招揽特朗普政府官员出任高管，以稳固与白宫的关系。</p>
+    <p>政策面上，副总统万斯宣布禁止微软和 Adobe 为 H-1B 员工担保绿卡（联合早报、金十）；特朗普称不支持把"人工智能"改名为"SI"的人就是白宫的敌人。一项民调显示，<span class="num">64%</span> 的美国人认为 AI 发展速度"过快"，近八成希望政府优先确保 AI 不失控（cnBeta）。</p>
+  </div>
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 $2.3 万 · 口径：最近成交价</div>
+    <div class="row"><span>谷歌在十月底拥有最佳 AI 模型</span><b>71.9%</b></div>
+    <div class="row"><span>Anthropic 在十月底拥有最佳 AI 模型</span><b>26.5%</b></div>
+    <div class="row"><span>年底最佳 AI 模型归属谷歌</span><b>43.0%</b></div>
+    <div class="row"><span>年底最佳 AI 模型归属 Anthropic</span><b>42.5%</b></div>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>OpenAI 解雇三名安全研究员，三人发公开信警告"寒蝉效应"</h4>
+    <div class="stats">292 points / 191 comments · 来源：TechCrunch（正文未能抓取，事实取自同日 cnBeta、风向旗、AI 聚合与金十的报道）</div>
+    <p>三名被解雇的研究人员 Jasmine Wang、Tomek Korbak 与 Mikita Balesni 于 10 月 9 日发表题为《OpenAI 无法独自确保 AI 安全》的公开信，称公司给出的理由包括"与第三方安全机构交流过多""与 METR 沟通的方式"等，三人担心这会让仍在职的人不敢再公开讨论风险。他们提出允许第三方安全审计人员进驻、确保前沿模型持续受监测、支持安全研究人员对外交流三项建议，OpenAI 一位研究部门负责人随后在内部备忘录中表示支持这三项建议。选择这一条而不选当日 HN 新帖中分数最高的 Cloudflare 收购 Deno（965 分/505 评论，放入硬件与算力段），是因为它同时出现在四个订阅源中、可直接交叉印证，且指向 AI 公司的安全文化。</p>
+  </div>
+
+  <h3>② 数学 2.0：OpenAI 与数学界的对峙</h3>
+  <div class="plain">OpenAI 一次性把几百份机器写出的数学证明放到网上，机器能逐行验证，人类却来不及读。数学家担心的是，这种速度会把"理解"这件事从研究里挤出去。菲尔兹奖得主陶哲轩把一份呼吁停止合作的声明全文转了出来；另一边，中国的王虹靠一道百年几何难题拿到菲尔兹奖，几个月后更难的那个版本被机器在几个小时内做掉。</div>
+  <div class="card">
+    <p>OpenAI 于 10 月 6 日在 GitHub 公开 <span class="num">722</span> 篇由内部模型生成的数学手稿，整理为 <span class="num">372</span> 个成果组，覆盖数论、几何、代数与理论计算机科学等约 <span class="num">17</span> 个领域，OpenAI 称模型在评估中尝试了约 <span class="num">4,000</span> 道题。Nature 10 月 7 日以"数学家们愤慨"为题报道这一发布；陶哲轩在个人博客上全文转载"人类数学协会"（AHM）的声明，该声明把这种批量发布定性为"权力"的展示，并呼吁数学家停止与 OpenAI 合作。不到一个月前，陶哲轩曾与另外 <span class="num">24</span> 位菲尔兹奖得主联名发表公开信，警告 AI 公司正让数学研究偏离原本目标。AI 聚合的报道进一步指出，这批证明中绝大多数难以转成人类可读的知识，还出现过因单个符号错误导致多篇相关结论集体失效的情况。</p>
+    <p>与争论并行的是能力展示。2026 年菲尔兹奖得主王虹靠三维挂谷集猜想的证明获奖，cnBeta 报道称，OpenAI 只用了 <span class="num">3</span> 小时就解决了更难的挂谷极大函数猜想，并首次证出四维挂谷集的豪斯多夫维数等于 <span class="num">4</span>，把人类此前 <span class="num">3.059</span> 维的最佳纪录推到理论上限。HN 上的讨论同样集中：<span class="num">1334</span> 分/<span class="num">1521</span> 评论的"Sharing AI progress in mathematics"、<span class="num">606</span> 分/<span class="num">639</span> 评论的"Math 2.0"、<span class="num">369</span> 分/<span class="num">604</span> 评论的"OpenAI withdraws three mathematical results"，以及 <span class="num">394</span> 分/<span class="num">411</span> 评论的"The Mathocalypse"，都在讨论同一件事：验证与理解跟不上生成速度。</p>
+  </div>
+
+  <h3>③ 科技科研前沿</h3>
+  <div class="plain">这一天的科研版面上，有关于大脑与疼痛的小鼠实验，有能把隐形墨水在紫外线下显出来的材料，还有一项在亚马逊雨林里模拟未来气候的大型计划。天文这边，中国的射电望远镜确认了一个还没长大的三星系统；学界还被提醒警惕一批靠欺骗扩充成员的"学术组织"。</div>
+  <div class="card">
+    <p>Nature 10 月 9 日的一批论文与报道里，几项值得单独记下：一项研究发现黑猩猩与大猩猩的脑质量在晚年仍能维持，与人类大脑随年龄缩小形成对照，研究者推测这与非人猿类较短的寿命有关；另一项小鼠实验通过拆解神经细胞周围的支架结构缓解慢性疼痛，为开发更安全的镇痛药提供线索；一种只在紫外线下显形的墨水被提出用于医疗纹身，但还需更多测试。同一天 Nature 还报道，一个由多家机构组成的网络正以欺骗手段扩充"学术组织"的成员名单，误导研究人员；以及研究者 David Lapola 在亚马逊开展实验，试图弄清大气二氧化碳继续上升时雨林会如何应对。</p>
+    <p>中国科学院国家天文台韩金林团队利用 FAST"中国天眼"射电观测数据，结合多波段天文数据，确认脉冲星 J0435+3233 位于一个仍在演化阶段的原生三体系统中：这颗毫秒脉冲星以 <span class="num">8</span> 天为周期与一颗白矮星互绕，第三颗处于演化期的类太阳恒星以 <span class="num">73.5</span> 年为周期环绕双星。这是继美国发现首例全演化三体系统之后，人类确认的第二例脉冲星三体系统，相关成果已发表于《天体物理学杂志快报》（IT 之家）。</p>
+    <p>HN 上，把 AI 用在档案馆藏里找出一颗被遗忘的陨石、失落犀牛等记录的帖子排在当日第 <span class="num">10</span> 位（<span class="num">75</span> 分/<span class="num">38</span> 评论）；一项研究"运动提高癌症生存率"的帖子排在第 <span class="num">93</span> 位（<span class="num">75</span> 分/<span class="num">41</span> 评论）。</p>
+  </div>
+
+  <h3>④ 硬件与算力：内存危机传导到手机和电脑</h3>
+  <div class="plain">电脑和手机正在变贵，原因之一是内存。出货量在掉，厂商在砍单，有的公司为了给数据中心供电，干脆用卡车把天然气拉过去。与此同时，云服务商开始整合开发工具，国内的芯片厂则公开谈起了最先进的光刻机。</div>
+  <div class="card">
+    <p>IDC 数据显示，2026 年第三季度全球个人电脑出货量为 <span class="num">6,270</span> 万台，环比下滑 <span class="num">9.1%</span>，较去年同期的 <span class="num">7,850</span> 万台同比下跌 <span class="num">20.1%</span>；IDC 把走弱部分归因于供应问题与价格高企，也就是业内所说的"内存危机"。内存芯片涨价已向上传导：苹果要求供应商把 iPhone 18 Pro 与 Pro Max 的零部件订单在 10 月削减 <span class="num">15%</span>–<span class="num">20%</span>（凤凰网科技）；三星则计划把手机减产约 <span class="num">30%</span>（金十）。代工端的景气与消费端的收缩同时出现：台积电 9 月营收同比增长 <span class="num">54.6%</span>、第三季度同比增长 <span class="num">50%</span>。</p>
+    <p>为按时交付 AI 数据中心，甲骨文在管道延误的情况下用卡车运输压缩天然气发电，这一做法已在犹他州和得州实施，并考虑引入新墨西哥州（华尔街见闻、彭博社），公司自由现金流目前为负。华为常务董事余承东在媒体圆桌会上称，中国正在研发极紫外（EUV）光刻设备，现阶段仍依赖深紫外（DUV），并介绍了以垂直堆叠逻辑层提升性能的"逻辑折叠"技术，搭载该技术的麒麟 9050 Pro 使 Mate 90 Pro Max 整机性能较上一代提升 <span class="num">31%</span>（联合早报）。开发工具这边，Cloudflare 宣布 Deno 团队整体加入，Deno 作者 Ryan Dahl 称将把 Deno Deploy 与 Cloudflare Workers、Durable Objects 的模型结合起来；这条 HN 帖子 <span class="num">965</span> 分/<span class="num">505</span> 评论，是当日新帖中分数最高的一条。另有开发者把体积 <span class="num">16.9</span> MB 的语音转文字工具 Whistle 顶到 <span class="num">914</span> 分/<span class="num">176</span> 评论。</p>
+  </div>
+
+  <h3>⑤ 地缘政治：中东、俄乌、台海与诺奖</h3>
+  <div class="plain">特朗普与普京通了一次电话，美国随后让俄罗斯柴油重新进入全球市场，乌克兰总统对此表示不满。中东这边，一艘大型液化石油气船在霍尔木兹海峡附近遇袭，也门胡塞武装连续第三天攻击利雅得，几艘美国航母正在向该地区集中。诺贝尔和平奖颁给了一位国际法法官，美国数小时后宣布制裁她曾任职的法院。</div>
+  <div class="card">
+    <p>克里姆林宫助理乌沙科夫称，普京与特朗普的通话持续 <span class="num">1.5</span> 小时，双方讨论了包括俄罗斯燃料供应在内的大规模经济倡议；美国财政部外国资产控制办公室随即发布临时通用许可，允许向全球市场供应俄罗斯柴油至明年 <span class="num">4</span> 月，俄副总理诺瓦克表示将提前解除柴油出口限制（金十）。乌克兰总统泽连斯基对 Axios 表示，这项安排"既不公平也不诚实"，认为允许俄罗斯出售石油产品等于为战争提供资金；英国政府则称将继续以"史上最严厉的制裁"对俄施压。美国特使威特科夫把迈阿密的美乌会谈形容为"富有成效"（金十）。</p>
+    <p>中东方面，伊朗革命卫队海军称一艘名为 NV Sunshine 的大型液化石油气运输船"违规穿越"霍尔木兹海峡后遭袭起火，并警告追踪范围将扩大到整个地区；胡塞武装连续第三天攻击利雅得，沙特国家航空公司一架飞机在利雅得机场起火（金十、中东局势跟踪）。军事上，三艘美国航母预计未来几周齐聚中东，五角大楼已拟定针对伊朗导弹、无人机与能源设施的方案，但特朗普多次否决动武并称中期选举前不会攻击伊朗。价格上，布伦特原油结算价 <span class="num">104.72</span> 美元，美国原油结算价 <span class="num">91.85</span> 美元；飓风"伊萨亚斯"令墨西哥湾约 <span class="num">72%</span> 的石油产量中断；全球最大独立石油贸易商维多警告，若没有船对船转运，油价可能冲击每桶 <span class="num">200</span> 美元，10 月初全球原油运输船平均日收益突破 <span class="num">50</span> 万美元（金十）。</p>
+    <p>国际司法上，美国政府 10 月 9 日宣布对国际刑事法院实施制裁，国务卿鲁比奥称特朗普不会允许该法院起诉美国公民；数小时前，国际刑事法院前法官纳瓦内特姆·皮莱刚获得 2026 年诺贝尔和平奖，法院副检察官称制裁意在破坏国际法治（竹新社、路透社）。台海方面，双十节前夕四艘大陆海警船进入金门限制水域，台湾军方侦获 <span class="num">19</span> 架次解放军军机、其中 <span class="num">13</span> 架次越过海峡中线；日本 <span class="num">27</span> 名跨党派国会议员抵台参加双十活动（联合早报）。</p>
+  </div>
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 $134.4 万 · 口径：最近成交价</div>
+    <div class="row"><span>美伊停火持续至 10 月 31 日（一周前 60.5%）</span><b>75.5%</b></div>
+    <div class="row"><span>美伊停火持续至 11 月 30 日</span><b>40.5%</b></div>
+    <div class="row"><span>美国宣布结束对伊封锁（至 12 月 31 日）</span><b>47.9%</b></div>
+    <div class="row"><span>WTI 原油 10 月触及 100 美元</span><b>34.5%</b></div>
+  </div>
+
+  <h3>⑥ 经济与政策：加息悬念未散，中欧各让一步</h3>
+  <div class="plain">美国这个月大概率不加息，但年底前是否再动仍有悬念，长期国债收益率居高不下，资金大量涌入货币市场基金；中国与欧盟在汽车和稀土上各让一步，暂时避开了全面贸易战；国内一边给地方财政补额度，一边推动消费税改革。</div>
+  <div class="card">
+    <p>利率预期上，CME 数据显示美联储 10 月维持利率不变的概率为 <span class="num">82.3%</span>，Polymarket 同题盘口为 <span class="num">83.5%</span>，加息 <span class="num">25</span> 个基点的概率约 <span class="num">15.5%</span>；圣路易斯联储主席穆萨莱姆称未来六到九个月可能适合加息。长端承压更明显：美国 10 年期国债收益率一度升破 <span class="num">5%</span>，财政部新任顾问泽沃斯称市场放大了短期冲击；单周有逾 <span class="num">1660</span> 亿美元涌入货币市场基金，刷新 2020 年 4 月以来纪录，美银警告只要美联储不实质性宽松，资金就不会回流股市。10 月密歇根大学消费者信心指数初值降至 <span class="num">46.3</span>，低于预期的 <span class="num">47.6</span>，未来一年通胀预期升至 <span class="num">4.7%</span>（金十）。加拿大 9 月就业减少 <span class="num">6.83</span> 万人，失业率升至 <span class="num">6.5%</span>，市场对 10 月加息的押注从 <span class="num">40%</span> 降至 <span class="num">27%</span>（金十）。</p>
+    <p>中欧方面，王文涛与谢夫乔维奇在北京举行贸易投资磋商机制第二次例会，会后形成涵盖贸易投资、出口管制、知识产权与世贸组织改革的 <span class="num">16</span> 项成果共识；双方就混合动力汽车贸易达成谅解，欧方称可将中国对欧出口的混动与插混汽车减少一半以上，中国同意对欧盟部分产品降税、至少为欧方节省 <span class="num">2.25</span> 亿欧元，并继续通过"绿色通道"便利稀土出口审批（联合早报、央视）。受访学者判断，本轮之后中欧爆发全面贸易战的可能性已很小。国内政策上，财政部安排动用 <span class="num">5500</span> 亿元地方政府债务结存限额，其中 <span class="num">3000</span> 亿元一般债给县区、<span class="num">2500</span> 亿元专项债向经济大省倾斜，并推动规范税收优惠、消费税改革等；国庆假期国内出游 <span class="num">8.26</span> 亿人次、总花费 <span class="num">7383.75</span> 亿元，但人均消费 <span class="num">893.92</span> 元、同比下降 <span class="num">1.9%</span>，为四年来最低（联合早报）。</p>
+  </div>
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 $83.3 万 · 口径：最近成交价</div>
+    <div class="row"><span>美联储 10 月维持利率不变（一周前 82.5%）</span><b>83.5%</b></div>
+    <div class="row"><span>美联储 10 月加息 25 个基点</span><b>15.5%</b></div>
+    <div class="row"><span>民主党控制众议院（一周前 92.5%）</span><b>90.5%</b></div>
+    <div class="row"><span>得州参议院由民主党胜出</span><b>62.5%</b></div>
+  </div>
+
+  <h3>⑦ 人文与社会：制片厂换名字，网盘改规则</h3>
+  <div class="plain">好莱坞的名字又换了一轮，一家年轻公司把两家百年制片厂收进自己名下；网络上，一款停了很多年的解谜游戏宣布续作，微软把家庭版网盘从每人一份改成了全家共用，引发用户抗议。</div>
+  <div class="card">
+    <p>派拉蒙天空之舞完成对华纳兄弟探索的收购，交易企业价值约 <span class="num">1100</span> 亿美元，把《碟中谍》《哈利·波特》背后的两家制片厂与 CBS、CNN、HBO Max 纳入同一集团；上市公司名改为 Skydance，股票代码由 PSKY 改为 SKYD（MIT 科技评论）。导演兼演员本·阿弗莱克创办的电影 AI 公司 InterPositive 被 Netflix 收购，SEC 的 10-Q 文件显示这笔现金收购约 <span class="num">5.87</span> 亿美元（MIT 科技评论）。</p>
+    <p>消费电子与互联网服务方面，微软修改 Microsoft 365 的 OneDrive 存储规则，家庭版与高级版从"最多 6 人各享 1TB"改为全家共享 <span class="num">2</span> TB，总量缩水约 <span class="num">67%</span>，新用户自 2026 年 10 月 7 日起执行，老用户在 2027 年续订时生效，引发"关闭自动续费"的抗议（小众软件）。游戏与开发社区里，停更 17 年的《机械迷城》宣布续作并上线 Steam 页面，js13kGames 把年度冠军给了限 <span class="num">13</span> KB 的《Spectral Horn》（小众软件）。个人博客里，一位作者写下与老友闲谈的半生过往，另一位记录川农建校 120 周年（十年之约）。</p>
+  </div>
+
+  <h3>⑧ 直面批判：刹车踏板断了，视频也没了</h3>
+  <div class="plain">一辆售价上百万的国产豪车，在第三方测试里连着几台把刹车踏板踩断，厂商发声明说自己的标准高于国标，却没有承认断裂这件事；一天后，那段测试视频在多个平台看不到了。围绕这件事，一批被存档的评论文章把问题指向了市场规则与舆论环境。</div>
+  <div class="card">
+    <p>懂车帝在 10 月 1 日与 3 日对三台尊界 V800 做百公里制动测试，三台车分别在第三次、第四次与第二次全力制动时出现刹车踏板支架断裂，断口位置高度一致；测试时的踏板力约 <span class="num">1612</span> 牛，而国标要求踏板在承受 <span class="num">1500</span> 牛后变形不超过 <span class="num">5</span> 毫米且不裂，保时捷的内部设计标准是 <span class="num">3000</span> 牛不断。断裂后脚刹失灵，车辆只能挂 P 挡减速，百公里到零的制动距离从约 <span class="num">38</span> 米延长到约 <span class="num">140</span> 米（中国数字时代存档的亮见、星球商业评论）。消息传出当天，江淮汽车股价跌停，市值蒸发约 <span class="num">62</span> 亿元。尊界随后发布情况说明，称制动系统按高于国标与行业标准的要求开发、此前从未发生断裂，将优化部件设计并为用户免费升级，但未说明断裂原因（联合早报、亮见）。10 月 9 日，懂车帝的测试视频在多个平台已无法查看，中国数字时代以《比懂车帝踩断尊界刹车踏板更大的事，是视频没了》为题存档了评论，作者认为视频消失比踏板断裂本身影响更大。</p>
+    <p>同一批存档里还有另一条监督性报道：青海祁连县在国庆涌入约 <span class="num">10</span> 万名游客后，把约 <span class="num">500</span> 名无处住宿的游客安排进学生宿舍，围绕"学生同意了吗"引发争论，评论文章质疑征用宿舍模糊了公共服务的边界（中国数字时代）。</p>
+  </div>
+
+  <h3>⑨ 区块链与加密市场：从高位回落，监管密集落地</h3>
+  <div class="plain">加密市场过去两天从高位回落：美国政府把查扣的比特币往交易所存，以太坊价格一度跌破关键价位，全网爆仓金额很大。与此同时，监管机构在预测市场、稳定币和交易所规则上密集出招，抗量子成为反复出现的主题。</div>
+  <div class="card">
+    <p>行情上，10 月 8 日以太坊跌破 <span class="num">2500</span> 美元，近 24 小时全网爆仓 <span class="num">7.59</span> 亿美元（吴说）。资金面上，吴说每日精选称，美国政府过去三天向 Coinbase Prime 存入超 <span class="num">1.7</span> 万枚 BTC，期间 BTC 下跌 <span class="num">6.9%</span>；比特币现货 ETF 单日净流出 <span class="num">2.44</span> 亿美元，以太坊 ETF 连续 <span class="num">8</span> 日净流出。安全事件上，Ledger 用户钱包遭集中盗取，涉及资产超 <span class="num">8,600</span> 万美元，攻击者向 Tornado Cash 转入 <span class="num">430.2</span> 枚 ETH，仍持有约 <span class="num">7,060</span> 万美元资产；79thVault 的攻击者归还 <span class="num">1.5</span> 万枚 BNB、价值约 <span class="num">1,110</span> 万美元（吴说）。</p>
+    <p>监管与制度化同步推进。CFTC 明确传统博彩不属于掉期，并拟将预测市场事件合约纳入监管，其主席称新框架旨在保护交易所客户、防范 FTX 事件重演；韩国拟要求交易所保存外部钱包地址 <span class="num">6</span> 年，5 万美元以上支付需申报；泰国 SEC 发布 <span class="num">11</span> 项加密 ETF 新规、10 月 <span class="num">16</span> 日生效；西班牙要求加密 ATM 所有交易强制身份核验（吴说）。代币化方面，Nasdaq CEO 称代币化可释放数百亿美元资本，Base 创始人预计代币化股票与非美元稳定币将引领"代币化超级周期"，Q3 稳定币卡交易量升至 <span class="num">43.1</span> 亿美元、环比增长 <span class="num">33%</span>（吴说）。抗量子是另一个反复出现的主题：NEAR 账户已支持后量子签名算法 ML-DSA，StarkWare 称无需软分叉即可实现量子安全比特币支付并已在主网完成交易，以太坊联合创始人 Vitalik Buterin 则警告未来两年 AI 可能冲击抗量子密码安全，但不建议用户仓促转移资产（吴说）。</p>
+  </div>
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 $37.6 万 · 口径：最近成交价</div>
+    <div class="row"><span>比特币 10 月 10 日站上 82,000 美元</span><b>83.5%</b></div>
+    <div class="row"><span>比特币 10 月 10 日站上 84,000 美元</span><b>4.0%</b></div>
+    <div class="row"><span>比特币 10 月触及 90,000 美元（一周前 48.5%）</span><b>29.5%</b></div>
+    <div class="row"><span>比特币 10 月触及 92,500 美元</span><b>18.5%</b></div>
+  </div>
+
+  <h3>⑩ 一周回顾</h3>
+  <div class="plain">把这一周摊开看，几条线同时推进：诺贝尔奖逐个揭晓，数学界与 AI 公司的信任问题被摆上台面，AI 公司的收入与安全文化同时受到质疑，中东和俄乌的战事与谈判交替出现，加密市场在监管密集落地的同时从高位回落。</div>
+  <div class="card">
+    <p><b>诺奖周。</b>生理学或医学奖颁给三位光遗传学研究者，物理学奖授予中微子探测（把一立方公里南极冰做成望远镜），化学奖奖励"手性"有机分子的成因研究，文学奖给了诗人安妮·卡森，和平奖授予国际刑事法院前法官纳瓦内特姆·皮莱；皮莱获奖数小时后，美国宣布制裁国际刑事法院。（竹新社、Nature、MIT 科技评论）</p>
+    <p><b>数学与信任。</b>OpenAI 在 10 月 6 日一次性公开 722 篇数学手稿，Nature 以"数学家们愤慨"为题报道，陶哲轩转载"人类数学协会"呼吁停止合作的声明；OpenAI 随后撤回三篇结果，围绕"验证速度与理解深度"的争论贯穿整周。（Nature、MIT 科技评论）</p>
+    <p><b>AI 产业与安全。</b>OpenAI 年化营收在"500 亿"与"700 亿"美元之间出现约 200 亿美元的差异，三名安全研究员被解雇后发表公开信；Anthropic 半个月内补齐第三款 5.5 系列模型，DeepSeek 被曝新一轮融资超 800 亿元，月之暗面估值约 500 亿美元，腾讯被曝签下约 70 亿美元海外算力租约，Mistral 发布 Large 4。（金十、AI 聚合、HN）</p>
+    <p><b>地缘与经济。</b>中东从袭船升级到航线控制权争夺，三艘美国航母向该地区集中；俄乌在迈阿密举行会谈，美国放宽对俄柴油制裁；中欧就混动汽车贸易达成谅解，避开了全面贸易战；美国 10 年期国债收益率一度升破 5%，资金持续涌入货币市场基金。（金十、联合早报）</p>
+    <p><b>加密。</b>比特币与以太坊从高位回落，一周内 Polymarket 给"比特币 10 月触及 90,000 美元"的概率从 48.5% 降到 29.5%，全网单日爆仓 7.59 亿美元，美国政府转移查扣比特币、Ledger 用户钱包被盗，同时 CFTC、泰国 SEC、西班牙等地密集推进监管。（吴说、Polymarket）</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（12 个源，覆盖 10 月 8–10 日，含已读与未读）· Hacker News 前 100 名 · Polymarket 热点榜（24 小时成交量前 20，剔除体育盘）。<br>
+    由 pi 自动生成 · 今日窗口内 786 条未读已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
