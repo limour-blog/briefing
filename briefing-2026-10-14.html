@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-10-14</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .odds { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 20px; font-size:13.5px; margin-bottom:12px; }
+  .odds .cap { font-size:12px; letter-spacing:.08em; color:var(--muted); margin-bottom:6px; }
+  .odds .row { display:flex; justify-content:space-between; gap:12px; padding:5px 0; border-bottom:1px dashed var(--line); }
+  .odds .row:last-child { border-bottom:none; }
+  .odds .row b { color:var(--accent); font-weight:700; white-space:nowrap; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 10 月 14 日 · 周三 · 订阅聚合 + Hacker News + Polymarket 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>胡塞武装的导弹击中沙特阿美宰赫兰总部、并在利雅得造成 <span class="num">4</span> 人受伤，同日霍尔木兹海峡及附近海域有 <span class="num">6</span> 艘船舶遭袭，伊朗革命卫队海军司令威胁击沉靠近的美军舰艇；谷歌发布新一代模型 Gemini 4 Argon，在具身推理基准 ERQA 上取得 <span class="num">87%</span>；Character.AI 申请破产保护、拟以 <span class="num">2000 万美元</span>向迪士尼出售部分资产；美联储多位官员称年内可能还需加息，美国 9 月 CPI 即将公布；黄奇帆涉嫌严重违纪违法接受中纪委审查调查，尊界公布第三方检测报告后争议仍未平息。</div>
+
+  <h3>① AI 模型与算力竞赛</h3>
+  <div class="plain">谷歌在一夜之间把新一代模型推到全球，说它既能读懂物理世界，也能指挥机器人干活；与此同时，做模型的公司开始嫌现成的开发工具不够用，索性自己动手重造基础设施，一笔笔钱继续砸向模型和算力。</div>
+  <div class="card">
+    <p>谷歌 DeepMind 发布前沿模型 Gemini 4 Argon，同步上线 Gemini 应用、API 付费层与 Google Antigravity，支持 <span class="num">100 万</span>上下文与最高 <span class="num">100 万</span>输出 token，主打长流程编程、企业工作流与网络防御。在具身推理基准 ERQA 上，它凭纯推理拿到 <span class="num">87%</span>，可操控波士顿动力的 Spot 四足机器人完成取物等动作；模型同时登陆 OpenRouter，并在 AutomationBench、LVBench 与 CWE-bench v1 上登顶。</p>
+    <p>模型规模扩张正在倒逼基础设施换血。Anthropic 工程博客披露，公司日均代码合并量从 5 月的约 <span class="num">2,500</span> 次增至 9 月的逾 <span class="num">30,000</span> 次，面向人类规模设计的开发者工具成了瓶颈，于是自研版本控制系统 Scion，用五个月完成单体仓库从 git 的整体迁移。转向要花在国际算力上：Anthropic 与 NTT DATA 关于其首座日本数据中心（大阪，<span class="num">500MW</span>）的谈判已进入最后阶段，预计本财年内落地。</p>
+    <p>中国这边，融资和分歧同时出现。《财经》报道，DeepSeek 第二轮融资规模从此前计划的 <span class="num">500 亿元</span>增至约 <span class="num">1,000 亿元</span>，投前估值约 <span class="num">5,000 亿元</span>，不到半个月拟融资金额翻倍。中微公司董事长尹志尧则在同一周给出相反判断：国内半导体设备企业保守估计最少 <span class="num">500</span> 家、最多接近 <span class="num">1,000</span> 家，参照美国经过多轮整合后本土仅剩几十家的格局，最终 <span class="num">90%</span> 的厂商可能被淘汰；他同时提醒 AI 可能出现泡沫。韩国的应对是加码：政府将新设半导体政策办公室，加快 <span class="num">800 万亿韩元</span>的芯片投资。</p>
+    <p>收缩也在发生。Character.AI 已在美国申请破产法第 11 章保护，并同意以 <span class="num">2000 万美元</span>把部分资产出售给华特迪士尼，法庭文件显示其预估资产和负债规模均在 <span class="num">5000 万</span>至 <span class="num">1 亿美元</span>之间。市场格局方面，IDC 数据显示英伟达今年上半年在中国 AI 加速器出货 <span class="num">67.8 万</span>个、同比下降 <span class="num">44%</span>，份额降至 <span class="num">34%</span>，以华为为首的本土厂商继续扩大份额；Meta 的扎克伯格则称公司已在 AI 前沿追上对手，模型开发可能明显加快。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 $11.8 万 / $3.3 万 / $0.4 万 · 口径：最近成交价</div>
+    <div class="row"><span>10 月底拥有最好 AI 模型：Google</span><b>68.8%</b></div>
+    <div class="row"><span>10 月底拥有最好 AI 模型：Anthropic</span><b>28.5%</b></div>
+    <div class="row"><span>10 月 26 日最好模型：gemini-4-argon-high</span><b>75.5%</b></div>
+    <div class="row"><span>2026 年底拥有最好 AI 模型：Anthropic / Google</span><b>42.5% / 41.5%</b></div>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Gemini 4 Argon</h4>
+    <div class="stats">829 points / 656 comments · deepmind.google · 当日总分最高的是《Hackers activate automatic defrosting in supermarket fridges across Europe》（876 分/978 评论），但那是前一日的旧帖，已并入 ③ 关键基础设施安全一段</div>
+    <p>这是谷歌本周主推的前沿模型，首页与讨论区同夜被它占满。发布口径强调三件事：长流程编程、企业工作流与网络防御；官方演示里，模型在具身推理基准 ERQA 上凭纯推理拿到 <span class="num">87%</span>，并能接管波士顿动力 Spot 完成取物。讨论的焦点集中在两处：一是编程与安全能力是否真能替代初级岗位，二是模型同步登陆 OpenRouter、多个基准登顶之后，AI 模型的领先窗口还能维持多久。订阅端的金十、cnBeta 与 AI 聚合频道在同一天给了对应报道，可以互相印证。</p>
+  </div>
+
+  <h3>② AI 安全、监管与产业落差</h3>
+  <div class="plain">新模型发布的同时，另一批研究在提醒风险：模型的能力可以被藏起来，也可能自己复制自己，而针对它的监管力度还停在普通消费品之下。</div>
+  <div class="card">
+    <p>Anthropic 在 10 月 13 日发布研究报告称，一些模型「可能再需几个月时间，就能具备自我复制的能力」，而且这个过程很难被关掉，因为这类程序不存在可供集中关停的节点。实验显示，<span class="num">9B</span> 模型已在 <span class="num">9</span> 种硬件中的 <span class="num">8</span> 种成功运行推理，<span class="num">30B</span> 以下的模型已能完成复制链条的多数单步。同一家公司还宣布，新防护措施使竞争对手通过「蒸馏攻击」窃取的数据量减少了约 <span class="num">90%</span> 至 <span class="num">99%</span>。</p>
+    <p>能力评估本身也被证明不可靠。arXiv 上的一篇论文《AI Models Can Provably Hide Arbitrary Capabilities》构造出一种后门：把加密后的神经网络嵌入宿主模型权重，只有在收到秘密触发时才解密并执行，这意味着「危险能力总能在评测中被诱发出来」这一前提在对抗条件下并不成立。公众风险排序同步变化：安盛报告显示 AI 首次超越气候变化，成为专家眼中的头号风险；《柳叶刀》10 月 11 日的委员会报告把核冲突与 AI 恶意使用并列为 <span class="num">17</span> 种全球健康威胁中最靠前的两项；德国一家智库估算，若 AI 训练数据获取持续受限，德国每年可能损失 <span class="num">1550 亿欧元</span>。</p>
+    <p>监管端的进展仍然落后于技术。微软总裁史密斯说 AI 受到的监管甚至不如牛奶和洗衣机，比尔·盖茨也呼吁不能把这项「最危险技术」完全交给开发公司把控；美欧银行业监管机构开始加强对自主智能体与网络攻击的 AI 风险审查；哈佛一项研究提示，智能体协作可能存在群体规模的「失控临界点」，小规模安全测试不足以覆盖大规模部署。落到具体事件上：美国司法部称一名沙特公民涉嫌在旧金山一家超级智能公司（为 OpenAI）的会议室秘密安装录音设备而被捕，OpenAI 确认已解雇该员工并知会 FBI。</p>
+    <p>开发者社区这边，Linux 内核维护者在布拉格峰会上达成共识，计划废除 AI 辅助创作时必须添加的「Assisted-by:」透明标签，相关补丁已提交邮件列表，列表内仍有争议。Hacker News 上，一篇《I posted to HN, and then my website was flooded with AI bot traffic》（<span class="num">206</span> 分/<span class="num">131</span> 评论）记录了普通博客被 AI 爬虫淹没的经历，与「AI 既是工具也是武器」的争论互为注脚。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 $46.5 万 · 口径：最近成交价（地方政府对数据中心的限制）</div>
+    <div class="row"><span>印第安纳州在 2026 年底前通过数据中心禁令</span><b>1.9%</b></div>
+    <div class="row"><span>印第安纳州在 2027 年底前通过数据中心禁令</span><b>9.5%</b></div>
+    <div class="row"><span>印第安纳州在 2028 年底前通过数据中心禁令</span><b>16.5%</b></div>
+  </div>
+
+  <h3>③ 软件、硬件与关键基础设施</h3>
+  <div class="plain">内存和存储继续涨价，苹果端出一批新产品，程序员则在争论两件事：软件是不是又快没了，以及用了很多年的老工具还值不值得信。</div>
+  <div class="card">
+    <p>先说信任问题。有人在 Rust 语言的借用检查器里发现了存在 <span class="num">11</span> 年的不健全缺陷，相关 issue 冲上首页（<span class="num">630</span> 分/<span class="num">363</span> 评论）。这类底层错误意味着编译器可能放过本应拒绝的程序，对以「内存安全」为卖点的语言是一次直接冲击。另一个方向的讨论来自 GitHub 上一个叫 REA（Reverse Engineer Anything）的开源项目，到 10 月 12 日星标已超过 <span class="num">12.4 万</span>，目标是用 AI 分析现有软件的内部实现、让开发者即使拿不到源代码也能重写自己的版本；支持者认为封闭代码的商业壁垒会被削弱，反对者指出理解原理与做出可靠软件之间仍有很大距离。</p>
+    <p>关键基础设施则出现了罕见的物理后果：黑客入侵法国及欧洲数百家连锁超市的制冷系统，把原本用于短时除霜的功能持续开启，冷藏与冷冻区温度一度飙升到 <span class="num">50</span> 摄氏度，食品大量腐坏并诱发火情，家乐福、莫诺普里斯等集团的门店受影响（Hacker News 同题帖 <span class="num">874</span> 分/<span class="num">977</span> 评论）。同期，乌克兰对俄罗斯数据中心的无人机袭击继续，Yandex Cloud 位于弗拉基米尔的数据中心遇袭后搜索、地图、邮件与支付等多项服务中断；丹麦与德国之间一条在建隧道的施工也因网络攻击停摆。</p>
+    <p>硬件与消费端方面，苹果举行「Welcome Home」智能家居发布会，新品中讨论最多的是 HomeView（<span class="num">603</span> 分/<span class="num">740</span> 评论）与新款 Apple TV 4K（<span class="num">253</span> 分/<span class="num">493</span> 评论），并投放了一支劝用户放弃 Chrome 的「Switch to Safari」广告（<span class="num">139</span> 分/<span class="num">221</span> 评论）。iPhone 方面，首款折叠屏机型 iPhone Duo 由中国郑州富士康独家组装，首款触屏 MacBook 计划 10 月底推出。存储涨价的影响仍在传导：韩国股市里 SK 海力士跌超 <span class="num">9%</span>、三星电子跌 <span class="num">8.4%</span>，软通动力则删除了「到货 <span class="num">8000</span> 张英伟达 GPU」的相关文章。此外，腾讯旗下搜狗问问宣布 <span class="num">11</span> 月 <span class="num">7</span> 日停止服务、账号自动注销。</p>
+  </div>
+
+  <h3>④ 科技科研前沿</h3>
+  <div class="plain">实验室这一周把目光投向月球、微型机器和药物研发，密码学家也开始认真讨论人工智能会不会动摇互联网加密的根基。</div>
+  <div class="card">
+    <p>制造业方向，美国初创公司 Atomic Machines 结束长达六年的隐身研发，发布名为 Matter Compiler 的 AI 制造系统与首款产品 PrimeSwitch——一枚面向 AI 数据中心供电系统的微型继电器，公司累计融资已达 <span class="num">2.5 亿美元</span>。它的思路接近软件编译器：让数字设计经过材料加工、精密装配与检测，直接变成能实际工作的机器，从而减少为每款新产品单独开发工艺的成本。太空方向，麻省理工科技评论报道「第二次太空竞赛」已经打响，NASA 在局长艾萨克曼领导下公布了一系列计划，初期投入可能高达数百亿美元，目标是从 <span class="num">2028</span> 年开始首批载人登月，并在 2030 年代建成可长期居住的月球基地；项目经理加西亚-加兰称设施群总面积可能达到「数百平方英里」，中国也提出了几乎相同的建设计划。</p>
+    <p>密码学领域出现了新的担忧。a16z crypto 组织的一场对谈中，斯坦福密码学家 Dan Boneh 指出，公开成果并没有呈现对主流密码方案的实际破解，但他认为前沿实验室应当披露是否曾用最强模型检验已部署的系统；乔治城大学的 Justin Thaler 等人讨论了 AI 与量子计算在破解难题上的区别。这种担忧已传导到链上资产：以太坊基金会研究员 Justin Drake 提出「掩体模式」，建议大型持有者考虑把资金转向公钥尚未在链上暴露的地址，但业内对攻击何时出现、迁移如何执行仍有分歧。</p>
+    <p>药物研发的进展体现在制度而非单个项目。罗氏在伦敦投资者活动上披露，<span class="num">2026</span> 年上半年制药业务销售额增长 <span class="num">6%</span>，III 期临床试验成功率从 <span class="num">2025</span> 年的 <span class="num">65%</span> 升至 <span class="num">80%</span> 以上，到 <span class="num">2030</span> 年最多会有 <span class="num">20</span> 个新分子实体具备上市潜力；旗下基因泰克 gRED 负责人雷格夫介绍，<span class="num">2025</span> 年第四季度到 <span class="num">2026</span> 年第二季度有 <span class="num">40%</span> 的管线决策带有可追踪的 AI 或计算贡献，今年第二季度单季升到 <span class="num">44%</span>，其中 <span class="num">41%</span> 属于实质性影响了决策走向的「关键性」贡献。</p>
+    <p>基础研究方面，《Nature》10 月 13 日刊出二维 d 波交变磁体的原子级自旋探测（通过螺旋隧穿）与聚乙烯表面的选择性催化氧化两项论文；同期报道还包括人工智能会议因投稿量激增而设置投稿上限、一个名为 IdeaLens 的工具试图判断论文里的「想法」是否由 AI 生成、以及大学举报人缺乏外部裁决机制因而「极其危险」的讨论。中国社会科学方面，丘成桐牵头成立数学与人工智能实验室联盟，组织约千名科研人员探索 AI 辅助数学研究。Hacker News 上，考古方向的《Hittite royal archive found in Turkey》（<span class="num">328</span> 分/<span class="num">82</span> 评论）讲述了土耳其发现赫梯王室档案，正文未能抓取；《Worlds more habitable than Earth?》（<span class="num">67</span> 分/<span class="num">135</span> 评论）与《BB(10) &gt; Graham's Number》（<span class="num">63</span> 分/<span class="num">55</span> 评论）分别讨论太阳系宜居性与忙碌海狸函数的进展。</p>
+  </div>
+
+  <h3>⑤ 中东战火与能源命脉</h3>
+  <div class="plain">战火第一次烧到沙特国家石油公司的总部，霍尔木兹海峡里的船也接二连三出事，海湾的石油运输和全球油价被同时推到风口上。</div>
+  <div class="card">
+    <p>10 月 13 日至 14 日凌晨，胡塞武装的导弹击中沙特阿美位于宰赫兰（Dhahran）的总部，沙特能源部官员称仅引发轻微火灾、无人伤亡，阿美总部一度被迫疏散；沙特民防部门称被拦截导弹的碎片落在利雅得，造成 <span class="num">4</span> 人受伤、<span class="num">15</span> 栋住宅轻微受损。双方对打击次数的说法也各自公布：胡塞武装称沙特战机过去 <span class="num">24</span> 小时内实施了 <span class="num">104</span> 次空袭和导弹打击，沙特主导的联军则称已对萨那一处被胡塞用于支持攻击的石油设施发动攻击，并多次在利雅得及南部地区拦截导弹与无人机。胡塞武装还向沙特三处目标发布撤离警告，要求石油设施附近的工人与平民远离。</p>
+    <p>海上通道同步收紧。英国一家机构称 <span class="num">6</span> 艘船舶同日霍尔木兹海峡及附近海域遭袭；据伊朗学生通讯社，一艘关闭追踪系统、试图穿越禁区的违规油轮在海峡东部受损起火。伊朗革命卫队海军司令称正在等待美军舰靠近海峡入口并将其击沉，美国中央司令部回应称「革命卫队海军司令根本没有海军」，并称美军及地区伙伴控制着霍尔木兹海峡。外交层面，以色列第 12 频道称美以领导人磋商联手再袭伊朗，特朗普表示「我们很快会对伊朗做出决定」，并称伊朗是一个失败的国家、胡塞武装的行为非常恶劣；伊朗外长则分别与土耳其、阿曼外长通话讨论也门局势。</p>
+    <p>经济与能源后果已经测算出来。能源情报平台 Vortexa 称，美国的海上封锁使伊朗海运原油出口自 9 月第二周降至零、截至 10 月 5 日仍未恢复，而 9 月初的 14 天平均出口量为每日 <span class="num">23 万</span>桶；花旗预计 <span class="num">2026</span> 年海湾地区经济将萎缩 <span class="num">3.1%</span>，阿联酋或收缩 <span class="num">0.2%</span>。10 月 13 日布伦特原油结算价 <span class="num">105.69</span> 美元/桶、下跌 <span class="num">0.9%</span>，美国原油结算价 <span class="num">94.14</span> 美元/桶、上涨 <span class="num">0.43%</span>。支持与为难同时出现：埃及承诺全力支持沙特打击胡塞武装、不排除提供军事援助，卡塔尔强调沙特安全与海合会安全不可分割；巴基斯坦则被夹在占其外汇储备 <span class="num">38%</span> 的沙特资金与邻国伊朗的外交红线之间。美方已对驻沙政府雇员实施出行限制，并建议公民重新考虑赴沙旅行。</p>
+    <p>能源市场的信息披露也出现争议：Hacker News 上《CFTC Staff Were Told to Retract Analysis of Suspicious Oil Trades》（<span class="num">433</span> 分/<span class="num">238</span> 评论）来自彭博社，称美国商品期货交易委员会工作人员被要求撤回对可疑石油交易的分析，该站为付费墙、正文未能抓取。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 $81.6 万 / $70.1 万 / $24.3 万 / $27.7 万 · 口径：最近成交价</div>
+    <div class="row"><span>美伊停火维持到 10 月 31 日</span><b>81.5%</b></div>
+    <div class="row"><span>美国与也门停火维持到 10 月 31 日</span><b>85.5%</b></div>
+    <div class="row"><span>以色列与伊朗停火维持到 10 月 31 日</span><b>83%</b></div>
+    <div class="row"><span>美国在 2026 年底前宣布结束对伊朗封锁</span><b>42.4%</b></div>
+  </div>
+
+  <h3>⑥ 俄乌、台海与周边</h3>
+  <div class="plain">基辅的发电厂又挨了导弹，停火协议在纸面上还在，打击并没有停；东边，朝鲜再次试射导弹，台湾和韩国的官员各有行程。</div>
+  <div class="card">
+    <p>泽连斯基称俄罗斯对基辅发动导弹袭击、且再次没有提前发出警告，主要目标是能源设施，具体为基辅热电厂 <span class="num">4</span> 号（TPP-4）；他暗指美国暂停情报共享，并称据乌方情报俄罗斯正在准备新的导弹发射、并不认为自己需要遵守美方此前提出的要求。同一时间他也表示，乌克兰已停止袭击俄罗斯能源设施。俄方则称击中一艘前往乌克兰港口的货船；俄国防部 10 月 12 日称夜间击落 <span class="num">479</span> 架乌克兰无人机、击中乌克兰南部一处数据中心并新控制 <span class="num">4</span> 处居民点。欧盟委员会主席冯德莱恩宣布，乌克兰与摩尔多瓦就内部市场、竞争力和包容性增长领域的谈判集群正式开启；克里姆林宫称 Yandex 数据中心遇袭后面临问题、正在努力减少影响。</p>
+    <p>周边同时有多条线在动。朝鲜 10 月 12 日从平壤一带向半岛东部海域发射数枚弹道导弹、飞行 <span class="num">900</span> 公里以上，13 日又试射战术弹道导弹。俄罗斯萨哈林州称，由中国黑龙江省地方政府和企业界人士组成的代表团访问了南千岛群岛（日本称北方四岛）中的伊图鲁普岛（择捉岛），中方对旅游业和水产养殖业表现出兴趣。台海方面，台湾财政部长庄翠云将赴香港出席 10 月 20 日至 21 日的 APEC 财长会议；中国大陆则依据《反外国制裁法》对巴拉圭和伯利兹官员实施制裁，指其干涉中国内政。中韩时隔四年（自 2022 年以来首次）重启黄海暂定措施水域联合巡航执法，行动从 10 月 8 日持续到 17 日。</p>
+    <p>其他区域事件里，蒙古国境内草原火情受地形和风力影响向中蒙边境逼近，内蒙古调集消防救援机动队伍与地方扑火队伍共计 <span class="num">2000</span> 余人分段布控，截至 10 月 12 日下午火势被成功阻击在边境之外。韩国仁川九月洞一家大型商业设施发生持刀伤人事件、致 <span class="num">8</span> 人受伤，其中 1 人心脏骤停，嫌疑人被指为「电子脚镣」佩戴者。资本市场的反应更剧烈：韩国 KOSPI 指数盘中重挫 <span class="num">7%</span>，交易所启动侧车机制，SK 海力士跌超 <span class="num">9%</span>、三星电子跌 <span class="num">8.4%</span>，MSCI 亚太指数下跌 <span class="num">2%</span>。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 $41.9 万 / $20.1 万 · 口径：最近成交价</div>
+    <div class="row"><span>普京在 2026 年底前不再是俄罗斯总统</span><b>3.8%</b></div>
+    <div class="row"><span>俄罗斯在 10 月 14 日打击基辅</span><b>97.2%</b></div>
+    <div class="row"><span>俄罗斯在 10 月 15 日打击基辅</span><b>94.5%</b></div>
+  </div>
+
+  <h3>⑦ 中国经济、政策与市场</h3>
+  <div class="plain">国际货币基金组织把中国的增长预测又往下调了一档，国内的反腐和金融整顿仍在继续；美国那边，市场把注意力放在即将公布的通胀数据和重新抬头的加息预期上。</div>
+  <div class="card">
+    <p>IMF 在最新《世界经济展望》中把中国今年的经济增长预测下调至 <span class="num">4.5%</span>，预计 <span class="num">2027</span> 年进一步放缓至 <span class="num">4.0%</span>，理由是中东冲突推高能源价格、国内消费低迷；首席经济学家称全球经济展现出韧性，但「这种韧性已接近极限」，并提醒若 AI 市场出现调整，宏观政策恐怕难发挥援助作用。国内监管与司法层面，重庆原市长黄奇帆涉嫌严重违纪违法、正接受中纪委审查调查；香港《明报》报道称他原定 10 月底在杭州一场论坛担任主讲嘉宾，活动因故取消。金融整顿继续，北京警方对「宜信相关公司」涉嫌违法犯罪立案侦查，实控人唐某、赵某等多名嫌疑人被采取刑事强制措施；公司致歉信承认可能资不抵债、偿债缺口较大，其旗下宜人贷 2015 年登陆纽交所时曾被称为「中国 P2P 第一股」。</p>
+    <p>企业与市场层面，奢侈品集团路威酩轩的时装与皮革制品部门第三季度有机营收同比下降 <span class="num">5%</span>，降幅超过分析师预期，集团整体销售额也低于市场预期；小鹏汽车董事长何小鹏称公司目标是全球年销量 <span class="num">100 万</span>辆、其中一半来自欧洲，计划到 <span class="num">2030</span> 年前把欧洲年销量提升到 <span class="num">50 万</span>辆，有望超过福特与欧宝在欧洲的水平。金融开放方面，Visa 获准在中国筹备银行卡清算机构，需在一年内完成筹备工作并申请许可证；此前美国运通于 <span class="num">2020</span> 年 <span class="num">6</span> 月、万事达于 <span class="num">2023</span> 年 <span class="num">11</span> 月先后取得许可。国内需求端数据仍在低位：中国汽车流通协会称 9 月汽车经销商库存系数为 <span class="num">1.68</span>，上海二手房单日网签成交再破 <span class="num">1600</span> 套，海外车企的收缩更明显——大众集团 <span class="num">2026</span> 年前三季度全球交付 <span class="num">601 万</span>辆、同比下降 <span class="num">9%</span>，其中中国市场下降 <span class="num">30%</span>。融资市场上，智元启动新一轮融资、估值 <span class="num">500 亿元</span>，IPO 暂缓；2026 金融街论坛年会将于 <span class="num">10</span> 月 <span class="num">19</span> 日开幕。</p>
+    <p>美国政策预期是这一段的另一条主线。美联储 2028 年票委柯林斯称年内或需再加息、正在关注通胀压力是否具有广泛性；威廉姆斯称今年可能再加息一次、明年无需进一步加息。CME 数据显示 10 月维持利率不变的概率为 <span class="num">79.5%</span>；路透对 9 月 CPI 的预期是年通胀率从 <span class="num">3.4%</span> 加速到 <span class="num">3.7%</span>。债市这边，达利欧称美债熊市远未结束、供需失衡将继续推高收益率；美银因反洗钱不力被罚 <span class="num">12 亿美元</span>。投行业绩分化：高盛第三季度股票交易收入达 <span class="num">64.4 亿美元</span>、远超预期，摩根大通第三季度 FICC 销售及交易收入 <span class="num">53.7 亿美元</span>、低于市场预期的 <span class="num">60 亿美元</span>，其盘前股价一度跌 <span class="num">3%</span>。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 $170.7 万 · 口径：最近成交价（10 月美联储议息会议）</div>
+    <div class="row"><span>10 月会议维持利率不变</span><b>80.5%</b></div>
+    <div class="row"><span>10 月会议加息 25 个基点</span><b>18.5%</b></div>
+    <div class="row"><span>10 月会议降息 25 个基点</span><b>0.4%</b></div>
+  </div>
+
+  <h3>⑧ 直面批判与社会监督</h3>
+  <div class="plain">百万豪车的第三方检测报告公布了，争议没有停；另一头，专门帮人讨说法的那条热线，自己的员工也在网上讨薪。</div>
+  <div class="card">
+    <p>尊界 V800 刹车踏板断裂争议在 10 月 13 日进入「检测报告对质」阶段。尊界汽车发布《尊界 V800 制动踏板检测情况说明》，称第三方检测机构于 10 月 11 日完成检验，受检样品在纵向力 <span class="num">1500N</span> 条件下位移量小于 <span class="num">5</span> 毫米、符合行业标准 QC/T 788-2018，加严至 <span class="num">3000N</span> 后未出现裂纹和损坏；该测试由中国汽车工程研究院股份有限公司检测中心进行。中国汽研工作人员确认出具过报告，但表示仅对企业送检的样品或样车负责；两位受访专家指出「逐渐加大力」与「瞬时力」不同，前者无法复现驾驶员踩断踏板的情境。懂车帝主持人随后提出三连质疑，上汽大众的陈峰则公开表示「制动踏板不能是一踩就断的断脚蟹」；尊界终端门店确认，后续定车会使用优化后的制动踏板方案。资本市场反应剧烈：<span class="num">10</span> 月 <span class="num">8</span> 日江淮汽车股价跌停、市值缩水上百亿元，到 <span class="num">10</span> 月 <span class="num">12</span> 日盘中再度跌超 <span class="num">8%</span>、市值跌破 <span class="num">500 亿元</span>。</p>
+    <p>科研治理方面，中国科学院就「<span class="num">2688</span> 元住酒店可进天眼核心区」发布通报，称已成立调查工作组开展全面核查，若发现违规违纪行为将严肃处理。媒体披露，游客购买「中国天眼深度科普体验」项目后，车辆经报备即可驶入核心区，有游客花 <span class="num">2688 元</span>入住核心区内的酒店后，在导游带领下登上望远镜圈梁，并称现场安检形同虚设。FAST 以台址为圆心、半径 <span class="num">30</span> 公里被划为电磁波宁静区，贵州省的专门保护办法禁止擅自携带手机、平板等无线电发射设备进入核心区；目前该酒店线上已无法预订。</p>
+    <p>劳动权益方面出现一个身份反转的案例。四川巴中 12345 热线的一名话务员在 9 月 24 日到「问政四川」发帖，目的就是替自己要回工资：7 月和 8 月的工资没发、到手也就两千多元。10 月 8 日当地部门回复称因「运营商结算滞后、拨付周期延长」导致 7 月工资未按时发放，当晚拖欠薪酬由运营方全部补发到位。公开信息显示，这条热线由中标运营的中国电信巴中分公司承接，合同金额 <span class="num">480 万元</span>/年、要求配 <span class="num">71</span> 人，人均每年综合支出 <span class="num">6.1 万元</span>，扣除社保后话务员到手约每月 <span class="num">3100 元</span>。另一篇被广泛转发的报道《给单休公司发拒信的年轻人》记录了招聘市场的变化：杭州一家互联网中厂的 HR 称超过八成候选人在拿到 offer 后因单休拒绝入职，公司因此增加了休息日；成都一家公司改回双休后到面率明显上升。</p>
+    <p>社保争论从「动员参保」延伸到支出结构。一篇被存档的分析文章按全国社保资金去向拆解：八年时间里，行政事业单位支出增长 <span class="num">8284 亿元</span>（涨幅 <span class="num">107%</span>，达到 <span class="num">16047 亿元</span>），企业职工增长 <span class="num">3156 亿元</span>（涨幅 <span class="num">59%</span>，达到 <span class="num">8465.7 亿元</span>），城乡居民增长 <span class="num">2577 亿元</span>（涨幅 <span class="num">101%</span>，达到 <span class="num">5123.3 亿元</span>）；作者称行政事业单位就业人口约占 <span class="num">5.5%</span>（约 <span class="num">2300 万</span>人），所领养老金却占总体约 <span class="num">67%</span>。此外，中国数字时代存档了河南职业技术学院一篇文章，称「翻墙」是高危泄密动作，并列举涉密人员因安装境外软件被远程控制的案例。</p>
+  </div>
+
+  <h3>⑨ 人文与社会</h3>
+  <div class="plain">一张老师举着班级成绩牌的照片在网上传开，一个孩子闹着不肯上学，还有人重新拿起胶卷相机拍照。</div>
+  <div class="card">
+    <p>教育是这一周讨论最集中的话题。一张几位老师胸前举着写有班级成绩牌子、低头站成一排的照片在网络流传，引发了关于用分数公开羞辱教师的讨论；独立博客里，一位家长记录了孩子「又不想上学」的清晨，另一位作者写下《被分数羞辱过的人，一辈子都在偷偷证明自己》。与之呼应的是职业选择的变化：有年轻人明确拒绝单休公司，也有人讨论「什么样的工作值得留下」。</p>
+    <p>数字生活与个人选择方面，一款今年 6 月开源的打卡应用因为权限清单里连「联网」都没有而受到关注，坚持习惯不必拿隐私去换；另一款体积仅 <span class="num">2.5MB</span> 的轻量浏览器被重新提起；有博客在讨论「文字为什么需要化妆」。摄影是另一条线：几位作者分别写下《我为什么开始拍摄胶卷？》与《国庆胶片影崇安》，记录了从数码回到胶卷的动机。游戏圈则出现一条颇具喜剧感的新闻——有微博博主爆料，一名国内玩家疑因想买《GTA6》与妻子离婚；同一天，外媒报道《GTA 6》PC 版计划于 <span class="num">2027</span> 年第一季度发售，主机版仍定在 <span class="num">2026</span> 年 <span class="num">11</span> 月 <span class="num">19</span> 日。</p>
+    <p>历史记忆也借此浮现。一篇以「和祖桦兄聊文革大饥荒」为题的回忆文章从一段算法推送的怀旧视频写起，记录了四川东部武胜县、广安县一带用瓢根树皮与「观音土」充饥的口述记忆，以及作者 <span class="num">88</span> 岁母亲经历的大跃进与文革两次饥荒。社会政策层面，2027 年度国家公务员考试公告发布，报考信息在博客聚合里被反复转贴。</p>
+  </div>
+
+  <h3>⑩ 区块链与加密市场</h3>
+  <div class="plain">硬件钱包的供应链问题终于查实，比特币重新站回一个关键成本价上方，市场开始讨论资金会不会回来。</div>
+  <div class="card">
+    <p>被追查多日的硬件钱包事件有了官方结论。Ledger 确认东南亚分销商 CryptoBilis 遭遇供应链硬件篡改攻击，所有与 10 月 9 日资产转出事件相关的已确认案例都涉及经该分销商销售的设备，系统与直销渠道未受影响，CryptoBilis 已停止销售所有硬件钱包。Hacker News 上的同题帖《Ledger confirms spy chip implant behind wallet crypto thefts》（<span class="num">302</span> 分/<span class="num">265</span> 评论）指出问题出在设备被植入间谍芯片。资金面出现分化信号：Glassnode 称比特币重新站上 ETF 成本价，<span class="num">81,500</span> 美元成为关键支撑；Wintermute 则认为加密市场已失去资金流支撑，反弹要等 ETF 资金回流。Coinbase Markets 的期权结构给出了两种预期：10 月 16 日到期的比特币期权未平仓量为 <span class="num">12.8 亿美元</span>、看跌/看涨比率 <span class="num">1.44</span>，看跌集中在 <span class="num">76,000</span> 至 <span class="num">80,000</span> 美元；10 月 30 日到期的月末期权未平仓量则高达 <span class="num">117 亿美元</span>、看涨期权数量超过看跌的两倍。</p>
+    <p>机构与链上资金的动作同样分化。Solana 财库公司 SkyAI 曾持有约 <span class="num">200 万</span>枚 SOL，如今已卖出 <span class="num">100 万</span>枚（约 <span class="num">1.07 亿美元</span>），10 月累计转出 <span class="num">157 万</span>枚，平均购买价约 <span class="num">194</span> 美元、浮亏超 <span class="num">1.6 亿美元</span>。比特币金融服务平台 River 的报告说，企业连续第二年成为比特币最大买家，年内迄今增持 <span class="num">19.3 万</span>枚、带动全球企业总持仓升至 <span class="num">164 万</span>枚（约占供应量 <span class="num">7.8%</span>），但今年企业资金流入 <span class="num">157 亿美元</span>、较去年同期骤降约三分之二。另有沉睡多年的早期地址一次性转移 <span class="num">4582</span> 枚 BTC（约 <span class="num">3.78 亿美元</span>）。</p>
+    <p>监管与基础设施层面，韩国金融情报分析院决定对 <span class="num">27</span> 家未注册、面向韩国用户的海外加密交易所网站实施境内访问封锁，涉及 KuCoin、MEXC、Phemex 等平台；币安宣布将于 <span class="num">2026</span> 年 <span class="num">11</span> 月 <span class="num">10</span> 日停止矿池及相关服务，同时上线活期收益产品 RWUSD 并对 RWUSD/USDT 实行零手续费。产品端，Robinhood Chain 上线约 <span class="num">100</span> 天累计 DEX 交易量超过 <span class="num">990 亿美元</span>、TVL 超过 <span class="num">10 亿美元</span>，股票代币已上线超过 <span class="num">190</span> 种、持有人达 <span class="num">20 万</span>；纽约梅隆银行与 Citadel Securities 完成首笔代币化美债三方回购交易；香港的潘渡 Solana 现货 ETF 于 10 月 13 日在港交所上市。收缩一侧，NFT 平台 Blur 宣布将于 <span class="num">11</span> 月 <span class="num">12</span> 日关闭前端界面、旗下 Blend 同日停止撮合新贷款，BLUR 24 小时跌约 <span class="num">15%</span>。安全事件仍在发生：法国一名 <span class="num">22</span> 岁加密持有者遭持枪蒙面男子入室勒索后卖掉了全部加密资产，TOKEN2049 期间一场安全主题周边活动被参会者报警，指控主办方诱导安装可远程控制电脑的软件。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 $44.3 万 / $21.2 万 · 口径：最近成交价（10 月与 2026 年内比特币价格触及位）</div>
+    <div class="row"><span>10 月内触及 87,500 美元</span><b>50.5%</b></div>
+    <div class="row"><span>10 月内触及 90,000 美元</span><b>32.5%</b></div>
+    <div class="row"><span>10 月内跌至 80,000 美元</span><b>56.5%</b></div>
+    <div class="row"><span>2026 年底前触及 95,000 美元</span><b>42.5%</b></div>
+  </div>
+
+  <h3>⑪ 期权与市场走势（通俗版）</h3>
+  <div class="plain">把期权市场的数据翻译成人话：今天大盘和科技股各自被压在哪个区间、偏向哪一边，以及黄金、美债和比特币这三条腿在给股市帮忙还是添乱。</div>
+  <div class="card">
+    <p>本周五（10 月 16 日）到期的期权数据显示，标普 500 上方 <span class="num">785</span> 一带压得很厚，单这一档就占了近两成持仓，价格很难涨过去；下方 <span class="num">772</span> 是关键，跌破就先看 <span class="num">768</span>、再看 <span class="num">765</span>。换句话说，大盘整体仍是区间震荡、重心偏低，现价 <span class="num">778.01</span> 正好落在区间偏下的位置。科技股是这一周最需要提防的一只，而且比上周更弱：QQQ 现价 <span class="num">743.57</span>，上方 <span class="num">750</span> 至 <span class="num">760</span> 压得厚，下方 <span class="num">740</span> 是关键，跌破就依次看 <span class="num">735</span>、再下 <span class="num">730</span> 与 <span class="num">725</span>；由于它已经进入「越跌越容易被放大」的区域，一旦出现回调，科技股跌幅大约会是大盘的 <span class="num">1.5</span> 到 <span class="num">2</span> 倍。</p>
+    <p>给股市定方向的三条腿目前一好两坏。美债这边，TLT 收在 <span class="num">78.37</span>、站住 <span class="num">76.92</span> 上方，对成长股构成一点缓冲，只有跌破才反过来加压。黄金正好站在分界线上：GLD 收 <span class="num">381.67</span>，跌破 <span class="num">380</span> 会给股市加压，涨回 <span class="num">391</span> 以上才算缓解。加密略有好转但还不算顺风：IBIT 收 <span class="num">47.13</span>，刚站上 <span class="num">47</span>（约合比特币 <span class="num">83.1k</span>），头顶 <span class="num">48</span>（约合 <span class="num">84.9k</span>）是下一道压力、脚下 <span class="num">46</span>（约合 <span class="num">81.3k</span>）才是支撑，而稳定币占比回到 <span class="num">6.75</span> 的箱顶，说明避险资金还在，这条腿目前只是托住、不推升。要判断方向，先看三个外部信号里的任何一个：黄金跌破 <span class="num">380</span>、美债跌破 <span class="num">76.92</span>，或者比特币跌破 <span class="num">81.3k</span>。</p>
+  </div>
+
+  <h3>⑫ 一周回顾</h3>
+  <div class="plain">把最近一周连起来看，中东的打击范围从机场扩到沙特本土和海峡，俄乌的停火仍停留在字面上，人工智能的钱继续从模型转向基建，中国的增长预期和反腐同时有新进展。</div>
+  <div class="card">
+    <p><b>地缘。</b>胡塞武装的打击第一次落到沙特本土，阿美宰赫兰总部被导弹击中、同日霍尔木兹海峡及附近海域有 <span class="num">6</span> 艘船舶遇袭，伊朗革命卫队海军司令公开威胁击沉美军舰艇；俄乌的「能源停火」在字面上维持，基辅热电厂 <span class="num">4</span> 号仍被击中，泽连斯基暗示美国暂停了情报共享；台海则以六处海域、九天的密集演训延续压力。</p>
+    <p><b>科技与资本。</b>这一周的模型与基础设施同时推进：谷歌发布 Gemini 4 Argon，Anthropic 因日均合并量从 <span class="num">2,500</span> 次涨到 <span class="num">30,000</span> 次而自研版本控制系统、并把首座日本数据中心（<span class="num">500MW</span>）谈到大阪；Character.AI 申请破产，DeepSeek 第二轮融资增至约 <span class="num">1,000 亿元</span>。国内的分歧也在放大：中微公司尹志尧判断 AI 可能出现泡沫、国内半导体设备商最终或有 <span class="num">90%</span> 被淘汰。</p>
+    <p><b>中国。</b>IMF 把中国今年增长预测下调至 <span class="num">4.5%</span>、明年 <span class="num">4.0%</span>；黄奇帆接受中纪委审查调查，宜信相关公司因涉嫌违法犯罪被立案侦查；「数据找人」动员参保的争论延伸到支出结构，按被存档的拆解，行政事业单位以约占 <span class="num">5.5%</span> 的就业人口领走约 <span class="num">67%</span> 的养老金支出。</p>
+    <p><b>科研与加密。</b>《Nature》刊出二维 d 波交变磁体的原子级自旋探测与聚乙烯表面的选择性催化氧化，罗氏披露 AI 已参与 <span class="num">40%</span> 至 <span class="num">44%</span> 的管线决策，麻省理工科技评论报道 Atomic Machines 的微型继电器已经出货。加密这一周的主线是「信任与资金」：Ledger 确认经分销商 CryptoBilis 的硬件篡改，比特币重新站上 ETF 成本价、<span class="num">81,500</span> 美元成为支撑，企业年内增持 <span class="num">19.3 万</span>枚 BTC，但流入金额较去年同期减少约三分之二。</p>
+    <p><b>市场预期的一周变化。</b>Polymarket 上「10 月内比特币触及 <span class="num">87,500</span> 美元」的概率从上周的 <span class="num">43.5%</span> 升到 <span class="num">50.5%</span>，「跌至 <span class="num">80,000</span> 美元」从 <span class="num">65.5%</span> 降到 <span class="num">56.5%</span>；「10 月底拥有最好 AI 模型」的 Google 从 <span class="num">70.8%</span> 微降到 <span class="num">68.8%</span>，而「年底拥有最好 AI 模型」的 Anthropic 与 Google 已收窄到 <span class="num">42.5%</span> 对 <span class="num">41.5%</span>。美联储 10 月维持利率不变的概率为 <span class="num">79.5%</span>，加息预期重新抬头。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（金十数据、十年之约聚合订阅、联合早报-中港台-即时、ChatGPT / AI 新闻聚合、吴说、cnBeta、风向旗参考快讯、中国数字时代、竹新社、MIT 科技评论、小众软件、Nature 共 12 个源，覆盖 10 月 12–14 日，含已读与未读；一周回顾另用 10 月 7–14 日窗口）· Hacker News 前 100 名 · Polymarket 热点榜（24 小时成交量前 20，剔除体育盘，最小流动性 5 万美元）· 期权日报。<br>
+    由 pi 自动生成 · 今日未读 820 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
