@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-10-19</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .odds { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 20px; font-size:13.5px; margin-bottom:12px; }
+  .odds .cap { font-size:12px; letter-spacing:.08em; color:var(--muted); margin-bottom:6px; }
+  .odds .row { display:flex; justify-content:space-between; gap:12px; padding:5px 0; border-bottom:1px dashed var(--line); }
+  .odds .row:last-child { border-bottom:none; }
+  .odds .row b { color:var(--accent); font-weight:700; white-space:nowrap; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 10 月 19 日 · 周一 · 订阅聚合 + Hacker News + Polymarket 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>Anthropic 宣布把约 <span class="num">20%</span> 的股份投入新设的公共利益基金，同一天数学界在为机器给出的证明争论「人还要不要理解数学」；法国全国示威留下 <span class="num">2397</span> 人被捕、<span class="num">997</span> 名安全人员受伤，伊朗新防长上任并称七日重开霍尔木兹的方案仍然有效；比特币在 <span class="num">8 万美元</span>附近震荡，Polymarket 给美伊停火撑过 10 月底的隐含概率是 <span class="num">81%</span>。</div>
+
+  <h3>① 当证明变成商品</h3>
+  <div class="plain">数学界这几天接连收到两条消息：机器给出了一个长期猜想的证明，一位数学家则写文章问，证明可以批量生产之后，人还要不要理解它。谷歌把实验室交给了智能体，让它们自己设计分子、安排实验、看结果再改方案。普林斯顿的一支团队则让生成模型在造蛋白质的时候，顺手把免疫风险也考虑进去。</div>
+  <div class="card">
+    <p>先说机器那一头。订阅端转述的报道称，<span class="num">10 月 6 日</span> OpenAI 宣称 AI 证明了准黎曼假设，数学家 Alex Kontorovich 评价这类结果「足以立刻拿到菲尔茨奖」，还补充说，如果连 Siegel 零点的问题一起解决，「可以算两个」。几天后，在 AI 协助下，数学家又证明了某种形式的广义黎曼猜想，这个结果同时带出一个计算复杂性上的推论。报道的措辞很热闹，但真正可核对的部分只有两件事：证明是机器参与完成的，评价来自在职数学家。</p>
+    <p>真正的争论来自 Francesco Maggi 发表在陶哲轩博客上的客座文章（<span class="num">10 月 18 日</span>）。文章承认突破是真的，也点了名：带强迫项的 Navier–Stokes 方程有限时间爆破解、以及准黎曼假设的证明，都需要数学界持续独立地审视和消化。问题出在理解上：LLM 最擅长写 Lean 证明，而重要定理的 Lean 版本动辄几十万行，机器翻译回自然语言的版本越写越乱，人读不懂。作者由此追问，如果证明不再带来理解，研究数学还剩下什么。他的回答是「数学没有终结」，社会反而需要更多数学家，因为把现象变成数学语言这件事，机器能不能做还是未知数。</p>
+    <p>实验这一侧的动作更具体。谷歌 <span class="num">10 月 16 日</span>发布博客，介绍自主湿实验室的进展：用基于 PyLabRobot 的 VERID 给工作站建数字孪生，智能体先在模拟器里检查方案，再让机器人动手。一次肌红蛋白筛选中，AI 以为找到了更好的分子，加了对照才发现它们只是到处乱黏，于是改了设计规则。团队已经找到能紧密结合实体瘤相关靶点的蛋白质分子，但完整流程还没接通。此前 DeepMind 在 <span class="num">10 月</span>公布了酶设计管线 AlphaProtein Novo，Biohub 的虚拟生物学计划拿到 DeepMind、Isomorphic Labs 与 Meta 合计 <span class="num">3 亿美元</span>。普林斯顿姜凯议团队的 MESSI 则走另一条路：用离散扩散模型加 Lookahead–Feedback 机制，在生成序列时就避开会被 MHC-II 呈递的片段，部分候选的预测表位数量降到零，活性还保住了。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 18.4 万美元 / 1.3 万美元 · 口径：最近成交价</div>
+    <div class="row"><span>10 月底拥有最好的 AI 模型：Google</span><b>72.1%</b></div>
+    <div class="row"><span>10 月底拥有最好的 AI 模型：Anthropic</span><b>26.0%</b></div>
+    <div class="row"><span>11 月底拥有最好的 AI 模型：Anthropic</span><b>45.5%</b></div>
+    <div class="row"><span>11 月底拥有最好的 AI 模型：Google</span><b>44.5%</b></div>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>Will it be a golden age or a dark age for mathematics (and science)?</h4>
+    <div class="stats">118 points / 153 comments · terrytao.wordpress.com（Francesco Maggi 客座）· 当日更高分的 DeepSeek 定价页（507 分）昨天已写过，Elizabeth Holmes 纪录片评论（342 分）与订阅端没有交集，均未选为头条</div>
+    <p>文章把 AI 改写数学的两种结局摆在一起：乐观的一面是，证明变便宜之后，人类可以把精力挪到「数学化」上，也就是发明新的数学语言，去处理那些一直没法量化的领域；悲观的一面是，产出继续暴涨，独立的科学活动却慢慢萎缩，知识集中到少数人手里，而这些人也越来越读不懂自己造出来的东西。</p>
+    <p>作者列的八条里，最硬的两条是机制性的。其一是理解断层：Lean 证明可以验真，但几十万行代码翻不回人能读的自然语言，数学共同体因此失去消化结果的能力。其二是激励断层：前沿模型握在少数公司手里，谁能用最好的工具、什么问题先被解决、结果何时公开，都由商业机构决定；数学家已经开始担心，把想法输进聊天框，等于把未发表的研究交出去。</p>
+    <p>文章没有停在批评上。它给出的方向是：把 LLM 接进科研生态时，优先训练新一代研究者、保留开放的同行评议、给公共机构足够的能力，让「黄金时代」成为可以选择的结果。</p>
+  </div>
+
+  <h3>② 股份、法案与算力账本</h3>
+  <div class="plain">一家模型公司决定把两成股份交给公益基金，另一家请律师研究智能体之间怎么谈判。芯片这头，上游厂商的利润创了纪录，下游租算力的公司却在为借钱付更高的利息。</div>
+  <div class="card">
+    <p>Anthropic 在 <span class="num">10 月 19 日</span>凌晨宣布设立公共利益基金，先划拨 <span class="num">5%</span> 的股份，并承诺公司估值每上涨 <span class="num">50%</span> 就再划 <span class="num">2%</span>，最终把约 <span class="num">20%</span> 的股份用于公益。基金是全资实体，股权不得用于游说或政治捐款，架构会在后续报告里披露。马斯克随后在 X 上建议，不如直接把股份分给公众。同一天还有一条：Anthropic 正游说一项 AI 安全法案，只有当模型可能造成超过 <span class="num">10 亿美元</span>损失、或导致超过 <span class="num">50</span> 人死亡受伤时，政府才可以阻止发布；评估由商务部注册的独立第三方做，发现生物武器、网络攻击或失控风险须在 <span class="num">72 小时</span>内报告，最终由联邦法官裁定。</p>
+    <p>钱的问题在产业链上分得很清楚。台积电第三季度收入 <span class="num">1.49 万亿</span>新台币，净利润 <span class="num">7630.6 亿</span>新台币、同比增长 <span class="num">68.7%</span>，净利率 <span class="num">51.1%</span>，7 纳米及更先进制程占晶圆收入 <span class="num">79%</span>，刚开始爬坡的 2 纳米已经贡献 <span class="num">8%</span>；ASML 季度收入 <span class="num">116.62 亿</span>欧元，净利润 <span class="num">49.6 亿</span>欧元，新光刻系统销量从 <span class="num">86</span> 台增到 <span class="num">113</span> 台。下游是另一幅景象：CoreWeave 第二季度收入 <span class="num">25.75 亿美元</span>、同比增长 <span class="num">112%</span>，积压订单约 <span class="num">1040 亿美元</span>，同期净利息费用 <span class="num">6.4 亿美元</span>，净亏损 <span class="num">6.26 亿美元</span>；上半年经营现金流 <span class="num">36.63 亿美元</span>，买设备花了 <span class="num">141.17 亿美元</span>，缺口约 <span class="num">104.54 亿美元</span>，一笔债券的收益率被推到约 <span class="num">15%</span>。Anthropic 正在筹备的芯片融资里，部分次级债要付超过 <span class="num">10%</span> 的收益率。</p>
+    <p>存储与代工也被同一股需求牵动。长鑫科技预告前三季度净利润 <span class="num">1310 亿</span>至 <span class="num">1325 亿</span>元，去年同期是亏损 <span class="num">52.8 亿</span>元，营业收入预计 <span class="num">2650 亿</span>至 <span class="num">2700 亿</span>元。韩媒称三星将首次在 HBM 制造阶段采用台积电 <span class="num">3 纳米</span>制程，为英伟达生产 NVHBM 的基底裸片。国内车厂也在把芯片业务往外推：理想汽车旗下马赫心科技首轮融资 <span class="num">16.25 亿</span>元，投后估值最高 <span class="num">171 亿</span>元，自研的 M100 芯片用 <span class="num">5 纳米</span>车规工艺、单颗算力 <span class="num">1280 TOPS</span>。软件侧的账本同样在变：英伟达把 2.8 万亿参数的 Kimi K3 在 GB300 NVL72 上的推理速度提到 <span class="num">423 tok/s/user</span>、提升 <span class="num">1.68</span> 倍；OpenCode 在新 GPU 机架上测完 DeepSeek 推理配置，称性价比优于他们评估过的所有厂商；Hugging Face Hub 上共享的训练算力估值接近 <span class="num">10 亿美元</span>，而 2023 年底还不到 <span class="num">4000 万美元</span>。Linux 内核维护者峰会则决定废掉「Assisted-by」标签，Linus Torvalds 说禁止用 AI 就像禁止用文本编辑器一样愚蠢；他本周递交的一组 Claude Code 补丁被发现有竞态条件，后续开发交给了人类开发者。</p>
+    <p>资本开支的另一头开始出现裂缝。微软退出了与英国云厂商 Nscale 在埃塞克斯郡劳顿的数据中心项目，当地政府预计要到 <span class="num">2030 年代</span>才能供电；Nscale 在挪威的旗舰项目规划 <span class="num">30 兆瓦</span>、目前只有 <span class="num">6.4 兆瓦</span>投运，招股书显示约 <span class="num">85%</span> 的合同依赖微软与 Anthropic，公司正寻求融资至多 <span class="num">30 亿美元</span>。</p>
+  </div>
+
+  <h3>③ 智能体走到门口</h3>
+  <div class="plain">手机助手想替主人点开别的应用，上百个应用说不；网站开始把自动访问的程序挡在门外；费城街头，一台送餐机器人被人拦住，最后叫来了警察。</div>
+  <div class="card">
+    <p>豆包手机助手在 <span class="num">10 月 14 日</span>结束《屏幕自动化操作声明协议》的 30 天公示期，准备逐步放开第三方应用的屏幕自动化权限。到公示期结束，已有 <span class="num">155</span> 款 App 明确声明拒绝，其中腾讯及关联生态 <span class="num">66</span> 款、阿里及关联生态 <span class="num">23</span> 款，合计接近六成；快手系 <span class="num">14</span> 款、美团旗下 <span class="num">11</span> 款，小红书、滴滴、DeepSeek、Kimi 也在名单里。央视的评论把这定性为「AI 真正落地必然经历的产业碰撞」，同时追问在打破壁垒时怎么守住安全底线。</p>
+    <p>数据入口的争夺出现在条款里。Meta 更新的商业服务条款一度写明，公司有权使用企业账户域名、网页或 URL 上的任何内容来「开发、改进、研究、训练」产品，引发出版方与法律专家质疑；修订后，爬虫与数据收集被限定在广告和商业产品范围内。这方面的讨论在 Hacker News 上有两条：一条说法律专家认为新政仍授予了宽泛的抓取权限（<span class="num">213</span> 分/<span class="num">60</span> 评论），另一条是「网站正在对 AI 智能体关门」（<span class="num">131</span> 分/<span class="num">122</span> 评论）。同一天，Anthropic 被曝正在向律所请教智能体谈判的规范：模型之间怎么代表用户议价、多大程度征求人类反馈、对其他智能体保持多高的警惕，同时避免变得偏执。</p>
+    <p>现实世界的摩擦已经进了警局。费城一名女子因为多次阻挡一台 Uber 送餐机器人、拒绝让开路线被警方逮捕，指控是扰乱公共秩序，现场视频在社交平台上扩散。这类冲突的判断标准还没建立：机器人占用了人行道，人有权利拦它，平台有权利报警，三件事同时成立。</p>
+  </div>
+
+  <h3>④ 伊朗战争的下一个阶段</h3>
+  <div class="plain">美国副总统说这场冲突还谈不上结束，伊朗的新防长上任第一天就放了狠话，以色列总理把目标说到了推翻德黑兰政权。霍尔木兹海峡的七日方案还在桌上。</div>
+  <div class="card">
+    <p>华盛顿的口径是「赢了一半」。副总统万斯说，美国在某种程度上已经取得决定性胜利，但在伊朗作出坚定承诺、保证不再重建核项目之前，冲突不能算结束；他还说，如果任由伊朗掌控霍尔木兹海峡的航运，全球能源供应会受限、汽油价格会跟着涨。伊朗这边换了防长，议会批准梅赫尔达德·阿赫拉基上任，他回应特朗普的「炸弹之母」威胁时说「看看会有多少美军士兵被横着抬出地区」；伊朗军方称新的作战计划已经就绪，不再遵循对手熟悉的规则。外长阿拉格齐说，七日重开海峡的方案仍然有效，条件已经明确提交给美国，正在回应美方的意见。拉夫罗夫周一访问德黑兰，议题是双边协议与地区局势。伊朗议会议长还宣布要成立波斯湾数据管理局，警告地区各国政府、基金与企业不要向支持入侵或杀害儿童的人工智能公司提供资源。</p>
+    <p>以色列把目标写得比美国更远。内塔尼亚胡说，目标是消除伊朗威胁并推翻德黑兰政权，同时要在与黎巴嫩、叙利亚、约旦、埃及和加沙的边界建缓冲区和安全屏障，并在约旦河西岸与以色列境内展开大规模攻势；特朗普发文支持他竞选连任，又说「一直打算支持，只是不想太早表态」。黎巴嫩副总理的说法是，以色列逐步撤出的协议已经谈成但没有执行，真主党同意政府声明却未宣布接受「武器集中于国家手中」的原则。</p>
+    <p>也门与海峡的数字更密。胡塞武装称沙特在 24 小时内发动 <span class="num">110</span> 次空袭，造成 <span class="num">30</span> 多人死伤，并向马里卜发射 <span class="num">5</span> 枚导弹；沙特说一架 AH-6I 直升机因技术故障在奈季兰坠毁、两名机组人员死亡，胡塞则称是自己击落并公布了画面。海上，一艘拖船在阿联酋豪尔费坎东北方向遭「不明投射物」袭击，伊朗海军发布了油轮在海峡南部触雷的视频，俄副总理诺瓦克说中东危机已让全球市场损失 <span class="num">22 亿桶</span>石油。</p>
+    <p>俄乌方向，圣彼得堡的石油码头、Ozon 物流枢纽与 VK 的数据中心在无人机袭击中起火，造成 <span class="num">1</span> 人死亡、<span class="num">5</span> 人受伤；泽连斯基说过去一周俄军对乌克兰能源、石油和天然气部门发动了 <span class="num">76</span> 次攻击，俄国防部称拦截了 <span class="num">41</span> 架乌克兰无人机。星链的争执仍在：鲁比奥说乌克兰请求军用级星盾服务，但从未获得使用权，白宫也没有下令限速；泽连斯基则说特朗普正在逼乌克兰向俄罗斯投降。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 97.5 万美元 / 93 万美元 · 口径：最近成交价</div>
+    <div class="row"><span>美伊停火持续到 10 月 31 日</span><b>81.0%</b></div>
+    <div class="row"><span>美伊停火持续到 11 月 30 日</span><b>43.5%</b></div>
+    <div class="row"><span>以色列下届总理：加迪·艾森科特</span><b>45.4%</b></div>
+    <div class="row"><span>以色列下届总理：内塔尼亚胡</span><b>30.5%</b></div>
+  </div>
+
+  <h3>⑤ 警报、骚乱与选票</h3>
+  <div class="plain">立陶宛的防空警报在周末响过一轮，法国的街头在烧车，捷克把参议院的票投给了反对党，日本首相的支持率跌破半数。</div>
+  <div class="card">
+    <p>立陶宛国家危机管理中心在周日中午对中部和北部发布「红色」空袭警报，要求居民进入避难所，北约空中警戒任务紧急出动战斗机，考纳斯机场一度关闭。警报随后解除，但军方在尤奥焦尼斯村附近发现了疑似无人机残骸，判断可能从波兰方向进入；波兰军方在卢布林南部部署搜救队，搜寻此前侵犯领空的物体，立陶宛国防部长提议与波兰联合调查，拉脱维亚与立陶宛接壤的南部地区也发布了黄色警报。乌克兰外交部表示，对俄罗斯可能把乌克兰无人机转向拉脱维亚和立陶宛领空「表示遗憾」。</p>
+    <p>法国的数字比前一天更重。内政部说，17 日的全国性示威在巴黎、里昂、里尔、马赛、波尔多、斯特拉斯堡等城市同时发生，政府估计约 <span class="num">55 万</span>人参加、组织方称 <span class="num">80 万</span>；暴力事件已造成 <span class="num">2397</span> 人被捕、<span class="num">997</span> 名警察、宪兵和消防员受伤，里昂旅游局的分支机构被纵火抢劫，马赛与里尔的市政厅被闯入。马克龙在电视讲话里说，不能把和平抗议者与掠夺者、骚乱者混为一谈，「有些人确实觉得燃料价格过高」，而燃料涨价的原因是「对伊朗的战争」；他同时要求追究破坏者的责任。特朗普则呼吁法国关闭边境，伊朗方面警告马克龙「参与邪恶联盟终将自食其果」。</p>
+    <p>选票这一头，捷克参议院改选第二轮投票结束，反对党取得压倒性胜利，执政党「不满公民行动」党在改选席位中一席未得；参议院共 <span class="num">81</span> 席，每两年改选三分之一。日本高市早苗内阁的支持率降到 <span class="num">49.1%</span>，是上任以来最低，媒体同期披露政府正考虑增税筹措防卫费。加拿大阿尔伯塔省的温赖特军事基地在 17 日下午发生爆炸与火灾：消息人士说实弹训练击中基地内的天然气管道或气井，火势在强风下越过基地围栏。总理卡尼说 <span class="num">4</span> 名军人遇难、数十人重伤，CBC 的消息人士则称死亡人数为 <span class="num">7</span> 人，皇家骑警已介入调查。</p>
+  </div>
+
+  <h3>⑥ 通胀定价退潮，AI 周期接棒</h3>
+  <div class="plain">华尔街的钱这周往股票里搬，债市的收益率却往下走；一份券商报告说，市场已经不太愿意为通胀付钱，开始为人工智能的资本开支周期定价。国内几只跟踪纳指的基金周一早上要临时停牌。</div>
+  <div class="card">
+    <p>中信证券把这一周的价格反应拆得很细。美国 9 月 CPI 同比 <span class="num">3.7%</span>、PPI 同比 <span class="num">6.3%</span> 都超预期，但债市没有顺着走：<span class="num">10 月 14 日</span>CPI 公布后，10 年期美债收益率先冲高约 <span class="num">13 个基点</span>到 <span class="num">5.325%</span>，随后回吐收跌；15 日 PPI 公布后 10 年期只上行约 <span class="num">2.5 个基点</span>，30 年期直接下行，10 年期回落到 <span class="num">5.048%</span> 附近。报告由此判断，通胀的定价力量在快速衰竭，长端锚已经切向「增长/AI 周期」，定价的「衰退」其实是 AI 资本开支周期下行的尾部风险。短期资金从 AI 主题轮动到能源、防御性消费和可能受益于中选结果的医疗保健。另一份报告认为，这一轮 AI 核心票的调整幅度和时间已接近新能源核心票在 2021 年底到 2022 年 4 月底的水平。</p>
+    <p>资金流的方向与之呼应。美银的周度数据是：全球股票基金单周吸金 <span class="num">645 亿美元</span>，现金流出 <span class="num">531 亿美元</span>，科技基金吸金 <span class="num">107 亿美元</span>，黄金基金吸金 <span class="num">1 亿美元</span>；牛熊指标跌破 <span class="num">8</span>，持续近五个月的卖出信号结束。利率预期仍偏紧：CME 的美联储观察显示，10 月维持利率不变的概率为 <span class="num">83.9%</span>，到 12 月累计加息 <span class="num">25 个基点</span>的概率为 <span class="num">77.3%</span>、累计加息 <span class="num">50 个基点</span>的概率为 <span class="num">14.5%</span>。</p>
+    <p>国内的临场动作是停牌。富国、国泰、博时、华泰柏瑞旗下的纳指 ETF 公告，<span class="num">10 月 19 日</span>开市起停牌至 <span class="num">10:30</span>；全球芯片 LOF 同日开市起停牌，<span class="num">10:30</span> 复牌。公告只写了停牌安排，没有说明原因。实体层面的数据在另一头：9 月成品油出口同比增长 <span class="num">39.4%</span>，达到 <span class="num">716 万吨</span>，其中柴油出口 <span class="num">185 万吨</span>、同比增 <span class="num">262.3%</span>，为 2023 年 2 月以来最高，航空煤油 <span class="num">194 万吨</span>、同比增 <span class="num">16.7%</span>，汽油 <span class="num">62 万吨</span>、同比降 <span class="num">4.1%</span>；前三季度成品油出口 <span class="num">4140 万吨</span>、同比降 <span class="num">3.7%</span>，LNG 进口 <span class="num">561 万吨</span>、同比降 <span class="num">1.4%</span>。日系车在中国继续退：日产 9 月销量 <span class="num">2.3658 万辆</span>、同比降 <span class="num">61.6%</span>，本田 <span class="num">2.5564 万辆</span>、同比降 <span class="num">53.1%</span>，已连续 <span class="num">32</span> 个月下滑，同期中国整体新车销量同比降 <span class="num">26.0%</span>。</p>
+    <p>下周的日程排得很满：周一中国第三季度 GDP、9 月社会消费品零售总额与规模以上工业增加值，周二一年期 LPR，周三 Meta 与特斯拉财报，周五欧美 10 月制造业 PMI 初值。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 53.3 万美元 / 22.6 万美元 · 口径：最近成交价</div>
+    <div class="row"><span>美联储 10 月会议维持利率不变</span><b>86.5%</b></div>
+    <div class="row"><span>美联储 10 月会议加息 25 个基点</span><b>13.5%</b></div>
+    <div class="row"><span>中期选举后民主党拿下参众两院</span><b>62.5%</b></div>
+    <div class="row"><span>巴西第二轮：弗拉维奥·博索纳罗胜出</span><b>79.1%</b></div>
+  </div>
+
+  <h3>⑦ 自救、监督与问责</h3>
+  <div class="plain">一位企业家把濒死的工厂救活，随后被指控犯罪；一位市长上任不到三个月就辞职，推他下台的是自媒体；香港一场大火的调查报告快要交到特首手上。</div>
+  <div class="card">
+    <p>新疆双河红番茄制品公司的案子把「自救」与「犯罪」摆在了同一条时间线上。这家博州最大的番茄制品企业年产值 <span class="num">3 亿</span>元、年产能 <span class="num">5.5 万吨</span>，2024 年资金链断裂：银行初步同意两笔合计 <span class="num">1.2 亿</span>元流动资金贷款，前提是全体股东连带担保，股东种某德两次拒绝签字，贷款审批终止。法定代表人柳为民有 <span class="num">4900 万</span>元借款未收回，他选择以物抵债，把核心资产以 <span class="num">7500 万</span>元抵给承接债权的公司，再成立新公司租用厂房设备，把 <span class="num">100</span> 多名员工重新雇回来。新公司 2025 年净利润 <span class="num">2378 万</span>元。种某德提起民事诉讼，一审认定决议合法有效，二审以「召集主体及通知内容存在重大程序违法」撤销决议；<span class="num">2026 年 1 月</span>，柳为民因涉嫌「非法经营同类营业罪」等被羁押，工厂重新停摆。</p>
+    <p>山西那头的监督来自自媒体。忻州市长刘鹓 <span class="num">6 月</span>上任、<span class="num">9 月底</span>被官宣辞职，在任 <span class="num">88 天</span>；辞职前，自媒体人刘虎写的文章指控他二十年前驾公务车逆行、造成一死六伤后「花钱平事」。刘虎与搭档巫英蛟今年 <span class="num">2 月 1 日</span>因另一篇稿子被成都警方跨省抓捕，涉嫌诬告陷害罪与非法经营罪，<span class="num">9 月 10 日</span>被解除取保候审。报道同时列了另一面：陈杰人 2020 年被以寻衅滋事、敲诈勒索、非法经营、行贿等罪名判 <span class="num">15 年</span>；今年 7 月中央部署扫黑除恶，把「舆情敲诈」列为新型黑恶违法犯罪重点打击。律师林斐然的说法是，解除取保不等于结案，理论上仍可重新采取强制措施。</p>
+    <p>香港的问责在等一份报告。大埔宏福苑大火发生接近一年，独立委员会在 <span class="num">3 月至 7 月</span>开了 <span class="num">30</span> 场听证会、听取 <span class="num">80</span> 名证人供词、处理逾 <span class="num">100 万</span>份档案，最快 <span class="num">10 月 22 日</span>向行政长官李家超提交最终报告。社会讨论的焦点是：除了前线公务员与承建商，政治问责官员是否也要下台。</p>
+    <p>反腐与考试是另一组数字。广西政协原副主席黄日波被查，今年 <span class="num">68</span> 岁，无党派人士，是今年第 <span class="num">55</span> 名落马的中管干部、二十大后广西第 <span class="num">6</span> 名被查高官，与去年被查的广西政府原主席蓝天立在不同岗位上有过交集。2027 年度国考计划招录 <span class="num">35691</span> 人，比上一年少 <span class="num">2428</span> 人、降幅约 <span class="num">6.4%</span>；各方预估通过资格审查的人数可能达到 <span class="num">400 万</span>。对比 <span class="num">2005</span> 年度国考的 <span class="num">8300</span> 个名额与 <span class="num">31 万</span>过审人数，考公的竞争强度已经换了一个量级。</p>
+  </div>
+
+  <h3>⑧ 硬件被动过手脚的一年</h3>
+  <div class="plain">硬件钱包被发现被人动过手脚，跨链桥又被多印了一批代币；比特币的算力回到五个月高位，价格却在八万美元附近来回。</div>
+  <div class="card">
+    <p>Ledger 正在调查一起设备遭恶意改装的事件：部分钱包被发现装有隐藏式监控组件，区块链研究人员估计相关加密资产被盗金额已超过 <span class="num">9000 万美元</span>。调查最初集中在马来西亚零售商 CryptoBilis，随后发现其他销售渠道也可能存在受感染设备。这起事件的严重性在于它绕开了软件层面的所有防护，用户买到手的那一刻，私钥的生成过程就已经不可信。</p>
+    <p>链上的攻击继续走老路。Cysic 基金会在 <span class="num">10 月 17 日</span>遭到攻击，攻击者拿到跨链服务相关数据库的访问权限，利用消息处理逻辑漏洞提交虚假铸造消息，在 BNB Chain 上额外铸造了 <span class="num">1000 万</span>枚 CYS，其中约 <span class="num">280 万</span>枚仍留在涉事地址、已经无法转出。团队暂停了跨链桥，称主网与用户钱包资产未受影响。</p>
+    <p>网络本身在变强。截至 <span class="num">10 月 17 日</span>，比特币全网算力的 7 日移动平均值约 <span class="num">1031.61 EH/s</span>，一周增加约 <span class="num">44.08 EH/s</span>，为 <span class="num">5 月 29 日</span>以来高位；矿工持仓 <span class="num">119.26 万</span>枚 BTC、一周增加 <span class="num">379</span> 枚；Puell Multiple 降到 <span class="num">0.99</span>、一周下降 <span class="num">0.14</span>，说明每日新发行比特币的美元价值略低于过去一年的平均水平。算力回升不等于矿工更赚钱，这一条在数据里是分开的。</p>
+    <p>监管在补规则。新加坡把 OECD 的加密资产报告框架落到国内：条例 <span class="num">2027 年 1 月 1 日</span>生效，覆盖 2027 年数据的首轮信息交换预计在 <span class="num">2028 年</span>进行；截至 2026 年 6 月，全球 <span class="num">76</span> 个辖区承诺实施，首批 <span class="num">48</span> 个已在今年 1 月开始要求本地服务商收集数据。拉脱维亚通过加密税收改革，计划最早 <span class="num">2027 年</span>允许用加密货币缴个人税，征税方式改为「提款超过存款本金的部分」才纳税，还给出一次性申报选项：按 2026 年末资产市值的 <span class="num">10%</span> 结清旧账，申报期是 2027 年 4 月 1 日至 5 月 31 日。美国 CFTC 则抛出 108 页的规则制定预先通知，用 Regulation CTX 与 Reg CAM 给自托管和链上交易划合规路径，允许一体化的加密交易所同时承担撮合、清算与托管。代币化股票遇到阻力：OKXICE 已收到 Cerebras、AppLovin、Rocket Lab、CoreWeave、Verizon、Broadcom、UnitedHealth 等 <span class="num">9</span> 家公司的异议通知，这些股票不会在该平台提供代币化交易。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 23.4 万美元 / 35.8 万美元 · 口径：最近成交价</div>
+    <div class="row"><span>比特币 10 月 19 日站上 8 万美元</span><b>85.5%</b></div>
+    <div class="row"><span>比特币 10 月 19 日站上 8.2 万美元</span><b>40.0%</b></div>
+    <div class="row"><span>比特币 10 月内触及 9 万美元</span><b>16.5%</b></div>
+    <div class="row"><span>比特币 10 月内跌至 7.5 万美元</span><b>24.5%</b></div>
+  </div>
+
+  <h3>⑨ 机器走进了日常生活</h3>
+  <div class="plain">一台送餐机器人在街头被人拦住，最后警察来了；一篇博客写催收电话响起时，全家人一起说了同一个谎；多邻国上线了沪语课，有人一上手就测到了最高等级。</div>
+  <div class="card">
+    <p>费城那名女子被指控扰乱公共秩序，起因是她多次挡住一台 Uber 送餐机器人的路线并拒绝离开。视频传开之后，评论区争的其实是同一件事：人行道归谁用。机器人公司买的是路权，行人要的是不必给机器让路的自由，警察到场时只能先按现行条例处理，而这个条例并不是为这类冲突写的。</p>
+    <p>家庭债务的那一面写得更安静。一篇博客从饭桌写起：手机震动，屏幕上是一串归属地在千里之外的陌生号码，母亲把手机翻过去扣在桌布上，继续夹菜，震动停了又响，接起来之后，全家人对着电话说了同一个谎。这类文字没有数据，但它解释了催收行业为什么有效——它找的从来不只是欠钱的人。</p>
+    <p>日常生活的其他角落里，变化是轻的。多邻国上线沪语课程，有博主当天就去测水平，直接刷到 A+++++；一位博主记录自己确诊 2 型糖尿病，说胰岛功能还很健康、医生认为仍处于「可逆」阶段，只是手指发麻让他不敢再拖；另一位博主在博客里贴出程派名家赵荣琛《鸳鸯冢》的选段，讲谢招郎与王五姐私订终身、托姐姐转告母亲的故事。</p>
+    <p>消费与文化政策也在换挡。二手奢侈品在中国升温，西方大牌的在华业务承压；国家电影局与体育总局联合发文，支持电影院设体育彩票销售点、设置体育主题影厅、利用空闲时段直播赛事，还鼓励观影健身套餐与票根积分联动。苹果则通知零售店员工，<span class="num">10 月 23 日</span> iPhone Duo 发售当天要劝退无预约顾客，首发日门店基本没有现货，发货排期已延到次年 1 月，国行起售价 <span class="num">15999</span> 元。</p>
+  </div>
+
+  <h3>⑩ 一周回顾</h3>
+  <div class="plain">把这一周合起来看，三件事最清楚：人工智能开始改写数学的生产方式，欧洲在街头和议会里同时处理钱的问题，国内的自救者与监督者都在和制度较劲。</div>
+  <div class="card">
+    <p><b>科技：从发布模型转向生产知识。</b>这一周的 AI 新闻不再是单纯的版本号。OpenAI 在 10 月 6 日宣称 AI 证明了准黎曼假设，几天后数学家又在 AI 协助下推进了广义黎曼猜想的一种形式；Francesco Maggi 在陶哲轩博客上把随之而来的问题写成八条，核心是理解、署名与训练下一代。产业侧的账本同时摊开：Anthropic 把约两成股份交给公益基金，台积电三季度净利同比增 <span class="num">68.7%</span>，CoreWeave 的债券收益率被推到约 <span class="num">15%</span>，长鑫科技前三季净利预计超过 <span class="num">1300 亿</span>元。开源与工具层面，Linux 内核取消 AI 代码披露要求，DeepSeek 的搜索与抓取接口把价格压到每千次 <span class="num">0.75 美元</span>，英伟达把 Kimi K3 的推理速度提了 <span class="num">1.68</span> 倍。</p>
+    <p><b>地缘：目标从海峡升级到政权。</b>美伊停火仍在维持，但双方的说法都在加码：万斯说冲突没结束，内塔尼亚胡说目标是推翻德黑兰政权，伊朗新防长上任就放狠话，拉夫罗夫周一去德黑兰。也门的空袭密度上升，立陶宛与波兰的领空连续出现无人机残骸，法国的抗议演变成 <span class="num">2397</span> 人被捕的骚乱，捷克参议院改选把执政党清空。</p>
+    <p><b>国内：问责与自救同时被检验。</b>忻州市长在任 <span class="num">88 天</span>辞职，推动舆论的是自媒体人刘虎的调查；新疆一位企业家用「以物抵债＋新公司租厂」救活企业，二审撤销相关决议后因涉嫌非法经营同类营业罪被羁押；广西政协原副主席黄日波落马，成为今年第 <span class="num">55</span> 名被查的中管干部；香港宏福苑大火的独立委员会报告最快 <span class="num">10 月 22 日</span>提交。国考招录缩到 <span class="num">35691</span> 人，预估过审人数却可能到 <span class="num">400 万</span>。</p>
+    <p><b>市场预期的一周变化。</b>Polymarket 上，美伊停火撑过 10 月底的隐含概率从 <span class="num">78.5%</span> 升到 <span class="num">81.0%</span>；谷歌在 10 月底拥有最好 AI 模型的概率从 <span class="num">69.25%</span> 升到 <span class="num">72.1%</span>，Anthropic 从 <span class="num">30%</span> 降到 <span class="num">26%</span>；美联储 10 月维持利率不变的概率从 <span class="num">83.5%</span> 升到 <span class="num">86.5%</span>；比特币 10 月内触及 9 万美元的概率从 <span class="num">35.5%</span> 掉到 <span class="num">16.5%</span>；巴西第二轮弗拉维奥·博索纳罗胜出的概率从 <span class="num">86.35%</span> 降到 <span class="num">79.15%</span>。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（11 个源，覆盖 10 月 17–19 日，含已读与未读）· Hacker News 前 100 名 · Polymarket 热点榜（24 小时成交量前 20，剔除体育盘、最低流动性 5 万美元）。<br>
+    由 pi 自动生成 · 今日未读 393 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
