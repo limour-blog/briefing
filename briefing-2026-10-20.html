@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-10-20</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .odds { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 20px; font-size:13.5px; margin-bottom:12px; }
+  .odds .cap { font-size:12px; letter-spacing:.08em; color:var(--muted); margin-bottom:6px; }
+  .odds .row { display:flex; justify-content:space-between; gap:12px; padding:5px 0; border-bottom:1px dashed var(--line); }
+  .odds .row:last-child { border-bottom:none; }
+  .odds .row b { color:var(--accent); font-weight:700; white-space:nowrap; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 10 月 20 日 · 周二 · 订阅聚合 + Hacker News + Polymarket 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>DeepSeek 与 MiniMax 在同一天把同等能力的模型压到对手几分之一的价钱，美国国土安全部则下令联邦文职机构清除 DeepSeek；以色列总理说他已下令推翻伊朗政权，霍尔木兹海峡的不合规船舶名单增到 122 艘；中国三季度 GDP 同比增 4.5%，Polymarket 给美联储 10 月按兵不动的隐含概率是 84.5%。</div>
+
+  <h3>① 价格战打到几十分之一</h3>
+  <div class="plain">两家中国公司这两天各发了一版新模型，卖点都落在价钱上：干同样的活，收费只有对手的零头。华盛顿那边的回应，是把它们从联邦文职机构的电脑里删掉。</div>
+  <div class="card">
+    <p>DeepSeek 在 <span class="num">10 月 17 日</span> 发布 V4.1 Flash 的 1017 版并开放权重，<span class="num">7630 亿</span> 参数、<span class="num">100 万</span> token 上下文。它在 Arena 的 Code Arena: WebDev 榜拿下第一开源模型，<span class="num">1670</span> 分列总榜第 <span class="num">12</span>，比一个月前的版本高 <span class="num">52</span> 分，超过 Claude Opus 5（High），与 GPT-6Sol（Max）的差距在 <span class="num">10</span> 分以内。定价是每百万输入 token <span class="num">0.3</span> 美元、输出 <span class="num">1.2</span> 美元；Terminal-Bench 上超过 GPT-5.6 Sol，成本低约 <span class="num">17</span> 倍；第三方渠道给出的说法是，成本约为 Opus 5 的 <span class="num">1/60</span>。</p>
+    <p>MiniMax 在 <span class="num">10 月 19 日</span> 发布 M3.1 Flash，官方说法是推理速度约为上一代的 <span class="num">3</span> 倍、使用成本降 <span class="num">70%</span>。它就是此前匿名跑了超过 <span class="num">200 万亿</span> token 的 Space Bunny。公布的成绩包括 BankerToolBench <span class="num">76.2</span>、DeepSWE v1.1 <span class="num">73.7%</span>、OSWorld V2 <span class="num">61.7</span>、Agents' Last Exam <span class="num">29.6</span>、CyberGym <span class="num">82%</span>。Cline 首日免费开放，编码成本约为 Opus 与 GPT 的 <span class="num">1/25</span>；同一批渠道的通稿里，DeepSeek 那一版在 Command Code 上被算作 Opus 5 的 <span class="num">1/60</span>。</p>
+    <p>价格压到这一档，监管的反应比用户更快。国土安全部依据《联邦采购供应链安全法》发布命令，把 DeepSeek 及其关联实体开发的信息技术产品排除出联邦文职部门采购，并要求从文职机构的信息系统中移除，范围还延伸到使用 DeepSeek 实现的第三方产品与服务；国防部与情报界此前已有类似限制。Anthropic 的内部就业报告则给出另一组数字：初级技术岗位的招聘占比从 <span class="num">2025 年初</span> 的 <span class="num">27%</span> 降到 <span class="num">2026 年</span> 的 <span class="num">9%</span>，员工直接指挥的交互式智能体工作时长已达人类操作者的 <span class="num">6</span> 倍，公司整体规模仍在扩张，被挤压的是入门岗；公司承诺投入 <span class="num">2 亿美元</span> 研究 AI 对劳动力市场的影响。央行这条线上，潘功胜在金融街论坛年会上说，将密切跟踪研判人工智能发展的宏观影响，做好金融支持人工智能产业发展的工作。</p>
+  </div>
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 6.1 万美元 / 3.5 万美元 · 口径：最近成交价</div>
+    <div class="row"><span>10 月底拥有最好的 AI 模型：Google</span><b>73.5%</b></div>
+    <div class="row"><span>10 月底拥有最好的 AI 模型：Anthropic</span><b>23.5%</b></div>
+    <div class="row"><span>年底拥有最好的 AI 模型：Anthropic</span><b>51.5%</b></div>
+    <div class="row"><span>年底拥有最好的 AI 模型：Google</span><b>40.5%</b></div>
+  </div>
+
+  <h3>② 写代码的人，和他们的工具</h3>
+  <div class="plain">一位维护者把自己多年的开源库全部归档，写了一篇说明为什么不再更新；另一个人写文章说，写程序这件事仍然值得高兴。两篇帖子排在热榜上，中间夹着一堆关于怎么收拾 AI 写出来的代码的争论。</div>
+  <div class="card">
+    <p>归档那篇写在 po-ru.com 上（<span class="num">379</span> 分/<span class="num">357</span> 评论）。作者说自己已经不再更新这些 Ruby gem，写文章是为了给仓库的访客一个解释；他引用了松本行弘 2000 年的话，“人生的目的至少有一部分是快乐”。同一天，chriskiehl.com 的《It's still ok to enjoy programming》拿到 <span class="num">357</span> 分/<span class="num">350</span> 评论。两条帖子的分数接近，评论区关心的是同一件事：写作与维护的回报，还够不够抵掉它的成本。</p>
+    <p>Hacker News 上关于 AI 与工作讨论最集中的一条是个问句：《How to deal with shipping AI-written code you don't understand?》（<span class="num">159</span> 分/<span class="num">273</span> 评论）。帖子问的是具体处境：代码合进去了、能跑，但没人说得清它为什么这样写；跟帖里的办法集中在两处，把生成过程与测试一起留档，以及把审查的重点从写法挪到边界条件上。</p>
+    <p>工具这一侧的动作没有停。OpenBSD 的 ports 邮件列表出现了一份 Wine 的移植提案（<span class="num">462</span> 分/<span class="num">152</span> 评论）：作者 Thomas Frohwein 称这是今年最出人意料的移植之一，%gs 的问题由 Andrii 用软件模拟绕开，测试的几十款 64 位 Windows 软件多数能跑，包括上月刚出的《巫师 3》重制版，限制是 WoW64 仍未工作、32 位程序还不行。Linux 7.3 在周日发布（<span class="num">574</span> 分/<span class="num">266</span> 评论），Linus 在公告里说这一周“没什么特别的”。另外两条：Android 应用以原生方式跑在 macOS 上（<span class="num">205</span> 分/<span class="num">82</span> 评论），Let's Encrypt 为域名验证增加两个远端视角（<span class="num">231</span> 分/<span class="num">76</span> 评论）。</p>
+    <p>家用这一头，模型在往下压体积。一篇博客汇总的数字是：Saluki 把 <span class="num">270 亿</span> 参数的模型压到 <span class="num">7.89GB</span>，仍保留 <span class="num">96%</span> 的基准能力；面壁的端侧模型在手机上用 <span class="num">3GB</span> 内存跑出每秒十几 token。Hacker News 上还有一条 Show HN，把 Qwen3-4B 训练到不再带 AI 腔调（<span class="num">144</span> 分/<span class="num">105</span> 评论），思路是把固定的 AI 腔调当成可训练的句法特征，靠惩罚项把它压掉。</p>
+  </div>
+
+  <h3>③ 科技科研前沿</h3>
+  <div class="plain">这一批研究里，有人在猴子脑子里看到了意识一闪一闪，有人用一张无人机拍的照片算出整片光伏板损失了多少电，还有人在论文里说，语言模型再像人也不会疼。</div>
+  <div class="card">
+    <p>加州大学伯克利分校曹颖团队 <span class="num">10 月 16 日</span> 在 bioRxiv 发布预印本：猕猴实验中，即使画面与主观感知都不变，同一群神经元仍以每秒约 <span class="num">15</span> 次 的速度在“有意识”与“无意识”之间切换，研究者找了多年的纯粹意识信号就藏在其中约一半的时间里。她的说法是，此前意识研究一直在大脑的地图上找答案，这项工作提示答案也可能写在时间轴上。</p>
+    <p>浙江大学兰东辰团队把光伏检测压到一张图：先用轻量模型判断组件的主导衰减机制，再让器件物理模型从这一张发光图像反推功率损失分布，在 <span class="num">300</span> 块现场回收的晶体硅组件上验证，重建功率与实测功率的总体误差约 <span class="num">0.5%</span>，论文被《Matter &amp; Light》选为 <span class="num">10</span> 月刊封面。此前同类定量分析要在不同工作条件下拍多张图，电站规模越大越测不动。</p>
+    <p>量子这块有两条。Nature 报道一种改进的光子收集器件，可以让多个量子计算阵列连起来，是把大型光量子计算机往前推的一步。英伟达用德国 JUPITER 超算的 <span class="num">8192</span> 块 GPU 模拟了 <span class="num">104</span> 量子比特的容错系统，验证“魔态培育”技术，称可把实现容错所需的物理量子比特数量减少约 <span class="num">90%</span>，原本要算数周的工作缩短到数天。Nature 同日还发了两条偏政策的：一项调查发现 <span class="num">2024 年</span> 以来美国高校收到超过 <span class="num">30</span> 份针对气候归因研究的公共记录请求；另一篇记录了经费削减之下仍在做气候、多元、跨性别健康与国际援助研究的科学家，怎么靠诉讼、私人捐助和换题目把项目撑下去。</p>
+    <p>模型进实验室的路径也更清楚了。Mistral 发布首个时间序列基础模型 Timestral（<span class="num">506</span> 分/<span class="num">96</span> 评论），最大号只有 <span class="num">2.09 亿</span> 参数，却称在 GIFT-Eval、TIME、fev-bench 三个公开基准上都排第一，用约三分之二的参数量超过此前的最高水平，四个尺寸从 <span class="num">500 万</span> 到 <span class="num">2.09 亿</span>，能在 CPU 上跑。CERN 与 Mistral 签署合作意向，要把 AI 用到科学计算里（<span class="num">286</span> 分/<span class="num">55</span> 评论）。Nature 另有一篇短文列了“AI 不可能是意识的三个理由”，论据来自神经科学：会模仿思考与感受，跟拥有主观体验是两件事。Hacker News 上《替代动物实验终于要起量了》拿到 <span class="num">289</span> 分/<span class="num">88</span> 评论，但正文站点只回导航壳，细节抓不到。</p>
+  </div>
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>MiniMax M3.1 Flash: Redefining Agent Performance and Cost</h4>
+    <div class="stats">305 points / 126 comments · minimax.io；当日最高分新帖是 Linux 7.3（574 分），正文只是 LWN 的发布通告；Wine 移植 OpenBSD（460 分）是邮件列表提案</div>
+    <p>官方博客把 Space Bunny 认了下来：那个匿名跑了超过 <span class="num">200 万亿</span> token、一度排在用量榜第一的模型，是 M3.1 Flash 的早期版本。正式版的说法是推理速度约为上一代的 <span class="num">3</span> 倍、使用成本降 <span class="num">70%</span>，在编码、电脑操作与网络安全三项上都往第一梯队挤。</p>
+    <p>具体数字是 BankerToolBench <span class="num">76.2</span>、DeepSWE v1.1 <span class="num">73.7%</span>、OSWorld V2 <span class="num">61.7</span>、Agents' Last Exam <span class="num">29.6</span>、CyberGym <span class="num">82%</span>；Cline 首日免费开放，编码成本约为 Opus 与 GPT 的 <span class="num">1/25</span>。同一夜的订阅端还有一条：DeepSeek V4.1 Flash 1017 在 Command Code 的成本被算成 Opus 5 的 <span class="num">1/60</span>。两家中国公司的定价，把这一档能力的价格又往下压了一层。</p>
+  </div>
+
+  <h3>④ 海峡、油价与战场</h3>
+  <div class="plain">伊朗把话说到了最硬，以色列把目标说到了政权，霍尔木兹海峡的通行名单越列越长；乌克兰的电网又被打，泽连斯基和特朗普开始互相指责。</div>
+  <div class="card">
+    <p>以色列总理内塔尼亚胡 <span class="num">10 月 19 日</span> 晚在电视采访中说，他已向以军、摩萨德和军事情报局下达“推翻伊朗政权”的指令，并称特朗普的态度“非常明确”，核心任务是消除伊朗的生存威胁。伊朗这边的口径一路加码：革命卫队发言人说美国“压根没有能力发动新一轮冲突”，但不排除冲突，一旦发生反击会比以往猛烈得多；武装部队总参谋长阿卜杜拉希说未来战争是混合战、技术战、信息战与认知战；第一副总统阿雷夫说伊朗别无选择只能管控海峡，同时可为“友好国家”提供通行便利；波斯湾海峡管理局称已有 <span class="num">122</span> 艘船被列入不合规名单。拉夫罗夫在 <span class="num">10 月 19 日</span> 访问德黑兰，议题是双边协议与地区安全。</p>
+    <p>油价把这套说法照单收下。WTI <span class="num">10 月 19 日</span> 结算价 <span class="num">103.66</span> 美元/桶、涨 <span class="num">2.22%</span>，布伦特结算 <span class="num">109.55</span> 美元、跌 <span class="num">0.28%</span>；高盛的说法是做市商的 gamma 敞口在承压，地缘再恶化可能触发原油大规模逼仓。运费与保险费在吞掉货值，实货市场即便纸面产量充足也保持紧张。</p>
+    <p>乌克兰的夜晚更具体。泽连斯基说俄方发射了 <span class="num">16</span> 枚弹道导弹和超过 <span class="num">200</span> 架无人机，能源设施是主要目标，全国超过 <span class="num">50 万</span> 人断电；他提出可以停止打击俄罗斯炼油厂，换取美国在此期间提供“爱国者”导弹，并说五角大楼正在推迟 PURL 计划的导弹交付。特朗普的说法是“该换个人代表乌克兰谈判”、泽连斯基“根本不知道自己在说什么”，同时表示与乌克兰共享情报；库什纳与特使威特科夫本周将赴挪威参加乌克兰问题会谈，泽连斯基预计出席。另一条被低估的消息是：普京在 <span class="num">10 月 9 日</span> 与特朗普通话时提议，在 <span class="num">11 月 18 日至 19 日</span> 深圳 APEC 峰会期间与特朗普、习近平举行三方峰会讨论结束战争，特朗普没有答应，据称持开放态度，乌克兰外长批评这个想法会鼓励俄方继续打。</p>
+    <p>法国还在烧。波尔多与里尔的两家苹果直营店在骚乱中被洗劫，特朗普说“法国正在燃烧”、呼吁关闭欧洲边境，并称欧洲的抗议是移民问题导致的；法国财政失衡已经在向银行信用市场传导。亚洲这边，解放军在六处海域演训，黄海南部实弹射击持续 <span class="num">47</span> 天，与 <span class="num">10 月 19 日</span> 开幕、持续到 <span class="num">10 月 29 日</span> 的美日“利剑 27”联合演习撞在一起；中国首次对盾构机实施出口管制，并调整无人机与挖泥船的管制措施；菲律宾外交部就中国大使“若动武可轻易取胜”的言论召见了大使。</p>
+  </div>
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 157 万美元 / 39.5 万美元 · 口径：最近成交价</div>
+    <div class="row"><span>美伊停火持续到 10 月 31 日</span><b>79.5%</b></div>
+    <div class="row"><span>霍尔木兹海峡通行在 12 月 31 日前恢复正常</span><b>12.5%</b></div>
+    <div class="row"><span>美国宣布结束对伊朗封锁（12 月 31 日前）</span><b>37.8%</b></div>
+    <div class="row"><span>WTI 原油 10 月内触及 110 美元</span><b>15.5%</b></div>
+  </div>
+
+  <h3>⑤ 经济与政策账本</h3>
+  <div class="plain">中国经济的三季报出来了，服务业和出口把增速托住，房地产投资还在往下走；同一天，证监会拿出一份保护投资者的新规征求意见，发改委要给电力现货市场立规矩。</div>
+  <div class="card">
+    <p>三季度 GDP 同比增 <span class="num">4.5%</span>、环比增 <span class="num">1.2%</span>。拆开看：9 月社会商品零售 <span class="num">37830 亿元</span>、同比增 <span class="num">1.0%</span>，餐饮收入 <span class="num">4603 亿元</span>、增 <span class="num">2.1%</span>；规上工业增加值同比增 <span class="num">5.5%</span>；1—9 月固定资产投资同比降 <span class="num">7.2%</span>，扣除房地产后降 <span class="num">4.2%</span>；9 月出口 <span class="num">30344 亿元</span>、同比增 <span class="num">29.6%</span>，进口 <span class="num">21284 亿元</span>、增 <span class="num">24.6%</span>；CPI 同比涨 <span class="num">0.9%</span>，PPI 同比涨 <span class="num">5.0%</span>。服务业前三季对经济增长的贡献率 <span class="num">66.3%</span>、同比提高 <span class="num">5.6</span> 个百分点，增加值 <span class="num">62.8 万亿元</span>、占 GDP 的 <span class="num">58.7%</span>。</p>
+    <p>房价的跌势在放缓。9 月一线城市新房价格环比涨 <span class="num">0.1%</span>，上海、广州、深圳分别涨 <span class="num">0.2%</span>、<span class="num">0.2%</span>、<span class="num">0.3%</span>，北京跌 <span class="num">0.2%</span>；一线新房同比跌 <span class="num">0.5%</span>，降幅比 8 月收窄 <span class="num">0.4</span> 个百分点。房地产开发投资的跌幅反而扩大了，三线城市新房环比还在跌 <span class="num">0.2%</span>。这种组合说明去库存的进度与新增投资的方向并不一致：价格先稳住的是核心城市，供给端的收缩则更彻底。</p>
+    <p>政策这一天出得密。证监会就《证券市场先行赔付指导意见》公开征求意见，明确了先行赔付的适用主体与基本定位，规定投资者保护机构的受托服务范围和各单位协同机制，还把赔付情况列为行政许可审查、行政处罚裁量与诚信监管的考量因素；配套的裁量阶次里，违规比例不足 <span class="num">2%</span> 或金额不足 <span class="num">4000 万元</span> 的适用从轻，违法所得不足 <span class="num">100 万元</span> 的按 <span class="num">0—300 万—500 万—1000 万元</span> 划三档。发改委就《电力现货市场基本规则》征求意见；潘功胜说将扩大常备借贷便利的适用机构范围；金监总局局长丁向群谈金融制度型开放，1—8 月全国实际使用外资 <span class="num">4799.5 亿元</span>、同比降 <span class="num">5.3%</span>，其中高技术产业实际使用外资 <span class="num">2002.6 亿元</span>、同比增 <span class="num">35.1%</span>。</p>
+    <p>海外这一头是通胀又回来了。加拿大 9 月通胀升到 <span class="num">3.1%</span>，10 月加息概率从数据公布前的 <span class="num">74%</span> 降到 <span class="num">68%</span>，但 BMO 与丰业都预计下周加 <span class="num">25</span> 个基点。日本央行行长植田和男说，如果不适时调整政策利率，市场对通胀超调的担忧可能推高长期利率。黄金冲 <span class="num">4200</span> 美元又没站住，回落到 <span class="num">4140</span> 美元附近；高盛说 8 月全球央行购金 <span class="num">79 吨</span>，远高于 2022 年前 <span class="num">17 吨</span> 的均值，摩根士丹利则给出跌破 <span class="num">3000</span> 美元的目标。美股 AI 概念普涨，SK 海力士涨 <span class="num">6.39%</span>、特斯拉涨超 <span class="num">3%</span>；苹果确认 <span class="num">10 月 28 日</span> 在洛杉矶开发布会，预计推出首款触屏 MacBook Pro、搭载 M6 芯片的新款 Mac 与 OLED 屏 iPad mini。</p>
+  </div>
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 406 万美元 / 33.6 万美元 · 口径：最近成交价</div>
+    <div class="row"><span>美联储 10 月会议维持利率不变</span><b>84.5%</b></div>
+    <div class="row"><span>美联储 10 月会议加息 25 个基点</span><b>14.5%</b></div>
+    <div class="row"><span>中期选举后民主党拿下参众两院</span><b>62.5%</b></div>
+    <div class="row"><span>中期选举后众议院由民主党控制</span><b>91.5%</b></div>
+  </div>
+
+  <h3>⑥ 普通人的一天</h3>
+  <div class="plain">一个在杭州做电商的年轻人，用半年时间远程给老家装修；一位博主把父母最容易用错的药列成了几条；路口的树荫下，一个外卖员蹲着吃盒饭。这些碎片在同一天出现。</div>
+  <div class="card">
+    <p>远程装修那篇的细节是：李静在杭州做电商运营，晚上十点下班，在地铁上刷到一款马桶打折、九百八包安装，想起老家那个蹲厕。半年里她给家里下单了二十多次，“妈，这个我给你买”“不用不用，家里有”是固定的来回。回家才发现，新床垫还没拆封。这类故事的共同点在于，买东西的人和用东西的人，对“需要”的定义不一样。</p>
+    <p>用药那篇更实用。河北省卫健委在重阳节当天转了一份老年用药安全指南，列了六个最常见的坑：自己拿主意、跟风吃别人的药、自己加减剂量、说停就停、漏服了补双份、几个科室开的药撞在一起。</p>
+    <p>影院的排片表里出现了一部旧片。武汉抗疫题材的《白衣逆行者》定档 <span class="num">11 月 6 日</span>，<span class="num">2020 年 12 月</span> 杀青，拍摄只用了一个多月，积压接近六年；网络上的反应分得很开，有人说“事情过去太久，没有必要上了”，也有人说“作为医护，真的不想回忆那段时间”。另一条更轻：旅韩双胞胎大熊猫“睿宝”“辉宝”将在 <span class="num">12 月</span> 第三周回国，<span class="num">11 月 13 日</span> 起开始为期一个月的检疫。</p>
+    <p>台湾的选战进入倒数。台北市长蒋万安宣布由台中市长卢秀燕出任竞选总部主任委员，距投票约 <span class="num">40</span> 天，他把 2028 年的问题推回给“国民党最强人选”。媒体人赵少康两度专访民进党台北市长参选人沈伯洋，其中一集收视率冲到 <span class="num">3.09</span>、直播在线人数破 <span class="num">14 万</span>，国民党内有人发起连署要求开除他的党籍，他的回应是“不允许有不同意见的人表达意见，这叫什么自由民主”。另一位老人的离世低调许多：前港区全国人大代表、培侨中学校长吴康民 <span class="num">10 月 18 日</span> 辞世，享寿 <span class="num">100</span> 岁。</p>
+  </div>
+
+  <h3>⑦ 直面批判</h3>
+  <div class="plain">山东一场发布会把养老说成个人的第一责任，评论区炸了；四川一个夜市摊主在被差评三天后跳河；山里一个县把成绩垫底的老师请上台，和“耻辱”两个字合影。三件事在这一周被反复讨论。</div>
+  <div class="card">
+    <p>养老那句原话出自 <span class="num">10 月 16 日</span> 山东省新闻办的发布会：“引导群众树立个人是养老第一责任人的理念。”公开数据把这句话的底色摊开了：全国城乡居民基础养老金月最低标准到 <span class="num">2026 年</span> 上半年才从 <span class="num">143 元</span> 涨到 <span class="num">163 元</span>，加上地方补贴，很多地方一个月二百元出头；<span class="num">2013—2024 年</span> 体制内养老支出累计近 <span class="num">11 万亿</span> 元，<span class="num">2016—2024 年</span> 机关事业单位基本养老保险相关费用约 <span class="num">6.5 万亿</span> 元，其中财政补助 <span class="num">3.62 万亿</span> 元，比保险缴费本身的支出还多。县一级的例子是山东成武：机关事业单位退休人员 <span class="num">8778</span> 人一年领 <span class="num">7.85 亿</span> 元，城乡 <span class="num">12 万</span> 人领 <span class="num">2 亿</span> 元。胡锡进第二天发文说“我觉得不合适，至少效果是不好的”。</p>
+    <p>胡二妹的案子把差评的重量写清楚了。她 <span class="num">32</span> 岁，在四川宜宾高县的夜市卖铜锅洋芋与炸串，<span class="num">10 月 6 日</span> 因为一位顾客发帖说“嫌菜堆高了不给加土豆”，评论区涌进跟风恶评；<span class="num">10 月 9 日</span>，她被发现溺亡在南广河。南方周末的记录里，她 8 年发了 <span class="num">1575</span> 条短视频，平均两天一条；出事之后，她店铺在地图软件上的评分从 <span class="num">1.8</span> 涨到 <span class="num">2.0</span>，靠的是 <span class="num">17</span> 个五星。平台自己披露的数字是，平均每天收到 <span class="num">123 万</span> 条评价，二星及以下约占 <span class="num">6.7%</span>。</p>
+    <p>四川雷波县的做法更刺眼。县长提议让班级平均成绩低于 <span class="num">15</span> 分和 <span class="num">30</span> 分 的教师与会场大屏幕上的“耻辱”二字合影；当地通报说县长也参加了合影，但至今没人在合影里找到他。评论者褚朝新给出的解释是，这里是彝族聚居区，很多人只会讲彝语，读书无用论回潮，辍学率高，学校和教师大量精力花在“控辍保学”上，被劝回来的孩子考前回校，成绩自然拉低班级均分。</p>
+    <p>司法这块，辽宁阜新中院 <span class="num">8 月 31 日</span> 开庭审理周宏民涉黑案，<span class="num">18</span> 人受审，整个庭审只用了 <span class="num">35</span> 分钟——原审判长顾坤平因职务犯罪“出事”，新任审判长重新开了 <span class="num">35</span> 分钟的庭“走个形式”；辩护律师说，案子是把两拨不同的民间借贷放贷人捆绑、拔高为黑社会性质组织。河北沧州东光县的版本是另一种：焦点访谈 <span class="num">10 月 18 日</span> 曝光一个村子围着 <span class="num">8</span> 家危化品厂（<span class="num">7</span> 家属村支书家族、<span class="num">1</span> 家属村长），储存罐把数千立方登记成几百立方，县应急管理局说“县里为了税收不让搬”；节目播出后，河北在 <span class="num">10 月 19 日</span> 上午开始集中拆除违规储存罐。</p>
+    <p>消费领域的账本也在被翻。市场监管总局 <span class="num">10 月 16 日</span> 通报，2025 年以来查处加油机作弊案件 <span class="num">399</span> 件、案值 <span class="num">2.7 亿</span> 元、罚没 <span class="num">1.43 亿</span> 元，作弊可以远程调整参数、常规检查难发现。成都那起“<span class="num">50</span> 升油箱加进 <span class="num">67.96</span> 升”的旧案又被翻出来：当时的调查结论是软硬件信息交互故障、把上一笔 <span class="num">27.18</span> 升叠加进来，且 <span class="num">2863</span> 笔记录里只有这一笔异常。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场</h3>
+  <div class="plain">比特币在八万美元上方横着走，ETF 里的钱在往外撤；另一边，银行和支付公司正往链上搬东西：摩根大通把存款代币放上以太坊，德国的储蓄银行开始用手机银行卖币。</div>
+  <div class="card">
+    <p>价格这一头是横盘。比特币在 <span class="num">8.18 万</span> 美元附近，周线收盘 <span class="num">82001.58</span> 美元；稳定币占比 USDT.D 报 <span class="num">6.755</span>，贴在箱体顶部 <span class="num">6.28—6.80</span>。QCP 的判断是，BTC 在科技股承压下维持了韧性，<span class="num">8 万</span> 美元仍是关键支撑。资金在撤：上周比特币现货 ETF 净流出 <span class="num">2.29 亿</span> 美元，贝莱德 IBIT 以 <span class="num">1.65 亿</span> 居首；以太坊现货 ETF 净流出 <span class="num">3.20 亿</span> 美元，连续三周净流出。</p>
+    <p>上市公司还在买。Strategy 增持 <span class="num">267</span> 枚，总持仓 <span class="num">84.85 万</span> 枚；BitMine 持有约 <span class="num">604 万</span> 枚 ETH、占总供应量 <span class="num">4.9%</span>，一周新增买入 <span class="num">12535</span> 枚；Strive 上周买入 <span class="num">1223</span> 枚、均价 <span class="num">81734</span> 美元，持仓增至 <span class="num">36818</span> 枚；Super League 的股东批准与 Metaplanet 的交易，将注入 <span class="num">2100</span> 枚 BTC。卖方也在动：MARA 疑似在 5 天内向币安与 Gate 转入 <span class="num">1000</span> 枚。</p>
+    <p>安全事件的成因比金额更值得记。Qubic 在 <span class="num">10 月 17 日</span> 至 <span class="num">18 日</span> 遭攻击，<span class="num">1404</span> 个钱包被转走约 <span class="num">2.94 万亿</span> 枚 QU，<span class="num">87.1%</span> 的资金仍留在网络内被冻结、<span class="num">12.9%</span> 流入 MEXC 后同样被冻结。根子在于官方钱包用 Math.random() 生成种子，在苹果平台的 JavaScriptCore 引擎下熵只有 <span class="num">32</span> 位，攻击者可以离线枚举约 <span class="num">43 亿</span> 种可能，再与链上有余额的地址比对。同期还有：SlowMist 分析 DarkSword 木马的利用窗口覆盖 iOS <span class="num">18.6—18.7.2</span> 与 <span class="num">26.0—26.1</span>；Phala Cloud 复盘了攻击者借 guest-agent 漏洞窃取网关令牌；深圳经侦提醒警惕以 RWA 房产代币化为名的高收益诈骗。</p>
+    <p>机构的动作方向相反。摩根大通宣布在以太坊向机构客户提供存款代币 JPM Coin，代表客户在行的美元存款，支持全天候秒级收付款；德国储蓄银行协会说首批 Sparkassen 客户已能在现有银行 App 里买卖 BTC、ETH、XRP、SOL 与 MATIC，此后每月预计新增 <span class="num">30—40</span> 家机构；贝莱德申请了代号 PBIT 的缓冲型比特币 ETF，用放弃部分上涨收益换取下跌保护；CME 推出 Uniswap 期货合约、支持 <span class="num">7×24</span> 小时交易；万事达卡推出稳定币支付风险评估服务，预计 <span class="num">2027 年</span> 在全球商业化。加州总检察长给出的另一边是：<span class="num">2025 年</span> 美国加密诈骗损失达 <span class="num">114 亿</span> 美元。</p>
+  </div>
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 事件级 24 小时成交 26 万美元 / 45 万美元 · 口径：最近成交价</div>
+    <div class="row"><span>比特币 10 月 20 日站上 8.2 万美元</span><b>54.0%</b></div>
+    <div class="row"><span>比特币 10 月内触及 9 万美元</span><b>16.5%</b></div>
+    <div class="row"><span>比特币 10 月内跌至 7.5 万美元</span><b>18.5%</b></div>
+  </div>
+
+  <h3>⑨ 期权与市场走势（通俗版）</h3>
+  <div class="plain">周五到期的期权把两个指数的上下边界画了出来：大盘守住一个位置就能横着磨，科技股那条线更近，跌破会更快。比特币这头贴着中枢横走，钱还压在稳定币里没出来。</div>
+  <div class="card">
+    <p>大盘现价 <span class="num">766.64</span>，本周五到期这一档显示它大概率在 <span class="num">758—775</span> 之间来回。<span class="num">769—770</span> 是头顶最近的一道坎，站上去才谈得上往 <span class="num">773</span>、<span class="num">775</span> 走；跌破 <span class="num">765</span> 就会先去看 <span class="num">760</span>、<span class="num">755</span>，最远的坑在 <span class="num">745</span>。偏向是中性偏下：跌起来会被放大，只是触发位比上周远了。</p>
+    <p>科技股更脆弱，现价 <span class="num">718.36</span>，<span class="num">710—711</span> 是关键——那里压着最多的合约，破了就看 <span class="num">700</span>、<span class="num">690</span>；上方要站上 <span class="num">727</span> 才算缓过来，<span class="num">735</span> 是很硬的天花板。它的波动幅度大约是大盘的 <span class="num">1.7</span> 倍，所以同样一条线，破起来代价更大。</p>
+    <p>三条传导腿这次是一空两平。美债把上周刚收复的 <span class="num">80</span> 又丢了（TLT <span class="num">79.46</span>），10 年期利率回到 <span class="num">5.14%</span>，对科技股是加压；黄金停在 <span class="num">380</span> 下方（<span class="num">379.69</span>），守住 <span class="num">378</span> 就只是不添乱；加密那条（IBIT <span class="num">46.28</span>，约合比特币 <span class="num">81.8k</span>）在 <span class="num">46.5</span> 能托底，但没有推升力。</p>
+    <p>加密自己也不上不下。稳定币占比 <span class="num">6.755</span> 又贴回箱顶，说明钱没从稳定币里出来，逆风但很弱；比特币在 <span class="num">81.8k</span> 横着走，区间 <span class="num">80.6k—83.1k</span>。守住 <span class="num">80.4k</span>（IBIT <span class="num">45.5</span>）就不拖累股市，跌穿 <span class="num">79.5k</span>（IBIT <span class="num">45</span>）是退潮确认。一句话：周一的反弹只把“跌下去”的门槛推远了一点，没把“涨上去”的门槛掀开，这周看大盘守不守 <span class="num">765</span>、科技股守不守 <span class="num">710</span>；与上一份相比，方向结论没变、下方触发位上移，美债那条腿由不添乱升级为加压。</p>
+  </div>
+
+  <h3>⑩ 一周回顾</h3>
+  <div class="plain">把这一周合起来看：模型的价格被打到几分之一，海峡的通行名单越列越长，国内的养老与网暴成了公共议题。</div>
+  <div class="card">
+    <p><b>模型：一周三连发，价格一路下探。</b>Gemini 4 Argon 在 10-14 上线（百万 token 输出、Val Index 登顶、以 Opus 5.5 一半成本完成 Chrome 600 万行重构），DeepSeek V4.1 Flash-1017 在 10-17 发布并开放权重，MiniMax M3.1 Flash 在 10-19 跟上；Meta 的 Muse Spark Open 也在这周放出（8160 亿参数、100 万上下文，自称美国最强开源，基准 39 分低于 GLM-5.3）。公司层面的钱在动：DeepSeek 二轮融资据传增至 1000 亿元、投前估值约 5000 亿元；OpenAI 被美国八个州起诉，并为收购安全公司 Trail of Bits 谈判。</p>
+    <p><b>地缘：目标从海峡升级到政权。</b>普京提议在 11 月 18—19 日深圳 APEC 期间与特朗普、习近平三方会晤；内塔尼亚胡下令推翻伊朗政权；霍尔木兹的不合规船舶名单到 122 艘；WTI 结算价站上 103.66 美元；解放军在六处海域演训，与美日“利剑 27”撞期。</p>
+    <p><b>国内：养老与网暴。</b>山东“个人是养老第一责任人”的说法引出一轮关于制度与分配的讨论；胡二妹在被差评三天后溺亡，南方周末把它写成了平台评价体系与个体承受力的对照；雷波县的“耻辱”合影、东光县八家危化品厂围村、加油机作弊 2.7 亿元，这一周的监督报道集中在基层执法与财政压力上。</p>
+    <p><b>市场预期的一周变化。</b>Polymarket 上，美联储 10 月维持利率不变的概率从 79.5% 升到 84.5%；比特币 10 月内触及 9 万美元的概率从 27.5% 降到 16.5%；美伊停火撑过 10 月底的概率从 80.5% 微降到 79.5%；谷歌在 10 月底拥有最好 AI 模型的概率从 70.75% 升到 73.45%，Anthropic 从 23.0% 到 23.5%、基本没动。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（12 个源，覆盖 10 月 18—20 日，含已读与未读）· Hacker News 前 100 名 · Polymarket 热点榜（24 小时成交量前 20，剔除体育盘、最低流动性 5 万美元）· 期权日报（options-briefing-2026-10-20）。<br>
+    由 pi 自动生成 · 今日未读 784 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
