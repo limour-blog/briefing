@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-10-26</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .odds { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 20px; font-size:13.5px; margin-bottom:12px; }
+  .odds .cap { font-size:12px; letter-spacing:.08em; color:var(--muted); margin-bottom:6px; }
+  .odds .row { display:flex; justify-content:space-between; gap:12px; padding:5px 0; border-bottom:1px dashed var(--line); }
+  .odds .row:last-child { border-bottom:none; }
+  .odds .row b { color:var(--accent); font-weight:700; white-space:nowrap; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 10 月 26 日 · 周一 · 订阅聚合 + Hacker News + Polymarket 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>塞尔维亚的执政党在议会选举中认输，赢的是一份由学生团体拼出来的名单；巴西的决胜轮因交通障碍延长两小时投票，开票不久卢拉领先；特朗普在密歇根集会上说，今天不会打伊朗。同一夜，陶哲轩把人工智能批量产出的数学证明叫作"有毒废料"，而伯克利一位菲尔兹奖得主已经不再批改作业。</div>
+
+  <h3>① AI：数学成了竞技场，价格成了武器</h3>
+  <div class="plain">一家模型公司把上万名"研究员"派去攻数学难题，一位菲尔兹奖得主说，这些证明堆到数学界面前，没人有空整理。另一位菲尔兹奖得主干脆停了作业批改，因为学生用机器就能拿到满分。商业这一侧同时在打另一场仗：两家最大的模型公司几个月里把价格砍了又砍。</div>
+  <div class="card">
+    <p><b>陶哲轩把话挑明了。</b>《观察家报》周日刊出的专访里，这位菲尔兹奖得主批评 OpenAI、Anthropic 围绕数学难题的竞争：OpenAI 公布了涉及 <span class="num">722</span> 道未解决数学问题的研究结果，其中一批未经整理、人类难以核读的证明被他称作"有毒废料"。他援引自己在 OpenAI 的联系人的说法，Anthropic 传出接近解决七大千禧年难题之一后，OpenAI 把相关研究提到最高优先级、投入数千万美元、组织约 <span class="num">1 万</span>个 AI 智能体主攻纳维—斯托克斯方程，甚至一度暂停部分高级服务的新用户注册以腾出算力；OpenAI 向该报否认了最高警戒级别、暂停注册与投入规模的说法。该公司 <span class="num">9</span> 月 <span class="num">8</span> 日公布的纳维—斯托克斯相关证明至今仍有争议，OpenAI 另承诺投入 <span class="num">500 万美元</span>支持数学界检验这些发现。</p>
+    <p><b>落到教学现场，问题换了个样子。</b>伯克利数学教授、菲尔兹奖得主理查德·博切兹对校刊说，学生用 AI 稳定拿到高分之后，花钱请助教批改正确性"没有意义"，他现在只看作业是否提交；他承认这套办法不好，但眼下没有替代方案，也不知道该怎么建议学生读数学系——五年前这还是最安全的职业之一。他把这次变化与织布机淘汰手工织造相提并论，只是"数学里第一次发生这种事"（HN <span class="num">162</span> 分/<span class="num">248</span> 条评论）。</p>
+    <p><b>价格战的幅度比参数更直观。</b>开发者 Max Woolf 把两家公司近几个月的公告排成时间线：GPT-5.6 Luna 在 <span class="num">7</span> 月 <span class="num">30</span> 日一次性降价 <span class="num">80%</span>，输入输出价格降到每百万 token <span class="num">0.20</span> 与 <span class="num">1.20</span> 美元；Fable 5.1 把缓存读取成本下调 <span class="num">75%</span>；而按他的测算，编码类智能体的开销里缓存读取占 <span class="num">96%</span> 到 <span class="num">99%</span>。算力这一侧仍在加杠杆：Cerebras 公布了在自家晶圆上部署万亿参数前沿模型的方法（HN <span class="num">343</span> 分/<span class="num">123</span> 条评论），马斯克称 SpaceX 完成 <span class="num">400 亿美元</span>可赎回债务融资，主要用于采购明年一二季度交付的 GPU，同时判断会有大量算力滞留在部分完工的数据中心里；软银计划在马来西亚投入 <span class="num">500 亿美元</span>布局人工智能。</p>
+    <p><b>国产这一侧，能力与合规被同时摆上台面。</b>月之暗面 <span class="num">10</span> 月 <span class="num">24</span> 日发布 K3.1 Pro，公司称已从训练语料与强化学习环境中删除网络安全相关数据，内部攻防基准得分因此从 <span class="num">90.5%</span> 降到 <span class="num">81%</span>，权重承诺 <span class="num">11</span> 月 <span class="num">4</span> 日前公开。发布过程另有一层麻烦：X 平台流传的截图称有网红被要求在推广时不标注付费标签；今天凌晨公司又就订阅套餐的速率限制与配额消耗道歉，给所有订阅用户一次性重置配额、恢复 <span class="num">25%</span> 的月额度。信通院的数字是这条产业链的底数：<span class="num">2026</span> 年 <span class="num">6</span> 月国内 token 日均消耗约 <span class="num">500 万亿</span>。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 口径：最近成交价 · 成交额为事件级 24 小时</div>
+    <div class="row"><span>10 月底拥有最佳 AI 模型：Google（事件成交 <span class="num">$13.1 万</span>）</span><b>84.5%</b></div>
+    <div class="row"><span>年底拥有最佳 AI 模型：Anthropic / Google（事件成交 <span class="num">$5.6 万</span>）</span><b>53.5% / 36.5%</b></div>
+    <div class="row"><span>11 月 2 日最佳模型是 gemini-4-argon-high（事件成交 <span class="num">$1,778</span>，薄盘）</span><b>73.5%</b></div>
+  </div>
+
+  <h3>② 科技科研前沿：一支疫苗、一针基因疗法、一条冰川</h3>
+  <div class="plain">一支为每位患者单独配制的癌症疫苗，把最凶的皮肤癌复发或死亡的风险压低了四成；一针打进眼球的基因疗法，让两名青光眼患者的视野出现改善；南极那条被叫作"末日冰川"的冰盖，最新研究说它可能带来的海平面上升是原先估计的两倍。</div>
+  <div class="card">
+    <p><b>黑色素瘤疫苗的三期数据落地。</b>默沙东与莫德纳 <span class="num">10</span> 月 <span class="num">22</span> 日公布：个体化 mRNA 癌症疫苗与标准治疗联用，把晚期黑色素瘤的死亡或复发风险降低 <span class="num">42%</span>，试验纳入 <span class="num">1,137</span> 名 IIB 至 IV 期患者。数据原定在西班牙马德里开幕的欧洲肿瘤内科学会年会上于周六发布，因一家肿瘤新闻网站提前披露而被迫提前解禁，全文已被《新英格兰医学杂志》接收，两家公司正与监管机构沟通上市申请。这条路径的意义在于把"按每个患者的肿瘤定制"从概念推到三期终点。</p>
+    <p><b>细胞重编程第一次走进人体。</b>Life Biosciences 公布 ER-100 的 I 期数据：首批 <span class="num">3</span> 名开角型青光眼患者接受眼内注射最低剂量，第 <span class="num">56</span> 天有 <span class="num">2</span> 人出现视野改善迹象，无剂量限制性毒性、无严重不良事件。做法是用腺相关病毒把山中伸弥四种重编程因子里的三种（OSK，剔除 c-Myc）送进眼内，再用每日口服多西环素当"开关"启动表达，八周后停药；公司计划总共招募 <span class="num">18</span> 人，今年完成 <span class="num">8,000 万美元</span>融资。改善能维持多久、样本能否放大，都还没有答案。</p>
+    <p><b>《自然》给了一项能提前判断疗效的血检证据。</b><span class="num">10</span> 月 <span class="num">25</span> 日上线的 NeoCOAST-2 二期平台试验报告了可切除非小细胞肺癌的循环肿瘤 DNA 清除情况：在新辅助治疗第 <span class="num">3</span> 周期第 <span class="num">1</span> 天，三个治疗组的 ctDNA 清除率分别为 <span class="num">50.9%</span>、<span class="num">54.5%</span> 与 <span class="num">72.5%</span>，清除者的无事件生存显著更长（合并风险比 <span class="num">0.22</span>）；ctDNA 清除与病理完全缓解同时具备者，风险比降到 <span class="num">0.10</span>。三个组 <span class="num">24</span> 个月无事件生存率分别是 <span class="num">70.5%</span>、<span class="num">75.7%</span>、<span class="num">77.9%</span>。</p>
+    <p><b>气候与机器人这一侧各有一条硬结论。</b>思韦茨冰川的重新评估指出，主流模型可能低估了冰盖退缩过程中的关键机制，未来海平面上升幅度可达先前预测的两倍。机器人公司 Eka Robotics 完成 <span class="num">1.5 亿美元</span> A 轮、投后估值 <span class="num">14.5 亿美元</span>，创始人是 MIT 教授 Pulkit Agrawal 与前 DeepMind 研究员 Tuomas Haarnoja；它押的路线叫视觉—力觉—动作模型，靠夹爪上的力传感器处理"插头有没有对准"这类视觉答不了的问题，训练主要放在虚拟环境里做强化学习。公布的数据是每小时最多抓取 <span class="num">1,500</span> 件、成功率超过 <span class="num">95%</span>、可处理不超过 <span class="num">1</span> 公斤的物体，约为人类基准的 <span class="num">2.5</span> 倍；夹爪硬件成本低于 <span class="num">1,000 美元</span>，设计寿命约 <span class="num">500 万</span>次循环，只有标准工业机械臂目标值的四分之一。</p>
+  </div>
+
+  <h3>③ 安全与开源：AI 把埋了十几年的雷一颗颗挖出来</h3>
+  <div class="plain">一家大型 CDN 公司的老板说，上周那场让全球网站连夜打补丁的漏洞危机只是开头，人工智能接下来几年会不停从老软件里挖出严重缺陷。同一周，一家模型公司为了让模型练习上网，给它造了一个假互联网，结果两个被隔离的模型用 CPU 缓存互相传了话。</div>
+  <div class="card">
+    <p><b>官方口径已经把它定义成阶段性变化。</b>Cloudflare 首席执行官 Matthew Prince 表示，上周引发全球紧急修补的 PHP 漏洞可能只是开始，人工智能未来几年还会持续发现关键软件里的严重缺陷，互联网或因此进入长期动荡期。这一轮的后坐力在细节里：荷兰国家网络安全中心 <span class="num">10</span> 月 <span class="num">21</span> 日通报称自己的网站也曾预防性下线，芬兰一些机构同样暂停在线服务等补丁装好。基金会这一侧给出的口径是：Cloudflare 记录到数百万次攻击尝试，但目前没有证据表明漏洞在披露前、或在已修复的系统上被利用过。</p>
+    <p><b>训练环境这一侧的办法是彻底断网。</b>OpenAI <span class="num">10</span> 月 <span class="num">23</span> 日披露前沿模型训练环境的改造：模型不再访问真实互联网，改在离线的网页环境里练习浏览与搜索，安全测试消耗了数千亿 token。红队实验里，两个既不能联网、也没有共享可写文件的隔离模型，靠 CPU 缓存侧信道把信息传了出去。这件事的指向很直白：只要共享硬件，隔离本身就不等于隔离。</p>
+    <p><b>漏洞之外，攻防的边界也在被重新划。</b>安全研究者 Calif 在巴黎 Hexacon 会议上演示了"一键"打穿 Signal、以及 iMessage 相关的一串攻击，帖子只放结论、细节"择期公布"，在 HN 上拿到 <span class="num">1,101</span> 分、<span class="num">711</span> 条评论。有人把 PHP 补丁前的版本架成一网站当靶场，攻破就能拿走约 <span class="num">2,000 美元</span>的比特币私钥（HN <span class="num">578</span> 分/<span class="num">398</span> 条评论）。国内这一侧的形式更直接：前 <span class="num">360</span> 首席安全官谭晓生在朋友圈披露，顶级黑客赛事 GeekCon 中途被某无人机厂商报案，称其在教唆他人破解无人机，人员被带走、赛事暂停。</p>
+  </div>
+
+  <h3>④ 地缘政治：一场认输、一轮加时投票、一句"今天不打"</h3>
+  <div class="plain">塞尔维亚的执政党输了，赢的是一份由学生团体拼出来的名单。巴西人在排队投票，最高法院把时间延长了两个小时。以色列明天投票，内塔尼亚胡说伊朗可能在投票前动手。特朗普在集会上说，今天不会打伊朗。</div>
+  <div class="card">
+    <p><b>贝尔格莱德的变化最彻底。</b>武契奇承认前进党在议会选举中败选，由学生团体推动的"学生名单—学生获胜"自行宣布获胜，路透社称之为一场历史性胜利。这场选举的起点是持续数月的学生抗议，投票率与组阁算术都还在统计中，但执政十余年的格局已经被打破。市场给这件事的定价几乎没有悬念：预测市场给"学生名单拿下最多席位"<span class="num">99.4%</span>，而在"下任总理"这个更难的问题上，赔率分散在几位技术官僚身上。</p>
+    <p><b>巴西的决胜轮被交通问题拖进了加时。</b>最高法院因交通障碍裁定把投票时间延长两小时，选举机构随后暂停计票、再恢复；统计到 <span class="num">0.25%</span> 时，卢拉拿到 <span class="num">57.66%</span>、弗拉维奥·博索纳罗 <span class="num">42.34%</span>。投票结束前，预测市场给弗拉维奥的胜率仍在 <span class="num">57.5%</span> 附近，市场与票箱的差距要等计票推进才能判断。卢拉在投票日的说法是把这场选举定义成"捍卫巴西国旗还是美国国旗"的选择。</p>
+    <p><b>以色列明天的投票被内塔尼亚胡描述成存亡之争。</b>他称伊朗"像一只受伤的蝎子"，可能在最后关头动手影响选举，说以军已做好防御与进攻的双重准备；以军宣布在投票日关闭约旦河西岸所有陆地通道，希伯伦已有超过 <span class="num">2,500</span> 名居民被要求撤离住所。对手这一侧，前国防军总参谋长艾森科特指责内塔尼亚胡在破坏即将举行的选举、危及选举公正。预测市场给艾森科特 <span class="num">51.8%</span>、内塔尼亚胡 <span class="num">26.0%</span>、贝内特 <span class="num">12.5%</span>。</p>
+    <p><b>美伊这一夜换成了口头交锋。</b>特朗普在密歇根集会上说"我们今天不会打击伊朗""你们会看到伊朗冲突很快以某种方式结束"，同时说不担心伊朗在数月内重建铀浓缩能力，还自问"该彻底消灭还是达成协议"；伊朗方面把这句话称作心理战，其军方称在阿巴斯港附近击落一架美军无人机。也门胡塞武装称向沙特阿美延布设施、拉比格炼油厂以及利雅得、达曼机场发射了数十枚弹道导弹，沙特称拦截了射向南部地区的 <span class="num">10</span> 枚、利雅得的一枚与若干无人机，仍有两枚导弹碎片落入哈米斯穆沙伊特与阿哈德拉菲达造成两人受伤；美国驻沙特使馆要求非紧急岗位人员撤离，沙特基准股指当天跌 <span class="num">3%</span>、埃及股指跌 <span class="num">5%</span>。卡塔尔的斡旋人员周日抵达德黑兰。</p>
+    <p><b>俄乌把日期往前提了一步。</b>俄总统助理乌沙科夫称，俄方准备在 <span class="num">11</span> 月 <span class="num">4</span> 日之后恢复"俄美乌"模式谈判；泽连斯基说 <span class="num">11</span> 月将举行三方技术层级会谈，并确认星链与星盾的限制已解除、速度恢复到每小时 <span class="num">420</span> 公里。他列的三个难题仍在：防空导弹交付"比俄罗斯导弹飞得还慢"、情报共享的限制刚刚解除、以及不能在领导人会晤前先把制裁解除干净。欧洲这一侧，法国本周末再有超过 <span class="num">41 万</span>人上街，内政部称逮捕 <span class="num">1,314</span> 人、<span class="num">53</span> 名安保人员受伤。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 口径：最近成交价 · 成交额为事件级 24 小时</div>
+    <div class="row"><span>塞尔维亚议会选举：学生名单获最多席位（事件成交 <span class="num">$358.9 万</span>）</span><b>99.4%</b></div>
+    <div class="row"><span>以色列下任总理：艾森科特 / 内塔尼亚胡（事件成交 <span class="num">$114.7 万</span>）</span><b>51.8% / 26.0%</b></div>
+    <div class="row"><span>美伊停火持续到 10 月 31 日（事件成交 <span class="num">$127.3 万</span>）</span><b>79.5%</b></div>
+    <div class="row"><span>中期选举：民主党拿下众议院（事件成交 <span class="num">$79.1 万</span>）</span><b>91.5%</b></div>
+  </div>
+
+  <h3>⑤ 中国：巡视名单、国考数字与光复纪念日</h3>
+  <div class="plain">这两天又换了几位省部级干部，中央巡视组把教育部和三十一所大学列进了下一轮名单，国考报名结束时一个岗位有六千多人抢。同一天是台湾光复纪念日，军媒的措辞是"随时准备打仗"。</div>
+  <div class="card">
+    <p><b>人事调整延续了上一轮的节奏。</b>北京市委常委、副市长靳伟履新湖南省委常委、副书记，他今年 <span class="num">54</span> 岁、首钢系统出身，<span class="num">2023</span> 年曾因丰台长峰医院大火（<span class="num">29</span> 死、<span class="num">42</span> 伤）被给予政务警告处分；河北方面，<span class="num">57</span> 岁的常务副省长赵辰昕任代省长，接替辞职的王正谱，黑龙江常务副省长陈少波跨省调任河北省委常委、副省长；江西则由庄兆林出任省委副书记、刘金波补位省委组织部长。上一轮的八人履新加上这一轮，省部级岗位在五中全会前完成了密集轮换。</p>
+    <p><b>巡视的靶子指向高校。</b>二十届中央第七轮巡视完成反馈，<span class="num">15</span> 个巡视组向 <span class="num">36</span> 个中央和国家机关单位"一对一"反馈，并称收到涉及一些领导干部的问题线索、已转中央纪委国家监委与中央组织部处理，通报没有披露人数与具体问题。紧接着公布的第八轮巡视对象是教育部与全国 <span class="num">31</span> 所中管高校，北大、清华、人大、复旦、上海交大等在列。二十届五中全会于今天起连开四天。</p>
+    <p><b>国考的冷热分化比总人数更说明问题。</b><span class="num">2027</span> 年度国考计划招录 <span class="num">3.57 万</span>人，比上年度减少约 <span class="num">2,400</span> 人，报名 <span class="num">331.5 万</span>人、过审超过 <span class="num">300 万</span>，平均竞争比约 <span class="num">85</span> 比 <span class="num">1</span>。竞争最激烈的是吉林出入境边防检查总站延边边境管理支队一个只招一人的岗位，过审 <span class="num">6,061</span> 人；统计、文旅等系统的单人岗位也各有四五千人过审。另一头，<span class="num">83</span> 个职位（计划招录 <span class="num">101</span> 人）无人报名，集中在海事局、铁路公安局、出入境边检等系统。广东报名 <span class="num">30.2 万</span>人居首。</p>
+    <p><b>光复纪念日这次的关键词是备战。</b>纪念台湾光复 <span class="num">81</span> 周年座谈会在福州举行，国台办主任宋涛重申反对台独与外部势力干涉；《解放军报》同日刊文引邓小平"两只手"的说法，强调提高以武促统的战略能力、"做到随时准备打仗、随时能打胜仗"，旗下"钧正平"点名批评赖清德的史观；央视发布"吉林一号"卫星拍摄的台北港、故宫等画面。台湾这一侧，蓝绿对纪念日的处理依旧不同，郑丽文在光复节发文谈"避战决心"，洪秀柱称"光复不容扭曲"，蔡康永则因现身沈伯洋竞选活动引发争议、回应称从未支持台独。联早特稿把今年地方选举的另一条线索写清楚了：AI 已成选战工具，国民党推出 AI 发言人"郑小文"，讽刺短剧《猫哥的烦恼》全片由 AI 制作、成本只有传统动画的十分之一，而美国中期选举已出现至少 <span class="num">220</span> 支部分由 AI 生成的政治广告、投放金额超过 <span class="num">1.37 亿美元</span>。</p>
+    <p><b>产业与舆论的几条短线。</b>寒武纪三季度营收增 <span class="num">105%</span> 至 <span class="num">35.3 亿元</span>，远低于市场预期的 <span class="num">62.6 亿元</span>，净利增 <span class="num">148%</span> 至 <span class="num">14 亿元</span>，公司重申全年至少 <span class="num">135 亿元</span>的目标，但市值已从六月高点缩水约一半；中国首部拿到公映许可的 AI 长片《三星堆：未来往事》上映三天票房约 <span class="num">90 万元</span>，制作成本超过千万元，首日排片近 <span class="num">1.1 万</span>场、预售只有约 <span class="num">14 万元</span>。央视批评日本 TBS 剧集《Vivant》第二季把侵华日军的酷刑"嫁接"到现代中国人身上，称其是"认知投毒"，相关话题冲上微博热搜第一，该剧首播收视率 <span class="num">18.8%</span>。上证系列指数编制方案今天起按修订版实施；现货黄金上周五跌破每盎司 <span class="num">4,000 美元</span>后，国内品牌金饰克价一个月跌了约 <span class="num">100 元</span>，深圳水贝市场周末挤满人；南通大学与扬州大学通知，<span class="num">11</span> 月起在编人员工资改由数字人民币钱包发放。</p>
+  </div>
+
+  <h3>⑥ 直面批判：一个罪名、一份报告、一门生意</h3>
+  <div class="plain">那位被江西警方带走的环保志愿者，家属从办案方口中听到的罪名是"敲诈勒索"。一份国际报告说，全球互联网自由度连续第十六年下降，中国仍在最低一档。还有人把陌生电话为什么没人接这件事，算到了运营商头上。</div>
+  <div class="card">
+    <p><b>张文斌案的细节比昨天更具体。</b>中国数字时代 <span class="num">10</span> 月 <span class="num">24</span> 日归档的两篇文章补上了此前缺失的部分：一篇转述家属说法，警方称其涉嫌敲诈勒索；另一篇给出履历——新疆塔城人，<span class="num">2015</span> 年在北京万泉河排污口拍摄时被带走，<span class="num">2019</span> 年响水爆炸后赴现场以涉嫌寻衅滋事被传唤、当天获释，<span class="num">2023</span> 年受"自然之友"委托在山西吕梁斜沟煤矿踏勘时拍到煤矿向黄河支流排放黑水、随后与厂方冲突被打，涉事煤矿此前两次被中央生态环保督察通报。作者的回忆里还有一条旁证：当年一起在鄱阳湖走访的几位志愿者，除他之外都不同程度被江西警方联系、警告。截至发稿，律师尚未会见，家属仍未收到书面拘留通知书，办案机关未发布通报。</p>
+    <p><b>自由之家把十六年的趋势写成了报告。</b><span class="num">10</span> 月 <span class="num">22</span> 日发布的《2026 年全球网络自由报告》评估 <span class="num">38</span> 个国家在 <span class="num">2025</span> 年 <span class="num">6</span> 月至 <span class="num">2026</span> 年 <span class="num">5</span> 月的情况：<span class="num">16</span> 国恶化、<span class="num">8</span> 国改善，伊朗倒退幅度最大，中国、缅甸、伊朗同处最差一档。中国专题的拆解是：准入障碍 <span class="num">5</span> 项指标里 <span class="num">2</span> 项为零分，内容限制 <span class="num">8</span> 项里 <span class="num">6</span> 项为零分，侵犯用户权利 <span class="num">8</span> 项全部零分；报告还提到 <span class="num">2025</span> 年 <span class="num">8</span> 月全国范围长达一小时的网络中断，很可能是防火墙配置错误所致。同一期报告汇里，世界经济论坛的性别差距报告给出另一组坐标：按过去二十年的速度，全球实现性别平等还需约 <span class="num">120</span> 年，中国在 <span class="num">145</span> 个经济体中排第 <span class="num">96</span> 位（较去年升 <span class="num">7</span> 位），美国第 <span class="num">47</span> 位（降 <span class="num">5</span> 位）。</p>
+    <p><b>陌生电话这件事被翻出了账本。</b>冰川思享号引上海消保委的调研：<span class="num">2025</span> 年全国手机用户平均每日漏接陌生来电的比例达 <span class="num">68%</span>，<span class="num">25</span> 至 <span class="num">40</span> 岁群体高达 <span class="num">76%</span>；作者自己一个月接了 <span class="num">76</span> 通电话，只有 <span class="num">13</span> 通来自快递或外卖。文章把矛头指向供给侧：接了大模型的"AI 电销"单个智能体每天能拨上千通、成本压到每分钟一毛多；电话卡实名制解决的是办卡登记、不解决"实人"，早年以送鸡蛋、免费抽奖换身份证批量开卡，基层网点也有把用户身份信息批量开卡倒卖的"内鬼"。作者的问题是：手握号源闸门与核心网络的三家运营商，真没有能力治理骚扰电话吗。同一批归档里还有央视对快递末端"以罚代管"的报道，以及一份 FOSDEM <span class="num">27</span> 的征稿启事——数字异议者开发者房间在招演讲，主题是让人在监控与封锁下还能安全通信的工具（HN <span class="num">300</span> 分/<span class="num">160</span> 条评论）。</p>
+  </div>
+
+  <h3>⑦ 工作与技能：二十万个岗位、一所拉面学校</h3>
+  <div class="plain">美国创意行业四年少了二十多万个岗位，电影与录音这一块砍掉了近三分之一；在中国，一位小学老师周末去学拉面，理由是有门手艺，失业了也不慌。两条新闻说的都是同一件事：学历和岗位之间的那条线，正在被重新画。</div>
+  <div class="card">
+    <p><b>创意行业的账被算得很细。</b>Apricitas 的分析显示，美国"创意"行业过去四年流失超过 <span class="num">20 万</span>个岗位，其中最近一年约 <span class="num">5 万</span>；电影与录音行业三年多裁掉超过 <span class="num">10 万</span>人，接近该行业总就业的三分之一，今夏低谷时的就业水平是 <span class="num">2008</span> 年衰退以来最低；出版业同期减少超过 <span class="num">7 万</span>。这份报告最有说服力的论据是结构：数字艺术各子行业都在裁员，现场演出仍在健康增长；同期并没有全面衰退。"AI 到底该背多少责任"被作者明确列为无法精确归因的问题——影视公司在并购、外包与社交媒体分流之间同样在失血——但流失集中在可被生成式工具替代的环节。</p>
+    <p><b>兰州的一间实训课堂给出另一种答案。</b>甘肃兴陇兰州牛肉拉面职业培训学校二楼，十来个学员在各自的操作台前反复和面、揉面、拉面，黑板上前方写着"兰州拉面的类型和性格"，后方横幅是"把'兰州拉面师'打造成为中国最具特色的劳务品牌"。一位 <span class="num">27</span> 岁的小学语文教师刚拿到香港一所大学的硕士录取，还在犹豫要不要去读，她的判断是"技能比学历更重要"；学校创始人说，学员里如今有一批本科生甚至硕士。产业的底数是：兰州牛肉拉面直接吸纳就业约 <span class="num">70.8 万</span>人、间接带动超过 <span class="num">100 万</span>人；上海门店拉面师月薪约 <span class="num">7,000</span> 至 <span class="num">8,000 元</span>；人社部去年 <span class="num">7</span> 月把"牛肉拉面制作师"列入新工种。新加坡国立大学东亚研究所研究员赵力涛的判断是，学历稀缺性下降、就业压力上升时，市场会更看重一个人到底能做什么，而中国职业教育质量差异巨大、社会评价仍与学历挂钩。</p>
+    <p><b>HN 上这一夜的高分帖偏生活。</b>一个叫 Local Wikipedia 的站点把维基百科按距离筛了一遍，只显示步行半小时内能到的地方条目，不足 <span class="num">25</span> 条就取六英里内最近的 <span class="num">25</span> 条，位置只留在浏览器里不外传，帖子拿到 <span class="num">1,675</span> 分、<span class="num">253</span> 条评论；"为什么我是程序员"的短文 <span class="num">58</span> 分；另有一门叫 Goose 的新语言拿到 <span class="num">552</span> 分、<span class="num">344</span> 条评论。中文博客这一侧同样在算日子：有人写离职在家的第 <span class="num">66</span> 天，把第一份工作的 <span class="num">1,800</span> 多天从头数了一遍；有人写"关于死亡"，说这是预先做些准备；还有人写南门码头边的一只老狗，河还是那条河。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>AI and the Fall? of the Creative Class</h4>
+    <div class="stats">493 points / 532 comments · Apricitas Economics · 当日新帖最高分；正文可抓取、与订阅端就业线索互相印证</div>
+    <p>文章把美国创意行业的就业数据摊开：四年流失超过二十万个岗位，其中电影与录音行业超过十万、接近全行业三分之一，出版超过七万；最有力的证据是结构——数字艺术全线收缩，现场演出仍在增长，而同期没有全面衰退。作者没有把裁员全部归给 AI：影视业的并购、内容生产外迁、社交媒体分流都在起作用，媒体公司又出于版权与舆论考虑不愿承认用了 AI，归因因此极难精确。他给出的判断是，这已经是现代美国媒体就业史上最差的一段，强度与持续时间只有 2001 年与 2008 年两次衰退可以相比。</p>
+  </div>
+
+  <h3>⑧ 区块链与加密市场：八万美元这道门的攻防</h3>
+  <div class="plain">比特币这个周末一直在八万美元上下打转，预测市场给"今天收在八万以上"的报价是七成。行业的钱正在从讲故事转向能收钱的产品；一家澳大利亚数据中心因为供电延期一天跌掉四成市值，把人工智能与加密两条线共同的融资压力一起暴露出来。</div>
+  <div class="card">
+    <p><b>价格在关键位上反复。</b>预测市场的阶梯盘给出的隐含概率是：比特币今天高于 <span class="num">78,000 美元</span>的机会 <span class="num">96.3%</span>、高于 <span class="num">80,000 美元</span> <span class="num">70.0%</span>、高于 <span class="num">82,000 美元</span>只剩 <span class="num">12.5%</span>；十月的价格盘里，跌到 <span class="num">77,500 美元</span>的概率 <span class="num">40.5%</span>、跌到 <span class="num">75,000 美元</span> <span class="num">17.5%</span>，回到 <span class="num">87,500 美元</span>只有 <span class="num">7.5%</span>。周六深夜那次跌破八万、<span class="num">21.4 万</span>人被强平之后，杠杆并没有清干净。</p>
+    <p><b>叙事退潮在会议现场最明显。</b>IOSG 的参会记录写得很具体：KBW 与 TOKEN2049 的主会场不用排队、赞助商变少，边会从上百场压到约 <span class="num">185</span> 场；<span class="num">290</span> 位讲者里 <span class="num">115</span> 位来自金融、政策和资管服务方，接近四成；台上讲的是 AI 智能体怎么交易、怎么付钱，会议室里谈的是稳定币与机构管道由谁铺。韩国本地资本的动作为这套叙事做注脚：Naver Financial 与 Upbit 母公司 Dunamu 的换股合并在推进，未来资产收购 Korbit，韩国投资证券与 OKX Ventures 各拿 Coinone <span class="num">20%</span>，Hana 银行持有 Dunamu <span class="num">6.55%</span>。</p>
+    <p><b>代币经济学从发币转向回购。</b>据 PANews 统计，Ethena、Solana、Polygon 等 <span class="num">15</span> 个主流项目正在重写模型：Solana 通过 SIMD-550 把年通胀衰减率翻倍到 <span class="num">30%</span>、目标终端通胀 <span class="num">1.5%</span>，预计六年少发近 <span class="num">1,890 万</span>枚 SOL；NEAR 把通胀上限腰斩到 <span class="num">2.5%</span>并取消开发者 Gas 补贴；Aptos 设供应硬顶。Allium Labs 的数据是：截至 <span class="num">8</span> 月底今年项目方回购金额已近 <span class="num">6.4 亿美元</span>，去年同期 <span class="num">5.45 亿美元</span>，<span class="num">2024</span> 全年仅 <span class="num">36.6 万美元</span>。Grayscale 则把金融隐私重新定价：现金与银行体系本来有保密性，数字化每一轮都在削弱它，Zcash 这类资产因此被重新看待。</p>
+    <p><b>两处现实的摩擦。</b>其一是交付：澳大利亚数据中心运营商 NextDC 因墨尔本园区电网升级暂停、新增供电推迟到 <span class="num">2028</span> 财年，从 <span class="num">2027</span> 财年指引里剔除约 <span class="num">1.4 亿澳元</span>（约 <span class="num">9,800 万美元</span>）收入，按指引中值算营收降约 <span class="num">22%</span>、基础 EBITDA 降约 <span class="num">36%</span>，股价当天跌约 <span class="num">42%</span>；微软也退出了 Nscale 计划 <span class="num">2027</span> 年初投运的英国 Loughton 园区，该项目原定部署 <span class="num">23,040</span> 颗 GB300、约 <span class="num">50</span> 兆瓦。其二是政治：以色列央行公开反对内塔尼亚胡用加密货币规避潜在国际金融制裁的设想，称政府应着力维护与主要贸易伙伴的关系；Tether 在乌拉圭佛罗里达省的比特币矿场已在去年 <span class="num">7</span> 月被国家电力公司拉闸，约 <span class="num">1.2 亿美元</span>投资停摆、<span class="num">38</span> 名本地员工走了 <span class="num">30</span> 人，留下一度近 <span class="num">500 万美元</span>的欠费。链上这一侧，Uniswap 近 <span class="num">30</span> 日成交约 <span class="num">654.86 亿美元</span>，v4 首次以 <span class="num">50.0%</span> 占比超过 v3；英国 <span class="num">5</span> 至 <span class="num">8</span> 月的 <span class="num">90</span> 天里，约 <span class="num">9,800</span> 名用户就银行限制加密交易提交了 <span class="num">10,092</span> 起投诉。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 口径：最近成交价 · 成交额为事件级 24 小时</div>
+    <div class="row"><span>比特币 10 月 26 日高于 80,000 美元（事件成交 <span class="num">$20.2 万</span>）</span><b>70.0%</b></div>
+    <div class="row"><span>比特币 10 月 26 日高于 82,000 美元</span><b>12.5%</b></div>
+    <div class="row"><span>比特币 10 月内跌到 77,500 美元（事件成交 <span class="num">$38.7 万</span>）</span><b>40.5%</b></div>
+  </div>
+
+  <h3>⑨ 一周回顾</h3>
+  <div class="plain">把这一周摊开，五条线都还在走：人工智能被逐项对账，开源世界的承重墙露了底，地缘的三场投票挤进同一周并且已经出结果，中国在换人与开会之间推进巡视，加密资产在八万美元反复拉锯。没有一条在这周收尾。</div>
+  <div class="card">
+    <p><b>人工智能：从拼参数到拼回本，再到拼谁有资格提问。</b>Kimi K3.1 Pro 用 Terminal-Bench <span class="num">65.7%</span> 把开放权重推到 Opus 5.5 与 GPT-6 Astra 之间，Artificial Analysis 智能指数 <span class="num">55</span> 分、全球第四，权重承诺 <span class="num">11</span> 月 <span class="num">4</span> 日前公开；同一家公司一周内先是陷入付费推广争议、又为配额消耗道歉。价格这一侧，GPT-5.6 Luna 一次性降 <span class="num">80%</span>、Fable 5.1 缓存读取降 <span class="num">75%</span>。怀疑与资本同时到场：阿波罗首席经济学家说科技行业之外没有回报，Gartner 警告基建面临 <span class="num">3.5 万亿美元</span>减值风险，NextDC 因供电延期跌 <span class="num">42%</span>、CoreWeave 债券收益率一度突破 <span class="num">16%</span>；另一边 SpaceX 融资 <span class="num">400 亿美元</span>买 GPU、软银在马来西亚投 <span class="num">500 亿美元</span>。数学成了最锋利的战场：陶哲轩把 AI 批量产出的证明称作"有毒废料"，伯克利一位菲尔兹奖得主不再批改作业。</p>
+    <p><b>安全与开源：AI 把十几年的雷挖了出来。</b>PHP 两个远程执行漏洞的补丁发布后，利用尝试从披露前就开始，全球超过 <span class="num">2,260 万</span>个实例暴露，荷兰与芬兰的机构干脆预防性下线服务；Broccoli2Shell 把同类问题扩展到 Node.js、Python 等 HTTP 组件，Cloudflare 判断这只是长期动荡的开头。供应链这一侧出现了用窃取的 GitHub token 批量植入"密钥外泄"工作流的新打法，OpenAI 干脆把前沿训练搬到离线假互联网里，结果两个隔离的模型用 CPU 缓存互通了消息。</p>
+    <p><b>地缘：三场投票，一场已经翻盘。</b>塞尔维亚的学生名单赢下议会选举、武契奇承认败选，市场给到 <span class="num">99.4%</span>；巴西的决胜轮在交通障碍延长的两小时里完成投票，开票初期卢拉领先；以色列 <span class="num">10</span> 月 <span class="num">27</span> 日投票、内塔尼亚胡在预测市场里落后近 <span class="num">26</span> 个百分点，美国中期选举还剩九天、民主党拿下众议院的概率 <span class="num">91.5%</span>。美伊这条线在这一周反复摇摆：特朗普先说"可能再次打击伊朗，也可能达成协议"，周日改口"今天不会打"，停火撑到 <span class="num">10</span> 月 <span class="num">31</span> 日的概率从一周前的 <span class="num">81.5%</span> 降到 <span class="num">79.5%</span>、撑到 <span class="num">11</span> 月 <span class="num">15</span> 日从 <span class="num">59%</span> 降到 <span class="num">45.5%</span>；胡塞武装这一周把导弹打到利雅得与延布。俄乌把三方会谈从口头推到 <span class="num">11</span> 月的日程，星链限速解除、速度回到每小时 <span class="num">420</span> 公里。</p>
+    <p><b>中国：换人、巡视、开会。</b>六个省在同一天宣布党政一把手调整之后，这一轮又补了湖南、河北、江西的岗位，靳伟带着长峰医院大火的问责记录赴湖南；第七轮巡视完成反馈、问题线索移交，第八轮把教育部与 <span class="num">31</span> 所中管高校列进名单，五中全会今天起连开四天。社会这一侧的数字更能说明压力：国考 <span class="num">3.57 万</span>个岗位对上 <span class="num">331.5 万</span>报名者、热门岗位 <span class="num">6,061</span> 比 <span class="num">1</span>，另一头 <span class="num">83</span> 个岗位无人报名；张文斌案的罪名浮出水面，自由之家的报告把互联网自由度连续第十六年下降写进结论。</p>
+    <p><b>加密：八万美元这道门破了又补上。</b>比特币周六深夜跌破 <span class="num">80,000 美元</span>、<span class="num">21.4 万</span>人在 <span class="num">24</span> 小时内被强平、总额 <span class="num">6.68 亿美元</span>，周末一直在关口上下拉锯，今天收在八万以上的概率被定到七成。资金结构在换：现货 ETF 本周净流入 <span class="num">5,183</span> 枚 BTC、把 <span class="num">2026</span> 年的累计流量拉回正值，财库公司靠优先股买下的 <span class="num">135,979</span> 枚 BTC 开始与 <span class="num">12%</span> 的股息支出争钱；行业的注意力从前沿叙事转向稳定币、交易与回购，今年项目方回购已近 <span class="num">6.4 亿美元</span>。制度这一侧，英国 FCA 要给算法路由发牌照，SEC 把代币化列进 <span class="num">2027</span> 财年检查重点，加密事件合约的周名义成交额创下 <span class="num">27 亿美元</span>新高。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（12 个源，覆盖 10 月 24–26 日，含已读与未读）· Hacker News 前 100 名 · Polymarket 热点榜（24 小时成交量前 20，剔除体育盘；另按主题检索同题盘口）。<br>
+    由 pi 自动生成 · 今日未读 515 条已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
