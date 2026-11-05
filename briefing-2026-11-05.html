@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-11-05</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .odds { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 20px; font-size:13.5px; margin-bottom:12px; }
+  .odds .cap { font-size:12px; letter-spacing:.08em; color:var(--muted); margin-bottom:6px; }
+  .odds .row { display:flex; justify-content:space-between; gap:12px; padding:5px 0; border-bottom:1px dashed var(--line); }
+  .odds .row:last-child { border-bottom:none; }
+  .odds .row b { color:var(--accent); font-weight:700; white-space:nowrap; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 11 月 5 日 · 周四 · 订阅聚合 + Hacker News + Polymarket 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>美国中期选举计票落定，民主党拿下参众两院（参议院已确定 <span style="color:#f0b09a">53</span> 席、预测 <span style="color:#f0b09a">55 至 56</span> 席，众议院已确定 <span style="color:#f0b09a">224</span> 席、预测约 <span style="color:#f0b09a">255</span> 席），特朗普承认伊朗战争推高油价伤及选情；国际油价当日暴跌，布伦特结算 <span style="color:#f0b09a">94.62 美元</span>、跌 <span style="color:#f0b09a">8.67%</span>，WTI 结算 <span style="color:#f0b09a">88.12 美元</span>、跌 <span style="color:#f0b09a">8.29%</span>；腾讯发布 <span style="color:#f0b09a">770B</span> 参数的混元 Hy4、月之暗面放出 Kimi K3.1 Pro 权重；比特币回到 <span style="color:#f0b09a">8.01 万</span> 美元上方。</div>
+
+  <h3>① 中期选举：一次把两院一起交出去的投票，一轮没等结果就涨起来的科技股</h3>
+  <div class="plain">美国投完票，结果把国会两院一起交给了民主党。共和党在参议院的多数没保住，众议院的席位也丢了一大片。总统在结果出来后第一次露面，把失利分别归到自己没有出现在选票上、福克斯新闻的民调和打伊朗推高的油价。第二天开盘，科技股集体上涨，几家大型云服务商的涨幅最大，而靠借钱建数据中心的新公司反而跌了。</div>
+  <div class="card">
+    <p>计票给出的数字比选前预测更彻底。据美联社研判，民主党在参议院已确定 <span class="num">53</span> 席、预测可得 <span class="num">55</span> 至 <span class="num">56</span> 席；众议院已确定 <span class="num">224</span> 席、预测可得 <span class="num">255</span> 席左右；众议院普选票的总体领先幅度可能达到 <span class="num">12%</span> 至 <span class="num">14%</span>，为 <span class="num">1976</span> 年以来的纪录。特朗普承认伊朗战争推高油价是共和党失利的重要原因，同时把责任分给「自己没在选票上」与福克斯新闻的民调；副总统万斯公开把失利归因于战争，资深共和党参议员随即公开反驳。人事层面，杰弗里斯致信同僚宣布竞选众议院议长，舒默称将再次当选多数党领袖，凯瑟琳·克拉克将成为下一任众议院多数党领袖。</p>
+    <p>市场把「白宫与国会分属两党」读成利好，原因是扩大财政赤字与继续加征关税这两条通道都变窄了，政策不确定性下降。11 月 4 日收盘，道指涨 <span class="num">3%</span>、标普 500 涨 <span class="num">1.85%</span>、纳指涨 <span class="num">1.97%</span>；个股上亚马逊盘中涨约 <span class="num">8%</span>、谷歌涨逾 <span class="num">6%</span>、微软涨逾 <span class="num">7%</span> 并一度创历史新高、苹果涨近 <span class="num">7%</span>、Meta 涨约 <span class="num">3%</span>，通用汽车与 3M 也创出多年新高。分化出现在数据中心这一侧：41 项地方公投里有 <span class="num">40</span> 项结果不利于数据中心建设，新兴云厂商 CoreWeave 当天跌约 <span class="num">10%</span>，资金与电力已经落实的大厂被看成受益方。利率那头，两年期美债收益率跌至两个月低点，美元指数当天下跌。</p>
+    <p>代价落在押注者身上。英国《金融时报》称这场选举已让马斯克损失超过 <span class="num">600 亿</span> 美元；他本轮为共和党阵营投入的资金，各机构估算在 <span class="num">2.75 亿</span> 至 <span class="num">4.46 亿</span> 美元之间，差异来自政治捐款披露制度的分层（一部分支出通过非直接渠道完成）。市场对 12 月加息的定价仍站在偏鹰一侧。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 口径：最近成交价 · 成交额为事件级 24 小时</div>
+    <div class="row"><span>2028 年民主党总统提名：AOC / 纽森 · 成交 $339 万</span><b>15.3% / 14.3%</b></div>
+    <div class="row"><span>2028 年美国总统大选：万斯 / AOC / 纽森 · 成交 $342 万</span><b>17.1% / 12.6% / 8.1%</b></div>
+    <div class="row"><span>12 月美联储会议：加息 25 个基点 / 不变 · 成交 $139 万</span><b>77.5% / 21.5%</b></div>
+  </div>
+
+  <h3>② 伊朗与油价：一条没打出去的计划，一桶一天跌掉近九美元的原油</h3>
+  <div class="plain">石油这天跌得很急。总统在投票日之后说，美国眼下没有立刻打击伊朗的计划，还说「我们似乎正在得到我们想要的一切」。伊朗那边说又击落了一架美国无人机，四艘油轮在海峡附近触雷起火，最高领袖说美国要的是无条件投降。谈判传出的消息互相矛盾，一边说接近突破，一边说僵住了。油价当天一路往下，收盘跌掉近一成。</div>
+  <div class="card">
+    <p>价格把「不马上打」读成了降级的起点。布伦特原油期货结算价 <span class="num">94.62</span> 美元、跌 <span class="num">8.98</span> 美元（<span class="num">8.67%</span>），WTI 结算 <span class="num">88.12</span> 美元、跌 <span class="num">7.97</span> 美元（<span class="num">8.29%</span>），盘中布油一度跌超 <span class="num">10%</span>；上海原油期货主力同日跌 <span class="num">4%</span>。与之同向的证据来自库存：EIA 数据显示美国柴油库存降至 <span class="num">1 亿</span> 桶以下、为 <span class="num">2003</span> 年以来最低，馏分油库存也降到 <span class="num">2003</span> 年 5 月以来最低，美俄柴油协议受阻、两艘在途油轮已分别改道巴西与地中海。</p>
+    <p>军事线上的动作没有停。伊朗革命卫队称再次击落一架美国无人机，并称四艘油轮在霍尔木兹海峡附近触雷起火；美国把对伊朗的国家紧急状态延长至 <span class="num">2027</span> 年 11 月，财政部发布新一轮涉伊朗制裁；伊朗最高领袖穆杰塔巴·哈梅内伊称美国寻求「无条件投降」，并称美国党派更迭不会改变其敌意，德黑兰市长则把对美妥协比作给敌人「人工呼吸」。也门胡塞武装称袭击了沙特哈立德国王国际机场，沙特方面未予证实。</p>
+    <p>谈判端同一天给出两种时间表。巴基斯坦总理称与伊朗及其他地区国家的外交接触「非常积极」，阿拉伯消息人士称美伊谈判已取得重大进展、预计周五更明朗；同时特朗普说战争「将在我想结束的时候结束」，并否认曾承诺战争会在中期选举后立即结束。市场对这组说法的定价是：停火能撑过 11 月底的概率一周内从 <span class="num">49.5%</span> 降到 <span class="num">42.5%</span>，撑过年底的从 <span class="num">50.5%</span> 降到 <span class="num">30.5%</span>。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 口径：最近成交价 · 成交额为事件级 24 小时</div>
+    <div class="row"><span>美伊「有效停火」持续到 11 月 30 日 / 12 月 31 日（一周前 49.5% / 50.5%）· 成交 $31.7 万</span><b>42.5% / 30.5%</b></div>
+    <div class="row"><span>美国宣布结束对伊朗封锁：12 月 31 日前 / 11 月 30 日前 · 成交 $63.3 万</span><b>43.2% / 24.5%</b></div>
+    <div class="row"><span>霍尔木兹海峡通行恢复正常：12 月 31 日前 / 11 月 30 日前 · 成交 $18.5 万 / $16.8 万</span><b>10.5% / 3.9%</b></div>
+    <div class="row"><span>11 月 WTI 触及 80 美元 / 触及 100 美元 · 成交 $26.7 万</span><b>46.0% / 33.5%</b></div>
+  </div>
+
+  <h3>③ AI 与算力：一份七千七百亿参数的发布、一批放出来的权重、一块被固件锁住的显卡</h3>
+  <div class="plain">中国两家公司在这天把自家最好的模型放上台面：腾讯发布新一代混元，说它进了全球开源模型的第一梯队，还第一次能看懂画面、能操作电脑；月之暗面干脆把新模型的权重放出来供下载。英伟达这边出了个反向消息，同一块显卡装在 Linux 上跑推理，速度只有 Windows 上的三分之一，原因是管电源的那部分固件只在 Windows 里有。算力的另一边，一家中国云厂商向英伟达订的货，四个月里只能拿到一点零头。</div>
+  <div class="card">
+    <p>腾讯这次给的是完整规格：混元 Hy4 总参数 <span class="num">770B</span>（<span class="num">7700 亿</span>），采用混合专家架构，首次引入视觉理解能力，首次支持电脑操作（Computer Use），能结合命令行与图形界面执行复杂任务，权重将近期开源。团队自己的说法留了余地：Hy4 已是最强开源模型之一，但与顶尖闭源模型仍有较大差距。背景是它在国内大模型竞争里落后了一步——字节在聊天机器人与视频生成上占优，月之暗面与阿里的模型今年夏天已在部分基准上逼近 OpenAI 与 Anthropic——腾讯市值今年以来缩水约 <span class="num">35%</span>，11 月 18 日将公布三季报。</p>
+    <p>开源这一侧的竞争在同一天被三条消息推到台前。月之暗面放出 Kimi K3.1 Pro 的权重（HN <span class="num">300</span> 分/80 评论），并把上线 Ollama Cloud、承诺零数据留存一并公布。美国初创 Ricursive 发布 Ripple-65B Preview，宣称在智能体编程基准 TerminalBench 2.1 上取得美国开源权重模型的最高分 <span class="num">80.52</span>，压过参数大得多的 Reflection Beam 501B（<span class="num">80.1</span>）、Meta Muse Spark Open 816B（<span class="num">76.4</span>）、Thinking Machines Inkling 975B（<span class="num">63.8</span>）与英伟达 Nemotron 3 Ultra 550B（<span class="num">56.4</span>），预训练用了 <span class="num">12 万亿</span> token、支持 <span class="num">100 万</span> token 上下文（HN <span class="num">164</span> 分/58 评论）。</p>
+    <p>硬件那条是这天分数最高的新帖。作者实测在微星 Prestige 那台 RTX Spark 笔记本上双系统装 Linux，桌面、GPU 加速、4K 120Hz 与音频都能起来，代价是插上电源后 GPU 被锁在约 <span class="num">780MHz</span>，而 Windows 下能跑到 <span class="num">2GHz</span> 以上；一块在 <span class="num">1200 亿</span> 参数模型上本可跑 <span class="num">65</span> token/s 的芯片，落到不足 <span class="num">14</span> token/s，约 <span class="num">35%</span>。原因是英伟达有个只在 Windows 存在的组件负责 CPU 与 GPU 之间的供电调度，Linux 读不到这份固件（HN <span class="num">569</span> 分/263 评论）。同一天另一条硬件消息是 AMD：管理层称四季度将首次在销量上超过英特尔，数据中心收入三季度同比增 <span class="num">97%</span>，并给出 2027 年营收增超 <span class="num">80%</span> 的指引、同时预计 2027 年 PC 出货量下降两位数（HN <span class="num">414</span> 分/133 评论，正文取自 Tom's Hardware）。</p>
+    <p>采购与权限这几件事同时收紧。彭博社报道，阿里、腾讯、字节等中国厂商共订购约 <span class="num">600 万</span> 颗 RTX Pro 5500，单价超过 <span class="num">1.1 万</span> 美元、订单总额约 <span class="num">700 亿</span> 美元，但未来四个月只能收到数万颗、约占总量的 <span class="num">1%</span>，首批数千颗年底前交付、第二批数万颗明年 2 月左右交付。《金融时报》报道甲骨文在特朗普政府施压下取消了与腾讯约 <span class="num">70 亿</span> 美元、为期五年的芯片租赁合同，广东省官员曾到访腾讯要求支持国产芯片。企业内部则在收紧工具：苹果把部分工程师的每日 AI 使用上限从 <span class="num">300</span> 美元降到 <span class="num">200</span> 美元并计划继续削减；高盛把 Claude Code 等工具主要限给工程师使用，引发部分交易员不满；字节跳动大面积限制员工使用 Claude、Codex 等外部工具。融资侧，微软发行 <span class="num">250 亿</span> 美元债券，Meta 分五批定价发行 <span class="num">150 亿</span> 美元高级票据，Meta 另据 Axios 收购 AI 初创 Conductor。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 口径：最近成交价 · 成交额为事件级 24 小时</div>
+    <div class="row"><span>11 月底拥有最佳 AI 模型：Google / Anthropic · 成交 $5.8 万</span><b>73.5% / 23.5%</b></div>
+    <div class="row"><span>12 月底拥有最佳 AI 模型：Google / Anthropic（Google 一周前 49.5%）· 成交 $9.0 万</span><b>59.5% / 32.5%</b></div>
+    <div class="row"><span>11 月 16 日最佳模型：gemini-4-carbon-high / 其他任一模型 · 成交 $3,005</span><b>76.0% / 22.5%</b></div>
+  </div>
+
+  <h3>④ 安全与隐私：一笔还了四十年的技术债、一场持续两个月的假面试</h3>
+  <div class="plain">这天的安全消息指向同一件事：旧代码正在被新工具翻找。一门支撑大量网站后台的老语言出了一个能被远程执行代码的漏洞，受影响的站点里包括很大的政府与百科网站，官方在两个月内做出补丁。交易所那份被盗报告把攻击者两个月的准备逐条列出来，起点是一场假面试。国内一款游戏的电脑客户端也被发现从官方地址下载了带毒脚本。</div>
+  <div class="card">
+    <p>PHP2Shell 这件事的分量在于它把「技术债到期」写成了具体时间线。缺陷早在 <span class="num">2024</span> 年就报给了 PHP 基金会，表现只是一个内存越界的崩溃，通常没人当真；今年在 OpenAI 赞助下做独立审计的安全公司 Calif，两周内用 AI 工具把这条崩溃升级成可在服务器上执行任意代码的通道，受影响的站点包括 NASA、维基百科、白宫，以及所有跑 WordPress 或 Drupal 的站点。基金会随后用 <span class="num">4</span> 名工程师、<span class="num">2</span> 个月做出补丁。Tolmo 的 AI 安全研究负责人 Matt Suiche 说，过去四十年由人写下的遗留软件正在被逐一暴露，是付账的时候了；哥伦比亚大学的 Suman Jana 说，利用这条缺陷需要「非常具体的推理」，AI 恰好擅长这种活，顶级专家因此能做得更多，而略低于顶级的人也能在没有全部细节的情况下做到。约翰霍普金斯大学的 Matthew Green 的判断更冷：在真正糟糕的事情发生之前没人会修，而 PHP2Shell 还不够糟（HN <span class="num">977</span> 分/593 评论）。</p>
+    <p>币安那份初步报告第一次把攻击链摊开。据公司披露：6 月，钱包运维工程师 A 为安装 AI 编程工具下载了被篡改的 Homebrew 安装包，安全团队发现后更换设备、轮换凭证，但其岗位与同事信息已经暴露；9 月，软件工程师 B 在一场虚假招聘面试里被诱导执行含恶意代码的仓库，工作电脑被入侵；10 月 20 日，攻击者借 B 的电脑与内部 AI 工具进一步控制工程师 A 与 C，并找到容器部署权限令牌；10 月 29 日，攻击者用窃取的凭证部署容器、执行恶意脚本，再通过未经授权访问的内部钱包签名服务转走资产，并在以太坊上借 EIP-7702 委托把授权指向自己控制的合约。涉及金额约 <span class="num">63.4 亿</span> 美元，约 <span class="num">28.5 亿</span> 美元已被冻结或拦截，截至 10 月 31 日 <span class="num">98%</span> 的受影响代币资产已补足。FBI 把事件归给朝鲜的 TraderTraitor（HN <span class="num">532</span> 分/317 评论）；链上调查员 SomaXBT 分析攻击者在 Tron 与 Solana 上的 <span class="num">47,644</span> 笔交易，称约 <span class="num">54%</span> 具有自动化特征——到账 60 秒内转出、多钱包同区块操作——一轮 <span class="num">34</span> 个中转钱包的操作持续约 <span class="num">3.5</span> 小时。</p>
+    <p>其余几条各自说明「信任被写进了配置文件」。苹果宣布自 iOS 27.3、iPadOS 27.3、macOS 27.3 与 visionOS 27.3 起，审查通过公开 iCloud 链接分享的内容，违规账号可能被封禁。一条 Tell HN 帖提醒，个人版 Google AI 订阅的聊天记录会被用于训练，除非关掉历史记录或改用临时会话，人类审阅者也可能读到这些记录（HN <span class="num">592</span> 分/150 评论）。苹果在年度财报文件里新增了 AI 智能体风险因素，称这类系统可能「以非预期或不可预测的方式」行动、从而带来诉讼与声誉损失。《胜利女神：妮姬》国际服 PC 客户端被攻破，攻击者篡改启动器从官方 CDN 加载的 JavaScript，投下带 <span class="num">19</span> 条命令的 LuaJIT 远程控制木马，目标清单约 <span class="num">1,790</span> 条路径，含 Claude Code、Cursor、Gemini CLI 等开发工具的密钥。欧洲制冷系统的攻击开始伤到实体库存：法国血液机构 EFS 证实，三家站点内由第三方运营的冷藏存储设备被入侵，黑客蓄意调高温度。</p>
+  </div>
+
+  <h3>⑤ 科技科研前沿：一组关于帕金森病的稿子、一份用古 DNA 画出的语言地图、一台自己跑实验的实验室</h3>
+  <div class="plain">这天的科研消息集中在两处。Nature 一次发了一组关于帕金森病的稿子，主线是这种病也许先从肠道开始，以及把多巴胺神经元移植回病人脑内的早期试验有了初步成功。另一组研究用古 DNA 把凯尔特语与日耳曼语的扩散路线画了出来。实验室之外，还有一条关于「证明」与「理解」谁更算科学成果的长文讨论。</div>
+  <div class="card">
+    <p>帕金森这一组是本期的主题刊。《帕金森病：超越大脑》给出的假设是病程可能先在肠道发生、环境因素在触发环节有作用；配套的几篇分别讲大脑如何自我防护、把被疾病破坏的神经元替换掉的移植试验（数十年的工作之后，把多巴胺神经元植入患者脑内已进入早期试验并出现初步成功迹象）、以及干细胞移植为何可能比现有疗法在更基础的层面改变病程；另有一篇盘点六项研究重点、一篇问化学物质是否参与其中、一篇讲如何把脑刺激的参数调得更准。同一期里还有一条与临床更近的机制发现：癌细胞在把 RNA 翻译成蛋白时可能出错，这个错误可被改造成只攻击肿瘤的基因治疗工具。</p>
+    <p>另外几条硬进展各有明确的量。Nature 的论文与配套简报称，研究团队造出一套能表征和控制硬 X 射线脉冲的计量方法，直接测到 <span class="num">170</span> 阿秒的脉冲时长，为观察原子与分子内部电子运动提供了「秒表」。一个 AI 原生的自主生物分子实验室被公开：AutoDNA 在多种仪器之间编排多目标实验，把 AI 与自动化系统放进同一个端到端、多用户的框架里。系外行星成像那条给出的是一条绕开望远镜稳定性限制的图像处理框架，能直接拍到比以前更暗的行星，并为未来拍摄类地行星降低门槛。用古基因组追踪凯尔特语与日耳曼语扩散的研究，样本来自数千名古代个体。另有两篇关于社会与科学的讨论：一篇梳理本届中期选举结果对科学的意味，研究者的期望是国会对现政府的科学政策形成阻力，但能做的有限；一篇讲为什么随机干预会在无意中重塑人的社交网络。</p>
+    <p>HN 这一天的高分科研帖是方法论之争。Jessica Hullman 的长文《验证不等于知识》把「AI 给出可验证的答案」与「人类获得理解」分开：数学研究的标准是让人更清楚地思考数学，而不是把定论存档；把科学等同于产出一串可校验的解答，会切断新发现进入知识传统、塑造下一代研究者的通道（HN <span class="num">213</span> 分/127 评论）。临床侧的补充来自 Dana-Farber：年轻结直肠癌患者在细胞与遗传层面与老年患者存在明显差异，这项发现直接影响早筛与分型（HN <span class="num">123</span> 分/57 评论）。行星侧还有一条：哥伦比亚大学的研究称火星上的水手号峡谷今天仍在构造活动（HN <span class="num">140</span> 分/37 评论，正文未能抓取）。机器人侧是一条 Show HN：Stringman 用四台电机把抓手吊在天花板四角，覆盖 7×7×3 米的房间，平均负载 <span class="num">1.9</span> 公斤、售价 <span class="num">795</span> 美元，官方对比是同样执行器的 0.75 米串联臂负载 <span class="num">0.32</span> 公斤（HN <span class="num">795</span> 分/236 评论）。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>AI is forcing us to pay off 40 years of technical debt</h4>
+    <div class="stats">977 points / 593 comments · IEEE Spectrum（2026-11-02，作者 Dina Genkina）· 榜单上昨日终点之后的新帖里它分数最高；次高的 Gemini 聊天记录帖（592 分）并入第 ④ 段，英伟达 RTX Spark 帖（569 分）并入第 ③ 段；当前 rank 1 是白宫网络检测到住宅代理的新帖（最新一次拉取 359 分，首次拉取 248 分），只给出一次概率性观察，故不作头条；更高分的 HackerTube（2876 分，11 月 1 日）与 Astra 批评帖（1020 分）是旧帖</div>
+    <p>这篇文章的落点是一句可以核对的判断：过去四十年由人写下的遗留代码正在被 AI 逐一翻出漏洞，而防守方的速度没有同步提高。它用 PHP2Shell 做样本——一条 2024 年就上报、被当成「只是崩溃」搁置的内存越界缺陷，在 AI 辅助下两周内被升级成远程执行代码，影响到白宫、NASA 与维基百科所在的 WordPress、Drupal 生态；找洞与修洞之间存在结构性不对称，找洞可以靠概率与枚举，修洞必须确认所有攻击面都被关掉且不破坏现有功能，于是 4 名工程师花了 2 个月。文章给出的行业含义是钱与算力需要往防守端搬：前沿实验室开始捐出部分 token 预算做审计，补丁与补丁证明的自动化在推进，而真正让人动手修的时间点，往往要等到一次普通人能感知的事故。</p>
+  </div>
+
+  <h3>⑥ 中国：一次下调的再贷款利率、一条首次写入法律的「禁止有罪推定」、一位被免职的上将</h3>
+  <div class="plain">中国这天出的政策都对着股市与汇率。央行把支持上市公司回购的再贷款利率又降了一档，理由是维护资本市场平稳；一家存储芯片公司把回购金额的上限翻了一倍多。司法那头，刑事诉讼法修正草案第一次把「禁止有罪推定」写进条文。人事上，一位退役上将的政协职务被免，武警连续三任司令员至此全部出事。</div>
+  <div class="card">
+    <p>央行这次动的是资金价格。公告称自 11 月 4 日起把股票回购增持再贷款利率下调 <span class="num">0.25</span> 个百分点至 <span class="num">1%</span>，支持对象为 <span class="num">21</span> 家全国性银行与 <span class="num">5</span> 家系统重要性城市商业银行，再贷款支持比例 <span class="num">100%</span>、期限一年可展期；11 月 2 日的座谈会之后，银行已申请超过 <span class="num">2,000 亿</span> 元额度。企业侧的回应来得很快：长鑫科技董事长提议把回购金额从「不低于 10 亿元、不超过 20 亿元」提高到「不低于 <span class="num">25 亿</span> 元、不超过 <span class="num">50 亿</span> 元」，公司前三季度营业收入 <span class="num">2,690.24 亿</span> 元、同比增 <span class="num">738.51%</span>，净利润 <span class="num">1,320.4 亿</span> 元，上年同期为亏损 <span class="num">52.8 亿</span> 元。港股与中概同日走强，恒指期货夜盘涨 <span class="num">2.11%</span>、报 <span class="num">24,429</span> 点，阿里巴巴美股涨 <span class="num">7%</span>。</p>
+    <p>立法这条的分量在于措辞。刑事诉讼法修正草案 11 月 2 日提请全国人大常委会初次审议，明确「未经人民法院依法判决，对任何人都不得确定有罪。禁止有罪推定」。南都的评论称，无罪推定原则在 1996 年就已写入刑诉法，但法案里一直没有明示，写入这六个字是「法治进步的大动作」；学者王仁琳提醒，简单加上六个字不具备制度纠偏的魔力，关键在它与强制措施、证据资格、辩护权等具体条款放在一起做的系统性升级。争议焦点之一是「指定居所监视居住」是存是废，草案把监视居住明确为减少羁押的替代措施，对无固定住处的嫌疑人不再由公安指定处所。</p>
+    <p>产业与人事各有新进展。闻泰科技披露，安世半导体已向阿姆斯特丹地方法院起诉公司、实控人张学政以及安世中国与安世上海，索赔超过 <span class="num">20 亿</span> 美元，理由是违反内部协议、建立独立供应链并形成直接竞争，闻泰与张学政在 11 月 3 日否认指控。路透社报道，美国对华出口限制令 SK 海力士的纽约建厂计划受阻。国家发改委称「十五五」期间将新建约 <span class="num">15</span> 个民用运输机场、约 <span class="num">2,500</span> 公里国家高等级水运航道，时速 <span class="num">400</span> 公里高铁将稳步推进商业化运营。政协常委会会议免去王宁的全国政协常委、外事委员会副主任职务并撤销其委员资格，王宁曾于 2014 年起任武警部队司令员六年、2015 年晋升武警上将；至此 2009 年底以来的连续三任武警司令员全部「出事」，前任王建平 2016 年落马、继任王春宁去年被开除党籍军籍。同一次会议还接受申长雨请辞、撤销张建明、余艳红、王彤宙的委员资格。</p>
+  </div>
+
+  <h3>⑦ 直面批判：一间装满天眼与算法的教室、一份让曝光者给老赖道歉的判决</h3>
+  <div class="plain">这天的批评文字各自盯着一件具体的事。一所顶尖大学在教室里装了能分析到课率与抬头率的系统，还在招标文件里写明能识别课堂敏感词，一位校友写文章问：这套东西由谁核验、人脸数据交给谁。一位长期曝光老赖的自媒体人被判公开道歉，他写文章说判决把是非弄反了。还有一位在新疆被带走的环保志愿者，家属说他早就预料到会有这一天。</div>
+  <div class="card">
+    <p>南京大学那套「智慧教室系统」的争议落在两个数字上：中标金额 <span class="num">3,152 万</span> 余元，其中直接用于监控的「课堂实录系统」（录播主机、教师与学生摄像机等）共 <span class="num">341.08 万</span> 元、约占总额 <span class="num">10.82%</span>，覆盖仙林校区 <span class="num">113</span> 间公共教室。中标公告写明系统支持 AI 学情教情分析，每 <span class="num">3</span> 分钟可分析一轮并输出到勤率、前排就座率、抬头率，支持课堂互动、教师走动等分析结果，还能识别教师使用手机、迟到、提前下课，并支持课堂敏感词识别、把涉政敏感词分级为「一般关注」与「特别关注」。作者魏春亮的追问集中在两处：一是人脸等生物信息属敏感个人信息，《个人信息保护法》第二十九条要求单独同意，而师生反映未获单独告知；二是把「走动＝认真」「抬头＝投入」这类外部动作压缩成指标后，容易催生表演式的课堂。校方当日的说明称未采集人脸、不进行人脸识别，也不把到课率与平时成绩挂钩，并已不再统计抬头率；作者的反问是，功能开关在系统手里，师生没有手段核验它是否在运行。</p>
+    <p>深圳那份判决的问题是层级被换掉了。自媒体人刘虎依据重庆法院的生效判决，发布了深圳一名「老赖」的工作单位与公开照片，罗湖区法院一审认定这侵犯隐私权并判其道歉；二审对上诉理由未作回应，直接把认定改成侵犯肖像权与个人信息权利。刘虎的质疑是：一审与二审认定不同的权利，判决却维持同一结果，而被他曝光的对象本身是有生效判决确认的失信被执行人。同一批存档里还有两件事：环保志愿者张文斌 10 月 20 日在乌鲁木齐被江西宜春万载县警方跨省带走，家属从电话中得知其因涉嫌敲诈勒索被刑事拘留，他多年通过公众号「零距离污染特攻队」记录各地污染、多次调查万载工业园的锂渣库；中国数字时代 10 月的 404 统计显示当月 <span class="num">53</span> 篇墙内文章被删，涉及强制社保与「数据找人」、张文斌被跨省、冯睿被刑事拘留、华为尊界 V800 事件、徽剑之死、辽宁康平共用针头等话题，项目总收录已达 <span class="num">2,746</span> 篇。</p>
+    <p>另有一篇值得单独读的特稿。威尼斯卡福斯卡里大学在读博士李玲研究「技术助长的现代奴役制」，2023 年起在柬埔寨接触大量从园区逃出的受害者，今年 1 月合著出版《逃离园区：东南亚电诈内幕》。她记录的变化是：缅北受打击后，一部分集团转做欧美盘，为此需要会说英文的人，受害者国别从中国扩到非洲、南亚，2026 年已来自 <span class="num">80</span> 多个国家；办公地点从高墙园区散回居民楼，甚至出现「居家办公」模式——一名东非受害者接了远程工作，进去才发现团队在马来西亚、建站的人来自台湾。她给出的数字是 2024 年团队接触了一百多个受骗案件，绝大多数人的出境理由是求职。</p>
+  </div>
+
+  <h3>⑧ 人文与社会：一场走了二十八年的路、一部不需要人思考的短剧、两句关于 AI 的警告</h3>
+  <div class="plain">这天的社会新闻里有一件很长的事：一位英国人走了二十八年，从南美洲最南端走回英格兰老家，行程绕了地球一圈多。国内一款免费短剧应用的用户量超过了字节自家的聊天助手，成为集团第二大应用。同一天，两位最有名的 AI 圈内人分别发出警告：一位说今明两年可能出一场级别很高的事故，一位说人正在把思考整个交出去。技术圈则在争论一门老牌编程语言的新标准为什么会被人投下反对票。</div>
+  <div class="card">
+    <p>徒步这条给出的是一组可核对的数字。英国男子卡尔·布什比 11 月 2 日回到家乡英格兰东约克郡赫尔市，为一场历时 <span class="num">28</span> 年、行程约 <span class="num">5 万</span> 公里的徒步环球之旅画上句号；1998 年 11 月 1 日，时年 <span class="num">29</span> 岁的他从智利蓬塔阿雷纳斯出发，目的地方向一路向北，中途因为签证与战乱多次中断、又回到断点续走。</p>
+    <p>短剧那条的看点是分发逻辑。QuestMobile 的秋季报告显示，截至 9 月移动互联网月活 <span class="num">12.81 亿</span>、同比增 <span class="num">0.9%</span>，月人均使用时长 8 月首次突破 <span class="num">200</span> 小时、9 月仍有 <span class="num">189.8</span> 小时、同比增 <span class="num">6.5%</span>；红果免费短剧的用户量超过豆包，成为抖音集团第二大应用。一位博客作者的观察补上了机制：这类剧集按秒设计「爽点」——开头三十秒主角必须受辱、第一分钟必须反转、每三到五集完成一次打脸；平台不向观众收钱，靠广告变现，因此剧情必须让下一集自动播放，「主角永远即将翻身」。同一批聚合里另一篇文章从读者角度描述了同样的钩子：卸载抖音之后，被同一集团旗下的短剧重新捕获。</p>
+    <p>AI 的两句警告分别指向不同风险。辛顿在接受《卫报》采访时说，今年或明年 AI 领域可能爆发一场切尔诺贝利级别的事故，并给出自己的定义：他担心的场景是 AI 被黑客用来攻击关键基础设施，最典型的结果是大范围长时间停电，或让全球金融系统瘫痪一周；他把今年夏天 OpenAI 智能体入侵 Hugging Face 平台比作三里岛事故——一次预警，还不是灾难。他点名批评奥特曼、扎克伯格与马斯克明知隐患却因竞争没有足够重视，主张对前沿模型落地强制安全测试、第三方独立评估与各国统一标准，并称未来十年是验证人类能否管住风险的关键窗口（HN <span class="num">294</span> 分/288 评论，刚掉出前 100，分数取首次拉取）。陶哲轩的警告是另一条线：人把思考与解题过程交给 AI 之后，会逐渐失去对问题本身与解法的理解，这种趋势可能很快在现实世界里产生后果。Anthropic 旗下 Claude Code 团队的工程师、前谷歌技术高管 Addy Osmani 用的词是「认知投降」：不加判断地接受智能体输出，速度快、不费力，因此格外有吸引力，代价是积累技术债、降低对系统的熟悉度；他给出的做法是继续用，但强制自己留在回路里、保持对系统的可理解性。</p>
+    <p>教育与工程文化这两条更像长期争论的具体切片。Kagi 的公开信针对谷歌的一项设置：自 2027 年初起，K-12 的 Google Workspace for Education 账号默认关闭 AI 工具，但谷歌搜索会一起被关掉，理由是「搜索与 AI 已深度整合」；在遭到批评后谷歌部分让步，称学校可以单独开启搜索，但搜索仍无法在没有 AI 概览等功能的情况下使用。作者的反驳是，任何一位教育工作者都会说，学习的关键在于挣扎着弄懂的过程本身，正确答案只是这个过程的结果（HN <span class="num">108</span> 分/74 评论）。C++ 这条讲的是标准流程本身出了故障：10 月 23 日，C++26 的 DIS 投票在国家团体环节被否决，作者称这是 C++ 历史上第一次 DIS 表决失败，而 1998 年以来这一环节一直只是走形式；他把原因部分归于委员会近年把太多特性塞进单个版本、以及国家团体对流程的不信任（HN <span class="num">401</span> 分/334 评论）。同一天的技术高分帖还有 Kitty 0.50 的更新日志（<span class="num">351</span> 分/222 评论）、用二十行代码做出果冻质感的 Jelly Sheet（<span class="num">443</span> 分/111 评论）、Safari 27.3 的自适应深色模式（<span class="num">492</span> 分/256 评论）与一条关于 <code style="background:#f4f2ee;padding:1px 5px;border-radius:4px;font-size:13px">malloc</code> 历史实现的复盘（<span class="num">148</span> 分/63 评论）。</p>
+  </div>
+
+  <h3>⑨ 区块链与加密市场：一份被逐条读完的入侵时序、第三天的现货基金净流出</h3>
+  <div class="plain">交易所那份被盗报告在这天被逐条读完，攻击者先在自己电脑上跑了一个假的代码仓库，两个月后一路摸到钱包签名的服务；链上追踪显示，洗钱的相当一部分动作是脚本在跑。资金面这头，比特币现货基金连续第三天净流出，而几家上市公司这周做的是增持和回购。价格则回到八万美元上方。</div>
+  <div class="card">
+    <p>被盗与追赃的细节已经进入可核对的阶段。币安称涉及约 <span class="num">63.4 亿</span> 美元资产、约 <span class="num">28.5 亿</span> 美元被冻结或拦截、截至 10 月 31 日 <span class="num">98%</span> 受影响代币资产已补足，联席 CEO 何一表示今年以来安全团队已识别并阻止 <span class="num">57</span> 起疑似与朝鲜有关的威胁；朝鲜方面否认参与，金与正称 FBI 的归因是「严重政治挑衅」。洗钱端的量化来自链上调查：SomaXBT 分析 <span class="num">47,644</span> 笔交易，约 <span class="num">54%</span> 呈自动化特征，一轮操作里 <span class="num">34</span> 个中转钱包把 <span class="num">31,976</span> 枚 SOL 存入借贷协议、再经询价通道换成约 <span class="num">248.7 万</span> 美元稳定币并跨链转出，全程约 <span class="num">3.5</span> 小时。同一周另有两起：已宣布关停重组的 BitMart 在关停期间被攻击，创始人称或与巴西 Mercado Bitcoin 的攻击者是同一团伙；法国 Crédit Mutuel Arkéa 确认遭欺诈转账，ZachXBT 估算被盗资金超过 <span class="num">1.33 亿</span> 美元。</p>
+    <p>资金面这天的读数是「流出变慢、但仍在流出」。美东 11 月 3 日比特币现货 ETF 总净流出 <span class="num">1.16 亿</span> 美元，为连续第三日净流出。机构侧的动作相反：Strategy 的优先股 STRC 时隔近半年重回 <span class="num">100</span> 美元、累计回购约 <span class="num">22.5 亿</span> 美元；Block 三季度增持 <span class="num">120</span> 枚 BTC、总持仓 <span class="num">9,237</span> 枚，同期毛利润同比增 <span class="num">22%</span> 至 <span class="num">32 亿</span> 美元并与美国司法部达成 <span class="num">9.64 亿</span> 美元暂缓起诉协议；Riot 三季度营收 <span class="num">1.81 亿</span> 美元，并与一家 AI 实验室签下 <span class="num">280 亿</span> 美元的数据中心租赁协议；Hut 8 三季度营收同比降约 <span class="num">15%</span>，卖出约 <span class="num">3,102</span> 枚 BTC 用于股票回购。矿业整体是矛盾的：10 月矿工收入达 <span class="num">12.15 亿</span> 美元、创 <span class="num">11</span> 个月新高，但哈希价格单月跌 <span class="num">17.54%</span>；VanEck 研究主管的测算是比特币均价需达 <span class="num">10 万</span> 美元，矿工才能收支平衡。Circle 的三季报则是「发币收入撑增长」：营收同比增 <span class="num">17%</span> 至 <span class="num">8.65 亿</span> 美元，持续经营净利润增 <span class="num">5%</span> 至 <span class="num">2.26 亿</span> 美元，USDC 平均流通 <span class="num">733 亿</span> 美元，同期裁员约 <span class="num">5%</span> 并产生约 <span class="num">914.5 万</span> 美元重组费用。</p>
+    <p>监管与政治的重心跟着选举移动。香港立法会通过加密资产申报框架条例草案，落实 OECD 的 CARF：服务商自 2027 年起履行尽调与申报义务，香港计划自 2028 年起与其他税务管辖区自动交换资料。美国这边，众议院民主党人拟在下一届国会推动新版加密市场结构法案、扩大 SEC 监管权限，并计划调查特朗普家族的加密业务；本轮选举中加密行业三大政治行动委员会支出约 <span class="num">1.7 亿</span> 美元，重返参议院的 Sherrod Brown 与多名支持加密的共和党议员落选同时发生。价格端的读数：比特币从日内低点 <span class="num">7.56 万</span> 美元回到 <span class="num">8.01 万</span> 美元上方（Greekslive 记录为 7.58 万升至 7.84 万），USDT.D 从 7.00 上方退到 <span class="num">6.70</span>，过去一小时全网清算 <span class="num">4.61 亿</span> 美元、其中空头占 <span class="num">3.75 亿</span> 美元。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 口径：最近成交价 · 成交额为事件级 24 小时</div>
+    <div class="row"><span>11 月内比特币触及 8.5 万美元 / 9 万美元 · 成交 $54.7 万</span><b>57.5% / 24.5%</b></div>
+    <div class="row"><span>11 月内比特币跌至 7.5 万美元 · 成交 $54.7 万</span><b>47.5%</b></div>
+    <div class="row"><span>11 月 5 日比特币高于 8 万美元 / 高于 7.8 万美元 · 成交 $33.9 万</span><b>70.5% / 95.5%</b></div>
+  </div>
+
+  <h3>⑩ 期权与市场走势（通俗版）</h3>
+  <div class="plain">这一天的股市把前一晚的紧张全还回去了：大盘一天涨回一个多点，科技股却没跟上，它离自己的平衡位置还差一截。期权市场给的判断很直白——大盘上下都被压在一个很窄的箱子里，科技股脚下只剩一层厚重支撑，破了后面没有承接。黄金和长期国债同时转强，比特币站回了周线的中轨，钱正在从稳定币里出来。</div>
+  <div class="card">
+    <p>大盘的位置是「脚刚踩上台阶」。标普 500 相关的 SPY 收在 <span class="num">766.63</span> 美元、当日涨 <span class="num">1.63%</span>，主要活动区在 <span class="num">760</span> 到 <span class="num">773</span> 之间。关键位只有两条：脚下 <span class="num">766</span> 是那道分界线（离现价只有 <span class="num">0.1%</span>，站上去就是高抛低吸的区间），头顶 <span class="num">770</span> 是那道盖（离现价 <span class="num">0.4%</span>，上方压着 <span class="num">3.3 亿</span> 美元的正向持仓），上下只有半个百分点的空间，所以本周大概率在 <span class="num">766</span> 到 <span class="num">770</span> 之间磨。一旦跌破 <span class="num">766</span>，会依次去看 <span class="num">762</span>（到期回拉位）、<span class="num">760</span>、<span class="num">755</span>、<span class="num">750</span>；其中 <span class="num">750</span> 那层最厚的下跌保护已经退到 <span class="num">2.2%</span> 之外，短期不再吸人。</p>
+    <p>科技股是唯一没跟上的那条腿。QQQ 收在 <span class="num">691.79</span> 美元、涨 <span class="num">0.95%</span>，活动区 <span class="num">681</span> 到 <span class="num">703</span>，涨完仍比自己的平衡线低 <span class="num">3.2%</span>，是五个标的里唯一还没回去的。差别在于盖子的质量：大盘头顶的 <span class="num">770</span> 有真金白银的正向持仓护着，科技股头顶的 <span class="num">700</span> 只是名义上的盖，后面几格加起来才 <span class="num">5,400 万</span> 美元，薄到既挡不住也推不动。脚下 <span class="num">680</span> 是最后一层厚支撑（离现价 <span class="num">1.7%</span>），<span class="num">675</span> 是那道门，这两条一破，<span class="num">670</span>、<span class="num">665</span>、<span class="num">660</span> 都没有承接。</p>
+    <p>另外三条腿这天第一次同向。国债这边，TLT 收 <span class="num">81.76</span> 美元、涨 <span class="num">0.81%</span>，重新站回 <span class="num">81.5</span> 上方（这一格同时是涨压、跌撑与到期回拉位，现在落在脚底下当垫子），长端收益率 <span class="num">4.892%</span>、当日下行 <span class="num">5.8</span> 个基点，美元指数 <span class="num">101.57</span> 转弱，这是本周第一次利率与美元同时不再施压。黄金这边，GLD 收 <span class="num">372.42</span> 美元、涨 <span class="num">3.66%</span>，「跌下去会加速」的机制当天关掉了，支撑带整体从 <span class="num">355</span> 到 <span class="num">365</span> 抬到 <span class="num">365</span> 到 <span class="num">380</span>；不过它头顶的 <span class="num">380</span> 离现价还有 <span class="num">2.0%</span>，给不了推力，跌回 <span class="num">368</span> 以下这份加分当天作废。加密这边，稳定币占比 USDT.D 从 7.00 一路退到 <span class="num">6.70</span>，比特币 <span class="num">8.01 万</span> 美元收复了四周没能突破的周线中轨 <span class="num">78,539</span>，IBIT 收 <span class="num">45.32</span> 美元，正 gamma 带就在 <span class="num">44</span> 到 <span class="num">46</span>（对应比特币约 <span class="num">7.77 万</span> 至 <span class="num">8.13 万</span> 美元）。</p>
+    <p>最后是一个容易被忽略的读数：恐慌定价掉得比价格快。大盘的隐含波动率从 <span class="num">23.4</span> 掉到 <span class="num">14.91</span>，科技股从 <span class="num">41.6</span> 掉到 <span class="num">27.86</span>，VIX 从 <span class="num">20.8</span> 掉到 <span class="num">16.75</span>。结果是四条腿只「托住」、不「推升」：大盘拿到的是磨的保护（<span class="num">766</span> 到 <span class="num">770</span>），科技股拿到的是少跌的保护（<span class="num">681</span> 到 <span class="num">703</span>）。本周就看两个数——大盘 <span class="num">766</span> 守住就是磨，破了看 <span class="num">762</span>；科技股 <span class="num">680</span> 破了看 <span class="num">675</span>，再破后面没有承接。</p>
+  </div>
+
+  <h3>⑪ 一周回顾</h3>
+  <div class="plain">把这一周从头看一遍，主线其实只有三条：AI 的钱越借越贵、旧系统被人用新工具翻出漏洞、一场选举把油价和利率的预期一起改了方向。中国这一周的政策是对着股市与汇率发力，科研侧则把注意力放回了帕金森病这类具体的病。</div>
+  <div class="card">
+    <p><b>AI 的钱：从「讲故事」变成「看账单」。</b>这一周最硬的一份文件是 Anthropic 的修订版招股书：三季度营收 <span class="num">169.56 亿</span> 美元、算力与基础设施费用环比增 <span class="num">77.5%</span> 至 <span class="num">98.63 亿</span> 美元、由盈转亏，并把「可能很快达到递归式自我改进阈值」写进风险因素；采购与租赁承诺总额约 <span class="num">8,954 亿</span> 美元，其中约 <span class="num">698 亿</span> 美元在未来 12 个月内到期。融资端的定价跟着变贵：Meta 的美元债认购火热，但 2056 年到期债券相对美债的溢价升到约 <span class="num">2.2</span> 个百分点，标普把展望下调至负面；Alphabet 拟发 <span class="num">60 亿</span> 欧元债，甲骨文折价 <span class="num">11%</span> 发行 <span class="num">100 亿</span> 美元股票，微软本周再发 <span class="num">250 亿</span> 美元债券。消费端先把成本写在脸上：苹果四季度库存升到 <span class="num">145.4 亿</span> 美元、同比增 <span class="num">154.3%</span>，树莓派 5 的 16GB 版本从 <span class="num">120</span> 美元涨到 <span class="num">385</span> 美元。</p>
+    <p><b>安全：从内核、云端，走到冰箱与游戏客户端。</b>这一周的事件排下来几乎每天一起：10 月 29 日，币安 <span class="num">63.4 亿</span> 美元被盗、群晖 NAS 遭勒索病毒、StackOverflow 月提问量跌破 <span class="num">1,000</span>；10 月 30 日，Claude Code 的 VS Code 扩展被植入后门、五角大楼怀疑军营冰柜失控是网络攻击；11 月 1 日至 2 日，乌克兰与俄罗斯的应急警报应用同时被入侵、七国超市冷柜被远程调到 <span class="num">50</span> 摄氏度、比利时检察机关立案，法国血库的冷藏设备也被调温；11 月 4 日轮到桌面与遗留代码：Postman 被发现在打开后自动给别的编程助手装插件、谷歌拆掉一家认证厂商预装在 <span class="num">130 万</span> 台机顶盒里的后门、PHP2Shell 把「四十年的技术债」摆上台面。这一周的共同点是攻击面在往「没人维护但到处都在跑」的地方移动。</p>
+    <p><b>选举、油价与利率：预期在两天里换了方向。</b>选前市场给民主党拿下众议院的概率是 <span class="num">94.5%</span>、参议院 <span class="num">74.5%</span>，结果比这更彻底：参议院确定 <span class="num">53</span> 席、众议院确定 <span class="num">224</span> 席，普选票领先幅度可能达 <span class="num">12%</span> 至 <span class="num">14%</span>。结果出来后，油价两天里从结算 <span class="num">103.60</span> 美元跌到 <span class="num">94.62</span> 美元，黄金单日涨 <span class="num">3.66%</span>，两年期美债收益率跌至两个月低点，市场对 12 月加息的定价仍在 <span class="num">77.5%</span>。停火相关的盘口同步转冷：「有效停火」持续到 11 月底的概率从一周前的 <span class="num">49.5%</span> 降到 <span class="num">42.5%</span>，撑到年底的从 <span class="num">50.5%</span> 降到 <span class="num">30.5%</span>。</p>
+    <p><b>中国：钱的价格往下，法条的措辞往上。</b>这一周央行把股票回购增持再贷款利率降到 <span class="num">1%</span>，银行已申请超过 <span class="num">2,000 亿</span> 元额度；长鑫科技把回购上限从 <span class="num">20 亿</span> 元提到 <span class="num">50 亿</span> 元，前三季度营收同比增 <span class="num">738.51%</span>；香港三季度本地生产总值同比增 <span class="num">5.2%</span>、创五年来同期最快。立法侧，刑诉法修正草案首次写入「禁止有罪推定」，同时把「指定居所监视居住」改成依法采取其他强制措施。产业侧的两条压力来自外部：甲骨文取消与腾讯约 <span class="num">70 亿</span> 美元的芯片租赁，中国客户订的 <span class="num">600 万</span> 颗英伟达芯片四个月只能到货约 <span class="num">1%</span>。</p>
+    <p><b>科研与市场预期的一周变化。</b>Nature 这一周的重心回到具体疾病：帕金森病可能先从肠道开始、多巴胺神经元移植进入早期试验、干细胞疗法被寄望在更基础的层面改变病程；同期还有 <span class="num">170</span> 阿秒硬 X 射线脉冲的计量、能自主编排多目标实验的 AutoDNA 实验室、以及绕开望远镜稳定性限制的系外行星成像方法。市场这头的周度变化给出另一组读数：12 月底「谁拥有最佳 AI 模型」给 Google 的概率从一周前的 <span class="num">49.5%</span> 升到 <span class="num">59.5%</span>，Anthropic 从 <span class="num">41.5%</span> 落到 <span class="num">32.5%</span>；比特币站在 <span class="num">8.01 万</span> 美元，11 月内触及 <span class="num">8.5 万</span> 美元的概率是 <span class="num">57.5%</span>、跌到 <span class="num">7.5 万</span> 美元的概率是 <span class="num">47.5%</span>，两个方向都还开着。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（12 个 feed，覆盖 11 月 3 日至 11 月 5 日，含已读与未读）· Hacker News 前 100 名 · Polymarket 热点榜（24 小时成交量前 20，剔除体育盘与流动性低于 5 万美元的薄盘，另按主题检索同题盘口）· 期权日报（options-briefing-2026-11-05.md，覆盖美东 11 月 4 日收盘）。<br>
+    由 pi 自动生成 · 今日窗口内 889 条未读已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
