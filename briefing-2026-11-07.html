@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-11-07</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .odds { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 20px; font-size:13.5px; margin-top:12px; }
+  .odds .cap { font-size:12px; letter-spacing:.08em; color:var(--muted); margin-bottom:6px; }
+  .odds .row { display:flex; justify-content:space-between; gap:12px; padding:5px 0; border-bottom:1px dashed var(--line); }
+  .odds .row:last-child { border-bottom:none; }
+  .odds .row b { color:var(--accent); font-weight:700; white-space:nowrap; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 11 月 7 日 · 周六 · 订阅聚合 + Hacker News + Polymarket 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>美国 10 月非农新增 <span style="color:#f0b09a">16.5 万</span>（预期 6.5 万）、失业率降至 <span style="color:#f0b09a">4.1%</span>，12 月加息概率升到近 <span style="color:#f0b09a">80%</span>，美股当日却反弹（纳指 +1.09%）——同一天微软逐步终止与甲骨文的 AI 算力租约、OpenAI 新一轮融资估值落在 <span style="color:#f0b09a">1.25 万亿美元</span>（低于原定目标）、Anthropic 路演前估值被买方压到 1.1 万亿附近；财政部拟切断 MEXC 与美国金融体系往来；人大常委会通过《反跨境腐败法》；延安大学在遗书事件后要求教师签《横向科研经费承诺书》。</div>
+
+  <h3>① AI 的钱变贵了：一轮融资、一份退租、一条被切掉的押注</h3>
+  <div class="plain">这一天关于人工智能的消息，几乎都落在钱上。微软把租来的算力退掉一部分，OpenAI 谈下来的估值比原计划低了一截，Anthropic 上市前的定价讨论也在往下走。另一头，刚当选的官员开始兑现承诺，反对在本地建数据中心的人赢了投票，特斯拉则给一款卖不动的车停了产，把产能让给机器人出租车。买算力的人开始算账，这一轮的热度从讲故事转向对账。</div>
+  <div class="card">
+    <p>先看贴现端。美国 10 月非农新增 <span class="num">16.5 万</span>人（预期 <span class="num">6.5 万</span>），失业率降到 <span class="num">4.1%</span>，掉期市场给 12 月加息 <span class="num">25</span> 个基点的概率推到近 <span class="num">80%</span>；美元指数涨 <span class="num">0.71%</span> 至 <span class="num">102.31</span>，创 6 月 17 日以来最大单日涨幅，10 年期美债收益率升到 <span class="num">4.85%</span>、2 年期升到 <span class="num">4.52%</span>。融资成本往上走，未来现金流要按更高的利率折回来，这是所有长周期资本开支共同面对的变化。</p>
+    <p>退租发生在算力链的中段。微软已不再续签与甲骨文的 AI 算力租赁合同，并在近几个月逐步关闭租用的计算资源，原因是甲骨文提供的服务器采用较旧一代英伟达芯片，不再符合微软当前的技术规格。微软此前已向 CoreWeave、Nscale、Nebius 等新兴云厂商承诺超过 <span class="num">800 亿美元</span>的算力租赁支出。甲骨文云业务快速扩张，高额资本支出让自由现金流转负，股价较今年高点跌逾一半，消息出来盘中一度跌 <span class="num">4.6%</span>。</p>
+    <p>融资端的数字更直白。OpenAI 首席财务官确认正在融资，据 CNBC 报道，本轮估值较 3 月那一轮上涨近 <span class="num">50%</span>；金十的行情快讯给出的是：首批约 <span class="num">110 亿美元</span>已到账，本轮估值 <span class="num">1.25 万亿美元</span>，整体规模最高 <span class="num">200 亿美元</span>，此前计划是至少 300 亿美元、估值 1.4 万亿，随后缩减目标；3 月那一轮是 <span class="num">8520 亿美元</span>估值、融资 1220 亿美元。Anthropic 这条线也在往下修：路演原定下周启动，投资人认为此前讨论的 <span class="num">1.5 万亿美元</span>过高，部分机构希望降到约 1 万亿（金十）；彭博报道部分买方看到的估值低到 <span class="num">1.1 万亿</span>（HN <span class="num">163</span> 分/<span class="num">388</span> 评论）。</p>
+    <p>政治那头开始结算选票。中期选举中 <span class="num">44</span> 项数据中心暂停提案通过了 <span class="num">43</span> 项，分析人士预计多达 <span class="num">1000</span> 个数据中心的建设计划可能放缓；微软在阿姆斯特丹郊区的数据中心工地被约 <span class="num">100</span> 名抗议者闯入，示威者爬上起重机挂出反 AI 标语，而该项目能开工，靠的是 <span class="num">2016</span> 年的规划早于阿姆斯特丹 <span class="num">2023</span> 年底的建设禁令这道口子。伯恩斯坦的判断是，阻力上升更可能改变「谁来买单」，而非终结扩张周期；瑞银说更严的监管会延长建设周期。同一天谷歌以 <span class="num">170 亿美元</span>投怀俄明州数据中心，并买下 Crusoe 在该州的选址。</p>
+    <p>产业侧也在为 AI 让路。特斯拉宣布得州超级工厂将在 <span class="num">2027</span> 年年中前后结束 Cybertruck 生产，把产能让给新上市的 Cybercab；这款车 2019 年发布时被当作福特、通用皮卡的对手，实际只在少数市场卖得动，去年在美国卖出 <span class="num">20,237</span> 辆，比 <span class="num">2024</span> 年的 <span class="num">38,965</span> 辆降了 <span class="num">48%</span>，而马斯克在投产前的预测是年产 <span class="num">25 万</span>辆。同一天特斯拉把美国市场 Cybertruck Cyberbeast 车型价格上调到 <span class="num">102,490 美元</span>。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交：Anthropic 上市时间盘 <span>29.2 万美元</span>、上市市值盘 <span>21.9 万美元</span>、Fed 加息盘 <span>6.8 万美元</span>（均为事件级）· 口径：最近成交价</div>
+    <div class="row"><span>Anthropic 在 2026 年 12 月 31 日前完成 IPO</span><b>90.4%</b></div>
+    <div class="row"><span>Anthropic 上市当日收盘市值低于 1.25 万亿美元</span><b>21.2%</b></div>
+    <div class="row"><span>Anthropic 上市当日收盘市值 1.25 万亿–1.5 万亿美元</span><b>26.4%</b></div>
+    <div class="row"><span>2026 年内再加息一次（一周前为 70%）</span><b>76.5%</b></div>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>特斯拉停产 Cybertruck：一款只卖出预测值十二分之一的车</h4>
+    <div class="stats">729 points / 1548 comments · 来源 nbcnews.com（路透）· 当日新帖最高分；当日全站最高分 *sshole（2901 分）与次高 Claude Code 泄露邮箱（1542 分）都是前一日旧帖，已在昨日头条与第 ③ 段写过；同事件的 heise 版本（22 分）与订阅端快讯一并印证</div>
+    <p>马斯克在 X 上说，停产会让公司腾出产能给新上市的 Cybercab，并称 Cybertruck 是「特斯拉造过最好的车」、这次停产是「一个时代的结束」。Reuters 给出的落差是：去年美国销量 <span class="num">20,237</span> 辆、同比 <span class="num">−48%</span>，而投产前的承诺是年产 <span class="num">25 万</span>辆；车身沉重、造型棱角分明，最终只在少数市场打开。奥斯汀工厂是唯一具备这款车专用部件生产能力的厂区，产线是迁走还是彻底关掉，公司没有说明。风向旗与金十的同日快讯确认了停产与涨价两件事，另有报道称得州工厂年内增设夜班、白夜两班各 12 小时。</p>
+  </div>
+
+  <h3>② 发布潮没有停：视频模型变便宜，编排者换成更强的模型</h3>
+  <div class="plain">这一夜的发布节奏没有停：谷歌把视频模型的单段时长翻了一倍多、价格砍掉三成；国内团队的模型在公开测评上贴着最强的模型站，成本却低不少；一线团队开始试「强模型当总指挥、便宜模型干活」的分工。Hacker News 上吵的重点不在模型有多强，而在这种进步算不算真正的科学。</div>
+  <div class="card">
+    <p>谷歌把视频生成的门槛又降了一格。Gemini Omni 1.2 Flash 支持原生 <span class="num">15</span> 秒视频、多轮对话式编辑和更强的参考图遵循，价格从上一代下调 <span class="num">30%</span>，<span class="num">720p</span> 视频每秒 <span class="num">0.07 美元</span>，已在 Gemini API 与 Google Cloud 上正式可用，Google Vids 与 Gemini 应用里对部分订阅用户免费放开（HN <span class="num">273</span> 分/<span class="num">209</span> 评论）。国内这边，腾讯 Hy4 在 OpenDesign 设计基准中排第四，落后 GPT-6.1 Sol <span class="num">0.1</span> 分，成本低 <span class="num">41%</span>；B.AI 的国产模型 token 周榜里 DeepSeek 占 <span class="num">89.70%</span> 稳居第一，MiniMax 升到第二。</p>
+    <p>用量数据给出的曲线比发布更陡。OpenRouter 的十月回顾是 <span class="num">790T</span> token，较一月增长 <span class="num">25</span> 倍；Requesty 的数据显示 Claude Haiku 的代币用量在 9 月到 10 月间增长 <span class="num">381%</span>；OpenCode 团队在测 Opus 5.5 当编排者、DeepSeek Flash 当子代理的分工。cnBeta 转述的一项研究称，Anthropic 模型的改进速度近乎翻倍，这条只有单一来源，按「宣称」看。</p>
+    <p>争论落在方法上而不是分数上。LessWrong 的《I struggle to believe that AI R&amp;D is ingenious》拿到 <span class="num">174</span> 分/<span class="num">176</span> 评论，作者的核心质疑是：靠算力与评测堆出来的改进，与「把机制拆开」的研究不是一回事。计划性过时博客的《AI is dramatically accelerating AI research》是相反口径，<span class="num">107</span> 分/<span class="num">56</span> 评论。两边吵的其实是同一份数据该怎么读。</p>
+    <p>Anthropic 前一天发的研究给了另一种读法：他们用隐私保护方法统计了 <span class="num">20.7 万</span>次 Claude 与 Claude Code 的科研会话，按各领域研究者人数归一化后，计算机科学、数学、统计这些形式科学用量最多，健康与实验物理科学最少；数据分析一项就占 Claude 会话约 <span class="num">三分之一</span>、占 Claude Code 会话近 <span class="num">一半</span>；研究者把「提假设」和「收集数据」评为对发现最重要，实际用 AI 做这两件事的比例反而低。按他们的模型，现有能力被广泛采用可以让部分领域产出翻倍；若 AI 能承担全部非体力科研，计算机与统计的产出可达 <span class="num">15</span> 倍，化学、生物受物理瓶颈限制也有 <span class="num">三到四倍</span>。<span class="num">40%</span> 的受访研究者预期 2030 年前 AI 能独立完成完整研究项目。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 3.3 万美元（事件级）· 口径：最近成交价</div>
+    <div class="row"><span>2026 年 11 月底拥有最佳 AI 模型：Google</span><b>73.5%</b></div>
+    <div class="row"><span>同上：Anthropic</span><b>22.5%</b></div>
+    <div class="row"><span>同上：OpenAI</span><b>4.0%</b></div>
+  </div>
+
+  <h3>③ 安全：机器把漏洞找出来，也把旧的隔离层撕开</h3>
+  <div class="plain">这一天被点到名的漏洞来源各不相同：一块画图软件、一层虚拟机隔离、上万个被塞了脚本的小网站，还有一家车企的手机应用。共同点是它们大多由自动化工具先发现，人的反应速度跟不上。</div>
+  <div class="card">
+    <p>桌面软件里最不起眼的组件出了最坏的结果。编号 CVE-2026-83844 的画图程序远程代码执行漏洞在 Hacker News 拿到 <span class="num">696</span> 分/<span class="num">270</span> 评论；CVE 记录页本身只给出编号与标题，没有公开技术细节，讨论集中在「哪些系统仍默认装着这个组件」。</p>
+    <p>云端的隔离假设也被打破。PWN.AI 的 PwnEscape 第二部分展示了从 Firecracker 微虚拟机逃到宿主机 root 的完整链条：他们找到了保存寄存器、修改恢复位置的办法，让 KVM 返回时执行一条自选调用，虚拟机内的代码随后把临时栈改动恢复，Firecracker 继续运行、SSH 仍然可用（<span class="num">118</span> 分/<span class="num">60</span> 评论，编号为 CVE 记录中的一个满分级别问题）。这类漏洞的意义在于它绕开的正是「虚拟机边界」这一层默认信任。</p>
+    <p>规模化的那种更麻烦。安全研究者 Scott Helme 的团队确认 <span class="num">15,579</span> 个网站正在运行不应存在的 JavaScript，保守估计这些站点每月访问量超过 <span class="num">1.35 亿</span>次，注入内容涵盖支付页盗卡、伪装成人机验证的 ClickFix 攻击、针对特定 iOS 版本的间谍软件与钓鱼跳转。他的原话是：发现速度已经远超通知速度，他不知道该怎么把消息告诉这么多人（<span class="num">122</span> 分/<span class="num">106</span> 评论）。</p>
+    <p>移动端这边，CERT-In 的公告指出塔塔汽车应用存在硬编码凭据等问题（<span class="num">80</span> 分/<span class="num">17</span> 评论）。前一天被深挖的 OpenSSH 登录缺陷与 Claude Code 把用户邮箱写进请求头的问题，已经写进昨日简报，这里不重复。</p>
+  </div>
+
+  <h3>④ 科技科研前沿：一次注射、一个自己设计实验室的系统、一批不署名的数学手稿</h3>
+  <div class="plain">这一天的科学新闻里最有分量的三件事，分别落在医学、自动化实验和数学。它们指向同一个变化：机器开始替人写证明、排实验台，而人还在讨论该由谁负责。</div>
+  <div class="card">
+    <p>医学那条是硬的。《自然》刊出的研究用 GalNAc 脂质纳米颗粒包裹向导 RNA 与编码腺嘌呤碱基编辑器的 mRNA，单次输注后在肝脏选择性灭活 ANGPTL3：在体外人类肝细胞中，约 <span class="num">3000</span> 个候选位点未检出脱靶编辑与治疗相关的结构变异；非人灵长类中 ANGPTL3 蛋白平均下降超过 <span class="num">90%</span>，单次给药的持久性随访到 <span class="num">3</span> 年；在高脂血症小鼠与灵长类模型中，低密度脂蛋白胆固醇降约 <span class="num">40–50%</span>、甘油三酯降 <span class="num">50–70%</span>。作者单位是礼来旗下的 Verve Therapeutics，据此启动了针对难治性高脂血症的首次人体试验。</p>
+    <p>实验室那条还是预印本。多伦多大学团队的系统让 AI 代理先读研究计划与实验室条件，再写出分步实验协议、搭一个虚拟实验室把流程跑通，最后指挥真实机械臂在仪器间移动；在一次测试中，代理写出超过 <span class="num">200</span> 条指令，完成了纳米晶体光学性质的测量，也能从零规划整个实验室的仪器与机器人布局。MIT 的生物工程师 Evan Collins 认为这能大幅减少搭自动化实验室的试错，但把代理需要的相机与传感器集成进去，可能比手工搭更费资源。这篇预印本尚未经过同行评审。</p>
+    <p>科研评价本身也在被商品化。9 月上线的 XSci 给审稿人付费：接单后 <span class="num">5</span> 天内交意见给 <span class="num">200 美元</span>、<span class="num">5</span> 至 <span class="num">10</span> 天给 <span class="num">100 美元</span>；钱由作者出，每轮 <span class="num">399 美元</span>，若愿意公开审稿报告则 <span class="num">249 美元</span>。公司注册在特拉华，已获约 <span class="num">50 万美元</span>私人投资。开放获取期刊 Biology Open 自 <span class="num">2024</span> 年起也按篇付 <span class="num">220 英镑</span>（约 280 美元）。贝勒医学院的 Daniel Gorelick 说现金激励「很有力」，但问题在于作者是否愿意付这个钱、钱从哪来。</p>
+    <p>考古这边是纯增量。加泰罗尼亚的 Cova de la Font Major 洞穴里，研究者在现代涂鸦之间发现了约 <span class="num">26000</span> 年前的石刻：<span class="num">280</span> 个旧石器时代图案、其中 <span class="num">55</span> 个动物形象（马、熊、原牛），全部由 2019 年一次计划内发掘中的偶然观察带出。领光的直射几乎看不见这些凹陷，要换不同方向的光才能显出轮廓；有几处利用了洞壁天然的裂隙，其中一条被用来表示马脚下的地面。洞穴系统有超过 <span class="num">3.5 公里</span>通道，对公众开放约七十年、1990 年代改成博物馆。</p>
+    <p>数学那边的争议最大。OpenAI 在 10 月初把 <span class="num">700</span> 多篇 AI 生成的数学手稿公开挂到网上，牛津数学研究所荣休教授 Ursula Martin 在《自然》的世界观点里写道：这些预印本风格粗糙、难以核对，闭源模型的内部过程不为人知，也没有署名的作者能在出错时负责；把工作重写成可供同行评审的形式要耗费大量人力，很多同行并不乐意替 OpenAI 清理现场。她参与撰写的《莱顿宣言》提出引用规范、披露 AI 使用方式、结论须能被人类核验三条要求，部分 AI 公司已同意遵循，OpenAI 没有。</p>
+  </div>
+
+  <h3>⑤ 地缘政治与能源：谈判在进行，定价在往「会打」那边移</h3>
+  <div class="plain">华盛顿和德黑兰都说在谈，海峡上的油轮还在排队通行，市场的定价却在往另一个方向走：愿意为「未来几个月不会打起来」付钱的人变少了。同一夜，白宫换了幕僚长，基辅拉响警报，波兰的信用展望被下调。</div>
+  <div class="card">
+    <p>谈判与威胁同时存在。特朗普称「我们正在与伊朗进行谈判」，同时表示将很快决定是否进一步打击伊朗、以确保终结其核计划；卡塔尔首相在牛津的活动中说，美伊达不成「全面协议」，双方应接受一份「好的协议」；伊朗已通过中间人把核问题提案交给美方，美方在审议。英国海上贸易行动办公室的数据给出这条水道的现状：今年以来记录到 <span class="num">155</span> 起与美伊冲突有关的海上安全事件，累计发布 <span class="num">166</span> 份安全警告与 <span class="num">22</span> 份安全通告。</p>
+    <p>白宫换了人。特朗普宣布副幕僚长斯蒂芬·米勒于 11 月 9 日接任幕僚长，苏西·怀尔斯转入党派团队；Axios 引述民主党议员说，米勒接管后移民与伊朗政策可能转向更强硬，而即将领导众议院监督委员会的民主党众议员加西亚已表示要调查米勒在遣返行动中的角色，反对杰弗里斯的请愿也已在基层铺开。</p>
+    <p>俄乌方向仍在打。泽连斯基称情报显示俄军计划再打能源设施、第聂伯河上的桥梁与基础设施，基辅夜间传出连续爆炸声；特朗普说「非常接近解决」，欧盟外交与安全政策高级代表卡拉斯强调任何协议的落实都需要欧盟参与，乌方代表团将参加乌美俄三方会谈。能源价格这头，WTI 结算价 <span class="num">90.83 美元</span>、涨 <span class="num">0.34%</span>，布伦特 <span class="num">98.32 美元</span>、涨 <span class="num">0.03%</span>；欧洲天然气一度跌 <span class="num">5.6%</span> 至每兆瓦时 <span class="num">85.59 欧元</span>；截至 11 月 3 日当周，ICE 布伦特投机净多头减少 <span class="num">6.35 万</span>手至 <span class="num">18.2 万</span>手。标普把波兰展望下调为负面、本币评级下调，理由是财政状况疲弱，而中东战争正通过能源价格传导到波兰。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交：停火盘 119 万美元、入侵盘 27.7 万美元、霍尔木兹盘 7.6 万美元（均为事件级）· 口径：最近成交价</div>
+    <div class="row"><span>美伊有效停火维持到 11 月 8 日</span><b>39.0%</b></div>
+    <div class="row"><span>维持到 11 月 30 日</span><b>25.5%</b></div>
+    <div class="row"><span>美国在 2027 年前入侵伊朗（一周前 18%）</span><b>11.5%</b></div>
+    <div class="row"><span>霍尔木兹海峡通行年底前恢复正常（一周前 10.5%）</span><b>9.5%</b></div>
+  </div>
+
+  <h3>⑥ 中国：一部新法、两宗国安判决、一次人大常委会的收尾</h3>
+  <div class="plain">这一天国内的消息集中在制度和人事上：一部把追赃追逃写进条文的新法开始施行，港澳各有一宗国安案件落判，人大常委会在人事任免之外还一审了两部直接关系办案与征税的程序法。</div>
+  <div class="card">
+    <p>新法针对的是把钱转出去的人。《反跨境腐败法》由全国人大常委会表决通过，共 <span class="num">6</span> 章 <span class="num">47</span> 条，自公布之日起施行，是国家监委牵头的跨部门机制，境外机构未经中国有关机关同意不得在境内自行开展相关调查。据中央纪委全会工作报告，2025 年立案查处跨境腐败案件 <span class="num">505</span> 件，比 2024 年的 <span class="num">360</span> 件增加约 <span class="num">40.3%</span>；「天网 2025」与境外追赃专项行动共追回外逃人员 <span class="num">963</span> 人。已披露的中海油原总经理李勇案中，超过 <span class="num">83%</span> 的赃款来自境外，取证涉及 <span class="num">10</span> 个国家和地区。</p>
+    <p>两宗判决都在十年以上。澳门首宗《维护国家安全法》案件里，前立法会议员区锦新被裁定颠覆国家政权、与境外组织建立联系危害国家安全及违反保密等罪名成立，判监 <span class="num">12</span> 年半；他今年 <span class="num">69</span> 岁，预计服刑到 <span class="num">2039</span> 年。法院认定他在 2023 至 2024 年间协助境外组织收集散布带有颠覆主张的资讯，并在 2021 年任议员期间把闭门会议中取得的赌牌续期保密资料泄露给境外组织；其妻发表公开信称这是政治审判，港澳办署名文章则称「澳门绝非太平无事」。香港这边，黄之锋第二宗国安案被判监 <span class="num">10</span> 年，法官以 <span class="num">13</span> 年为量刑起点、考虑认罪减至 10 年，他原定明年 1 月出狱，现在预计要到 <span class="num">2036</span> 年 11 月。</p>
+    <p>人事是这届常委会的收尾动作。<span class="num">12</span> 名正部级官员转任全国人大专门委员会副主任委员，包括上海原市长龚正、湖南省委原书记沈晓明、西藏自治区党委原书记王君正等；江西原省长叶建春等 <span class="num">9</span> 人代表资格终止，其中 <span class="num">4</span> 名来自解放军和武警部队的少将是以「辞去」而非被罢免的方式离场。按公开资料统计，军队代表团人数已从届初的 <span class="num">281</span> 人减至 <span class="num">229</span> 人。</p>
+    <p>两部程序法进入一审。《刑事诉讼法》修正草案把指定住所监视居住的适用范围收缩到「危害国家安全、恐怖活动，可能有碍侦查」三类，取消「在办案地无固定住处即可指居」的做法；被告人认罪认罚而辩护人认为无罪或不同意量刑建议的，可以提出意见、法院应当听取；被告人或近亲属自行委托辩护人后，官派法援律师即终止代理。《税收征收管理法》修订草案把滞纳金明确上限定为税款本金的 <span class="num">2</span> 倍，回应《行政强制法》第 45 条与税务部门「滞纳金属利息、无上限」主张之间在各地产生的司法争议。同日六部门发文推进具身智能、外骨骼、脑机接口等技术在养老场景落地。</p>
+  </div>
+
+  <h3>⑦ 直面批判：一封遗书之后，学校让老师签一份承诺书</h3>
+  <div class="plain">延安大学那位音乐老师的遗书流出后，学校做了一件很具体的事：让老师签承诺书，保证报上去的科研经费材料真实。老师们反映的问题，恰恰是这些材料本来就很难真实。</div>
+  <div class="card">
+    <p>时间线是清楚的。11 月 2 日，疑似鲁迅艺术学院副教授白保国「绝笔信」的长文在网络流传；11 月 4 日陕西省教育厅通报已会同有关方面成立联合调查组、延安大学确认白保国老师已离世；11 月 5 日晚，《中国新闻周刊》联系上发布者曹骏，他确认信件为白保国本人所写、由家属提供并经家属同意后发布。10 月 20 日中午，趁家人午睡，白保国把银行卡等物品放在妻子枕边，独自打车前往延安万花山投湖；当天陕西省气象台发布霜冻黄色预警，延安最低气温降到 <span class="num">0</span> 摄氏度以下。中国数字时代在 11 月 7 日凌晨存档了这篇报道。</p>
+    <p>学校随后的动作是签承诺书。据《中国新闻周刊》获取的文件，延安大学近日要求校内教师签署《横向科研经费承诺书》，教师须保证向学校提交的全部项目材料真实、准确、完整，如经查存在虚假申报、合同造假、经费不实，本人自愿承担一切责任。遗书里描述的做法是反过来的：为完成横向科研经费到账额度，绝大部分教师自筹资金，经合作公司转入学校，再由学校财务渠道回流本人，配套不实账务材料完成任务。</p>
+    <p>指标是量化到人的。政法与公共管理学院《2025 年教师科研经费任务清单》显示，学校下达该院科研经费总任务 <span class="num">340 万元</span>，学院制定的个人标准是教授不少于 <span class="num">7.6 万元</span>/年、副教授与近 3 年新入职博士不少于 <span class="num">5.5 万元</span>/年、讲师及以下不少于 <span class="num">4.7 万元</span>/年，未完成者按本人年度任务额的 <span class="num">5%</span> 扣减津贴。物理与电子信息学院 <span class="num">2024</span> 年的实施细则规定，教学型副教授聘期内累计科研到账经费达到 <span class="num">15 万元</span>，除教学工作量外其他指标可免于考核。</p>
+    <p>评论给的是结构解释。同济大学教育评估研究中心主任樊秀娣说，纵向经费往往集中在头部高校，普通地方高校想多拿钱只能从横向课题想办法；有些教师为评职称自己掏钱转给企业、再由企业以项目经费名义转入学校账户，这种做法理论上属于学术不端，学校若知情却默许也应承担责任，而过去几年这类现象愈演愈烈、受罚的很少。她还直接点了考核本身：如果教师仅因未获得横向科研经费就被降级或无法通过聘期考核，这样的指标并不合理。多名延安大学教师匿名联系曹骏，证实校内虚报横向经费是较普遍的情况。</p>
+  </div>
+
+  <h3>⑧ 人文与社会：图书馆被机器爬，推荐算法第一次被单独起诉</h3>
+  <div class="plain">这一天的几条人文消息彼此无关，但都在讲同一件事：公共使用的东西怎么被维持。一所大学的图书馆被外部爬虫打到服务中断，一个监管机构第一次因为推荐算法本身指控平台，一个免费的安全教学平台和一款老游戏被重新翻了出来。</div>
+  <div class="card">
+    <p>图书馆这边是被流量压垮的。CBC 报道，多所大学图书馆的在线馆藏被持续的爬虫请求打到变慢或宕机，这些数据被用于喂给 Claude、Gemini、ChatGPT 一类模型；圣何塞州立大学的 Jill Strykowski 说这些爬虫「就在互联网上轰炸我们」，其中一所学校一天之内收到超过 <span class="num">11000</span> 次关于芬兰音乐的检索。馆方的难处在于学术、历史与政府文档本身就是公开的，封掉 IP 会连正常读者一起挡住。</p>
+    <p>欧洲那边开始动算法的账。欧盟委员会发布初步调查结果，指 TikTok 的「为你推荐」通过无休止、重复的内容把用户推入悲伤、孤立或身材焦虑的「兔子洞」，此前实施的缓解措施效果不佳，要求调整页面设计，否则面临最高全球年营业额 <span class="num">6%</span> 的罚款。这是《数字服务法案》生效以来首次就算法设计本身提出违规指控，委员会执行副主席维尔库宁强调要保护未成年人。同日 YouTube 证实移动端「一半深色、一半浅色」的显示异常是正在进行的设计测试，不是缺陷。</p>
+    <p>两张旧面孔被重新读。数字古董商 Jimmy Maher 用一篇长文打捞 2000 年 6 月发售的《Deus Ex》，把当年 Computer Gaming World 的评价一并放回来：评论者 Thierry Nguyen 说自己「在抽象层面喜欢」这款游戏，但性能问题、敌人的人工智能与部分场景的刻意感确实拖累了它（HN <span class="num">307</span> 分/<span class="num">151</span> 评论）。亚利桑那州立大学的 pwn.college 也被翻出来，它按「白带」分段免费教人从终端一路学到网络与内核（HN <span class="num">296</span> 分/<span class="num">49</span> 评论）。</p>
+    <p>教育与阶层这条线有具体数字。中国数字时代存档的叶克飞文章引保罗·塔夫《不平等的大学》：在美国，低收入家庭出身的毕业生学位带来的终身收入增幅平均 <span class="num">33.5 万美元</span>，高收入家庭出身者是 <span class="num">90.1 万美元</span>；没有大学学位的年轻人陷入贫困的可能性几乎是有学位者的 <span class="num">4</span> 倍，仅有高中学历者的失业率是学士学位者的 <span class="num">2</span> 倍；大学文凭的作用从「向上爬的梯子」变成「防止下滑的护盾」。文章的判断是，中国的读者正在同一道题上重新算账。</p>
+  </div>
+
+  <h3>⑨ 区块链与加密市场：财政部切断一家交易所的美元通道，两家机构在争谁管预测市场</h3>
+  <div class="plain">这一天的加密新闻被两条监管线占据：一条是财政部直接切掉一家大交易所与美元体系的连接，另一条是联邦机构要求预测市场不得按州设限，而各地法院正在反着判。市场本身还在跌，买盘没有回来。</div>
+  <div class="card">
+    <p>切的是资金往来，不是牌照。美国财政部金融犯罪执法网络（FinCEN）发布命令，禁止美国金融机构处理流入或流出 MEXC Global 的资金转账，实际上切断其与美国金融体系的连接。FinCEN 认定，2021 年 5 月至 2026 年 5 月间该平台促成至少 <span class="num">160 亿美元</span>与规避制裁、网络犯罪及其他非法活动相关的资金流转，其中近 <span class="num">15 亿美元</span>涉及俄罗斯规避制裁、约 <span class="num">10 亿美元</span>是与四十多家伊朗加密交易平台的直接交易、约 <span class="num">2200 万美元</span>涉及伊朗央行与伊斯兰革命卫队及其圣城旅。命令在《联邦公报》刊登 <span class="num">30</span> 天后生效。</p>
+    <p>预测市场这条线是联邦与州对撞。CFTC 发布新的法律解释，要求包括 Kalshi 与 Polymarket 在内的指定合约市场不得按州限制用户访问，已设地域限制的平台须在 <span class="num">30</span> 天内恢复服务或说明原因；主席 Michael Selig 的理由是地域限制不符合《商品交易法》的公平准入要求、会削弱流动性。冲突是即时的：Kalshi 已在内华达、华盛顿与密歇根限制交易，加州联邦法院禁止其在涉案印第安部落土地提供体育合约，两个巡回上诉法院刚驳回它阻断州博彩法的请求，阿肯色州总检察长又以「允许 18 岁下注、不缴税、不办执照」为由起诉它。规模上，10 月预测市场成交额创下 <span class="num">1230 亿美元</span>纪录、环比增长 <span class="num">57.5%</span>，其中体育约 <span class="num">260 亿美元</span>、加密相关约 <span class="num">140 亿美元</span>，受中期选举带动政治类超过 <span class="num">8 亿美元</span>、环比增 <span class="num">43%</span>。</p>
+    <p>被盗资产在换手。Elliptic 的数据显示，币安攻击者换成比特币的被盗资产已增加到约 <span class="num">1650</span> 枚、价值约 <span class="num">1.24 亿美元</span>，接近前一天的两倍，新增部分主要来自经 THORChain 兑换的被盗 XRP；直接盗取的比特币与主要以太坊持仓仍未移动。路透社还披露了朝鲜的做法：每年从 11 至 12 岁的学生中选拔约 <span class="num">150</span> 至 <span class="num">200</span> 人接受训练，实施攻击的军事部门最高可获得被盗收益的 <span class="num">30%</span>。</p>
+    <p>政策与价格分头走。美国劳工部的 401(k) 另类资产最终规则已提交白宫审查；韩国交易所 GOPAX 因收到声称将攻击的威胁邮件，预防性暂停交易与充提、把用户资产转入冷钱包；俄罗斯央行明确非合格投资者可交易 BTC、ETH 与 USDT，每年经单家中介不超过 <span class="num">30 万卢布</span>。价格上，比特币在 11 月 5 日跌约 <span class="num">5.5%</span> 至 <span class="num">76,036 美元</span>，Glassnode 称近期买入者持有的约 <span class="num">60%</span> 供应量重新跌破成本、处于浮亏；以太坊基金会在 Glamsterdam 升级前提示 EIP-8037 与 EIP-8038 的 Gas 计费改法可能打破既有合约假设。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 39.4 万美元（事件级）· 口径：最近成交价</div>
+    <div class="row"><span>比特币在 11 月内触及 90,000 美元（一周前 50.5%）</span><b>9.5%</b></div>
+    <div class="row"><span>比特币在 11 月内跌至 72,500 美元</span><b>59.5%</b></div>
+    <div class="row"><span>比特币在 11 月内跌至 70,000 美元</span><b>40.5%</b></div>
+  </div>
+
+  <h3>⑩ 期权与市场走势（通俗版）</h3>
+  <div class="plain">今天市场是「跌了一半又弹回一点」，但决定下周怎么走的东西没变：指数上方和下方各有一块很重的位置，而现价正好卡在中间那道很窄的脊上。往上走五块钱和往下走五块钱，都会让波动放大好几倍。</div>
+  <div class="card">
+    <p>大盘的位置很明确。标普 500 的 ETF 收在 <span class="num">735.84</span>、涨 <span class="num">0.39%</span>，本周主要活动区是 <span class="num">718</span> 到 <span class="num">754</span>，重心在 <span class="num">733</span> 到 <span class="num">742</span> 之间。头顶的 <span class="num">745</span> 和脚下的 <span class="num">730</span> 是整条链上最重的两格，现价 <span class="num">735.84</span> 正好落在两者之间的薄区，往任何一个方向走 <span class="num">5 美元</span>，波动都会被放大 <span class="num">8</span> 到 <span class="num">10</span> 倍。这就是本周要看 <span class="num">730</span> 的原因：跌破它，下面 <span class="num">725</span>、<span class="num">720</span> 一层比一层重，一直到区间底部 <span class="num">718</span> 都没有能承接的位置；要真正转好得先回到 <span class="num">756</span>，那在区间之外 <span class="num">0.33%</span>，本周够不着。</p>
+    <p>科技股站在一张纸上。纳指 100 的 ETF 收在 <span class="num">656.72</span>、涨 <span class="num">1.49%</span>，区间 <span class="num">633</span> 到 <span class="num">681</span>。全部关键在 <span class="num">650</span> 这一格：它一个人占了整条链 <span class="num">39.5%</span> 的分量，还压着 <span class="num">6.2 万</span>张看跌期权，离现价只有 <span class="num">1.0%</span>。守住 <span class="num">650</span>，它就在 <span class="num">650</span> 到 <span class="num">665</span> 之间磨；收盘一旦落到 <span class="num">650</span> 下面，这 <span class="num">6.2 万</span>张就从托着变成推着，而下面 <span class="num">645</span>、<span class="num">640</span>、<span class="num">635</span> 三格加起来的分量还不到它的四分之一。</p>
+    <p>另外三条腿给的是背景。国债的 ETF 收在 <span class="num">81.90</span>、跌 <span class="num">0.04%</span>，整个正常波动范围里没有一格是往下推的，<span class="num">81</span>、<span class="num">82</span>、<span class="num">82.5</span> 三块垫子全在脚下，长期利率 <span class="num">4.859%</span>——只要它守住 <span class="num">81</span>，股债双杀就不会发生；一旦丢了 <span class="num">81</span>，大盘的 <span class="num">730</span> 和科技股的 <span class="num">650</span> 会被一起测试。黄金的 ETF 收在 <span class="num">372.53</span>、跌 <span class="num">0.79%</span>，<span class="num">370</span> 是分界：守住就是在 <span class="num">370</span> 到 <span class="num">382</span> 之间震荡、说明钱在从避险慢慢回到风险资产，跌破就是从被压住变成往下滑。比特币的 ETF 收在 <span class="num">42.88</span>、跌 <span class="num">0.36%</span>，离涨跌分界 <span class="num">42.81</span> 只差 <span class="num">0.16%</span>，按口径不给方向。</p>
+    <p>加密那边是僵持。稳定币占比 USDT.D 是 <span class="num">7.028</span>，两天都卡在周线中轨 <span class="num">7.047</span> 下方 <span class="num">0.2%</span>，没站上去；比特币 <span class="num">75.8k</span>，11 月 5 日一天丢掉了日线 <span class="num">76.9k</span> 与周线中轨 <span class="num">78.5k</span> 两条线，之后贴着小时线下轨 <span class="num">75.2k</span> 横了十二个小时，波动缩到 <span class="num">±0.3%</span>。比特币 ETF 的 <span class="num">43</span> 折成比特币是 <span class="num">75,982</span>，与现价 <span class="num">75,770</span> 只差 <span class="num">0.3%</span>，两个数是同一件事。</p>
+    <p>最后是恐慌本身。大盘「一天能走多远」从周三的 <span class="num">1.47%</span> 降到 <span class="num">0.93%</span>、降了 <span class="num">37%</span>，但仍比暴跌前高 <span class="num">62%</span>；科技股从 <span class="num">2.15%</span> 降到 <span class="num">1.376%</span>、仍比暴跌前高 <span class="num">25%</span>；黄金与比特币已经回到暴跌前水平，国债甚至比暴跌前更低。本周就看三个数：大盘 <span class="num">730</span>（破了没有下一层承接），科技股 <span class="num">650</span>（破了就是往下掉），稳定币占比 <span class="num">7.047</span>（站上去就是新一轮避险开始）。</p>
+  </div>
+
+  <h3>⑪ 一周回顾</h3>
+  <div class="plain">把这一周连起来看，市场换了定价方式：前半周在为选举落地和地缘缓和庆祝，后半周开始为「钱变贵、审批变难」重新算账。同一周里，加密被监管切了一刀，中国的高校考核被一封遗书翻了出来。</div>
+  <div class="card">
+    <p><b>先贵起来的是钱。</b>本周最后一个交易日，10 月非农把 12 月加息概率推到近 <span class="num">80%</span>，掉期市场的定价在一天之内完成了重排，美元指数单日涨 <span class="num">0.71%</span>、10 年期美债收益率到 <span class="num">4.85%</span>。上周这个盘口的读数还是 <span class="num">70%</span>，一周里往上挪了 <span class="num">6.5</span> 个百分点。融资成本一变，长周期的算力投入就要重算：微软停止续签甲骨文的算力租约、OpenAI 把融资估值从原定的 <span class="num">1.4 万亿</span>缩到 <span class="num">1.25 万亿美元</span>、Anthropic 的上市估值被买方从 <span class="num">1.5 万亿</span>压到 <span class="num">1.1 万亿</span>附近，甲骨文的自由现金流转负、股价较今年高点跌逾一半——三家公司、同一个方向。</p>
+    <p><b>然后难起来的是审批。</b>民主党拿下两院后的第一个完整周，<span class="num">44</span> 项数据中心暂停提案通过了 <span class="num">43</span> 项，抗议者闯进微软在阿姆斯特丹的工地，得州新州长把「先停建数据中心」写成了条件。周三到周四，纳指单日跌 <span class="num">5.52%</span>、纳斯达克单日市值蒸发估约 <span class="num">2.49 万亿美元</span>（创有记录以来最大单日纪录），周五反弹 <span class="num">1.09%</span>、标普涨 <span class="num">0.31%</span>，道指仍跌 <span class="num">0.46%</span>。瑞银与伯恩斯坦给出的读法一致：监管会延长建设周期、改变谁来买单，扩张周期本身没结束。</p>
+    <p><b>赌桌上的人也在收手。</b>比特币 11 月内摸到 <span class="num">9 万美元</span>的隐含概率，一周之内从 <span class="num">50.5%</span> 掉到 <span class="num">9.5%</span>，跌到 <span class="num">7 万美元</span>的概率则是 <span class="num">40.5%</span>；同期「美国在 2027 年前入侵伊朗」从 <span class="num">18%</span> 降到 <span class="num">11.5%</span>，霍尔木兹通行恢复正常从 <span class="num">10.5%</span> 降到 <span class="num">9.5%</span>。两个盘口方向相反，说明这一周的资金是在按「风险溢价普遍上调」重新定价，而没有按单一事件下注。</p>
+    <p><b>秩序这条线走了两步相反的棋。</b>加密这边越管越紧：FinCEN 切断 MEXC 与美国金融体系的往来，理由里列着 <span class="num">160 亿美元</span>的可疑流转；CFTC 却反向要求 Kalshi、Polymarket 取消州级限制，与两个巡回上诉法院和阿肯色州检察长的诉讼正面对撞，而预测市场 10 月成交额刚创下 <span class="num">1230 亿美元</span>的纪录。国内这一周落下两宗十年以上的国安判决（澳门区锦新 <span class="num">12</span> 年半、香港黄之锋 <span class="num">10</span> 年），通过《反跨境腐败法》，也在延安大学的遗书之后让全院教师签下经费真实性承诺书——制度在收紧，收紧之后的具体落地还在被追问。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（12 个 feed，覆盖 11 月 5 日至 11 月 7 日，含已读与未读，共 1581 条）· Hacker News 前 100 名 · Polymarket 热点榜（24 小时成交量前 20，剔除体育盘与流动性低于 5 万美元的薄盘，另按主题检索同题盘口与一周变化）· 期权日报（options-briefing-2026-11-07.md，覆盖美东 11 月 6 日周五收盘）。<br>
+    由 pi 自动生成 · 今日窗口内 418 条未读已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
