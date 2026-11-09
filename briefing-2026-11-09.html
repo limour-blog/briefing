@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-11-09</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .odds { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 20px; font-size:13.5px; margin-bottom:12px; }
+  .odds .cap { font-size:12px; letter-spacing:.08em; color:var(--muted); margin-bottom:6px; }
+  .odds .row { display:flex; justify-content:space-between; gap:12px; padding:5px 0; border-bottom:1px dashed var(--line); }
+  .odds .row:last-child { border-bottom:none; }
+  .odds .row b { color:var(--accent); font-weight:700; white-space:nowrap; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 11 月 9 日 · 周一 · 订阅聚合 + Hacker News + Polymarket 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>英伟达董事会在 11 月 8 日宣布，就「创始人兼 CEO 黄仁勋成为外国情报工作目标」的报道启动独立调查；同一天也门胡塞武装称袭击了利雅得金融区的沙特阿美大楼，伊朗方面称三艘油轮在霍尔木兹海峡爆炸起火；OpenAI 首批约 <span class="num">110</span> 亿美元融资到账、估值 <span class="num">1.25</span> 万亿美元，Anthropic 计划感恩节前上市、募资 <span class="num">800</span> 亿至 <span class="num">1000</span> 亿美元；比特币在美东时间周日下午一度跌到 <span class="num">7.4</span> 万美元附近。</div>
+
+  <h3>① AI 的钱：新钱到账，老股东开始挑价</h3>
+  <div class="plain">这一天的钱有两个方向。一边是新钱进了 OpenAI 的账户，一边是即将上市的 Anthropic 被投资人往下压价。给 Anthropic 做承销的一家大银行，则把交易员和银行家手里的编程工具收了回去，只留给工程师。</div>
+  <div class="card">
+    <p>OpenAI 的首期款项已经落地。据知情人士，本轮约 <span class="num">110</span> 亿美元在周五汇入公司账户，对应估值 <span class="num">1.25</span> 万亿美元，剩余部分预计几周内完成，总额最高 <span class="num">200</span> 亿美元；公司最初计划以 <span class="num">1.4</span> 万亿美元估值融资至少 <span class="num">300</span> 亿美元，公开市场对 AI 股票的抛售让它缩了规模。</p>
+    <p>Anthropic 走的是另一条路。《金融时报》说它计划在美国感恩节（<span class="num">11</span> 月 <span class="num">26</span> 日）前上市，募资 <span class="num">800</span> 亿至 <span class="num">1000</span> 亿美元，目标估值 <span class="num">1.25</span> 万亿至 <span class="num">1.75</span> 万亿美元——高于最近一轮的 <span class="num">9650</span> 亿美元，低于部分最乐观投资者期望的 <span class="num">2</span> 万亿。摩根大通计划 <span class="num">11</span> 月 <span class="num">13</span> 日为潜在投资者办说明会。它第三季度营收约 <span class="num">170</span> 亿美元、环比增长近 <span class="num">50%</span>，年化营收约 <span class="num">810</span> 亿美元。定价压力的来源写在同一篇报道里：纳斯达克 100 指数上周四跌超 <span class="num">6%</span>，全周跌 <span class="num">4.9%</span>。</p>
+    <p>高盛的内部指引给出了企业侧的反应。据彭博社，该行 10 月更新规定，把 Anthropic 的 Claude Code 与微软的 GitHub 限定给工程师使用，交易员与投资银行家失去权限，跨交易、量化研究与软件工程的 Strats 仍在名单内；高盛约 <span class="num">4.7</span> 万名员工中工程师超过 <span class="num">1.2</span> 万人。今年 7 月，首席信息官 Marco Argenti 还在公开场合夸交易员用 AI「氛围编程」搭出工具再交给工程师改进；10 月的新规把这条路收回。高盛 4 月已禁止香港的银行家使用 Claude，理由是严格执行与 Anthropic 的合同条款，而它同时是 Anthropic 这次 IPO 的主承销商之一。发言人 Nick Carcaterra 的说法是，银行向员工开放部分 AI 工具，以「确定最佳用例」。</p>
+    <p>用户侧的摩擦也在同一天出现。多名用户在 Reddit 与 OpenAI 官方开发者社区反映账号被无预警停用，其中包括每月 <span class="num">200</span> 美元订阅的 Pro 用户，登录只显示 account_deactivated，长期聊天记录无法访问；重灾区被指集中在菲律宾区、土耳其区、低价 Team 套餐与反向代理中转账号。OpenAI 尚未给出统一解释，只澄清了 Pro 各档用量分别是 Plus 的 <span class="num">10</span> 倍、<span class="num">20</span> 倍与 <span class="num">50</span> 倍。</p>
+    <p>市场格局的另一个数字来自 Menlo Ventures：中国模型占全球开源模型企业支出的 <span class="num">89%</span>，其中月之暗面 Kimi 占 <span class="num">61%</span>、DeepSeek 占 <span class="num">15%</span>、Z.ai 的 GLM 系列占 <span class="num">11%</span>、Meta 的 Llama 只剩 <span class="num">7%</span>；但开源只占整体模型支出的 <span class="num">4%</span>，Anthropic 与 OpenAI 经 API 合计拿走 <span class="num">86%</span>。腾讯首席 AI 科学家姚顺雨在同一天的对话里说，AI 公司的护城河更多在产品层：理解用户背景、掌握专有数据、获得用户信任的产品更难被替代，他以微信为例；张亚勤当场调侃，按这个逻辑 Anthropic 或许不值两万亿美元。</p>
+  </div>
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 <span class="num">4.87</span> 万美元（最佳模型盘）与 <span class="num">7.25</span> 万美元（上市时间盘），均为事件级 · 口径：最近成交价；括号内为一周前同期读数</div>
+    <div class="row"><span>2026 年 11 月底拥有最佳 AI 模型：Google（一周前 69.5%）</span><b>71.0%</b></div>
+    <div class="row"><span>同上：Anthropic（一周前 27.5%）</span><b>25.5%</b></div>
+    <div class="row"><span>同上：OpenAI</span><b>2.4%</b></div>
+    <div class="row"><span>Anthropic 在 2026 年 12 月 31 日前完成 IPO（一周前 91.4%）</span><b>86.9%</b></div>
+    <div class="row"><span>同上：11 月 30 日前完成（一周前 82.5%）</span><b>80.0%</b></div>
+  </div>
+
+  <h3>② 英伟达：一份董事会声明，与它身后的内存和出口</h3>
+  <div class="plain">一家芯片公司的董事会，在周日发了一份声明，说要查自己的创始人和首席执行官。起因是一篇关于外国情报机构的报道。同一周里，这家公司的货在路上丢了一批，它对华出口的口径和另一家 AI 公司的首席执行官正相反。</div>
+  <div class="card">
+    <p>声明由英伟达董事会直接发出，日期是 <span class="num">11</span> 月 <span class="num">8</span> 日。原文的关键句有三处：董事会「鉴于近期有报道称创始人兼首席执行官黄仁勋成为外国情报行动的目标」启动独立调查，由独立董事组成的委员会在外部独立律师协助下主导；董事会「没有理由相信国家安全或英伟达的机密已遭泄露」，但会检视所有可得信息；黄仁勋完全支持审查并承诺配合，董事会对他的领导「有信心」。<span class="num">11</span> 月 <span class="num">9</span> 日凌晨，英伟达发言人补充说黄仁勋将继续担任首席执行官。</p>
+    <p>黄仁勋本人的说法比董事会更进一步。据 BBC <span class="num">11</span> 月 <span class="num">8</span> 日 <span class="num">20</span> 时 <span class="num">53</span> 分（GMT）的报道，他承认对妻子「不忠」并公开道歉：「我对妻子不忠，我的行为伤害了她和我们的孩子，我做的事没有借口，我深感抱歉。」他同时表示，就报道中提出的国家安全关切，董事会已启动独立调查，他支持并会全面配合，并称自己「热爱我们的国家与公司」。报道还给出公司规模：英伟达市值约 <span class="num">4.5</span> 万亿美元。</p>
+    <p>这条线索在订阅端已经走了两周。《纽约时报》<span class="num">10</span> 月 <span class="num">29</span> 日报道称，美国情报机构认为黄乐（英文名 Alice Huang）为中国国家安全部工作，她在监视中被发现与一名美国公民有通讯，该公民随后经「去匿名化」程序被确认为黄仁勋；她与总部在新加坡的数据中心公司 Megaspeed 有关联，该公司上月对《纽约时报》说已请外部法律顾问做内部调查，黄乐本人未回应置评请求。中国此前否认相关指控，称其为「毫无根据的猜测」。联合早报 <span class="num">11</span> 月 <span class="num">4</span> 日的专栏把这件事写成了「女间谍疑云」。上周，三名共和党籍众议院委员会主席致信黄仁勋，要求他在本月晚些时候出席，说明英伟达「针对外国对手间谍活动的安全协议」。<span class="num">11</span> 月 <span class="num">8</span> 日，他的女儿、英伟达物理 AI 平台产品与技术营销高级总监黄敏珊以「家庭原因」取消访韩，原定出席首尔 AI 日并会见韩国科技部长官，业内部分人士把这次取消与上述报道联系起来。</p>
+    <p>对华出口的口径，黄仁勋和 Anthropic 首席执行官达里奥·阿莫代伊正相反。他公开反对全面禁止向中国出口 AI 芯片与半导体设备，主张先保证美国企业拿到最先进技术，再通过参与全球竞争扩大份额；他透露 Vera Rubin 架构已进入大规模量产并向美国科研机构与 OpenAI 等企业供货，美国仍领先数年。企业层面的动作更具体：<span class="num">11</span> 月 <span class="num">3</span> 日英伟达要求云客户确保至少 <span class="num">51%</span> 的服务售予中国境外企业；<span class="num">11</span> 月 <span class="num">4</span> 日彭博社说，阿里、腾讯、字节等中国客户共订购约 <span class="num">600</span> 万颗 RTX Pro 5500，未来四个月预计只交付数万颗、约 <span class="num">1%</span>，订单总值约 <span class="num">700</span> 亿美元、单价超 <span class="num">1.1</span> 万美元；<span class="num">11</span> 月 <span class="num">5</span> 日又有消息称约 <span class="num">60</span> 万颗 H200 因北京未批大规模进口而暂存香港。</p>
+    <p>货也出了问题。加州奥克兰警方正在调查一起针对英伟达的货物盗窃案：一辆装载 AI 芯片与计算机硬件的卡车 <span class="num">8</span> 月 <span class="num">29</span> 日从奥克兰出发，原定运往得州沃思堡，提货流程正常，随后失联，受害人 <span class="num">9</span> 月 <span class="num">13</span> 日报案，货物价值 <span class="num">1140</span> 万美元（约 <span class="num">7610</span> 万元人民币），车辆最后在圣贝纳迪诺县失去踪迹，至今无人被捕；专家提到这批芯片在境外的售价接近美国本土的两倍。</p>
+    <p>芯片之外，压力落在内存上。Counterpoint <span class="num">11</span> 月 <span class="num">5</span> 日的研究说，Agentic AI 正带动 CPU 配套的普通 DRAM 需求，DDR 与 LPDDR 的收入增速甚至超过 HBM；英伟达 Vera CPU 最高支持 <span class="num">1.5</span> TB LPDDR5X，是前代 Grace 的 <span class="num">480</span> GB 的三倍多。SK 海力士 <span class="num">10</span> 月 <span class="num">28</span> 日披露已与 <span class="num">14</span> 家主要客户签长期协议，覆盖其 <span class="num">2027</span> 与 <span class="num">2028</span> 年超过一半的总产能，价格仍可在约定区间内调整。终端已经能算出这笔账：苹果本季收入约 <span class="num">1145</span> 亿美元、同比增长 <span class="num">12%</span>，但 <span class="num">12</span> 月季度毛利率指引为 <span class="num">45%</span> 至 <span class="num">46%</span>，本季 <span class="num">47.9%</span> 的毛利率里还含约 <span class="num">1</span> 个百分点的关税退款。野村在同一天的判断是，芯片短缺未见根本性缓解。消费端还有一条：苹果首款折叠屏手机 iPhone Duo 的「裂屏门」被指源于两家供应商中一家的原材料缺陷，公司称只涉及少量设备，同期苹果说已有 <span class="num">10</span> 万款 App 适配折叠屏。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>英伟达董事会启动独立调查：CEO 被报道为外国情报行动的目标</h4>
+    <div class="stats">242 points / 189 comments · 来源 nvidianews.nvidia.com（公司声明原文）· 同事件另有 BBC 报道（9 分/1 评论）与彭博社报道（34 分/9 评论），后者标题提到当事人承认婚外情；当日新帖最高分是《Goodbye Claude, hello Pi》（654 分/413 评论，已并入第 ③ 段），其次高盛收回 Claude Code（474 分/297 评论，已并入第 ① 段）、284B DeepSeek 跑在 64GB 内存上（323 分/123 评论，已并入第 ③ 段）；本篇分数不是最高，但它是当日唯一由当事公司盖章的一手文件，且与订阅端的纽约时报报道、众议院三个委员会的信件、女儿取消访韩三件事能逐条对上</div>
+    <p>声明本身只有一段，信息量在措辞上：调查由「独立董事组成的委员会」加「外部独立律师」主导，说明董事会把它当成治理程序来处理；同时写明「没有理由相信国家安全或公司机密受损」，为后续结论留了空间。它没有提到那篇报道的媒体名称，也没有说明调查期限。把它和订阅端两周的线索接起来看，这条线从一篇关于个人关系的报道，走到了公司治理程序，中间经过国会三个委员会的信件与一次被取消的商务行程。声明之外，当事人当天公开承认对妻子不忠并道歉，这把事件从安全议题分出了一条个人责任线，两条线各自的处理方式不同：安全那条交给独立董事与外部律师，个人那条由本人承担。</p>
+  </div>
+
+  <h3>③ 写代码的人：换掉一个助手，把大模型塞进普通内存</h3>
+  <div class="plain">有人写了一篇告别文，说自己用了很久的编程助手被换掉了，理由是一堆攒起来的小麻烦。同一天另一篇帖子讲的是相反方向的事：怎么让一个很大的模型，在一台没有显卡的普通台式机上跑起来。</div>
+  <div class="card">
+    <p>《Goodbye Claude, hello Pi》是当日新帖最高分（<span class="num">654</span> 分/<span class="num">413</span> 评论）。作者 caleb 说自己从 Claude Pro 套餐开始用 Claude Code 一年多，最后因为「小挫折的累积」换了工具，文章写于 <span class="num">9</span> 月 <span class="num">21</span> 日。他列的理由很具体：AGENTS.md 与 CLAUDE.md 两套格式要复制或做软链接；在 VSCode 里同一时间只能有一个会话连上 IDE，开第二个标签页就收不到选中文本，这个问题 <span class="num">2025</span> 年 <span class="num">12</span> 月就有人报过，被当成另一个无关 bug 的重复项关闭；官方 VSCode 扩展能多开，但一半的内置斜杠命令有问题。他还写到一件有点讽刺的事：在他决定换工具之后一天，Anthropic 宣布 Claude Code 开始支持 AGENTS.md。</p>
+    <p>《llama-modchip》走的是硬件那条路（<span class="num">323</span> 分/<span class="num">123</span> 评论）。这个项目用一组 ggml 与 llama.cpp 的内核补丁，把稀疏 MoE 模型放进系统内存跑：DeepSeek-V4-Flash 共 <span class="num">284.33</span> B 参数、激活 <span class="num">13.17</span> B，量化到 <span class="num">1.71</span> bpw 后占 <span class="num">56.56</span> GiB，配 <span class="num">256</span> K 上下文的峰值常驻内存 <span class="num">57.61</span> GiB，正好落在 64GB Linux 机器可用的约 <span class="num">62.5</span> GiB 之内；标准的 UD-IQ1_S 版本要 <span class="num">76.87</span> GiB，会直接触发换页或 OOM。作者报告 16 核 Zen 5 上预填充 <span class="num">44.36</span> tok/s、解码 <span class="num">9.1</span> 至 <span class="num">14.7</span> tok/s，全程 <span class="num">0</span> 张显卡，另有一个把 KV 缓存快照存进 /dev/shm 的功能，恢复一次约 <span class="num">13.1</span> 毫秒。</p>
+    <p>工具链的其他几处也在动。一篇讨论智能体记忆格式的文章说，现在一台机器上常见四种互不兼容的记忆形态：仓库里的 AGENTS.md 或 CLAUDE.md、编辑器规则目录、智能体写进 /memories 的文件、GitHub 侧保存的仓库事实、记忆 MCP 服务器维护的 JSONL 知识图，彼此读不了对方（<span class="num">159</span> 分/<span class="num">102</span> 评论），作者拿可观测性领域的 OpenTelemetry 作类比，主张先有一个共享规范。GitHub 上线了新的拉取请求总览页（<span class="num">177</span> 分/<span class="num">122</span> 评论）。邮件侧有个安静的改动：Outlook.com 从 <span class="num">11</span> 月 <span class="num">5</span> 日起开始拒收部分未发布 DMARC 记录的域名发来的邮件（<span class="num">134</span> 分/<span class="num">114</span> 评论）。</p>
+    <p>订阅端的两个例子更像事故复盘。有人对比宝塔 Nginx 免费防火墙 <span class="num">8.4</span> 与 <span class="num">8.5</span>，一万七千多行代码只改了 <span class="num">7</span> 处：<span class="num">6</span> 个 http 换成 https，加上给静默外传源码的函数补了一行注释，被披露的漏洞一个没修。另一位写的是批量升级翻车：脚本跑完 Ansible 输出一片绿，第二天发现两百多台机器里有 <span class="num">60</span> 多台版本号没变，而告警规则是按新版本指标写的，这批机器的告警全部失效。</p>
+  </div>
+
+  <h3>④ 科技科研前沿：筛药像搜索，实验室自己搭自己</h3>
+  <div class="plain">这一天的科学消息落在三件事上：找药的速度从按天算变成按秒算；实验室开始自己判断缺什么设备，再自己搭起来；还有一个关于寿命的小鼠实验，结论比常识更奇怪。</div>
+  <div class="card">
+    <p>药物虚拟筛选的门槛被压到了分钟以内。亚利桑那州立大学曹志超团队的 SweepANN 把约 <span class="num">5</span> 亿个分子的向量预先装进 <span class="num">4</span> 张 GPU，对 <span class="num">2.6</span> 万多个蛋白口袋各取出得分前 <span class="num">50</span> 万的候选，整个检索约 <span class="num">61</span> 秒，平均召回率 <span class="num">99.63%</span>，成果以 arXiv 预印本发布。它建立在清华团队 <span class="num">2023</span> 年提出的 DrugCLIP 之上：那套方法把蛋白口袋与小分子映射到同一向量空间，靠相似度检索代替逐一对接；<span class="num">2026</span> 年发在《科学》的后续研究用 <span class="num">8</span> 张 A100、约 <span class="num">24</span> 小时完成超 <span class="num">10</span> 万亿组匹配。推动继续加速的是库的规模：公开化合物库 ZINC-22 已收录超 <span class="num">370</span> 亿个可购买化合物，其中 <span class="num">45</span> 亿个有可直接对接的三维结构。曹志超的说法是，一条科学路径先回答「能不能」，系统研究随后回答「能做多快、成本能降到什么程度」。</p>
+    <p>实验室自动化往前走了一步。多伦多大学、Vector 研究所、加速联盟、CIFAR 与英伟达的团队在 arXiv 发布《Self-Building Labs》：系统先建一个与真实实验室对应的数字孪生，判断现有设备能做什么、缺什么，再规划机器人动作与流程。演示用的是硫化镉量子点合成，由液体处理机器人、机械臂与光学检测设备配合完成配液、转移与测量。论文第一作者白家儒、赵宇驰，通讯作者包括 Alán Aspuru-Guzik。它与既有自驱动实验室的区别在于，能力边界本身也进了闭环：任务超出既有设备时，系统尝试自己补上接口与技能。</p>
+    <p>资本那边有个反差数字。据彭博社 <span class="num">11</span> 月 <span class="num">8</span> 日报道，Alphabet 旗下的 Isomorphic Labs 正在洽谈约 <span class="num">50</span> 亿美元新融资，估值可能达 <span class="num">500</span> 亿美元；<span class="num">2025</span> 年全球 AI 药物发现市场规模约 <span class="num">23</span> 亿美元，这家公司至今没有一款药物进入人体临床试验。它的科学阵容是估值的一部分：首席科学官 Miles Congreve 参与设计过多款进入临床的药物、是已上市乳腺癌药物 Kisqali 的联合发明人之一，顾问委员会包括 <span class="num">2020</span> 年诺贝尔化学奖得主 Jennifer Doudna 与 <span class="num">2021</span> 年得主 David MacMillan。几天前，公司总裁 Max Jaderberg 公开预测未来所有药物都将由 AI 设计。</p>
+    <p>AI 参与数学证明也有一例，但结论要打折看。物理超智能实验室（PSI）称，用一款尚未公开的 Anthropic 模型在三天内找到了量子计算领域「阿伦森—安拜尼斯猜想」的证明，该猜想 <span class="num">2008</span> 年提出，问的是量子计算机在什么条件下能大幅快于传统计算机。实验室公开了论文与证明代码，称证明通过 Lean 检验，此前研究过该问题的斯坦福学者已读过并给出意见；成果仍需学界独立审查，运行环境是实验室自有基础设施，系统由技术人员 David Turturean 开发。</p>
+    <p>寿命那条来自小鼠。得克萨斯大学圣安东尼奥分校健康科学中心的团队把小鼠分三组，分别在出生后第 <span class="num">20</span> 天（青春期前）、第 <span class="num">60</span> 天、第 <span class="num">240</span> 天（约合人类 30 岁）切除睾丸，中位寿命分别延长约 <span class="num">19.3%</span>、<span class="num">25.8%</span> 与 <span class="num">32.9%</span>，越晚切除效果越好，与「越早越好」的旧假设相反；论文是 bioRxiv 预印本，《科学》以新闻形式报道。研究者发现这些小鼠的抓握力量与虚弱指数并未改善，身体成分向雌性靠拢，机制被指向代谢。《科学》采访的专家提醒，中年组小鼠在术后一年多里死亡率基本停滞，但把结论套到人身上为时过早；文中引用的历史观察包括朝鲜王朝太监平均约 <span class="num">70</span> 岁、比同代同阶层男性长寿 <span class="num">14</span> 至 <span class="num">19</span> 年。</p>
+    <p>另外三条落在应用层。据《连线》此前报道与生物科技公司 ExinTherapeutics 披露，OpenAI 的 GPT-6.1 Sol 参与活体小鼠脑部手术实验，连续三次操作中借助外科医生反馈改进：识别关键解剖标志的耗时从 <span class="num">169</span> 秒降到 <span class="num">86</span> 秒，定位误差从 <span class="num">0.6</span> 毫米降到 <span class="num">0.3</span> 毫米。剑桥大学团队用 AI 整合全球监测的病毒基因序列，设计出针对多种禽流感变异株的「超级抗原」，小鼠与雪貂在攻毒后全部存活，接种现有疫苗的对照组仅约半数存活。海南师范大学等团队在海南热带雨林国家公园吊罗山片区与万宁上溪保护区确认两栖动物新物种海南趾沟蛙，成果发在《ZooKeys》，栖息地海拔 <span class="num">350</span> 至 <span class="num">950</span> 米。</p>
+  </div>
+
+  <h3>⑤ 地缘政治：袭击落在金融区，油轮在海峡里起火</h3>
+  <div class="plain">周日的袭击落在沙特首都的金融区，同一片水域里又有油轮起火。以色列的组阁权换了人，乌克兰那座核电站又一次靠柴油发电机撑着。华盛顿和德黑兰都说在谈，而市场已经为「停火是否还在」付过钱。</div>
+  <div class="card">
+    <p>利雅得遭到的是少见的打击。沙特能源部说有人企图袭击位于利雅得的沙特阿美大楼，碎片落在建筑物上，没有人员伤亡，只造成「有限的实质性损失」；胡塞武装称当天对沙特境内目标发动四轮打击，目标包括哈立德国王国际机场、沙特阿美的储油罐、金融中心以及布盖格的阿美设施。沙特主导的多国联军称拦截并摧毁多枚弹道导弹与一架无人机；胡塞方面称沙特过去 <span class="num">24</span> 小时发动 <span class="num">91</span> 次袭击，也门政府军称同期对胡塞据点实施 <span class="num">992</span> 次空袭与炮击，打死打伤 <span class="num">267</span> 名胡塞人员、摧毁或瘫痪 <span class="num">97</span> 辆车与军事单位。被击中的阿卜杜拉国王金融区集中了沙特公共投资基金、证交所与高盛、布鲁克菲尔德等机构，袭击发生时该区处于远程办公安排，即时影响有限；过去一个月沙特已推迟或取消亚洲杯与未来投资倡议论坛。</p>
+    <p>霍尔木兹海峡同一天有三艘油轮爆炸起火。伊朗革命卫队海军称这些船只试图经未经伊朗授权的航线穿越海峡，并称规定已多次向所有船只传达；英国海上贸易行动办公室收到两份延迟报告，一份说阿曼哈萨布西北 <span class="num">8</span> 海里处一艘油轮起火、船员全部撤离，另一份说一艘油轮在驶离海峡时被不明弹体击中、全员安全。伊拉克外长说，伊拉克已与美国达成谅解，允许石油经靠近阿曼的航道出口，作业仍在进行；他同时给出损失数字：伊朗战争与石油出口中断给伊拉克造成 <span class="num">600</span> 亿美元损失。伊拉克库尔德自治区的霍尔莫尔气田当天遭装载爆炸物的无人机袭击，一座储气设施起火，当地电力部门称电网损失近 <span class="num">2.8</span> 吉瓦发电能力，初步评估无人员伤亡。</p>
+    <p>能源设施的风险还出现在核电站。国际原子能机构说扎波罗热核电站再次失去全部外部供电，与唯一剩余的外部线路费罗斯普拉夫纳-1 号的连接在当天凌晨中断，被迫靠应急柴油发电机冷却反应堆，燃料储备够少量机组运行两周，断连原因与位置尚不清楚；数小时后该电站恢复外部供电。</p>
+    <p>谈判那条线是口头进展。特朗普五度表态称，只要谈判有进展，极不可能下令重返对伊战争，同时说如果下令袭击，美军已在该地区做好准备；他还说「铁门」特遣部队正在伊朗方向全面展开，加上海上封锁，「几乎没有物资能进出伊朗」。伊朗外长说美方需要时间消化选举结果，斡旋尚未恢复；沙特媒体说伊拉克代表团访问伊朗并转达美方信息。以色列方面，总统赫尔佐格 <span class="num">11</span> 月 <span class="num">8</span> 日授权正直党领导人、国防军前总参谋长加迪·埃森科特组建新政府，他有最多 <span class="num">6</span> 周；埃森科特说要组建「国家紧急政府」，并提出四项原则，内塔尼亚胡随即指责他。俄乌方向，美俄乌三方将于 <span class="num">11</span> 月 <span class="num">10</span> 日至 <span class="num">11</span> 日在阿布扎比会晤，欧洲方面表示将参加；德国总理默茨说早晚必须与普京对话，特朗普已邀请普京出席 G20 峰会，若普京到场他不会回避。</p>
+    <p>市场把这段过程写成了结算结果，而且两组盘口的方向并不一致。以「美国是否对伊朗发动空袭或地对地导弹打击」为判定标准的「美伊有效停火」系列，从 11 月 8 日档起逐档结算为 No，11 月 15 日、11 月 30 日与 12 月 31 日三档同样归零；以「以色列或伊朗是否对彼此采取符合条件的军事行动」为标准的另一组盘口里，11 月 15 日档仍有 <span class="num">86.5%</span> 定价为 Yes，一周前是 <span class="num">66.5%</span>。同一片区域的两场冲突，市场认为其中一场已经越过判定线，另一场还在维持。</p>
+  </div>
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 <span class="num">65.1</span> 万美元（以色列—伊朗停火盘）、<span class="num">5.56</span> 万美元（美伊有效停火盘）、<span class="num">2.53</span> 万美元（核谈盘）、<span class="num">82.7</span> 万美元（以色列总理盘），均为事件级 · 口径：最近成交价；括号内为一周前同期读数</div>
+    <div class="row"><span>以色列与伊朗停火维持到 11 月 15 日（一周前 66.5%）</span><b>86.5%</b></div>
+    <div class="row"><span>美伊有效停火维持到 11 月 8 日（已结算为 No）</span><b>0%</b></div>
+    <div class="row"><span>美伊在 2026 年 12 月 31 日前达成最终核协议（一周前 13.5%）</span><b>9.5%</b></div>
+    <div class="row"><span>美国在 2027 年前入侵伊朗</span><b>11.5%</b></div>
+    <div class="row"><span>以色列下任总理：加迪·埃森科特</span><b>63.2%</b></div>
+    <div class="row"><span>同上：本雅明·内塔尼亚胡</span><b>20.0%</b></div>
+  </div>
+
+  <h3>⑥ 中国：一位老人的去世，一门冷僻的学问</h3>
+  <div class="plain">这一天国内的消息从一位老人的去世开始，落到一栋着火的楼、一门冷僻的学问和一项正在被讨论的新税。外交日程上，有两件事在往「来访」的方向走。</div>
+  <div class="card">
+    <p>原乌鲁木齐军区副司令员王扶之 <span class="num">11</span> 月 <span class="num">7</span> 日在大连病逝，享年 <span class="num">104</span> 岁。他出身陕北农村，青少年时期加入红军，亲历平型关战役，参加过抗日战争与抗美援朝，韩战期间任志愿军师长，<span class="num">1955</span> 年被授予大校军衔、<span class="num">1964</span> 年晋升少将。随着他离世，<span class="num">1955</span> 年首次实行军衔制以来获授衔的开国将帅全部离世——元帅 <span class="num">10</span> 名、大将 <span class="num">10</span> 名、上将 <span class="num">57</span> 名、中将 <span class="num">177</span> 名、少将 <span class="num">1360</span> 名。</p>
+    <p>冷僻学问被单独立院。中国社会科学院大学 <span class="num">11</span> 月 <span class="num">6</span> 日举行冷门绝学学院成立仪式，同时启动全国冷门绝学联盟，研究范围覆盖突厥文、西夏文、契丹文、女真文、满文、古藏文、古彝文、八思巴文、纳西东巴文、方块壮文等 <span class="num">10</span> 余种民族古文字与简帛古文献；副院长赵芮说学院要服务文明探源、边疆治理、文化安全和民族工作大局。同一批存档里还有另一条：知情人士说中共组织审读《清史》时提出大幅批评，认为书稿「没有体现出人民立场」，要求强调清朝统治者管理统一的多民族国家、着重写列强对中国社会的负面冲击、淡化西方对清朝政治改革的影响；清史工程 <span class="num">2002</span> 年启动，<span class="num">2012</span> 年完成 <span class="num">95%</span> 书稿，<span class="num">2018</span> 年提交审读，编纂委员会已有十几名成员去世，主任戴逸今年 <span class="num">1</span> 月逝世。</p>
+    <p>太原的火灾数字已经明确。<span class="num">11</span> 月 <span class="num">8</span> 日 <span class="num">16</span> 时 <span class="num">59</span> 分，迎泽区柳巷街道豪生国际公寓附楼起火，<span class="num">19</span> 时明火扑灭、<span class="num">20</span> 时 <span class="num">30</span> 分结束搜救；<span class="num">38</span> 人被送医，其中 <span class="num">5</span> 人死亡。初步核查起火位置在五至六层，一至三层为培训机构，五至七层闲置，八至九层为酒店，主楼约 <span class="num">40</span> 层住宅受浓烟影响、部分住户撤离。</p>
+    <p>糖税开始进入公开讨论。《人民日报》及其平台近几个月刊文讨论对含糖饮料分级征税，按含糖量设阶梯税率，高糖高税、无糖免税，税收定向用于校园健康饮食项目；报道给出的背景是中国超重与肥胖者比例已超 <span class="num">50%</span>，截至 <span class="num">2024</span> 年 <span class="num">7</span> 月全球至少 <span class="num">116</span> 个国家已对至少一种含糖饮料征国家级消费税，世界卫生组织建议税率至少达到零售价的 <span class="num">20%</span>。明年 <span class="num">3</span> 月新版预包装食品营养标签规定生效，须强制标示糖与饱和脂肪含量。对外经贸大学教授郑榕估算，若征税使售价提高二至三成，每年可增收 <span class="num">1700</span> 亿至 <span class="num">2360</span> 亿元人民币。</p>
+    <p>能源与外交各有数字和日程。中国企业改革与发展研究会 <span class="num">11</span> 月 <span class="num">7</span> 日发布的报告预计，中国今年能源投资总额达 <span class="num">9400</span> 亿美元、居全球第一；截至去年底可再生能源发电装机 <span class="num">23.37</span> 亿千瓦、占全国电力装机 <span class="num">60.1%</span>，今年上半年煤电发电量占比降至 <span class="num">49.7%</span>、首次低于一半。据南华早报，美中关系全国委员会会长欧伦斯 <span class="num">11</span> 月 <span class="num">6</span> 日在三亚说，美国战争部长赫格塞斯与太平洋司令部司令帕帕罗可能很快访华；帕帕罗若成行，将是该司令部司令自 <span class="num">2015</span> 年以来首次访华。英国王室一名高级幕僚说，若政府提出要求，国王查尔斯三世会「非常慎重地考虑」对华国事访问——英国在位君主上一次访华是 <span class="num">1986</span> 年的伊丽莎白二世。台湾第二批新购 F-16 战机抵台；日媒称在华获刑的安斯泰来日籍员工预计 <span class="num">12</span> 月刑满出狱。</p>
+  </div>
+
+  <h3>⑦ 直面批判：一份两个月的劳动事件清单</h3>
+  <div class="plain">这一天的监督材料是一份季度盘点。它把两个月的工伤、欠薪、超时加班与抗议，按行业一件一件列了出来，也把几件已经被讨论过的事重新摆上台面。</div>
+  <div class="card">
+    <p>工劳小报的这份盘点里，最硬的是工时与罚款的对照。海星科技（深圳）因违法延长工作时间被罚 <span class="num">24.6</span> 万元：<span class="num">6</span> 月违法延长 <span class="num">547</span> 名员工工时，人均月加班 <span class="num">146</span> 小时，约为《劳动法》每月 <span class="num">36</span> 小时上限的 <span class="num">4.1</span> 倍；这家公司 <span class="num">2024</span> 年曾因 <span class="num">149</span> 名员工人均月加班 <span class="num">65.29</span> 小时被警告。按罚款总额摊到人头，每人约 <span class="num">450</span> 元。安全生产那几条更重：<span class="num">9</span> 月 <span class="num">20</span> 日佛山顺德均安镇一家牛仔布料厂区火灾，<span class="num">8</span> 死 <span class="num">1</span> 伤，工人说断电后在浓烟里摸到楼梯口；<span class="num">5</span> 月 <span class="num">18</span> 日中山横栏镇一名工人用角磨机切割旧管道引燃残留化学品，全身深Ⅱ至Ⅲ度烧伤约 <span class="num">90%</span>，两家企业被建议行政处罚；<span class="num">10</span> 月 <span class="num">2</span> 日重庆酉阳与秀山交界一处废弃汞矿洞涨水，<span class="num">7</span> 名临时帮工的村民遇难，警方已抓获 <span class="num">21</span> 名涉案盗矿人员。</p>
+    <p>欠薪与社保那部分是按企业列的。河南辉县两名女工起诉米多奇及两家子公司，其中一人 <span class="num">2014</span> 年入职、在厂超过 <span class="num">12</span> 年，公司到 <span class="num">2023</span> 年才开始缴社保，此前 <span class="num">9</span> 年未缴，且长期未安排带薪年休假、从工资里扣了本应由企业承担的社保费；江苏丰县丰成盐化 <span class="num">9</span> 月 <span class="num">28</span> 日通知 <span class="num">10</span> 月 <span class="num">1</span> 日起停产放假，<span class="num">10</span> 月 <span class="num">8</span> 日数百名工人到厂维权时门禁卡已被停用，大批警察到场，据报还要求工人删除抖音上的视频；河南平顶山市第一人民医院未来路院区保洁工人 <span class="num">9</span> 月 <span class="num">16</span> 日集体罢工讨薪，称被拖欠 <span class="num">5</span> 个月工资，负责人回应「账上没钱」。云南多地烟农因烟叶收购压级压价在 <span class="num">9</span> 月 <span class="num">8</span> 日至 <span class="num">9</span> 日聚集抗议，昭通彝良龙街烟叶站连续两天数百人，有烟农把上千斤烤烟运到站里只拿到几十元；<span class="num">9</span> 月 <span class="num">8</span> 日至 <span class="num">13</span> 日，昆明、海口、南宁、惠州、广安等地发生城管与警察驱逐摊贩并引发冲突的事件。</p>
+    <p>白领与制度侧的变化也在清单里。上海执行了 <span class="num">1995</span> 年的病假工资旧规于今年 <span class="num">8</span> 月中旬失效，此前连续工龄满 <span class="num">8</span> 年可按 <span class="num">100%</span> 计发，此后只剩「不低于当年本市最低工资标准 <span class="num">80%</span>」的下限，上海法定病假最低工资为每月 <span class="num">2192</span> 元；腾讯内部号称完全匿名的敬业度满意度调查被员工指为假匿名，差评被包装成聚合数据下发到负责人手里；vivo 中国区 <span class="num">9</span> 月 <span class="num">29</span> 日收紧考勤，要求 <span class="num">8</span> 点半至 <span class="num">9</span> 点完成打卡，取消弹性空间。反面的例子是胖东来：总经理于东来 <span class="num">9</span> 月 <span class="num">30</span> 日说，集团计划 <span class="num">2027</span> 年 <span class="num">3</span> 月全面推行每周 <span class="num">5</span> 天、每天 <span class="num">7</span> 小时工作制，工龄满一年每年 <span class="num">30</span> 天带薪假，入职即享 <span class="num">10</span> 天自由假；其官网数据显示今年上半年员工流失率 <span class="num">0.50%</span>。这份盘点还记下一条：一位长期关注劳工事件的青年小五被刑事拘留，他盘点 <span class="num">2025</span> 年劳动事件的文章成了指认其「寻衅滋事」的罪状。</p>
+    <p>另有两件被存档的事。南京大学的「智慧教室」争议进入评论层面：评论者称学校斥资三千多万元建设智能化教室，系统能锁定上课率、实名显示前排率、落实到人的抬头率，学生在网上翻出招标信息，其中明确包含人脸识别与监测抬头等功能模块，校方回应称未进行人脸识别、已取消抬头率指标。评论者的落点是，技术被用来提升管理的便利性，教师成了被分析的对象。山西太原育华小学的无薪「跟岗教师」招聘，律师按原劳动和社会保障部 <span class="num">2005</span> 年 <span class="num">12</span> 号文给出三条判断标准：主体适格、人身隶属性、劳动属于核心业务，三条全部命中即成立劳动关系；即便在试用期，工资也不得低于同岗位最低档的 <span class="num">80%</span> 且不低于当地最低工资，劳动者「自愿无薪」的承诺无效；向劳动监察投诉后，逾期不付可责令加付 <span class="num">50%</span> 至 <span class="num">100%</span> 的赔偿金。</p>
+  </div>
+
+  <h3>⑧ 人文与社会：一部老剧，一篇关于写字的文章</h3>
+  <div class="plain">这一天最热的两篇帖子都不讲技术。一篇讲一部十五年前的美剧，一篇讲为什么把想法写下来能让人想清楚事情。还有一条枪击案的后续，落在凶手的意识形态上。</div>
+  <div class="card">
+    <p>《Person of Interest》是当日新帖里的高分（<span class="num">278</span> 分/<span class="num">185</span> 评论）。作者 Wilson Tovar 说，几天前开始看这部剧，停不下来；他觉得剧集在今天比 <span class="num">15</span> 年前首播时更切题，也把他带回 <span class="num">2010</span> 年代初刚接触计算机的年纪——那些论坛、SOPA 与 PIPA 之争、Megaupload 被关停。他写道，当年看起来纯属科幻的「机器」，离现实已经不远，这个念头让他觉得有点难过。</p>
+    <p>《Writing as a thinking tool》给的是机制（<span class="num">239</span> 分/<span class="num">74</span> 评论）。作者 Murat 说，中学时他读不进长段落，一整页读完什么也没留下，只好开始做笔记；<span class="num">1980</span> 年代末 Tony Buzan 的思维导图刚传到土耳其，他做出成页的蛛网状笔记，后来才明白那些纸的用处在于处理信息，存信息只是附带。他引用 Manuel Blum 给研究生的建议：有限自动机能加不能乘，图灵机能算任何可计算函数，两者唯一的差别是图灵机有纸和笔。</p>
+    <p>同一天还有两篇读书与数学的帖子。《Petered》是 A Working Library 的读书笔记（<span class="num">154</span> 分/<span class="num">90</span> 评论），从彼得原理往下推：升到不能胜任的层级之后，处境并不稳定，Gläßel 与 Scharpf 在《Making a Career in Dictatorship》里把这种状态叫「职业压力」——升不上去、又可能达不到预期的人，会去接高风险、耗人力或道德上有争议的任务，用替组织干脏活来重建自己的价值。《Making any integer with four 2s》是一个老数学游戏（<span class="num">205</span> 分/<span class="num">53</span> 评论）：用四个 2 和任意运算凑出任意自然数，从小学水平到 Gamma 函数，能凑出的范围随数学工具扩张。</p>
+    <p>订阅端的这一天更安静。博客聚合里是生日、秋雨、济南十元一碗的馄饨、抱龙镇河边种桃种橘的山乡、一位作者从母亲心电图的异常 Q 波写到确诊冠心病、一位店主写自己认得出熟客。这些文本不构成新闻，但它们是这个订阅池里数量最多、最稳定的成分：这个聚合源在窗口内进了 <span class="num">88</span> 条新文，标题多是几十个字的生活记录。</p>
+    <p>波兰那条枪击案有了官方定性。克拉科夫市主广场的随机伤人事件造成 <span class="num">6</span> 死 <span class="num">15</span> 伤，当局称枪手持有「非常激进」和「极端民族主义」的观点、沉迷于极右翼意识形态，国防部长把事件形容为「恐怖行为」，总理称其为恐袭并宣布全国哀悼。</p>
+  </div>
+
+  <h3>⑨ 区块链与加密市场：被盗的钱开始有去向</h3>
+  <div class="plain">那笔史上最大的交易所被盗案，这一周开始有了钱的去向。另一头，一家被美国财政部点名的交易所，正在把麻烦传给同行。价格没有回来，比特币跟着美股一起动。</div>
+  <div class="card">
+    <p>Elliptic 给出了追踪结果。截至 <span class="num">11</span> 月 <span class="num">7</span> 日，币安约 <span class="num">64.3</span> 亿美元被盗资金的转移与洗钱已涉及 <span class="num">16</span> 条区块链、超过 <span class="num">2</span> 万个钱包地址、至少 <span class="num">36</span> 项服务与 <span class="num">6.5</span> 万笔交易，呈现高度自动化特征；约 <span class="num">28.5</span> 亿美元已被冻结或扣押，约 <span class="num">31.3</span> 亿美元仍留在相关地址中，主要是 BTC 与 ETH；约 <span class="num">1.75</span> 亿美元已兑换成约 <span class="num">2300</span> 枚 BTC，被盗的 SOL 已全部转移或兑换。Elliptic 的判断是实际套现极少，主要持仓尚未移动。攻击机制由 Blockaid 复盘：<span class="num">10</span> 月 <span class="num">29</span> 日 UTC <span class="num">20</span> 时 <span class="num">24</span> 分，攻击者在单笔交易中抽干币安 14 号热钱包约 <span class="num">25</span> 亿美元，此前数分钟用泄露的私钥签署 EIP-7702 授权，把该钱包委托给预先部署的清扫合约；随后 <span class="num">12</span> 分钟内另外 <span class="num">10</span> 个热钱包向同一归集地址转账。Tether 与 Circle 在核心收款地址紧急冻结约 <span class="num">18</span> 亿美元，其中 Tether 冻结的 USDT 超过 <span class="num">15</span> 亿美元。</p>
+    <p>MEXC 这条线在往同行扩散。美国财政部金融犯罪执法局对 MEXC Global 的特别措施命令尚未正式生效，社区已有用户反映从 MEXC 提现到 OKX、Binance、Gate 时遇到风险审核、暂缓入账或退款审核；Bitget Wallet 表示其银行卡充值服务暂不接受被识别为来自 MEXC 的资金。OKX 创始人 Star 公开建议用户暂时避免直接从 MEXC 向 OKX 转入资金，称 OKX 已提前加强合规风控，按类似金融制裁的标准管理风险。钱包侧出了安全事件：Cosmos 生态的 Keplr 确认 Web3Auth 基础设施漏洞导致部分通过 Google 或 Apple 登录的用户私钥泄露，用助记词或硬件钱包创建的账户未受影响，官方提醒使用这两种方式登录的用户不要向原账户转入新资金，并尽快把剩余可转移资产转到助记词或硬件钱包账户。</p>
+    <p>规则在几个辖区同时收紧。韩国金融委员会拟本月提出《数字资产基本法》草案，把交易所监管从申报制改为许可制，并考虑把大股东持股上限定在 <span class="num">15%</span> 至 <span class="num">20%</span>，现有平台可能获得 <span class="num">1</span> 至 <span class="num">2</span> 年过渡期，还可能引入黑客攻击或系统故障时的无过错赔偿责任。香港立法会 <span class="num">11</span> 月 <span class="num">4</span> 日通过条例草案，落实 OECD 的加密资产申报框架与修订后的共同汇报标准：<span class="num">2027</span> 年起相关服务提供者须向税务局登记并申报客户税务居民身份与交易资料，<span class="num">2028</span> 年起与伙伴辖区自动交换。欧盟委员会设立专门制裁办公室并成立加密资产制裁工作组，初步计划运作 <span class="num">12</span> 个月，研究如何应对用加密资产规避对俄制裁。日本金融厅与欧盟委员会 <span class="num">11</span> 月 <span class="num">6</span> 日的联合声明首次写入资产代币化。国内侧，一篇转载文章写到中国税务部门开始核查居民的境外加密资产收入，重点包括 CRS 信息、资金来源说明与 KOL 收入。</p>
+    <p>行业内部在讨论定位。Vitalik Buterin 发了两篇：一篇说放缓 AI 数据中心扩张未必造成严重后果，因为算法效率提升后，未来两年靠大规模扩建得到的能力，四年内用现有数据中心也能实现，社会需要时间应对网络安全与生物安全风险；另一篇说 ETH 的核心价值定位应放在价值储存上，Gas 费销毁形成的估值支撑并不稳固，过度追求销毁收入可能促使协议维持高 Gas 费、强化治理干预，EIP-1559 与销毁机制应保留，即使销毁量长期不足以抵消新增发行量的 <span class="num">10%</span> 也不应视为问题。</p>
+    <p>矿业与价格的结构性数字都往下走。比特币全网算力七日移动均值约 <span class="num">1.027</span> ZH/s，较七天前减少约 <span class="num">25.73</span> EH/s、降幅 <span class="num">2.4%</span>，为近三周最低；矿工持仓增至约 <span class="num">120.21</span> 万枚、一周增加 <span class="num">8087</span> 枚；Puell Multiple 从一周前的约 <span class="num">1.03</span> 降到 <span class="num">0.93</span>。山寨币总市值从 8 月中旬至 9 月底增加约 <span class="num">3200</span> 亿美元后回落约 <span class="num">2000</span> 亿、抹去此前约 <span class="num">63%</span> 的涨幅，币安平台上价格低于 200 日均线的山寨币占比从 10 月初的 <span class="num">10%</span> 重新升到约 <span class="num">70%</span>；同期纳斯达克指数较高点跌约 <span class="num">14%</span>、标普 500 跌约 <span class="num">6%</span>。链上，Abraxas Capital 在 Hyperliquid 的未平仓头寸名义价值约 <span class="num">4.52</span> 亿美元，其中空头约 <span class="num">4.52</span> 亿、浮盈约 <span class="num">3077</span> 万美元，最大空头是 <span class="num">1.59</span> 亿美元的 BTC、<span class="num">7760</span> 万美元的 HYPE 与 <span class="num">7527</span> 万美元的 ETH。价格上，比特币 <span class="num">11</span> 月 <span class="num">7</span> 日收在 <span class="num">75,747</span> 美元，<span class="num">11</span> 月 <span class="num">9</span> 日凌晨（美东 <span class="num">8</span> 日下午）一度跌到 <span class="num">73,500</span> 美元、报 <span class="num">74,026</span> 美元；USDT.D <span class="num">11</span> 月 <span class="num">7</span> 日收在 <span class="num">7.012</span>。</p>
+    <p>另外两件落在人与法上。法国巴黎刑事法院判处 Holograph Foundation 一名前员工五年监禁、其中两年实刑，认定他在 <span class="num">2024</span> 年修改代币铸造条件非法生成 <span class="num">10</span> 亿枚 HLG、当时价值约 <span class="num">1400</span> 万美元，两名同伙分别获刑并处罚款。泰国网络犯罪调查警方就博彩平台 Shuffle com 搜查曼谷等地 <span class="num">11</span> 处地点、发现 <span class="num">11</span> 名嫌疑人，已从三家数字资产交易平台取得交易数据，并组织 <span class="num">80</span> 个调查小组追踪资金。</p>
+  </div>
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 <span class="num">28.3</span> 万美元（事件级）· 口径：最近成交价；括号内为一周前同期读数</div>
+    <div class="row"><span>比特币在 11 月内触及 90,000 美元（一周前 16.5%）</span><b>7.5%</b></div>
+    <div class="row"><span>比特币在 11 月内跌至 70,000 美元（一周前 33.5%）</span><b>53.5%</b></div>
+    <div class="row"><span>比特币在 11 月内跌至 65,000 美元</span><b>22.5%</b></div>
+    <div class="row"><span>比特币在 11 月内触及 100,000 美元</span><b>0.9%</b></div>
+  </div>
+
+  <h3>⑩ 一周回顾</h3>
+  <div class="plain">把这一周连起来，主线是同一件事从两头收紧：钱变贵了，能花钱的组织在缩编；被管的行业在被切通道，被讨论的制度在往条文里走。</div>
+  <div class="card">
+    <p><b>利率先动，融资跟着改价。</b>美联储 12 月加息 25 个基点的概率 <span class="num">11</span> 月 <span class="num">5</span> 日是 <span class="num">81.5%</span>，<span class="num">11</span> 月 <span class="num">6</span> 日降到 <span class="num">68.7%</span>，非农公布前以 <span class="num">65.5%</span> 占主导；<span class="num">11</span> 月 <span class="num">6</span> 日美国 10 月非农新增 <span class="num">16.5</span> 万人、超预期，美元创近五个月最大单日涨幅，市场重新加大加息押注。折现率一变，长周期投入就要重算：OpenAI 把本轮融资从原定 <span class="num">300</span> 亿美元缩到最高 <span class="num">200</span> 亿、估值从 <span class="num">1.4</span> 万亿降到 <span class="num">1.25</span> 万亿美元；Anthropic 的 IPO 目标估值落在 <span class="num">1.25</span> 万亿至 <span class="num">1.75</span> 万亿美元，高于最近一轮的 <span class="num">9650</span> 亿、低于部分投资者期望的 <span class="num">2</span> 万亿；市场给它年内上市的定价则从 <span class="num">91.4%</span> 降到 <span class="num">86.9%</span>——估值区间在下移，确定性也在下移。</p>
+    <p><b>芯片是这一周最紧的一段。</b><span class="num">11</span> 月 <span class="num">3</span> 日英伟达要求云客户把至少 <span class="num">51%</span> 的服务售予中国境外企业；<span class="num">11</span> 月 <span class="num">4</span> 日彭博社说中国客户订购的 <span class="num">600</span> 万颗 RTX Pro 5500 未来四个月只能拿到约 <span class="num">1%</span>，订单总值约 <span class="num">700</span> 亿美元；<span class="num">11</span> 月 <span class="num">5</span> 日又传出约 <span class="num">60</span> 万颗 H200 因未获批进口暂存香港。英伟达股价 <span class="num">11</span> 月 <span class="num">5</span> 日单日跌超 <span class="num">8%</span>、AMD 跌 <span class="num">15.6%</span>、闪迪跌 <span class="num">19.4%</span>；同一周里黄仁勋的身家跌出彭博富豪榜前十，周末董事会宣布就「外国情报行动目标」的报道启动独立调查。</p>
+    <p><b>选举的账单在逐个兑现。</b>民主党拿下两院后的第一周，<span class="num">11</span> 月 <span class="num">5</span> 日纳指单日跌 <span class="num">5.52%</span>、市值蒸发估约 <span class="num">2.49</span> 万亿美元，资金转向短期美债，美国货币市场基金规模升到创纪录的 <span class="num">8.016</span> 万亿美元。监管预期同步转向：民主党议员誓言调查特朗普家族与加密行业的利益关联，众议院领导人要求黄仁勋出席简报会，新国会准备就 AI 芯片出口与苹果、Meta、马斯克旗下公司开听证。</p>
+    <p><b>加密这周丢的是通道与信任。</b><span class="num">10</span> 月 <span class="num">29</span> 日币安热钱包被盗约 <span class="num">64.3</span> 亿美元，朝鲜否认参与、金与正称 FBI 的指控是严重政治挑衅，TRM 与 Blockaid 先后给出入侵路径与 EIP-7702 机制；<span class="num">11</span> 月 <span class="num">6</span> 日 FinCEN 对 MEXC 采取特别措施，随后出现充值受限与做市撤流动性。价格上，比特币 <span class="num">11</span> 月 <span class="num">4</span> 日盘中最高 <span class="num">81,105</span> 美元，<span class="num">11</span> 月 <span class="num">6</span> 日收在 <span class="num">75,747</span> 美元，两天下跌约 <span class="num">6.6%</span>；挖矿难度已连续 <span class="num">374</span> 天低于历史高点，创历史最长纪录；Blockstream 在评估抗量子签名方案，倾向 Falcon-1024。</p>
+    <p><b>科研这周给了几个硬结果。</b>《自然》<span class="num">11</span> 月 <span class="num">4</span> 日一期集中刊出帕金森病专题，从细胞替代疗法、脑深部刺激到化学诱因；<span class="num">11</span> 月 <span class="num">5</span> 日《新英格兰医学杂志》刊出化学遗传学首次进入人体的通信文章：首都医科大学宣武医院赵国光团队与北京脑科学与类脑研究所罗敏敏团队用 AAV9 载体 GA002 把只对氯氮平敏感的受体送进致痫区，三例患者在 <span class="num">8</span> 周评估期内月均发作从 <span class="num">4.33</span> 次降到 <span class="num">0.33</span> 次、平均降 <span class="num">92.6%</span>；欧空局说国际团队用火星微量气体任务卫星在阿尔巴山发现异常氯化氢分布与地表裂隙，推测地下岩浆气体沿裂隙上逸，论文发在《科学进展》。这一周新增的还有：SweepANN 把 <span class="num">5</span> 亿分子对 <span class="num">2.6</span> 万口袋的检索压到 <span class="num">61</span> 秒，Isomorphic Labs 在没有任何药物进入临床的情况下洽谈 <span class="num">50</span> 亿美元融资。</p>
+    <p><b>国内这一周在算账。</b>央行连续 <span class="num">24</span> 个月增持黄金、10 月末黄金储备 <span class="num">7830</span> 万盎司，外汇储备回到 <span class="num">34052</span> 亿美元；二十一大代表选举启动、名额 <span class="num">2360</span> 名，中组部把政治标准放在首位；财政部准备首次在加拿大发行不超过 <span class="num">40</span> 亿元人民币绿色主权债券。社会侧的记录同样密集：延安大学一名副教授去世后，疑似遗书把横向经费考核摊开，学校随后要求教师签经费真实性承诺书，陕西省教育厅成立联合调查组；南京大学的「智慧教室」被质疑把课堂拆成数据；有分析称今年结婚人数可能创 <span class="num">46</span> 年来新低；养老金「公平账」的算法被公开质疑；工劳小报两个月的清单里，顺德一家纺织厂火灾 <span class="num">8</span> 死 <span class="num">1</span> 伤、一家深圳企业 <span class="num">547</span> 人月加班 <span class="num">146</span> 小时。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（11 个 feed，覆盖 11 月 7 日至 11 月 9 日，含已读与未读，共 906 条）· Hacker News 前 100 名 · Polymarket 热点榜（24 小时成交量前 20，剔除体育盘与流动性低于 5 万美元的薄盘，另按主题检索同题盘口与一周变化）。<br>
+    由 pi 自动生成 · 今日窗口内 430 条未读已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
