@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日简报 · 2026-11-23</title>
+<style>
+  :root { --bg:#faf9f7; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e8e5e0; --accent:#b5492e; --accent-soft:#f6e8e2; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; padding:40px 16px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:24px; }
+  header .kicker { font-size:13px; letter-spacing:.2em; color:var(--muted); text-transform:uppercase; }
+  header h1 { font-size:30px; font-weight:800; margin:6px 0 2px; }
+  header .meta { font-size:13px; color:var(--muted); }
+  .lead { background:var(--ink); color:#fff; border-radius:10px; padding:18px 22px; font-size:15px; margin-bottom:36px; }
+  .lead b { color:#f0b09a; }
+  h3 { font-size:18px; font-weight:800; margin:40px 0 12px; padding-left:12px; border-left:4px solid var(--accent); }
+  .plain { background:var(--accent-soft); border-radius:10px; padding:14px 20px; font-size:14.5px; color:#5c3a2b; margin-bottom:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px; font-size:14.5px; }
+  .card p { margin-bottom:12px; } .card p:last-child { margin-bottom:0; }
+  .card .num { color:var(--accent); font-weight:700; }
+  .odds { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 20px; font-size:13.5px; margin-bottom:12px; }
+  .odds .cap { font-size:12px; letter-spacing:.08em; color:var(--muted); margin-bottom:6px; }
+  .odds .row { display:flex; justify-content:space-between; gap:12px; padding:5px 0; border-bottom:1px dashed var(--line); }
+  .odds .row:last-child { border-bottom:none; }
+  .odds .row b { color:var(--accent); font-weight:700; white-space:nowrap; }
+  .hn-headline { background:var(--ink); color:#fff; border-radius:10px; padding:22px; margin-top:12px; }
+  .hn-headline .rank { font-size:12px; letter-spacing:.15em; color:#d9a08d; text-transform:uppercase; }
+  .hn-headline h4 { font-size:19px; font-weight:800; margin:6px 0 4px; line-height:1.4; }
+  .hn-headline .stats { font-size:12.5px; color:#c9c9c9; }
+  .hn-headline p { font-size:14px; color:#e8e8e8; margin-top:10px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>每日简报</h1>
+    <div class="meta">2026 年 11 月 23 日 · 周一 · 订阅聚合 + Hacker News + Polymarket 融合</div>
+  </header>
+
+  <div class="lead"><b>一句话：</b>Anthropic 的用电账本被第三方算了一遍——按已签约的算力推算，它 <span class="num">2028 年 87%</span> 的电力来自天然气、<span class="num">11%</span> 来自煤，中位情形排放 <span class="num">3,200 万吨</span>二氧化碳当量，超过加州全部发电排放；同一天丰田、日产、本田同意先统一钢材、塑料与线束配色的标准，特朗普表示若谈不成倾向于新年之后恢复对伊朗的打击，比特币报 <span class="num">60,836</span> 美元。</div>
+
+  <h3>① 电从哪里来，账算给谁看</h3>
+  <div class="plain">一家做AI的公司要建很多数据中心，用来发电的是天然气和煤。同一天，另一家AI公司的首席科学家说，行业该用一个可以互相比较的数字，来衡量模型到底进步了多少。</div>
+  <div class="card">
+    <p>Better Data Center Project 在 <span class="num">11 月 16 日</span> 发布了一份把单家公司用电拆到机组级别的案例报告。它把 Anthropic 已签约的数据中心站点与当地电网的边际发电机组对上，结论是：到 <span class="num">2028 年</span>，该公司约 <span class="num">87%</span> 的电力来自天然气、<span class="num">11%</span> 来自煤，其余来自核电等既有电源，短期内没有任何新增可再生能源被计入；原因是新的负荷上电网后由可调度的化石机组承接下来，而公司在美国境内没有可直接核对的绿电承诺，已披露的可再生能源合约只在挪威与加拿大。</p>
+    <p>规模指标这样几组：截至 <span class="num">2026 年 10 月</span> 已签约算力 <span class="num">15 GW</span>，其中 <span class="num">5.9 至 9.6 GW</span> 落到具体站点，<span class="num">9.6 GW</span> 约等于 <span class="num">700 万</span> 户家庭的用电、相当于加州峰值需求的 <span class="num">18%</span>；直接采购的重型燃气机组为 <span class="num">1.7 GW</span>、金额 <span class="num">34 亿美元</span>；现场发电中约 <span class="num">80%</span> 是简单循环机组，单位发电的排放高于现代联合循环。报告推算的 2028 年排放区间是 <span class="num">1,700 万至 3,800 万吨</span> 二氧化碳当量，中位 <span class="num">3,200 万吨</span>，高于加州全部发电在 2024 年的 <span class="num">3,110 万吨</span>，也高于 Meta、微软、谷歌 2025 年基于位置的 Scope 2 排放之和；平均碳强度 <span class="num">1,033 至 1,076 磅</span> 二氧化碳当量每兆瓦时，比美国电网均值 <span class="num">767</span> 高 <span class="num">35%</span>；氮氧化物年排放超过 <span class="num">13,000 吨</span>，报告据此估算每年 <span class="num">20 至 30 亿美元</span> 的健康损失。HN 上这条帖拿到 <span class="num">814 分</span>／<span class="num">840 评论</span>。</p>
+    <p>同一天，OpenAI 首席科学家 Jakub Pachocki 发了一篇讲「困惑度」的博文，主张把这个衡量模型预测下一个词准不准的指标，做成跨公司可比、并用来支撑共同安全标准的公开数字。他给出的自家曲线是：GPT-3.5 在自有主评测集上的对数困惑度约 <span class="num">0.99</span>，GPT-4 约 <span class="num">0.91</span>，如今已低于 <span class="num">0.8</span>，而网络安全与数学领域的能力跃迁正是出现在这条线之下。金十同日转述他的表态：突破统一限制的前提，是先具备理解 AI 行为的能力。HN <span class="num">412 分</span>／<span class="num">278 评论</span>。</p>
+    <p>钱这一侧的信号更直接。马斯克 <span class="num">11 月 22 日</span> 在社交平台回应 Keras 作者 François Chollet 时称，让这么大规模的算力设备通电、冷却并稳定运行极其困难，AI 行业明年可能面临严重的资金短缺；如果从支付算力成本到设备稳定创收的时间整体推迟几个月，光营运资金就可能需要额外投入 <span class="num">数千亿美元</span>。</p>
+    <p>订阅端的两路快讯同日转了朝鲜的首款AI聊天机器人：在 <span class="num">10 月 19 日至 30 日</span> 平壤全国信息技术成就展上，金日成综合大学人工智能技术研究所与一家贸易公司共同推出「人工智能服务系统 1.0《智慧之泉》」，支持韩语与英语问答及翻译，界面类似 ChatGPT，内置过滤器禁止询问社会政治议题；38 North 引述专家分析称，其核心引擎极可能基于 Google Gemma 或阿里 Qwen 等开源模型构建。同一周，英国《金融时报》报道戴尔、慧与、超微要求上调 AI 服务器价格，涨幅最高 <span class="num">45%</span>，连几个月前已签的协议也在谈。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 $4.9 万（年底模型盘）／$4.5 万（11 月底模型盘）／$10.7 万（Anthropic 破发盘）· 口径：最近成交价（一周变化取 history 首点）</div>
+    <div class="row"><span>2026 年底拥有最佳 AI 模型：Google / Anthropic / OpenAI（一周前 Google 76.5%）</span><b>86.5% / 9.5% / 1.8%</b></div>
+    <div class="row"><span>2026 年 11 月底拥有最佳 AI 模型：Google</span><b>98.2%</b></div>
+    <div class="row"><span>Anthropic 在 12 月 31 日前收盘跌破发行价 83 美元（首日 50.5%）</span><b>76.0%</b></div>
+  </div>
+
+  <h3>② 三家车厂共用一张零件清单</h3>
+  <div class="plain">日本三家最大的车厂决定把一部分零件的标准并成一套，先动的都是消费者平时看不见的东西。让他们着急的是旁边的韩国：从中国进口的汽车越来越多。</div>
+  <div class="card">
+    <p>日本汽车工业协会会长、丰田副董事长佐藤恒治在东京的记者会上宣布，丰田、日产、本田将开始统一部分汽车零件的标准。第一批只动三类：钢材的质量判定标准、塑料与树脂的规范、线束的配色方案。选这三类的理由写得很直白：消费者一般注意不到，不影响任何品牌的辨识度，又都占到相当的生产成本，因此能立刻见效。谈判先从日本国内零部件供应商开始，海外供应商之后纳入，第一批标准化措施明年落地，长期目标是覆盖整车层面的更多部件。佐藤的说法是「我们都有强烈的危机感，这形成了改变的动力」。背景是日本七家车企（丰田、日产、本田、马自达、斯巴鲁、三菱、铃木）共同面对中国车企的竞争。HN 这条帖拿到 <span class="num">1146 分</span>／<span class="num">658 评论</span>，是窗口内新帖的最高分。</p>
+    <p>韩国 <span class="num">11 月 22 日</span> 公布的数据把压力落到具体数字上：今年 <span class="num">1 至 10 月</span>，韩国对华汽车贸易逆差 <span class="num">42.31 亿美元</span>，同比增 <span class="num">92.7%</span>，已超过去年全年规模；其中对华汽车出口 <span class="num">1.69 亿美元</span>、同比减 <span class="num">34.9%</span>，自华进口 <span class="num">43.90 亿美元</span>、同比增 <span class="num">79.2%</span>，两项都创历年新高。分析把进口增长主要归给在韩国热销的上海产特斯拉：今年上半年，特斯拉上海超级工厂累计交付近 <span class="num">46.8 万辆</span>、同比增 <span class="num">28.4%</span>，占特斯拉同期全球产量逾 <span class="num">54%</span>。</p>
+    <p>供应链上游的账在同一周被另一篇存档文章摊开：上海嘉定一家给上汽大众、上汽通用、一汽大众、福特供货的民营汽车零部件企业，<span class="num">8 月 18 日至 21 日</span> 旗下三家工厂数百名工人全线停工，讨要被拖欠的 <span class="num">四个月</span> 工资，先到当地劳动人事争议仲裁院、再到集团总部集会。文章把这家企业的债务压力与乘用车销量下滑、产业收缩放在一起看。降价压力在整车厂之间以标准化消化，在零部件厂身上以欠薪的形式出现，两件事在同一个星期里发生。</p>
+  </div>
+
+  <div class="hn-headline">
+    <div class="rank">Headline of the Day</div>
+    <h4>丰田、日产、本田同意统一零件标准以压低成本</h4>
+    <div class="stats">1146 points / 658 comments · 来源 caranddriver.com</div>
+    <p>这条是窗口内新帖的最高分，正文可抓，且能与订阅端的韩国对华汽车逆差、国内零部件厂欠薪两条线互相印证，因此取为头条；当日分数更高的四条（Alpöge 声明 2899 分、Masullo 科研稿 2445 分、Inkling 2 Mini 1451 分、胰腺癌新药 1325 分）都是前一日的旧帖，前三条昨日已写过，胰腺癌那条昨日未覆盖，已并入第 ③ 段。</p>
+  </div>
+
+  <h3>③ 一颗药片与一条河</h3>
+  <div class="plain">一种口服药让一部分晚期胰腺癌病人的肿瘤在扫描片上消失了。同一周，美国西南部的水力发电量掉到了有记录以来的最低点，那里的水库水位离停机的红线只差一点点。</div>
+  <div class="card">
+    <p>《卫报》<span class="num">11 月 20 日</span> 报道的这项试验共 <span class="num">61 名</span> 患者，都是刚确诊、已转移到其他器官的晚期胰腺癌。口服药 daraxonrasib 是 KRAS 抑制剂，作用机制是锁住并关掉多数胰腺癌里存在的 KRAS 突变。结果分层看：肿瘤停止生长的是 <span class="num">90%</span>；肿瘤缩小或消失的略超 <span class="num">60%</span>；约 <span class="num">8%</span>（十二分之一）在 CT 上已经看不到肿瘤。中位随访 <span class="num">18 个月</span>，开始治疗后一年仍有 <span class="num">76.6%</span> 的患者存活，而单用化疗通常是一年 <span class="num">40 至 45%</span>。在巴塞罗那 EORTC-NCI-AACR 会议上报告结果的纪念斯隆凯特琳癌症中心肿瘤内科医生 Wungki Park 说这是「最接近治愈」的一次，他没见过这么多已转移患者的肿瘤消失。同一篇报道也写明限制：还不能称为治愈，能维持多久未知，需要更长周期的研究；胰腺癌整体五年生存率在转移后约 <span class="num">3%</span>，一半患者在确诊后 <span class="num">三个月</span> 内死亡。HN <span class="num">1325 分</span>／<span class="num">295 评论</span>。</p>
+    <p>水电那条来自美国能源信息署的新数据，由《麻省理工科技评论》中文版整理：今年 <span class="num">4 月至 8 月</span>，美国西南部的水力发电量比过去 <span class="num">10 年</span> 的平均水平低 <span class="num">28%</span>，为历史最低。门槛已经很近——截至 <span class="num">9 月底</span>，鲍威尔湖水位为海拔 <span class="num">3,518 英尺</span>，只比格伦峡谷水电站启动涡轮机所需的最低水位高不到 <span class="num">1%</span>；米德湖 <span class="num">9 月</span> 的水位比胡佛大坝要求的 <span class="num">950 英尺</span> 高 <span class="num">9%</span>。这两座电站 2025 年合计发电接近 <span class="num">7 太瓦时</span>，够 <span class="num">200 多万</span> 人用电。当地干旱已持续 <span class="num">27 年</span>，落基山脉降雪约占科罗拉多河全年径流的 <span class="num">85%</span>；能源信息署预测 2026 年美国水电可能降到十多年来最低，2027 年进一步下降。国际能源署的另一组数字把这条线接回排放：2023 年全球能源相关温室气体排放增长 <span class="num">1.1%</span>，其中水电不足约占增幅的 <span class="num">40%</span>。</p>
+    <p>储能侧有一条相反方向的消息：Sila 与松下能源签署协议，向后者供应硅碳负极材料，Sila 估计这笔交易长期价值可能超过 <span class="num">10 亿美元</span>，松下已承诺采购数万吨材料。这种负极的重量约为传统石墨的五分之一、体积减半。公司的华盛顿州摩西湖工厂 2025 年 <span class="num">9 月</span> 投产，此前拿过能源部 <span class="num">1 亿美元</span> 资助，这次扩产的资金来源之一是特朗普政府国防部的一笔 <span class="num">14 亿美元</span> 贷款；中国目前控制全球 <span class="num">90% 以上</span> 的石墨产量，过去一年里两家估值曾达数十亿美元的电池企业 24M 与 ESS Tech 相继破产。科研一侧，本周《自然》的两条硬进展是旅行者一号成为首个距地球一「光日」的探测器（电力衰减、多数仪器已关闭，仍在采数据），以及首次观测到一颗巨星吞掉自己的伴星。</p>
+  </div>
+
+  <h3>④ 海峡、无人艇与新年之后的打击</h3>
+  <div class="plain">特朗普说如果谈不成，他倾向于把打击伊朗的时间推到新年之后。同一天，一艘俄罗斯护卫舰在利比亚的港口里被无人艇打沉。</div>
+  <div class="card">
+    <p>特朗普 <span class="num">11 月 23 日</span> 凌晨接受福克斯新闻采访时的口径很密：美国与伊朗的间接谈判仍在进行，「但尚未取得实质性成果」；目前没有迹象表明伊朗准备达成协议；如果无法达成协议，他倾向于在新年之后恢复对伊朗的打击；任何试图突破海上封锁的伊朗船只「将落得与其他伊朗海军力量一样的下场——沉入海底」。伊朗外长阿拉格齐的回应同日给出：只要伊朗的诉求未得到满足，霍尔木兹海峡及其重新开放便无从谈起；浓缩铀不会被运出境外；调解方正在频繁往返传递想法。伊朗总统的说法是，有必要走出「不战不和」的状态。</p>
+    <p>战场数字比谈判进展更具体。伊朗方面称击落第 <span class="num">20 架</span> 美军 MQ-1 无人机、累计击落第 <span class="num">58 架</span>「死神」，并称击中一架 F-16（美方称消息不实）；伊朗海军称两艘违规油轮在霍尔木兹海峡东部触雷起火。美方一侧，联合海上信息中心称过去 <span class="num">72 小时</span> 内在美国协助下完成 <span class="num">114 次</span> 通行作业。以色列方面，据当地媒体消息，看守政府总理内塔尼亚胡正考虑在未经美国批准的情况下单独对伊朗发动袭击，以军军事情报局在闭门会议中警告此举可能引发多条战线同时冲突。也门与沙特方向的交火在加速：胡塞武装称沙特主导的联军对其发动 <span class="num">81 次</span> 袭击、并称袭击了红海西岸的拉比格炼油厂与杜瓦塞尔雷达站；也门政府军称过去数小时内对胡塞据点实施 <span class="num">639 次</span> 打击。代价已经落到日常：因战事导致关键基础设施受损，伊朗从 <span class="num">11 月 22 日</span> 起轮流断电，方案是每两天停电约 <span class="num">两小时</span>；沙特全指周日收盘跌约 <span class="num">2%</span>，创 <span class="num">10 月 25 日</span> 以来最大跌幅。</p>
+    <p>利比亚成了新的交战海域。俄罗斯海军「水星号」护卫舰在班加西港内遭无人艇袭击后沉没，利比亚东部政府称初步调查疑似无人机袭击，利比亚海军称在班加西沿海拦截了超过 <span class="num">12 艘</span> 无人艇、处置了 <span class="num">4 艘</span> 快艇，另有悬挂马耳他国旗的商船遭自杀式无人艇袭击；利方已请求安理会紧急调查，俄驻利比亚大使称莫斯科在研究回应方式。同一天清晨，苏丹首都喀土穆遭大规模无人机袭击，一处联合国办公楼被破坏，当时楼内有工作人员，至少 <span class="num">1 名</span> 平民死亡。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 $82.7 万（以伊停火阶梯，事件级）／$26.0 万（美国入侵盘）· 口径：最近成交价（一周变化取 history 首点）</div>
+    <div class="row"><span>以色列—伊朗停火维持到 11 月 30 日（一周前 85.5%）</span><b>90.5%</b></div>
+    <div class="row"><span>停火维持到 12 月 15 日（一周前 74.5%）</span><b>75.5%</b></div>
+    <div class="row"><span>停火维持到 12 月 31 日（一周前 67.5%）</span><b>67.5%</b></div>
+    <div class="row"><span>美国在 2027 年前入侵伊朗</span><b>5.5%</b></div>
+  </div>
+
+  <h3>⑤ 把放空的闸门关小一格</h3>
+  <div class="plain">台湾的地方选举进入最后一周，主管机关同一天把放空的闸门关小，又让券商放松追缴保证金的压力。</div>
+  <div class="card">
+    <p>台湾证券交易所 <span class="num">11 月 22 日</span> 邀集十家大型券商开会，达成三项共识：融资担保维持率从 <span class="num">130%</span> 降到 <span class="num">120%</span>；券商自营部目前水位很低，会进场加码；股市稳定基金现在规模只有 <span class="num">5000 亿</span> 新台币，券商认为规模太小、不足以发挥护市功能。此前一天，金管会已宣布自 <span class="num">11 月 23 日</span> 起全面禁止平盘以下放空，并将上市柜个股最低融券保证金成数由 <span class="num">130%</span> 升为 <span class="num">150%</span>、暂停受理券商申请发行认售权证。台股本周下跌 <span class="num">17.50%</span>，行政院在 <span class="num">11 月 21 日</span> 上午召集财经首长开会。</p>
+    <p>选举侧的最后一周被两场活动定义。民众党 <span class="num">11 月 21 日</span> 晚在台北市政府前广场办造势，柯文哲与党主席黄国昌持电子火炬进场，主办方称约 <span class="num">3 万人</span> 到场；蒋万安应邀出席，致辞时肯定柯文哲八年市长任内的基础，并批评司法不应成为「政治追杀」的工具。柯文哲称沈伯洋掀起的「洋流」只是幻象，勉励蒋万安「稳扎稳打就会赢」。隔天下午，沈伯洋在复兴南路、忠孝东路一带办「城市行动展」，设 <span class="num">六大</span> 主题舞台，晚间称参与人数超过 <span class="num">10 万</span>。文化大学广告系教授钮则勋的判断是，蒋万安采取「尊柯友黄」策略，台北的蓝白合最后一块拼图到位；但柯文哲隔天在花莲辅选时强调民众党有主体性，「蓝白合」并非准确说法。另有一条民生议题被蓝营用作反攻：翡翠水库光电板争议，该水库攸关大台北约 <span class="num">600 万</span> 居民饮水，蒋万安与新北市长候选人李四川 <span class="num">11 月 19 日</span> 召开记者会反对设置光电板，水利署澄清发函只是调查潜力，沈伯洋与苏巧慧称蓝营炒作假议题。</p>
+    <p>韩国的应对比台湾更宽。上周五 KOSPI 与科斯达克双双暴跌逾 <span class="num">5%</span>，最大在野党院内代表郑点植 <span class="num">11 月 22 日</span> 警告可能出现「黑色星期一」，要求政府提前准备。财政部同日开会决定：着手完善股市稳定基金的启动机制以确保随时可用（若投入使用将是 <span class="num">18 年</span> 来首次）；自 <span class="num">11 月 24 日</span> 起 <span class="num">3 个月</span> 内放宽上市公司每日回购订单数量上限；金融监督院与交易所展开为期 <span class="num">3 个月</span> 的非法卖空专项监控；并密切监测信用融资、未结算交易与强制平仓，防止连锁抛售。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 $12.9 万（台北市长）／$1.5 万（新北市长）· 口径：最近成交价（一周变化取 history 首点）</div>
+    <div class="row"><span>台北市长：蒋万安 / 沈伯洋（一周前蒋 62.5%）</span><b>69.5% / 30.9%</b></div>
+    <div class="row"><span>新北市长：李四川 / 苏巧慧</span><b>42.5% / 58.5%</b></div>
+  </div>
+
+  <h3>⑥ 从百分之百到百分之八十</h3>
+  <div class="plain">三家交易所把借钱买股票需要的自有本金比例调低了。同一天公布的数据显示，北京和上海的人买东西比去年少。两件事指向同一个方向。</div>
+  <div class="card">
+    <p>经中国证监会批准，上海、深圳、北京三家交易所 <span class="num">11 月 22 日</span> 宣布，将投资者融资买入证券的最低保证金比例从 <span class="num">100%</span> 调低至 <span class="num">80%</span>，<span class="num">11 月 30 日</span> 起实施。换算方式很直白：<span class="num">100 万元</span> 保证金可融资买入最多 <span class="num">125 万元</span> 证券，杠杆倍数由一倍提到 <span class="num">1.25 倍</span>。澎湃引述监管人士的估算，目前融资余额约 <span class="num">2.2 万亿元</span>，降低比例为新增融资交易释放近 <span class="num">1000 亿元</span>；券商若对存量合约也采用新比例，还可再释放约 <span class="num">3000 亿元</span>，合计近 <span class="num">4000 亿元</span>。这是今年第二次调整：<span class="num">1 月</span> 为防过热刚从 <span class="num">80%</span> 上调至 <span class="num">100%</span>。同一天还有降费与制度动作：沪深交易所新推降费措施，预计分别让利 <span class="num">13.68 亿元</span> 与 <span class="num">13.9 亿元</span>，两市今年整体降费预计分别超过 <span class="num">24 亿元</span> 与 <span class="num">22 亿元</span>；深交所就创业板做市机制规则公开征求意见。</p>
+    <p>消费者这一侧的数字更冷。国家统计局 <span class="num">11 月 16 日</span> 发布的 10 月社会消费品零售总额为 <span class="num">4.6463 万亿元</span>、同比微增 <span class="num">0.4%</span>；分城市看，北京 10 月约 <span class="num">1271 亿元</span>、同比大跌 <span class="num">12.1%</span>，上海 <span class="num">1478 亿元</span>、同比降 <span class="num">4.5%</span> 且连续 <span class="num">七个月</span> 负增长。拖累项是汽车：北京前 <span class="num">10 个月</span> 汽车类商品零售额同比降 <span class="num">20.7%</span>，上海同期降 <span class="num">21.1%</span>、10 月单月跌幅达 <span class="num">39.4%</span>；全国 10 月社零同比 <span class="num">0.4%</span>，扣除汽车后是 <span class="num">2.5%</span>。北京大学经济学院教授苏剑给出三层解释：社零主要反映实物消费，服务消费增长未计入；前三季京沪人均可支配收入增速低于全国；近年来两地外来人口流出。他也补了一条反向证据：北京前 <span class="num">10 个月</span> 服务消费仍同比增 <span class="num">4.3%</span>。</p>
+    <p>另一条与消费相关的价格信号在贵金属上。本周国际金价跌超 <span class="num">300 美元</span>，多家品牌下调金饰克价，深圳水贝出现购金热，有商户称一天卖出数公斤黄金。TradingView 日线显示，现货黄金 <span class="num">11 月 10 日</span> 收 <span class="num">3,987.70 美元</span>、<span class="num">11 月 19 日</span> 收 <span class="num">3,537.83 美元</span>；白银同期从 <span class="num">51.641</span> 跌到 <span class="num">41.222</span>，年内最大回撤 <span class="num">66%</span>。</p>
+  </div>
+
+  <h3>⑦ 四百万、七百万与一碗面</h3>
+  <div class="plain">一名被告人当庭问，同案的人里为什么只有他们几个站在被告席上。另一个城市里，一家不收钱的面馆排起了长队。</div>
+  <div class="card">
+    <p>被舆论称作「史上最远的远洋捕捞案」的重审，<span class="num">11 月 20 日</span> 上午在新疆温泉县法院开庭。第一天一个半小时里，控辩双方连一页实体证据都没翻开：原承办法官被决定回避，新合议庭没有重新召开庭前会议，管辖权、回避、非法证据排除这些前置事项都未处理。审判长的回应是：上次庭前会议没有结论是因控辩分歧太大，管辖权问题前一天已答复，非法证据排除可以边审边查。真正让法庭安静的是四名被告人的陈述。金某原为领固定工资的销售，<span class="num">2024 年 1 月 29 日</span> 被要求「每人交 <span class="num">50 万</span>，不交走不了」，次日凑出 <span class="num">27 万</span>，其中 <span class="num">1 万</span> 留作取保保证金、<span class="num">26 万</span> 作「退赃」处理；检察院阶段有人要求凑齐 <span class="num">700 万</span>，众人借贷凑出 <span class="num">400 万</span>，被告知不够；直到 <span class="num">2026 年 10 月</span>，仍有法官致电询问能否继续退缴。同案共 <span class="num">11 人</span>，主播与部分技术人员作了不起诉处理。张某称被口头指定监视居住在某宾馆 <span class="num">110</span> 房间，提出借 <span class="num">20 万</span> 换不起诉后手机被当场归还，家人转账时中间人叮嘱备注必须写「主动自愿上缴违法所得」，交钱次日手机再被收走。一名女性被告人新婚刚满 <span class="num">3 个月</span> 即被抓捕、羁押 <span class="num">7 个月</span>，孩子现在 <span class="num">1 岁</span> 仍在哺乳期，每次赴新疆开庭都只能把婴儿留在家中。</p>
+    <p>第二件事没有程序可争，只有一个价格问题。南京一位老板开了两家免费面馆，不收钱、来就能吃，每天几千碗，队伍排得很远，老人、环卫工人、外卖员、普通打工人都在其中。存档文章用「零价格效应」解释一部分排队动机，紧接着写到另一个观察：过去很多人愿意为方便、体验和品质多付十几块钱，现在会在消费前先问一句「有没有必要」。作者把机制落在预期上：月入 <span class="num">8000 元</span> 的人如果担心明年失业、老人患病、房贷与教育支出，即使当下收入没变也会收缩开支。这与第 ⑥ 段京沪社零的两个数字指向同一处。</p>
+    <p>第三条是养老金，作者拿日本做样本：<span class="num">2025 年</span> 65 岁以上就业者达 <span class="num">943 万人</span>，连续 <span class="num">22 年</span> 增加，占总就业者的 <span class="num">13.8%</span>，其中 <span class="num">76.1%</span> 属非正式雇佣；内阁府 <span class="num">2024 年</span> 度面向 <span class="num">60 岁</span> 以上劳动者的调查访问 <span class="num">935 人</span>，<span class="num">55.1%</span> 说工作是为了收入。文章的对照是二十年前的许诺：小泉政府把养老金改革包装成「百年安心」，<span class="num">2003 年</span> 社会保险厅请演员拍广告，台词是「误解！谁说国民年金将来领不到」。今天同一套制度面对的是交钱的人变少、领钱的人变多。另有一篇把「外卖小哥三年赚 <span class="num">102 万</span>」这类标题并列了三十余条，作者用工具逐条核查原始来源，称其中 <span class="num">41 条</span> 找得到官方媒体报道。</p>
+  </div>
+
+  <h3>⑧ 从推理商到日志</h3>
+  <div class="plain">一家帮人调用各种模型的服务商在核查之后，把几家算力供应商从平台上摘掉，又取消了一批接口「不留存数据」的资格。同一天，韩国一家电力公司承认上百万用户的信息外泄。</div>
+  <div class="card">
+    <p>OpenRouter 在 <span class="num">11 月 22 日</span> 的公告里写明了处置清单：安全研究者报告部分推理供应商的数据被泄露，或有证据显示其数据政策未被遵守；平台据此下架 <span class="num">3 家</span> 供应商，移除 <span class="num">125 个</span> 端点的「零数据留存」（ZDR）资格——其中包括研究者点名的，也包括预防性移除的；已通知所有可能受影响的客户；正在把研究者的测试方法改造成可以持续运行的检查，并对已移除端点做网络路径的技术核验，恢复 ZDR 需先拿到保证与验证。公告同时列出供应商自己发布的说明：Atlas Cloud、Novita（涉及 MiniMax 请求）、Phala，以及 Together 关于 <span class="num">6 月与 7 月</span> 请求出现提示词泄露的通报。HN 上 OpenRouter 这条拿到 <span class="num">276 分</span>／<span class="num">91 评论</span>，Together 的独立公告 <span class="num">47 分</span>／<span class="num">11 评论</span>。这条链的含义是：模型调用的信任边界已经从「模型会不会乱说」挪到「中间商会把你的提示词送去哪里」。</p>
+    <p>机构侧的泄露更有体量。韩国电力公社 <span class="num">11 月 22 日</span> 确认另一起泄露，涉及约 <span class="num">152 万</span> 用户：客服平台「KEPCO ON」的 <span class="num">650,487 名</span> 用户（姓名、居民登记号、银行账户、信用卡信息、电价与账单记录）与电子采购系统 SRM 的 <span class="num">869,761 名</span> 用户；SRM 部分还包括 <span class="num">426,827 名</span> 企业代表的姓名、登记号与邮箱，以及 <span class="num">442,934 名</span> 本公司与合作公司员工的姓名、所属机构与联系方式。一个月前，该公司刚披露过一起影响数万用户的独立泄露。</p>
+    <p>终端与钱包这两条线本周各有一起。安全公司 Confiant 披露代号 MoldyRoost 的恶意广告活动：<span class="num">5 月 12 日</span> 至 <span class="num">11 月 17 日</span> 期间发现超过 <span class="num">480 个</span> 相关广告域名，覆盖 <span class="num">47 个</span> 以上国家和地区，针对存在漏洞的 iPhone 自动触发 Coruna、DarkSword 等漏洞利用工具，无需用户下载即尝试入侵，目标是加密钱包助记词、密码、聊天记录与照片。隐私钱包 Fluidkey 的事故报告则是一次服务端失守：<span class="num">11 月 19 日</span> 的攻击利用第三方开源日志工具 SigNoz 的两个漏洞读取内部日志，取得用户会话令牌，并在服务器端创建并批准未经授权的转账请求；用户打开并解锁应用时对这些请求签名，<span class="num">52 个</span> 账户累计损失约 <span class="num">160 万美元</span>，涉及六条链，约 <span class="num">887 枚</span> ETH 被转入混币服务。私钥未泄露，平台已修复并于 <span class="num">11 月 20 日</span> 恢复服务。另一条来自模型侧：MiniMax <span class="num">11 月 22 日</span> 晚公布用内部模型对现代密码方案做自动化分析，称把多项原本停留在理论的攻击推进到秒级至分钟级，并在历届 NIST 标准化竞赛中首次攻破多个此前没有已知实际攻击的候选算法。</p>
+  </div>
+
+  <h3>⑨ 支撑位与量子账</h3>
+  <div class="plain">比特币在一周里先是掉到六万美元以下，随后又爬回来。同一天，一份链上数据说，超过三成的流通比特币已经把公钥暴露在账本上。</div>
+  <div class="card">
+    <p>按 TradingView 小时线，<span class="num">11 月 23 日</span> 北京时间 05:00，BTC 报 <span class="num">60,836 美元</span>，ETH 报 <span class="num">1,717 美元</span>，稳定币占比 USDT.D 为 <span class="num">8.46</span>。日线给出的路径是：<span class="num">11 月 20 日</span> 收 <span class="num">58,813.83 美元</span>、盘中低 <span class="num">57,668.40</span>；<span class="num">11 月 21 日</span> 盘中最低 <span class="num">55,081.31</span>、收 <span class="num">60,078.34</span>；USDT.D 日线 <span class="num">11 月 20 日</span> 收 <span class="num">8.72</span>、<span class="num">11 月 21 日</span> 收 <span class="num">8.54</span>。吴说引述 CryptoQuant 分析师 Darkfost 的数据：比特币较历史高点回撤约 <span class="num">56.3%</span>、<span class="num">11 月</span> 以来累计下跌 <span class="num">17.4%</span>，币安比特币永续合约资金费率转负；彭博的统计是短期持有者过去约一个月向五大交易所转入超过 <span class="num">70 万枚</span> BTC，截至 <span class="num">11 月 18 日</span> 近七天转入的 BTC 中仅 <span class="num">2.5%</span> 处于盈利状态，而 <span class="num">10 月</span> 中旬约为 <span class="num">60%</span>。Arthur Hayes 的说法更直接：BTC 已跌破此前阶段性低点，若纳指继续下跌，下一道考验在 <span class="num">5 万美元</span> 附近。</p>
+    <p>第二笔账是本可以等着慢慢算、但已经有人开始催的量子账。Cysic CEO Leo Fan 的提醒是，难点在于把现有资产迁移到抗量子地址、并升级交易所、托管机构与跨链桥的安全系统；换算法只是其中一步。Glassnode 的数据是：截至 <span class="num">10 月</span>，超过 <span class="num">600 万枚</span> BTC 的公钥已在链上暴露，占流通供应量的 <span class="num">31.2%</span>。抗量子多签与门限签名仍处研究阶段，开发者尚未就如何处理未迁移旧地址的资产达成共识。</p>
+    <p>矿业这一侧正在改行。IOSG 的测算给出两条价格：CoinShares 给已建成、已出租的 AI 数据中心估值约每 MW <span class="num">2,700 万美元</span>，给没有租户的矿工通电产能估值不到 <span class="num">300 万美元</span>，扣掉每 MW <span class="num">800 万至 1,500 万美元</span> 的建设投入，差距仍有 <span class="num">4 到 6 倍</span>；按每 MW 经营利润算，当前 hashprice 下挖矿一年约赚 <span class="num">23 万美元</span>，AI 租约约 <span class="num">190 万美元</span>，比特币要涨到约 <span class="num">25 万美元</span> 才能补平。美国最热门的市场新接一条电网需要 <span class="num">三到四年</span>，而矿工手里已经有通电的接口。基础设施侧另有两项待变：以太坊 Glamsterdam 升级因 Gas 定价调整可能影响现有合约，基金会与安全公司已联系至少 <span class="num">50 家</span> 受影响企业，主网激活最早可能推到 <span class="num">2027 年 4 月或 5 月</span>；Solana 的 2027 路线图承诺计算容量翻倍、代币账户相关交易的计算单元消耗削减 <span class="num">80%</span>、单笔交易可调用账户上限从 <span class="num">64 个</span> 提到 <span class="num">96 个</span>。Vitalik 在同一天的建议是另一条路：他写了「数字极简主义」，自己连续 <span class="num">100 天</span> 手机保持飞行模式、只用 Wi-Fi，发帖改用以去中心化协议为基础的 Firefly。</p>
+  </div>
+
+  <div class="odds">
+    <div class="cap">Polymarket 隐含概率 · 24 小时成交 $19.6 万（11 月 23 日价位阶梯）／$47.1 万（11 月价位阶梯）· 口径：最近成交价（一周变化取 history 首点）</div>
+    <div class="row"><span>比特币 11 月 23 日高于 58,000 / 60,000 美元（一周前 58,000 档 51.5%）</span><b>91.5% / 67.5%</b></div>
+    <div class="row"><span>比特币 11 月内跌到 57,500 / 55,000 美元</span><b>49.5% / 24.9%</b></div>
+  </div>
+
+  <h3>⑩ 一周回顾</h3>
+  <div class="plain">这一周以一场 AI 抛售收尾，中间有一份被机器核对完的数学证明、一条还关着的海峡、一艘在利比亚港口沉没的护卫舰，和三家开始共用零件清单的日本车厂。</div>
+  <div class="card">
+    <p><b>指数与贵金属。</b>标普 500 从 <span class="num">11 月 13 日</span> 的 <span class="num">7561.67</span> 跌到 <span class="num">11 月 20 日</span> 的 <span class="num">6910.39</span>（<span class="num">-8.6%</span>），纳斯达克综指从 <span class="num">25136.27</span> 跌到 <span class="num">22617.73</span>（<span class="num">-10.0%</span>），道指从 <span class="num">52347.55</span> 跌到 <span class="num">48147.33</span>，VIX 从 <span class="num">19.29</span> 升到 <span class="num">35.90</span>。费城半导体指数本周重挫 <span class="num">10%</span>，创 <span class="num">2001 年</span> 以来最惨单周；高盛的统计是对冲基金遭遇 <span class="num">20 年</span> 来最严重跑输、AI 热门持仓年内跌 <span class="num">8%</span>，且杠杆率已降至五年低点。现货黄金从 <span class="num">11 月 10 日</span> 的 <span class="num">3987.70</span> 跌到 <span class="num">11 月 19 日</span> 的 <span class="num">3537.83</span>，白银从 <span class="num">51.641</span> 跌到 <span class="num">41.222</span>。</p>
+    <p><b>AI 的两笔成本。</b>钱这一侧是服务器涨价最高 <span class="num">45%</span>、马斯克警告明年可能出现数千亿美元级的营运资金缺口；电这一侧是一份把 Anthropic 用电拆到机组级的报告：2028 年 <span class="num">87%</span> 来自天然气、<span class="num">11%</span> 来自煤，中位排放 <span class="num">3,200 万吨</span>，平均碳强度比美国电网均值高 <span class="num">35%</span>。「年底拥有最佳 AI 模型」的定价一周内从 Google <span class="num">76.5%</span> 升到 <span class="num">86.5%</span>；「Anthropic 在 12 月 31 日前收盘跌破发行价 <span class="num">83 美元</span>」在上市四天后从 <span class="num">50.5%</span> 升到 <span class="num">76.0%</span>。</p>
+    <p><b>一份证明之后。</b>Lean 与 Mathlib 社区 <span class="num">11 月 21 日</span> 的联合声明之后，《自然》<span class="num">11 月 20 日</span> 的报道把两组声明并列，指出两份都需要严格核查；菲尔兹奖得主丘成桐称这是「伟大的贡献」「数学进入了一个新的纪元」；同为菲尔兹奖得主的邓煜在 <span class="num">11 月 21 日</span> 说，如果证明正确，预计一个月以内会出现人类勉强可读的版本，在可读版本出现以前不评论。马斯克在 <span class="num">11 月 22 日</span> 说，证明的实用价值在于能消除依赖该猜想的定理所附带的条件性限制。「Anthropic 在 2026 年底前宣布解决一道千禧年难题」的定价从 <span class="num">55.5%</span> 升到 <span class="num">70.2%</span>，2027 年底前的档位是 <span class="num">88.5%</span>。</p>
+    <p><b>海峡与港口。</b>伊朗把重开霍尔木兹海峡的条件维持为七条，特朗普说若谈不成倾向于新年之后再打，并把突破封锁的船只结局讲成「沉入海底」；一周内霍尔木兹以东有两艘油轮触雷起火，<span class="num">72 小时</span> 内完成 <span class="num">114 次</span> 通行作业。俄罗斯「水星号」护卫舰在班加西港内被无人艇打沉，同一天喀土穆的联合国办公楼在无人机袭击中受损。停火维持到 <span class="num">11 月 30 日</span> 的定价从 <span class="num">85.5%</span> 升到 <span class="num">90.5%</span>，维持到 <span class="num">12 月 31 日</span> 停在 <span class="num">67.5%</span>——短期的确定性在升高，远期的没有。</p>
+    <p><b>被压价与被抽走的。</b>丰田、日产、本田同意统一钢材、塑料与线束配色的标准，韩国对华汽车贸易逆差前 <span class="num">10 个月</span> 达 <span class="num">42.31 亿美元</span>、同比增 <span class="num">92.7%</span>；上游的上海嘉定零部件厂数百名工人为拖欠的 <span class="num">四个月</span> 工资停工。国内这一侧是融资保证金比例从 <span class="num">100%</span> 回到 <span class="num">80%</span>、理论上释放近 <span class="num">4000 亿元</span>，同时北京 10 月社零同比跌 <span class="num">12.1%</span>、上海连续 <span class="num">七个月</span> 负增长。加密货币则在同一条链上被抽走流动性：BTC 一周从 <span class="num">11 月 14 日</span> 的 <span class="num">64113.69</span> 跌到 <span class="num">11 月 21 日</span> 的 <span class="num">60078.34</span>，日内最低 <span class="num">55,081</span>，USDT.D 从 <span class="num">8.17</span> 升到 <span class="num">8.54</span>，超过 <span class="num">600 万枚</span> BTC 的公钥已在链上暴露。</p>
+  </div>
+
+  <footer>
+    数据来源：Miniflux 订阅聚合（11 个源，覆盖 11 月 21–23 日，含已读与未读）· Hacker News 前 100 名 · Polymarket 热点榜（24 小时成交量前 20，剔除体育盘；另按主题检索同题市场）· 行情读数取 TradingView（BTC/ETH/USDT.D 小时线与日线、指数与贵金属日线，指数最后一根为 11 月 20 日收盘）· 期权日报本日不运行（周一无排程）。<br>
+    由 pi 自动生成 · 今日窗口内 967 条未读已全部标记为已读。
+  </footer>
+</div>
+</body>
+</html>
